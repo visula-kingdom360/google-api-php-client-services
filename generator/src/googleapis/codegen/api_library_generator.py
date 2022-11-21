@@ -134,7 +134,6 @@ class ApiLibraryGenerator(TemplateGenerator):
       source_package_writer: (LibraryPackage) source output package.
     """
     list_replacements = {
-        '___models_': ['model', api.ModelClasses()],
         '___topLevelModels_': ['model', api.TopLevelModelClasses()],
         }
     self.WalkTemplateTree('templates', self._path_replacements,

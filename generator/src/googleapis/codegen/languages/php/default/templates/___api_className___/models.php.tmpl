@@ -2,7 +2,7 @@
 {% language php %}{% copyright_block %}
 
 namespace {{ api.ownerName }}\Service\{{ api.className }};
-{% if model.superClass %}
+{% for model in api.models %}{% if model.superClass %}
 use {{ api.ownerName }}\Service\{{ api.className }}\{{ model.superClass }}
 {% endif %}
 class {{ model.className }} extends {% if model.superClass %}{{ model.superClass }}{% else %}{% if model.dataType == "array" %}\Google\Collection{% else %}\Google\Model{% endif %}{% endif %}
@@ -27,9 +27,7 @@ class {{ model.className }} extends {% if model.superClass %}{{ model.superClass
   {% endif %}
  {% else %}
  {% if property.annotationType %}
-  /**
-   * @var {{ property.annotationType }}{% if property.dataType == "array" or property.dataType == "map" %}[]{% endif %}
-   */
+  /** @var {{ property.annotationType }}{% if property.dataType == "array" or property.dataType == "map" %}[]{% endif %} */
  {% endif %}
   public ${{ property.memberName }};
  {% endif %}
@@ -45,9 +43,7 @@ class {{ model.className }} extends {% if model.superClass %}{{ model.superClass
 {% endfilter %}{% for property in model.properties %}
 {% filter noblanklines %}
 {% if property.annotationType %}
-  /**
-   * @param {{ property.annotationType }}{% if property.type == "array" or property.dataType == "map" %}[]{% endif %}
-   */
+  /** @param {{ property.annotationType }}{% if property.type == "array" or property.dataType == "map" %}[]{% endif %} */
 {% endif %}
   {% if property.type == "array" or property.dataType == "map" or not property.typeHint %}
   public function {{ property.setterName }}(${{ property.memberName }})
@@ -59,9 +55,7 @@ class {{ model.className }} extends {% if model.superClass %}{{ model.superClass
   }
 
 {% if property.annotationType %}
-  /**
-   * @return {{ property.annotationType }}{% if property.type == "array" or property.dataType == "map" %}[]{% endif %}
-   */
+  /** @return {{ property.annotationType }}{% if property.type == "array" or property.dataType == "map" %}[]{% endif %} */
 {% endif %}
   public function {{ property.getterName }}()
   {
@@ -69,6 +63,10 @@ class {{ model.className }} extends {% if model.superClass %}{{ model.superClass
   }
 {% endfilter %}{% endfor %}{% endif %}
 }
-
+{% endfor %}
 // Adding a class alias for backwards compatibility with the previous class name.
+{% filter noblanklines %}
+{% for model in api.models %}
 class_alias({{ model.className }}::class, '{{ api.ownerName }}_Service_{{ api.className }}_{{ model.className }}');
+{% endfor %}
+{% endfilter %}
