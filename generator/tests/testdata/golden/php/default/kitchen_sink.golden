@@ -721,609 +721,6 @@ class KitchSink extends \Google\Service
 // Adding a class alias for backwards compatibility with the previous class name.
 class_alias(KitchSink::class, 'Google_Service_KitchSink');
 === end: KitchSink.php
-=== begin: KitchSink/Enum.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
-class Enum extends \Google\Model
-{
-  /**
-   * @var string
-   */
-  public $name;
-
-  /**
-   * @param string
-   */
-  public function setName($name)
-  {
-    $this->name = $name;
-  }
-  /**
-   * @return string
-   */
-  public function getName()
-  {
-    return $this->name;
-  }
-}
-
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(Enum::class, 'Google_Service_KitchSink_Enum');
-=== end: KitchSink/Enum.php
-=== begin: KitchSink/Geometry.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
-class Geometry extends \Google\Model
-{
-  /**
-   * @var string
-   */
-  public $type;
-
-  /**
-   * @param string
-   */
-  public function setType($type)
-  {
-    $this->type = $type;
-  }
-  /**
-   * @return string
-   */
-  public function getType()
-  {
-    return $this->type;
-  }
-}
-
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(Geometry::class, 'Google_Service_KitchSink_Geometry');
-=== end: KitchSink/Geometry.php
-=== begin: KitchSink/GeometryCollection.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
-use Google\Service\KitchSink\Geometry
-
-class GeometryCollection extends Geometry
-{
-  protected $collection_key = 'geometries';
-  protected $geometriesType = Geometry::class;
-  protected $geometriesDataType = 'array';
-  protected function gapiInit()
-  {
-    $this->type = 'Collection';
-  }
-  /**
-   * @param Geometry[]
-   */
-  public function setGeometries($geometries)
-  {
-    $this->geometries = $geometries;
-  }
-  /**
-   * @return Geometry[]
-   */
-  public function getGeometries()
-  {
-    return $this->geometries;
-  }
-}
-
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(GeometryCollection::class, 'Google_Service_KitchSink_GeometryCollection');
-=== end: KitchSink/GeometryCollection.php
-=== begin: KitchSink/GeometryPolygon.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
-use Google\Service\KitchSink\Geometry
-
-class GeometryPolygon extends Geometry
-{
-  /**
-   * @var string
-   */
-  public $coordinates;
-  protected function gapiInit()
-  {
-    $this->type = 'Polygon';
-  }
-  /**
-   * @param string
-   */
-  public function setCoordinates($coordinates)
-  {
-    $this->coordinates = $coordinates;
-  }
-  /**
-   * @return string
-   */
-  public function getCoordinates()
-  {
-    return $this->coordinates;
-  }
-}
-
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(GeometryPolygon::class, 'Google_Service_KitchSink_GeometryPolygon');
-=== end: KitchSink/GeometryPolygon.php
-=== begin: KitchSink/GeometryReference.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
-use Google\Service\KitchSink\Geometry
-
-class GeometryReference extends Geometry
-{
-  /**
-   * @var string
-   */
-  public $coordinates;
-  protected function gapiInit()
-  {
-    $this->type = 'Ref';
-  }
-  /**
-   * @param string
-   */
-  public function setCoordinates($coordinates)
-  {
-    $this->coordinates = $coordinates;
-  }
-  /**
-   * @return string
-   */
-  public function getCoordinates()
-  {
-    return $this->coordinates;
-  }
-}
-
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(GeometryReference::class, 'Google_Service_KitchSink_GeometryReference');
-=== end: KitchSink/GeometryReference.php
-=== begin: KitchSink/KitchSinkReadOnly.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
-class KitchSinkReadOnly extends \Google\Model
-{
-  /**
-   * @var string
-   */
-  public $name;
-
-  /**
-   * @param string
-   */
-  public function setName($name)
-  {
-    $this->name = $name;
-  }
-  /**
-   * @return string
-   */
-  public function getName()
-  {
-    return $this->name;
-  }
-}
-
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(KitchSinkReadOnly::class, 'Google_Service_KitchSink_KitchSinkReadOnly');
-=== end: KitchSink/KitchSinkReadOnly.php
-=== begin: KitchSink/LatLong.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
-class LatLong extends \Google\Model
-{
-  public $latitude;
-  /**
-   * @var string
-   */
-  public $location;
-  public $longitude;
-
-  public function setLatitude($latitude)
-  {
-    $this->latitude = $latitude;
-  }
-  public function getLatitude()
-  {
-    return $this->latitude;
-  }
-  /**
-   * @param string
-   */
-  public function setLocation($location)
-  {
-    $this->location = $location;
-  }
-  /**
-   * @return string
-   */
-  public function getLocation()
-  {
-    return $this->location;
-  }
-  public function setLongitude($longitude)
-  {
-    $this->longitude = $longitude;
-  }
-  public function getLongitude()
-  {
-    return $this->longitude;
-  }
-}
-
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(LatLong::class, 'Google_Service_KitchSink_LatLong');
-=== end: KitchSink/LatLong.php
-=== begin: KitchSink/ModeratorTopicsResourcePartial.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
-class ModeratorTopicsResourcePartial extends \Google\Model
-{
-}
-
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(ModeratorTopicsResourcePartial::class, 'Google_Service_KitchSink_ModeratorTopicsResourcePartial');
-=== end: KitchSink/ModeratorTopicsResourcePartial.php
-=== begin: KitchSink/Profile.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
-class Profile extends \Google\Model
-{
-  protected $attributionType = ProfileAttribution::class;
-  protected $attributionDataType = '';
-  protected $idType = ProfileId::class;
-  protected $idDataType = '';
-  /**
-   * @var string
-   */
-  public $kind;
-
-  /**
-   * @param ProfileAttribution
-   */
-  public function setAttribution(ProfileAttribution $attribution)
-  {
-    $this->attribution = $attribution;
-  }
-  /**
-   * @return ProfileAttribution
-   */
-  public function getAttribution()
-  {
-    return $this->attribution;
-  }
-  /**
-   * @param ProfileId
-   */
-  public function setId(ProfileId $id)
-  {
-    $this->id = $id;
-  }
-  /**
-   * @return ProfileId
-   */
-  public function getId()
-  {
-    return $this->id;
-  }
-  /**
-   * @param string
-   */
-  public function setKind($kind)
-  {
-    $this->kind = $kind;
-  }
-  /**
-   * @return string
-   */
-  public function getKind()
-  {
-    return $this->kind;
-  }
-}
-
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(Profile::class, 'Google_Service_KitchSink_Profile');
-=== end: KitchSink/Profile.php
-=== begin: KitchSink/ProfileAttribution.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
-class ProfileAttribution extends \Google\Model
-{
-  /**
-   * @var string
-   */
-  public $avatarUrl;
-  /**
-   * @var string
-   */
-  public $displayName;
-  protected $geoType = LatLong::class;
-  protected $geoDataType = '';
-  /**
-   * @var string
-   */
-  public $location;
-
-  /**
-   * @param string
-   */
-  public function setAvatarUrl($avatarUrl)
-  {
-    $this->avatarUrl = $avatarUrl;
-  }
-  /**
-   * @return string
-   */
-  public function getAvatarUrl()
-  {
-    return $this->avatarUrl;
-  }
-  /**
-   * @param string
-   */
-  public function setDisplayName($displayName)
-  {
-    $this->displayName = $displayName;
-  }
-  /**
-   * @return string
-   */
-  public function getDisplayName()
-  {
-    return $this->displayName;
-  }
-  /**
-   * @param LatLong
-   */
-  public function setGeo(LatLong $geo)
-  {
-    $this->geo = $geo;
-  }
-  /**
-   * @return LatLong
-   */
-  public function getGeo()
-  {
-    return $this->geo;
-  }
-  /**
-   * @param string
-   */
-  public function setLocation($location)
-  {
-    $this->location = $location;
-  }
-  /**
-   * @return string
-   */
-  public function getLocation()
-  {
-    return $this->location;
-  }
-}
-
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(ProfileAttribution::class, 'Google_Service_KitchSink_ProfileAttribution');
-=== end: KitchSink/ProfileAttribution.php
-=== begin: KitchSink/ProfileId.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
-class ProfileId extends \Google\Model
-{
-  /**
-   * @var string
-   */
-  public $user;
-
-  /**
-   * @param string
-   */
-  public function setUser($user)
-  {
-    $this->user = $user;
-  }
-  /**
-   * @return string
-   */
-  public function getUser()
-  {
-    return $this->user;
-  }
-}
-
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(ProfileId::class, 'Google_Service_KitchSink_ProfileId');
-=== end: KitchSink/ProfileId.php
 === begin: KitchSink/Resource/Featured.php
 <?php
 /*
@@ -2448,7 +1845,7 @@ class Votes extends \Google\Service\Resource
 // Adding a class alias for backwards compatibility with the previous class name.
 class_alias(Votes::class, 'Google_Service_KitchSink_Resource_Votes');
 === end: KitchSink/Resource/Votes.php
-=== begin: KitchSink/Rule.php
+=== begin: KitchSink/models.php
 <?php
 /*
  * Copyright 2014 Google Inc.
@@ -2468,2588 +1865,1704 @@ class_alias(Votes::class, 'Google_Service_KitchSink_Resource_Votes');
 
 namespace Google\Service\KitchSink;
 
-class Rule extends \Google\Model
+class Enum extends \Google\Model
 {
-  protected $submissionsType = RuleSubmissions::class;
-  protected $submissionsDataType = '';
-
-  /**
-   * @param RuleSubmissions
-   */
-  public function setSubmissions(RuleSubmissions $submissions)
-  {
-    $this->submissions = $submissions;
-  }
-  /**
-   * @return RuleSubmissions
-   */
-  public function getSubmissions()
-  {
-    return $this->submissions;
-  }
-}
-
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(Rule::class, 'Google_Service_KitchSink_Rule');
-=== end: KitchSink/Rule.php
-=== begin: KitchSink/RuleSubmissions.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
-class RuleSubmissions extends \Google\Model
-{
-  /**
-   * @var int
-   */
-  public $close;
-  /**
-   * @var int
-   */
-  public $open;
-
-  /**
-   * @param int
-   */
-  public function setClose($close)
-  {
-    $this->close = $close;
-  }
-  /**
-   * @return int
-   */
-  public function getClose()
-  {
-    return $this->close;
-  }
-  /**
-   * @param int
-   */
-  public function setOpen($open)
-  {
-    $this->open = $open;
-  }
-  /**
-   * @return int
-   */
-  public function getOpen()
-  {
-    return $this->open;
-  }
-}
-
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(RuleSubmissions::class, 'Google_Service_KitchSink_RuleSubmissions');
-=== end: KitchSink/RuleSubmissions.php
-=== begin: KitchSink/Series.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
-class Series extends \Google\Model
-{
-  /**
-   * @var bool
-   */
-  public $anonymousSubmissionAllowed;
-  protected $countersType = SeriesCounters::class;
-  protected $countersDataType = '';
-  /**
-   * @var string
-   */
-  public $description;
-  protected $idType = SeriesId::class;
-  protected $idDataType = '';
-  /**
-   * @var string
-   */
-  public $kind;
-  /**
-   * @var string
-   */
+  /** @var string */
   public $name;
-  /**
-   * @var int
-   */
-  public $numTopics;
-  /**
-   * @var bool
-   */
-  public $videoSubmissionAllowed;
 
-  /**
-   * @param bool
-   */
-  public function setAnonymousSubmissionAllowed($anonymousSubmissionAllowed)
-  {
-    $this->anonymousSubmissionAllowed = $anonymousSubmissionAllowed;
-  }
-  /**
-   * @return bool
-   */
-  public function getAnonymousSubmissionAllowed()
-  {
-    return $this->anonymousSubmissionAllowed;
-  }
-  /**
-   * @param SeriesCounters
-   */
-  public function setCounters(SeriesCounters $counters)
-  {
-    $this->counters = $counters;
-  }
-  /**
-   * @return SeriesCounters
-   */
-  public function getCounters()
-  {
-    return $this->counters;
-  }
-  /**
-   * @param string
-   */
-  public function setDescription($description)
-  {
-    $this->description = $description;
-  }
-  /**
-   * @return string
-   */
-  public function getDescription()
-  {
-    return $this->description;
-  }
-  /**
-   * @param SeriesId
-   */
-  public function setId(SeriesId $id)
-  {
-    $this->id = $id;
-  }
-  /**
-   * @return SeriesId
-   */
-  public function getId()
-  {
-    return $this->id;
-  }
-  /**
-   * @param string
-   */
-  public function setKind($kind)
-  {
-    $this->kind = $kind;
-  }
-  /**
-   * @return string
-   */
-  public function getKind()
-  {
-    return $this->kind;
-  }
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setName($name)
   {
     $this->name = $name;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getName()
   {
     return $this->name;
   }
-  /**
-   * @param int
-   */
-  public function setNumTopics($numTopics)
+}
+
+class Geometry extends \Google\Model
+{
+  /** @var string */
+  public $type;
+
+  /** @param string */
+  public function setType($type)
   {
-    $this->numTopics = $numTopics;
+    $this->type = $type;
   }
-  /**
-   * @return int
-   */
-  public function getNumTopics()
+  /** @return string */
+  public function getType()
   {
-    return $this->numTopics;
-  }
-  /**
-   * @param bool
-   */
-  public function setVideoSubmissionAllowed($videoSubmissionAllowed)
-  {
-    $this->videoSubmissionAllowed = $videoSubmissionAllowed;
-  }
-  /**
-   * @return bool
-   */
-  public function getVideoSubmissionAllowed()
-  {
-    return $this->videoSubmissionAllowed;
+    return $this->type;
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(Series::class, 'Google_Service_KitchSink_Series');
-=== end: KitchSink/Series.php
-=== begin: KitchSink/SeriesCounters.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
+use Google\Service\KitchSink\Geometry
 
-namespace Google\Service\KitchSink;
-
-class SeriesCounters extends \Google\Model
+class GeometryCollection extends Geometry
 {
-  protected $internal_gapi_mappings = [
-        "minusVotes" => "minus_votes",
-        "noneVotes" => "none_votes",
-        "plusVotes" => "plus_votes",
-  ];
-  /**
-   * @var int
-   */
-  public $anonymousSubmissions;
-  protected $countersType = SeriesCountersCounters::class;
-  protected $countersDataType = '';
-  /**
-   * @var int
-   */
-  public $else;
-  /**
-   * @var int
-   */
-  public $minusVotes;
-  /**
-   * @var string
-   */
-  public $noneVotes;
-  /**
-   * @var int
-   */
-  public $plusVotes;
-  /**
-   * @var int
-   */
-  public $submissions;
-  /**
-   * @var string
-   */
-  public $users;
-
-  /**
-   * @param int
-   */
-  public function setAnonymousSubmissions($anonymousSubmissions)
+  /** @var Geometry[] */
+  public $geometries;
+  protected $collection_key = 'geometries';
+  protected $geometriesType = Geometry::class;
+  protected $geometriesDataType = 'array';
+  /** @param Geometry[] */
+  public function setGeometries($geometries)
   {
-    $this->anonymousSubmissions = $anonymousSubmissions;
+    $this->geometries = $geometries;
   }
-  /**
-   * @return int
-   */
-  public function getAnonymousSubmissions()
+  /** @return Geometry[] */
+  public function getGeometries()
   {
-    return $this->anonymousSubmissions;
+    return $this->geometries;
   }
-  /**
-   * @param SeriesCountersCounters
-   */
-  public function setCounters(SeriesCountersCounters $counters)
+  protected function gapiInit()
   {
-    $this->counters = $counters;
-  }
-  /**
-   * @return SeriesCountersCounters
-   */
-  public function getCounters()
-  {
-    return $this->counters;
-  }
-  /**
-   * @param int
-   */
-  public function setElse($else)
-  {
-    $this->else = $else;
-  }
-  /**
-   * @return int
-   */
-  public function getElse()
-  {
-    return $this->else;
-  }
-  /**
-   * @param int
-   */
-  public function setMinusVotes($minusVotes)
-  {
-    $this->minusVotes = $minusVotes;
-  }
-  /**
-   * @return int
-   */
-  public function getMinusVotes()
-  {
-    return $this->minusVotes;
-  }
-  /**
-   * @param string
-   */
-  public function setNoneVotes($noneVotes)
-  {
-    $this->noneVotes = $noneVotes;
-  }
-  /**
-   * @return string
-   */
-  public function getNoneVotes()
-  {
-    return $this->noneVotes;
-  }
-  /**
-   * @param int
-   */
-  public function setPlusVotes($plusVotes)
-  {
-    $this->plusVotes = $plusVotes;
-  }
-  /**
-   * @return int
-   */
-  public function getPlusVotes()
-  {
-    return $this->plusVotes;
-  }
-  /**
-   * @param int
-   */
-  public function setSubmissions($submissions)
-  {
-    $this->submissions = $submissions;
-  }
-  /**
-   * @return int
-   */
-  public function getSubmissions()
-  {
-    return $this->submissions;
-  }
-  /**
-   * @param string
-   */
-  public function setUsers($users)
-  {
-    $this->users = $users;
-  }
-  /**
-   * @return string
-   */
-  public function getUsers()
-  {
-    return $this->users;
+    $this->type = 'Collection';
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(SeriesCounters::class, 'Google_Service_KitchSink_SeriesCounters');
-=== end: KitchSink/SeriesCounters.php
-=== begin: KitchSink/SeriesCountersCounters.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
+use Google\Service\KitchSink\Geometry
 
-namespace Google\Service\KitchSink;
-
-class SeriesCountersCounters extends \Google\Model
+class GeometryPolygon extends Geometry
 {
-  protected $internal_gapi_mappings = [
-        "allVotes" => "all-votes",
-  ];
-  /**
-   * @var int
-   */
-  public $allVotes;
+  /** @var string */
+  public $coordinates;
 
-  /**
-   * @param int
-   */
-  public function setAllVotes($allVotes)
+  /** @param string */
+  public function setCoordinates($coordinates)
   {
-    $this->allVotes = $allVotes;
+    $this->coordinates = $coordinates;
   }
-  /**
-   * @return int
-   */
-  public function getAllVotes()
+  /** @return string */
+  public function getCoordinates()
   {
-    return $this->allVotes;
+    return $this->coordinates;
+  }
+  protected function gapiInit()
+  {
+    $this->type = 'Polygon';
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(SeriesCountersCounters::class, 'Google_Service_KitchSink_SeriesCountersCounters');
-=== end: KitchSink/SeriesCountersCounters.php
-=== begin: KitchSink/SeriesId.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
+use Google\Service\KitchSink\Geometry
 
-namespace Google\Service\KitchSink;
-
-class SeriesId extends \Google\Model
+class GeometryReference extends Geometry
 {
-  /**
-   * @var int
-   */
-  public $seriesId;
+  /** @var string */
+  public $coordinates;
 
-  /**
-   * @param int
-   */
-  public function setSeriesId($seriesId)
+  /** @param string */
+  public function setCoordinates($coordinates)
   {
-    $this->seriesId = $seriesId;
+    $this->coordinates = $coordinates;
   }
-  /**
-   * @return int
-   */
-  public function getSeriesId()
+  /** @return string */
+  public function getCoordinates()
   {
-    return $this->seriesId;
+    return $this->coordinates;
+  }
+  protected function gapiInit()
+  {
+    $this->type = 'Ref';
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(SeriesId::class, 'Google_Service_KitchSink_SeriesId');
-=== end: KitchSink/SeriesId.php
-=== begin: KitchSink/SeriesList.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
-class SeriesList extends \Google\Collection
+class KitchSinkReadOnly extends \Google\Model
 {
-  protected $collection_key = 'items';
-  protected $itemsType = Series::class;
-  protected $itemsDataType = 'array';
-  /**
-   * @var string
-   */
-  public $kind;
+  /** @var string */
+  public $name;
 
-  /**
-   * @param Series[]
-   */
-  public function setItems($items)
+  /** @param string */
+  public function setName($name)
   {
-    $this->items = $items;
+    $this->name = $name;
   }
-  /**
-   * @return Series[]
-   */
-  public function getItems()
+  /** @return string */
+  public function getName()
   {
-    return $this->items;
-  }
-  /**
-   * @param string
-   */
-  public function setKind($kind)
-  {
-    $this->kind = $kind;
-  }
-  /**
-   * @return string
-   */
-  public function getKind()
-  {
-    return $this->kind;
+    return $this->name;
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(SeriesList::class, 'Google_Service_KitchSink_SeriesList');
-=== end: KitchSink/SeriesList.php
-=== begin: KitchSink/Submission.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
-class Submission extends \Google\Collection
+class LatLong extends \Google\Model
 {
-  protected $collection_key = 'topics';
-  protected $internal_gapi_mappings = [
-        "attachmentUrl" => "@attachmentUrl",
-  ];
-  /**
-   * @var string
-   */
-  public $attachmentUrl;
-  protected $attributionType = SubmissionAttribution::class;
-  protected $attributionDataType = '';
-  /**
-   * @var string
-   */
-  public $author;
-  protected $countersType = SubmissionCounters::class;
-  protected $countersDataType = '';
-  /**
-   * @var int
-   */
-  public $created;
-  protected $geoType = LatLong::class;
-  protected $geoDataType = 'array';
-  protected $idType = SubmissionId::class;
-  protected $idDataType = '';
-  /**
-   * @var string
-   */
-  public $kind;
-  protected $parentSubmissionIdType = SubmissionParentSubmissionId::class;
-  protected $parentSubmissionIdDataType = '';
-  /**
-   * @var string
-   */
-  public $text;
-  protected $topicsType = ModeratorTopicsResourcePartial::class;
-  protected $topicsDataType = 'array';
-  protected $translationsType = Translation::class;
-  protected $translationsDataType = 'map';
-
-  /**
-   * @param string
-   */
-  public function setAttachmentUrl($attachmentUrl)
-  {
-    $this->attachmentUrl = $attachmentUrl;
-  }
-  /**
-   * @return string
-   */
-  public function getAttachmentUrl()
-  {
-    return $this->attachmentUrl;
-  }
-  /**
-   * @param SubmissionAttribution
-   */
-  public function setAttribution(SubmissionAttribution $attribution)
-  {
-    $this->attribution = $attribution;
-  }
-  /**
-   * @return SubmissionAttribution
-   */
-  public function getAttribution()
-  {
-    return $this->attribution;
-  }
-  /**
-   * @param string
-   */
-  public function setAuthor($author)
-  {
-    $this->author = $author;
-  }
-  /**
-   * @return string
-   */
-  public function getAuthor()
-  {
-    return $this->author;
-  }
-  /**
-   * @param SubmissionCounters
-   */
-  public function setCounters(SubmissionCounters $counters)
-  {
-    $this->counters = $counters;
-  }
-  /**
-   * @return SubmissionCounters
-   */
-  public function getCounters()
-  {
-    return $this->counters;
-  }
-  /**
-   * @param int
-   */
-  public function setCreated($created)
-  {
-    $this->created = $created;
-  }
-  /**
-   * @return int
-   */
-  public function getCreated()
-  {
-    return $this->created;
-  }
-  /**
-   * @param LatLong[]
-   */
-  public function setGeo($geo)
-  {
-    $this->geo = $geo;
-  }
-  /**
-   * @return LatLong[]
-   */
-  public function getGeo()
-  {
-    return $this->geo;
-  }
-  /**
-   * @param SubmissionId
-   */
-  public function setId(SubmissionId $id)
-  {
-    $this->id = $id;
-  }
-  /**
-   * @return SubmissionId
-   */
-  public function getId()
-  {
-    return $this->id;
-  }
-  /**
-   * @param string
-   */
-  public function setKind($kind)
-  {
-    $this->kind = $kind;
-  }
-  /**
-   * @return string
-   */
-  public function getKind()
-  {
-    return $this->kind;
-  }
-  /**
-   * @param SubmissionParentSubmissionId
-   */
-  public function setParentSubmissionId(SubmissionParentSubmissionId $parentSubmissionId)
-  {
-    $this->parentSubmissionId = $parentSubmissionId;
-  }
-  /**
-   * @return SubmissionParentSubmissionId
-   */
-  public function getParentSubmissionId()
-  {
-    return $this->parentSubmissionId;
-  }
-  /**
-   * @param string
-   */
-  public function setText($text)
-  {
-    $this->text = $text;
-  }
-  /**
-   * @return string
-   */
-  public function getText()
-  {
-    return $this->text;
-  }
-  /**
-   * @param ModeratorTopicsResourcePartial[]
-   */
-  public function setTopics($topics)
-  {
-    $this->topics = $topics;
-  }
-  /**
-   * @return ModeratorTopicsResourcePartial[]
-   */
-  public function getTopics()
-  {
-    return $this->topics;
-  }
-  /**
-   * @param Translation[]
-   */
-  public function setTranslations($translations)
-  {
-    $this->translations = $translations;
-  }
-  /**
-   * @return Translation[]
-   */
-  public function getTranslations()
-  {
-    return $this->translations;
-  }
-}
-
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(Submission::class, 'Google_Service_KitchSink_Submission');
-=== end: KitchSink/Submission.php
-=== begin: KitchSink/SubmissionAttribution.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
-class SubmissionAttribution extends \Google\Model
-{
-  protected $internal_gapi_mappings = [
-        "avatarUrl" => "$avatarUrl",
-        "object" => "$object",
-  ];
-  /**
-   * @var string
-   */
-  public $avatarUrl;
-  /**
-   * @var string
-   */
-  public $object;
-  /**
-   * @var string
-   */
+  public $latitude;
+  /** @var string */
   public $location;
+  public $longitude;
 
-  /**
-   * @param string
-   */
-  public function setAvatarUrl($avatarUrl)
+  public function setLatitude($latitude)
   {
-    $this->avatarUrl = $avatarUrl;
+    $this->latitude = $latitude;
   }
-  /**
-   * @return string
-   */
-  public function getAvatarUrl()
+  public function getLatitude()
   {
-    return $this->avatarUrl;
+    return $this->latitude;
   }
-  /**
-   * @param string
-   */
-  public function setObject($object)
-  {
-    $this->object = $object;
-  }
-  /**
-   * @return string
-   */
-  public function getObject()
-  {
-    return $this->object;
-  }
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setLocation($location)
   {
     $this->location = $location;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
+  public function getLocation()
+  {
+    return $this->location;
+  }
+  public function setLongitude($longitude)
+  {
+    $this->longitude = $longitude;
+  }
+  public function getLongitude()
+  {
+    return $this->longitude;
+  }
+}
+
+class ModeratorTopicsResourcePartial extends \Google\Model
+{
+}
+
+class Profile extends \Google\Model
+{
+  /** @var ProfileAttribution */
+  public $attribution;
+  /** @var ProfileId */
+  public $id;
+  /** @var string */
+  public $kind;
+  protected $attributionType = ProfileAttribution::class;
+  protected $attributionDataType = '';
+  protected $idType = ProfileId::class;
+  protected $idDataType = '';
+  /** @param ProfileAttribution */
+  public function setAttribution(ProfileAttribution $attribution)
+  {
+    $this->attribution = $attribution;
+  }
+  /** @return ProfileAttribution */
+  public function getAttribution()
+  {
+    return $this->attribution;
+  }
+  /** @param ProfileId */
+  public function setId(ProfileId $id)
+  {
+    $this->id = $id;
+  }
+  /** @return ProfileId */
+  public function getId()
+  {
+    return $this->id;
+  }
+  /** @param string */
+  public function setKind($kind)
+  {
+    $this->kind = $kind;
+  }
+  /** @return string */
+  public function getKind()
+  {
+    return $this->kind;
+  }
+}
+
+class ProfileAttribution extends \Google\Model
+{
+  /** @var string */
+  public $avatarUrl;
+  /** @var string */
+  public $displayName;
+  /** @var LatLong */
+  public $geo;
+  /** @var string */
+  public $location;
+  protected $geoType = LatLong::class;
+  protected $geoDataType = '';
+  /** @param string */
+  public function setAvatarUrl($avatarUrl)
+  {
+    $this->avatarUrl = $avatarUrl;
+  }
+  /** @return string */
+  public function getAvatarUrl()
+  {
+    return $this->avatarUrl;
+  }
+  /** @param string */
+  public function setDisplayName($displayName)
+  {
+    $this->displayName = $displayName;
+  }
+  /** @return string */
+  public function getDisplayName()
+  {
+    return $this->displayName;
+  }
+  /** @param LatLong */
+  public function setGeo(LatLong $geo)
+  {
+    $this->geo = $geo;
+  }
+  /** @return LatLong */
+  public function getGeo()
+  {
+    return $this->geo;
+  }
+  /** @param string */
+  public function setLocation($location)
+  {
+    $this->location = $location;
+  }
+  /** @return string */
   public function getLocation()
   {
     return $this->location;
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(SubmissionAttribution::class, 'Google_Service_KitchSink_SubmissionAttribution');
-=== end: KitchSink/SubmissionAttribution.php
-=== begin: KitchSink/SubmissionCounters.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
-class SubmissionCounters extends \Google\Model
+class ProfileId extends \Google\Model
 {
+  /** @var string */
+  public $user;
+
+  /** @param string */
+  public function setUser($user)
+  {
+    $this->user = $user;
+  }
+  /** @return string */
+  public function getUser()
+  {
+    return $this->user;
+  }
+}
+
+class Rule extends \Google\Model
+{
+  /** @var RuleSubmissions */
+  public $submissions;
+  protected $submissionsType = RuleSubmissions::class;
+  protected $submissionsDataType = '';
+  /** @param RuleSubmissions */
+  public function setSubmissions(RuleSubmissions $submissions)
+  {
+    $this->submissions = $submissions;
+  }
+  /** @return RuleSubmissions */
+  public function getSubmissions()
+  {
+    return $this->submissions;
+  }
+}
+
+class RuleSubmissions extends \Google\Model
+{
+  /** @var int */
+  public $close;
+  /** @var int */
+  public $open;
+
+  /** @param int */
+  public function setClose($close)
+  {
+    $this->close = $close;
+  }
+  /** @return int */
+  public function getClose()
+  {
+    return $this->close;
+  }
+  /** @param int */
+  public function setOpen($open)
+  {
+    $this->open = $open;
+  }
+  /** @return int */
+  public function getOpen()
+  {
+    return $this->open;
+  }
+}
+
+class Series extends \Google\Model
+{
+  /** @var bool */
+  public $anonymousSubmissionAllowed;
+  /** @var SeriesCounters */
+  public $counters;
+  /** @var string */
+  public $description;
+  /** @var SeriesId */
+  public $id;
+  /** @var string */
+  public $kind;
+  /** @var string */
+  public $name;
+  /** @var int */
+  public $numTopics;
+  /** @var bool */
+  public $videoSubmissionAllowed;
+  protected $countersType = SeriesCounters::class;
+  protected $countersDataType = '';
+  protected $idType = SeriesId::class;
+  protected $idDataType = '';
+  /** @param bool */
+  public function setAnonymousSubmissionAllowed($anonymousSubmissionAllowed)
+  {
+    $this->anonymousSubmissionAllowed = $anonymousSubmissionAllowed;
+  }
+  /** @return bool */
+  public function getAnonymousSubmissionAllowed()
+  {
+    return $this->anonymousSubmissionAllowed;
+  }
+  /** @param SeriesCounters */
+  public function setCounters(SeriesCounters $counters)
+  {
+    $this->counters = $counters;
+  }
+  /** @return SeriesCounters */
+  public function getCounters()
+  {
+    return $this->counters;
+  }
+  /** @param string */
+  public function setDescription($description)
+  {
+    $this->description = $description;
+  }
+  /** @return string */
+  public function getDescription()
+  {
+    return $this->description;
+  }
+  /** @param SeriesId */
+  public function setId(SeriesId $id)
+  {
+    $this->id = $id;
+  }
+  /** @return SeriesId */
+  public function getId()
+  {
+    return $this->id;
+  }
+  /** @param string */
+  public function setKind($kind)
+  {
+    $this->kind = $kind;
+  }
+  /** @return string */
+  public function getKind()
+  {
+    return $this->kind;
+  }
+  /** @param string */
+  public function setName($name)
+  {
+    $this->name = $name;
+  }
+  /** @return string */
+  public function getName()
+  {
+    return $this->name;
+  }
+  /** @param int */
+  public function setNumTopics($numTopics)
+  {
+    $this->numTopics = $numTopics;
+  }
+  /** @return int */
+  public function getNumTopics()
+  {
+    return $this->numTopics;
+  }
+  /** @param bool */
+  public function setVideoSubmissionAllowed($videoSubmissionAllowed)
+  {
+    $this->videoSubmissionAllowed = $videoSubmissionAllowed;
+  }
+  /** @return bool */
+  public function getVideoSubmissionAllowed()
+  {
+    return $this->videoSubmissionAllowed;
+  }
+}
+
+class SeriesCounters extends \Google\Model
+{
+  /** @var int */
+  public $anonymousSubmissions;
+  /** @var SeriesCountersCounters */
+  public $counters;
+  /** @var int */
+  public $else;
+  /** @var int */
+  public $minusVotes;
+  /** @var string */
+  public $noneVotes;
+  /** @var int */
+  public $plusVotes;
+  /** @var int */
+  public $submissions;
+  /** @var string */
+  public $users;
   protected $internal_gapi_mappings = [
         "minusVotes" => "minus_votes",
         "noneVotes" => "none_votes",
         "plusVotes" => "plus_votes",
   ];
-  /**
-   * @var int
-   */
-  public $minusVotes;
-  /**
-   * @var int
-   */
-  public $noneVotes;
-  /**
-   * @var int
-   */
-  public $plusVotes;
-
-  /**
-   * @param int
-   */
+  protected $countersType = SeriesCountersCounters::class;
+  protected $countersDataType = '';
+  /** @param int */
+  public function setAnonymousSubmissions($anonymousSubmissions)
+  {
+    $this->anonymousSubmissions = $anonymousSubmissions;
+  }
+  /** @return int */
+  public function getAnonymousSubmissions()
+  {
+    return $this->anonymousSubmissions;
+  }
+  /** @param SeriesCountersCounters */
+  public function setCounters(SeriesCountersCounters $counters)
+  {
+    $this->counters = $counters;
+  }
+  /** @return SeriesCountersCounters */
+  public function getCounters()
+  {
+    return $this->counters;
+  }
+  /** @param int */
+  public function setElse($else)
+  {
+    $this->else = $else;
+  }
+  /** @return int */
+  public function getElse()
+  {
+    return $this->else;
+  }
+  /** @param int */
   public function setMinusVotes($minusVotes)
   {
     $this->minusVotes = $minusVotes;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getMinusVotes()
   {
     return $this->minusVotes;
   }
-  /**
-   * @param int
-   */
+  /** @param string */
   public function setNoneVotes($noneVotes)
   {
     $this->noneVotes = $noneVotes;
   }
-  /**
-   * @return int
-   */
+  /** @return string */
   public function getNoneVotes()
   {
     return $this->noneVotes;
   }
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setPlusVotes($plusVotes)
   {
     $this->plusVotes = $plusVotes;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
+  public function getPlusVotes()
+  {
+    return $this->plusVotes;
+  }
+  /** @param int */
+  public function setSubmissions($submissions)
+  {
+    $this->submissions = $submissions;
+  }
+  /** @return int */
+  public function getSubmissions()
+  {
+    return $this->submissions;
+  }
+  /** @param string */
+  public function setUsers($users)
+  {
+    $this->users = $users;
+  }
+  /** @return string */
+  public function getUsers()
+  {
+    return $this->users;
+  }
+}
+
+class SeriesCountersCounters extends \Google\Model
+{
+  /** @var int */
+  public $allVotes;
+  protected $internal_gapi_mappings = [
+        "allVotes" => "all-votes",
+  ];
+  /** @param int */
+  public function setAllVotes($allVotes)
+  {
+    $this->allVotes = $allVotes;
+  }
+  /** @return int */
+  public function getAllVotes()
+  {
+    return $this->allVotes;
+  }
+}
+
+class SeriesId extends \Google\Model
+{
+  /** @var int */
+  public $seriesId;
+
+  /** @param int */
+  public function setSeriesId($seriesId)
+  {
+    $this->seriesId = $seriesId;
+  }
+  /** @return int */
+  public function getSeriesId()
+  {
+    return $this->seriesId;
+  }
+}
+
+class SeriesList extends \Google\Collection
+{
+  /** @var Series[] */
+  public $items;
+  /** @var string */
+  public $kind;
+  protected $collection_key = 'items';
+  protected $itemsType = Series::class;
+  protected $itemsDataType = 'array';
+  /** @param Series[] */
+  public function setItems($items)
+  {
+    $this->items = $items;
+  }
+  /** @return Series[] */
+  public function getItems()
+  {
+    return $this->items;
+  }
+  /** @param string */
+  public function setKind($kind)
+  {
+    $this->kind = $kind;
+  }
+  /** @return string */
+  public function getKind()
+  {
+    return $this->kind;
+  }
+}
+
+class Submission extends \Google\Collection
+{
+  /** @var string */
+  public $attachmentUrl;
+  /** @var SubmissionAttribution */
+  public $attribution;
+  /** @var string */
+  public $author;
+  /** @var SubmissionCounters */
+  public $counters;
+  /** @var int */
+  public $created;
+  /** @var LatLong[] */
+  public $geo;
+  /** @var SubmissionId */
+  public $id;
+  /** @var string */
+  public $kind;
+  /** @var SubmissionParentSubmissionId */
+  public $parentSubmissionId;
+  /** @var string */
+  public $text;
+  /** @var ModeratorTopicsResourcePartial[] */
+  public $topics;
+  /** @var Translation[] */
+  public $translations;
+  protected $collection_key = 'topics';
+  protected $internal_gapi_mappings = [
+        "attachmentUrl" => "@attachmentUrl",
+  ];
+  protected $attributionType = SubmissionAttribution::class;
+  protected $attributionDataType = '';
+  protected $countersType = SubmissionCounters::class;
+  protected $countersDataType = '';
+  protected $geoType = LatLong::class;
+  protected $geoDataType = 'array';
+  protected $idType = SubmissionId::class;
+  protected $idDataType = '';
+  protected $parentSubmissionIdType = SubmissionParentSubmissionId::class;
+  protected $parentSubmissionIdDataType = '';
+  protected $topicsType = ModeratorTopicsResourcePartial::class;
+  protected $topicsDataType = 'array';
+  protected $translationsType = Translation::class;
+  protected $translationsDataType = 'map';
+  /** @param string */
+  public function setAttachmentUrl($attachmentUrl)
+  {
+    $this->attachmentUrl = $attachmentUrl;
+  }
+  /** @return string */
+  public function getAttachmentUrl()
+  {
+    return $this->attachmentUrl;
+  }
+  /** @param SubmissionAttribution */
+  public function setAttribution(SubmissionAttribution $attribution)
+  {
+    $this->attribution = $attribution;
+  }
+  /** @return SubmissionAttribution */
+  public function getAttribution()
+  {
+    return $this->attribution;
+  }
+  /** @param string */
+  public function setAuthor($author)
+  {
+    $this->author = $author;
+  }
+  /** @return string */
+  public function getAuthor()
+  {
+    return $this->author;
+  }
+  /** @param SubmissionCounters */
+  public function setCounters(SubmissionCounters $counters)
+  {
+    $this->counters = $counters;
+  }
+  /** @return SubmissionCounters */
+  public function getCounters()
+  {
+    return $this->counters;
+  }
+  /** @param int */
+  public function setCreated($created)
+  {
+    $this->created = $created;
+  }
+  /** @return int */
+  public function getCreated()
+  {
+    return $this->created;
+  }
+  /** @param LatLong[] */
+  public function setGeo($geo)
+  {
+    $this->geo = $geo;
+  }
+  /** @return LatLong[] */
+  public function getGeo()
+  {
+    return $this->geo;
+  }
+  /** @param SubmissionId */
+  public function setId(SubmissionId $id)
+  {
+    $this->id = $id;
+  }
+  /** @return SubmissionId */
+  public function getId()
+  {
+    return $this->id;
+  }
+  /** @param string */
+  public function setKind($kind)
+  {
+    $this->kind = $kind;
+  }
+  /** @return string */
+  public function getKind()
+  {
+    return $this->kind;
+  }
+  /** @param SubmissionParentSubmissionId */
+  public function setParentSubmissionId(SubmissionParentSubmissionId $parentSubmissionId)
+  {
+    $this->parentSubmissionId = $parentSubmissionId;
+  }
+  /** @return SubmissionParentSubmissionId */
+  public function getParentSubmissionId()
+  {
+    return $this->parentSubmissionId;
+  }
+  /** @param string */
+  public function setText($text)
+  {
+    $this->text = $text;
+  }
+  /** @return string */
+  public function getText()
+  {
+    return $this->text;
+  }
+  /** @param ModeratorTopicsResourcePartial[] */
+  public function setTopics($topics)
+  {
+    $this->topics = $topics;
+  }
+  /** @return ModeratorTopicsResourcePartial[] */
+  public function getTopics()
+  {
+    return $this->topics;
+  }
+  /** @param Translation[] */
+  public function setTranslations($translations)
+  {
+    $this->translations = $translations;
+  }
+  /** @return Translation[] */
+  public function getTranslations()
+  {
+    return $this->translations;
+  }
+}
+
+class SubmissionAttribution extends \Google\Model
+{
+  /** @var string */
+  public $avatarUrl;
+  /** @var string */
+  public $object;
+  /** @var string */
+  public $location;
+  protected $internal_gapi_mappings = [
+        "avatarUrl" => "$avatarUrl",
+        "object" => "$object",
+  ];
+  /** @param string */
+  public function setAvatarUrl($avatarUrl)
+  {
+    $this->avatarUrl = $avatarUrl;
+  }
+  /** @return string */
+  public function getAvatarUrl()
+  {
+    return $this->avatarUrl;
+  }
+  /** @param string */
+  public function setObject($object)
+  {
+    $this->object = $object;
+  }
+  /** @return string */
+  public function getObject()
+  {
+    return $this->object;
+  }
+  /** @param string */
+  public function setLocation($location)
+  {
+    $this->location = $location;
+  }
+  /** @return string */
+  public function getLocation()
+  {
+    return $this->location;
+  }
+}
+
+class SubmissionCounters extends \Google\Model
+{
+  /** @var int */
+  public $minusVotes;
+  /** @var int */
+  public $noneVotes;
+  /** @var int */
+  public $plusVotes;
+  protected $internal_gapi_mappings = [
+        "minusVotes" => "minus_votes",
+        "noneVotes" => "none_votes",
+        "plusVotes" => "plus_votes",
+  ];
+  /** @param int */
+  public function setMinusVotes($minusVotes)
+  {
+    $this->minusVotes = $minusVotes;
+  }
+  /** @return int */
+  public function getMinusVotes()
+  {
+    return $this->minusVotes;
+  }
+  /** @param int */
+  public function setNoneVotes($noneVotes)
+  {
+    $this->noneVotes = $noneVotes;
+  }
+  /** @return int */
+  public function getNoneVotes()
+  {
+    return $this->noneVotes;
+  }
+  /** @param int */
+  public function setPlusVotes($plusVotes)
+  {
+    $this->plusVotes = $plusVotes;
+  }
+  /** @return int */
   public function getPlusVotes()
   {
     return $this->plusVotes;
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(SubmissionCounters::class, 'Google_Service_KitchSink_SubmissionCounters');
-=== end: KitchSink/SubmissionCounters.php
-=== begin: KitchSink/SubmissionId.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
 class SubmissionId extends \Google\Model
 {
-  /**
-   * @var int
-   */
+  /** @var int */
   public $seriesId;
-  /**
-   * @var int
-   */
+  /** @var int */
   public $submissionId;
 
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setSeriesId($seriesId)
   {
     $this->seriesId = $seriesId;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getSeriesId()
   {
     return $this->seriesId;
   }
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setSubmissionId($submissionId)
   {
     $this->submissionId = $submissionId;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getSubmissionId()
   {
     return $this->submissionId;
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(SubmissionId::class, 'Google_Service_KitchSink_SubmissionId');
-=== end: KitchSink/SubmissionId.php
-=== begin: KitchSink/SubmissionList.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
 class SubmissionList extends \Google\Collection
 {
+  /** @var Submission[] */
+  public $items;
+  /** @var string */
+  public $kind;
   protected $collection_key = 'items';
   protected $itemsType = Submission::class;
   protected $itemsDataType = 'array';
-  /**
-   * @var string
-   */
-  public $kind;
-
-  /**
-   * @param Submission[]
-   */
+  /** @param Submission[] */
   public function setItems($items)
   {
     $this->items = $items;
   }
-  /**
-   * @return Submission[]
-   */
+  /** @return Submission[] */
   public function getItems()
   {
     return $this->items;
   }
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setKind($kind)
   {
     $this->kind = $kind;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getKind()
   {
     return $this->kind;
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(SubmissionList::class, 'Google_Service_KitchSink_SubmissionList');
-=== end: KitchSink/SubmissionList.php
-=== begin: KitchSink/SubmissionParentSubmissionId.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
 class SubmissionParentSubmissionId extends \Google\Model
 {
-  /**
-   * @var int
-   */
+  /** @var int */
   public $seriesId;
-  /**
-   * @var int
-   */
+  /** @var int */
   public $submissionId;
 
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setSeriesId($seriesId)
   {
     $this->seriesId = $seriesId;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getSeriesId()
   {
     return $this->seriesId;
   }
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setSubmissionId($submissionId)
   {
     $this->submissionId = $submissionId;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getSubmissionId()
   {
     return $this->submissionId;
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(SubmissionParentSubmissionId::class, 'Google_Service_KitchSink_SubmissionParentSubmissionId');
-=== end: KitchSink/SubmissionParentSubmissionId.php
-=== begin: KitchSink/Tag.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
 class Tag extends \Google\Model
 {
+  /** @var Geometry */
+  public $geometry;
+  /** @var TagId */
+  public $id;
+  /** @var string */
+  public $kind;
+  /** @var string */
+  public $text;
   protected $geometryType = Geometry::class;
   protected $geometryDataType = '';
   protected $idType = TagId::class;
   protected $idDataType = '';
-  /**
-   * @var string
-   */
-  public $kind;
-  /**
-   * @var string
-   */
-  public $text;
-
-  /**
-   * @param Geometry
-   */
+  /** @param Geometry */
   public function setGeometry(Geometry $geometry)
   {
     $this->geometry = $geometry;
   }
-  /**
-   * @return Geometry
-   */
+  /** @return Geometry */
   public function getGeometry()
   {
     return $this->geometry;
   }
-  /**
-   * @param TagId
-   */
+  /** @param TagId */
   public function setId(TagId $id)
   {
     $this->id = $id;
   }
-  /**
-   * @return TagId
-   */
+  /** @return TagId */
   public function getId()
   {
     return $this->id;
   }
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setKind($kind)
   {
     $this->kind = $kind;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getKind()
   {
     return $this->kind;
   }
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setText($text)
   {
     $this->text = $text;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getText()
   {
     return $this->text;
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(Tag::class, 'Google_Service_KitchSink_Tag');
-=== end: KitchSink/Tag.php
-=== begin: KitchSink/TagId.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
 class TagId extends \Google\Model
 {
-  /**
-   * @var int
-   */
+  /** @var int */
   public $seriesId;
-  /**
-   * @var int
-   */
+  /** @var int */
   public $submissionId;
-  /**
-   * @var string
-   */
+  /** @var string */
   public $tag;
 
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setSeriesId($seriesId)
   {
     $this->seriesId = $seriesId;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getSeriesId()
   {
     return $this->seriesId;
   }
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setSubmissionId($submissionId)
   {
     $this->submissionId = $submissionId;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getSubmissionId()
   {
     return $this->submissionId;
   }
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setTag($tag)
   {
     $this->tag = $tag;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getTag()
   {
     return $this->tag;
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(TagId::class, 'Google_Service_KitchSink_TagId');
-=== end: KitchSink/TagId.php
-=== begin: KitchSink/Topic.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
 class Topic extends \Google\Model
 {
+  /** @var TopicCounters */
+  public $counters;
+  /** @var string */
+  public $description;
+  /** @var TopicId */
+  public $id;
+  /** @var string */
+  public $kind;
+  /** @var string */
+  public $name;
+  /** @var string */
+  public $presenter;
+  /** @var TopicRules */
+  public $rules;
   protected $countersType = TopicCounters::class;
   protected $countersDataType = '';
-  /**
-   * @var string
-   */
-  public $description;
   protected $idType = TopicId::class;
   protected $idDataType = '';
-  /**
-   * @var string
-   */
-  public $kind;
-  /**
-   * @var string
-   */
-  public $name;
-  /**
-   * @var string
-   */
-  public $presenter;
   protected $rulesType = TopicRules::class;
   protected $rulesDataType = '';
-
-  /**
-   * @param TopicCounters
-   */
+  /** @param TopicCounters */
   public function setCounters(TopicCounters $counters)
   {
     $this->counters = $counters;
   }
-  /**
-   * @return TopicCounters
-   */
+  /** @return TopicCounters */
   public function getCounters()
   {
     return $this->counters;
   }
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setDescription($description)
   {
     $this->description = $description;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getDescription()
   {
     return $this->description;
   }
-  /**
-   * @param TopicId
-   */
+  /** @param TopicId */
   public function setId(TopicId $id)
   {
     $this->id = $id;
   }
-  /**
-   * @return TopicId
-   */
+  /** @return TopicId */
   public function getId()
   {
     return $this->id;
   }
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setKind($kind)
   {
     $this->kind = $kind;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getKind()
   {
     return $this->kind;
   }
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setName($name)
   {
     $this->name = $name;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getName()
   {
     return $this->name;
   }
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setPresenter($presenter)
   {
     $this->presenter = $presenter;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getPresenter()
   {
     return $this->presenter;
   }
-  /**
-   * @param TopicRules
-   */
+  /** @param TopicRules */
   public function setRules(TopicRules $rules)
   {
     $this->rules = $rules;
   }
-  /**
-   * @return TopicRules
-   */
+  /** @return TopicRules */
   public function getRules()
   {
     return $this->rules;
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(Topic::class, 'Google_Service_KitchSink_Topic');
-=== end: KitchSink/Topic.php
-=== begin: KitchSink/Topic2.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
 class Topic2 extends \Google\Collection
 {
+  /** @var Topic2Counters */
+  public $counters;
+  /** @var string */
+  public $description;
+  /** @var Submission */
+  public $featuredSubmission;
+  /** @var Topic2Id */
+  public $id;
+  /** @var string */
+  public $kind;
+  /** @var string */
+  public $name;
+  /** @var string */
+  public $presenter;
+  /** @var Rule[] */
+  public $rules;
   protected $collection_key = 'rules';
   protected $countersType = Topic2Counters::class;
   protected $countersDataType = '';
-  /**
-   * @var string
-   */
-  public $description;
   protected $featuredSubmissionType = Submission::class;
   protected $featuredSubmissionDataType = '';
   protected $idType = Topic2Id::class;
   protected $idDataType = '';
-  /**
-   * @var string
-   */
-  public $kind;
-  /**
-   * @var string
-   */
-  public $name;
-  /**
-   * @var string
-   */
-  public $presenter;
   protected $rulesType = Rule::class;
   protected $rulesDataType = 'array';
-
-  /**
-   * @param Topic2Counters
-   */
+  /** @param Topic2Counters */
   public function setCounters(Topic2Counters $counters)
   {
     $this->counters = $counters;
   }
-  /**
-   * @return Topic2Counters
-   */
+  /** @return Topic2Counters */
   public function getCounters()
   {
     return $this->counters;
   }
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setDescription($description)
   {
     $this->description = $description;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getDescription()
   {
     return $this->description;
   }
-  /**
-   * @param Submission
-   */
+  /** @param Submission */
   public function setFeaturedSubmission(Submission $featuredSubmission)
   {
     $this->featuredSubmission = $featuredSubmission;
   }
-  /**
-   * @return Submission
-   */
+  /** @return Submission */
   public function getFeaturedSubmission()
   {
     return $this->featuredSubmission;
   }
-  /**
-   * @param Topic2Id
-   */
+  /** @param Topic2Id */
   public function setId(Topic2Id $id)
   {
     $this->id = $id;
   }
-  /**
-   * @return Topic2Id
-   */
+  /** @return Topic2Id */
   public function getId()
   {
     return $this->id;
   }
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setKind($kind)
   {
     $this->kind = $kind;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getKind()
   {
     return $this->kind;
   }
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setName($name)
   {
     $this->name = $name;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getName()
   {
     return $this->name;
   }
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setPresenter($presenter)
   {
     $this->presenter = $presenter;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getPresenter()
   {
     return $this->presenter;
   }
-  /**
-   * @param Rule[]
-   */
+  /** @param Rule[] */
   public function setRules($rules)
   {
     $this->rules = $rules;
   }
-  /**
-   * @return Rule[]
-   */
+  /** @return Rule[] */
   public function getRules()
   {
     return $this->rules;
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(Topic2::class, 'Google_Service_KitchSink_Topic2');
-=== end: KitchSink/Topic2.php
-=== begin: KitchSink/Topic2Counters.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
 class Topic2Counters extends \Google\Model
 {
+  /** @var int */
+  public $minusVotes;
+  /** @var int */
+  public $noneVotes;
+  /** @var int */
+  public $plusVotes;
+  /** @var int */
+  public $submissions;
+  /** @var int */
+  public $users;
+  /** @var int */
+  public $videoSubmissions;
   protected $internal_gapi_mappings = [
         "minusVotes" => "minus_votes",
         "noneVotes" => "none_votes",
         "plusVotes" => "plus_votes",
   ];
-  /**
-   * @var int
-   */
-  public $minusVotes;
-  /**
-   * @var int
-   */
-  public $noneVotes;
-  /**
-   * @var int
-   */
-  public $plusVotes;
-  /**
-   * @var int
-   */
-  public $submissions;
-  /**
-   * @var int
-   */
-  public $users;
-  /**
-   * @var int
-   */
-  public $videoSubmissions;
-
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setMinusVotes($minusVotes)
   {
     $this->minusVotes = $minusVotes;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getMinusVotes()
   {
     return $this->minusVotes;
   }
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setNoneVotes($noneVotes)
   {
     $this->noneVotes = $noneVotes;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getNoneVotes()
   {
     return $this->noneVotes;
   }
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setPlusVotes($plusVotes)
   {
     $this->plusVotes = $plusVotes;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getPlusVotes()
   {
     return $this->plusVotes;
   }
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setSubmissions($submissions)
   {
     $this->submissions = $submissions;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getSubmissions()
   {
     return $this->submissions;
   }
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setUsers($users)
   {
     $this->users = $users;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getUsers()
   {
     return $this->users;
   }
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setVideoSubmissions($videoSubmissions)
   {
     $this->videoSubmissions = $videoSubmissions;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getVideoSubmissions()
   {
     return $this->videoSubmissions;
   }
 }
-
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(Topic2Counters::class, 'Google_Service_KitchSink_Topic2Counters');
-=== end: KitchSink/Topic2Counters.php
-=== begin: KitchSink/Topic2Id.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
 
 class Topic2Id extends \Google\Model
 {
-  /**
-   * @var int
-   */
+  /** @var int */
   public $seriesId;
-  /**
-   * @var int
-   */
+  /** @var int */
   public $topicId;
 
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setSeriesId($seriesId)
   {
     $this->seriesId = $seriesId;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getSeriesId()
   {
     return $this->seriesId;
   }
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setTopicId($topicId)
   {
     $this->topicId = $topicId;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getTopicId()
   {
     return $this->topicId;
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(Topic2Id::class, 'Google_Service_KitchSink_Topic2Id');
-=== end: KitchSink/Topic2Id.php
-=== begin: KitchSink/TopicCounters.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
 class TopicCounters extends \Google\Model
 {
+  /** @var int */
+  public $minusVotes;
+  /** @var int */
+  public $noneVotes;
+  /** @var int */
+  public $plusVotes;
+  /** @var int */
+  public $submissions;
+  /** @var int */
+  public $users;
+  /** @var int */
+  public $videoSubmissions;
   protected $internal_gapi_mappings = [
         "minusVotes" => "minus_votes",
         "noneVotes" => "none_votes",
         "plusVotes" => "plus_votes",
   ];
-  /**
-   * @var int
-   */
-  public $minusVotes;
-  /**
-   * @var int
-   */
-  public $noneVotes;
-  /**
-   * @var int
-   */
-  public $plusVotes;
-  /**
-   * @var int
-   */
-  public $submissions;
-  /**
-   * @var int
-   */
-  public $users;
-  /**
-   * @var int
-   */
-  public $videoSubmissions;
-
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setMinusVotes($minusVotes)
   {
     $this->minusVotes = $minusVotes;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getMinusVotes()
   {
     return $this->minusVotes;
   }
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setNoneVotes($noneVotes)
   {
     $this->noneVotes = $noneVotes;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getNoneVotes()
   {
     return $this->noneVotes;
   }
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setPlusVotes($plusVotes)
   {
     $this->plusVotes = $plusVotes;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getPlusVotes()
   {
     return $this->plusVotes;
   }
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setSubmissions($submissions)
   {
     $this->submissions = $submissions;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getSubmissions()
   {
     return $this->submissions;
   }
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setUsers($users)
   {
     $this->users = $users;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getUsers()
   {
     return $this->users;
   }
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setVideoSubmissions($videoSubmissions)
   {
     $this->videoSubmissions = $videoSubmissions;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getVideoSubmissions()
   {
     return $this->videoSubmissions;
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(TopicCounters::class, 'Google_Service_KitchSink_TopicCounters');
-=== end: KitchSink/TopicCounters.php
-=== begin: KitchSink/TopicId.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
 class TopicId extends \Google\Model
 {
-  /**
-   * @var int
-   */
+  /** @var int */
   public $seriesId;
-  /**
-   * @var int
-   */
+  /** @var int */
   public $topicId;
 
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setSeriesId($seriesId)
   {
     $this->seriesId = $seriesId;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getSeriesId()
   {
     return $this->seriesId;
   }
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setTopicId($topicId)
   {
     $this->topicId = $topicId;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getTopicId()
   {
     return $this->topicId;
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(TopicId::class, 'Google_Service_KitchSink_TopicId');
-=== end: KitchSink/TopicId.php
-=== begin: KitchSink/TopicList.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
 class TopicList extends \Google\Collection
 {
+  /** @var Topic[] */
+  public $items;
+  /** @var string */
+  public $kind;
   protected $collection_key = 'items';
   protected $itemsType = Topic::class;
   protected $itemsDataType = 'array';
-  /**
-   * @var string
-   */
-  public $kind;
-
-  /**
-   * @param Topic[]
-   */
+  /** @param Topic[] */
   public function setItems($items)
   {
     $this->items = $items;
   }
-  /**
-   * @return Topic[]
-   */
+  /** @return Topic[] */
   public function getItems()
   {
     return $this->items;
   }
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setKind($kind)
   {
     $this->kind = $kind;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getKind()
   {
     return $this->kind;
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(TopicList::class, 'Google_Service_KitchSink_TopicList');
-=== end: KitchSink/TopicList.php
-=== begin: KitchSink/TopicRules.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
 class TopicRules extends \Google\Model
 {
+  /** @var TopicRulesSubmissions */
+  public $submissions;
+  /** @var TopicRulesVotes */
+  public $votes;
   protected $submissionsType = TopicRulesSubmissions::class;
   protected $submissionsDataType = '';
   protected $votesType = TopicRulesVotes::class;
   protected $votesDataType = '';
-
-  /**
-   * @param TopicRulesSubmissions
-   */
+  /** @param TopicRulesSubmissions */
   public function setSubmissions(TopicRulesSubmissions $submissions)
   {
     $this->submissions = $submissions;
   }
-  /**
-   * @return TopicRulesSubmissions
-   */
+  /** @return TopicRulesSubmissions */
   public function getSubmissions()
   {
     return $this->submissions;
   }
-  /**
-   * @param TopicRulesVotes
-   */
+  /** @param TopicRulesVotes */
   public function setVotes(TopicRulesVotes $votes)
   {
     $this->votes = $votes;
   }
-  /**
-   * @return TopicRulesVotes
-   */
+  /** @return TopicRulesVotes */
   public function getVotes()
   {
     return $this->votes;
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(TopicRules::class, 'Google_Service_KitchSink_TopicRules');
-=== end: KitchSink/TopicRules.php
-=== begin: KitchSink/TopicRulesSubmissions.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
 class TopicRulesSubmissions extends \Google\Model
 {
-  /**
-   * @var int
-   */
+  /** @var int */
   public $close;
-  /**
-   * @var int
-   */
+  /** @var int */
   public $open;
 
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setClose($close)
   {
     $this->close = $close;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getClose()
   {
     return $this->close;
   }
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setOpen($open)
   {
     $this->open = $open;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getOpen()
   {
     return $this->open;
   }
 }
-
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(TopicRulesSubmissions::class, 'Google_Service_KitchSink_TopicRulesSubmissions');
-=== end: KitchSink/TopicRulesSubmissions.php
-=== begin: KitchSink/TopicRulesVotes.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
 
 class TopicRulesVotes extends \Google\Model
 {
-  /**
-   * @var int
-   */
+  /** @var int */
   public $close;
-  /**
-   * @var int
-   */
+  /** @var int */
   public $open;
 
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setClose($close)
   {
     $this->close = $close;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getClose()
   {
     return $this->close;
   }
-  /**
-   * @param int
-   */
+  /** @param int */
   public function setOpen($open)
   {
     $this->open = $open;
   }
-  /**
-   * @return int
-   */
+  /** @return int */
   public function getOpen()
   {
     return $this->open;
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(TopicRulesVotes::class, 'Google_Service_KitchSink_TopicRulesVotes');
-=== end: KitchSink/TopicRulesVotes.php
-=== begin: KitchSink/Translation.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
 class Translation extends \Google\Model
 {
-  /**
-   * @var string
-   */
+  /** @var string */
   public $lang;
-  /**
-   * @var string
-   */
+  /** @var string */
   public $text;
 
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setLang($lang)
   {
     $this->lang = $lang;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getLang()
   {
     return $this->lang;
   }
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setText($text)
   {
     $this->text = $text;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getText()
   {
     return $this->text;
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(Translation::class, 'Google_Service_KitchSink_Translation');
-=== end: KitchSink/Translation.php
-=== begin: KitchSink/Vote.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
 class Vote extends \Google\Model
 {
-  /**
-   * @var string
-   */
+  /** @var string */
   public $flag;
+  /** @var VoteId */
+  public $id;
+  /** @var string */
+  public $kind;
+  /** @var string */
+  public $vote;
   protected $idType = VoteId::class;
   protected $idDataType = '';
-  /**
-   * @var string
-   */
-  public $kind;
-  /**
-   * @var string
-   */
-  public $vote;
-
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setFlag($flag)
   {
     $this->flag = $flag;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getFlag()
   {
     return $this->flag;
   }
-  /**
-   * @param VoteId
-   */
+  /** @param VoteId */
   public function setId(VoteId $id)
   {
     $this->id = $id;
   }
-  /**
-   * @return VoteId
-   */
+  /** @return VoteId */
   public function getId()
   {
     return $this->id;
   }
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setKind($kind)
   {
     $this->kind = $kind;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getKind()
   {
     return $this->kind;
   }
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setVote($vote)
   {
     $this->vote = $vote;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getVote()
   {
     return $this->vote;
   }
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(Vote::class, 'Google_Service_KitchSink_Vote');
-=== end: KitchSink/Vote.php
-=== begin: KitchSink/VoteId.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
 class VoteId extends \Google\Model
 {
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(VoteId::class, 'Google_Service_KitchSink_VoteId');
-=== end: KitchSink/VoteId.php
-=== begin: KitchSink/VoteList.php
-<?php
-/*
- * Copyright 2014 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-namespace Google\Service\KitchSink;
-
 class VoteList extends \Google\Collection
 {
+  /** @var Vote[] */
+  public $items;
+  /** @var string */
+  public $kind;
   protected $collection_key = 'items';
   protected $itemsType = Vote::class;
   protected $itemsDataType = 'array';
-  /**
-   * @var string
-   */
-  public $kind;
-
-  /**
-   * @param Vote[]
-   */
+  /** @param Vote[] */
   public function setItems($items)
   {
     $this->items = $items;
   }
-  /**
-   * @return Vote[]
-   */
+  /** @return Vote[] */
   public function getItems()
   {
     return $this->items;
   }
-  /**
-   * @param string
-   */
+  /** @param string */
   public function setKind($kind)
   {
     $this->kind = $kind;
   }
-  /**
-   * @return string
-   */
+  /** @return string */
   public function getKind()
   {
     return $this->kind;
@@ -5057,5 +3570,44 @@ class VoteList extends \Google\Collection
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.
+class_alias(Enum::class, 'Google_Service_KitchSink_Enum');
+class_alias(Geometry::class, 'Google_Service_KitchSink_Geometry');
+class_alias(GeometryCollection::class, 'Google_Service_KitchSink_GeometryCollection');
+class_alias(GeometryPolygon::class, 'Google_Service_KitchSink_GeometryPolygon');
+class_alias(GeometryReference::class, 'Google_Service_KitchSink_GeometryReference');
+class_alias(KitchSinkReadOnly::class, 'Google_Service_KitchSink_KitchSinkReadOnly');
+class_alias(LatLong::class, 'Google_Service_KitchSink_LatLong');
+class_alias(ModeratorTopicsResourcePartial::class, 'Google_Service_KitchSink_ModeratorTopicsResourcePartial');
+class_alias(Profile::class, 'Google_Service_KitchSink_Profile');
+class_alias(ProfileAttribution::class, 'Google_Service_KitchSink_ProfileAttribution');
+class_alias(ProfileId::class, 'Google_Service_KitchSink_ProfileId');
+class_alias(Rule::class, 'Google_Service_KitchSink_Rule');
+class_alias(RuleSubmissions::class, 'Google_Service_KitchSink_RuleSubmissions');
+class_alias(Series::class, 'Google_Service_KitchSink_Series');
+class_alias(SeriesCounters::class, 'Google_Service_KitchSink_SeriesCounters');
+class_alias(SeriesCountersCounters::class, 'Google_Service_KitchSink_SeriesCountersCounters');
+class_alias(SeriesId::class, 'Google_Service_KitchSink_SeriesId');
+class_alias(SeriesList::class, 'Google_Service_KitchSink_SeriesList');
+class_alias(Submission::class, 'Google_Service_KitchSink_Submission');
+class_alias(SubmissionAttribution::class, 'Google_Service_KitchSink_SubmissionAttribution');
+class_alias(SubmissionCounters::class, 'Google_Service_KitchSink_SubmissionCounters');
+class_alias(SubmissionId::class, 'Google_Service_KitchSink_SubmissionId');
+class_alias(SubmissionList::class, 'Google_Service_KitchSink_SubmissionList');
+class_alias(SubmissionParentSubmissionId::class, 'Google_Service_KitchSink_SubmissionParentSubmissionId');
+class_alias(Tag::class, 'Google_Service_KitchSink_Tag');
+class_alias(TagId::class, 'Google_Service_KitchSink_TagId');
+class_alias(Topic::class, 'Google_Service_KitchSink_Topic');
+class_alias(Topic2::class, 'Google_Service_KitchSink_Topic2');
+class_alias(Topic2Counters::class, 'Google_Service_KitchSink_Topic2Counters');
+class_alias(Topic2Id::class, 'Google_Service_KitchSink_Topic2Id');
+class_alias(TopicCounters::class, 'Google_Service_KitchSink_TopicCounters');
+class_alias(TopicId::class, 'Google_Service_KitchSink_TopicId');
+class_alias(TopicList::class, 'Google_Service_KitchSink_TopicList');
+class_alias(TopicRules::class, 'Google_Service_KitchSink_TopicRules');
+class_alias(TopicRulesSubmissions::class, 'Google_Service_KitchSink_TopicRulesSubmissions');
+class_alias(TopicRulesVotes::class, 'Google_Service_KitchSink_TopicRulesVotes');
+class_alias(Translation::class, 'Google_Service_KitchSink_Translation');
+class_alias(Vote::class, 'Google_Service_KitchSink_Vote');
+class_alias(VoteId::class, 'Google_Service_KitchSink_VoteId');
 class_alias(VoteList::class, 'Google_Service_KitchSink_VoteList');
-=== end: KitchSink/VoteList.php
+=== end: KitchSink/models.php
