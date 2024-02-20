@@ -45,6 +45,7 @@ const {{ authscope.name }} =
 {% indent 2 %}
 parent::__construct($clientOrConfig);
 $this->rootUrl = $rootUrl ?: {% literal api.rootUrl %};
+$this->rootUrlTemplate = $rootUrl ?: {% literal api.rootUrlTemplate %};
 $this->servicePath = {% literal api.servicePath %};
 {% if api.batchPath %}$this->batchPath = {% literal api.batchPath %};{% endif %}
 $this->version = {% literal api.version %};

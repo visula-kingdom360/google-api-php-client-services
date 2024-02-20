@@ -333,6 +333,7 @@ class Api(template_objects.CodeObject):
     base_path = url_parts.path
     if not root_url:
       self._api.SetTemplateValue('rootUrl', '%s://%s/' % (scheme, service_host))
+      self._api.SetTemplateValue('rootUrlTemplate', '%s://%s/' % (scheme, service_host.replace('googleapis.com', 'UNIVERSE_DOMAIN')))
     if service_path is None:
       self._api.SetTemplateValue('servicePath', base_path[1:])
 
