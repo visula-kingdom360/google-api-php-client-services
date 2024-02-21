@@ -52,6 +52,7 @@ class EccoDomaniIeri extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://peer-pontus.appspot.com/_ah/api/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://peer-pontus.appspot.com/_ah/api/';
     $this->servicePath = 'helloworld/v1/';
     $this->batchPath = 'batch';
     $this->version = 'v1';
