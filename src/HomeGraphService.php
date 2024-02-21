@@ -52,6 +52,7 @@ class HomeGraphService extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://homegraph.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://homegraph.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

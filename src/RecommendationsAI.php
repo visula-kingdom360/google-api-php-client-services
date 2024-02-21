@@ -63,6 +63,7 @@ class RecommendationsAI extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://recommendationengine.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://recommendationengine.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1beta1';

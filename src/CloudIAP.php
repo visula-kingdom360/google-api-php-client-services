@@ -54,6 +54,7 @@ class CloudIAP extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://iap.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://iap.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

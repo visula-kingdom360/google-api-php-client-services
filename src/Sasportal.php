@@ -73,6 +73,7 @@ class Sasportal extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://sasportal.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://sasportal.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1alpha1';

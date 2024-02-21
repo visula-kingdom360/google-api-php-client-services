@@ -79,6 +79,7 @@ class Dialogflow extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://dialogflow.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://dialogflow.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v3';

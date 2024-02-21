@@ -56,6 +56,7 @@ class TPU extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://tpu.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://tpu.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v2';

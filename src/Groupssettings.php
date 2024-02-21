@@ -51,6 +51,7 @@ class Groupssettings extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://www.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://www.UNIVERSE_DOMAIN/';
     $this->servicePath = 'groups/v1/groups/';
     $this->batchPath = 'batch/groupssettings/v1';
     $this->version = 'v1';

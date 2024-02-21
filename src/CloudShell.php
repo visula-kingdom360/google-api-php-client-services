@@ -53,6 +53,7 @@ class CloudShell extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://cloudshell.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://cloudshell.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

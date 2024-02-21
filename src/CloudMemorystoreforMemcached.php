@@ -55,6 +55,7 @@ class CloudMemorystoreforMemcached extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://memcache.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://memcache.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

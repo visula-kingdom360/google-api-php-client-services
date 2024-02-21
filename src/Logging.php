@@ -122,6 +122,7 @@ class Logging extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://logging.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://logging.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v2';

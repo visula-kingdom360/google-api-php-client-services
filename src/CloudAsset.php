@@ -57,6 +57,7 @@ class CloudAsset extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://cloudasset.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://cloudasset.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

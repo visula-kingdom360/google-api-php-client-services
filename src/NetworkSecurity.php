@@ -62,6 +62,7 @@ class NetworkSecurity extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://networksecurity.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://networksecurity.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

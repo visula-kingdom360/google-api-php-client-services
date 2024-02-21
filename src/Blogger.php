@@ -62,6 +62,7 @@ class Blogger extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://blogger.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://blogger.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v3';

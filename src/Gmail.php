@@ -105,6 +105,7 @@ class Gmail extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://gmail.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://gmail.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

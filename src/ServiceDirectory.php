@@ -55,6 +55,7 @@ class ServiceDirectory extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://servicedirectory.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://servicedirectory.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

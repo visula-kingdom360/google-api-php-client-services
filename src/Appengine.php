@@ -66,6 +66,7 @@ class Appengine extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://appengine.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://appengine.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

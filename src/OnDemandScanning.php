@@ -53,6 +53,7 @@ class OnDemandScanning extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://ondemandscanning.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://ondemandscanning.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

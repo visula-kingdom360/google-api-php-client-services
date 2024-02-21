@@ -74,6 +74,7 @@ class CloudIdentity extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://cloudidentity.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://cloudidentity.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

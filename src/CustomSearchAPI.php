@@ -50,6 +50,7 @@ class CustomSearchAPI extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://customsearch.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://customsearch.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

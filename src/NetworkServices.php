@@ -66,6 +66,7 @@ class NetworkServices extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://networkservices.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://networkservices.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

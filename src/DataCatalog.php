@@ -63,6 +63,7 @@ class DataCatalog extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://datacatalog.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://datacatalog.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

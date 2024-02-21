@@ -59,6 +59,7 @@ class BackupforGKE extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://gkebackup.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://gkebackup.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

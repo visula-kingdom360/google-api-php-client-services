@@ -67,6 +67,7 @@ class DataLabeling extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://datalabeling.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://datalabeling.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1beta1';

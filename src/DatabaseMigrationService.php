@@ -58,6 +58,7 @@ class DatabaseMigrationService extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://datamigration.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://datamigration.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

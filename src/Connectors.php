@@ -55,6 +55,7 @@ class Connectors extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://connectors.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://connectors.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v2';

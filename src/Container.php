@@ -61,6 +61,7 @@ class Container extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://container.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://container.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

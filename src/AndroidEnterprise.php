@@ -66,6 +66,7 @@ class AndroidEnterprise extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://androidenterprise.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://androidenterprise.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

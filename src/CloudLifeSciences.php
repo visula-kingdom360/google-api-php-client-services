@@ -54,6 +54,7 @@ class CloudLifeSciences extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://lifesciences.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://lifesciences.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v2beta';

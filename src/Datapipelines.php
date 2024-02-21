@@ -53,6 +53,7 @@ class Datapipelines extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://datapipelines.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://datapipelines.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

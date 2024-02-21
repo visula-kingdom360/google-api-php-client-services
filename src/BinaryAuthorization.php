@@ -57,6 +57,7 @@ class BinaryAuthorization extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://binaryauthorization.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://binaryauthorization.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

@@ -100,6 +100,7 @@ class YouTube extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://youtube.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://youtube.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v3';

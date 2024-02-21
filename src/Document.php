@@ -61,6 +61,7 @@ class Document extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://documentai.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://documentai.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

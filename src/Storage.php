@@ -75,6 +75,7 @@ class Storage extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://storage.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://storage.UNIVERSE_DOMAIN/';
     $this->servicePath = 'storage/v1/';
     $this->batchPath = 'batch/storage/v1';
     $this->version = 'v1';

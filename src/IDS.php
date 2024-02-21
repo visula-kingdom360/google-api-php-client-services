@@ -57,6 +57,7 @@ class IDS extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://ids.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://ids.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

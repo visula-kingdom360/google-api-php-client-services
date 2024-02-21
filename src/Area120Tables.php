@@ -68,6 +68,7 @@ class Area120Tables extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://area120tables.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://area120tables.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1alpha1';

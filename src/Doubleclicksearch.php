@@ -54,6 +54,7 @@ class Doubleclicksearch extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://doubleclicksearch.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://doubleclicksearch.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v2';

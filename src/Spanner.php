@@ -73,6 +73,7 @@ class Spanner extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://spanner.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://spanner.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

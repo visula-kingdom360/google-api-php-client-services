@@ -62,6 +62,7 @@ class Firestore extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://firestore.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://firestore.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

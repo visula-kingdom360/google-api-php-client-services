@@ -71,6 +71,7 @@ class ArtifactRegistry extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://artifactregistry.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://artifactregistry.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

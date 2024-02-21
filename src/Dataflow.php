@@ -76,6 +76,7 @@ class Dataflow extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://dataflow.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://dataflow.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1b3';

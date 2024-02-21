@@ -53,6 +53,7 @@ class CloudTasks extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://cloudtasks.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://cloudtasks.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v2';

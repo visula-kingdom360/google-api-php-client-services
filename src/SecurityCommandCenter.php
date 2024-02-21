@@ -103,6 +103,7 @@ class SecurityCommandCenter extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://securitycenter.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://securitycenter.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

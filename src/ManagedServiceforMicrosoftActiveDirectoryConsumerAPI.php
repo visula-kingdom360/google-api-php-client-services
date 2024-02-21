@@ -58,6 +58,7 @@ class ManagedServiceforMicrosoftActiveDirectoryConsumerAPI extends \Google\Servi
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://managedidentities.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://managedidentities.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

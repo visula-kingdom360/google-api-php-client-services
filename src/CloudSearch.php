@@ -96,6 +96,7 @@ class CloudSearch extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://cloudsearch.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://cloudsearch.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

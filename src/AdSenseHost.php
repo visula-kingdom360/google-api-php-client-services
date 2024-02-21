@@ -60,6 +60,7 @@ class AdSenseHost extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://www.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://www.UNIVERSE_DOMAIN/';
     $this->servicePath = 'adsensehost/v4.1/';
     $this->batchPath = 'batch/adsensehost/v4.1';
     $this->version = 'v4.1';

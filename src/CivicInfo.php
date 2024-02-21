@@ -52,6 +52,7 @@ class CivicInfo extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://civicinfo.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://civicinfo.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v2';

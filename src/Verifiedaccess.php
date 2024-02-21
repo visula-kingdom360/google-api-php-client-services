@@ -52,6 +52,7 @@ class Verifiedaccess extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://verifiedaccess.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://verifiedaccess.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v2';

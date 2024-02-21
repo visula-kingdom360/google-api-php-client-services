@@ -54,6 +54,7 @@ class CloudRedis extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://redis.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://redis.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

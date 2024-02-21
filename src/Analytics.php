@@ -94,6 +94,7 @@ class Analytics extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://analytics.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://analytics.UNIVERSE_DOMAIN/';
     $this->servicePath = 'analytics/v3/';
     $this->batchPath = 'batch/analytics/v3';
     $this->version = 'v3';

@@ -62,6 +62,7 @@ class AndroidManagement extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://androidmanagement.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://androidmanagement.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

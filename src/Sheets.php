@@ -66,6 +66,7 @@ class Sheets extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://sheets.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://sheets.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v4';

@@ -60,6 +60,7 @@ class AuthorizedBuyersMarketplace extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://authorizedbuyersmarketplace.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://authorizedbuyersmarketplace.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

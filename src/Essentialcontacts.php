@@ -53,6 +53,7 @@ class Essentialcontacts extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://essentialcontacts.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://essentialcontacts.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

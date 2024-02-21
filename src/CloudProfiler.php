@@ -57,6 +57,7 @@ class CloudProfiler extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://cloudprofiler.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://cloudprofiler.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v2';

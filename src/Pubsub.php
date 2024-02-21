@@ -59,6 +59,7 @@ class Pubsub extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://pubsub.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://pubsub.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

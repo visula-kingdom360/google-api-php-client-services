@@ -52,6 +52,7 @@ class TrafficDirectorService extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://trafficdirector.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://trafficdirector.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v3';

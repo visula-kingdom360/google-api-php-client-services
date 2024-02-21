@@ -62,6 +62,7 @@ class Playdeveloperreporting extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://playdeveloperreporting.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://playdeveloperreporting.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1beta1';

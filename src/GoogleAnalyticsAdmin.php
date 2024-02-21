@@ -69,6 +69,7 @@ class GoogleAnalyticsAdmin extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://analyticsadmin.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://analyticsadmin.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1beta';

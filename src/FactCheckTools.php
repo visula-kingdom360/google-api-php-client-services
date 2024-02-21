@@ -52,6 +52,7 @@ class FactCheckTools extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://factchecktools.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://factchecktools.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1alpha1';

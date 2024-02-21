@@ -55,6 +55,7 @@ class Tasks extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://tasks.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://tasks.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

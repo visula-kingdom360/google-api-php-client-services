@@ -70,6 +70,7 @@ class Calendar extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://www.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://www.UNIVERSE_DOMAIN/';
     $this->servicePath = 'calendar/v3/';
     $this->batchPath = 'batch/calendar/v3';
     $this->version = 'v3';

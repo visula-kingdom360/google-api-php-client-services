@@ -70,6 +70,7 @@ class FirebaseManagement extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://firebase.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://firebase.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1beta1';

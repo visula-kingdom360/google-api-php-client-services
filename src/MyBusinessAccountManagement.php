@@ -56,6 +56,7 @@ class MyBusinessAccountManagement extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://mybusinessaccountmanagement.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://mybusinessaccountmanagement.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

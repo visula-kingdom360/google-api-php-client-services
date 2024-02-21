@@ -52,6 +52,7 @@ class IAMCredentials extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://iamcredentials.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://iamcredentials.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

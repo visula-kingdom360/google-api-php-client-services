@@ -66,6 +66,7 @@ class ServiceManagement extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://servicemanagement.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://servicemanagement.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

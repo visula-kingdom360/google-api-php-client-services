@@ -69,6 +69,7 @@ class Vision extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://vision.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://vision.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

@@ -73,6 +73,7 @@ class CloudHealthcare extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://healthcare.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://healthcare.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

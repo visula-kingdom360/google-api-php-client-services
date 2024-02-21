@@ -58,6 +58,7 @@ class CertificateManager extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://certificatemanager.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://certificatemanager.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

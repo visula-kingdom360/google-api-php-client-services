@@ -67,6 +67,7 @@ class BigQueryDataTransfer extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://bigquerydatatransfer.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://bigquerydatatransfer.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

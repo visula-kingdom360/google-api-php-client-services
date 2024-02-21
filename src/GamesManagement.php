@@ -56,6 +56,7 @@ class GamesManagement extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://gamesmanagement.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://gamesmanagement.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1management';

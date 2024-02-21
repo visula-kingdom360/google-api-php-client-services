@@ -64,6 +64,7 @@ class Firebaseappcheck extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://firebaseappcheck.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://firebaseappcheck.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

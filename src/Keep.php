@@ -57,6 +57,7 @@ class Keep extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://keep.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://keep.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

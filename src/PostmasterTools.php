@@ -54,6 +54,7 @@ class PostmasterTools extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://gmailpostmastertools.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://gmailpostmastertools.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

@@ -99,6 +99,7 @@ class HangoutsChat extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://chat.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://chat.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

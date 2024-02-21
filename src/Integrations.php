@@ -73,6 +73,7 @@ class Integrations extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://integrations.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://integrations.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1alpha';

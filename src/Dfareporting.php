@@ -122,6 +122,7 @@ class Dfareporting extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://dfareporting.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://dfareporting.UNIVERSE_DOMAIN/';
     $this->servicePath = 'dfareporting/v4/';
     $this->batchPath = 'batch';
     $this->version = 'v4';

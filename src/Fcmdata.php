@@ -52,6 +52,7 @@ class Fcmdata extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://fcmdata.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://fcmdata.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1beta1';

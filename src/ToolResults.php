@@ -61,6 +61,7 @@ class ToolResults extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://toolresults.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://toolresults.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1beta3';

@@ -54,6 +54,7 @@ class Speech extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://speech.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://speech.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

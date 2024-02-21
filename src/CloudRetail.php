@@ -66,6 +66,7 @@ class CloudRetail extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://retail.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://retail.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v2';

@@ -59,6 +59,7 @@ class SearchConsole extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://searchconsole.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://searchconsole.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

@@ -65,6 +65,7 @@ class Vault extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://vault.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://vault.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v1';

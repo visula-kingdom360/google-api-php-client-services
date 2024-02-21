@@ -51,6 +51,7 @@ class Indexing extends \Google\Service
   {
     parent::__construct($clientOrConfig);
     $this->rootUrl = $rootUrl ?: 'https://indexing.googleapis.com/';
+    $this->rootUrlTemplate = $rootUrl ?: 'https://indexing.UNIVERSE_DOMAIN/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
     $this->version = 'v3';
