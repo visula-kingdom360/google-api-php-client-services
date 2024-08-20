@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Gmail\Resource\UsersMessages | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Gmail_Resource_UsersMessages" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Gmail.html">Gmail</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Gmail/Resource.html">Resource</a></li><li class="backslash">\</li><li>UsersMessages</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>UsersMessages    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>UsersMessages</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Gmail/Resource/UsersMessages.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;messages&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $gmailService = new Google\Service\Gmail(...);
+ $messages = $gmailService-&gt;users_messages;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchDelete">batchDelete</a>(string $userId, <a href="../../../../Google/Service/Gmail/BatchDeleteMessagesRequest.html"><abbr title="Google\Service\Gmail\BatchDeleteMessagesRequest">BatchDeleteMessagesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Deletes many messages by message ID. Provides no guarantees that messages
+were not already deleted or even existed at all. (messages.batchDelete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchModify">batchModify</a>(string $userId, <a href="../../../../Google/Service/Gmail/BatchModifyMessagesRequest.html"><abbr title="Google\Service\Gmail\BatchModifyMessagesRequest">BatchModifyMessagesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Modifies the labels on the specified messages. (messages.batchModify)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $userId, string $id, array $optParams = [])
+        
+                                            <p><p>Immediately and permanently deletes the specified message. This operation
+cannot be undone. Prefer <code>messages.trash</code> instead. (messages.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $userId, string $id, array $optParams = [])
+        
+                                            <p><p>Gets the specified message. (messages.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_import">import</a>(string $userId, <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Imports a message into only this user's mailbox, with standard email delivery
+scanning and classification similar to receiving via SMTP. This method
+doesn't perform SPF checks, so it might not work for some spam messages, such
+as those attempting to perform domain spoofing. This method does not send a
+message. (messages.import)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_insert">insert</a>(string $userId, <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Directly inserts a message into only this user's mailbox similar to <code>IMAP APPEND</code>, bypassing most scanning and classification. Does not send a message.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Gmail/ListMessagesResponse.html"><abbr title="Google\Service\Gmail\ListMessagesResponse">ListMessagesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listUsersMessages">listUsersMessages</a>(string $userId, array $optParams = [])
+        
+                                            <p><p>Lists the messages in the user's mailbox. (messages.listUsersMessages)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_modify">modify</a>(string $userId, string $id, <a href="../../../../Google/Service/Gmail/ModifyMessageRequest.html"><abbr title="Google\Service\Gmail\ModifyMessageRequest">ModifyMessageRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Modifies the labels on the specified message. (messages.modify)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_send">send</a>(string $userId, <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sends the specified message to the recipients in the <code>To</code>, <code>Cc</code>, and <code>Bcc</code>
+headers. For example usage, see <a href="https://developers.google.com/gmail/api/guides/sending">Sending
+email</a>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_trash">trash</a>(string $userId, string $id, array $optParams = [])
+        
+                                            <p><p>Moves the specified message to the trash. (messages.trash)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_untrash">untrash</a>(string $userId, string $id, array $optParams = [])
+        
+                                            <p><p>Removes the specified message from the trash. (messages.untrash)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_batchDelete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Gmail/Resource/UsersMessages.php#L46">at line 46</a></div>
+        <code>                    
+    <strong>batchDelete</strong>(string $userId, <a href="../../../../Google/Service/Gmail/BatchDeleteMessagesRequest.html"><abbr title="Google\Service\Gmail\BatchDeleteMessagesRequest">BatchDeleteMessagesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes many messages by message ID. Provides no guarantees that messages
+were not already deleted or even existed at all. (messages.batchDelete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userId</td>
+                <td><p>The user's email address. The special value <code>me</code> can be
+used to indicate the authenticated user.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Gmail/BatchDeleteMessagesRequest.html"><abbr title="Google\Service\Gmail\BatchDeleteMessagesRequest">BatchDeleteMessagesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchModify">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Gmail/Resource/UsersMessages.php#L61">at line 61</a></div>
+        <code>                    
+    <strong>batchModify</strong>(string $userId, <a href="../../../../Google/Service/Gmail/BatchModifyMessagesRequest.html"><abbr title="Google\Service\Gmail\BatchModifyMessagesRequest">BatchModifyMessagesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Modifies the labels on the specified messages. (messages.batchModify)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userId</td>
+                <td><p>The user's email address. The special value <code>me</code> can be
+used to indicate the authenticated user.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Gmail/BatchModifyMessagesRequest.html"><abbr title="Google\Service\Gmail\BatchModifyMessagesRequest">BatchModifyMessagesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Gmail/Resource/UsersMessages.php#L77">at line 77</a></div>
+        <code>                    
+    <strong>delete</strong>(string $userId, string $id, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Immediately and permanently deletes the specified message. This operation
+cannot be undone. Prefer <code>messages.trash</code> instead. (messages.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userId</td>
+                <td><p>The user's email address. The special value <code>me</code> can be
+used to indicate the authenticated user.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td><p>The ID of the message to delete.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Gmail/Resource/UsersMessages.php#L99">at line 99</a></div>
+        <code>                    <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a>
+    <strong>get</strong>(string $userId, string $id, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the specified message. (messages.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userId</td>
+                <td><p>The user's email address. The special value <code>me</code> can be
+used to indicate the authenticated user.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td><p>The ID of the message to retrieve. This ID is usually
+retrieved using <code>messages.list</code>. The ID is also contained in the result when
+a message is inserted (<code>messages.insert</code>) or imported (<code>messages.import</code>).</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_import">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Gmail/Resource/UsersMessages.php#L129">at line 129</a></div>
+        <code>                    <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a>
+    <strong>import</strong>(string $userId, <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Imports a message into only this user's mailbox, with standard email delivery
+scanning and classification similar to receiving via SMTP. This method
+doesn't perform SPF checks, so it might not work for some spam messages, such
+as those attempting to perform domain spoofing. This method does not send a
+message. (messages.import)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userId</td>
+                <td><p>The user's email address. The special value <code>me</code> can be
+used to indicate the authenticated user.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Gmail/Resource/UsersMessages.php#L153">at line 153</a></div>
+        <code>                    <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a>
+    <strong>insert</strong>(string $userId, <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Directly inserts a message into only this user's mailbox similar to <code>IMAP APPEND</code>, bypassing most scanning and classification. Does not send a message.</p></p>                <p>(messages.insert)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userId</td>
+                <td><p>The user's email address. The special value <code>me</code> can be
+used to indicate the authenticated user.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listUsersMessages">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Gmail/Resource/UsersMessages.php#L184">at line 184</a></div>
+        <code>                    <a href="../../../../Google/Service/Gmail/ListMessagesResponse.html"><abbr title="Google\Service\Gmail\ListMessagesResponse">ListMessagesResponse</abbr></a>
+    <strong>listUsersMessages</strong>(string $userId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists the messages in the user's mailbox. (messages.listUsersMessages)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userId</td>
+                <td><p>The user's email address. The special value <code>me</code> can be
+used to indicate the authenticated user.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Gmail/ListMessagesResponse.html"><abbr title="Google\Service\Gmail\ListMessagesResponse">ListMessagesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modify">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Gmail/Resource/UsersMessages.php#L201">at line 201</a></div>
+        <code>                    <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a>
+    <strong>modify</strong>(string $userId, string $id, <a href="../../../../Google/Service/Gmail/ModifyMessageRequest.html"><abbr title="Google\Service\Gmail\ModifyMessageRequest">ModifyMessageRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Modifies the labels on the specified message. (messages.modify)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userId</td>
+                <td><p>The user's email address. The special value <code>me</code> can be
+used to indicate the authenticated user.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td><p>The ID of the message to modify.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Gmail/ModifyMessageRequest.html"><abbr title="Google\Service\Gmail\ModifyMessageRequest">ModifyMessageRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_send">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Gmail/Resource/UsersMessages.php#L220">at line 220</a></div>
+        <code>                    <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a>
+    <strong>send</strong>(string $userId, <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sends the specified message to the recipients in the <code>To</code>, <code>Cc</code>, and <code>Bcc</code>
+headers. For example usage, see <a href="https://developers.google.com/gmail/api/guides/sending">Sending
+email</a>.</p></p>                <p>(messages.send)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userId</td>
+                <td><p>The user's email address. The special value <code>me</code> can be
+used to indicate the authenticated user.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_trash">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Gmail/Resource/UsersMessages.php#L236">at line 236</a></div>
+        <code>                    <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a>
+    <strong>trash</strong>(string $userId, string $id, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Moves the specified message to the trash. (messages.trash)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userId</td>
+                <td><p>The user's email address. The special value <code>me</code> can be
+used to indicate the authenticated user.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td><p>The ID of the message to Trash.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_untrash">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Gmail/Resource/UsersMessages.php#L252">at line 252</a></div>
+        <code>                    <a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a>
+    <strong>untrash</strong>(string $userId, string $id, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Removes the specified message from the trash. (messages.untrash)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userId</td>
+                <td><p>The user's email address. The special value <code>me</code> can be
+used to indicate the authenticated user.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td><p>The ID of the message to remove from Trash.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Gmail/Message.html"><abbr title="Google\Service\Gmail\Message">Message</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

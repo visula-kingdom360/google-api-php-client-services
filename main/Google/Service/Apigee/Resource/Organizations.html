@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Apigee\Resource\Organizations | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Apigee_Resource_Organizations" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Apigee.html">Apigee</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Apigee/Resource.html">Resource</a></li><li class="backslash">\</li><li>Organizations</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Organizations    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Organizations</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/Organizations.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;organizations&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $apigeeService = new Google\Service\Apigee(...);
+ $organizations = $apigeeService-&gt;organizations;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Apigee/GoogleLongrunningOperation.html"><abbr title="Google\Service\Apigee\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(<a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1Organization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1Organization">GoogleCloudApigeeV1Organization</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates an Apigee organization. See <a href="https://cloud.google.com/apigee/docs/api-platform/get-
+started/create-org">Create an Apigee
+organization</a>. (organizations.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Apigee/GoogleLongrunningOperation.html"><abbr title="Google\Service\Apigee\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Delete an Apigee organization. For organizations with BillingType EVALUATION,
+an immediate deletion is performed. For paid organizations (Subscription or
+Pay-as-you-go), a soft-deletion is performed. The organization can be
+restored within the soft-deletion period, which is specified using the
+<code>retention</code> field in the request or by filing a support ticket with Apigee.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1Organization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1Organization">GoogleCloudApigeeV1Organization</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets the profile for an Apigee organization. See <a href="https://cloud.google.com/apigee/docs/api-
+platform/fundamentals/organization-structure">Understanding
+organizations</a>. (organizations.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1IngressConfig.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1IngressConfig">GoogleCloudApigeeV1IngressConfig</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDeployedIngressConfig">getDeployedIngressConfig</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets the deployed ingress configuration for an organization.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1OrganizationProjectMapping.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1OrganizationProjectMapping">GoogleCloudApigeeV1OrganizationProjectMapping</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getProjectMapping">getProjectMapping</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets the project ID and region for an Apigee organization.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1RuntimeConfig.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1RuntimeConfig">GoogleCloudApigeeV1RuntimeConfig</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRuntimeConfig">getRuntimeConfig</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Get runtime config for an organization. (organizations.getRuntimeConfig)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SecuritySettings.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SecuritySettings">GoogleCloudApigeeV1SecuritySettings</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSecuritySettings">getSecuritySettings</a>(string $name, array $optParams = [])
+        
+                                            <p><p>GetSecuritySettings gets the security settings for API Security.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SyncAuthorization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SyncAuthorization">GoogleCloudApigeeV1SyncAuthorization</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSyncAuthorization">getSyncAuthorization</a>(string $name, <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1GetSyncAuthorizationRequest.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1GetSyncAuthorizationRequest">GoogleCloudApigeeV1GetSyncAuthorizationRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Lists the service accounts with the permissions required to allow the
+Synchronizer to download environment data from the control plane. An ETag is
+returned in the response to <code>getSyncAuthorization</code>. Pass that ETag when
+calling <a href="setSyncAuthorization">setSyncAuthorization</a> to ensure that you are
+updating the correct version. If you don't pass the ETag in the call to
+<code>setSyncAuthorization</code>, then the existing authorization is overwritten
+indiscriminately. For more information, see <a href="http
+s://cloud.google.com/apigee/docs/hybrid/latest/synchronizer-access">Configure the Synchronizer</a>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ListOrganizationsResponse.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ListOrganizationsResponse">GoogleCloudApigeeV1ListOrganizationsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listOrganizations">listOrganizations</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists the Apigee organizations and associated Google Cloud projects that you
+have permission to access. See <a href="https://cloud.google.com/apigee/docs/api-
+platform/fundamentals/organization-structure">Understanding
+organizations</a>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Apigee/GoogleLongrunningOperation.html"><abbr title="Google\Service\Apigee\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setAddons">setAddons</a>(string $org, <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SetAddonsRequest.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SetAddonsRequest">GoogleCloudApigeeV1SetAddonsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Configures the add-ons for the Apigee organization. The existing add-on
+configuration will be fully replaced. (organizations.setAddons)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SyncAuthorization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SyncAuthorization">GoogleCloudApigeeV1SyncAuthorization</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setSyncAuthorization">setSyncAuthorization</a>(string $name, <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SyncAuthorization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SyncAuthorization">GoogleCloudApigeeV1SyncAuthorization</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the permissions required to allow the Synchronizer to download
+environment data from the control plane. You must call this API to enable
+proper functioning of hybrid. Pass the ETag when calling
+<code>setSyncAuthorization</code> to ensure that you are updating the correct version.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1Organization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1Organization">GoogleCloudApigeeV1Organization</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $name, <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1Organization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1Organization">GoogleCloudApigeeV1Organization</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the properties for an Apigee organization. No other fields in the
+organization profile will be updated. (organizations.update)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SecuritySettings.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SecuritySettings">GoogleCloudApigeeV1SecuritySettings</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateSecuritySettings">updateSecuritySettings</a>(string $name, <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SecuritySettings.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SecuritySettings">GoogleCloudApigeeV1SecuritySettings</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>UpdateSecuritySettings updates the current security settings for API
+Security. (organizations.updateSecuritySettings)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/Organizations.php#L55">at line 55</a></div>
+        <code>                    <a href="../../../../Google/Service/Apigee/GoogleLongrunningOperation.html"><abbr title="Google\Service\Apigee\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>create</strong>(<a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1Organization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1Organization">GoogleCloudApigeeV1Organization</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates an Apigee organization. See <a href="https://cloud.google.com/apigee/docs/api-platform/get-
+started/create-org">Create an Apigee
+organization</a>. (organizations.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1Organization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1Organization">GoogleCloudApigeeV1Organization</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Apigee/GoogleLongrunningOperation.html"><abbr title="Google\Service\Apigee\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/Organizations.php#L88">at line 88</a></div>
+        <code>                    <a href="../../../../Google/Service/Apigee/GoogleLongrunningOperation.html"><abbr title="Google\Service\Apigee\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Delete an Apigee organization. For organizations with BillingType EVALUATION,
+an immediate deletion is performed. For paid organizations (Subscription or
+Pay-as-you-go), a soft-deletion is performed. The organization can be
+restored within the soft-deletion period, which is specified using the
+<code>retention</code> field in the request or by filing a support ticket with Apigee.</p></p>                <p><p>During the data retention period specified in the request, the Apigee
+organization cannot be recreated in the same Google Cloud project.
+<strong>IMPORTANT: The default data retention setting for this operation is 7 days.
+To permanently delete the organization in 24 hours, set the retention
+parameter to <code>MINIMUM</code>.</strong> (organizations.delete)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Name of the organization. Use the following
+structure in your request: <code>organizations/{org}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Apigee/GoogleLongrunningOperation.html"><abbr title="Google\Service\Apigee\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/Organizations.php#L105">at line 105</a></div>
+        <code>                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1Organization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1Organization">GoogleCloudApigeeV1Organization</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the profile for an Apigee organization. See <a href="https://cloud.google.com/apigee/docs/api-
+platform/fundamentals/organization-structure">Understanding
+organizations</a>. (organizations.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Apigee organization name in the following
+format: <code>organizations/{org}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1Organization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1Organization">GoogleCloudApigeeV1Organization</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDeployedIngressConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/Organizations.php#L126">at line 126</a></div>
+        <code>                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1IngressConfig.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1IngressConfig">GoogleCloudApigeeV1IngressConfig</abbr></a>
+    <strong>getDeployedIngressConfig</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the deployed ingress configuration for an organization.</p></p>                <p>(organizations.getDeployedIngressConfig)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Name of the deployed configuration for the
+organization in the following format:
+'organizations/{org}/deployedIngressConfig'.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1IngressConfig.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1IngressConfig">GoogleCloudApigeeV1IngressConfig</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getProjectMapping">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/Organizations.php#L142">at line 142</a></div>
+        <code>                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1OrganizationProjectMapping.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1OrganizationProjectMapping">GoogleCloudApigeeV1OrganizationProjectMapping</abbr></a>
+    <strong>getProjectMapping</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the project ID and region for an Apigee organization.</p></p>                <p>(organizations.getProjectMapping)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Apigee organization name in the following
+format: <code>organizations/{org}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1OrganizationProjectMapping.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1OrganizationProjectMapping">GoogleCloudApigeeV1OrganizationProjectMapping</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRuntimeConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/Organizations.php#L157">at line 157</a></div>
+        <code>                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1RuntimeConfig.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1RuntimeConfig">GoogleCloudApigeeV1RuntimeConfig</abbr></a>
+    <strong>getRuntimeConfig</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get runtime config for an organization. (organizations.getRuntimeConfig)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Name of the runtime config for the organization
+in the following format: 'organizations/{org}/runtimeConfig'.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1RuntimeConfig.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1RuntimeConfig">GoogleCloudApigeeV1RuntimeConfig</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSecuritySettings">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/Organizations.php#L173">at line 173</a></div>
+        <code>                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SecuritySettings.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SecuritySettings">GoogleCloudApigeeV1SecuritySettings</abbr></a>
+    <strong>getSecuritySettings</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>GetSecuritySettings gets the security settings for API Security.</p></p>                <p>(organizations.getSecuritySettings)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the SecuritySettings to retrieve.
+This will always be: 'organizations/{org}/securitySettings'.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SecuritySettings.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SecuritySettings">GoogleCloudApigeeV1SecuritySettings</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSyncAuthorization">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/Organizations.php#L198">at line 198</a></div>
+        <code>                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SyncAuthorization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SyncAuthorization">GoogleCloudApigeeV1SyncAuthorization</abbr></a>
+    <strong>getSyncAuthorization</strong>(string $name, <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1GetSyncAuthorizationRequest.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1GetSyncAuthorizationRequest">GoogleCloudApigeeV1GetSyncAuthorizationRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists the service accounts with the permissions required to allow the
+Synchronizer to download environment data from the control plane. An ETag is
+returned in the response to <code>getSyncAuthorization</code>. Pass that ETag when
+calling <a href="setSyncAuthorization">setSyncAuthorization</a> to ensure that you are
+updating the correct version. If you don't pass the ETag in the call to
+<code>setSyncAuthorization</code>, then the existing authorization is overwritten
+indiscriminately. For more information, see <a href="http
+s://cloud.google.com/apigee/docs/hybrid/latest/synchronizer-access">Configure the Synchronizer</a>.</p></p>                <p><p><strong>Note</strong>: Available to Apigee hybrid only.
+(organizations.getSyncAuthorization)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Name of the Apigee organization. Use the
+following structure in your request: <code>organizations/{org}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1GetSyncAuthorizationRequest.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1GetSyncAuthorizationRequest">GoogleCloudApigeeV1GetSyncAuthorizationRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SyncAuthorization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SyncAuthorization">GoogleCloudApigeeV1SyncAuthorization</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listOrganizations">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/Organizations.php#L217">at line 217</a></div>
+        <code>                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ListOrganizationsResponse.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ListOrganizationsResponse">GoogleCloudApigeeV1ListOrganizationsResponse</abbr></a>
+    <strong>listOrganizations</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists the Apigee organizations and associated Google Cloud projects that you
+have permission to access. See <a href="https://cloud.google.com/apigee/docs/api-
+platform/fundamentals/organization-structure">Understanding
+organizations</a>.</p></p>                <p>(organizations.listOrganizations)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. Use the following structure in your request:
+<code>organizations</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ListOrganizationsResponse.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ListOrganizationsResponse">GoogleCloudApigeeV1ListOrganizationsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAddons">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/Organizations.php#L234">at line 234</a></div>
+        <code>                    <a href="../../../../Google/Service/Apigee/GoogleLongrunningOperation.html"><abbr title="Google\Service\Apigee\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>setAddons</strong>(string $org, <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SetAddonsRequest.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SetAddonsRequest">GoogleCloudApigeeV1SetAddonsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Configures the add-ons for the Apigee organization. The existing add-on
+configuration will be fully replaced. (organizations.setAddons)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$org</td>
+                <td><p>Required. Name of the organization. Use the following
+structure in your request: <code>organizations/{org}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SetAddonsRequest.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SetAddonsRequest">GoogleCloudApigeeV1SetAddonsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Apigee/GoogleLongrunningOperation.html"><abbr title="Google\Service\Apigee\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSyncAuthorization">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/Organizations.php#L259">at line 259</a></div>
+        <code>                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SyncAuthorization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SyncAuthorization">GoogleCloudApigeeV1SyncAuthorization</abbr></a>
+    <strong>setSyncAuthorization</strong>(string $name, <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SyncAuthorization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SyncAuthorization">GoogleCloudApigeeV1SyncAuthorization</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the permissions required to allow the Synchronizer to download
+environment data from the control plane. You must call this API to enable
+proper functioning of hybrid. Pass the ETag when calling
+<code>setSyncAuthorization</code> to ensure that you are updating the correct version.</p></p>                <p><p>To get an ETag, call <a href="getSyncAuthorization">getSyncAuthorization</a>. If you
+don't pass the ETag in the call to <code>setSyncAuthorization</code>, then the existing
+authorization is overwritten indiscriminately. For more information, see
+<a href="https://cloud.google.com/apigee/docs/hybrid/late
+st/synchronizer-access">Configure the Synchronizer</a>. <strong>Note</strong>: Available to Apigee hybrid only.
+(organizations.setSyncAuthorization)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Name of the Apigee organization. Use the
+following structure in your request: <code>organizations/{org}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SyncAuthorization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SyncAuthorization">GoogleCloudApigeeV1SyncAuthorization</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SyncAuthorization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SyncAuthorization">GoogleCloudApigeeV1SyncAuthorization</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/Organizations.php#L276">at line 276</a></div>
+        <code>                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1Organization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1Organization">GoogleCloudApigeeV1Organization</abbr></a>
+    <strong>update</strong>(string $name, <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1Organization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1Organization">GoogleCloudApigeeV1Organization</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the properties for an Apigee organization. No other fields in the
+organization profile will be updated. (organizations.update)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Apigee organization name in the following
+format: <code>organizations/{org}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1Organization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1Organization">GoogleCloudApigeeV1Organization</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1Organization.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1Organization">GoogleCloudApigeeV1Organization</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateSecuritySettings">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/Organizations.php#L296">at line 296</a></div>
+        <code>                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SecuritySettings.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SecuritySettings">GoogleCloudApigeeV1SecuritySettings</abbr></a>
+    <strong>updateSecuritySettings</strong>(string $name, <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SecuritySettings.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SecuritySettings">GoogleCloudApigeeV1SecuritySettings</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>UpdateSecuritySettings updates the current security settings for API
+Security. (organizations.updateSecuritySettings)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Identifier. Full resource name is always
+<code>organizations/{org}/securitySettings</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SecuritySettings.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SecuritySettings">GoogleCloudApigeeV1SecuritySettings</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1SecuritySettings.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1SecuritySettings">GoogleCloudApigeeV1SecuritySettings</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

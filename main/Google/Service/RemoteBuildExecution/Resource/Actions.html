@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\RemoteBuildExecution\Resource\Actions | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_RemoteBuildExecution_Resource_Actions" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/RemoteBuildExecution.html">RemoteBuildExecution</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/RemoteBuildExecution/Resource.html">Resource</a></li><li class="backslash">\</li><li>Actions</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Actions    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Actions</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/RemoteBuildExecution/Resource/Actions.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;actions&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $remotebuildexecutionService = new Google\Service\RemoteBuildExecution(...);
+ $actions = $remotebuildexecutionService-&gt;actions;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/RemoteBuildExecution/GoogleLongrunningOperation.html"><abbr title="Google\Service\RemoteBuildExecution\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_execute">execute</a>(string $instanceName, <a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2ExecuteRequest.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ExecuteRequest">BuildBazelRemoteExecutionV2ExecuteRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Execute an action remotely. In order to execute an action, the client must
+first upload all of the inputs, the Command to run, and the Action into the
+ContentAddressableStorage. It then calls <code>Execute</code> with an <code>action_digest</code>
+referring to them. The server will run the action and eventually return the
+result. The input <code>Action</code>'s fields MUST meet the various canonicalization
+requirements specified in the documentation for their types so that it has
+the same digest as other logically equivalent <code>Action</code>s. The server MAY
+enforce the requirements and return errors if a non-canonical input is
+received. It MAY also proceed without verifying some or all of the
+requirements, such as for performance reasons. If the server does not verify
+the requirement, then it will treat the <code>Action</code> as distinct from another
+logically equivalent action if they hash differently. Returns a stream of
+google.longrunning.Operation messages describing the resulting execution,
+with eventual <code>response</code> ExecuteResponse. The <code>metadata</code> on the operation is
+of type ExecuteOperationMetadata. If the client remains connected after the
+first response is returned after the server, then updates are streamed as if
+the client had called WaitExecution until the execution completes or the
+request reaches an error. The operation can also be queried using Operations
+API. The server NEED NOT implement other methods or functionality of the
+Operations API. Errors discovered during creation of the <code>Operation</code> will be
+reported as gRPC Status errors, while errors that occurred while running the
+action will be reported in the <code>status</code> field of the <code>ExecuteResponse</code>. The
+server MUST NOT set the <code>error</code> field of the <code>Operation</code> proto. The possible
+errors include: <em> <code>INVALID_ARGUMENT</code>: One or more arguments are invalid. </em>
+<code>FAILED_PRECONDITION</code>: One or more errors occurred in setting up the action
+requested, such as a missing input or command or no worker being available.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/RemoteBuildExecution/Resource/Actions.php#L87">at line 87</a></div>
+        <code>                    <a href="../../../../Google/Service/RemoteBuildExecution/GoogleLongrunningOperation.html"><abbr title="Google\Service\RemoteBuildExecution\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>execute</strong>(string $instanceName, <a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2ExecuteRequest.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ExecuteRequest">BuildBazelRemoteExecutionV2ExecuteRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Execute an action remotely. In order to execute an action, the client must
+first upload all of the inputs, the Command to run, and the Action into the
+ContentAddressableStorage. It then calls <code>Execute</code> with an <code>action_digest</code>
+referring to them. The server will run the action and eventually return the
+result. The input <code>Action</code>'s fields MUST meet the various canonicalization
+requirements specified in the documentation for their types so that it has
+the same digest as other logically equivalent <code>Action</code>s. The server MAY
+enforce the requirements and return errors if a non-canonical input is
+received. It MAY also proceed without verifying some or all of the
+requirements, such as for performance reasons. If the server does not verify
+the requirement, then it will treat the <code>Action</code> as distinct from another
+logically equivalent action if they hash differently. Returns a stream of
+google.longrunning.Operation messages describing the resulting execution,
+with eventual <code>response</code> ExecuteResponse. The <code>metadata</code> on the operation is
+of type ExecuteOperationMetadata. If the client remains connected after the
+first response is returned after the server, then updates are streamed as if
+the client had called WaitExecution until the execution completes or the
+request reaches an error. The operation can also be queried using Operations
+API. The server NEED NOT implement other methods or functionality of the
+Operations API. Errors discovered during creation of the <code>Operation</code> will be
+reported as gRPC Status errors, while errors that occurred while running the
+action will be reported in the <code>status</code> field of the <code>ExecuteResponse</code>. The
+server MUST NOT set the <code>error</code> field of the <code>Operation</code> proto. The possible
+errors include: <em> <code>INVALID_ARGUMENT</code>: One or more arguments are invalid. </em>
+<code>FAILED_PRECONDITION</code>: One or more errors occurred in setting up the action
+requested, such as a missing input or command or no worker being available.</p></p>                <p><p>The client may be able to fix the errors and retry. <em> <code>RESOURCE_EXHAUSTED</code>:
+There is insufficient quota of some resource to run the action. </em>
+<code>UNAVAILABLE</code>: Due to a transient condition, such as all workers being
+occupied (and the server does not support a queue), the action could not be
+started. The client should retry. <em> <code>INTERNAL</code>: An internal error occurred in
+the execution engine or the worker. </em> <code>DEADLINE_EXCEEDED</code>: The execution
+timed out. * <code>CANCELLED</code>: The operation was cancelled by the client. This
+status is only possible if the server implements the Operations API
+CancelOperation method, and it was called for the current execution. In the
+case of a missing input or command, the server SHOULD additionally send a
+PreconditionFailure error detail where, for each requested blob not present
+in the CAS, there is a <code>Violation</code> with a <code>type</code> of <code>MISSING</code> and a <code>subject</code>
+of <code>"blobs/{hash}/{size}"</code> indicating the digest of the missing blob. The
+server does not need to guarantee that a call to this method leads to at most
+one execution of the action. The server MAY execute the action multiple
+times, potentially in parallel. These redundant executions MAY continue to
+run, even if the operation is completed. (actions.execute)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$instanceName</td>
+                <td><p>The instance of the execution system to operate
+against. A server may support multiple instances of the execution system
+(with their own workers, storage, caches, etc.). The server MAY require use
+of this field to select between them in an implementation-defined fashion,
+otherwise it can be omitted.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2ExecuteRequest.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ExecuteRequest">BuildBazelRemoteExecutionV2ExecuteRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/RemoteBuildExecution/GoogleLongrunningOperation.html"><abbr title="Google\Service\RemoteBuildExecution\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

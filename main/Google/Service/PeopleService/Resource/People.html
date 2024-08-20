@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\PeopleService\Resource\People | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_PeopleService_Resource_People" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/PeopleService.html">PeopleService</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/PeopleService/Resource.html">Resource</a></li><li class="backslash">\</li><li>People</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>People    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>People</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PeopleService/Resource/People.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;people&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $peopleService = new Google\Service\PeopleService(...);
+ $people = $peopleService-&gt;people;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PeopleService/BatchCreateContactsResponse.html"><abbr title="Google\Service\PeopleService\BatchCreateContactsResponse">BatchCreateContactsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchCreateContacts">batchCreateContacts</a>(<a href="../../../../Google/Service/PeopleService/BatchCreateContactsRequest.html"><abbr title="Google\Service\PeopleService\BatchCreateContactsRequest">BatchCreateContactsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Create a batch of new contacts and return the PersonResponses for the newly
+Mutate requests for the same user should be sent sequentially to avoid
+increased latency and failures. (people.batchCreateContacts)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PeopleService/PeopleEmpty.html"><abbr title="Google\Service\PeopleService\PeopleEmpty">PeopleEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchDeleteContacts">batchDeleteContacts</a>(<a href="../../../../Google/Service/PeopleService/BatchDeleteContactsRequest.html"><abbr title="Google\Service\PeopleService\BatchDeleteContactsRequest">BatchDeleteContactsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Delete a batch of contacts. Any non-contact data will not be deleted. Mutate
+requests for the same user should be sent sequentially to avoid increased
+latency and failures. (people.batchDeleteContacts)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PeopleService/BatchUpdateContactsResponse.html"><abbr title="Google\Service\PeopleService\BatchUpdateContactsResponse">BatchUpdateContactsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchUpdateContacts">batchUpdateContacts</a>(<a href="../../../../Google/Service/PeopleService/BatchUpdateContactsRequest.html"><abbr title="Google\Service\PeopleService\BatchUpdateContactsRequest">BatchUpdateContactsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Update a batch of contacts and return a map of resource names to
+PersonResponses for the updated contacts. Mutate requests for the same user
+should be sent sequentially to avoid increased latency and failures.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PeopleService/Person.html"><abbr title="Google\Service\PeopleService\Person">Person</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createContact">createContact</a>(<a href="../../../../Google/Service/PeopleService/Person.html"><abbr title="Google\Service\PeopleService\Person">Person</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Create a new contact and return the person resource for that contact. The
+request returns a 400 error if more than one field is specified on a field
+that is a singleton for contact sources: <em> biographies </em> birthdays * genders</p>
+<ul>
+<li>names Mutate requests for the same user should be sent sequentially to
+avoid increased latency and failures. (people.createContact)</li>
+</ul></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PeopleService/PeopleEmpty.html"><abbr title="Google\Service\PeopleService\PeopleEmpty">PeopleEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_deleteContact">deleteContact</a>(string $resourceName, array $optParams = [])
+        
+                                            <p><p>Delete a contact person. Any non-contact data will not be deleted. Mutate
+requests for the same user should be sent sequentially to avoid increased
+latency and failures. (people.deleteContact)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PeopleService/DeleteContactPhotoResponse.html"><abbr title="Google\Service\PeopleService\DeleteContactPhotoResponse">DeleteContactPhotoResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_deleteContactPhoto">deleteContactPhoto</a>(string $resourceName, array $optParams = [])
+        
+                                            <p><p>Delete a contact's photo. Mutate requests for the same user should be done
+sequentially to avoid // lock contention. (people.deleteContactPhoto)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PeopleService/Person.html"><abbr title="Google\Service\PeopleService\Person">Person</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $resourceName, array $optParams = [])
+        
+                                            <p><p>Provides information about a person by specifying a resource name. Use
+<code>people/me</code> to indicate the authenticated user. The request returns a 400
+error if 'personFields' is not specified. (people.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PeopleService/GetPeopleResponse.html"><abbr title="Google\Service\PeopleService\GetPeopleResponse">GetPeopleResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getBatchGet">getBatchGet</a>(array $optParams = [])
+        
+                                            <p><p>Provides information about a list of specific people by specifying a list of
+requested resource names. Use <code>people/me</code> to indicate the authenticated user.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PeopleService/ListDirectoryPeopleResponse.html"><abbr title="Google\Service\PeopleService\ListDirectoryPeopleResponse">ListDirectoryPeopleResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listDirectoryPeople">listDirectoryPeople</a>(array $optParams = [])
+        
+                                            <p><p>Provides a list of domain profiles and domain contacts in the authenticated
+user's domain directory. When the <code>sync_token</code> is specified, resources
+deleted since the last sync will be returned as a person with
+<code>PersonMetadata.deleted</code> set to true. When the <code>page_token</code> or <code>sync_token</code>
+is specified, all other request parameters must match the first call. Writes
+may have a propagation delay of several minutes for sync requests.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PeopleService/SearchResponse.html"><abbr title="Google\Service\PeopleService\SearchResponse">SearchResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_searchContacts">searchContacts</a>(array $optParams = [])
+        
+                                            <p><p>Provides a list of contacts in the authenticated user's grouped contacts that
+matches the search query. The query matches on a contact's <code>names</code>,
+<code>nickNames</code>, <code>emailAddresses</code>, <code>phoneNumbers</code>, and <code>organizations</code> fields
+that are from the CONTACT source. <strong>IMPORTANT</strong>: Before searching, clients
+should send a warmup request with an empty query to update the cache. See
+<a href="https://developers.google.com/people/v1/contacts#search_the_users_contacts">https://developers.google.com/people/v1/contacts#search_the_users_contacts</a>
+(people.searchContacts)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PeopleService/SearchDirectoryPeopleResponse.html"><abbr title="Google\Service\PeopleService\SearchDirectoryPeopleResponse">SearchDirectoryPeopleResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_searchDirectoryPeople">searchDirectoryPeople</a>(array $optParams = [])
+        
+                                            <p><p>Provides a list of domain profiles and domain contacts in the authenticated
+user's domain directory that match the search query.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PeopleService/Person.html"><abbr title="Google\Service\PeopleService\Person">Person</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateContact">updateContact</a>(string $resourceName, <a href="../../../../Google/Service/PeopleService/Person.html"><abbr title="Google\Service\PeopleService\Person">Person</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Update contact data for an existing contact person. Any non-contact data will
+not be modified. Any non-contact data in the person to update will be
+ignored. All fields specified in the <code>update_mask</code> will be replaced. The
+server returns a 400 error if <code>person.metadata.sources</code> is not specified for
+the contact to be updated or if there is no contact source. The server
+returns a 400 error with reason <code>"failedPrecondition"</code> if
+<code>person.metadata.sources.etag</code> is different than the contact's etag, which
+indicates the contact has changed since its data was read. Clients should get
+the latest person and merge their updates into the latest person. The server
+returns a 400 error if <code>memberships</code> are being updated and there are no
+contact group memberships specified on the person. The server returns a 400
+error if more than one field is specified on a field that is a singleton for
+contact sources: <em> biographies </em> birthdays <em> genders </em> names Mutate requests
+for the same user should be sent sequentially to avoid increased latency and
+failures. (people.updateContact)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PeopleService/UpdateContactPhotoResponse.html"><abbr title="Google\Service\PeopleService\UpdateContactPhotoResponse">UpdateContactPhotoResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateContactPhoto">updateContactPhoto</a>(string $resourceName, <a href="../../../../Google/Service/PeopleService/UpdateContactPhotoRequest.html"><abbr title="Google\Service\PeopleService\UpdateContactPhotoRequest">UpdateContactPhotoRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Update a contact's photo. Mutate requests for the same user should be sent
+sequentially to avoid increased latency and failures.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_batchCreateContacts">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PeopleService/Resource/People.php#L55">at line 55</a></div>
+        <code>                    <a href="../../../../Google/Service/PeopleService/BatchCreateContactsResponse.html"><abbr title="Google\Service\PeopleService\BatchCreateContactsResponse">BatchCreateContactsResponse</abbr></a>
+    <strong>batchCreateContacts</strong>(<a href="../../../../Google/Service/PeopleService/BatchCreateContactsRequest.html"><abbr title="Google\Service\PeopleService\BatchCreateContactsRequest">BatchCreateContactsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create a batch of new contacts and return the PersonResponses for the newly
+Mutate requests for the same user should be sent sequentially to avoid
+increased latency and failures. (people.batchCreateContacts)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/PeopleService/BatchCreateContactsRequest.html"><abbr title="Google\Service\PeopleService\BatchCreateContactsRequest">BatchCreateContactsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PeopleService/BatchCreateContactsResponse.html"><abbr title="Google\Service\PeopleService\BatchCreateContactsResponse">BatchCreateContactsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchDeleteContacts">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PeopleService/Resource/People.php#L71">at line 71</a></div>
+        <code>                    <a href="../../../../Google/Service/PeopleService/PeopleEmpty.html"><abbr title="Google\Service\PeopleService\PeopleEmpty">PeopleEmpty</abbr></a>
+    <strong>batchDeleteContacts</strong>(<a href="../../../../Google/Service/PeopleService/BatchDeleteContactsRequest.html"><abbr title="Google\Service\PeopleService\BatchDeleteContactsRequest">BatchDeleteContactsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Delete a batch of contacts. Any non-contact data will not be deleted. Mutate
+requests for the same user should be sent sequentially to avoid increased
+latency and failures. (people.batchDeleteContacts)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/PeopleService/BatchDeleteContactsRequest.html"><abbr title="Google\Service\PeopleService\BatchDeleteContactsRequest">BatchDeleteContactsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PeopleService/PeopleEmpty.html"><abbr title="Google\Service\PeopleService\PeopleEmpty">PeopleEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchUpdateContacts">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PeopleService/Resource/People.php#L88">at line 88</a></div>
+        <code>                    <a href="../../../../Google/Service/PeopleService/BatchUpdateContactsResponse.html"><abbr title="Google\Service\PeopleService\BatchUpdateContactsResponse">BatchUpdateContactsResponse</abbr></a>
+    <strong>batchUpdateContacts</strong>(<a href="../../../../Google/Service/PeopleService/BatchUpdateContactsRequest.html"><abbr title="Google\Service\PeopleService\BatchUpdateContactsRequest">BatchUpdateContactsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Update a batch of contacts and return a map of resource names to
+PersonResponses for the updated contacts. Mutate requests for the same user
+should be sent sequentially to avoid increased latency and failures.</p></p>                <p>(people.batchUpdateContacts)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/PeopleService/BatchUpdateContactsRequest.html"><abbr title="Google\Service\PeopleService\BatchUpdateContactsRequest">BatchUpdateContactsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PeopleService/BatchUpdateContactsResponse.html"><abbr title="Google\Service\PeopleService\BatchUpdateContactsResponse">BatchUpdateContactsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createContact">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PeopleService/Resource/People.php#L117">at line 117</a></div>
+        <code>                    <a href="../../../../Google/Service/PeopleService/Person.html"><abbr title="Google\Service\PeopleService\Person">Person</abbr></a>
+    <strong>createContact</strong>(<a href="../../../../Google/Service/PeopleService/Person.html"><abbr title="Google\Service\PeopleService\Person">Person</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create a new contact and return the person resource for that contact. The
+request returns a 400 error if more than one field is specified on a field
+that is a singleton for contact sources: <em> biographies </em> birthdays * genders</p>
+<ul>
+<li>names Mutate requests for the same user should be sent sequentially to
+avoid increased latency and failures. (people.createContact)</li>
+</ul></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/PeopleService/Person.html"><abbr title="Google\Service\PeopleService\Person">Person</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PeopleService/Person.html"><abbr title="Google\Service\PeopleService\Person">Person</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteContact">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PeopleService/Resource/People.php#L134">at line 134</a></div>
+        <code>                    <a href="../../../../Google/Service/PeopleService/PeopleEmpty.html"><abbr title="Google\Service\PeopleService\PeopleEmpty">PeopleEmpty</abbr></a>
+    <strong>deleteContact</strong>(string $resourceName, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Delete a contact person. Any non-contact data will not be deleted. Mutate
+requests for the same user should be sent sequentially to avoid increased
+latency and failures. (people.deleteContact)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resourceName</td>
+                <td><p>Required. The resource name of the contact to
+delete.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PeopleService/PeopleEmpty.html"><abbr title="Google\Service\PeopleService\PeopleEmpty">PeopleEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteContactPhoto">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PeopleService/Resource/People.php#L162">at line 162</a></div>
+        <code>                    <a href="../../../../Google/Service/PeopleService/DeleteContactPhotoResponse.html"><abbr title="Google\Service\PeopleService\DeleteContactPhotoResponse">DeleteContactPhotoResponse</abbr></a>
+    <strong>deleteContactPhoto</strong>(string $resourceName, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Delete a contact's photo. Mutate requests for the same user should be done
+sequentially to avoid // lock contention. (people.deleteContactPhoto)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resourceName</td>
+                <td><p>Required. The resource name of the contact whose
+photo will be deleted.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PeopleService/DeleteContactPhotoResponse.html"><abbr title="Google\Service\PeopleService\DeleteContactPhotoResponse">DeleteContactPhotoResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PeopleService/Resource/People.php#L197">at line 197</a></div>
+        <code>                    <a href="../../../../Google/Service/PeopleService/Person.html"><abbr title="Google\Service\PeopleService\Person">Person</abbr></a>
+    <strong>get</strong>(string $resourceName, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Provides information about a person by specifying a resource name. Use
+<code>people/me</code> to indicate the authenticated user. The request returns a 400
+error if 'personFields' is not specified. (people.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resourceName</td>
+                <td><p>Required. The resource name of the person to
+provide information about. - To get information about the authenticated user,
+specify <code>people/me</code>. - To get information about a google account, specify
+<code>people/{account_id}</code>. - To get information about a contact, specify the
+resource name that identifies the contact as returned by
+<code>people.connections.list</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PeopleService/Person.html"><abbr title="Google\Service\PeopleService\Person">Person</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBatchGet">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PeopleService/Resource/People.php#L234">at line 234</a></div>
+        <code>                    <a href="../../../../Google/Service/PeopleService/GetPeopleResponse.html"><abbr title="Google\Service\PeopleService\GetPeopleResponse">GetPeopleResponse</abbr></a>
+    <strong>getBatchGet</strong>(array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Provides information about a list of specific people by specifying a list of
+requested resource names. Use <code>people/me</code> to indicate the authenticated user.</p></p>                <p><p>The request returns a 400 error if 'personFields' is not specified.
+(people.getBatchGet)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PeopleService/GetPeopleResponse.html"><abbr title="Google\Service\PeopleService\GetPeopleResponse">GetPeopleResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listDirectoryPeople">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PeopleService/Resource/People.php#L286">at line 286</a></div>
+        <code>                    <a href="../../../../Google/Service/PeopleService/ListDirectoryPeopleResponse.html"><abbr title="Google\Service\PeopleService\ListDirectoryPeopleResponse">ListDirectoryPeopleResponse</abbr></a>
+    <strong>listDirectoryPeople</strong>(array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Provides a list of domain profiles and domain contacts in the authenticated
+user's domain directory. When the <code>sync_token</code> is specified, resources
+deleted since the last sync will be returned as a person with
+<code>PersonMetadata.deleted</code> set to true. When the <code>page_token</code> or <code>sync_token</code>
+is specified, all other request parameters must match the first call. Writes
+may have a propagation delay of several minutes for sync requests.</p></p>                <p><p>Incremental syncs are not intended for read-after-write use cases. See
+example usage at <a href="/people/v1/directory#list_the_directory_people_that_have_changed">List the directory people that have
+changed</a>.
+(people.listDirectoryPeople)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PeopleService/ListDirectoryPeopleResponse.html"><abbr title="Google\Service\PeopleService\ListDirectoryPeopleResponse">ListDirectoryPeopleResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_searchContacts">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PeopleService/Resource/People.php#L323">at line 323</a></div>
+        <code>                    <a href="../../../../Google/Service/PeopleService/SearchResponse.html"><abbr title="Google\Service\PeopleService\SearchResponse">SearchResponse</abbr></a>
+    <strong>searchContacts</strong>(array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Provides a list of contacts in the authenticated user's grouped contacts that
+matches the search query. The query matches on a contact's <code>names</code>,
+<code>nickNames</code>, <code>emailAddresses</code>, <code>phoneNumbers</code>, and <code>organizations</code> fields
+that are from the CONTACT source. <strong>IMPORTANT</strong>: Before searching, clients
+should send a warmup request with an empty query to update the cache. See
+<a href="https://developers.google.com/people/v1/contacts#search_the_users_contacts">https://developers.google.com/people/v1/contacts#search_the_users_contacts</a>
+(people.searchContacts)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PeopleService/SearchResponse.html"><abbr title="Google\Service\PeopleService\SearchResponse">SearchResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_searchDirectoryPeople">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PeopleService/Resource/People.php#L360">at line 360</a></div>
+        <code>                    <a href="../../../../Google/Service/PeopleService/SearchDirectoryPeopleResponse.html"><abbr title="Google\Service\PeopleService\SearchDirectoryPeopleResponse">SearchDirectoryPeopleResponse</abbr></a>
+    <strong>searchDirectoryPeople</strong>(array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Provides a list of domain profiles and domain contacts in the authenticated
+user's domain directory that match the search query.</p></p>                <p>(people.searchDirectoryPeople)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PeopleService/SearchDirectoryPeopleResponse.html"><abbr title="Google\Service\PeopleService\SearchDirectoryPeopleResponse">SearchDirectoryPeopleResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateContact">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PeopleService/Resource/People.php#L409">at line 409</a></div>
+        <code>                    <a href="../../../../Google/Service/PeopleService/Person.html"><abbr title="Google\Service\PeopleService\Person">Person</abbr></a>
+    <strong>updateContact</strong>(string $resourceName, <a href="../../../../Google/Service/PeopleService/Person.html"><abbr title="Google\Service\PeopleService\Person">Person</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Update contact data for an existing contact person. Any non-contact data will
+not be modified. Any non-contact data in the person to update will be
+ignored. All fields specified in the <code>update_mask</code> will be replaced. The
+server returns a 400 error if <code>person.metadata.sources</code> is not specified for
+the contact to be updated or if there is no contact source. The server
+returns a 400 error with reason <code>"failedPrecondition"</code> if
+<code>person.metadata.sources.etag</code> is different than the contact's etag, which
+indicates the contact has changed since its data was read. Clients should get
+the latest person and merge their updates into the latest person. The server
+returns a 400 error if <code>memberships</code> are being updated and there are no
+contact group memberships specified on the person. The server returns a 400
+error if more than one field is specified on a field that is a singleton for
+contact sources: <em> biographies </em> birthdays <em> genders </em> names Mutate requests
+for the same user should be sent sequentially to avoid increased latency and
+failures. (people.updateContact)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resourceName</td>
+                <td><p>The resource name for the person, assigned by the
+server. An ASCII string in the form of <code>people/{person_id}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/PeopleService/Person.html"><abbr title="Google\Service\PeopleService\Person">Person</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PeopleService/Person.html"><abbr title="Google\Service\PeopleService\Person">Person</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateContactPhoto">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PeopleService/Resource/People.php#L426">at line 426</a></div>
+        <code>                    <a href="../../../../Google/Service/PeopleService/UpdateContactPhotoResponse.html"><abbr title="Google\Service\PeopleService\UpdateContactPhotoResponse">UpdateContactPhotoResponse</abbr></a>
+    <strong>updateContactPhoto</strong>(string $resourceName, <a href="../../../../Google/Service/PeopleService/UpdateContactPhotoRequest.html"><abbr title="Google\Service\PeopleService\UpdateContactPhotoRequest">UpdateContactPhotoRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Update a contact's photo. Mutate requests for the same user should be sent
+sequentially to avoid increased latency and failures.</p></p>                <p>(people.updateContactPhoto)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resourceName</td>
+                <td><p>Required. Person resource name</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/PeopleService/UpdateContactPhotoRequest.html"><abbr title="Google\Service\PeopleService\UpdateContactPhotoRequest">UpdateContactPhotoRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PeopleService/UpdateContactPhotoResponse.html"><abbr title="Google\Service\PeopleService\UpdateContactPhotoResponse">UpdateContactPhotoResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

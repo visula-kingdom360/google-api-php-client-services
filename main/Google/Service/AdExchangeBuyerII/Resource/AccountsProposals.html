@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\AdExchangeBuyerII\Resource\AccountsProposals | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_AdExchangeBuyerII_Resource_AccountsProposals" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/AdExchangeBuyerII.html">AdExchangeBuyerII</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/AdExchangeBuyerII/Resource.html">Resource</a></li><li class="backslash">\</li><li>AccountsProposals</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>AccountsProposals    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>AccountsProposals</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AdExchangeBuyerII/Resource/AccountsProposals.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;proposals&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $adexchangebuyer2Service = new Google\Service\AdExchangeBuyerII(...);
+ $proposals = $adexchangebuyer2Service-&gt;accounts_proposals;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_accept">accept</a>(string $accountId, string $proposalId, <a href="../../../../Google/Service/AdExchangeBuyerII/AcceptProposalRequest.html"><abbr title="Google\Service\AdExchangeBuyerII\AcceptProposalRequest">AcceptProposalRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Mark the proposal as accepted at the given revision number. If the number
+does not match the server's revision number an <code>ABORTED</code> error message will
+be returned. This call updates the proposal_state from <code>PROPOSED</code> to
+<code>BUYER_ACCEPTED</code>, or from <code>SELLER_ACCEPTED</code> to <code>FINALIZED</code>. Upon calling this
+endpoint, the buyer implicitly agrees to the terms and conditions optionally
+set within the proposal by the publisher. (proposals.accept)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AdExchangeBuyerII/Note.html"><abbr title="Google\Service\AdExchangeBuyerII\Note">Note</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addNote">addNote</a>(string $accountId, string $proposalId, <a href="../../../../Google/Service/AdExchangeBuyerII/AddNoteRequest.html"><abbr title="Google\Service\AdExchangeBuyerII\AddNoteRequest">AddNoteRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Create a new note and attach it to the proposal. The note is assigned a
+unique ID by the server. The proposal revision number will not increase when
+associated with a new note. (proposals.addNote)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_cancelNegotiation">cancelNegotiation</a>(string $accountId, string $proposalId, <a href="../../../../Google/Service/AdExchangeBuyerII/CancelNegotiationRequest.html"><abbr title="Google\Service\AdExchangeBuyerII\CancelNegotiationRequest">CancelNegotiationRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Cancel an ongoing negotiation on a proposal. This does not cancel or end
+serving for the deals if the proposal has been finalized, but only cancels a
+negotiation unilaterally. (proposals.cancelNegotiation)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_completeSetup">completeSetup</a>(string $accountId, string $proposalId, <a href="../../../../Google/Service/AdExchangeBuyerII/CompleteSetupRequest.html"><abbr title="Google\Service\AdExchangeBuyerII\CompleteSetupRequest">CompleteSetupRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>You can opt-in to manually update proposals to indicate that setup is
+complete. By default, proposal setup is automatically completed after their
+deals are finalized. Contact your Technical Account Manager to opt in. Buyers
+can call this method when the proposal has been finalized, and all the
+required creatives have been uploaded using the Creatives API. This call
+updates the <code>is_setup_completed</code> field on the deals in the proposal, and
+notifies the seller. The server then advances the revision number of the most
+recent proposal. To mark an individual deal as ready to serve, call
+<code>buyers.finalizedDeals.setReadyToServe</code> in the Marketplace API.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $accountId, <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Create the given proposal. Each created proposal and any deals it contains
+are assigned a unique ID by the server. (proposals.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $accountId, string $proposalId, array $optParams = [])
+        
+                                            <p><p>Gets a proposal given its ID. The proposal is returned at its head revision.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AdExchangeBuyerII/ListProposalsResponse.html"><abbr title="Google\Service\AdExchangeBuyerII\ListProposalsResponse">ListProposalsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listAccountsProposals">listAccountsProposals</a>(string $accountId, array $optParams = [])
+        
+                                            <p><p>List proposals. A filter expression (PQL query) may be specified to filter
+the results. To retrieve all finalized proposals, regardless if a proposal is
+being renegotiated, see the FinalizedProposals resource. Note that
+Bidder/ChildSeat relationships differ from the usual behavior. A Bidder
+account can only see its child seats' proposals by specifying the ChildSeat's
+accountId in the request path. (proposals.listAccountsProposals)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_pause">pause</a>(string $accountId, string $proposalId, <a href="../../../../Google/Service/AdExchangeBuyerII/PauseProposalRequest.html"><abbr title="Google\Service\AdExchangeBuyerII\PauseProposalRequest">PauseProposalRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Update the given proposal to pause serving. This method will set the
+<code>DealServingMetadata.DealPauseStatus.has_buyer_paused</code> bit to true for all
+deals in the proposal. It is a no-op to pause an already-paused proposal. It
+is an error to call PauseProposal for a proposal that is not finalized or
+renegotiating. (proposals.pause)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_resume">resume</a>(string $accountId, string $proposalId, <a href="../../../../Google/Service/AdExchangeBuyerII/ResumeProposalRequest.html"><abbr title="Google\Service\AdExchangeBuyerII\ResumeProposalRequest">ResumeProposalRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Update the given proposal to resume serving. This method will set the
+<code>DealServingMetadata.DealPauseStatus.has_buyer_paused</code> bit to false for all
+deals in the proposal. Note that if the <code>has_seller_paused</code> bit is also set,
+serving will not resume until the seller also resumes. It is a no-op to
+resume an already-running proposal. It is an error to call ResumeProposal for
+a proposal that is not finalized or renegotiating. (proposals.resume)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $accountId, string $proposalId, <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Update the given proposal at the client known revision number. If the server
+revision has advanced since the passed-in <code>proposal.proposal_revision</code>, an
+<code>ABORTED</code> error message will be returned. Only the buyer-modifiable fields of
+the proposal will be updated. Note that the deals in the proposal will be
+updated to match the passed-in copy. If a passed-in deal does not have a
+<code>deal_id</code>, the server will assign a new unique ID and create the deal. If
+passed-in deal has a <code>deal_id</code>, it will be updated to match the passed-in
+copy. Any existing deals not present in the passed-in proposal will be
+deleted. It is an error to pass in a deal with a <code>deal_id</code> not present at
+head. (proposals.update)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_accept">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AdExchangeBuyerII/Resource/AccountsProposals.php#L55">at line 55</a></div>
+        <code>                    <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a>
+    <strong>accept</strong>(string $accountId, string $proposalId, <a href="../../../../Google/Service/AdExchangeBuyerII/AcceptProposalRequest.html"><abbr title="Google\Service\AdExchangeBuyerII\AcceptProposalRequest">AcceptProposalRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Mark the proposal as accepted at the given revision number. If the number
+does not match the server's revision number an <code>ABORTED</code> error message will
+be returned. This call updates the proposal_state from <code>PROPOSED</code> to
+<code>BUYER_ACCEPTED</code>, or from <code>SELLER_ACCEPTED</code> to <code>FINALIZED</code>. Upon calling this
+endpoint, the buyer implicitly agrees to the terms and conditions optionally
+set within the proposal by the publisher. (proposals.accept)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$accountId</td>
+                <td><p>Account ID of the buyer.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$proposalId</td>
+                <td><p>The ID of the proposal to accept.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AdExchangeBuyerII/AcceptProposalRequest.html"><abbr title="Google\Service\AdExchangeBuyerII\AcceptProposalRequest">AcceptProposalRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addNote">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AdExchangeBuyerII/Resource/AccountsProposals.php#L73">at line 73</a></div>
+        <code>                    <a href="../../../../Google/Service/AdExchangeBuyerII/Note.html"><abbr title="Google\Service\AdExchangeBuyerII\Note">Note</abbr></a>
+    <strong>addNote</strong>(string $accountId, string $proposalId, <a href="../../../../Google/Service/AdExchangeBuyerII/AddNoteRequest.html"><abbr title="Google\Service\AdExchangeBuyerII\AddNoteRequest">AddNoteRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create a new note and attach it to the proposal. The note is assigned a
+unique ID by the server. The proposal revision number will not increase when
+associated with a new note. (proposals.addNote)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$accountId</td>
+                <td><p>Account ID of the buyer.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$proposalId</td>
+                <td><p>The ID of the proposal to attach the note to.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AdExchangeBuyerII/AddNoteRequest.html"><abbr title="Google\Service\AdExchangeBuyerII\AddNoteRequest">AddNoteRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AdExchangeBuyerII/Note.html"><abbr title="Google\Service\AdExchangeBuyerII\Note">Note</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cancelNegotiation">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AdExchangeBuyerII/Resource/AccountsProposals.php#L91">at line 91</a></div>
+        <code>                    <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a>
+    <strong>cancelNegotiation</strong>(string $accountId, string $proposalId, <a href="../../../../Google/Service/AdExchangeBuyerII/CancelNegotiationRequest.html"><abbr title="Google\Service\AdExchangeBuyerII\CancelNegotiationRequest">CancelNegotiationRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Cancel an ongoing negotiation on a proposal. This does not cancel or end
+serving for the deals if the proposal has been finalized, but only cancels a
+negotiation unilaterally. (proposals.cancelNegotiation)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$accountId</td>
+                <td><p>Account ID of the buyer.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$proposalId</td>
+                <td><p>The ID of the proposal to cancel negotiation for.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AdExchangeBuyerII/CancelNegotiationRequest.html"><abbr title="Google\Service\AdExchangeBuyerII\CancelNegotiationRequest">CancelNegotiationRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_completeSetup">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AdExchangeBuyerII/Resource/AccountsProposals.php#L116">at line 116</a></div>
+        <code>                    <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a>
+    <strong>completeSetup</strong>(string $accountId, string $proposalId, <a href="../../../../Google/Service/AdExchangeBuyerII/CompleteSetupRequest.html"><abbr title="Google\Service\AdExchangeBuyerII\CompleteSetupRequest">CompleteSetupRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>You can opt-in to manually update proposals to indicate that setup is
+complete. By default, proposal setup is automatically completed after their
+deals are finalized. Contact your Technical Account Manager to opt in. Buyers
+can call this method when the proposal has been finalized, and all the
+required creatives have been uploaded using the Creatives API. This call
+updates the <code>is_setup_completed</code> field on the deals in the proposal, and
+notifies the seller. The server then advances the revision number of the most
+recent proposal. To mark an individual deal as ready to serve, call
+<code>buyers.finalizedDeals.setReadyToServe</code> in the Marketplace API.</p></p>                <p>(proposals.completeSetup)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$accountId</td>
+                <td><p>Account ID of the buyer.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$proposalId</td>
+                <td><p>The ID of the proposal to mark as setup completed.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AdExchangeBuyerII/CompleteSetupRequest.html"><abbr title="Google\Service\AdExchangeBuyerII\CompleteSetupRequest">CompleteSetupRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AdExchangeBuyerII/Resource/AccountsProposals.php#L132">at line 132</a></div>
+        <code>                    <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a>
+    <strong>create</strong>(string $accountId, <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create the given proposal. Each created proposal and any deals it contains
+are assigned a unique ID by the server. (proposals.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$accountId</td>
+                <td><p>Account ID of the buyer.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AdExchangeBuyerII/Resource/AccountsProposals.php#L148">at line 148</a></div>
+        <code>                    <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a>
+    <strong>get</strong>(string $accountId, string $proposalId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets a proposal given its ID. The proposal is returned at its head revision.</p></p>                <p>(proposals.get)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$accountId</td>
+                <td><p>Account ID of the buyer.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$proposalId</td>
+                <td><p>The unique ID of the proposal</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listAccountsProposals">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AdExchangeBuyerII/Resource/AccountsProposals.php#L178">at line 178</a></div>
+        <code>                    <a href="../../../../Google/Service/AdExchangeBuyerII/ListProposalsResponse.html"><abbr title="Google\Service\AdExchangeBuyerII\ListProposalsResponse">ListProposalsResponse</abbr></a>
+    <strong>listAccountsProposals</strong>(string $accountId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>List proposals. A filter expression (PQL query) may be specified to filter
+the results. To retrieve all finalized proposals, regardless if a proposal is
+being renegotiated, see the FinalizedProposals resource. Note that
+Bidder/ChildSeat relationships differ from the usual behavior. A Bidder
+account can only see its child seats' proposals by specifying the ChildSeat's
+accountId in the request path. (proposals.listAccountsProposals)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$accountId</td>
+                <td><p>Account ID of the buyer.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AdExchangeBuyerII/ListProposalsResponse.html"><abbr title="Google\Service\AdExchangeBuyerII\ListProposalsResponse">ListProposalsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pause">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AdExchangeBuyerII/Resource/AccountsProposals.php#L198">at line 198</a></div>
+        <code>                    <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a>
+    <strong>pause</strong>(string $accountId, string $proposalId, <a href="../../../../Google/Service/AdExchangeBuyerII/PauseProposalRequest.html"><abbr title="Google\Service\AdExchangeBuyerII\PauseProposalRequest">PauseProposalRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Update the given proposal to pause serving. This method will set the
+<code>DealServingMetadata.DealPauseStatus.has_buyer_paused</code> bit to true for all
+deals in the proposal. It is a no-op to pause an already-paused proposal. It
+is an error to call PauseProposal for a proposal that is not finalized or
+renegotiating. (proposals.pause)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$accountId</td>
+                <td><p>Account ID of the buyer.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$proposalId</td>
+                <td><p>The ID of the proposal to pause.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AdExchangeBuyerII/PauseProposalRequest.html"><abbr title="Google\Service\AdExchangeBuyerII\PauseProposalRequest">PauseProposalRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resume">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AdExchangeBuyerII/Resource/AccountsProposals.php#L219">at line 219</a></div>
+        <code>                    <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a>
+    <strong>resume</strong>(string $accountId, string $proposalId, <a href="../../../../Google/Service/AdExchangeBuyerII/ResumeProposalRequest.html"><abbr title="Google\Service\AdExchangeBuyerII\ResumeProposalRequest">ResumeProposalRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Update the given proposal to resume serving. This method will set the
+<code>DealServingMetadata.DealPauseStatus.has_buyer_paused</code> bit to false for all
+deals in the proposal. Note that if the <code>has_seller_paused</code> bit is also set,
+serving will not resume until the seller also resumes. It is a no-op to
+resume an already-running proposal. It is an error to call ResumeProposal for
+a proposal that is not finalized or renegotiating. (proposals.resume)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$accountId</td>
+                <td><p>Account ID of the buyer.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$proposalId</td>
+                <td><p>The ID of the proposal to resume.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AdExchangeBuyerII/ResumeProposalRequest.html"><abbr title="Google\Service\AdExchangeBuyerII\ResumeProposalRequest">ResumeProposalRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AdExchangeBuyerII/Resource/AccountsProposals.php#L244">at line 244</a></div>
+        <code>                    <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a>
+    <strong>update</strong>(string $accountId, string $proposalId, <a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Update the given proposal at the client known revision number. If the server
+revision has advanced since the passed-in <code>proposal.proposal_revision</code>, an
+<code>ABORTED</code> error message will be returned. Only the buyer-modifiable fields of
+the proposal will be updated. Note that the deals in the proposal will be
+updated to match the passed-in copy. If a passed-in deal does not have a
+<code>deal_id</code>, the server will assign a new unique ID and create the deal. If
+passed-in deal has a <code>deal_id</code>, it will be updated to match the passed-in
+copy. Any existing deals not present in the passed-in proposal will be
+deleted. It is an error to pass in a deal with a <code>deal_id</code> not present at
+head. (proposals.update)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$accountId</td>
+                <td><p>Account ID of the buyer.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$proposalId</td>
+                <td><p>The unique ID of the proposal.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AdExchangeBuyerII/Proposal.html"><abbr title="Google\Service\AdExchangeBuyerII\Proposal">Proposal</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\AndroidPublisher\Resource\MonetizationSubscriptionsBasePlansOffers | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_AndroidPublisher_Resource_MonetizationSubscriptionsBasePlansOffers" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/AndroidPublisher.html">AndroidPublisher</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/AndroidPublisher/Resource.html">Resource</a></li><li class="backslash">\</li><li>MonetizationSubscriptionsBasePlansOffers</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>MonetizationSubscriptionsBasePlansOffers    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>MonetizationSubscriptionsBasePlansOffers</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AndroidPublisher/Resource/MonetizationSubscriptionsBasePlansOffers.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;offers&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $androidpublisherService = new Google\Service\AndroidPublisher(...);
+ $offers = $androidpublisherService-&gt;monetization_subscriptions_basePlans_offers;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_activate">activate</a>(string $packageName, string $productId, string $basePlanId, string $offerId, <a href="../../../../Google/Service/AndroidPublisher/ActivateSubscriptionOfferRequest.html"><abbr title="Google\Service\AndroidPublisher\ActivateSubscriptionOfferRequest">ActivateSubscriptionOfferRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Activates a subscription offer. Once activated, subscription offers will be
+available to new subscribers. (offers.activate)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidPublisher/BatchGetSubscriptionOffersResponse.html"><abbr title="Google\Service\AndroidPublisher\BatchGetSubscriptionOffersResponse">BatchGetSubscriptionOffersResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchGet">batchGet</a>(string $packageName, string $productId, string $basePlanId, <a href="../../../../Google/Service/AndroidPublisher/BatchGetSubscriptionOffersRequest.html"><abbr title="Google\Service\AndroidPublisher\BatchGetSubscriptionOffersRequest">BatchGetSubscriptionOffersRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Reads one or more subscription offers. (offers.batchGet)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidPublisher/BatchUpdateSubscriptionOffersResponse.html"><abbr title="Google\Service\AndroidPublisher\BatchUpdateSubscriptionOffersResponse">BatchUpdateSubscriptionOffersResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchUpdate">batchUpdate</a>(string $packageName, string $productId, string $basePlanId, <a href="../../../../Google/Service/AndroidPublisher/BatchUpdateSubscriptionOffersRequest.html"><abbr title="Google\Service\AndroidPublisher\BatchUpdateSubscriptionOffersRequest">BatchUpdateSubscriptionOffersRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a batch of subscription offers. Set the latencyTolerance field on
+nested requests to PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT to
+achieve maximum update throughput. (offers.batchUpdate)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidPublisher/BatchUpdateSubscriptionOfferStatesResponse.html"><abbr title="Google\Service\AndroidPublisher\BatchUpdateSubscriptionOfferStatesResponse">BatchUpdateSubscriptionOfferStatesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchUpdateStates">batchUpdateStates</a>(string $packageName, string $productId, string $basePlanId, <a href="../../../../Google/Service/AndroidPublisher/BatchUpdateSubscriptionOfferStatesRequest.html"><abbr title="Google\Service\AndroidPublisher\BatchUpdateSubscriptionOfferStatesRequest">BatchUpdateSubscriptionOfferStatesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a batch of subscription offer states. Set the latencyTolerance field
+on nested requests to PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT to
+achieve maximum update throughput. (offers.batchUpdateStates)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $packageName, string $productId, string $basePlanId, <a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a new subscription offer. Only auto-renewing base plans can have
+subscription offers. The offer state will be DRAFT until it is activated.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_deactivate">deactivate</a>(string $packageName, string $productId, string $basePlanId, string $offerId, <a href="../../../../Google/Service/AndroidPublisher/DeactivateSubscriptionOfferRequest.html"><abbr title="Google\Service\AndroidPublisher\DeactivateSubscriptionOfferRequest">DeactivateSubscriptionOfferRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Deactivates a subscription offer. Once deactivated, existing subscribers will
+maintain their subscription, but the offer will become unavailable to new
+subscribers. (offers.deactivate)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $packageName, string $productId, string $basePlanId, string $offerId, array $optParams = [])
+        
+                                            <p><p>Deletes a subscription offer. Can only be done for draft offers. This action
+is irreversible. (offers.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $packageName, string $productId, string $basePlanId, string $offerId, array $optParams = [])
+        
+                                            <p><p>Reads a single offer (offers.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidPublisher/ListSubscriptionOffersResponse.html"><abbr title="Google\Service\AndroidPublisher\ListSubscriptionOffersResponse">ListSubscriptionOffersResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listMonetizationSubscriptionsBasePlansOffers">listMonetizationSubscriptionsBasePlansOffers</a>(string $packageName, string $productId, string $basePlanId, array $optParams = [])
+        
+                                            <p><p>Lists all offers under a given subscription.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $packageName, string $productId, string $basePlanId, string $offerId, <a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates an existing subscription offer. (offers.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_activate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AndroidPublisher/Resource/MonetizationSubscriptionsBasePlansOffers.php#L58">at line 58</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a>
+    <strong>activate</strong>(string $packageName, string $productId, string $basePlanId, string $offerId, <a href="../../../../Google/Service/AndroidPublisher/ActivateSubscriptionOfferRequest.html"><abbr title="Google\Service\AndroidPublisher\ActivateSubscriptionOfferRequest">ActivateSubscriptionOfferRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Activates a subscription offer. Once activated, subscription offers will be
+available to new subscribers. (offers.activate)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>Required. The parent app (package name) of the
+offer to activate.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$productId</td>
+                <td><p>Required. The parent subscription (ID) of the offer
+to activate.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$basePlanId</td>
+                <td><p>Required. The parent base plan (ID) of the offer to
+activate.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$offerId</td>
+                <td><p>Required. The unique offer ID of the offer to
+activate.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AndroidPublisher/ActivateSubscriptionOfferRequest.html"><abbr title="Google\Service\AndroidPublisher\ActivateSubscriptionOfferRequest">ActivateSubscriptionOfferRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchGet">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AndroidPublisher/Resource/MonetizationSubscriptionsBasePlansOffers.php#L81">at line 81</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidPublisher/BatchGetSubscriptionOffersResponse.html"><abbr title="Google\Service\AndroidPublisher\BatchGetSubscriptionOffersResponse">BatchGetSubscriptionOffersResponse</abbr></a>
+    <strong>batchGet</strong>(string $packageName, string $productId, string $basePlanId, <a href="../../../../Google/Service/AndroidPublisher/BatchGetSubscriptionOffersRequest.html"><abbr title="Google\Service\AndroidPublisher\BatchGetSubscriptionOffersRequest">BatchGetSubscriptionOffersRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Reads one or more subscription offers. (offers.batchGet)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>Required. The parent app (package name) for which
+the subscriptions should be created or updated. Must be equal to the
+package_name field on all the requests.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$productId</td>
+                <td><p>Required. The product ID of the parent subscription,
+if all updated offers belong to the same subscription. If this request spans
+multiple subscriptions, set this field to &quot;-&quot;. Must be set.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$basePlanId</td>
+                <td><p>Required. The parent base plan (ID) for which the
+offers should be read. May be specified as '-' to read offers from multiple
+base plans.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AndroidPublisher/BatchGetSubscriptionOffersRequest.html"><abbr title="Google\Service\AndroidPublisher\BatchGetSubscriptionOffersRequest">BatchGetSubscriptionOffersRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidPublisher/BatchGetSubscriptionOffersResponse.html"><abbr title="Google\Service\AndroidPublisher\BatchGetSubscriptionOffersResponse">BatchGetSubscriptionOffersResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchUpdate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AndroidPublisher/Resource/MonetizationSubscriptionsBasePlansOffers.php#L106">at line 106</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidPublisher/BatchUpdateSubscriptionOffersResponse.html"><abbr title="Google\Service\AndroidPublisher\BatchUpdateSubscriptionOffersResponse">BatchUpdateSubscriptionOffersResponse</abbr></a>
+    <strong>batchUpdate</strong>(string $packageName, string $productId, string $basePlanId, <a href="../../../../Google/Service/AndroidPublisher/BatchUpdateSubscriptionOffersRequest.html"><abbr title="Google\Service\AndroidPublisher\BatchUpdateSubscriptionOffersRequest">BatchUpdateSubscriptionOffersRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a batch of subscription offers. Set the latencyTolerance field on
+nested requests to PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT to
+achieve maximum update throughput. (offers.batchUpdate)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>Required. The parent app (package name) of the
+updated subscription offers. Must be equal to the package_name field on all
+the updated SubscriptionOffer resources.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$productId</td>
+                <td><p>Required. The product ID of the parent subscription,
+if all updated offers belong to the same subscription. If this request spans
+multiple subscriptions, set this field to &quot;-&quot;. Must be set.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$basePlanId</td>
+                <td><p>Required. The parent base plan (ID) for which the
+offers should be updated. May be specified as '-' to update offers from
+multiple base plans.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AndroidPublisher/BatchUpdateSubscriptionOffersRequest.html"><abbr title="Google\Service\AndroidPublisher\BatchUpdateSubscriptionOffersRequest">BatchUpdateSubscriptionOffersRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidPublisher/BatchUpdateSubscriptionOffersResponse.html"><abbr title="Google\Service\AndroidPublisher\BatchUpdateSubscriptionOffersResponse">BatchUpdateSubscriptionOffersResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchUpdateStates">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AndroidPublisher/Resource/MonetizationSubscriptionsBasePlansOffers.php#L131">at line 131</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidPublisher/BatchUpdateSubscriptionOfferStatesResponse.html"><abbr title="Google\Service\AndroidPublisher\BatchUpdateSubscriptionOfferStatesResponse">BatchUpdateSubscriptionOfferStatesResponse</abbr></a>
+    <strong>batchUpdateStates</strong>(string $packageName, string $productId, string $basePlanId, <a href="../../../../Google/Service/AndroidPublisher/BatchUpdateSubscriptionOfferStatesRequest.html"><abbr title="Google\Service\AndroidPublisher\BatchUpdateSubscriptionOfferStatesRequest">BatchUpdateSubscriptionOfferStatesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a batch of subscription offer states. Set the latencyTolerance field
+on nested requests to PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT to
+achieve maximum update throughput. (offers.batchUpdateStates)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>Required. The parent app (package name) of the
+updated subscription offers. Must be equal to the package_name field on all
+the updated SubscriptionOffer resources.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$productId</td>
+                <td><p>Required. The product ID of the parent subscription,
+if all updated offers belong to the same subscription. If this request spans
+multiple subscriptions, set this field to &quot;-&quot;. Must be set.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$basePlanId</td>
+                <td><p>Required. The parent base plan (ID) for which the
+offers should be updated. May be specified as '-' to update offers from
+multiple base plans.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AndroidPublisher/BatchUpdateSubscriptionOfferStatesRequest.html"><abbr title="Google\Service\AndroidPublisher\BatchUpdateSubscriptionOfferStatesRequest">BatchUpdateSubscriptionOfferStatesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidPublisher/BatchUpdateSubscriptionOfferStatesResponse.html"><abbr title="Google\Service\AndroidPublisher\BatchUpdateSubscriptionOfferStatesResponse">BatchUpdateSubscriptionOfferStatesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AndroidPublisher/Resource/MonetizationSubscriptionsBasePlansOffers.php#L169">at line 169</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a>
+    <strong>create</strong>(string $packageName, string $productId, string $basePlanId, <a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a new subscription offer. Only auto-renewing base plans can have
+subscription offers. The offer state will be DRAFT until it is activated.</p></p>                <p>(offers.create)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>Required. The parent app (package name) for which
+the offer should be created. Must be equal to the package_name field on the
+Subscription resource.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$productId</td>
+                <td><p>Required. The parent subscription (ID) for which the
+offer should be created. Must be equal to the product_id field on the
+SubscriptionOffer resource.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$basePlanId</td>
+                <td><p>Required. The parent base plan (ID) for which the
+offer should be created. Must be equal to the base_plan_id field on the
+SubscriptionOffer resource.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deactivate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AndroidPublisher/Resource/MonetizationSubscriptionsBasePlansOffers.php#L193">at line 193</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a>
+    <strong>deactivate</strong>(string $packageName, string $productId, string $basePlanId, string $offerId, <a href="../../../../Google/Service/AndroidPublisher/DeactivateSubscriptionOfferRequest.html"><abbr title="Google\Service\AndroidPublisher\DeactivateSubscriptionOfferRequest">DeactivateSubscriptionOfferRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deactivates a subscription offer. Once deactivated, existing subscribers will
+maintain their subscription, but the offer will become unavailable to new
+subscribers. (offers.deactivate)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>Required. The parent app (package name) of the
+offer to deactivate.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$productId</td>
+                <td><p>Required. The parent subscription (ID) of the offer
+to deactivate.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$basePlanId</td>
+                <td><p>Required. The parent base plan (ID) of the offer to
+deactivate.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$offerId</td>
+                <td><p>Required. The unique offer ID of the offer to
+deactivate.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AndroidPublisher/DeactivateSubscriptionOfferRequest.html"><abbr title="Google\Service\AndroidPublisher\DeactivateSubscriptionOfferRequest">DeactivateSubscriptionOfferRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AndroidPublisher/Resource/MonetizationSubscriptionsBasePlansOffers.php#L213">at line 213</a></div>
+        <code>                    
+    <strong>delete</strong>(string $packageName, string $productId, string $basePlanId, string $offerId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a subscription offer. Can only be done for draft offers. This action
+is irreversible. (offers.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>Required. The parent app (package name) of the
+offer to delete.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$productId</td>
+                <td><p>Required. The parent subscription (ID) of the offer
+to delete.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$basePlanId</td>
+                <td><p>Required. The parent base plan (ID) of the offer to
+delete.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$offerId</td>
+                <td><p>Required. The unique offer ID of the offer to delete.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AndroidPublisher/Resource/MonetizationSubscriptionsBasePlansOffers.php#L233">at line 233</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a>
+    <strong>get</strong>(string $packageName, string $productId, string $basePlanId, string $offerId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Reads a single offer (offers.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>Required. The parent app (package name) of the
+offer to get.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$productId</td>
+                <td><p>Required. The parent subscription (ID) of the offer
+to get.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$basePlanId</td>
+                <td><p>Required. The parent base plan (ID) of the offer to
+get.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$offerId</td>
+                <td><p>Required. The unique offer ID of the offer to get.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listMonetizationSubscriptionsBasePlansOffers">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AndroidPublisher/Resource/MonetizationSubscriptionsBasePlansOffers.php#L265">at line 265</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidPublisher/ListSubscriptionOffersResponse.html"><abbr title="Google\Service\AndroidPublisher\ListSubscriptionOffersResponse">ListSubscriptionOffersResponse</abbr></a>
+    <strong>listMonetizationSubscriptionsBasePlansOffers</strong>(string $packageName, string $productId, string $basePlanId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all offers under a given subscription.</p></p>                <p>(offers.listMonetizationSubscriptionsBasePlansOffers)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>Required. The parent app (package name) for which
+the subscriptions should be read.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$productId</td>
+                <td><p>Required. The parent subscription (ID) for which the
+offers should be read. May be specified as '-' to read all offers under an
+app.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$basePlanId</td>
+                <td><p>Required. The parent base plan (ID) for which the
+offers should be read. May be specified as '-' to read all offers under a
+subscription or an app. Must be specified as '-' if product_id is specified
+as '-'.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidPublisher/ListSubscriptionOffersResponse.html"><abbr title="Google\Service\AndroidPublisher\ListSubscriptionOffersResponse">ListSubscriptionOffersResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AndroidPublisher/Resource/MonetizationSubscriptionsBasePlansOffers.php#L304">at line 304</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a>
+    <strong>patch</strong>(string $packageName, string $productId, string $basePlanId, string $offerId, <a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates an existing subscription offer. (offers.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>Required. Immutable. The package name of the app
+the parent subscription belongs to.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$productId</td>
+                <td><p>Required. Immutable. The ID of the parent
+subscription this offer belongs to.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$basePlanId</td>
+                <td><p>Required. Immutable. The ID of the base plan to
+which this offer is an extension.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$offerId</td>
+                <td><p>Required. Immutable. Unique ID of this subscription
+offer. Must be unique within the base plan.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidPublisher/SubscriptionOffer.html"><abbr title="Google\Service\AndroidPublisher\SubscriptionOffer">SubscriptionOffer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

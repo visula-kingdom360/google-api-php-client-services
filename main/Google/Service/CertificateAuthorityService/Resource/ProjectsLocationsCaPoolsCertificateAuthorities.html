@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\CertificateAuthorityService\Resource\ProjectsLocationsCaPoolsCertificateAuthorities | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_CertificateAuthorityService_Resource_ProjectsLocationsCaPoolsCertificateAuthorities" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CertificateAuthorityService.html">CertificateAuthorityService</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CertificateAuthorityService/Resource.html">Resource</a></li><li class="backslash">\</li><li>ProjectsLocationsCaPoolsCertificateAuthorities</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsLocationsCaPoolsCertificateAuthorities    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsLocationsCaPoolsCertificateAuthorities</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CertificateAuthorityService/Resource/ProjectsLocationsCaPoolsCertificateAuthorities.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;certificateAuthorities&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $privatecaService = new Google\Service\CertificateAuthorityService(...);
+ $certificateAuthorities = $privatecaService-&gt;projects_locations_caPools_certificateAuthorities;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_activate">activate</a>(string $name, <a href="../../../../Google/Service/CertificateAuthorityService/ActivateCertificateAuthorityRequest.html"><abbr title="Google\Service\CertificateAuthorityService\ActivateCertificateAuthorityRequest">ActivateCertificateAuthorityRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Activate a CertificateAuthority that is in state AWAITING_USER_ACTIVATION and
+is of type SUBORDINATE. After the parent Certificate Authority signs a
+certificate signing request from FetchCertificateAuthorityCsr, this method
+can complete the activation process. (certificateAuthorities.activate)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/CertificateAuthorityService/CertificateAuthority.html"><abbr title="Google\Service\CertificateAuthorityService\CertificateAuthority">CertificateAuthority</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Create a new CertificateAuthority in a given Project and Location.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Delete a CertificateAuthority. (certificateAuthorities.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_disable">disable</a>(string $name, <a href="../../../../Google/Service/CertificateAuthorityService/DisableCertificateAuthorityRequest.html"><abbr title="Google\Service\CertificateAuthorityService\DisableCertificateAuthorityRequest">DisableCertificateAuthorityRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Disable a CertificateAuthority. (certificateAuthorities.disable)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_enable">enable</a>(string $name, <a href="../../../../Google/Service/CertificateAuthorityService/EnableCertificateAuthorityRequest.html"><abbr title="Google\Service\CertificateAuthorityService\EnableCertificateAuthorityRequest">EnableCertificateAuthorityRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Enable a CertificateAuthority. (certificateAuthorities.enable)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CertificateAuthorityService/FetchCertificateAuthorityCsrResponse.html"><abbr title="Google\Service\CertificateAuthorityService\FetchCertificateAuthorityCsrResponse">FetchCertificateAuthorityCsrResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_fetch">fetch</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Fetch a certificate signing request (CSR) from a CertificateAuthority that is
+in state AWAITING_USER_ACTIVATION and is of type SUBORDINATE. The CSR must
+then be signed by the desired parent Certificate Authority, which could be
+another CertificateAuthority resource, or could be an on-prem certificate
+authority. See also ActivateCertificateAuthority.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CertificateAuthorityService/CertificateAuthority.html"><abbr title="Google\Service\CertificateAuthorityService\CertificateAuthority">CertificateAuthority</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Returns a CertificateAuthority. (certificateAuthorities.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CertificateAuthorityService/ListCertificateAuthoritiesResponse.html"><abbr title="Google\Service\CertificateAuthorityService\ListCertificateAuthoritiesResponse">ListCertificateAuthoritiesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsLocationsCaPoolsCertificateAuthorities">listProjectsLocationsCaPoolsCertificateAuthorities</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists CertificateAuthorities.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/CertificateAuthorityService/CertificateAuthority.html"><abbr title="Google\Service\CertificateAuthorityService\CertificateAuthority">CertificateAuthority</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Update a CertificateAuthority. (certificateAuthorities.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_undelete">undelete</a>(string $name, <a href="../../../../Google/Service/CertificateAuthorityService/UndeleteCertificateAuthorityRequest.html"><abbr title="Google\Service\CertificateAuthorityService\UndeleteCertificateAuthorityRequest">UndeleteCertificateAuthorityRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Undelete a CertificateAuthority that has been deleted.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_activate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CertificateAuthorityService/Resource/ProjectsLocationsCaPoolsCertificateAuthorities.php#L52">at line 52</a></div>
+        <code>                    <a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a>
+    <strong>activate</strong>(string $name, <a href="../../../../Google/Service/CertificateAuthorityService/ActivateCertificateAuthorityRequest.html"><abbr title="Google\Service\CertificateAuthorityService\ActivateCertificateAuthorityRequest">ActivateCertificateAuthorityRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Activate a CertificateAuthority that is in state AWAITING_USER_ACTIVATION and
+is of type SUBORDINATE. After the parent Certificate Authority signs a
+certificate signing request from FetchCertificateAuthorityCsr, this method
+can complete the activation process. (certificateAuthorities.activate)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name for this CertificateAuthority
+in the format <code>projects/locations/caPools/certificateAuthorities</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CertificateAuthorityService/ActivateCertificateAuthorityRequest.html"><abbr title="Google\Service\CertificateAuthorityService\ActivateCertificateAuthorityRequest">ActivateCertificateAuthorityRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CertificateAuthorityService/Resource/ProjectsLocationsCaPoolsCertificateAuthorities.php#L83">at line 83</a></div>
+        <code>                    <a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/CertificateAuthorityService/CertificateAuthority.html"><abbr title="Google\Service\CertificateAuthorityService\CertificateAuthority">CertificateAuthority</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create a new CertificateAuthority in a given Project and Location.</p></p>                <p>(certificateAuthorities.create)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the CaPool associated
+with the CertificateAuthorities, in the format <code>projects/locations/caPools</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CertificateAuthorityService/CertificateAuthority.html"><abbr title="Google\Service\CertificateAuthorityService\CertificateAuthority">CertificateAuthority</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CertificateAuthorityService/Resource/ProjectsLocationsCaPoolsCertificateAuthorities.php#L121">at line 121</a></div>
+        <code>                    <a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Delete a CertificateAuthority. (certificateAuthorities.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name for this CertificateAuthority
+in the format <code>projects/locations/caPools/certificateAuthorities</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disable">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CertificateAuthorityService/Resource/ProjectsLocationsCaPoolsCertificateAuthorities.php#L137">at line 137</a></div>
+        <code>                    <a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a>
+    <strong>disable</strong>(string $name, <a href="../../../../Google/Service/CertificateAuthorityService/DisableCertificateAuthorityRequest.html"><abbr title="Google\Service\CertificateAuthorityService\DisableCertificateAuthorityRequest">DisableCertificateAuthorityRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Disable a CertificateAuthority. (certificateAuthorities.disable)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name for this CertificateAuthority
+in the format <code>projects/locations/caPools/certificateAuthorities</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CertificateAuthorityService/DisableCertificateAuthorityRequest.html"><abbr title="Google\Service\CertificateAuthorityService\DisableCertificateAuthorityRequest">DisableCertificateAuthorityRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enable">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CertificateAuthorityService/Resource/ProjectsLocationsCaPoolsCertificateAuthorities.php#L153">at line 153</a></div>
+        <code>                    <a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a>
+    <strong>enable</strong>(string $name, <a href="../../../../Google/Service/CertificateAuthorityService/EnableCertificateAuthorityRequest.html"><abbr title="Google\Service\CertificateAuthorityService\EnableCertificateAuthorityRequest">EnableCertificateAuthorityRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Enable a CertificateAuthority. (certificateAuthorities.enable)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name for this CertificateAuthority
+in the format <code>projects/locations/caPools/certificateAuthorities</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CertificateAuthorityService/EnableCertificateAuthorityRequest.html"><abbr title="Google\Service\CertificateAuthorityService\EnableCertificateAuthorityRequest">EnableCertificateAuthorityRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CertificateAuthorityService/Resource/ProjectsLocationsCaPoolsCertificateAuthorities.php#L173">at line 173</a></div>
+        <code>                    <a href="../../../../Google/Service/CertificateAuthorityService/FetchCertificateAuthorityCsrResponse.html"><abbr title="Google\Service\CertificateAuthorityService\FetchCertificateAuthorityCsrResponse">FetchCertificateAuthorityCsrResponse</abbr></a>
+    <strong>fetch</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Fetch a certificate signing request (CSR) from a CertificateAuthority that is
+in state AWAITING_USER_ACTIVATION and is of type SUBORDINATE. The CSR must
+then be signed by the desired parent Certificate Authority, which could be
+another CertificateAuthority resource, or could be an on-prem certificate
+authority. See also ActivateCertificateAuthority.</p></p>                <p>(certificateAuthorities.fetch)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name for this CertificateAuthority
+in the format <code>projects/locations/caPools/certificateAuthorities</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CertificateAuthorityService/FetchCertificateAuthorityCsrResponse.html"><abbr title="Google\Service\CertificateAuthorityService\FetchCertificateAuthorityCsrResponse">FetchCertificateAuthorityCsrResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CertificateAuthorityService/Resource/ProjectsLocationsCaPoolsCertificateAuthorities.php#L187">at line 187</a></div>
+        <code>                    <a href="../../../../Google/Service/CertificateAuthorityService/CertificateAuthority.html"><abbr title="Google\Service\CertificateAuthorityService\CertificateAuthority">CertificateAuthority</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns a CertificateAuthority. (certificateAuthorities.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the CertificateAuthority to get.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CertificateAuthorityService/CertificateAuthority.html"><abbr title="Google\Service\CertificateAuthorityService\CertificateAuthority">CertificateAuthority</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsLocationsCaPoolsCertificateAuthorities">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CertificateAuthorityService/Resource/ProjectsLocationsCaPoolsCertificateAuthorities.php#L214">at line 214</a></div>
+        <code>                    <a href="../../../../Google/Service/CertificateAuthorityService/ListCertificateAuthoritiesResponse.html"><abbr title="Google\Service\CertificateAuthorityService\ListCertificateAuthoritiesResponse">ListCertificateAuthoritiesResponse</abbr></a>
+    <strong>listProjectsLocationsCaPoolsCertificateAuthorities</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists CertificateAuthorities.</p></p>                <p>(certificateAuthorities.listProjectsLocationsCaPoolsCertificateAuthorities)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the CaPool associated
+with the CertificateAuthorities, in the format <code>projects/locations/caPools</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CertificateAuthorityService/ListCertificateAuthoritiesResponse.html"><abbr title="Google\Service\CertificateAuthorityService\ListCertificateAuthoritiesResponse">ListCertificateAuthoritiesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CertificateAuthorityService/Resource/ProjectsLocationsCaPoolsCertificateAuthorities.php#L245">at line 245</a></div>
+        <code>                    <a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/CertificateAuthorityService/CertificateAuthority.html"><abbr title="Google\Service\CertificateAuthorityService\CertificateAuthority">CertificateAuthority</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Update a CertificateAuthority. (certificateAuthorities.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Output only. The resource name for this
+CertificateAuthority in the format
+<code>projects/locations/caPools/certificateAuthorities</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CertificateAuthorityService/CertificateAuthority.html"><abbr title="Google\Service\CertificateAuthorityService\CertificateAuthority">CertificateAuthority</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_undelete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CertificateAuthorityService/Resource/ProjectsLocationsCaPoolsCertificateAuthorities.php#L262">at line 262</a></div>
+        <code>                    <a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a>
+    <strong>undelete</strong>(string $name, <a href="../../../../Google/Service/CertificateAuthorityService/UndeleteCertificateAuthorityRequest.html"><abbr title="Google\Service\CertificateAuthorityService\UndeleteCertificateAuthorityRequest">UndeleteCertificateAuthorityRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Undelete a CertificateAuthority that has been deleted.</p></p>                <p>(certificateAuthorities.undelete)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name for this CertificateAuthority
+in the format <code>projects/locations/caPools/certificateAuthorities</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CertificateAuthorityService/UndeleteCertificateAuthorityRequest.html"><abbr title="Google\Service\CertificateAuthorityService\UndeleteCertificateAuthorityRequest">UndeleteCertificateAuthorityRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CertificateAuthorityService/Operation.html"><abbr title="Google\Service\CertificateAuthorityService\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

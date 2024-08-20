@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Dataflow\Resource\ProjectsLocationsJobs | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Dataflow_Resource_ProjectsLocationsJobs" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Dataflow.html">Dataflow</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Dataflow/Resource.html">Resource</a></li><li class="backslash">\</li><li>ProjectsLocationsJobs</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsLocationsJobs    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsLocationsJobs</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Dataflow/Resource/ProjectsLocationsJobs.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;jobs&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $dataflowService = new Google\Service\Dataflow(...);
+ $jobs = $dataflowService-&gt;projects_locations_jobs;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataflow/Job.html"><abbr title="Google\Service\Dataflow\Job">Job</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $projectId, string $location, <a href="../../../../Google/Service/Dataflow/Job.html"><abbr title="Google\Service\Dataflow\Job">Job</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a Cloud Dataflow job. To create a job, we recommend using
+<code>projects.locations.jobs.create</code> with a [regional endpoint]
+(<a href="https://cloud.google.com/dataflow/docs/concepts/regional-endpoints">https://cloud.google.com/dataflow/docs/concepts/regional-endpoints</a>). Using
+<code>projects.jobs.create</code> is not recommended, as your job will always start in
+<code>us-central1</code>. Do not enter confidential information when you supply string
+values using the API. (jobs.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataflow/Job.html"><abbr title="Google\Service\Dataflow\Job">Job</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $projectId, string $location, string $jobId, array $optParams = [])
+        
+                                            <p><p>Gets the state of the specified Cloud Dataflow job. To get the state of a
+job, we recommend using <code>projects.locations.jobs.get</code> with a [regional
+endpoint] (<a href="https://cloud.google.com/dataflow/docs/concepts/regional">https://cloud.google.com/dataflow/docs/concepts/regional</a>-
+endpoints). Using <code>projects.jobs.get</code> is not recommended, as you can only get
+the state of jobs that are running in <code>us-central1</code>. (jobs.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataflow/JobExecutionDetails.html"><abbr title="Google\Service\Dataflow\JobExecutionDetails">JobExecutionDetails</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getExecutionDetails">getExecutionDetails</a>(string $projectId, string $location, string $jobId, array $optParams = [])
+        
+                                            <p><p>Request detailed information about the execution status of the job.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataflow/JobMetrics.html"><abbr title="Google\Service\Dataflow\JobMetrics">JobMetrics</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMetrics">getMetrics</a>(string $projectId, string $location, string $jobId, array $optParams = [])
+        
+                                            <p><p>Request the job status. To request the status of a job, we recommend using
+<code>projects.locations.jobs.getMetrics</code> with a [regional endpoint]
+(<a href="https://cloud.google.com/dataflow/docs/concepts/regional-endpoints">https://cloud.google.com/dataflow/docs/concepts/regional-endpoints</a>). Using
+<code>projects.jobs.getMetrics</code> is not recommended, as you can only request the
+status of jobs that are running in <code>us-central1</code>. (jobs.getMetrics)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataflow/ListJobsResponse.html"><abbr title="Google\Service\Dataflow\ListJobsResponse">ListJobsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsLocationsJobs">listProjectsLocationsJobs</a>(string $projectId, string $location, array $optParams = [])
+        
+                                            <p><p>List the jobs of a project. To list the jobs of a project in a region, we
+recommend using <code>projects.locations.jobs.list</code> with a [regional endpoint]
+(<a href="https://cloud.google.com/dataflow/docs/concepts/regional-endpoints">https://cloud.google.com/dataflow/docs/concepts/regional-endpoints</a>). To list
+the all jobs across all regions, use <code>projects.jobs.aggregated</code>. Using
+<code>projects.jobs.list</code> is not recommended, because you can only get the list of
+jobs that are running in <code>us-central1</code>. <code>projects.locations.jobs.list</code> and
+<code>projects.jobs.list</code> support filtering the list of jobs by name. Filtering by
+name isn't supported by <code>projects.jobs.aggregated</code>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataflow/Snapshot.html"><abbr title="Google\Service\Dataflow\Snapshot">Snapshot</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_snapshot">snapshot</a>(string $projectId, string $location, string $jobId, <a href="../../../../Google/Service/Dataflow/SnapshotJobRequest.html"><abbr title="Google\Service\Dataflow\SnapshotJobRequest">SnapshotJobRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Snapshot the state of a streaming job. (jobs.snapshot)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataflow/Job.html"><abbr title="Google\Service\Dataflow\Job">Job</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $projectId, string $location, string $jobId, <a href="../../../../Google/Service/Dataflow/Job.html"><abbr title="Google\Service\Dataflow\Job">Job</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the state of an existing Cloud Dataflow job. To update the state of
+an existing job, we recommend using <code>projects.locations.jobs.update</code> with a
+[regional endpoint]
+(<a href="https://cloud.google.com/dataflow/docs/concepts/regional-endpoints">https://cloud.google.com/dataflow/docs/concepts/regional-endpoints</a>). Using
+<code>projects.jobs.update</code> is not recommended, as you can only update the state
+of jobs that are running in <code>us-central1</code>. (jobs.update)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Dataflow/Resource/ProjectsLocationsJobs.php#L59">at line 59</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataflow/Job.html"><abbr title="Google\Service\Dataflow\Job">Job</abbr></a>
+    <strong>create</strong>(string $projectId, string $location, <a href="../../../../Google/Service/Dataflow/Job.html"><abbr title="Google\Service\Dataflow\Job">Job</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a Cloud Dataflow job. To create a job, we recommend using
+<code>projects.locations.jobs.create</code> with a [regional endpoint]
+(<a href="https://cloud.google.com/dataflow/docs/concepts/regional-endpoints">https://cloud.google.com/dataflow/docs/concepts/regional-endpoints</a>). Using
+<code>projects.jobs.create</code> is not recommended, as your job will always start in
+<code>us-central1</code>. Do not enter confidential information when you supply string
+values using the API. (jobs.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>The ID of the Cloud Platform project that the job
+belongs to.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$location</td>
+                <td><p>The [regional endpoint]
+(<a href="https://cloud.google.com/dataflow/docs/concepts/regional-endpoints">https://cloud.google.com/dataflow/docs/concepts/regional-endpoints</a>) that
+contains this job.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dataflow/Job.html"><abbr title="Google\Service\Dataflow\Job">Job</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataflow/Job.html"><abbr title="Google\Service\Dataflow\Job">Job</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Dataflow/Resource/ProjectsLocationsJobs.php#L84">at line 84</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataflow/Job.html"><abbr title="Google\Service\Dataflow\Job">Job</abbr></a>
+    <strong>get</strong>(string $projectId, string $location, string $jobId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the state of the specified Cloud Dataflow job. To get the state of a
+job, we recommend using <code>projects.locations.jobs.get</code> with a [regional
+endpoint] (<a href="https://cloud.google.com/dataflow/docs/concepts/regional">https://cloud.google.com/dataflow/docs/concepts/regional</a>-
+endpoints). Using <code>projects.jobs.get</code> is not recommended, as you can only get
+the state of jobs that are running in <code>us-central1</code>. (jobs.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>The ID of the Cloud Platform project that the job
+belongs to.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$location</td>
+                <td><p>The [regional endpoint]
+(<a href="https://cloud.google.com/dataflow/docs/concepts/regional-endpoints">https://cloud.google.com/dataflow/docs/concepts/regional-endpoints</a>) that
+contains this job.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$jobId</td>
+                <td><p>The job ID.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataflow/Job.html"><abbr title="Google\Service\Dataflow\Job">Job</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getExecutionDetails">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Dataflow/Resource/ProjectsLocationsJobs.php#L111">at line 111</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataflow/JobExecutionDetails.html"><abbr title="Google\Service\Dataflow\JobExecutionDetails">JobExecutionDetails</abbr></a>
+    <strong>getExecutionDetails</strong>(string $projectId, string $location, string $jobId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Request detailed information about the execution status of the job.</p></p>                <p><p>EXPERIMENTAL. This API is subject to change or removal without notice.
+(jobs.getExecutionDetails)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>A project id.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$location</td>
+                <td><p>The [regional endpoint]
+(<a href="https://cloud.google.com/dataflow/docs/concepts/regional-endpoints">https://cloud.google.com/dataflow/docs/concepts/regional-endpoints</a>) that
+contains the job specified by job_id.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$jobId</td>
+                <td><p>The job to get execution details for.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataflow/JobExecutionDetails.html"><abbr title="Google\Service\Dataflow\JobExecutionDetails">JobExecutionDetails</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMetrics">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Dataflow/Resource/ProjectsLocationsJobs.php#L137">at line 137</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataflow/JobMetrics.html"><abbr title="Google\Service\Dataflow\JobMetrics">JobMetrics</abbr></a>
+    <strong>getMetrics</strong>(string $projectId, string $location, string $jobId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Request the job status. To request the status of a job, we recommend using
+<code>projects.locations.jobs.getMetrics</code> with a [regional endpoint]
+(<a href="https://cloud.google.com/dataflow/docs/concepts/regional-endpoints">https://cloud.google.com/dataflow/docs/concepts/regional-endpoints</a>). Using
+<code>projects.jobs.getMetrics</code> is not recommended, as you can only request the
+status of jobs that are running in <code>us-central1</code>. (jobs.getMetrics)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>A project id.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$location</td>
+                <td><p>The [regional endpoint]
+(<a href="https://cloud.google.com/dataflow/docs/concepts/regional-endpoints">https://cloud.google.com/dataflow/docs/concepts/regional-endpoints</a>) that
+contains the job specified by job_id.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$jobId</td>
+                <td><p>The job to get metrics for.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataflow/JobMetrics.html"><abbr title="Google\Service\Dataflow\JobMetrics">JobMetrics</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsLocationsJobs">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Dataflow/Resource/ProjectsLocationsJobs.php#L172">at line 172</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataflow/ListJobsResponse.html"><abbr title="Google\Service\Dataflow\ListJobsResponse">ListJobsResponse</abbr></a>
+    <strong>listProjectsLocationsJobs</strong>(string $projectId, string $location, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>List the jobs of a project. To list the jobs of a project in a region, we
+recommend using <code>projects.locations.jobs.list</code> with a [regional endpoint]
+(<a href="https://cloud.google.com/dataflow/docs/concepts/regional-endpoints">https://cloud.google.com/dataflow/docs/concepts/regional-endpoints</a>). To list
+the all jobs across all regions, use <code>projects.jobs.aggregated</code>. Using
+<code>projects.jobs.list</code> is not recommended, because you can only get the list of
+jobs that are running in <code>us-central1</code>. <code>projects.locations.jobs.list</code> and
+<code>projects.jobs.list</code> support filtering the list of jobs by name. Filtering by
+name isn't supported by <code>projects.jobs.aggregated</code>.</p></p>                <p>(jobs.listProjectsLocationsJobs)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>The project which owns the jobs.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$location</td>
+                <td><p>The [regional endpoint]
+(<a href="https://cloud.google.com/dataflow/docs/concepts/regional-endpoints">https://cloud.google.com/dataflow/docs/concepts/regional-endpoints</a>) that
+contains this job.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataflow/ListJobsResponse.html"><abbr title="Google\Service\Dataflow\ListJobsResponse">ListJobsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_snapshot">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Dataflow/Resource/ProjectsLocationsJobs.php#L189">at line 189</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataflow/Snapshot.html"><abbr title="Google\Service\Dataflow\Snapshot">Snapshot</abbr></a>
+    <strong>snapshot</strong>(string $projectId, string $location, string $jobId, <a href="../../../../Google/Service/Dataflow/SnapshotJobRequest.html"><abbr title="Google\Service\Dataflow\SnapshotJobRequest">SnapshotJobRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Snapshot the state of a streaming job. (jobs.snapshot)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>The project which owns the job to be snapshotted.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$location</td>
+                <td><p>The location that contains this job.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$jobId</td>
+                <td><p>The job to be snapshotted.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dataflow/SnapshotJobRequest.html"><abbr title="Google\Service\Dataflow\SnapshotJobRequest">SnapshotJobRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataflow/Snapshot.html"><abbr title="Google\Service\Dataflow\Snapshot">Snapshot</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Dataflow/Resource/ProjectsLocationsJobs.php#L221">at line 221</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataflow/Job.html"><abbr title="Google\Service\Dataflow\Job">Job</abbr></a>
+    <strong>update</strong>(string $projectId, string $location, string $jobId, <a href="../../../../Google/Service/Dataflow/Job.html"><abbr title="Google\Service\Dataflow\Job">Job</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the state of an existing Cloud Dataflow job. To update the state of
+an existing job, we recommend using <code>projects.locations.jobs.update</code> with a
+[regional endpoint]
+(<a href="https://cloud.google.com/dataflow/docs/concepts/regional-endpoints">https://cloud.google.com/dataflow/docs/concepts/regional-endpoints</a>). Using
+<code>projects.jobs.update</code> is not recommended, as you can only update the state
+of jobs that are running in <code>us-central1</code>. (jobs.update)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>The ID of the Cloud Platform project that the job
+belongs to.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$location</td>
+                <td><p>The [regional endpoint]
+(<a href="https://cloud.google.com/dataflow/docs/concepts/regional-endpoints">https://cloud.google.com/dataflow/docs/concepts/regional-endpoints</a>) that
+contains this job.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$jobId</td>
+                <td><p>The job ID.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dataflow/Job.html"><abbr title="Google\Service\Dataflow\Job">Job</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataflow/Job.html"><abbr title="Google\Service\Dataflow\Job">Job</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

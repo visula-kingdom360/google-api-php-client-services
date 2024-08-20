@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\DataCatalog\Resource\ProjectsLocationsEntryGroupsEntries | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_DataCatalog_Resource_ProjectsLocationsEntryGroupsEntries" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/DataCatalog.html">DataCatalog</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/DataCatalog/Resource.html">Resource</a></li><li class="backslash">\</li><li>ProjectsLocationsEntryGroupsEntries</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsLocationsEntryGroupsEntries    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsLocationsEntryGroupsEntries</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/DataCatalog/Resource/ProjectsLocationsEntryGroupsEntries.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;entries&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $datacatalogService = new Google\Service\DataCatalog(...);
+ $entries = $datacatalogService-&gt;projects_locations_entryGroups_entries;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1Entry.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1Entry">GoogleCloudDatacatalogV1Entry</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1Entry.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1Entry">GoogleCloudDatacatalogV1Entry</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates an entry. You can create entries only with 'FILESET', 'CLUSTER',
+'DATA_STREAM', or custom types. Data Catalog automatically creates entries
+with other types during metadata ingestion from integrated systems. You must
+enable the Data Catalog API in the project identified by the <code>parent</code>
+parameter. For more information, see <a href="https://cloud.google.com/data-catalog/docs/concepts/resource-
+project">Data Catalog resource
+project</a>. An entry group can have a maximum of 100,000 entries.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataCatalog/DatacatalogEmpty.html"><abbr title="Google\Service\DataCatalog\DatacatalogEmpty">DatacatalogEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes an existing entry. You can delete only the entries created by the
+CreateEntry method. You must enable the Data Catalog API in the project
+identified by the <code>name</code> parameter. For more information, see <a href="https://cloud.google.com/data-
+catalog/docs/concepts/resource-project">Data Catalog
+resource project</a>. (entries.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1Entry.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1Entry">GoogleCloudDatacatalogV1Entry</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets an entry. (entries.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataCatalog/Policy.html"><abbr title="Google\Service\DataCatalog\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIamPolicy">getIamPolicy</a>(string $resource, <a href="../../../../Google/Service/DataCatalog/GetIamPolicyRequest.html"><abbr title="Google\Service\DataCatalog\GetIamPolicyRequest">GetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Gets the access control policy for a resource. May return: <em> A<code>NOT_FOUND</code>
+error if the resource doesn't exist or you don't have the permission to view
+it. </em> An empty policy if the resource exists but doesn't have a set policy.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataCatalog/Operation.html"><abbr title="Google\Service\DataCatalog\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_import">import</a>(string $parent, <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1ImportEntriesRequest.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1ImportEntriesRequest">GoogleCloudDatacatalogV1ImportEntriesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Imports entries from a source, such as data previously dumped into a Cloud
+Storage bucket, into Data Catalog. Import of entries is a sync operation that
+reconciles the state of the third-party system with the Data Catalog.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1ListEntriesResponse.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1ListEntriesResponse">GoogleCloudDatacatalogV1ListEntriesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsLocationsEntryGroupsEntries">listProjectsLocationsEntryGroupsEntries</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists entries. Note: Currently, this method can list only custom entries. To
+get a list of both custom and automatically created entries, use
+SearchCatalog. (entries.listProjectsLocationsEntryGroupsEntries)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1Contacts.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1Contacts">GoogleCloudDatacatalogV1Contacts</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_modifyEntryContacts">modifyEntryContacts</a>(string $name, <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1ModifyEntryContactsRequest.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1ModifyEntryContactsRequest">GoogleCloudDatacatalogV1ModifyEntryContactsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Modifies contacts, part of the business context of an Entry. To call this
+method, you must have the <code>datacatalog.entries.updateContacts</code> IAM permission
+on the corresponding project. (entries.modifyEntryContacts)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1EntryOverview.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1EntryOverview">GoogleCloudDatacatalogV1EntryOverview</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_modifyEntryOverview">modifyEntryOverview</a>(string $name, <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1ModifyEntryOverviewRequest.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1ModifyEntryOverviewRequest">GoogleCloudDatacatalogV1ModifyEntryOverviewRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Modifies entry overview, part of the business context of an Entry. To call
+this method, you must have the <code>datacatalog.entries.updateOverview</code> IAM
+permission on the corresponding project. (entries.modifyEntryOverview)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1Entry.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1Entry">GoogleCloudDatacatalogV1Entry</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1Entry.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1Entry">GoogleCloudDatacatalogV1Entry</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates an existing entry. You must enable the Data Catalog API in the
+project identified by the <code>entry.name</code> parameter. For more information, see
+<a href="https://cloud.google.com/data-
+catalog/docs/concepts/resource-project">Data Catalog resource project</a>. (entries.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1StarEntryResponse.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1StarEntryResponse">GoogleCloudDatacatalogV1StarEntryResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_star">star</a>(string $name, <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1StarEntryRequest.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1StarEntryRequest">GoogleCloudDatacatalogV1StarEntryRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Marks an Entry as starred by the current user. Starring information is
+private to each user. (entries.star)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataCatalog/TestIamPermissionsResponse.html"><abbr title="Google\Service\DataCatalog\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testIamPermissions">testIamPermissions</a>(string $resource, <a href="../../../../Google/Service/DataCatalog/TestIamPermissionsRequest.html"><abbr title="Google\Service\DataCatalog\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Gets your permissions on a resource. Returns an empty set of permissions if
+the resource doesn't exist. Supported resources are: - Tag templates - Entry
+groups Note: This method gets policies only within Data Catalog and can't be
+used to get policies from BigQuery, Pub/Sub, Dataproc Metastore, and any
+external Google Cloud Platform resources ingested into Data Catalog. No
+Google IAM permissions are required to call this method.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1UnstarEntryResponse.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1UnstarEntryResponse">GoogleCloudDatacatalogV1UnstarEntryResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_unstar">unstar</a>(string $name, <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1UnstarEntryRequest.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1UnstarEntryRequest">GoogleCloudDatacatalogV1UnstarEntryRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Marks an Entry as NOT starred by the current user. Starring information is
+private to each user. (entries.unstar)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/DataCatalog/Resource/ProjectsLocationsEntryGroupsEntries.php#L70">at line 70</a></div>
+        <code>                    <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1Entry.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1Entry">GoogleCloudDatacatalogV1Entry</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1Entry.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1Entry">GoogleCloudDatacatalogV1Entry</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates an entry. You can create entries only with 'FILESET', 'CLUSTER',
+'DATA_STREAM', or custom types. Data Catalog automatically creates entries
+with other types during metadata ingestion from integrated systems. You must
+enable the Data Catalog API in the project identified by the <code>parent</code>
+parameter. For more information, see <a href="https://cloud.google.com/data-catalog/docs/concepts/resource-
+project">Data Catalog resource
+project</a>. An entry group can have a maximum of 100,000 entries.</p></p>                <p>(entries.create)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The name of the entry group this entry
+belongs to. Note: The entry itself and its child resources might not be
+stored in the location specified in its name.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1Entry.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1Entry">GoogleCloudDatacatalogV1Entry</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1Entry.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1Entry">GoogleCloudDatacatalogV1Entry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/DataCatalog/Resource/ProjectsLocationsEntryGroupsEntries.php#L88">at line 88</a></div>
+        <code>                    <a href="../../../../Google/Service/DataCatalog/DatacatalogEmpty.html"><abbr title="Google\Service\DataCatalog\DatacatalogEmpty">DatacatalogEmpty</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes an existing entry. You can delete only the entries created by the
+CreateEntry method. You must enable the Data Catalog API in the project
+identified by the <code>name</code> parameter. For more information, see <a href="https://cloud.google.com/data-
+catalog/docs/concepts/resource-project">Data Catalog
+resource project</a>. (entries.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the entry to delete.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataCatalog/DatacatalogEmpty.html"><abbr title="Google\Service\DataCatalog\DatacatalogEmpty">DatacatalogEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/DataCatalog/Resource/ProjectsLocationsEntryGroupsEntries.php#L102">at line 102</a></div>
+        <code>                    <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1Entry.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1Entry">GoogleCloudDatacatalogV1Entry</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets an entry. (entries.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the entry to get.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1Entry.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1Entry">GoogleCloudDatacatalogV1Entry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/DataCatalog/Resource/ProjectsLocationsEntryGroupsEntries.php#L128">at line 128</a></div>
+        <code>                    <a href="../../../../Google/Service/DataCatalog/Policy.html"><abbr title="Google\Service\DataCatalog\Policy">Policy</abbr></a>
+    <strong>getIamPolicy</strong>(string $resource, <a href="../../../../Google/Service/DataCatalog/GetIamPolicyRequest.html"><abbr title="Google\Service\DataCatalog\GetIamPolicyRequest">GetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the access control policy for a resource. May return: <em> A<code>NOT_FOUND</code>
+error if the resource doesn't exist or you don't have the permission to view
+it. </em> An empty policy if the resource exists but doesn't have a set policy.</p></p>                <p><p>Supported resources are: - Tag templates - Entry groups Note: This method
+doesn't get policies from Google Cloud Platform resources ingested into Data
+Catalog. To call this method, you must have the following Google IAM
+permissions: - <code>datacatalog.tagTemplates.getIamPolicy</code> to get policies on tag
+templates. - <code>datacatalog.entryGroups.getIamPolicy</code> to get policies on entry
+groups. (entries.getIamPolicy)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy is being
+requested. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataCatalog/GetIamPolicyRequest.html"><abbr title="Google\Service\DataCatalog\GetIamPolicyRequest">GetIamPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataCatalog/Policy.html"><abbr title="Google\Service\DataCatalog\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_import">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/DataCatalog/Resource/ProjectsLocationsEntryGroupsEntries.php#L151">at line 151</a></div>
+        <code>                    <a href="../../../../Google/Service/DataCatalog/Operation.html"><abbr title="Google\Service\DataCatalog\Operation">Operation</abbr></a>
+    <strong>import</strong>(string $parent, <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1ImportEntriesRequest.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1ImportEntriesRequest">GoogleCloudDatacatalogV1ImportEntriesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Imports entries from a source, such as data previously dumped into a Cloud
+Storage bucket, into Data Catalog. Import of entries is a sync operation that
+reconciles the state of the third-party system with the Data Catalog.</p></p>                <p><p><code>ImportEntries</code> accepts source data snapshots of a third-party system.
+Snapshot should be delivered as a .wire or base65-encoded .txt file
+containing a sequence of Protocol Buffer messages of DumpItem type.
+<code>ImportEntries</code> returns a long-running operation resource that can be queried
+with Operations.GetOperation to return ImportEntriesMetadata and an
+ImportEntriesResponse message. (entries.import)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. Target entry group for ingested entries.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1ImportEntriesRequest.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1ImportEntriesRequest">GoogleCloudDatacatalogV1ImportEntriesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataCatalog/Operation.html"><abbr title="Google\Service\DataCatalog\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsLocationsEntryGroupsEntries">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/DataCatalog/Resource/ProjectsLocationsEntryGroupsEntries.php#L178">at line 178</a></div>
+        <code>                    <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1ListEntriesResponse.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1ListEntriesResponse">GoogleCloudDatacatalogV1ListEntriesResponse</abbr></a>
+    <strong>listProjectsLocationsEntryGroupsEntries</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists entries. Note: Currently, this method can list only custom entries. To
+get a list of both custom and automatically created entries, use
+SearchCatalog. (entries.listProjectsLocationsEntryGroupsEntries)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The name of the entry group that contains the
+entries to list. Can be provided in URL format.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1ListEntriesResponse.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1ListEntriesResponse">GoogleCloudDatacatalogV1ListEntriesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modifyEntryContacts">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/DataCatalog/Resource/ProjectsLocationsEntryGroupsEntries.php#L195">at line 195</a></div>
+        <code>                    <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1Contacts.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1Contacts">GoogleCloudDatacatalogV1Contacts</abbr></a>
+    <strong>modifyEntryContacts</strong>(string $name, <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1ModifyEntryContactsRequest.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1ModifyEntryContactsRequest">GoogleCloudDatacatalogV1ModifyEntryContactsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Modifies contacts, part of the business context of an Entry. To call this
+method, you must have the <code>datacatalog.entries.updateContacts</code> IAM permission
+on the corresponding project. (entries.modifyEntryContacts)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The full resource name of the entry.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1ModifyEntryContactsRequest.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1ModifyEntryContactsRequest">GoogleCloudDatacatalogV1ModifyEntryContactsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1Contacts.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1Contacts">GoogleCloudDatacatalogV1Contacts</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modifyEntryOverview">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/DataCatalog/Resource/ProjectsLocationsEntryGroupsEntries.php#L212">at line 212</a></div>
+        <code>                    <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1EntryOverview.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1EntryOverview">GoogleCloudDatacatalogV1EntryOverview</abbr></a>
+    <strong>modifyEntryOverview</strong>(string $name, <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1ModifyEntryOverviewRequest.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1ModifyEntryOverviewRequest">GoogleCloudDatacatalogV1ModifyEntryOverviewRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Modifies entry overview, part of the business context of an Entry. To call
+this method, you must have the <code>datacatalog.entries.updateOverview</code> IAM
+permission on the corresponding project. (entries.modifyEntryOverview)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The full resource name of the entry.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1ModifyEntryOverviewRequest.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1ModifyEntryOverviewRequest">GoogleCloudDatacatalogV1ModifyEntryOverviewRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1EntryOverview.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1EntryOverview">GoogleCloudDatacatalogV1EntryOverview</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/DataCatalog/Resource/ProjectsLocationsEntryGroupsEntries.php#L242">at line 242</a></div>
+        <code>                    <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1Entry.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1Entry">GoogleCloudDatacatalogV1Entry</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1Entry.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1Entry">GoogleCloudDatacatalogV1Entry</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates an existing entry. You must enable the Data Catalog API in the
+project identified by the <code>entry.name</code> parameter. For more information, see
+<a href="https://cloud.google.com/data-
+catalog/docs/concepts/resource-project">Data Catalog resource project</a>. (entries.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Output only. Identifier. The resource name of an entry in
+URL format. Note: The entry itself and its child resources might not be
+stored in the location specified in its name.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1Entry.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1Entry">GoogleCloudDatacatalogV1Entry</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1Entry.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1Entry">GoogleCloudDatacatalogV1Entry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_star">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/DataCatalog/Resource/ProjectsLocationsEntryGroupsEntries.php#L258">at line 258</a></div>
+        <code>                    <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1StarEntryResponse.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1StarEntryResponse">GoogleCloudDatacatalogV1StarEntryResponse</abbr></a>
+    <strong>star</strong>(string $name, <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1StarEntryRequest.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1StarEntryRequest">GoogleCloudDatacatalogV1StarEntryRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Marks an Entry as starred by the current user. Starring information is
+private to each user. (entries.star)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the entry to mark as starred.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1StarEntryRequest.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1StarEntryRequest">GoogleCloudDatacatalogV1StarEntryRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1StarEntryResponse.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1StarEntryResponse">GoogleCloudDatacatalogV1StarEntryResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testIamPermissions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/DataCatalog/Resource/ProjectsLocationsEntryGroupsEntries.php#L282">at line 282</a></div>
+        <code>                    <a href="../../../../Google/Service/DataCatalog/TestIamPermissionsResponse.html"><abbr title="Google\Service\DataCatalog\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+    <strong>testIamPermissions</strong>(string $resource, <a href="../../../../Google/Service/DataCatalog/TestIamPermissionsRequest.html"><abbr title="Google\Service\DataCatalog\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets your permissions on a resource. Returns an empty set of permissions if
+the resource doesn't exist. Supported resources are: - Tag templates - Entry
+groups Note: This method gets policies only within Data Catalog and can't be
+used to get policies from BigQuery, Pub/Sub, Dataproc Metastore, and any
+external Google Cloud Platform resources ingested into Data Catalog. No
+Google IAM permissions are required to call this method.</p></p>                <p>(entries.testIamPermissions)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy detail is
+being requested. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataCatalog/TestIamPermissionsRequest.html"><abbr title="Google\Service\DataCatalog\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataCatalog/TestIamPermissionsResponse.html"><abbr title="Google\Service\DataCatalog\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unstar">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/DataCatalog/Resource/ProjectsLocationsEntryGroupsEntries.php#L299">at line 299</a></div>
+        <code>                    <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1UnstarEntryResponse.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1UnstarEntryResponse">GoogleCloudDatacatalogV1UnstarEntryResponse</abbr></a>
+    <strong>unstar</strong>(string $name, <a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1UnstarEntryRequest.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1UnstarEntryRequest">GoogleCloudDatacatalogV1UnstarEntryRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Marks an Entry as NOT starred by the current user. Starring information is
+private to each user. (entries.unstar)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the entry to mark as <strong>not</strong>
+starred.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1UnstarEntryRequest.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1UnstarEntryRequest">GoogleCloudDatacatalogV1UnstarEntryRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataCatalog/GoogleCloudDatacatalogV1UnstarEntryResponse.html"><abbr title="Google\Service\DataCatalog\GoogleCloudDatacatalogV1UnstarEntryResponse">GoogleCloudDatacatalogV1UnstarEntryResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

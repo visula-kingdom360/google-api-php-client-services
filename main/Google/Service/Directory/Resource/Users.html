@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Directory\Resource\Users | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Directory_Resource_Users" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Directory.html">Directory</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Directory/Resource.html">Resource</a></li><li class="backslash">\</li><li>Users</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Users    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Users</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Directory/Resource/Users.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;users&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $adminService = new Google\Service\Directory(...);
+ $users = $adminService-&gt;users;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $userKey, array $optParams = [])
+        
+                                            <p><p>Deletes a user. (users.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $userKey, array $optParams = [])
+        
+                                            <p><p>Retrieves a user. (users.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_insert">insert</a>(<a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a user. Mutate calls immediately following user creation might
+sometimes fail as the user isn't fully created due to propagation delay in
+our backends. Check the error details for the &quot;User creation is not complete&quot;
+message to see if this is the case. Retrying the calls after some time can
+help in this case. If <code>resolveConflictAccount</code> is set to <code>true</code>, a <code>202</code>
+response code means that a conflicting unmanaged account exists and was
+invited to join the organization. A <code>409</code> response code means that a
+conflicting account exists so the user wasn't created based on the <a href="https://support.google.com/a/answer/11112794">handling
+unmanaged user accounts</a> option
+selected. (users.insert)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Directory/Users.html"><abbr title="Google\Service\Directory\Users">Users</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listUsers">listUsers</a>(array $optParams = [])
+        
+                                            <p><p>Retrieves a paginated list of either deleted users or all users in a domain.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_makeAdmin">makeAdmin</a>(string $userKey, <a href="../../../../Google/Service/Directory/UserMakeAdmin.html"><abbr title="Google\Service\Directory\UserMakeAdmin">UserMakeAdmin</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Makes a user a super administrator. (users.makeAdmin)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $userKey, <a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a user using patch semantics. The update method should be used
+instead, because it also supports patch semantics and has better performance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_signOut">signOut</a>(string $userKey, array $optParams = [])
+        
+                                            <p><p>Signs a user out of all web and device sessions and reset their sign-in
+cookies. User will have to sign in by authenticating again. (users.signOut)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_undelete">undelete</a>(string $userKey, <a href="../../../../Google/Service/Directory/UserUndelete.html"><abbr title="Google\Service\Directory\UserUndelete">UserUndelete</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Undeletes a deleted user. (users.undelete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $userKey, <a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a user. This method supports patch semantics, meaning that you only
+need to include the fields you wish to update. Fields that are not present in
+the request will be preserved, and fields set to <code>null</code> will be cleared. For
+repeating fields that contain arrays, individual items in the array can't be
+patched piecemeal; they must be supplied in the request body with the desired
+values for all items. See the <a href="https://developers.google.com/admin-sdk/directory/v1/guides/manage-
+users#update_user">user accounts
+guide</a> for more information. (users.update)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Directory/Channel.html"><abbr title="Google\Service\Directory\Channel">Channel</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_watch">watch</a>(<a href="../../../../Google/Service/Directory/Channel.html"><abbr title="Google\Service\Directory\Channel">Channel</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Watches for changes in users list. (users.watch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Directory/Resource/Users.php#L44">at line 44</a></div>
+        <code>                    
+    <strong>delete</strong>(string $userKey, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a user. (users.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userKey</td>
+                <td><p>Identifies the user in the API request. The value can
+be the user's primary email address, alias email address, or unique user ID.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Directory/Resource/Users.php#L68">at line 68</a></div>
+        <code>                    <a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a>
+    <strong>get</strong>(string $userKey, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves a user. (users.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userKey</td>
+                <td><p>Identifies the user in the API request. The value can
+be the user's primary email address, alias email address, or unique user ID.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Directory/Resource/Users.php#L96">at line 96</a></div>
+        <code>                    <a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a>
+    <strong>insert</strong>(<a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a user. Mutate calls immediately following user creation might
+sometimes fail as the user isn't fully created due to propagation delay in
+our backends. Check the error details for the &quot;User creation is not complete&quot;
+message to see if this is the case. Retrying the calls after some time can
+help in this case. If <code>resolveConflictAccount</code> is set to <code>true</code>, a <code>202</code>
+response code means that a conflicting unmanaged account exists and was
+invited to join the organization. A <code>409</code> response code means that a
+conflicting account exists so the user wasn't created based on the <a href="https://support.google.com/a/answer/11112794">handling
+unmanaged user accounts</a> option
+selected. (users.insert)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listUsers">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Directory/Resource/Users.php#L142">at line 142</a></div>
+        <code>                    <a href="../../../../Google/Service/Directory/Users.html"><abbr title="Google\Service\Directory\Users">Users</abbr></a>
+    <strong>listUsers</strong>(array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves a paginated list of either deleted users or all users in a domain.</p></p>                <p>(users.listUsers)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Directory/Users.html"><abbr title="Google\Service\Directory\Users">Users</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeAdmin">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Directory/Resource/Users.php#L157">at line 157</a></div>
+        <code>                    
+    <strong>makeAdmin</strong>(string $userKey, <a href="../../../../Google/Service/Directory/UserMakeAdmin.html"><abbr title="Google\Service\Directory\UserMakeAdmin">UserMakeAdmin</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Makes a user a super administrator. (users.makeAdmin)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userKey</td>
+                <td><p>Identifies the user in the API request. The value can
+be the user's primary email address, alias email address, or unique user ID.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Directory/UserMakeAdmin.html"><abbr title="Google\Service\Directory\UserMakeAdmin">UserMakeAdmin</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Directory/Resource/Users.php#L179">at line 179</a></div>
+        <code>                    <a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a>
+    <strong>patch</strong>(string $userKey, <a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a user using patch semantics. The update method should be used
+instead, because it also supports patch semantics and has better performance.</p></p>                <p><p>If you're mapping an external identity to a Google identity, use the
+<a href="https://developers.google.com/admin-
+sdk/directory/v1/reference/users/update"><code>update</code></a> method instead of the <code>patch</code>
+method. This method is unable to clear fields that contain repeated objects
+(<code>addresses</code>, <code>phones</code>, etc). Use the update method instead. (users.patch)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userKey</td>
+                <td><p>Identifies the user in the API request. The value can
+be the user's primary email address, alias email address, or unique user ID.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_signOut">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Directory/Resource/Users.php#L195">at line 195</a></div>
+        <code>                    
+    <strong>signOut</strong>(string $userKey, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Signs a user out of all web and device sessions and reset their sign-in
+cookies. User will have to sign in by authenticating again. (users.signOut)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userKey</td>
+                <td><p>Identifies the target user in the API request. The
+value can be the user's primary email address, alias email address, or unique
+user ID.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_undelete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Directory/Resource/Users.php#L209">at line 209</a></div>
+        <code>                    
+    <strong>undelete</strong>(string $userKey, <a href="../../../../Google/Service/Directory/UserUndelete.html"><abbr title="Google\Service\Directory\UserUndelete">UserUndelete</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Undeletes a deleted user. (users.undelete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userKey</td>
+                <td><p>The immutable id of the user</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Directory/UserUndelete.html"><abbr title="Google\Service\Directory\UserUndelete">UserUndelete</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Directory/Resource/Users.php#L232">at line 232</a></div>
+        <code>                    <a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a>
+    <strong>update</strong>(string $userKey, <a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a user. This method supports patch semantics, meaning that you only
+need to include the fields you wish to update. Fields that are not present in
+the request will be preserved, and fields set to <code>null</code> will be cleared. For
+repeating fields that contain arrays, individual items in the array can't be
+patched piecemeal; they must be supplied in the request body with the desired
+values for all items. See the <a href="https://developers.google.com/admin-sdk/directory/v1/guides/manage-
+users#update_user">user accounts
+guide</a> for more information. (users.update)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userKey</td>
+                <td><p>Identifies the user in the API request. The value can
+be the user's primary email address, alias email address, or unique user ID.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Directory/User.html"><abbr title="Google\Service\Directory\User">User</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_watch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Directory/Resource/Users.php#L272">at line 272</a></div>
+        <code>                    <a href="../../../../Google/Service/Directory/Channel.html"><abbr title="Google\Service\Directory\Channel">Channel</abbr></a>
+    <strong>watch</strong>(<a href="../../../../Google/Service/Directory/Channel.html"><abbr title="Google\Service\Directory\Channel">Channel</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Watches for changes in users list. (users.watch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/Directory/Channel.html"><abbr title="Google\Service\Directory\Channel">Channel</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Directory/Channel.html"><abbr title="Google\Service\Directory\Channel">Channel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

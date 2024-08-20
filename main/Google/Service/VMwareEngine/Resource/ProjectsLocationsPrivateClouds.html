@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\VMwareEngine\Resource\ProjectsLocationsPrivateClouds | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_VMwareEngine_Resource_ProjectsLocationsPrivateClouds" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/VMwareEngine.html">VMwareEngine</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/VMwareEngine/Resource.html">Resource</a></li><li class="backslash">\</li><li>ProjectsLocationsPrivateClouds</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsLocationsPrivateClouds    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsLocationsPrivateClouds</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/VMwareEngine/Resource/ProjectsLocationsPrivateClouds.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;privateClouds&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $vmwareengineService = new Google\Service\VMwareEngine(...);
+ $privateClouds = $vmwareengineService-&gt;projects_locations_privateClouds;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/VMwareEngine/PrivateCloud.html"><abbr title="Google\Service\VMwareEngine\PrivateCloud">PrivateCloud</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a new <code>PrivateCloud</code> resource in a given project and location.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Schedules a <code>PrivateCloud</code> resource for deletion. A <code>PrivateCloud</code> resource
+scheduled for deletion has <code>PrivateCloud.state</code> set to <code>DELETED</code> and
+<code>expireTime</code> set to the time when deletion is final and can no longer be
+reversed. The delete operation is marked as done as soon as the
+<code>PrivateCloud</code> is successfully scheduled for deletion (this also applies when
+<code>delayHours</code> is set to zero), and the operation is not kept in pending state
+until <code>PrivateCloud</code> is purged. <code>PrivateCloud</code> can be restored using
+<code>UndeletePrivateCloud</code> method before the <code>expireTime</code> elapses. When
+<code>expireTime</code> is reached, deletion is final and all private cloud resources
+are irreversibly removed and billing stops. During the final removal process,
+<code>PrivateCloud.state</code> is set to <code>PURGING</code>. <code>PrivateCloud</code> can be polled using
+standard <code>GET</code> method for the whole period of deletion and purging. It will
+not be returned only when it is completely purged. (privateClouds.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/VMwareEngine/PrivateCloud.html"><abbr title="Google\Service\VMwareEngine\PrivateCloud">PrivateCloud</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Retrieves a <code>PrivateCloud</code> resource by its resource name. (privateClouds.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/VMwareEngine/DnsForwarding.html"><abbr title="Google\Service\VMwareEngine\DnsForwarding">DnsForwarding</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDnsForwarding">getDnsForwarding</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets details of the <code>DnsForwarding</code> config. (privateClouds.getDnsForwarding)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/VMwareEngine/Policy.html"><abbr title="Google\Service\VMwareEngine\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIamPolicy">getIamPolicy</a>(string $resource, array $optParams = [])
+        
+                                            <p><p>Gets the access control policy for a resource. Returns an empty policy if the
+resource exists and does not have a policy set. (privateClouds.getIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/VMwareEngine/ListPrivateCloudsResponse.html"><abbr title="Google\Service\VMwareEngine\ListPrivateCloudsResponse">ListPrivateCloudsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsLocationsPrivateClouds">listProjectsLocationsPrivateClouds</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists <code>PrivateCloud</code> resources in a given project and location.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/VMwareEngine/PrivateCloud.html"><abbr title="Google\Service\VMwareEngine\PrivateCloud">PrivateCloud</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Modifies a <code>PrivateCloud</code> resource. Only the following fields can be updated:
+<code>description</code>. Only fields specified in <code>updateMask</code> are applied. During
+operation processing, the resource is temporarily in the <code>ACTIVE</code> state
+before the operation fully completes. For that period of time, you can't
+update the resource. Use the operation status to determine when the
+processing fully completes. (privateClouds.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_resetNsxCredentials">resetNsxCredentials</a>(string $privateCloud, <a href="../../../../Google/Service/VMwareEngine/ResetNsxCredentialsRequest.html"><abbr title="Google\Service\VMwareEngine\ResetNsxCredentialsRequest">ResetNsxCredentialsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Resets credentials of the NSX appliance. (privateClouds.resetNsxCredentials)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_resetVcenterCredentials">resetVcenterCredentials</a>(string $privateCloud, <a href="../../../../Google/Service/VMwareEngine/ResetVcenterCredentialsRequest.html"><abbr title="Google\Service\VMwareEngine\ResetVcenterCredentialsRequest">ResetVcenterCredentialsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Resets credentials of the Vcenter appliance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/VMwareEngine/Policy.html"><abbr title="Google\Service\VMwareEngine\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setIamPolicy">setIamPolicy</a>(string $resource, <a href="../../../../Google/Service/VMwareEngine/SetIamPolicyRequest.html"><abbr title="Google\Service\VMwareEngine\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the access control policy on the specified resource. Replaces any
+existing policy. Can return <code>NOT_FOUND</code>, <code>INVALID_ARGUMENT</code>, and
+<code>PERMISSION_DENIED</code> errors. (privateClouds.setIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/VMwareEngine/Credentials.html"><abbr title="Google\Service\VMwareEngine\Credentials">Credentials</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_showNsxCredentials">showNsxCredentials</a>(string $privateCloud, array $optParams = [])
+        
+                                            <p><p>Gets details of credentials for NSX appliance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/VMwareEngine/Credentials.html"><abbr title="Google\Service\VMwareEngine\Credentials">Credentials</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_showVcenterCredentials">showVcenterCredentials</a>(string $privateCloud, array $optParams = [])
+        
+                                            <p><p>Gets details of credentials for Vcenter appliance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/VMwareEngine/TestIamPermissionsResponse.html"><abbr title="Google\Service\VMwareEngine\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testIamPermissions">testIamPermissions</a>(string $resource, <a href="../../../../Google/Service/VMwareEngine/TestIamPermissionsRequest.html"><abbr title="Google\Service\VMwareEngine\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Returns permissions that a caller has on the specified resource. If the
+resource does not exist, this will return an empty set of permissions, not a
+<code>NOT_FOUND</code> error. Note: This operation is designed to be used for building
+permission-aware UIs and command-line tools, not for authorization checking.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_undelete">undelete</a>(string $name, <a href="../../../../Google/Service/VMwareEngine/UndeletePrivateCloudRequest.html"><abbr title="Google\Service\VMwareEngine\UndeletePrivateCloudRequest">UndeletePrivateCloudRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Restores a private cloud that was previously scheduled for deletion by
+<code>DeletePrivateCloud</code>. A <code>PrivateCloud</code> resource scheduled for deletion has
+<code>PrivateCloud.state</code> set to <code>DELETED</code> and <code>PrivateCloud.expireTime</code> set to
+the time when deletion can no longer be reversed. (privateClouds.undelete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateDnsForwarding">updateDnsForwarding</a>(string $name, <a href="../../../../Google/Service/VMwareEngine/DnsForwarding.html"><abbr title="Google\Service\VMwareEngine\DnsForwarding">DnsForwarding</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the parameters of the <code>DnsForwarding</code> config, like associated
+domains. Only fields specified in <code>update_mask</code> are applied.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/VMwareEngine/Resource/ProjectsLocationsPrivateClouds.php#L73">at line 73</a></div>
+        <code>                    <a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/VMwareEngine/PrivateCloud.html"><abbr title="Google\Service\VMwareEngine\PrivateCloud">PrivateCloud</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a new <code>PrivateCloud</code> resource in a given project and location.</p></p>                <p><p>Private clouds of type <code>STANDARD</code> and <code>TIME_LIMITED</code> are zonal resources,
+<code>STRETCHED</code> private clouds are regional. Creating a private cloud also
+creates a <a href="https://cloud.google.com/vmware-
+engine/docs/concepts-vmware-components">management cluster</a> for that private cloud.
+(privateClouds.create)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the location to create
+the new private cloud in. Resource names are schemeless URIs that follow the
+conventions in <a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>. For
+example: <code>projects/my-project/locations/us-central1-a</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/VMwareEngine/PrivateCloud.html"><abbr title="Google\Service\VMwareEngine\PrivateCloud">PrivateCloud</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/VMwareEngine/Resource/ProjectsLocationsPrivateClouds.php#L119">at line 119</a></div>
+        <code>                    <a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Schedules a <code>PrivateCloud</code> resource for deletion. A <code>PrivateCloud</code> resource
+scheduled for deletion has <code>PrivateCloud.state</code> set to <code>DELETED</code> and
+<code>expireTime</code> set to the time when deletion is final and can no longer be
+reversed. The delete operation is marked as done as soon as the
+<code>PrivateCloud</code> is successfully scheduled for deletion (this also applies when
+<code>delayHours</code> is set to zero), and the operation is not kept in pending state
+until <code>PrivateCloud</code> is purged. <code>PrivateCloud</code> can be restored using
+<code>UndeletePrivateCloud</code> method before the <code>expireTime</code> elapses. When
+<code>expireTime</code> is reached, deletion is final and all private cloud resources
+are irreversibly removed and billing stops. During the final removal process,
+<code>PrivateCloud.state</code> is set to <code>PURGING</code>. <code>PrivateCloud</code> can be polled using
+standard <code>GET</code> method for the whole period of deletion and purging. It will
+not be returned only when it is completely purged. (privateClouds.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the private cloud to
+delete. Resource names are schemeless URIs that follow the conventions in
+<a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>. For example:
+<code>projects/my-project/locations/us-central1-a/privateClouds/my-cloud</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/VMwareEngine/Resource/ProjectsLocationsPrivateClouds.php#L136">at line 136</a></div>
+        <code>                    <a href="../../../../Google/Service/VMwareEngine/PrivateCloud.html"><abbr title="Google\Service\VMwareEngine\PrivateCloud">PrivateCloud</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves a <code>PrivateCloud</code> resource by its resource name. (privateClouds.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the private cloud to
+retrieve. Resource names are schemeless URIs that follow the conventions in
+<a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>. For example:
+<code>projects/my-project/locations/us-central1-a/privateClouds/my-cloud</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/VMwareEngine/PrivateCloud.html"><abbr title="Google\Service\VMwareEngine\PrivateCloud">PrivateCloud</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDnsForwarding">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/VMwareEngine/Resource/ProjectsLocationsPrivateClouds.php#L154">at line 154</a></div>
+        <code>                    <a href="../../../../Google/Service/VMwareEngine/DnsForwarding.html"><abbr title="Google\Service\VMwareEngine\DnsForwarding">DnsForwarding</abbr></a>
+    <strong>getDnsForwarding</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets details of the <code>DnsForwarding</code> config. (privateClouds.getDnsForwarding)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of a <code>DnsForwarding</code> to
+retrieve. Resource names are schemeless URIs that follow the conventions in
+<a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>. For example:
+<code>projects/my-project/locations/us-central1-a/privateClouds/my- cloud/dnsForwarding</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/VMwareEngine/DnsForwarding.html"><abbr title="Google\Service\VMwareEngine\DnsForwarding">DnsForwarding</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/VMwareEngine/Resource/ProjectsLocationsPrivateClouds.php#L185">at line 185</a></div>
+        <code>                    <a href="../../../../Google/Service/VMwareEngine/Policy.html"><abbr title="Google\Service\VMwareEngine\Policy">Policy</abbr></a>
+    <strong>getIamPolicy</strong>(string $resource, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the access control policy for a resource. Returns an empty policy if the
+resource exists and does not have a policy set. (privateClouds.getIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy is being
+requested. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/VMwareEngine/Policy.html"><abbr title="Google\Service\VMwareEngine\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsLocationsPrivateClouds">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/VMwareEngine/Resource/ProjectsLocationsPrivateClouds.php#L230">at line 230</a></div>
+        <code>                    <a href="../../../../Google/Service/VMwareEngine/ListPrivateCloudsResponse.html"><abbr title="Google\Service\VMwareEngine\ListPrivateCloudsResponse">ListPrivateCloudsResponse</abbr></a>
+    <strong>listProjectsLocationsPrivateClouds</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists <code>PrivateCloud</code> resources in a given project and location.</p></p>                <p>(privateClouds.listProjectsLocationsPrivateClouds)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the private cloud to be
+queried for clusters. Resource names are schemeless URIs that follow the
+conventions in <a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>. For
+example: <code>projects/my-project/locations/us-central1-a</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/VMwareEngine/ListPrivateCloudsResponse.html"><abbr title="Google\Service\VMwareEngine\ListPrivateCloudsResponse">ListPrivateCloudsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/VMwareEngine/Resource/ProjectsLocationsPrivateClouds.php#L262">at line 262</a></div>
+        <code>                    <a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/VMwareEngine/PrivateCloud.html"><abbr title="Google\Service\VMwareEngine\PrivateCloud">PrivateCloud</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Modifies a <code>PrivateCloud</code> resource. Only the following fields can be updated:
+<code>description</code>. Only fields specified in <code>updateMask</code> are applied. During
+operation processing, the resource is temporarily in the <code>ACTIVE</code> state
+before the operation fully completes. For that period of time, you can't
+update the resource. Use the operation status to determine when the
+processing fully completes. (privateClouds.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Output only. The resource name of this private cloud.
+Resource names are schemeless URIs that follow the conventions in
+<a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>. For example:
+<code>projects/my-project/locations/us-central1-a/privateClouds/my-cloud</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/VMwareEngine/PrivateCloud.html"><abbr title="Google\Service\VMwareEngine\PrivateCloud">PrivateCloud</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resetNsxCredentials">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/VMwareEngine/Resource/ProjectsLocationsPrivateClouds.php#L280">at line 280</a></div>
+        <code>                    <a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a>
+    <strong>resetNsxCredentials</strong>(string $privateCloud, <a href="../../../../Google/Service/VMwareEngine/ResetNsxCredentialsRequest.html"><abbr title="Google\Service\VMwareEngine\ResetNsxCredentialsRequest">ResetNsxCredentialsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Resets credentials of the NSX appliance. (privateClouds.resetNsxCredentials)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$privateCloud</td>
+                <td><p>Required. The resource name of the private cloud
+to reset credentials for. Resource names are schemeless URIs that follow the
+conventions in <a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>. For
+example: <code>projects/my-project/locations/us-central1-a/privateClouds/my-cloud</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/VMwareEngine/ResetNsxCredentialsRequest.html"><abbr title="Google\Service\VMwareEngine\ResetNsxCredentialsRequest">ResetNsxCredentialsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resetVcenterCredentials">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/VMwareEngine/Resource/ProjectsLocationsPrivateClouds.php#L299">at line 299</a></div>
+        <code>                    <a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a>
+    <strong>resetVcenterCredentials</strong>(string $privateCloud, <a href="../../../../Google/Service/VMwareEngine/ResetVcenterCredentialsRequest.html"><abbr title="Google\Service\VMwareEngine\ResetVcenterCredentialsRequest">ResetVcenterCredentialsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Resets credentials of the Vcenter appliance.</p></p>                <p>(privateClouds.resetVcenterCredentials)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$privateCloud</td>
+                <td><p>Required. The resource name of the private cloud
+to reset credentials for. Resource names are schemeless URIs that follow the
+conventions in <a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>. For
+example: <code>projects/my-project/locations/us-central1-a/privateClouds/my-cloud</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/VMwareEngine/ResetVcenterCredentialsRequest.html"><abbr title="Google\Service\VMwareEngine\ResetVcenterCredentialsRequest">ResetVcenterCredentialsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/VMwareEngine/Resource/ProjectsLocationsPrivateClouds.php#L319">at line 319</a></div>
+        <code>                    <a href="../../../../Google/Service/VMwareEngine/Policy.html"><abbr title="Google\Service\VMwareEngine\Policy">Policy</abbr></a>
+    <strong>setIamPolicy</strong>(string $resource, <a href="../../../../Google/Service/VMwareEngine/SetIamPolicyRequest.html"><abbr title="Google\Service\VMwareEngine\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the access control policy on the specified resource. Replaces any
+existing policy. Can return <code>NOT_FOUND</code>, <code>INVALID_ARGUMENT</code>, and
+<code>PERMISSION_DENIED</code> errors. (privateClouds.setIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy is being
+specified. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/VMwareEngine/SetIamPolicyRequest.html"><abbr title="Google\Service\VMwareEngine\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/VMwareEngine/Policy.html"><abbr title="Google\Service\VMwareEngine\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_showNsxCredentials">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/VMwareEngine/Resource/ProjectsLocationsPrivateClouds.php#L337">at line 337</a></div>
+        <code>                    <a href="../../../../Google/Service/VMwareEngine/Credentials.html"><abbr title="Google\Service\VMwareEngine\Credentials">Credentials</abbr></a>
+    <strong>showNsxCredentials</strong>(string $privateCloud, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets details of credentials for NSX appliance.</p></p>                <p>(privateClouds.showNsxCredentials)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$privateCloud</td>
+                <td><p>Required. The resource name of the private cloud
+to be queried for credentials. Resource names are schemeless URIs that follow
+the conventions in <a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>. For
+example: <code>projects/my-project/locations/us-central1-a/privateClouds/my-cloud</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/VMwareEngine/Credentials.html"><abbr title="Google\Service\VMwareEngine\Credentials">Credentials</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_showVcenterCredentials">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/VMwareEngine/Resource/ProjectsLocationsPrivateClouds.php#L361">at line 361</a></div>
+        <code>                    <a href="../../../../Google/Service/VMwareEngine/Credentials.html"><abbr title="Google\Service\VMwareEngine\Credentials">Credentials</abbr></a>
+    <strong>showVcenterCredentials</strong>(string $privateCloud, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets details of credentials for Vcenter appliance.</p></p>                <p>(privateClouds.showVcenterCredentials)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$privateCloud</td>
+                <td><p>Required. The resource name of the private cloud
+to be queried for credentials. Resource names are schemeless URIs that follow
+the conventions in <a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>. For
+example: <code>projects/my-project/locations/us-central1-a/privateClouds/my-cloud</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/VMwareEngine/Credentials.html"><abbr title="Google\Service\VMwareEngine\Credentials">Credentials</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testIamPermissions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/VMwareEngine/Resource/ProjectsLocationsPrivateClouds.php#L384">at line 384</a></div>
+        <code>                    <a href="../../../../Google/Service/VMwareEngine/TestIamPermissionsResponse.html"><abbr title="Google\Service\VMwareEngine\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+    <strong>testIamPermissions</strong>(string $resource, <a href="../../../../Google/Service/VMwareEngine/TestIamPermissionsRequest.html"><abbr title="Google\Service\VMwareEngine\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns permissions that a caller has on the specified resource. If the
+resource does not exist, this will return an empty set of permissions, not a
+<code>NOT_FOUND</code> error. Note: This operation is designed to be used for building
+permission-aware UIs and command-line tools, not for authorization checking.</p></p>                <p><p>This operation may &quot;fail open&quot; without warning.
+(privateClouds.testIamPermissions)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy detail is
+being requested. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/VMwareEngine/TestIamPermissionsRequest.html"><abbr title="Google\Service\VMwareEngine\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/VMwareEngine/TestIamPermissionsResponse.html"><abbr title="Google\Service\VMwareEngine\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_undelete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/VMwareEngine/Resource/ProjectsLocationsPrivateClouds.php#L405">at line 405</a></div>
+        <code>                    <a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a>
+    <strong>undelete</strong>(string $name, <a href="../../../../Google/Service/VMwareEngine/UndeletePrivateCloudRequest.html"><abbr title="Google\Service\VMwareEngine\UndeletePrivateCloudRequest">UndeletePrivateCloudRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Restores a private cloud that was previously scheduled for deletion by
+<code>DeletePrivateCloud</code>. A <code>PrivateCloud</code> resource scheduled for deletion has
+<code>PrivateCloud.state</code> set to <code>DELETED</code> and <code>PrivateCloud.expireTime</code> set to
+the time when deletion can no longer be reversed. (privateClouds.undelete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the private cloud
+scheduled for deletion. Resource names are schemeless URIs that follow the
+conventions in <a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>. For
+example: <code>projects/my-project/locations/us-central1-a/privateClouds/my-cloud</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/VMwareEngine/UndeletePrivateCloudRequest.html"><abbr title="Google\Service\VMwareEngine\UndeletePrivateCloudRequest">UndeletePrivateCloudRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateDnsForwarding">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/VMwareEngine/Resource/ProjectsLocationsPrivateClouds.php#L443">at line 443</a></div>
+        <code>                    <a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a>
+    <strong>updateDnsForwarding</strong>(string $name, <a href="../../../../Google/Service/VMwareEngine/DnsForwarding.html"><abbr title="Google\Service\VMwareEngine\DnsForwarding">DnsForwarding</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the parameters of the <code>DnsForwarding</code> config, like associated
+domains. Only fields specified in <code>update_mask</code> are applied.</p></p>                <p>(privateClouds.updateDnsForwarding)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Output only. The resource name of this DNS profile.
+Resource names are schemeless URIs that follow the conventions in
+<a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>. For example:
+<code>projects/my-project/locations/us-central1-a/privateClouds/my- cloud/dnsForwarding</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/VMwareEngine/DnsForwarding.html"><abbr title="Google\Service\VMwareEngine\DnsForwarding">DnsForwarding</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/VMwareEngine/Operation.html"><abbr title="Google\Service\VMwareEngine\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

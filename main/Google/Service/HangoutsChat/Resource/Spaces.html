@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\HangoutsChat\Resource\Spaces | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_HangoutsChat_Resource_Spaces" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/HangoutsChat.html">HangoutsChat</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/HangoutsChat/Resource.html">Resource</a></li><li class="backslash">\</li><li>Spaces</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Spaces    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Spaces</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/HangoutsChat/Resource/Spaces.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;spaces&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $chatService = new Google\Service\HangoutsChat(...);
+ $spaces = $chatService-&gt;spaces;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/HangoutsChat/CompleteImportSpaceResponse.html"><abbr title="Google\Service\HangoutsChat\CompleteImportSpaceResponse">CompleteImportSpaceResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_completeImport">completeImport</a>(string $name, <a href="../../../../Google/Service/HangoutsChat/CompleteImportSpaceRequest.html"><abbr title="Google\Service\HangoutsChat\CompleteImportSpaceRequest">CompleteImportSpaceRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Completes the <a href="https://developers.google.com/workspace/chat/import-data">import
+process</a> for the
+specified space and makes it visible to users. Requires app authentication
+and domain-wide delegation. For more information, see <a href="https://developers.google.com/workspace/chat/authorize-
+import">Authorize Google Chat
+apps to import data</a>. (spaces.completeImport)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(<a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a named space. Spaces grouped by topics aren't supported. For an
+example, see <a href="https://developers.google.com/workspace/chat/create-spaces">Create a
+space</a>. If you
+receive the error message <code>ALREADY_EXISTS</code> when creating a space, try a
+different <code>displayName</code>. An existing space within the Google Workspace
+organization might already use this display name. Requires <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>. (spaces.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/HangoutsChat/ChatEmpty.html"><abbr title="Google\Service\HangoutsChat\ChatEmpty">ChatEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes a named space. Always performs a cascading delete, which means that
+the space's child resources—like messages posted in the space and memberships
+in the space—are also deleted. For an example, see <a href="https://developers.google.com/workspace/chat/delete-spaces">Delete a
+space</a>. Requires
+<a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a> from a user who has permission to delete the space.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_findDirectMessage">findDirectMessage</a>(array $optParams = [])
+        
+                                            <p><p>Returns the existing direct message with the specified user. If no direct
+message space is found, returns a <code>404 NOT_FOUND</code> error. For an example, see
+<a href="/chat/api/guides/v1/spaces/find-direct-message">Find a direct message</a>. With
+<a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>, returns the direct message space between the specified
+user and the authenticated user. With <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-app">app
+authentication</a>, returns the direct message space between the specified
+user and the calling Chat app. Requires <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a> or <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-app">app
+authentication</a>. (spaces.findDirectMessage)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Returns details about a space. For an example, see <a href="https://developers.google.com/workspace/chat/get-spaces">Get details about a
+space</a>. Requires
+<a href="https://developers.google.com/workspace/chat/authenticate-
+authorize">authentication</a>. Supports <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-app">app
+authentication</a> and <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>. (spaces.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/HangoutsChat/ListSpacesResponse.html"><abbr title="Google\Service\HangoutsChat\ListSpacesResponse">ListSpacesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listSpaces">listSpaces</a>(array $optParams = [])
+        
+                                            <p><p>Lists spaces the caller is a member of. Group chats and DMs aren't listed
+until the first message is sent. For an example, see <a href="https://developers.google.com/workspace/chat/list-spaces">List
+spaces</a>. Requires
+<a href="https://developers.google.com/workspace/chat/authenticate-
+authorize">authentication</a>. Supports <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-app">app
+authentication</a> and <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>. Lists spaces visible to the caller or authenticated
+user. Group chats and DMs aren't listed until the first message is sent. To
+list all named spaces by Google Workspace organization, use the <a href="https://developers.google.com/workspace/chat/api/reference/rest/v1/spa
+ces/search"><code>spaces.sear ch()</code></a> method using Workspace administrator privileges instead.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a space. For an example, see <a href="https://developers.google.com/workspace/chat/update-spaces">Update a
+space</a>. If you're
+updating the <code>displayName</code> field and receive the error message
+<code>ALREADY_EXISTS</code>, try a different display name.. An existing space within the
+Google Workspace organization might already use this display name. Requires
+<a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>. (spaces.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setup">setup</a>(<a href="../../../../Google/Service/HangoutsChat/SetUpSpaceRequest.html"><abbr title="Google\Service\HangoutsChat\SetUpSpaceRequest">SetUpSpaceRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a space and adds specified users to it. The calling user is
+automatically added to the space, and shouldn't be specified as a membership
+in the request. For an example, see <a href="https://developers.google.com/workspace/chat/set-up-spaces">Set up a space with initial
+members</a>. To
+specify the human members to add, add memberships with the appropriate
+<code>membership.member.name</code>. To add a human user, use <code>users/{user}</code>, where
+<code>{user}</code> can be the email address for the user. For users in the same
+Workspace organization <code>{user}</code> can also be the <code>id</code> for the person from the
+People API, or the <code>id</code> for the user in the Directory API. For example, if
+the People API Person profile ID for <code>user@example.com</code> is <code>123456789</code>, you
+can add the user to the space by setting the <code>membership.member.name</code> to
+<code>users/user@example.com</code> or <code>users/123456789</code>. To specify the Google groups
+to add, add memberships with the appropriate <code>membership.group_member.name</code>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_completeImport">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/HangoutsChat/Resource/Spaces.php#L52">at line 52</a></div>
+        <code>                    <a href="../../../../Google/Service/HangoutsChat/CompleteImportSpaceResponse.html"><abbr title="Google\Service\HangoutsChat\CompleteImportSpaceResponse">CompleteImportSpaceResponse</abbr></a>
+    <strong>completeImport</strong>(string $name, <a href="../../../../Google/Service/HangoutsChat/CompleteImportSpaceRequest.html"><abbr title="Google\Service\HangoutsChat\CompleteImportSpaceRequest">CompleteImportSpaceRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Completes the <a href="https://developers.google.com/workspace/chat/import-data">import
+process</a> for the
+specified space and makes it visible to users. Requires app authentication
+and domain-wide delegation. For more information, see <a href="https://developers.google.com/workspace/chat/authorize-
+import">Authorize Google Chat
+apps to import data</a>. (spaces.completeImport)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Resource name of the import mode space. Format:
+<code>spaces/{space}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/HangoutsChat/CompleteImportSpaceRequest.html"><abbr title="Google\Service\HangoutsChat\CompleteImportSpaceRequest">CompleteImportSpaceRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/HangoutsChat/CompleteImportSpaceResponse.html"><abbr title="Google\Service\HangoutsChat\CompleteImportSpaceResponse">CompleteImportSpaceResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/HangoutsChat/Resource/Spaces.php#L79">at line 79</a></div>
+        <code>                    <a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a>
+    <strong>create</strong>(<a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a named space. Spaces grouped by topics aren't supported. For an
+example, see <a href="https://developers.google.com/workspace/chat/create-spaces">Create a
+space</a>. If you
+receive the error message <code>ALREADY_EXISTS</code> when creating a space, try a
+different <code>displayName</code>. An existing space within the Google Workspace
+organization might already use this display name. Requires <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>. (spaces.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/HangoutsChat/Resource/Spaces.php#L101">at line 101</a></div>
+        <code>                    <a href="../../../../Google/Service/HangoutsChat/ChatEmpty.html"><abbr title="Google\Service\HangoutsChat\ChatEmpty">ChatEmpty</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a named space. Always performs a cascading delete, which means that
+the space's child resources—like messages posted in the space and memberships
+in the space—are also deleted. For an example, see <a href="https://developers.google.com/workspace/chat/delete-spaces">Delete a
+space</a>. Requires
+<a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a> from a user who has permission to delete the space.</p></p>                <p>(spaces.delete)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Resource name of the space to delete. Format:
+<code>spaces/{space}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/HangoutsChat/ChatEmpty.html"><abbr title="Google\Service\HangoutsChat\ChatEmpty">ChatEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findDirectMessage">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/HangoutsChat/Resource/Spaces.php#L140">at line 140</a></div>
+        <code>                    <a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a>
+    <strong>findDirectMessage</strong>(array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the existing direct message with the specified user. If no direct
+message space is found, returns a <code>404 NOT_FOUND</code> error. For an example, see
+<a href="/chat/api/guides/v1/spaces/find-direct-message">Find a direct message</a>. With
+<a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>, returns the direct message space between the specified
+user and the authenticated user. With <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-app">app
+authentication</a>, returns the direct message space between the specified
+user and the calling Chat app. Requires <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a> or <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-app">app
+authentication</a>. (spaces.findDirectMessage)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/HangoutsChat/Resource/Spaces.php#L162">at line 162</a></div>
+        <code>                    <a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns details about a space. For an example, see <a href="https://developers.google.com/workspace/chat/get-spaces">Get details about a
+space</a>. Requires
+<a href="https://developers.google.com/workspace/chat/authenticate-
+authorize">authentication</a>. Supports <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-app">app
+authentication</a> and <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>. (spaces.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Resource name of the space, in the form
+<code>spaces/{space}</code>. Format: <code>spaces/{space}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listSpaces">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/HangoutsChat/Resource/Spaces.php#L207">at line 207</a></div>
+        <code>                    <a href="../../../../Google/Service/HangoutsChat/ListSpacesResponse.html"><abbr title="Google\Service\HangoutsChat\ListSpacesResponse">ListSpacesResponse</abbr></a>
+    <strong>listSpaces</strong>(array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists spaces the caller is a member of. Group chats and DMs aren't listed
+until the first message is sent. For an example, see <a href="https://developers.google.com/workspace/chat/list-spaces">List
+spaces</a>. Requires
+<a href="https://developers.google.com/workspace/chat/authenticate-
+authorize">authentication</a>. Supports <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-app">app
+authentication</a> and <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>. Lists spaces visible to the caller or authenticated
+user. Group chats and DMs aren't listed until the first message is sent. To
+list all named spaces by Google Workspace organization, use the <a href="https://developers.google.com/workspace/chat/api/reference/rest/v1/spa
+ces/search"><code>spaces.sear ch()</code></a> method using Workspace administrator privileges instead.</p></p>                <p>(spaces.listSpaces)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/HangoutsChat/ListSpacesResponse.html"><abbr title="Google\Service\HangoutsChat\ListSpacesResponse">ListSpacesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/HangoutsChat/Resource/Spaces.php#L270">at line 270</a></div>
+        <code>                    <a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a space. For an example, see <a href="https://developers.google.com/workspace/chat/update-spaces">Update a
+space</a>. If you're
+updating the <code>displayName</code> field and receive the error message
+<code>ALREADY_EXISTS</code>, try a different display name.. An existing space within the
+Google Workspace organization might already use this display name. Requires
+<a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>. (spaces.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Resource name of the space. Format: <code>spaces/{space}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setup">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/HangoutsChat/Resource/Spaces.php#L322">at line 322</a></div>
+        <code>                    <a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a>
+    <strong>setup</strong>(<a href="../../../../Google/Service/HangoutsChat/SetUpSpaceRequest.html"><abbr title="Google\Service\HangoutsChat\SetUpSpaceRequest">SetUpSpaceRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a space and adds specified users to it. The calling user is
+automatically added to the space, and shouldn't be specified as a membership
+in the request. For an example, see <a href="https://developers.google.com/workspace/chat/set-up-spaces">Set up a space with initial
+members</a>. To
+specify the human members to add, add memberships with the appropriate
+<code>membership.member.name</code>. To add a human user, use <code>users/{user}</code>, where
+<code>{user}</code> can be the email address for the user. For users in the same
+Workspace organization <code>{user}</code> can also be the <code>id</code> for the person from the
+People API, or the <code>id</code> for the user in the Directory API. For example, if
+the People API Person profile ID for <code>user@example.com</code> is <code>123456789</code>, you
+can add the user to the space by setting the <code>membership.member.name</code> to
+<code>users/user@example.com</code> or <code>users/123456789</code>. To specify the Google groups
+to add, add memberships with the appropriate <code>membership.group_member.name</code>.</p></p>                <p><p>To add or invite a Google group, use <code>groups/{group}</code>, where <code>{group}</code> is the
+<code>id</code> for the group from the Cloud Identity Groups API. For example, you can
+use <a href="https://cloud.google.com/identity/docs/reference/rest/v1/groups/lookup">Cloud Identity Groups lookup
+API</a>
+to retrieve the ID <code>123456789</code> for group email <code>group@example.com</code>, then you
+can add the group to the space by setting the <code>membership.group_member.name</code>
+to <code>groups/123456789</code>. Group email is not supported, and Google groups can
+only be added as members in named spaces. For a named space or group chat, if
+the caller blocks, or is blocked by some members, or doesn't have permission
+to add some members, then those members aren't added to the created space. To
+create a direct message (DM) between the calling user and another human user,
+specify exactly one membership to represent the human user. If one user
+blocks the other, the request fails and the DM isn't created. To create a DM
+between the calling user and the calling app, set <code>Space.singleUserBotDm</code> to
+<code>true</code> and don't specify any memberships. You can only use this method to set
+up a DM with the calling app. To add the calling app as a member of a space
+or an existing DM between two human users, see <a href="https://developers.google.com/workspace/chat/create-members">Invite or add a user or app
+to a space</a>. If
+a DM already exists between two users, even when one user blocks the other at
+the time a request is made, then the existing DM is returned. Spaces with
+threaded replies aren't supported. If you receive the error message
+<code>ALREADY_EXISTS</code> when setting up a space, try a different <code>displayName</code>. An
+existing space within the Google Workspace organization might already use
+this display name. Requires <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>. (spaces.setup)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/HangoutsChat/SetUpSpaceRequest.html"><abbr title="Google\Service\HangoutsChat\SetUpSpaceRequest">SetUpSpaceRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/HangoutsChat/Space.html"><abbr title="Google\Service\HangoutsChat\Space">Space</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

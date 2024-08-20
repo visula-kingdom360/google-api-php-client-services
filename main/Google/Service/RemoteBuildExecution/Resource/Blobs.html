@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\RemoteBuildExecution\Resource\Blobs | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_RemoteBuildExecution_Resource_Blobs" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/RemoteBuildExecution.html">RemoteBuildExecution</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/RemoteBuildExecution/Resource.html">Resource</a></li><li class="backslash">\</li><li>Blobs</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Blobs    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Blobs</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/RemoteBuildExecution/Resource/Blobs.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;blobs&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $remotebuildexecutionService = new Google\Service\RemoteBuildExecution(...);
+ $blobs = $remotebuildexecutionService-&gt;blobs;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2BatchReadBlobsResponse.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchReadBlobsResponse">BuildBazelRemoteExecutionV2BatchReadBlobsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchRead">batchRead</a>(string $instanceName, <a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2BatchReadBlobsRequest.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchReadBlobsRequest">BuildBazelRemoteExecutionV2BatchReadBlobsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Download many blobs at once. The server may enforce a limit of the combined
+total size of blobs to be downloaded using this API. This limit may be
+obtained using the Capabilities API. Requests exceeding the limit should
+either be split into smaller chunks or downloaded using the ByteStream API,
+as appropriate. This request is equivalent to calling a Bytestream <code>Read</code>
+request on each individual blob, in parallel. The requests may succeed or
+fail independently. Errors: * <code>INVALID_ARGUMENT</code>: The client attempted to
+read more than the server supported limit. Every error on individual read
+will be returned in the corresponding digest status. (blobs.batchRead)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2BatchUpdateBlobsResponse.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchUpdateBlobsResponse">BuildBazelRemoteExecutionV2BatchUpdateBlobsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchUpdate">batchUpdate</a>(string $instanceName, <a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2BatchUpdateBlobsRequest.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchUpdateBlobsRequest">BuildBazelRemoteExecutionV2BatchUpdateBlobsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Upload many blobs at once. The server may enforce a limit of the combined
+total size of blobs to be uploaded using this API. This limit may be obtained
+using the Capabilities API. Requests exceeding the limit should either be
+split into smaller chunks or uploaded using the ByteStream API, as
+appropriate. This request is equivalent to calling a Bytestream <code>Write</code>
+request on each individual blob, in parallel. The requests may succeed or
+fail independently. Errors: <em> <code>INVALID_ARGUMENT</code>: The client attempted to
+upload more than the server supported limit. Individual requests may return
+the following errors, additionally: </em> <code>RESOURCE_EXHAUSTED</code>: There is
+insufficient disk quota to store the blob. * <code>INVALID_ARGUMENT</code>: The Digest
+does not match the provided data. (blobs.batchUpdate)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2FindMissingBlobsResponse.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2FindMissingBlobsResponse">BuildBazelRemoteExecutionV2FindMissingBlobsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_findMissing">findMissing</a>(string $instanceName, <a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2FindMissingBlobsRequest.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2FindMissingBlobsRequest">BuildBazelRemoteExecutionV2FindMissingBlobsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Determine if blobs are present in the CAS. Clients can use this API before
+uploading blobs to determine which ones are already present in the CAS and do
+not need to be uploaded again. Servers SHOULD increase the lifetimes of the
+referenced blobs if necessary and applicable. There are no method-specific
+errors. (blobs.findMissing)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2GetTreeResponse.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2GetTreeResponse">BuildBazelRemoteExecutionV2GetTreeResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getTree">getTree</a>(string $instanceName, string $hash, string $sizeBytes, array $optParams = [])
+        
+                                            <p><p>Fetch the entire directory tree rooted at a node. This request must be
+targeted at a Directory stored in the ContentAddressableStorage (CAS). The
+server will enumerate the <code>Directory</code> tree recursively and return every node
+descended from the root. The GetTreeRequest.page_token parameter can be used
+to skip ahead in the stream (e.g. when retrying a partially completed and
+aborted request), by setting it to a value taken from
+GetTreeResponse.next_page_token of the last successfully processed
+GetTreeResponse). The exact traversal order is unspecified and, unless
+retrieving subsequent pages from an earlier request, is not guaranteed to be
+stable across multiple invocations of <code>GetTree</code>. If part of the tree is
+missing from the CAS, the server will return the portion present and omit the
+rest. Errors: * <code>NOT_FOUND</code>: The requested tree root is not present in the
+CAS. (blobs.getTree)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_batchRead">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/RemoteBuildExecution/Resource/Blobs.php#L58">at line 58</a></div>
+        <code>                    <a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2BatchReadBlobsResponse.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchReadBlobsResponse">BuildBazelRemoteExecutionV2BatchReadBlobsResponse</abbr></a>
+    <strong>batchRead</strong>(string $instanceName, <a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2BatchReadBlobsRequest.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchReadBlobsRequest">BuildBazelRemoteExecutionV2BatchReadBlobsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Download many blobs at once. The server may enforce a limit of the combined
+total size of blobs to be downloaded using this API. This limit may be
+obtained using the Capabilities API. Requests exceeding the limit should
+either be split into smaller chunks or downloaded using the ByteStream API,
+as appropriate. This request is equivalent to calling a Bytestream <code>Read</code>
+request on each individual blob, in parallel. The requests may succeed or
+fail independently. Errors: * <code>INVALID_ARGUMENT</code>: The client attempted to
+read more than the server supported limit. Every error on individual read
+will be returned in the corresponding digest status. (blobs.batchRead)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$instanceName</td>
+                <td><p>The instance of the execution system to operate
+against. A server may support multiple instances of the execution system
+(with their own workers, storage, caches, etc.). The server MAY require use
+of this field to select between them in an implementation-defined fashion,
+otherwise it can be omitted.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2BatchReadBlobsRequest.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchReadBlobsRequest">BuildBazelRemoteExecutionV2BatchReadBlobsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2BatchReadBlobsResponse.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchReadBlobsResponse">BuildBazelRemoteExecutionV2BatchReadBlobsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchUpdate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/RemoteBuildExecution/Resource/Blobs.php#L86">at line 86</a></div>
+        <code>                    <a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2BatchUpdateBlobsResponse.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchUpdateBlobsResponse">BuildBazelRemoteExecutionV2BatchUpdateBlobsResponse</abbr></a>
+    <strong>batchUpdate</strong>(string $instanceName, <a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2BatchUpdateBlobsRequest.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchUpdateBlobsRequest">BuildBazelRemoteExecutionV2BatchUpdateBlobsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Upload many blobs at once. The server may enforce a limit of the combined
+total size of blobs to be uploaded using this API. This limit may be obtained
+using the Capabilities API. Requests exceeding the limit should either be
+split into smaller chunks or uploaded using the ByteStream API, as
+appropriate. This request is equivalent to calling a Bytestream <code>Write</code>
+request on each individual blob, in parallel. The requests may succeed or
+fail independently. Errors: <em> <code>INVALID_ARGUMENT</code>: The client attempted to
+upload more than the server supported limit. Individual requests may return
+the following errors, additionally: </em> <code>RESOURCE_EXHAUSTED</code>: There is
+insufficient disk quota to store the blob. * <code>INVALID_ARGUMENT</code>: The Digest
+does not match the provided data. (blobs.batchUpdate)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$instanceName</td>
+                <td><p>The instance of the execution system to operate
+against. A server may support multiple instances of the execution system
+(with their own workers, storage, caches, etc.). The server MAY require use
+of this field to select between them in an implementation-defined fashion,
+otherwise it can be omitted.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2BatchUpdateBlobsRequest.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchUpdateBlobsRequest">BuildBazelRemoteExecutionV2BatchUpdateBlobsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2BatchUpdateBlobsResponse.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchUpdateBlobsResponse">BuildBazelRemoteExecutionV2BatchUpdateBlobsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findMissing">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/RemoteBuildExecution/Resource/Blobs.php#L108">at line 108</a></div>
+        <code>                    <a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2FindMissingBlobsResponse.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2FindMissingBlobsResponse">BuildBazelRemoteExecutionV2FindMissingBlobsResponse</abbr></a>
+    <strong>findMissing</strong>(string $instanceName, <a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2FindMissingBlobsRequest.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2FindMissingBlobsRequest">BuildBazelRemoteExecutionV2FindMissingBlobsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if blobs are present in the CAS. Clients can use this API before
+uploading blobs to determine which ones are already present in the CAS and do
+not need to be uploaded again. Servers SHOULD increase the lifetimes of the
+referenced blobs if necessary and applicable. There are no method-specific
+errors. (blobs.findMissing)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$instanceName</td>
+                <td><p>The instance of the execution system to operate
+against. A server may support multiple instances of the execution system
+(with their own workers, storage, caches, etc.). The server MAY require use
+of this field to select between them in an implementation-defined fashion,
+otherwise it can be omitted.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2FindMissingBlobsRequest.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2FindMissingBlobsRequest">BuildBazelRemoteExecutionV2FindMissingBlobsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2FindMissingBlobsResponse.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2FindMissingBlobsResponse">BuildBazelRemoteExecutionV2FindMissingBlobsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTree">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/RemoteBuildExecution/Resource/Blobs.php#L149">at line 149</a></div>
+        <code>                    <a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2GetTreeResponse.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2GetTreeResponse">BuildBazelRemoteExecutionV2GetTreeResponse</abbr></a>
+    <strong>getTree</strong>(string $instanceName, string $hash, string $sizeBytes, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Fetch the entire directory tree rooted at a node. This request must be
+targeted at a Directory stored in the ContentAddressableStorage (CAS). The
+server will enumerate the <code>Directory</code> tree recursively and return every node
+descended from the root. The GetTreeRequest.page_token parameter can be used
+to skip ahead in the stream (e.g. when retrying a partially completed and
+aborted request), by setting it to a value taken from
+GetTreeResponse.next_page_token of the last successfully processed
+GetTreeResponse). The exact traversal order is unspecified and, unless
+retrieving subsequent pages from an earlier request, is not guaranteed to be
+stable across multiple invocations of <code>GetTree</code>. If part of the tree is
+missing from the CAS, the server will return the portion present and omit the
+rest. Errors: * <code>NOT_FOUND</code>: The requested tree root is not present in the
+CAS. (blobs.getTree)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$instanceName</td>
+                <td><p>The instance of the execution system to operate
+against. A server may support multiple instances of the execution system
+(with their own workers, storage, caches, etc.). The server MAY require use
+of this field to select between them in an implementation-defined fashion,
+otherwise it can be omitted.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$hash</td>
+                <td><p>The hash. In the case of SHA-256, it will always be a
+lowercase hex string exactly 64 characters long.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sizeBytes</td>
+                <td><p>The size of the blob, in bytes.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/RemoteBuildExecution/BuildBazelRemoteExecutionV2GetTreeResponse.html"><abbr title="Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2GetTreeResponse">BuildBazelRemoteExecutionV2GetTreeResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

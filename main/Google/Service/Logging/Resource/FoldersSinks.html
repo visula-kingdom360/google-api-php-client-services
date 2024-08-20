@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Logging\Resource\FoldersSinks | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Logging_Resource_FoldersSinks" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Logging.html">Logging</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Logging/Resource.html">Resource</a></li><li class="backslash">\</li><li>FoldersSinks</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>FoldersSinks    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>FoldersSinks</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Logging/Resource/FoldersSinks.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;sinks&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $loggingService = new Google\Service\Logging(...);
+ $sinks = $loggingService-&gt;folders_sinks;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a sink that exports specified log entries to a destination. The
+export begins upon ingress, unless the sink's writer_identity is not
+permitted to write to the destination. A sink can export log entries only
+from the resource owning the sink. (sinks.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Logging/LoggingEmpty.html"><abbr title="Google\Service\Logging\LoggingEmpty">LoggingEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $sinkName, array $optParams = [])
+        
+                                            <p><p>Deletes a sink. If the sink has a unique writer_identity, then that service
+account is also deleted. (sinks.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $sinkName, array $optParams = [])
+        
+                                            <p><p>Gets a sink. (sinks.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Logging/ListSinksResponse.html"><abbr title="Google\Service\Logging\ListSinksResponse">ListSinksResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listFoldersSinks">listFoldersSinks</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists sinks. (sinks.listFoldersSinks)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $sinkName, <a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a sink. This method replaces the values of the destination and filter
+fields of the existing sink with the corresponding values from the new
+sink.The updated sink might also have a new writer_identity; see the
+unique_writer_identity field. (sinks.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $sinkName, <a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a sink. This method replaces the values of the destination and filter
+fields of the existing sink with the corresponding values from the new
+sink.The updated sink might also have a new writer_identity; see the
+unique_writer_identity field. (sinks.update)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Logging/Resource/FoldersSinks.php#L67">at line 67</a></div>
+        <code>                    <a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a sink that exports specified log entries to a destination. The
+export begins upon ingress, unless the sink's writer_identity is not
+permitted to write to the destination. A sink can export log entries only
+from the resource owning the sink. (sinks.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource in which to create the sink:
+&quot;projects/[PROJECT_ID]&quot; &quot;organizations/[ORGANIZATION_ID]&quot;
+&quot;billingAccounts/[BILLING_ACCOUNT_ID]&quot; &quot;folders/[FOLDER_ID]&quot; For
+examples:&quot;projects/my-project&quot; &quot;organizations/123456789&quot;</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Logging/Resource/FoldersSinks.php#L88">at line 88</a></div>
+        <code>                    <a href="../../../../Google/Service/Logging/LoggingEmpty.html"><abbr title="Google\Service\Logging\LoggingEmpty">LoggingEmpty</abbr></a>
+    <strong>delete</strong>(string $sinkName, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a sink. If the sink has a unique writer_identity, then that service
+account is also deleted. (sinks.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sinkName</td>
+                <td><p>Required. The full resource name of the sink to
+delete, including the parent resource and the sink identifier:
+&quot;projects/[PROJECT_ID]/sinks/[SINK_ID]&quot;
+&quot;organizations/[ORGANIZATION_ID]/sinks/[SINK_ID]&quot;
+&quot;billingAccounts/[BILLING_ACCOUNT_ID]/sinks/[SINK_ID]&quot;
+&quot;folders/[FOLDER_ID]/sinks/[SINK_ID]&quot; For example:&quot;projects/my-
+project/sinks/my-sink&quot;</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Logging/LoggingEmpty.html"><abbr title="Google\Service\Logging\LoggingEmpty">LoggingEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Logging/Resource/FoldersSinks.php#L107">at line 107</a></div>
+        <code>                    <a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a>
+    <strong>get</strong>(string $sinkName, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets a sink. (sinks.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sinkName</td>
+                <td><p>Required. The resource name of the sink:
+&quot;projects/[PROJECT_ID]/sinks/[SINK_ID]&quot;
+&quot;organizations/[ORGANIZATION_ID]/sinks/[SINK_ID]&quot;
+&quot;billingAccounts/[BILLING_ACCOUNT_ID]/sinks/[SINK_ID]&quot;
+&quot;folders/[FOLDER_ID]/sinks/[SINK_ID]&quot; For example:&quot;projects/my-
+project/sinks/my-sink&quot;</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listFoldersSinks">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Logging/Resource/FoldersSinks.php#L138">at line 138</a></div>
+        <code>                    <a href="../../../../Google/Service/Logging/ListSinksResponse.html"><abbr title="Google\Service\Logging\ListSinksResponse">ListSinksResponse</abbr></a>
+    <strong>listFoldersSinks</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists sinks. (sinks.listFoldersSinks)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The parent resource whose sinks are to be
+listed: &quot;projects/[PROJECT_ID]&quot; &quot;organizations/[ORGANIZATION_ID]&quot;
+&quot;billingAccounts/[BILLING_ACCOUNT_ID]&quot; &quot;folders/[FOLDER_ID]&quot;</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Logging/ListSinksResponse.html"><abbr title="Google\Service\Logging\ListSinksResponse">ListSinksResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Logging/Resource/FoldersSinks.php#L189">at line 189</a></div>
+        <code>                    <a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a>
+    <strong>patch</strong>(string $sinkName, <a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a sink. This method replaces the values of the destination and filter
+fields of the existing sink with the corresponding values from the new
+sink.The updated sink might also have a new writer_identity; see the
+unique_writer_identity field. (sinks.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sinkName</td>
+                <td><p>Required. The full resource name of the sink to
+update, including the parent resource and the sink identifier:
+&quot;projects/[PROJECT_ID]/sinks/[SINK_ID]&quot;
+&quot;organizations/[ORGANIZATION_ID]/sinks/[SINK_ID]&quot;
+&quot;billingAccounts/[BILLING_ACCOUNT_ID]/sinks/[SINK_ID]&quot;
+&quot;folders/[FOLDER_ID]/sinks/[SINK_ID]&quot; For example:&quot;projects/my-
+project/sinks/my-sink&quot;</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Logging/Resource/FoldersSinks.php#L240">at line 240</a></div>
+        <code>                    <a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a>
+    <strong>update</strong>(string $sinkName, <a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a sink. This method replaces the values of the destination and filter
+fields of the existing sink with the corresponding values from the new
+sink.The updated sink might also have a new writer_identity; see the
+unique_writer_identity field. (sinks.update)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sinkName</td>
+                <td><p>Required. The full resource name of the sink to
+update, including the parent resource and the sink identifier:
+&quot;projects/[PROJECT_ID]/sinks/[SINK_ID]&quot;
+&quot;organizations/[ORGANIZATION_ID]/sinks/[SINK_ID]&quot;
+&quot;billingAccounts/[BILLING_ACCOUNT_ID]/sinks/[SINK_ID]&quot;
+&quot;folders/[FOLDER_ID]/sinks/[SINK_ID]&quot; For example:&quot;projects/my-
+project/sinks/my-sink&quot;</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Logging/LogSink.html"><abbr title="Google\Service\Logging\LogSink">LogSink</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

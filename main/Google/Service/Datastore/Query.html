@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Datastore\Query | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../doctum.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Datastore_Query" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../Google/Service/Datastore.html">Datastore</a></li><li class="backslash">\</li><li>Query</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Query    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Query</strong>        extends <abbr title="Google\Collection">Collection</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Query.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_collection_key">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$collection_key</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_distinctOnType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$distinctOnType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_distinctOnDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$distinctOnDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_endCursor">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$endCursor</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_filterType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$filterType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_filterDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$filterDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_kindType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$kindType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_kindDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$kindDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_limit">
+                                                                                int
+                                                                                
+                                    </td>
+                <td>$limit</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_offset">
+                                                                                int
+                                                                                
+                                    </td>
+                <td>$offset</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_orderType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$orderType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_orderDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$orderDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_projectionType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$projectionType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_projectionDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$projectionDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_startCursor">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$startCursor</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDistinctOn">setDistinctOn</a>($distinctOn)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Datastore/PropertyReference.html"><abbr title="Google\Service\Datastore\PropertyReference">PropertyReference</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDistinctOn">getDistinctOn</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setEndCursor">setEndCursor</a>($endCursor)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getEndCursor">getEndCursor</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setFilter">setFilter</a>(<a href="../../../Google/Service/Datastore/Filter.html"><abbr title="Google\Service\Datastore\Filter">Filter</abbr></a> $filter)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Datastore/Filter.html"><abbr title="Google\Service\Datastore\Filter">Filter</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFilter">getFilter</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setKind">setKind</a>($kind)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Datastore/KindExpression.html"><abbr title="Google\Service\Datastore\KindExpression">KindExpression</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getKind">getKind</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setLimit">setLimit</a>($limit)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLimit">getLimit</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setOffset">setOffset</a>($offset)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getOffset">getOffset</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setOrder">setOrder</a>($order)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Datastore/PropertyOrder.html"><abbr title="Google\Service\Datastore\PropertyOrder">PropertyOrder</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getOrder">getOrder</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setProjection">setProjection</a>($projection)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Datastore/Projection.html"><abbr title="Google\Service\Datastore\Projection">Projection</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getProjection">getProjection</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setStartCursor">setStartCursor</a>($startCursor)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getStartCursor">getStartCursor</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setDistinctOn">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Query.php#L53">at line 53</a></div>
+        <code>                    
+    <strong>setDistinctOn</strong>($distinctOn)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$distinctOn</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDistinctOn">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Query.php#L60">at line 60</a></div>
+        <code>                    <a href="../../../Google/Service/Datastore/PropertyReference.html"><abbr title="Google\Service\Datastore\PropertyReference">PropertyReference</abbr></a>[]
+    <strong>getDistinctOn</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Datastore/PropertyReference.html"><abbr title="Google\Service\Datastore\PropertyReference">PropertyReference</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEndCursor">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Query.php#L67">at line 67</a></div>
+        <code>                    
+    <strong>setEndCursor</strong>($endCursor)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$endCursor</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEndCursor">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Query.php#L74">at line 74</a></div>
+        <code>                    string
+    <strong>getEndCursor</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFilter">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Query.php#L81">at line 81</a></div>
+        <code>                    
+    <strong>setFilter</strong>(<a href="../../../Google/Service/Datastore/Filter.html"><abbr title="Google\Service\Datastore\Filter">Filter</abbr></a> $filter)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Datastore/Filter.html"><abbr title="Google\Service\Datastore\Filter">Filter</abbr></a></td>
+                <td>$filter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFilter">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Query.php#L88">at line 88</a></div>
+        <code>                    <a href="../../../Google/Service/Datastore/Filter.html"><abbr title="Google\Service\Datastore\Filter">Filter</abbr></a>
+    <strong>getFilter</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Datastore/Filter.html"><abbr title="Google\Service\Datastore\Filter">Filter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setKind">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Query.php#L95">at line 95</a></div>
+        <code>                    
+    <strong>setKind</strong>($kind)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$kind</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getKind">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Query.php#L102">at line 102</a></div>
+        <code>                    <a href="../../../Google/Service/Datastore/KindExpression.html"><abbr title="Google\Service\Datastore\KindExpression">KindExpression</abbr></a>[]
+    <strong>getKind</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Datastore/KindExpression.html"><abbr title="Google\Service\Datastore\KindExpression">KindExpression</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLimit">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Query.php#L109">at line 109</a></div>
+        <code>                    
+    <strong>setLimit</strong>($limit)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$limit</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLimit">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Query.php#L116">at line 116</a></div>
+        <code>                    int
+    <strong>getLimit</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOffset">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Query.php#L123">at line 123</a></div>
+        <code>                    
+    <strong>setOffset</strong>($offset)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOffset">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Query.php#L130">at line 130</a></div>
+        <code>                    int
+    <strong>getOffset</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOrder">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Query.php#L137">at line 137</a></div>
+        <code>                    
+    <strong>setOrder</strong>($order)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$order</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOrder">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Query.php#L144">at line 144</a></div>
+        <code>                    <a href="../../../Google/Service/Datastore/PropertyOrder.html"><abbr title="Google\Service\Datastore\PropertyOrder">PropertyOrder</abbr></a>[]
+    <strong>getOrder</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Datastore/PropertyOrder.html"><abbr title="Google\Service\Datastore\PropertyOrder">PropertyOrder</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setProjection">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Query.php#L151">at line 151</a></div>
+        <code>                    
+    <strong>setProjection</strong>($projection)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$projection</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getProjection">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Query.php#L158">at line 158</a></div>
+        <code>                    <a href="../../../Google/Service/Datastore/Projection.html"><abbr title="Google\Service\Datastore\Projection">Projection</abbr></a>[]
+    <strong>getProjection</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Datastore/Projection.html"><abbr title="Google\Service\Datastore\Projection">Projection</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStartCursor">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Query.php#L165">at line 165</a></div>
+        <code>                    
+    <strong>setStartCursor</strong>($startCursor)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$startCursor</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStartCursor">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Query.php#L172">at line 172</a></div>
+        <code>                    string
+    <strong>getStartCursor</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

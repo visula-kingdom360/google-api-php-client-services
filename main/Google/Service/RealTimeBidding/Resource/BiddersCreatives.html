@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\RealTimeBidding\Resource\BiddersCreatives | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_RealTimeBidding_Resource_BiddersCreatives" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/RealTimeBidding.html">RealTimeBidding</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/RealTimeBidding/Resource.html">Resource</a></li><li class="backslash">\</li><li>BiddersCreatives</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>BiddersCreatives    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>BiddersCreatives</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/RealTimeBidding/Resource/BiddersCreatives.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;creatives&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $realtimebiddingService = new Google\Service\RealTimeBidding(...);
+ $creatives = $realtimebiddingService-&gt;bidders_creatives;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/RealTimeBidding/ListCreativesResponse.html"><abbr title="Google\Service\RealTimeBidding\ListCreativesResponse">ListCreativesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listBiddersCreatives">listBiddersCreatives</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists creatives as they are at the time of the initial request. This call may
+take multiple hours to complete. For large, paginated requests, this method
+returns a snapshot of creatives at the time of request for the first page.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/RealTimeBidding/WatchCreativesResponse.html"><abbr title="Google\Service\RealTimeBidding\WatchCreativesResponse">WatchCreativesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_watch">watch</a>(string $parent, <a href="../../../../Google/Service/RealTimeBidding/WatchCreativesRequest.html"><abbr title="Google\Service\RealTimeBidding\WatchCreativesRequest">WatchCreativesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Watches all creatives pertaining to a bidder. It is sufficient to invoke this
+endpoint once per bidder. A Pub/Sub topic will be created and notifications
+will be pushed to the topic when any of the bidder's creatives change status.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_listBiddersCreatives">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/RealTimeBidding/Resource/BiddersCreatives.php#L77">at line 77</a></div>
+        <code>                    <a href="../../../../Google/Service/RealTimeBidding/ListCreativesResponse.html"><abbr title="Google\Service\RealTimeBidding\ListCreativesResponse">ListCreativesResponse</abbr></a>
+    <strong>listBiddersCreatives</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists creatives as they are at the time of the initial request. This call may
+take multiple hours to complete. For large, paginated requests, this method
+returns a snapshot of creatives at the time of request for the first page.</p></p>                <p><p><code>lastStatusUpdate</code> and <code>creativeServingDecision</code> may be outdated for
+creatives on sequential pages. We recommend <a href="//cloud.google.com/pubsub/docs/overview">Google Cloud
+Pub/Sub</a> to view the latest status.
+(creatives.listBiddersCreatives)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. Name of the parent buyer that owns the
+creatives. The pattern for this resource is either <code>buyers/{buyerAccountId}</code>
+or <code>bidders/{bidderAccountId}</code>. For <code>buyers/{buyerAccountId}</code>, the
+<code>buyerAccountId</code> can be one of the following: 1. The ID of the buyer that is
+accessing their own creatives. 2. The ID of the child seat buyer under a
+bidder account. So for listing creatives pertaining to the child seat buyer
+(<code>456</code>) under bidder account (<code>123</code>), you would use the pattern:
+<code>buyers/456</code>. 3. The ID of the bidder itself. So for listing creatives
+pertaining to bidder (<code>123</code>), you would use <code>buyers/123</code>. If you want to
+access all creatives pertaining to both the bidder and all of its child seat
+accounts, you would use <code>bidders/{bidderAccountId}</code>, for example, for all
+creatives pertaining to bidder (<code>123</code>), use <code>bidders/123</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/RealTimeBidding/ListCreativesResponse.html"><abbr title="Google\Service\RealTimeBidding\ListCreativesResponse">ListCreativesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_watch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/RealTimeBidding/Resource/BiddersCreatives.php#L99">at line 99</a></div>
+        <code>                    <a href="../../../../Google/Service/RealTimeBidding/WatchCreativesResponse.html"><abbr title="Google\Service\RealTimeBidding\WatchCreativesResponse">WatchCreativesResponse</abbr></a>
+    <strong>watch</strong>(string $parent, <a href="../../../../Google/Service/RealTimeBidding/WatchCreativesRequest.html"><abbr title="Google\Service\RealTimeBidding\WatchCreativesRequest">WatchCreativesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Watches all creatives pertaining to a bidder. It is sufficient to invoke this
+endpoint once per bidder. A Pub/Sub topic will be created and notifications
+will be pushed to the topic when any of the bidder's creatives change status.</p></p>                <p><p>All of the bidder's service accounts will have access to read from the topic.
+Subsequent invocations of this method will return the existing Pub/Sub
+configuration. (creatives.watch)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. To watch all creatives pertaining to the
+bidder and all its child seat accounts, the bidder must follow the pattern
+<code>bidders/{bidderAccountId}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/RealTimeBidding/WatchCreativesRequest.html"><abbr title="Google\Service\RealTimeBidding\WatchCreativesRequest">WatchCreativesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/RealTimeBidding/WatchCreativesResponse.html"><abbr title="Google\Service\RealTimeBidding\WatchCreativesResponse">WatchCreativesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

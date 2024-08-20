@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\CloudIdentity\Resource\GroupsMemberships | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_CloudIdentity_Resource_GroupsMemberships" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CloudIdentity.html">CloudIdentity</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CloudIdentity/Resource.html">Resource</a></li><li class="backslash">\</li><li>GroupsMemberships</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>GroupsMemberships    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>GroupsMemberships</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudIdentity/Resource/GroupsMemberships.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;memberships&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $cloudidentityService = new Google\Service\CloudIdentity(...);
+ $memberships = $cloudidentityService-&gt;groups_memberships;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudIdentity/CheckTransitiveMembershipResponse.html"><abbr title="Google\Service\CloudIdentity\CheckTransitiveMembershipResponse">CheckTransitiveMembershipResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_checkTransitiveMembership">checkTransitiveMembership</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Check a potential member for membership in a group. <strong>Note:</strong> This feature is
+only available to Google Workspace Enterprise Standard, Enterprise Plus, and
+Enterprise for Education; and Cloud Identity Premium accounts. If the account
+of the member is not one of these, a 403 (PERMISSION_DENIED) HTTP status code
+will be returned. A member has membership to a group as long as there is a
+single viewable transitive membership between the group and the member. The
+actor must have view permissions to at least one transitive membership
+between the member and group. (memberships.checkTransitiveMembership)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/CloudIdentity/Membership.html"><abbr title="Google\Service\CloudIdentity\Membership">Membership</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a <code>Membership</code>. (memberships.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes a <code>Membership</code>. (memberships.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudIdentity/Membership.html"><abbr title="Google\Service\CloudIdentity\Membership">Membership</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Retrieves a <code>Membership</code>. (memberships.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMembershipGraph">getMembershipGraph</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Get a membership graph of just a member or both a member and a group.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudIdentity/ListMembershipsResponse.html"><abbr title="Google\Service\CloudIdentity\ListMembershipsResponse">ListMembershipsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listGroupsMemberships">listGroupsMemberships</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists the <code>Membership</code>s within a <code>Group</code>. (memberships.listGroupsMemberships)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudIdentity/LookupMembershipNameResponse.html"><abbr title="Google\Service\CloudIdentity\LookupMembershipNameResponse">LookupMembershipNameResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_lookup">lookup</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Looks up the <a href="https://cloud.google.com/apis/design/resource_names">resource
+name</a> of a <code>Membership</code>
+by its <code>EntityKey</code>. (memberships.lookup)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudIdentity/ModifyMembershipRolesResponse.html"><abbr title="Google\Service\CloudIdentity\ModifyMembershipRolesResponse">ModifyMembershipRolesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_modifyMembershipRoles">modifyMembershipRoles</a>(string $name, <a href="../../../../Google/Service/CloudIdentity/ModifyMembershipRolesRequest.html"><abbr title="Google\Service\CloudIdentity\ModifyMembershipRolesRequest">ModifyMembershipRolesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Modifies the <code>MembershipRole</code>s of a <code>Membership</code>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudIdentity/SearchDirectGroupsResponse.html"><abbr title="Google\Service\CloudIdentity\SearchDirectGroupsResponse">SearchDirectGroupsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_searchDirectGroups">searchDirectGroups</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Searches direct groups of a member. (memberships.searchDirectGroups)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudIdentity/SearchTransitiveGroupsResponse.html"><abbr title="Google\Service\CloudIdentity\SearchTransitiveGroupsResponse">SearchTransitiveGroupsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_searchTransitiveGroups">searchTransitiveGroups</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Search transitive groups of a member. <strong>Note:</strong> This feature is only
+available to Google Workspace Enterprise Standard, Enterprise Plus, and
+Enterprise for Education; and Cloud Identity Premium accounts. If the account
+of the member is not one of these, a 403 (PERMISSION_DENIED) HTTP status code
+will be returned. A transitive group is any group that has a direct or
+indirect membership to the member. Actor must have view permissions all
+transitive groups. (memberships.searchTransitiveGroups)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudIdentity/SearchTransitiveMembershipsResponse.html"><abbr title="Google\Service\CloudIdentity\SearchTransitiveMembershipsResponse">SearchTransitiveMembershipsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_searchTransitiveMemberships">searchTransitiveMemberships</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Search transitive memberships of a group. <strong>Note:</strong> This feature is only
+available to Google Workspace Enterprise Standard, Enterprise Plus, and
+Enterprise for Education; and Cloud Identity Premium accounts. If the account
+of the group is not one of these, a 403 (PERMISSION_DENIED) HTTP status code
+will be returned. A transitive membership is any direct or indirect
+membership of a group. Actor must have view permissions to all transitive
+memberships. (memberships.searchTransitiveMemberships)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_checkTransitiveMembership">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudIdentity/Resource/GroupsMemberships.php#L65">at line 65</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudIdentity/CheckTransitiveMembershipResponse.html"><abbr title="Google\Service\CloudIdentity\CheckTransitiveMembershipResponse">CheckTransitiveMembershipResponse</abbr></a>
+    <strong>checkTransitiveMembership</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Check a potential member for membership in a group. <strong>Note:</strong> This feature is
+only available to Google Workspace Enterprise Standard, Enterprise Plus, and
+Enterprise for Education; and Cloud Identity Premium accounts. If the account
+of the member is not one of these, a 403 (PERMISSION_DENIED) HTTP status code
+will be returned. A member has membership to a group as long as there is a
+single viewable transitive membership between the group and the member. The
+actor must have view permissions to at least one transitive membership
+between the member and group. (memberships.checkTransitiveMembership)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p><a href="https://cloud.google.com/apis/design/resource_names">Resource
+name</a> of the group to
+check the transitive membership in. Format: <code>groups/{group}</code>, where <code>group</code>
+is the unique id assigned to the Group to which the Membership belongs to.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudIdentity/CheckTransitiveMembershipResponse.html"><abbr title="Google\Service\CloudIdentity\CheckTransitiveMembershipResponse">CheckTransitiveMembershipResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudIdentity/Resource/GroupsMemberships.php#L81">at line 81</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/CloudIdentity/Membership.html"><abbr title="Google\Service\CloudIdentity\Membership">Membership</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a <code>Membership</code>. (memberships.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The parent <code>Group</code> resource under which to
+create the <code>Membership</code>. Must be of the form <code>groups/{group}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudIdentity/Membership.html"><abbr title="Google\Service\CloudIdentity\Membership">Membership</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudIdentity/Resource/GroupsMemberships.php#L98">at line 98</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a <code>Membership</code>. (memberships.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The <a href="https://cloud.google.com/apis/design/resource_names">resource
+name</a> of the
+<code>Membership</code> to delete. Must be of the form
+<code>groups/{group}/memberships/{membership}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudIdentity/Resource/GroupsMemberships.php#L115">at line 115</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudIdentity/Membership.html"><abbr title="Google\Service\CloudIdentity\Membership">Membership</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves a <code>Membership</code>. (memberships.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The <a href="https://cloud.google.com/apis/design/resource_names">resource
+name</a> of the
+<code>Membership</code> to retrieve. Must be of the form
+<code>groups/{group}/memberships/{membership}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudIdentity/Membership.html"><abbr title="Google\Service\CloudIdentity\Membership">Membership</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMembershipGraph">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudIdentity/Resource/GroupsMemberships.php#L149">at line 149</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a>
+    <strong>getMembershipGraph</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get a membership graph of just a member or both a member and a group.</p></p>                <p><p><strong>Note:</strong> This feature is only available to Google Workspace Enterprise
+Standard, Enterprise Plus, and Enterprise for Education; and Cloud Identity
+Premium accounts. If the account of the member is not one of these, a 403
+(PERMISSION_DENIED) HTTP status code will be returned. Given a member, the
+response will contain all membership paths from the member. Given both a
+group and a member, the response will contain all membership paths between
+the group and the member. (memberships.getMembershipGraph)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. <a href="https://cloud.google.com/apis/design/resource_names">Resource
+name</a> of the group to
+search transitive memberships in. Format: <code>groups/{group}</code>, where <code>group</code> is
+the unique ID assigned to the Group to which the Membership belongs to. group
+can be a wildcard collection id &quot;-&quot;. When a group is specified, the
+membership graph will be constrained to paths between the member (defined in
+the query) and the parent. If a wildcard collection is provided, all
+membership paths connected to the member will be returned.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listGroupsMemberships">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudIdentity/Resource/GroupsMemberships.php#L176">at line 176</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudIdentity/ListMembershipsResponse.html"><abbr title="Google\Service\CloudIdentity\ListMembershipsResponse">ListMembershipsResponse</abbr></a>
+    <strong>listGroupsMemberships</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists the <code>Membership</code>s within a <code>Group</code>. (memberships.listGroupsMemberships)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The parent <code>Group</code> resource under which to
+lookup the <code>Membership</code> name. Must be of the form <code>groups/{group}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudIdentity/ListMembershipsResponse.html"><abbr title="Google\Service\CloudIdentity\ListMembershipsResponse">ListMembershipsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lookup">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudIdentity/Resource/GroupsMemberships.php#L206">at line 206</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudIdentity/LookupMembershipNameResponse.html"><abbr title="Google\Service\CloudIdentity\LookupMembershipNameResponse">LookupMembershipNameResponse</abbr></a>
+    <strong>lookup</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Looks up the <a href="https://cloud.google.com/apis/design/resource_names">resource
+name</a> of a <code>Membership</code>
+by its <code>EntityKey</code>. (memberships.lookup)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The parent <code>Group</code> resource under which to
+lookup the <code>Membership</code> name. Must be of the form <code>groups/{group}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudIdentity/LookupMembershipNameResponse.html"><abbr title="Google\Service\CloudIdentity\LookupMembershipNameResponse">LookupMembershipNameResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modifyMembershipRoles">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudIdentity/Resource/GroupsMemberships.php#L225">at line 225</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudIdentity/ModifyMembershipRolesResponse.html"><abbr title="Google\Service\CloudIdentity\ModifyMembershipRolesResponse">ModifyMembershipRolesResponse</abbr></a>
+    <strong>modifyMembershipRoles</strong>(string $name, <a href="../../../../Google/Service/CloudIdentity/ModifyMembershipRolesRequest.html"><abbr title="Google\Service\CloudIdentity\ModifyMembershipRolesRequest">ModifyMembershipRolesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Modifies the <code>MembershipRole</code>s of a <code>Membership</code>.</p></p>                <p>(memberships.modifyMembershipRoles)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The <a href="https://cloud.google.com/apis/design/resource_names">resource
+name</a> of the
+<code>Membership</code> whose roles are to be modified. Must be of the form
+<code>groups/{group}/memberships/{membership}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudIdentity/ModifyMembershipRolesRequest.html"><abbr title="Google\Service\CloudIdentity\ModifyMembershipRolesRequest">ModifyMembershipRolesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudIdentity/ModifyMembershipRolesResponse.html"><abbr title="Google\Service\CloudIdentity\ModifyMembershipRolesResponse">ModifyMembershipRolesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_searchDirectGroups">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudIdentity/Resource/GroupsMemberships.php#L260">at line 260</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudIdentity/SearchDirectGroupsResponse.html"><abbr title="Google\Service\CloudIdentity\SearchDirectGroupsResponse">SearchDirectGroupsResponse</abbr></a>
+    <strong>searchDirectGroups</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Searches direct groups of a member. (memberships.searchDirectGroups)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p><a href="https://cloud.google.com/apis/design/resource_names">Resource
+name</a> of the group to
+search transitive memberships in. Format: groups/{group_id}, where group_id
+is always '-' as this API will search across all groups for a given member.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudIdentity/SearchDirectGroupsResponse.html"><abbr title="Google\Service\CloudIdentity\SearchDirectGroupsResponse">SearchDirectGroupsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_searchTransitiveGroups">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudIdentity/Resource/GroupsMemberships.php#L300">at line 300</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudIdentity/SearchTransitiveGroupsResponse.html"><abbr title="Google\Service\CloudIdentity\SearchTransitiveGroupsResponse">SearchTransitiveGroupsResponse</abbr></a>
+    <strong>searchTransitiveGroups</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Search transitive groups of a member. <strong>Note:</strong> This feature is only
+available to Google Workspace Enterprise Standard, Enterprise Plus, and
+Enterprise for Education; and Cloud Identity Premium accounts. If the account
+of the member is not one of these, a 403 (PERMISSION_DENIED) HTTP status code
+will be returned. A transitive group is any group that has a direct or
+indirect membership to the member. Actor must have view permissions all
+transitive groups. (memberships.searchTransitiveGroups)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p><a href="https://cloud.google.com/apis/design/resource_names">Resource
+name</a> of the group to
+search transitive memberships in. Format: <code>groups/{group}</code>, where <code>group</code> is
+always '-' as this API will search across all groups for a given member.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudIdentity/SearchTransitiveGroupsResponse.html"><abbr title="Google\Service\CloudIdentity\SearchTransitiveGroupsResponse">SearchTransitiveGroupsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_searchTransitiveMemberships">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudIdentity/Resource/GroupsMemberships.php#L327">at line 327</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudIdentity/SearchTransitiveMembershipsResponse.html"><abbr title="Google\Service\CloudIdentity\SearchTransitiveMembershipsResponse">SearchTransitiveMembershipsResponse</abbr></a>
+    <strong>searchTransitiveMemberships</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Search transitive memberships of a group. <strong>Note:</strong> This feature is only
+available to Google Workspace Enterprise Standard, Enterprise Plus, and
+Enterprise for Education; and Cloud Identity Premium accounts. If the account
+of the group is not one of these, a 403 (PERMISSION_DENIED) HTTP status code
+will be returned. A transitive membership is any direct or indirect
+membership of a group. Actor must have view permissions to all transitive
+memberships. (memberships.searchTransitiveMemberships)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p><a href="https://cloud.google.com/apis/design/resource_names">Resource
+name</a> of the group to
+search transitive memberships in. Format: <code>groups/{group}</code>, where <code>group</code> is
+the unique ID assigned to the Group.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudIdentity/SearchTransitiveMembershipsResponse.html"><abbr title="Google\Service\CloudIdentity\SearchTransitiveMembershipsResponse">SearchTransitiveMembershipsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

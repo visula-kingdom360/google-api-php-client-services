@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Directory\Resource\Chromeosdevices | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Directory_Resource_Chromeosdevices" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Directory.html">Directory</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Directory/Resource.html">Resource</a></li><li class="backslash">\</li><li>Chromeosdevices</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Chromeosdevices    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Chromeosdevices</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Directory/Resource/Chromeosdevices.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;chromeosdevices&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $adminService = new Google\Service\Directory(...);
+ $chromeosdevices = $adminService-&gt;chromeosdevices;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_action">action</a>(string $customerId, string $resourceId, <a href="../../../../Google/Service/Directory/ChromeOsDeviceAction.html"><abbr title="Google\Service\Directory\ChromeOsDeviceAction">ChromeOsDeviceAction</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Use <a href="/admin-
+sdk/directory/reference/rest/v1/customer.devices.chromeos/batchChangeStatus">BatchChangeChromeOsDeviceStatus</a>
+instead. Takes an action that affects a Chrome OS Device. This includes
+deprovisioning, disabling, and re-enabling devices. <em>Warning:</em> <em>
+Deprovisioning a device will stop device policy syncing and remove device-
+level printers. After a device is deprovisioned, it must be wiped before it
+can be re-enrolled. </em> Lost or stolen devices should use the disable action. *
+Re-enabling a disabled device will consume a device license. If you do not
+have sufficient licenses available when completing the re-enable action, you
+will receive an error. For more information about deprovisioning and
+disabling devices, visit the <a href="https://support.google.com/chrome/a/answer/3523633">help
+center</a>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Directory/ChromeOsDevice.html"><abbr title="Google\Service\Directory\ChromeOsDevice">ChromeOsDevice</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $customerId, string $deviceId, array $optParams = [])
+        
+                                            <p><p>Retrieves a Chrome OS device's properties. (chromeosdevices.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Directory/ChromeOsDevices.html"><abbr title="Google\Service\Directory\ChromeOsDevices">ChromeOsDevices</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listChromeosdevices">listChromeosdevices</a>(string $customerId, array $optParams = [])
+        
+                                            <p><p>Retrieves a paginated list of Chrome OS devices within an account.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_moveDevicesToOu">moveDevicesToOu</a>(string $customerId, string $orgUnitPath, <a href="../../../../Google/Service/Directory/ChromeOsMoveDevicesToOu.html"><abbr title="Google\Service\Directory\ChromeOsMoveDevicesToOu">ChromeOsMoveDevicesToOu</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Moves or inserts multiple Chrome OS devices to an organizational unit. You
+can move up to 50 devices at once. (chromeosdevices.moveDevicesToOu)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Directory/ChromeOsDevice.html"><abbr title="Google\Service\Directory\ChromeOsDevice">ChromeOsDevice</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $customerId, string $deviceId, <a href="../../../../Google/Service/Directory/ChromeOsDevice.html"><abbr title="Google\Service\Directory\ChromeOsDevice">ChromeOsDevice</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a device's updatable properties, such as <code>annotatedUser</code>,
+<code>annotatedLocation</code>, <code>notes</code>, <code>orgUnitPath</code>, or <code>annotatedAssetId</code>. This
+method supports <a href="/admin-
+sdk/directory/v1/guides/performance#patch">patch semantics</a>. (chromeosdevices.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Directory/ChromeOsDevice.html"><abbr title="Google\Service\Directory\ChromeOsDevice">ChromeOsDevice</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $customerId, string $deviceId, <a href="../../../../Google/Service/Directory/ChromeOsDevice.html"><abbr title="Google\Service\Directory\ChromeOsDevice">ChromeOsDevice</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a device's updatable properties, such as <code>annotatedUser</code>,
+<code>annotatedLocation</code>, <code>notes</code>, <code>orgUnitPath</code>, or <code>annotatedAssetId</code>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_action">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Directory/Resource/Chromeosdevices.php#L62">at line 62</a></div>
+        <code>                    
+    <strong>action</strong>(string $customerId, string $resourceId, <a href="../../../../Google/Service/Directory/ChromeOsDeviceAction.html"><abbr title="Google\Service\Directory\ChromeOsDeviceAction">ChromeOsDeviceAction</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Use <a href="/admin-
+sdk/directory/reference/rest/v1/customer.devices.chromeos/batchChangeStatus">BatchChangeChromeOsDeviceStatus</a>
+instead. Takes an action that affects a Chrome OS Device. This includes
+deprovisioning, disabling, and re-enabling devices. <em>Warning:</em> <em>
+Deprovisioning a device will stop device policy syncing and remove device-
+level printers. After a device is deprovisioned, it must be wiped before it
+can be re-enrolled. </em> Lost or stolen devices should use the disable action. *
+Re-enabling a disabled device will consume a device license. If you do not
+have sufficient licenses available when completing the re-enable action, you
+will receive an error. For more information about deprovisioning and
+disabling devices, visit the <a href="https://support.google.com/chrome/a/answer/3523633">help
+center</a>.</p></p>                <p>(chromeosdevices.action)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$customerId</td>
+                <td><p>The unique ID for the customer's Google Workspace
+account. As an account administrator, you can also use the <code>my_customer</code>
+alias to represent your account's <code>customerId</code>. The <code>customerId</code> is also
+returned as part of the <a href="/admin-
+sdk/directory/v1/reference/users">Users resource</a>.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$resourceId</td>
+                <td><p>The unique ID of the device. The <code>resourceId</code>s are
+returned in the response from the <a href="/admin-
+sdk/directory/v1/reference/chromeosdevices/list">chromeosdevices.list</a> method.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Directory/ChromeOsDeviceAction.html"><abbr title="Google\Service\Directory\ChromeOsDeviceAction">ChromeOsDeviceAction</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Directory/Resource/Chromeosdevices.php#L86">at line 86</a></div>
+        <code>                    <a href="../../../../Google/Service/Directory/ChromeOsDevice.html"><abbr title="Google\Service\Directory\ChromeOsDevice">ChromeOsDevice</abbr></a>
+    <strong>get</strong>(string $customerId, string $deviceId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves a Chrome OS device's properties. (chromeosdevices.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$customerId</td>
+                <td><p>The unique ID for the customer's Google Workspace
+account. As an account administrator, you can also use the <code>my_customer</code>
+alias to represent your account's <code>customerId</code>. The <code>customerId</code> is also
+returned as part of the <a href="/admin-
+sdk/directory/v1/reference/users">Users resource</a>.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$deviceId</td>
+                <td><p>The unique ID of the device. The <code>deviceId</code>s are
+returned in the response from the <a href="/admin-
+sdk/directory/v1/reference/chromeosdevices/list">chromeosdevices.list</a> method.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Directory/ChromeOsDevice.html"><abbr title="Google\Service\Directory\ChromeOsDevice">ChromeOsDevice</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listChromeosdevices">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Directory/Resource/Chromeosdevices.php#L123">at line 123</a></div>
+        <code>                    <a href="../../../../Google/Service/Directory/ChromeOsDevices.html"><abbr title="Google\Service\Directory\ChromeOsDevices">ChromeOsDevices</abbr></a>
+    <strong>listChromeosdevices</strong>(string $customerId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves a paginated list of Chrome OS devices within an account.</p></p>                <p>(chromeosdevices.listChromeosdevices)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$customerId</td>
+                <td><p>The unique ID for the customer's Google Workspace
+account. As an account administrator, you can also use the <code>my_customer</code>
+alias to represent your account's <code>customerId</code>. The <code>customerId</code> is also
+returned as part of the <a href="/admin-
+sdk/directory/v1/reference/users">Users resource</a>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Directory/ChromeOsDevices.html"><abbr title="Google\Service\Directory\ChromeOsDevices">ChromeOsDevices</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_moveDevicesToOu">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Directory/Resource/Chromeosdevices.php#L140">at line 140</a></div>
+        <code>                    
+    <strong>moveDevicesToOu</strong>(string $customerId, string $orgUnitPath, <a href="../../../../Google/Service/Directory/ChromeOsMoveDevicesToOu.html"><abbr title="Google\Service\Directory\ChromeOsMoveDevicesToOu">ChromeOsMoveDevicesToOu</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Moves or inserts multiple Chrome OS devices to an organizational unit. You
+can move up to 50 devices at once. (chromeosdevices.moveDevicesToOu)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$customerId</td>
+                <td><p>Immutable. ID of the Google Workspace account</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$orgUnitPath</td>
+                <td><p>Full path of the target organizational unit or its
+ID</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Directory/ChromeOsMoveDevicesToOu.html"><abbr title="Google\Service\Directory\ChromeOsMoveDevicesToOu">ChromeOsMoveDevicesToOu</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Directory/Resource/Chromeosdevices.php#L168">at line 168</a></div>
+        <code>                    <a href="../../../../Google/Service/Directory/ChromeOsDevice.html"><abbr title="Google\Service\Directory\ChromeOsDevice">ChromeOsDevice</abbr></a>
+    <strong>patch</strong>(string $customerId, string $deviceId, <a href="../../../../Google/Service/Directory/ChromeOsDevice.html"><abbr title="Google\Service\Directory\ChromeOsDevice">ChromeOsDevice</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a device's updatable properties, such as <code>annotatedUser</code>,
+<code>annotatedLocation</code>, <code>notes</code>, <code>orgUnitPath</code>, or <code>annotatedAssetId</code>. This
+method supports <a href="/admin-
+sdk/directory/v1/guides/performance#patch">patch semantics</a>. (chromeosdevices.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$customerId</td>
+                <td><p>The unique ID for the customer's Google Workspace
+account. As an account administrator, you can also use the <code>my_customer</code>
+alias to represent your account's <code>customerId</code>. The <code>customerId</code> is also
+returned as part of the <a href="/admin-
+sdk/directory/v1/reference/users">Users resource</a>.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$deviceId</td>
+                <td><p>The unique ID of the device. The <code>deviceId</code>s are
+returned in the response from the <a href="/admin-
+sdk/v1/reference/chromeosdevices/list">chromeosdevices.list</a> method.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Directory/ChromeOsDevice.html"><abbr title="Google\Service\Directory\ChromeOsDevice">ChromeOsDevice</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Directory/ChromeOsDevice.html"><abbr title="Google\Service\Directory\ChromeOsDevice">ChromeOsDevice</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Directory/Resource/Chromeosdevices.php#L195">at line 195</a></div>
+        <code>                    <a href="../../../../Google/Service/Directory/ChromeOsDevice.html"><abbr title="Google\Service\Directory\ChromeOsDevice">ChromeOsDevice</abbr></a>
+    <strong>update</strong>(string $customerId, string $deviceId, <a href="../../../../Google/Service/Directory/ChromeOsDevice.html"><abbr title="Google\Service\Directory\ChromeOsDevice">ChromeOsDevice</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a device's updatable properties, such as <code>annotatedUser</code>,
+<code>annotatedLocation</code>, <code>notes</code>, <code>orgUnitPath</code>, or <code>annotatedAssetId</code>.</p></p>                <p>(chromeosdevices.update)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$customerId</td>
+                <td><p>The unique ID for the customer's Google Workspace
+account. As an account administrator, you can also use the <code>my_customer</code>
+alias to represent your account's <code>customerId</code>. The <code>customerId</code> is also
+returned as part of the <a href="/admin-
+sdk/directory/v1/reference/users">Users resource</a>.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$deviceId</td>
+                <td><p>The unique ID of the device. The <code>deviceId</code>s are
+returned in the response from the <a href="/admin-
+sdk/v1/reference/chromeosdevices/list">chromeosdevices.list</a> method.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Directory/ChromeOsDevice.html"><abbr title="Google\Service\Directory\ChromeOsDevice">ChromeOsDevice</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Directory/ChromeOsDevice.html"><abbr title="Google\Service\Directory\ChromeOsDevice">ChromeOsDevice</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

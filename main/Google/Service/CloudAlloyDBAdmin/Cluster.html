@@ -1,0 +1,3402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\CloudAlloyDBAdmin\Cluster | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../doctum.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_CloudAlloyDBAdmin_Cluster" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../Google/Service/CloudAlloyDBAdmin.html">CloudAlloyDBAdmin</a></li><li class="backslash">\</li><li>Cluster</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Cluster    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Cluster</strong>        extends <abbr title="Google\Model">Model</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_annotations">
+                                                                                string[]
+                                                                                
+                                    </td>
+                <td>$annotations</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_automatedBackupPolicyType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$automatedBackupPolicyType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_automatedBackupPolicyDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$automatedBackupPolicyDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_backupSourceType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$backupSourceType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_backupSourceDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$backupSourceDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_clusterType">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$clusterType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_continuousBackupConfigType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$continuousBackupConfigType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_continuousBackupConfigDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$continuousBackupConfigDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_continuousBackupInfoType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$continuousBackupInfoType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_continuousBackupInfoDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$continuousBackupInfoDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_createTime">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$createTime</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_databaseVersion">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$databaseVersion</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_deleteTime">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$deleteTime</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_displayName">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$displayName</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_encryptionConfigType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$encryptionConfigType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_encryptionConfigDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$encryptionConfigDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_encryptionInfoType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$encryptionInfoType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_encryptionInfoDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$encryptionInfoDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_etag">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$etag</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_initialUserType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$initialUserType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_initialUserDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$initialUserDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_labels">
+                                                                                string[]
+                                                                                
+                                    </td>
+                <td>$labels</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_maintenanceScheduleType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$maintenanceScheduleType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_maintenanceScheduleDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$maintenanceScheduleDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_maintenanceUpdatePolicyType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$maintenanceUpdatePolicyType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_maintenanceUpdatePolicyDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$maintenanceUpdatePolicyDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_migrationSourceType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$migrationSourceType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_migrationSourceDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$migrationSourceDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_name">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$name</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_network">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$network</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_networkConfigType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$networkConfigType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_networkConfigDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$networkConfigDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_primaryConfigType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$primaryConfigType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_primaryConfigDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$primaryConfigDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pscConfigType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$pscConfigType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pscConfigDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$pscConfigDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_reconciling">
+                                                                                bool
+                                                                                
+                                    </td>
+                <td>$reconciling</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_satisfiesPzs">
+                                                                                bool
+                                                                                
+                                    </td>
+                <td>$satisfiesPzs</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_secondaryConfigType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$secondaryConfigType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_secondaryConfigDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$secondaryConfigDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sslConfigType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$sslConfigType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sslConfigDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$sslConfigDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_state">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$state</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_subscriptionType">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$subscriptionType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_trialMetadataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$trialMetadataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_trialMetadataDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$trialMetadataDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_uid">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$uid</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_updateTime">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$updateTime</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setAnnotations">setAnnotations</a>($annotations)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAnnotations">getAnnotations</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setAutomatedBackupPolicy">setAutomatedBackupPolicy</a>(<a href="../../../Google/Service/CloudAlloyDBAdmin/AutomatedBackupPolicy.html"><abbr title="Google\Service\CloudAlloyDBAdmin\AutomatedBackupPolicy">AutomatedBackupPolicy</abbr></a> $automatedBackupPolicy)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/CloudAlloyDBAdmin/AutomatedBackupPolicy.html"><abbr title="Google\Service\CloudAlloyDBAdmin\AutomatedBackupPolicy">AutomatedBackupPolicy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAutomatedBackupPolicy">getAutomatedBackupPolicy</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setBackupSource">setBackupSource</a>(<a href="../../../Google/Service/CloudAlloyDBAdmin/BackupSource.html"><abbr title="Google\Service\CloudAlloyDBAdmin\BackupSource">BackupSource</abbr></a> $backupSource)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/CloudAlloyDBAdmin/BackupSource.html"><abbr title="Google\Service\CloudAlloyDBAdmin\BackupSource">BackupSource</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getBackupSource">getBackupSource</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setClusterType">setClusterType</a>($clusterType)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getClusterType">getClusterType</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setContinuousBackupConfig">setContinuousBackupConfig</a>(<a href="../../../Google/Service/CloudAlloyDBAdmin/ContinuousBackupConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\ContinuousBackupConfig">ContinuousBackupConfig</abbr></a> $continuousBackupConfig)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/CloudAlloyDBAdmin/ContinuousBackupConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\ContinuousBackupConfig">ContinuousBackupConfig</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getContinuousBackupConfig">getContinuousBackupConfig</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setContinuousBackupInfo">setContinuousBackupInfo</a>(<a href="../../../Google/Service/CloudAlloyDBAdmin/ContinuousBackupInfo.html"><abbr title="Google\Service\CloudAlloyDBAdmin\ContinuousBackupInfo">ContinuousBackupInfo</abbr></a> $continuousBackupInfo)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/CloudAlloyDBAdmin/ContinuousBackupInfo.html"><abbr title="Google\Service\CloudAlloyDBAdmin\ContinuousBackupInfo">ContinuousBackupInfo</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getContinuousBackupInfo">getContinuousBackupInfo</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setCreateTime">setCreateTime</a>($createTime)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCreateTime">getCreateTime</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDatabaseVersion">setDatabaseVersion</a>($databaseVersion)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDatabaseVersion">getDatabaseVersion</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDeleteTime">setDeleteTime</a>($deleteTime)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDeleteTime">getDeleteTime</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDisplayName">setDisplayName</a>($displayName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDisplayName">getDisplayName</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setEncryptionConfig">setEncryptionConfig</a>(<a href="../../../Google/Service/CloudAlloyDBAdmin/EncryptionConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\EncryptionConfig">EncryptionConfig</abbr></a> $encryptionConfig)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/CloudAlloyDBAdmin/EncryptionConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\EncryptionConfig">EncryptionConfig</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getEncryptionConfig">getEncryptionConfig</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setEncryptionInfo">setEncryptionInfo</a>(<a href="../../../Google/Service/CloudAlloyDBAdmin/EncryptionInfo.html"><abbr title="Google\Service\CloudAlloyDBAdmin\EncryptionInfo">EncryptionInfo</abbr></a> $encryptionInfo)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/CloudAlloyDBAdmin/EncryptionInfo.html"><abbr title="Google\Service\CloudAlloyDBAdmin\EncryptionInfo">EncryptionInfo</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getEncryptionInfo">getEncryptionInfo</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setEtag">setEtag</a>($etag)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getEtag">getEtag</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setInitialUser">setInitialUser</a>(<a href="../../../Google/Service/CloudAlloyDBAdmin/UserPassword.html"><abbr title="Google\Service\CloudAlloyDBAdmin\UserPassword">UserPassword</abbr></a> $initialUser)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/CloudAlloyDBAdmin/UserPassword.html"><abbr title="Google\Service\CloudAlloyDBAdmin\UserPassword">UserPassword</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getInitialUser">getInitialUser</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setLabels">setLabels</a>($labels)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLabels">getLabels</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMaintenanceSchedule">setMaintenanceSchedule</a>(<a href="../../../Google/Service/CloudAlloyDBAdmin/MaintenanceSchedule.html"><abbr title="Google\Service\CloudAlloyDBAdmin\MaintenanceSchedule">MaintenanceSchedule</abbr></a> $maintenanceSchedule)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/CloudAlloyDBAdmin/MaintenanceSchedule.html"><abbr title="Google\Service\CloudAlloyDBAdmin\MaintenanceSchedule">MaintenanceSchedule</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMaintenanceSchedule">getMaintenanceSchedule</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMaintenanceUpdatePolicy">setMaintenanceUpdatePolicy</a>(<a href="../../../Google/Service/CloudAlloyDBAdmin/MaintenanceUpdatePolicy.html"><abbr title="Google\Service\CloudAlloyDBAdmin\MaintenanceUpdatePolicy">MaintenanceUpdatePolicy</abbr></a> $maintenanceUpdatePolicy)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/CloudAlloyDBAdmin/MaintenanceUpdatePolicy.html"><abbr title="Google\Service\CloudAlloyDBAdmin\MaintenanceUpdatePolicy">MaintenanceUpdatePolicy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMaintenanceUpdatePolicy">getMaintenanceUpdatePolicy</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMigrationSource">setMigrationSource</a>(<a href="../../../Google/Service/CloudAlloyDBAdmin/MigrationSource.html"><abbr title="Google\Service\CloudAlloyDBAdmin\MigrationSource">MigrationSource</abbr></a> $migrationSource)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/CloudAlloyDBAdmin/MigrationSource.html"><abbr title="Google\Service\CloudAlloyDBAdmin\MigrationSource">MigrationSource</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMigrationSource">getMigrationSource</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setName">setName</a>($name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setNetwork">setNetwork</a>($network)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getNetwork">getNetwork</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setNetworkConfig">setNetworkConfig</a>(<a href="../../../Google/Service/CloudAlloyDBAdmin/NetworkConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\NetworkConfig">NetworkConfig</abbr></a> $networkConfig)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/CloudAlloyDBAdmin/NetworkConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\NetworkConfig">NetworkConfig</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getNetworkConfig">getNetworkConfig</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setPrimaryConfig">setPrimaryConfig</a>(<a href="../../../Google/Service/CloudAlloyDBAdmin/PrimaryConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\PrimaryConfig">PrimaryConfig</abbr></a> $primaryConfig)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/CloudAlloyDBAdmin/PrimaryConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\PrimaryConfig">PrimaryConfig</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPrimaryConfig">getPrimaryConfig</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setPscConfig">setPscConfig</a>(<a href="../../../Google/Service/CloudAlloyDBAdmin/PscConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\PscConfig">PscConfig</abbr></a> $pscConfig)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/CloudAlloyDBAdmin/PscConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\PscConfig">PscConfig</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPscConfig">getPscConfig</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setReconciling">setReconciling</a>($reconciling)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getReconciling">getReconciling</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setSatisfiesPzs">setSatisfiesPzs</a>($satisfiesPzs)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSatisfiesPzs">getSatisfiesPzs</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setSecondaryConfig">setSecondaryConfig</a>(<a href="../../../Google/Service/CloudAlloyDBAdmin/SecondaryConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\SecondaryConfig">SecondaryConfig</abbr></a> $secondaryConfig)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/CloudAlloyDBAdmin/SecondaryConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\SecondaryConfig">SecondaryConfig</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSecondaryConfig">getSecondaryConfig</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setSslConfig">setSslConfig</a>(<a href="../../../Google/Service/CloudAlloyDBAdmin/SslConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\SslConfig">SslConfig</abbr></a> $sslConfig)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/CloudAlloyDBAdmin/SslConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\SslConfig">SslConfig</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSslConfig">getSslConfig</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setState">setState</a>($state)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getState">getState</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setSubscriptionType">setSubscriptionType</a>($subscriptionType)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSubscriptionType">getSubscriptionType</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setTrialMetadata">setTrialMetadata</a>(<a href="../../../Google/Service/CloudAlloyDBAdmin/TrialMetadata.html"><abbr title="Google\Service\CloudAlloyDBAdmin\TrialMetadata">TrialMetadata</abbr></a> $trialMetadata)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/CloudAlloyDBAdmin/TrialMetadata.html"><abbr title="Google\Service\CloudAlloyDBAdmin\TrialMetadata">TrialMetadata</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getTrialMetadata">getTrialMetadata</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setUid">setUid</a>($uid)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getUid">getUid</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setUpdateTime">setUpdateTime</a>($updateTime)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getUpdateTime">getUpdateTime</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setAnnotations">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L122">at line 122</a></div>
+        <code>                    
+    <strong>setAnnotations</strong>($annotations)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$annotations</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAnnotations">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L129">at line 129</a></div>
+        <code>                    string[]
+    <strong>getAnnotations</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAutomatedBackupPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L136">at line 136</a></div>
+        <code>                    
+    <strong>setAutomatedBackupPolicy</strong>(<a href="../../../Google/Service/CloudAlloyDBAdmin/AutomatedBackupPolicy.html"><abbr title="Google\Service\CloudAlloyDBAdmin\AutomatedBackupPolicy">AutomatedBackupPolicy</abbr></a> $automatedBackupPolicy)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/CloudAlloyDBAdmin/AutomatedBackupPolicy.html"><abbr title="Google\Service\CloudAlloyDBAdmin\AutomatedBackupPolicy">AutomatedBackupPolicy</abbr></a></td>
+                <td>$automatedBackupPolicy</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAutomatedBackupPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L143">at line 143</a></div>
+        <code>                    <a href="../../../Google/Service/CloudAlloyDBAdmin/AutomatedBackupPolicy.html"><abbr title="Google\Service\CloudAlloyDBAdmin\AutomatedBackupPolicy">AutomatedBackupPolicy</abbr></a>
+    <strong>getAutomatedBackupPolicy</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/CloudAlloyDBAdmin/AutomatedBackupPolicy.html"><abbr title="Google\Service\CloudAlloyDBAdmin\AutomatedBackupPolicy">AutomatedBackupPolicy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBackupSource">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L150">at line 150</a></div>
+        <code>                    
+    <strong>setBackupSource</strong>(<a href="../../../Google/Service/CloudAlloyDBAdmin/BackupSource.html"><abbr title="Google\Service\CloudAlloyDBAdmin\BackupSource">BackupSource</abbr></a> $backupSource)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/CloudAlloyDBAdmin/BackupSource.html"><abbr title="Google\Service\CloudAlloyDBAdmin\BackupSource">BackupSource</abbr></a></td>
+                <td>$backupSource</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBackupSource">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L157">at line 157</a></div>
+        <code>                    <a href="../../../Google/Service/CloudAlloyDBAdmin/BackupSource.html"><abbr title="Google\Service\CloudAlloyDBAdmin\BackupSource">BackupSource</abbr></a>
+    <strong>getBackupSource</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/CloudAlloyDBAdmin/BackupSource.html"><abbr title="Google\Service\CloudAlloyDBAdmin\BackupSource">BackupSource</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setClusterType">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L164">at line 164</a></div>
+        <code>                    
+    <strong>setClusterType</strong>($clusterType)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$clusterType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getClusterType">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L171">at line 171</a></div>
+        <code>                    string
+    <strong>getClusterType</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContinuousBackupConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L178">at line 178</a></div>
+        <code>                    
+    <strong>setContinuousBackupConfig</strong>(<a href="../../../Google/Service/CloudAlloyDBAdmin/ContinuousBackupConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\ContinuousBackupConfig">ContinuousBackupConfig</abbr></a> $continuousBackupConfig)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/CloudAlloyDBAdmin/ContinuousBackupConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\ContinuousBackupConfig">ContinuousBackupConfig</abbr></a></td>
+                <td>$continuousBackupConfig</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContinuousBackupConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L185">at line 185</a></div>
+        <code>                    <a href="../../../Google/Service/CloudAlloyDBAdmin/ContinuousBackupConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\ContinuousBackupConfig">ContinuousBackupConfig</abbr></a>
+    <strong>getContinuousBackupConfig</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/CloudAlloyDBAdmin/ContinuousBackupConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\ContinuousBackupConfig">ContinuousBackupConfig</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContinuousBackupInfo">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L192">at line 192</a></div>
+        <code>                    
+    <strong>setContinuousBackupInfo</strong>(<a href="../../../Google/Service/CloudAlloyDBAdmin/ContinuousBackupInfo.html"><abbr title="Google\Service\CloudAlloyDBAdmin\ContinuousBackupInfo">ContinuousBackupInfo</abbr></a> $continuousBackupInfo)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/CloudAlloyDBAdmin/ContinuousBackupInfo.html"><abbr title="Google\Service\CloudAlloyDBAdmin\ContinuousBackupInfo">ContinuousBackupInfo</abbr></a></td>
+                <td>$continuousBackupInfo</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContinuousBackupInfo">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L199">at line 199</a></div>
+        <code>                    <a href="../../../Google/Service/CloudAlloyDBAdmin/ContinuousBackupInfo.html"><abbr title="Google\Service\CloudAlloyDBAdmin\ContinuousBackupInfo">ContinuousBackupInfo</abbr></a>
+    <strong>getContinuousBackupInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/CloudAlloyDBAdmin/ContinuousBackupInfo.html"><abbr title="Google\Service\CloudAlloyDBAdmin\ContinuousBackupInfo">ContinuousBackupInfo</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCreateTime">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L206">at line 206</a></div>
+        <code>                    
+    <strong>setCreateTime</strong>($createTime)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$createTime</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCreateTime">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L213">at line 213</a></div>
+        <code>                    string
+    <strong>getCreateTime</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDatabaseVersion">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L220">at line 220</a></div>
+        <code>                    
+    <strong>setDatabaseVersion</strong>($databaseVersion)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$databaseVersion</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDatabaseVersion">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L227">at line 227</a></div>
+        <code>                    string
+    <strong>getDatabaseVersion</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDeleteTime">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L234">at line 234</a></div>
+        <code>                    
+    <strong>setDeleteTime</strong>($deleteTime)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$deleteTime</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDeleteTime">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L241">at line 241</a></div>
+        <code>                    string
+    <strong>getDeleteTime</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDisplayName">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L248">at line 248</a></div>
+        <code>                    
+    <strong>setDisplayName</strong>($displayName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$displayName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDisplayName">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L255">at line 255</a></div>
+        <code>                    string
+    <strong>getDisplayName</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEncryptionConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L262">at line 262</a></div>
+        <code>                    
+    <strong>setEncryptionConfig</strong>(<a href="../../../Google/Service/CloudAlloyDBAdmin/EncryptionConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\EncryptionConfig">EncryptionConfig</abbr></a> $encryptionConfig)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/CloudAlloyDBAdmin/EncryptionConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\EncryptionConfig">EncryptionConfig</abbr></a></td>
+                <td>$encryptionConfig</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEncryptionConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L269">at line 269</a></div>
+        <code>                    <a href="../../../Google/Service/CloudAlloyDBAdmin/EncryptionConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\EncryptionConfig">EncryptionConfig</abbr></a>
+    <strong>getEncryptionConfig</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/CloudAlloyDBAdmin/EncryptionConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\EncryptionConfig">EncryptionConfig</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEncryptionInfo">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L276">at line 276</a></div>
+        <code>                    
+    <strong>setEncryptionInfo</strong>(<a href="../../../Google/Service/CloudAlloyDBAdmin/EncryptionInfo.html"><abbr title="Google\Service\CloudAlloyDBAdmin\EncryptionInfo">EncryptionInfo</abbr></a> $encryptionInfo)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/CloudAlloyDBAdmin/EncryptionInfo.html"><abbr title="Google\Service\CloudAlloyDBAdmin\EncryptionInfo">EncryptionInfo</abbr></a></td>
+                <td>$encryptionInfo</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEncryptionInfo">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L283">at line 283</a></div>
+        <code>                    <a href="../../../Google/Service/CloudAlloyDBAdmin/EncryptionInfo.html"><abbr title="Google\Service\CloudAlloyDBAdmin\EncryptionInfo">EncryptionInfo</abbr></a>
+    <strong>getEncryptionInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/CloudAlloyDBAdmin/EncryptionInfo.html"><abbr title="Google\Service\CloudAlloyDBAdmin\EncryptionInfo">EncryptionInfo</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEtag">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L290">at line 290</a></div>
+        <code>                    
+    <strong>setEtag</strong>($etag)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$etag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEtag">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L297">at line 297</a></div>
+        <code>                    string
+    <strong>getEtag</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setInitialUser">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L304">at line 304</a></div>
+        <code>                    
+    <strong>setInitialUser</strong>(<a href="../../../Google/Service/CloudAlloyDBAdmin/UserPassword.html"><abbr title="Google\Service\CloudAlloyDBAdmin\UserPassword">UserPassword</abbr></a> $initialUser)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/CloudAlloyDBAdmin/UserPassword.html"><abbr title="Google\Service\CloudAlloyDBAdmin\UserPassword">UserPassword</abbr></a></td>
+                <td>$initialUser</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInitialUser">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L311">at line 311</a></div>
+        <code>                    <a href="../../../Google/Service/CloudAlloyDBAdmin/UserPassword.html"><abbr title="Google\Service\CloudAlloyDBAdmin\UserPassword">UserPassword</abbr></a>
+    <strong>getInitialUser</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/CloudAlloyDBAdmin/UserPassword.html"><abbr title="Google\Service\CloudAlloyDBAdmin\UserPassword">UserPassword</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLabels">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L318">at line 318</a></div>
+        <code>                    
+    <strong>setLabels</strong>($labels)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$labels</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLabels">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L325">at line 325</a></div>
+        <code>                    string[]
+    <strong>getLabels</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMaintenanceSchedule">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L332">at line 332</a></div>
+        <code>                    
+    <strong>setMaintenanceSchedule</strong>(<a href="../../../Google/Service/CloudAlloyDBAdmin/MaintenanceSchedule.html"><abbr title="Google\Service\CloudAlloyDBAdmin\MaintenanceSchedule">MaintenanceSchedule</abbr></a> $maintenanceSchedule)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/CloudAlloyDBAdmin/MaintenanceSchedule.html"><abbr title="Google\Service\CloudAlloyDBAdmin\MaintenanceSchedule">MaintenanceSchedule</abbr></a></td>
+                <td>$maintenanceSchedule</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMaintenanceSchedule">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L339">at line 339</a></div>
+        <code>                    <a href="../../../Google/Service/CloudAlloyDBAdmin/MaintenanceSchedule.html"><abbr title="Google\Service\CloudAlloyDBAdmin\MaintenanceSchedule">MaintenanceSchedule</abbr></a>
+    <strong>getMaintenanceSchedule</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/CloudAlloyDBAdmin/MaintenanceSchedule.html"><abbr title="Google\Service\CloudAlloyDBAdmin\MaintenanceSchedule">MaintenanceSchedule</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMaintenanceUpdatePolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L346">at line 346</a></div>
+        <code>                    
+    <strong>setMaintenanceUpdatePolicy</strong>(<a href="../../../Google/Service/CloudAlloyDBAdmin/MaintenanceUpdatePolicy.html"><abbr title="Google\Service\CloudAlloyDBAdmin\MaintenanceUpdatePolicy">MaintenanceUpdatePolicy</abbr></a> $maintenanceUpdatePolicy)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/CloudAlloyDBAdmin/MaintenanceUpdatePolicy.html"><abbr title="Google\Service\CloudAlloyDBAdmin\MaintenanceUpdatePolicy">MaintenanceUpdatePolicy</abbr></a></td>
+                <td>$maintenanceUpdatePolicy</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMaintenanceUpdatePolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L353">at line 353</a></div>
+        <code>                    <a href="../../../Google/Service/CloudAlloyDBAdmin/MaintenanceUpdatePolicy.html"><abbr title="Google\Service\CloudAlloyDBAdmin\MaintenanceUpdatePolicy">MaintenanceUpdatePolicy</abbr></a>
+    <strong>getMaintenanceUpdatePolicy</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/CloudAlloyDBAdmin/MaintenanceUpdatePolicy.html"><abbr title="Google\Service\CloudAlloyDBAdmin\MaintenanceUpdatePolicy">MaintenanceUpdatePolicy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMigrationSource">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L360">at line 360</a></div>
+        <code>                    
+    <strong>setMigrationSource</strong>(<a href="../../../Google/Service/CloudAlloyDBAdmin/MigrationSource.html"><abbr title="Google\Service\CloudAlloyDBAdmin\MigrationSource">MigrationSource</abbr></a> $migrationSource)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/CloudAlloyDBAdmin/MigrationSource.html"><abbr title="Google\Service\CloudAlloyDBAdmin\MigrationSource">MigrationSource</abbr></a></td>
+                <td>$migrationSource</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMigrationSource">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L367">at line 367</a></div>
+        <code>                    <a href="../../../Google/Service/CloudAlloyDBAdmin/MigrationSource.html"><abbr title="Google\Service\CloudAlloyDBAdmin\MigrationSource">MigrationSource</abbr></a>
+    <strong>getMigrationSource</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/CloudAlloyDBAdmin/MigrationSource.html"><abbr title="Google\Service\CloudAlloyDBAdmin\MigrationSource">MigrationSource</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setName">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L374">at line 374</a></div>
+        <code>                    
+    <strong>setName</strong>($name)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L381">at line 381</a></div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNetwork">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L388">at line 388</a></div>
+        <code>                    
+    <strong>setNetwork</strong>($network)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$network</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNetwork">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L395">at line 395</a></div>
+        <code>                    string
+    <strong>getNetwork</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNetworkConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L402">at line 402</a></div>
+        <code>                    
+    <strong>setNetworkConfig</strong>(<a href="../../../Google/Service/CloudAlloyDBAdmin/NetworkConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\NetworkConfig">NetworkConfig</abbr></a> $networkConfig)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/CloudAlloyDBAdmin/NetworkConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\NetworkConfig">NetworkConfig</abbr></a></td>
+                <td>$networkConfig</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNetworkConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L409">at line 409</a></div>
+        <code>                    <a href="../../../Google/Service/CloudAlloyDBAdmin/NetworkConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\NetworkConfig">NetworkConfig</abbr></a>
+    <strong>getNetworkConfig</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/CloudAlloyDBAdmin/NetworkConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\NetworkConfig">NetworkConfig</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPrimaryConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L416">at line 416</a></div>
+        <code>                    
+    <strong>setPrimaryConfig</strong>(<a href="../../../Google/Service/CloudAlloyDBAdmin/PrimaryConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\PrimaryConfig">PrimaryConfig</abbr></a> $primaryConfig)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/CloudAlloyDBAdmin/PrimaryConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\PrimaryConfig">PrimaryConfig</abbr></a></td>
+                <td>$primaryConfig</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrimaryConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L423">at line 423</a></div>
+        <code>                    <a href="../../../Google/Service/CloudAlloyDBAdmin/PrimaryConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\PrimaryConfig">PrimaryConfig</abbr></a>
+    <strong>getPrimaryConfig</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/CloudAlloyDBAdmin/PrimaryConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\PrimaryConfig">PrimaryConfig</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPscConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L430">at line 430</a></div>
+        <code>                    
+    <strong>setPscConfig</strong>(<a href="../../../Google/Service/CloudAlloyDBAdmin/PscConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\PscConfig">PscConfig</abbr></a> $pscConfig)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/CloudAlloyDBAdmin/PscConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\PscConfig">PscConfig</abbr></a></td>
+                <td>$pscConfig</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPscConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L437">at line 437</a></div>
+        <code>                    <a href="../../../Google/Service/CloudAlloyDBAdmin/PscConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\PscConfig">PscConfig</abbr></a>
+    <strong>getPscConfig</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/CloudAlloyDBAdmin/PscConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\PscConfig">PscConfig</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setReconciling">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L444">at line 444</a></div>
+        <code>                    
+    <strong>setReconciling</strong>($reconciling)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$reconciling</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReconciling">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L451">at line 451</a></div>
+        <code>                    bool
+    <strong>getReconciling</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSatisfiesPzs">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L458">at line 458</a></div>
+        <code>                    
+    <strong>setSatisfiesPzs</strong>($satisfiesPzs)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$satisfiesPzs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSatisfiesPzs">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L465">at line 465</a></div>
+        <code>                    bool
+    <strong>getSatisfiesPzs</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSecondaryConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L472">at line 472</a></div>
+        <code>                    
+    <strong>setSecondaryConfig</strong>(<a href="../../../Google/Service/CloudAlloyDBAdmin/SecondaryConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\SecondaryConfig">SecondaryConfig</abbr></a> $secondaryConfig)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/CloudAlloyDBAdmin/SecondaryConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\SecondaryConfig">SecondaryConfig</abbr></a></td>
+                <td>$secondaryConfig</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSecondaryConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L479">at line 479</a></div>
+        <code>                    <a href="../../../Google/Service/CloudAlloyDBAdmin/SecondaryConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\SecondaryConfig">SecondaryConfig</abbr></a>
+    <strong>getSecondaryConfig</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/CloudAlloyDBAdmin/SecondaryConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\SecondaryConfig">SecondaryConfig</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSslConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L486">at line 486</a></div>
+        <code>                    
+    <strong>setSslConfig</strong>(<a href="../../../Google/Service/CloudAlloyDBAdmin/SslConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\SslConfig">SslConfig</abbr></a> $sslConfig)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/CloudAlloyDBAdmin/SslConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\SslConfig">SslConfig</abbr></a></td>
+                <td>$sslConfig</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSslConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L493">at line 493</a></div>
+        <code>                    <a href="../../../Google/Service/CloudAlloyDBAdmin/SslConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\SslConfig">SslConfig</abbr></a>
+    <strong>getSslConfig</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/CloudAlloyDBAdmin/SslConfig.html"><abbr title="Google\Service\CloudAlloyDBAdmin\SslConfig">SslConfig</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setState">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L500">at line 500</a></div>
+        <code>                    
+    <strong>setState</strong>($state)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$state</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getState">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L507">at line 507</a></div>
+        <code>                    string
+    <strong>getState</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSubscriptionType">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L514">at line 514</a></div>
+        <code>                    
+    <strong>setSubscriptionType</strong>($subscriptionType)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$subscriptionType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSubscriptionType">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L521">at line 521</a></div>
+        <code>                    string
+    <strong>getSubscriptionType</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTrialMetadata">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L528">at line 528</a></div>
+        <code>                    
+    <strong>setTrialMetadata</strong>(<a href="../../../Google/Service/CloudAlloyDBAdmin/TrialMetadata.html"><abbr title="Google\Service\CloudAlloyDBAdmin\TrialMetadata">TrialMetadata</abbr></a> $trialMetadata)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/CloudAlloyDBAdmin/TrialMetadata.html"><abbr title="Google\Service\CloudAlloyDBAdmin\TrialMetadata">TrialMetadata</abbr></a></td>
+                <td>$trialMetadata</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTrialMetadata">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L535">at line 535</a></div>
+        <code>                    <a href="../../../Google/Service/CloudAlloyDBAdmin/TrialMetadata.html"><abbr title="Google\Service\CloudAlloyDBAdmin\TrialMetadata">TrialMetadata</abbr></a>
+    <strong>getTrialMetadata</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/CloudAlloyDBAdmin/TrialMetadata.html"><abbr title="Google\Service\CloudAlloyDBAdmin\TrialMetadata">TrialMetadata</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUid">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L542">at line 542</a></div>
+        <code>                    
+    <strong>setUid</strong>($uid)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$uid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUid">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L549">at line 549</a></div>
+        <code>                    string
+    <strong>getUid</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUpdateTime">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L556">at line 556</a></div>
+        <code>                    
+    <strong>setUpdateTime</strong>($updateTime)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$updateTime</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUpdateTime">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudAlloyDBAdmin/Cluster.php#L563">at line 563</a></div>
+        <code>                    string
+    <strong>getUpdateTime</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

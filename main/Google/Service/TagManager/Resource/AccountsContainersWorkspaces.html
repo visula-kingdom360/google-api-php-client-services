@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\TagManager\Resource\AccountsContainersWorkspaces | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_TagManager_Resource_AccountsContainersWorkspaces" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/TagManager.html">TagManager</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/TagManager/Resource.html">Resource</a></li><li class="backslash">\</li><li>AccountsContainersWorkspaces</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>AccountsContainersWorkspaces    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>AccountsContainersWorkspaces</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/TagManager/Resource/AccountsContainersWorkspaces.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;workspaces&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $tagmanagerService = new Google\Service\TagManager(...);
+ $workspaces = $tagmanagerService-&gt;accounts_containers_workspaces;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/TagManager/Workspace.html"><abbr title="Google\Service\TagManager\Workspace">Workspace</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/TagManager/Workspace.html"><abbr title="Google\Service\TagManager\Workspace">Workspace</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a Workspace. (workspaces.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/TagManager/CreateContainerVersionResponse.html"><abbr title="Google\Service\TagManager\CreateContainerVersionResponse">CreateContainerVersionResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create_version">create_version</a>(string $path, <a href="../../../../Google/Service/TagManager/CreateContainerVersionRequestVersionOptions.html"><abbr title="Google\Service\TagManager\CreateContainerVersionRequestVersionOptions">CreateContainerVersionRequestVersionOptions</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a Container Version from the entities present in the workspace,
+deletes the workspace, and sets the base container version to the newly
+created version. (workspaces.create_version)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $path, array $optParams = [])
+        
+                                            <p><p>Deletes a Workspace. (workspaces.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/TagManager/Workspace.html"><abbr title="Google\Service\TagManager\Workspace">Workspace</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $path, array $optParams = [])
+        
+                                            <p><p>Gets a Workspace. (workspaces.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/TagManager/GetWorkspaceStatusResponse.html"><abbr title="Google\Service\TagManager\GetWorkspaceStatusResponse">GetWorkspaceStatusResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getStatus">getStatus</a>(string $path, array $optParams = [])
+        
+                                            <p><p>Finds conflicting and modified entities in the workspace.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/TagManager/ListWorkspacesResponse.html"><abbr title="Google\Service\TagManager\ListWorkspacesResponse">ListWorkspacesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listAccountsContainersWorkspaces">listAccountsContainersWorkspaces</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists all Workspaces that belong to a GTM Container.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/TagManager/QuickPreviewResponse.html"><abbr title="Google\Service\TagManager\QuickPreviewResponse">QuickPreviewResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_quick_preview">quick_preview</a>(string $path, array $optParams = [])
+        
+                                            <p><p>Quick previews a workspace by creating a fake container version from all
+entities in the provided workspace. (workspaces.quick_preview)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_resolve_conflict">resolve_conflict</a>(string $path, <a href="../../../../Google/Service/TagManager/Entity.html"><abbr title="Google\Service\TagManager\Entity">Entity</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Resolves a merge conflict for a workspace entity by updating it to the
+resolved entity passed in the request. (workspaces.resolve_conflict)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/TagManager/SyncWorkspaceResponse.html"><abbr title="Google\Service\TagManager\SyncWorkspaceResponse">SyncWorkspaceResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_sync">sync</a>(string $path, array $optParams = [])
+        
+                                            <p><p>Syncs a workspace to the latest container version by updating all unmodified
+workspace entities and displaying conflicts for modified entities.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/TagManager/Workspace.html"><abbr title="Google\Service\TagManager\Workspace">Workspace</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $path, <a href="../../../../Google/Service/TagManager/Workspace.html"><abbr title="Google\Service\TagManager\Workspace">Workspace</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a Workspace. (workspaces.update)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/TagManager/Resource/AccountsContainersWorkspaces.php#L49">at line 49</a></div>
+        <code>                    <a href="../../../../Google/Service/TagManager/Workspace.html"><abbr title="Google\Service\TagManager\Workspace">Workspace</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/TagManager/Workspace.html"><abbr title="Google\Service\TagManager\Workspace">Workspace</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a Workspace. (workspaces.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>GTM parent Container's API relative path. Example:
+accounts/{account_id}/containers/{container_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/TagManager/Workspace.html"><abbr title="Google\Service\TagManager\Workspace">Workspace</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/TagManager/Workspace.html"><abbr title="Google\Service\TagManager\Workspace">Workspace</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create_version">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/TagManager/Resource/AccountsContainersWorkspaces.php#L67">at line 67</a></div>
+        <code>                    <a href="../../../../Google/Service/TagManager/CreateContainerVersionResponse.html"><abbr title="Google\Service\TagManager\CreateContainerVersionResponse">CreateContainerVersionResponse</abbr></a>
+    <strong>create_version</strong>(string $path, <a href="../../../../Google/Service/TagManager/CreateContainerVersionRequestVersionOptions.html"><abbr title="Google\Service\TagManager\CreateContainerVersionRequestVersionOptions">CreateContainerVersionRequestVersionOptions</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a Container Version from the entities present in the workspace,
+deletes the workspace, and sets the base container version to the newly
+created version. (workspaces.create_version)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td><p>GTM Workspace's API relative path. Example:
+accounts/{account_id}/containers/{container_id}/workspaces/{workspace_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/TagManager/CreateContainerVersionRequestVersionOptions.html"><abbr title="Google\Service\TagManager\CreateContainerVersionRequestVersionOptions">CreateContainerVersionRequestVersionOptions</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/TagManager/CreateContainerVersionResponse.html"><abbr title="Google\Service\TagManager\CreateContainerVersionResponse">CreateContainerVersionResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/TagManager/Resource/AccountsContainersWorkspaces.php#L81">at line 81</a></div>
+        <code>                    
+    <strong>delete</strong>(string $path, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a Workspace. (workspaces.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td><p>GTM Workspace's API relative path. Example:
+accounts/{account_id}/containers/{container_id}/workspaces/{workspace_id}</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/TagManager/Resource/AccountsContainersWorkspaces.php#L96">at line 96</a></div>
+        <code>                    <a href="../../../../Google/Service/TagManager/Workspace.html"><abbr title="Google\Service\TagManager\Workspace">Workspace</abbr></a>
+    <strong>get</strong>(string $path, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets a Workspace. (workspaces.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td><p>GTM Workspace's API relative path. Example:
+accounts/{account_id}/containers/{container_id}/workspaces/{workspace_id}</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/TagManager/Workspace.html"><abbr title="Google\Service\TagManager\Workspace">Workspace</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStatus">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/TagManager/Resource/AccountsContainersWorkspaces.php#L112">at line 112</a></div>
+        <code>                    <a href="../../../../Google/Service/TagManager/GetWorkspaceStatusResponse.html"><abbr title="Google\Service\TagManager\GetWorkspaceStatusResponse">GetWorkspaceStatusResponse</abbr></a>
+    <strong>getStatus</strong>(string $path, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Finds conflicting and modified entities in the workspace.</p></p>                <p>(workspaces.getStatus)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td><p>GTM Workspace's API relative path. Example:
+accounts/{account_id}/containers/{container_id}/workspaces/{workspace_id}</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/TagManager/GetWorkspaceStatusResponse.html"><abbr title="Google\Service\TagManager\GetWorkspaceStatusResponse">GetWorkspaceStatusResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listAccountsContainersWorkspaces">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/TagManager/Resource/AccountsContainersWorkspaces.php#L131">at line 131</a></div>
+        <code>                    <a href="../../../../Google/Service/TagManager/ListWorkspacesResponse.html"><abbr title="Google\Service\TagManager\ListWorkspacesResponse">ListWorkspacesResponse</abbr></a>
+    <strong>listAccountsContainersWorkspaces</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all Workspaces that belong to a GTM Container.</p></p>                <p>(workspaces.listAccountsContainersWorkspaces)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>GTM parent Container's API relative path. Example:
+accounts/{account_id}/containers/{container_id}</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/TagManager/ListWorkspacesResponse.html"><abbr title="Google\Service\TagManager\ListWorkspacesResponse">ListWorkspacesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_quick_preview">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/TagManager/Resource/AccountsContainersWorkspaces.php#L147">at line 147</a></div>
+        <code>                    <a href="../../../../Google/Service/TagManager/QuickPreviewResponse.html"><abbr title="Google\Service\TagManager\QuickPreviewResponse">QuickPreviewResponse</abbr></a>
+    <strong>quick_preview</strong>(string $path, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Quick previews a workspace by creating a fake container version from all
+entities in the provided workspace. (workspaces.quick_preview)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td><p>GTM Workspace's API relative path. Example:
+accounts/{account_id}/containers/{container_id}/workspaces/{workspace_id}</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/TagManager/QuickPreviewResponse.html"><abbr title="Google\Service\TagManager\QuickPreviewResponse">QuickPreviewResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolve_conflict">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/TagManager/Resource/AccountsContainersWorkspaces.php#L166">at line 166</a></div>
+        <code>                    
+    <strong>resolve_conflict</strong>(string $path, <a href="../../../../Google/Service/TagManager/Entity.html"><abbr title="Google\Service\TagManager\Entity">Entity</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Resolves a merge conflict for a workspace entity by updating it to the
+resolved entity passed in the request. (workspaces.resolve_conflict)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td><p>GTM Workspace's API relative path. Example:
+accounts/{account_id}/containers/{container_id}/workspaces/{workspace_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/TagManager/Entity.html"><abbr title="Google\Service\TagManager\Entity">Entity</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sync">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/TagManager/Resource/AccountsContainersWorkspaces.php#L183">at line 183</a></div>
+        <code>                    <a href="../../../../Google/Service/TagManager/SyncWorkspaceResponse.html"><abbr title="Google\Service\TagManager\SyncWorkspaceResponse">SyncWorkspaceResponse</abbr></a>
+    <strong>sync</strong>(string $path, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Syncs a workspace to the latest container version by updating all unmodified
+workspace entities and displaying conflicts for modified entities.</p></p>                <p>(workspaces.sync)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td><p>GTM Workspace's API relative path. Example:
+accounts/{account_id}/containers/{container_id}/workspaces/{workspace_id}</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/TagManager/SyncWorkspaceResponse.html"><abbr title="Google\Service\TagManager\SyncWorkspaceResponse">SyncWorkspaceResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/TagManager/Resource/AccountsContainersWorkspaces.php#L202">at line 202</a></div>
+        <code>                    <a href="../../../../Google/Service/TagManager/Workspace.html"><abbr title="Google\Service\TagManager\Workspace">Workspace</abbr></a>
+    <strong>update</strong>(string $path, <a href="../../../../Google/Service/TagManager/Workspace.html"><abbr title="Google\Service\TagManager\Workspace">Workspace</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a Workspace. (workspaces.update)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td><p>GTM Workspace's API relative path. Example:
+accounts/{account_id}/containers/{container_id}/workspaces/{workspace_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/TagManager/Workspace.html"><abbr title="Google\Service\TagManager\Workspace">Workspace</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/TagManager/Workspace.html"><abbr title="Google\Service\TagManager\Workspace">Workspace</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

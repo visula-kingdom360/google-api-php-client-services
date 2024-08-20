@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Reseller\Resource\Customers | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Reseller_Resource_Customers" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Reseller.html">Reseller</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Reseller/Resource.html">Resource</a></li><li class="backslash">\</li><li>Customers</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Customers    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Customers</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Reseller/Resource/Customers.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;customers&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $resellerService = new Google\Service\Reseller(...);
+ $customers = $resellerService-&gt;customers;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $customerId, array $optParams = [])
+        
+                                            <p><p>Gets a customer account. Use this operation to see a customer account already
+in your reseller management, or to see the minimal account information for an
+existing customer that you do not manage. For more information about the API
+response for existing customers, see <a href="/admin-
+sdk/reseller/v1/how-tos/manage_customers#get_customer">retrieving a customer account</a>. (customers.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_insert">insert</a>(<a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Orders a new customer's account. Before ordering a new customer account,
+establish whether the customer account already exists using the
+<a href="/admin-sdk/reseller/v1/reference/customers/get"><code>customers.get</code></a> If the
+customer account exists as a direct Google account or as a resold customer
+account from another reseller, use the <code>customerAuthToken\</code> as described in
+<a href="/admin-sdk/reseller/v1/how-
+tos/manage_customers#create_existing_customer">order a resold account for an existing customer</a>. For more information about
+ordering a new customer account, see <a href="/admin-
+sdk/reseller/v1/how-tos/manage_customers#create_customer">order a new customer account</a>. After creating a
+new customer account, you must provision a user as an administrator. The
+customer's administrator is required to sign in to the Admin console and sign
+the G Suite via Reseller agreement to activate the account. Resellers are
+prohibited from signing the G Suite via Reseller agreement on the customer's
+behalf. For more information, see <a href="/admin-
+sdk/reseller/v1/how-tos/manage_customers#tos">order a new customer account</a>. (customers.insert)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $customerId, <a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a customer account's settings. This method supports patch semantics.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $customerId, <a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a customer account's settings. You cannot update <code>customerType</code> via
+the Reseller API, but a <code>"team"</code> customer can verify their domain and become
+<code>customerType = "domain"</code>. For more information, see <a href="/admin-sdk/reseller/v1/how-tos/manage_customers#update_customer">update a customer's
+settings</a>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Reseller/Resource/Customers.php#L48">at line 48</a></div>
+        <code>                    <a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a>
+    <strong>get</strong>(string $customerId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets a customer account. Use this operation to see a customer account already
+in your reseller management, or to see the minimal account information for an
+existing customer that you do not manage. For more information about the API
+response for existing customers, see <a href="/admin-
+sdk/reseller/v1/how-tos/manage_customers#get_customer">retrieving a customer account</a>. (customers.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$customerId</td>
+                <td><p>This can be either the customer's primary domain
+name or the customer's unique identifier. If the domain name for a customer
+changes, the old domain name cannot be used to access the customer, but the
+customer's unique identifier (as returned by the API) can always be used. We
+recommend storing the unique identifier in your systems where applicable.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Reseller/Resource/Customers.php#L83">at line 83</a></div>
+        <code>                    <a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a>
+    <strong>insert</strong>(<a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Orders a new customer's account. Before ordering a new customer account,
+establish whether the customer account already exists using the
+<a href="/admin-sdk/reseller/v1/reference/customers/get"><code>customers.get</code></a> If the
+customer account exists as a direct Google account or as a resold customer
+account from another reseller, use the <code>customerAuthToken\</code> as described in
+<a href="/admin-sdk/reseller/v1/how-
+tos/manage_customers#create_existing_customer">order a resold account for an existing customer</a>. For more information about
+ordering a new customer account, see <a href="/admin-
+sdk/reseller/v1/how-tos/manage_customers#create_customer">order a new customer account</a>. After creating a
+new customer account, you must provision a user as an administrator. The
+customer's administrator is required to sign in to the Admin console and sign
+the G Suite via Reseller agreement to activate the account. Resellers are
+prohibited from signing the G Suite via Reseller agreement on the customer's
+behalf. For more information, see <a href="/admin-
+sdk/reseller/v1/how-tos/manage_customers#tos">order a new customer account</a>. (customers.insert)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Reseller/Resource/Customers.php#L106">at line 106</a></div>
+        <code>                    <a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a>
+    <strong>patch</strong>(string $customerId, <a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a customer account's settings. This method supports patch semantics.</p></p>                <p><p>You cannot update <code>customerType</code> via the Reseller API, but a <code>"team"</code>
+customer can verify their domain and become <code>customerType = "domain"</code>. For
+more information, see <a href="https://support.google.com/a/answer/9122284">Verify your domain to unlock Essentials
+features</a>. (customers.patch)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$customerId</td>
+                <td><p>This can be either the customer's primary domain
+name or the customer's unique identifier. If the domain name for a customer
+changes, the old domain name cannot be used to access the customer, but the
+customer's unique identifier (as returned by the API) can always be used. We
+recommend storing the unique identifier in your systems where applicable.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Reseller/Resource/Customers.php#L129">at line 129</a></div>
+        <code>                    <a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a>
+    <strong>update</strong>(string $customerId, <a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a customer account's settings. You cannot update <code>customerType</code> via
+the Reseller API, but a <code>"team"</code> customer can verify their domain and become
+<code>customerType = "domain"</code>. For more information, see <a href="/admin-sdk/reseller/v1/how-tos/manage_customers#update_customer">update a customer's
+settings</a>.</p></p>                <p>(customers.update)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$customerId</td>
+                <td><p>This can be either the customer's primary domain
+name or the customer's unique identifier. If the domain name for a customer
+changes, the old domain name cannot be used to access the customer, but the
+customer's unique identifier (as returned by the API) can always be used. We
+recommend storing the unique identifier in your systems where applicable.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Reseller/Customer.html"><abbr title="Google\Service\Reseller\Customer">Customer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

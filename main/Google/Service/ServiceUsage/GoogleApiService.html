@@ -1,0 +1,3082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\ServiceUsage\GoogleApiService | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../doctum.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_ServiceUsage_GoogleApiService" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../Google/Service/ServiceUsage.html">ServiceUsage</a></li><li class="backslash">\</li><li>GoogleApiService</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>GoogleApiService    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>GoogleApiService</strong>        extends <abbr title="Google\Collection">Collection</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_collection_key">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$collection_key</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_apisType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$apisType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_apisDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$apisDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_authenticationType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$authenticationType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_authenticationDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$authenticationDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_backendType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$backendType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_backendDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$backendDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_billingType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$billingType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_billingDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$billingDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_configVersion">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$configVersion</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_contextType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$contextType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_contextDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$contextDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_controlType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$controlType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_controlDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$controlDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_customErrorType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$customErrorType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_customErrorDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$customErrorDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_documentationType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$documentationType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_documentationDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$documentationDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_endpointsType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$endpointsType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_endpointsDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$endpointsDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_enumsType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$enumsType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_enumsDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$enumsDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_httpType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$httpType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_httpDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$httpDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_id">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$id</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_loggingType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$loggingType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_loggingDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$loggingDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_logsType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$logsType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_logsDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$logsDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_metricsType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$metricsType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_metricsDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$metricsDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_monitoredResourcesType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$monitoredResourcesType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_monitoredResourcesDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$monitoredResourcesDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_monitoringType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$monitoringType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_monitoringDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$monitoringDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_name">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$name</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_producerProjectId">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$producerProjectId</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_publishingType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$publishingType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_publishingDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$publishingDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_quotaType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$quotaType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_quotaDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$quotaDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sourceInfoType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$sourceInfoType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sourceInfoDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$sourceInfoDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_systemParametersType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$systemParametersType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_systemParametersDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$systemParametersDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_systemTypesType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$systemTypesType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_systemTypesDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$systemTypesDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_title">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$title</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_typesType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$typesType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_typesDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$typesDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_usageType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$usageType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_usageDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$usageDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setApis">setApis</a>($apis)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/Api.html"><abbr title="Google\Service\ServiceUsage\Api">Api</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getApis">getApis</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setAuthentication">setAuthentication</a>(<a href="../../../Google/Service/ServiceUsage/Authentication.html"><abbr title="Google\Service\ServiceUsage\Authentication">Authentication</abbr></a> $authentication)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/Authentication.html"><abbr title="Google\Service\ServiceUsage\Authentication">Authentication</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAuthentication">getAuthentication</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setBackend">setBackend</a>(<a href="../../../Google/Service/ServiceUsage/Backend.html"><abbr title="Google\Service\ServiceUsage\Backend">Backend</abbr></a> $backend)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/Backend.html"><abbr title="Google\Service\ServiceUsage\Backend">Backend</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getBackend">getBackend</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setBilling">setBilling</a>(<a href="../../../Google/Service/ServiceUsage/Billing.html"><abbr title="Google\Service\ServiceUsage\Billing">Billing</abbr></a> $billing)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/Billing.html"><abbr title="Google\Service\ServiceUsage\Billing">Billing</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getBilling">getBilling</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setConfigVersion">setConfigVersion</a>($configVersion)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getConfigVersion">getConfigVersion</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setContext">setContext</a>(<a href="../../../Google/Service/ServiceUsage/Context.html"><abbr title="Google\Service\ServiceUsage\Context">Context</abbr></a> $context)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/Context.html"><abbr title="Google\Service\ServiceUsage\Context">Context</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getContext">getContext</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setControl">setControl</a>(<a href="../../../Google/Service/ServiceUsage/Control.html"><abbr title="Google\Service\ServiceUsage\Control">Control</abbr></a> $control)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/Control.html"><abbr title="Google\Service\ServiceUsage\Control">Control</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getControl">getControl</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setCustomError">setCustomError</a>(<a href="../../../Google/Service/ServiceUsage/CustomError.html"><abbr title="Google\Service\ServiceUsage\CustomError">CustomError</abbr></a> $customError)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/CustomError.html"><abbr title="Google\Service\ServiceUsage\CustomError">CustomError</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCustomError">getCustomError</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDocumentation">setDocumentation</a>(<a href="../../../Google/Service/ServiceUsage/Documentation.html"><abbr title="Google\Service\ServiceUsage\Documentation">Documentation</abbr></a> $documentation)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/Documentation.html"><abbr title="Google\Service\ServiceUsage\Documentation">Documentation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDocumentation">getDocumentation</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setEndpoints">setEndpoints</a>($endpoints)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/Endpoint.html"><abbr title="Google\Service\ServiceUsage\Endpoint">Endpoint</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getEndpoints">getEndpoints</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setEnums">setEnums</a>($enums)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/Enum.html"><abbr title="Google\Service\ServiceUsage\Enum">Enum</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getEnums">getEnums</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setHttp">setHttp</a>(<a href="../../../Google/Service/ServiceUsage/Http.html"><abbr title="Google\Service\ServiceUsage\Http">Http</abbr></a> $http)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/Http.html"><abbr title="Google\Service\ServiceUsage\Http">Http</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getHttp">getHttp</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setId">setId</a>($id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getId">getId</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setLogging">setLogging</a>(<a href="../../../Google/Service/ServiceUsage/Logging.html"><abbr title="Google\Service\ServiceUsage\Logging">Logging</abbr></a> $logging)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/Logging.html"><abbr title="Google\Service\ServiceUsage\Logging">Logging</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLogging">getLogging</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setLogs">setLogs</a>($logs)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/LogDescriptor.html"><abbr title="Google\Service\ServiceUsage\LogDescriptor">LogDescriptor</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLogs">getLogs</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMetrics">setMetrics</a>($metrics)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/MetricDescriptor.html"><abbr title="Google\Service\ServiceUsage\MetricDescriptor">MetricDescriptor</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMetrics">getMetrics</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMonitoredResources">setMonitoredResources</a>($monitoredResources)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/MonitoredResourceDescriptor.html"><abbr title="Google\Service\ServiceUsage\MonitoredResourceDescriptor">MonitoredResourceDescriptor</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMonitoredResources">getMonitoredResources</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMonitoring">setMonitoring</a>(<a href="../../../Google/Service/ServiceUsage/Monitoring.html"><abbr title="Google\Service\ServiceUsage\Monitoring">Monitoring</abbr></a> $monitoring)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/Monitoring.html"><abbr title="Google\Service\ServiceUsage\Monitoring">Monitoring</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMonitoring">getMonitoring</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setName">setName</a>($name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setProducerProjectId">setProducerProjectId</a>($producerProjectId)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getProducerProjectId">getProducerProjectId</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setPublishing">setPublishing</a>(<a href="../../../Google/Service/ServiceUsage/Publishing.html"><abbr title="Google\Service\ServiceUsage\Publishing">Publishing</abbr></a> $publishing)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/Publishing.html"><abbr title="Google\Service\ServiceUsage\Publishing">Publishing</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPublishing">getPublishing</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setQuota">setQuota</a>(<a href="../../../Google/Service/ServiceUsage/Quota.html"><abbr title="Google\Service\ServiceUsage\Quota">Quota</abbr></a> $quota)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/Quota.html"><abbr title="Google\Service\ServiceUsage\Quota">Quota</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getQuota">getQuota</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setSourceInfo">setSourceInfo</a>(<a href="../../../Google/Service/ServiceUsage/SourceInfo.html"><abbr title="Google\Service\ServiceUsage\SourceInfo">SourceInfo</abbr></a> $sourceInfo)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/SourceInfo.html"><abbr title="Google\Service\ServiceUsage\SourceInfo">SourceInfo</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSourceInfo">getSourceInfo</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setSystemParameters">setSystemParameters</a>(<a href="../../../Google/Service/ServiceUsage/SystemParameters.html"><abbr title="Google\Service\ServiceUsage\SystemParameters">SystemParameters</abbr></a> $systemParameters)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/SystemParameters.html"><abbr title="Google\Service\ServiceUsage\SystemParameters">SystemParameters</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSystemParameters">getSystemParameters</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setSystemTypes">setSystemTypes</a>($systemTypes)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/Type.html"><abbr title="Google\Service\ServiceUsage\Type">Type</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSystemTypes">getSystemTypes</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setTitle">setTitle</a>($title)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getTitle">getTitle</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setTypes">setTypes</a>($types)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/Type.html"><abbr title="Google\Service\ServiceUsage\Type">Type</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getTypes">getTypes</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setUsage">setUsage</a>(<a href="../../../Google/Service/ServiceUsage/Usage.html"><abbr title="Google\Service\ServiceUsage\Usage">Usage</abbr></a> $usage)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/ServiceUsage/Usage.html"><abbr title="Google\Service\ServiceUsage\Usage">Usage</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getUsage">getUsage</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setApis">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L93">at line 93</a></div>
+        <code>                    
+    <strong>setApis</strong>($apis)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$apis</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getApis">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L100">at line 100</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/Api.html"><abbr title="Google\Service\ServiceUsage\Api">Api</abbr></a>[]
+    <strong>getApis</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/Api.html"><abbr title="Google\Service\ServiceUsage\Api">Api</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAuthentication">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L107">at line 107</a></div>
+        <code>                    
+    <strong>setAuthentication</strong>(<a href="../../../Google/Service/ServiceUsage/Authentication.html"><abbr title="Google\Service\ServiceUsage\Authentication">Authentication</abbr></a> $authentication)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/ServiceUsage/Authentication.html"><abbr title="Google\Service\ServiceUsage\Authentication">Authentication</abbr></a></td>
+                <td>$authentication</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthentication">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L114">at line 114</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/Authentication.html"><abbr title="Google\Service\ServiceUsage\Authentication">Authentication</abbr></a>
+    <strong>getAuthentication</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/Authentication.html"><abbr title="Google\Service\ServiceUsage\Authentication">Authentication</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBackend">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L121">at line 121</a></div>
+        <code>                    
+    <strong>setBackend</strong>(<a href="../../../Google/Service/ServiceUsage/Backend.html"><abbr title="Google\Service\ServiceUsage\Backend">Backend</abbr></a> $backend)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/ServiceUsage/Backend.html"><abbr title="Google\Service\ServiceUsage\Backend">Backend</abbr></a></td>
+                <td>$backend</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBackend">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L128">at line 128</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/Backend.html"><abbr title="Google\Service\ServiceUsage\Backend">Backend</abbr></a>
+    <strong>getBackend</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/Backend.html"><abbr title="Google\Service\ServiceUsage\Backend">Backend</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBilling">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L135">at line 135</a></div>
+        <code>                    
+    <strong>setBilling</strong>(<a href="../../../Google/Service/ServiceUsage/Billing.html"><abbr title="Google\Service\ServiceUsage\Billing">Billing</abbr></a> $billing)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/ServiceUsage/Billing.html"><abbr title="Google\Service\ServiceUsage\Billing">Billing</abbr></a></td>
+                <td>$billing</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBilling">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L142">at line 142</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/Billing.html"><abbr title="Google\Service\ServiceUsage\Billing">Billing</abbr></a>
+    <strong>getBilling</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/Billing.html"><abbr title="Google\Service\ServiceUsage\Billing">Billing</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setConfigVersion">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L149">at line 149</a></div>
+        <code>                    
+    <strong>setConfigVersion</strong>($configVersion)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$configVersion</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConfigVersion">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L156">at line 156</a></div>
+        <code>                    string
+    <strong>getConfigVersion</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContext">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L163">at line 163</a></div>
+        <code>                    
+    <strong>setContext</strong>(<a href="../../../Google/Service/ServiceUsage/Context.html"><abbr title="Google\Service\ServiceUsage\Context">Context</abbr></a> $context)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/ServiceUsage/Context.html"><abbr title="Google\Service\ServiceUsage\Context">Context</abbr></a></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContext">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L170">at line 170</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/Context.html"><abbr title="Google\Service\ServiceUsage\Context">Context</abbr></a>
+    <strong>getContext</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/Context.html"><abbr title="Google\Service\ServiceUsage\Context">Context</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setControl">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L177">at line 177</a></div>
+        <code>                    
+    <strong>setControl</strong>(<a href="../../../Google/Service/ServiceUsage/Control.html"><abbr title="Google\Service\ServiceUsage\Control">Control</abbr></a> $control)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/ServiceUsage/Control.html"><abbr title="Google\Service\ServiceUsage\Control">Control</abbr></a></td>
+                <td>$control</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getControl">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L184">at line 184</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/Control.html"><abbr title="Google\Service\ServiceUsage\Control">Control</abbr></a>
+    <strong>getControl</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/Control.html"><abbr title="Google\Service\ServiceUsage\Control">Control</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCustomError">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L191">at line 191</a></div>
+        <code>                    
+    <strong>setCustomError</strong>(<a href="../../../Google/Service/ServiceUsage/CustomError.html"><abbr title="Google\Service\ServiceUsage\CustomError">CustomError</abbr></a> $customError)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/ServiceUsage/CustomError.html"><abbr title="Google\Service\ServiceUsage\CustomError">CustomError</abbr></a></td>
+                <td>$customError</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCustomError">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L198">at line 198</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/CustomError.html"><abbr title="Google\Service\ServiceUsage\CustomError">CustomError</abbr></a>
+    <strong>getCustomError</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/CustomError.html"><abbr title="Google\Service\ServiceUsage\CustomError">CustomError</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDocumentation">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L205">at line 205</a></div>
+        <code>                    
+    <strong>setDocumentation</strong>(<a href="../../../Google/Service/ServiceUsage/Documentation.html"><abbr title="Google\Service\ServiceUsage\Documentation">Documentation</abbr></a> $documentation)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/ServiceUsage/Documentation.html"><abbr title="Google\Service\ServiceUsage\Documentation">Documentation</abbr></a></td>
+                <td>$documentation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDocumentation">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L212">at line 212</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/Documentation.html"><abbr title="Google\Service\ServiceUsage\Documentation">Documentation</abbr></a>
+    <strong>getDocumentation</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/Documentation.html"><abbr title="Google\Service\ServiceUsage\Documentation">Documentation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEndpoints">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L219">at line 219</a></div>
+        <code>                    
+    <strong>setEndpoints</strong>($endpoints)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$endpoints</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEndpoints">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L226">at line 226</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/Endpoint.html"><abbr title="Google\Service\ServiceUsage\Endpoint">Endpoint</abbr></a>[]
+    <strong>getEndpoints</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/Endpoint.html"><abbr title="Google\Service\ServiceUsage\Endpoint">Endpoint</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEnums">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L233">at line 233</a></div>
+        <code>                    
+    <strong>setEnums</strong>($enums)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$enums</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEnums">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L240">at line 240</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/Enum.html"><abbr title="Google\Service\ServiceUsage\Enum">Enum</abbr></a>[]
+    <strong>getEnums</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/Enum.html"><abbr title="Google\Service\ServiceUsage\Enum">Enum</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHttp">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L247">at line 247</a></div>
+        <code>                    
+    <strong>setHttp</strong>(<a href="../../../Google/Service/ServiceUsage/Http.html"><abbr title="Google\Service\ServiceUsage\Http">Http</abbr></a> $http)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/ServiceUsage/Http.html"><abbr title="Google\Service\ServiceUsage\Http">Http</abbr></a></td>
+                <td>$http</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHttp">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L254">at line 254</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/Http.html"><abbr title="Google\Service\ServiceUsage\Http">Http</abbr></a>
+    <strong>getHttp</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/Http.html"><abbr title="Google\Service\ServiceUsage\Http">Http</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setId">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L261">at line 261</a></div>
+        <code>                    
+    <strong>setId</strong>($id)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getId">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L268">at line 268</a></div>
+        <code>                    string
+    <strong>getId</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLogging">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L275">at line 275</a></div>
+        <code>                    
+    <strong>setLogging</strong>(<a href="../../../Google/Service/ServiceUsage/Logging.html"><abbr title="Google\Service\ServiceUsage\Logging">Logging</abbr></a> $logging)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/ServiceUsage/Logging.html"><abbr title="Google\Service\ServiceUsage\Logging">Logging</abbr></a></td>
+                <td>$logging</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLogging">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L282">at line 282</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/Logging.html"><abbr title="Google\Service\ServiceUsage\Logging">Logging</abbr></a>
+    <strong>getLogging</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/Logging.html"><abbr title="Google\Service\ServiceUsage\Logging">Logging</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLogs">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L289">at line 289</a></div>
+        <code>                    
+    <strong>setLogs</strong>($logs)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$logs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLogs">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L296">at line 296</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/LogDescriptor.html"><abbr title="Google\Service\ServiceUsage\LogDescriptor">LogDescriptor</abbr></a>[]
+    <strong>getLogs</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/LogDescriptor.html"><abbr title="Google\Service\ServiceUsage\LogDescriptor">LogDescriptor</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMetrics">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L303">at line 303</a></div>
+        <code>                    
+    <strong>setMetrics</strong>($metrics)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$metrics</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMetrics">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L310">at line 310</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/MetricDescriptor.html"><abbr title="Google\Service\ServiceUsage\MetricDescriptor">MetricDescriptor</abbr></a>[]
+    <strong>getMetrics</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/MetricDescriptor.html"><abbr title="Google\Service\ServiceUsage\MetricDescriptor">MetricDescriptor</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMonitoredResources">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L317">at line 317</a></div>
+        <code>                    
+    <strong>setMonitoredResources</strong>($monitoredResources)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$monitoredResources</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMonitoredResources">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L324">at line 324</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/MonitoredResourceDescriptor.html"><abbr title="Google\Service\ServiceUsage\MonitoredResourceDescriptor">MonitoredResourceDescriptor</abbr></a>[]
+    <strong>getMonitoredResources</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/MonitoredResourceDescriptor.html"><abbr title="Google\Service\ServiceUsage\MonitoredResourceDescriptor">MonitoredResourceDescriptor</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMonitoring">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L331">at line 331</a></div>
+        <code>                    
+    <strong>setMonitoring</strong>(<a href="../../../Google/Service/ServiceUsage/Monitoring.html"><abbr title="Google\Service\ServiceUsage\Monitoring">Monitoring</abbr></a> $monitoring)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/ServiceUsage/Monitoring.html"><abbr title="Google\Service\ServiceUsage\Monitoring">Monitoring</abbr></a></td>
+                <td>$monitoring</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMonitoring">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L338">at line 338</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/Monitoring.html"><abbr title="Google\Service\ServiceUsage\Monitoring">Monitoring</abbr></a>
+    <strong>getMonitoring</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/Monitoring.html"><abbr title="Google\Service\ServiceUsage\Monitoring">Monitoring</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setName">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L345">at line 345</a></div>
+        <code>                    
+    <strong>setName</strong>($name)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L352">at line 352</a></div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setProducerProjectId">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L359">at line 359</a></div>
+        <code>                    
+    <strong>setProducerProjectId</strong>($producerProjectId)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$producerProjectId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getProducerProjectId">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L366">at line 366</a></div>
+        <code>                    string
+    <strong>getProducerProjectId</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPublishing">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L373">at line 373</a></div>
+        <code>                    
+    <strong>setPublishing</strong>(<a href="../../../Google/Service/ServiceUsage/Publishing.html"><abbr title="Google\Service\ServiceUsage\Publishing">Publishing</abbr></a> $publishing)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/ServiceUsage/Publishing.html"><abbr title="Google\Service\ServiceUsage\Publishing">Publishing</abbr></a></td>
+                <td>$publishing</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPublishing">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L380">at line 380</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/Publishing.html"><abbr title="Google\Service\ServiceUsage\Publishing">Publishing</abbr></a>
+    <strong>getPublishing</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/Publishing.html"><abbr title="Google\Service\ServiceUsage\Publishing">Publishing</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setQuota">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L387">at line 387</a></div>
+        <code>                    
+    <strong>setQuota</strong>(<a href="../../../Google/Service/ServiceUsage/Quota.html"><abbr title="Google\Service\ServiceUsage\Quota">Quota</abbr></a> $quota)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/ServiceUsage/Quota.html"><abbr title="Google\Service\ServiceUsage\Quota">Quota</abbr></a></td>
+                <td>$quota</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getQuota">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L394">at line 394</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/Quota.html"><abbr title="Google\Service\ServiceUsage\Quota">Quota</abbr></a>
+    <strong>getQuota</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/Quota.html"><abbr title="Google\Service\ServiceUsage\Quota">Quota</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSourceInfo">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L401">at line 401</a></div>
+        <code>                    
+    <strong>setSourceInfo</strong>(<a href="../../../Google/Service/ServiceUsage/SourceInfo.html"><abbr title="Google\Service\ServiceUsage\SourceInfo">SourceInfo</abbr></a> $sourceInfo)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/ServiceUsage/SourceInfo.html"><abbr title="Google\Service\ServiceUsage\SourceInfo">SourceInfo</abbr></a></td>
+                <td>$sourceInfo</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSourceInfo">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L408">at line 408</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/SourceInfo.html"><abbr title="Google\Service\ServiceUsage\SourceInfo">SourceInfo</abbr></a>
+    <strong>getSourceInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/SourceInfo.html"><abbr title="Google\Service\ServiceUsage\SourceInfo">SourceInfo</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSystemParameters">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L415">at line 415</a></div>
+        <code>                    
+    <strong>setSystemParameters</strong>(<a href="../../../Google/Service/ServiceUsage/SystemParameters.html"><abbr title="Google\Service\ServiceUsage\SystemParameters">SystemParameters</abbr></a> $systemParameters)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/ServiceUsage/SystemParameters.html"><abbr title="Google\Service\ServiceUsage\SystemParameters">SystemParameters</abbr></a></td>
+                <td>$systemParameters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSystemParameters">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L422">at line 422</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/SystemParameters.html"><abbr title="Google\Service\ServiceUsage\SystemParameters">SystemParameters</abbr></a>
+    <strong>getSystemParameters</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/SystemParameters.html"><abbr title="Google\Service\ServiceUsage\SystemParameters">SystemParameters</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSystemTypes">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L429">at line 429</a></div>
+        <code>                    
+    <strong>setSystemTypes</strong>($systemTypes)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$systemTypes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSystemTypes">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L436">at line 436</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/Type.html"><abbr title="Google\Service\ServiceUsage\Type">Type</abbr></a>[]
+    <strong>getSystemTypes</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/Type.html"><abbr title="Google\Service\ServiceUsage\Type">Type</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTitle">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L443">at line 443</a></div>
+        <code>                    
+    <strong>setTitle</strong>($title)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$title</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTitle">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L450">at line 450</a></div>
+        <code>                    string
+    <strong>getTitle</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTypes">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L457">at line 457</a></div>
+        <code>                    
+    <strong>setTypes</strong>($types)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$types</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTypes">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L464">at line 464</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/Type.html"><abbr title="Google\Service\ServiceUsage\Type">Type</abbr></a>[]
+    <strong>getTypes</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/Type.html"><abbr title="Google\Service\ServiceUsage\Type">Type</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUsage">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L471">at line 471</a></div>
+        <code>                    
+    <strong>setUsage</strong>(<a href="../../../Google/Service/ServiceUsage/Usage.html"><abbr title="Google\Service\ServiceUsage\Usage">Usage</abbr></a> $usage)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/ServiceUsage/Usage.html"><abbr title="Google\Service\ServiceUsage\Usage">Usage</abbr></a></td>
+                <td>$usage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUsage">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/ServiceUsage/GoogleApiService.php#L478">at line 478</a></div>
+        <code>                    <a href="../../../Google/Service/ServiceUsage/Usage.html"><abbr title="Google\Service\ServiceUsage\Usage">Usage</abbr></a>
+    <strong>getUsage</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/ServiceUsage/Usage.html"><abbr title="Google\Service\ServiceUsage\Usage">Usage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Cloudchannel\Resource\AccountsCustomersEntitlements | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Cloudchannel_Resource_AccountsCustomersEntitlements" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Cloudchannel.html">Cloudchannel</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Cloudchannel/Resource.html">Resource</a></li><li class="backslash">\</li><li>AccountsCustomersEntitlements</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>AccountsCustomersEntitlements    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>AccountsCustomersEntitlements</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/AccountsCustomersEntitlements.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;entitlements&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $cloudchannelService = new Google\Service\Cloudchannel(...);
+ $entitlements = $cloudchannelService-&gt;accounts_customers_entitlements;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_activate">activate</a>(string $name, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ActivateEntitlementRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ActivateEntitlementRequest">GoogleCloudChannelV1ActivateEntitlementRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Activates a previously suspended entitlement. Entitlements suspended for
+pending ToS acceptance can't be activated using this method. An entitlement
+activation is a long-running operation and it updates the state of the
+customer entitlement. Possible error codes: <em> PERMISSION_DENIED: The reseller
+account making the request is different from the reseller account in the API
+request. </em> INVALID_ARGUMENT: Required request parameters are missing or
+invalid. <em> NOT_FOUND: Entitlement resource not found. </em>
+SUSPENSION_NOT_RESELLER_INITIATED: Can only activate reseller-initiated
+suspensions and entitlements that have accepted the TOS. <em> NOT_SUSPENDED: Can
+only activate suspended entitlements not in an ACTIVE state. </em> INTERNAL: Any
+non-user error related to a technical issue in the backend. Contact Cloud
+Channel support. * UNKNOWN: Any non-user error related to a technical issue
+in the backend. Contact Cloud Channel support. Return value: The ID of a
+long-running operation. To get the results of the operation, call the
+GetOperation method of CloudChannelOperationsService. The Operation metadata
+will contain an instance of OperationMetadata. (entitlements.activate)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_cancel">cancel</a>(string $name, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1CancelEntitlementRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1CancelEntitlementRequest">GoogleCloudChannelV1CancelEntitlementRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Cancels a previously fulfilled entitlement. An entitlement cancellation is a
+long-running operation. Possible error codes: <em> PERMISSION_DENIED: The
+reseller account making the request is different from the reseller account in
+the API request. </em> FAILED_PRECONDITION: There are Google Cloud projects
+linked to the Google Cloud entitlement's Cloud Billing subaccount. <em>
+INVALID_ARGUMENT: Required request parameters are missing or invalid. </em>
+NOT_FOUND: Entitlement resource not found. <em> DELETION_TYPE_NOT_ALLOWED:
+Cancel is only allowed for Google Workspace add-ons, or entitlements for
+Google Cloud's development platform. </em> INTERNAL: Any non-user error related
+to a technical issue in the backend. Contact Cloud Channel support. *
+UNKNOWN: Any non-user error related to a technical issue in the backend.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_changeOffer">changeOffer</a>(string $name, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ChangeOfferRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ChangeOfferRequest">GoogleCloudChannelV1ChangeOfferRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the Offer for an existing customer entitlement. An entitlement update
+is a long-running operation and it updates the entitlement as a result of
+fulfillment. Possible error codes: <em> PERMISSION_DENIED: The customer doesn't
+belong to the reseller. </em> INVALID_ARGUMENT: Required request parameters are
+missing or invalid. <em> NOT_FOUND: Offer or Entitlement resource not found. </em>
+INTERNAL: Any non-user error related to a technical issue in the backend.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_changeParameters">changeParameters</a>(string $name, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ChangeParametersRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ChangeParametersRequest">GoogleCloudChannelV1ChangeParametersRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Change parameters of the entitlement. An entitlement update is a long-running
+operation and it updates the entitlement as a result of fulfillment. Possible
+error codes: <em> PERMISSION_DENIED: The customer doesn't belong to the
+reseller. </em> INVALID_ARGUMENT: Required request parameters are missing or
+invalid. For example, the number of seats being changed is greater than the
+allowed number of max seats, or decreasing seats for a commitment based plan.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_changeRenewalSettings">changeRenewalSettings</a>(string $name, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ChangeRenewalSettingsRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ChangeRenewalSettingsRequest">GoogleCloudChannelV1ChangeRenewalSettingsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the renewal settings for an existing customer entitlement. An
+entitlement update is a long-running operation and it updates the entitlement
+as a result of fulfillment. Possible error codes: <em> PERMISSION_DENIED: The
+customer doesn't belong to the reseller. </em> INVALID_ARGUMENT: Required request
+parameters are missing or invalid. <em> NOT_FOUND: Entitlement resource not
+found. </em> NOT_COMMITMENT_PLAN: Renewal Settings are only applicable for a
+commitment plan. Can't enable or disable renewals for non-commitment plans. *
+INTERNAL: Any non-user error related to a technical issue in the backend.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1CreateEntitlementRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1CreateEntitlementRequest">GoogleCloudChannelV1CreateEntitlementRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates an entitlement for a customer. Possible error codes: <em>
+PERMISSION_DENIED: </em> The customer doesn't belong to the reseller. <em> The
+reseller is not authorized to transact on this Product. See
+<a href="https://support.google.com/channelservices/answer/9759265">https://support.google.com/channelservices/answer/9759265</a> </em> INVALID_ARGUMENT:</p>
+<ul>
+<li>Required request parameters are missing or invalid. <em> There is already a
+customer entitlement for a SKU from the same product family. </em> INVALID_VALUE:
+Make sure the OfferId is valid. If it is, contact Google Channel support for
+further troubleshooting. <em> NOT_FOUND: The customer or offer resource was not
+found. </em> ALREADY_EXISTS: <em> The SKU was already purchased for the customer. </em>
+The customer's primary email already exists. Retry after changing the
+customer's primary contact email. * CONDITION_NOT_MET or FAILED_PRECONDITION:</li>
+<li>The domain required for purchasing a SKU has not been verified. <em> A pre-
+requisite SKU required to purchase an Add-On SKU is missing. For example,
+Google Workspace Business Starter is required to purchase Vault or Drive. </em>
+(Developer accounts only) Reseller and resold domain must meet the following
+naming requirements: <em> Domain names must start with goog-test. </em> Domain names
+must include the reseller domain. <em> INTERNAL: Any non-user error related to a
+technical issue in the backend. Contact Cloud Channel support. </em> UNKNOWN: Any
+non-user error related to a technical issue in the backend. Contact Cloud
+Channel support. Return value: The ID of a long-running operation. To get the
+results of the operation, call the GetOperation method of
+CloudChannelOperationsService. The Operation metadata will contain an
+instance of OperationMetadata. (entitlements.create)</li>
+</ul></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Entitlement.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Entitlement">GoogleCloudChannelV1Entitlement</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Returns the requested Entitlement resource. Possible error codes: <em>
+PERMISSION_DENIED: The customer doesn't belong to the reseller. </em>
+INVALID_ARGUMENT: Required request parameters are missing or invalid. *
+NOT_FOUND: The customer entitlement was not found. Return value: The
+requested Entitlement resource. (entitlements.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListEntitlementsResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListEntitlementsResponse">GoogleCloudChannelV1ListEntitlementsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listAccountsCustomersEntitlements">listAccountsCustomersEntitlements</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists Entitlements belonging to a customer. Possible error codes: <em>
+PERMISSION_DENIED: The customer doesn't belong to the reseller. </em>
+INVALID_ARGUMENT: Required request parameters are missing or invalid. Return
+value: A list of the customer's Entitlements.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListEntitlementChangesResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListEntitlementChangesResponse">GoogleCloudChannelV1ListEntitlementChangesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listEntitlementChanges">listEntitlementChanges</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>List entitlement history. Possible error codes: <em> PERMISSION_DENIED: The
+reseller account making the request and the provided reseller account are
+different. </em> INVALID_ARGUMENT: Missing or invalid required fields in the
+request. <em> NOT_FOUND: The parent resource doesn't exist. Usually the result
+of an invalid name parameter. </em> INTERNAL: Any non-user error related to a
+technical issue in the backend. In this case, contact CloudChannel support. *
+UNKNOWN: Any non-user error related to a technical issue in the backend. In
+this case, contact Cloud Channel support. Return value: List of
+EntitlementChanges. (entitlements.listEntitlementChanges)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Offer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Offer">GoogleCloudChannelV1Offer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_lookupOffer">lookupOffer</a>(string $entitlement, array $optParams = [])
+        
+                                            <p><p>Returns the requested Offer resource. Possible error codes: <em>
+PERMISSION_DENIED: The entitlement doesn't belong to the reseller. </em>
+INVALID_ARGUMENT: Required request parameters are missing or invalid. *
+NOT_FOUND: Entitlement or offer was not found. Return value: The Offer
+resource. (entitlements.lookupOffer)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_startPaidService">startPaidService</a>(string $name, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1StartPaidServiceRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1StartPaidServiceRequest">GoogleCloudChannelV1StartPaidServiceRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Starts paid service for a trial entitlement. Starts paid service for a trial
+entitlement immediately. This method is only applicable if a plan is set up
+for a trial entitlement but has some trial days remaining. Possible error
+codes: <em> PERMISSION_DENIED: The customer doesn't belong to the reseller. </em>
+INVALID_ARGUMENT: Required request parameters are missing or invalid. <em>
+NOT_FOUND: Entitlement resource not found. </em>
+FAILED_PRECONDITION/NOT_IN_TRIAL: This method only works for entitlement on
+trial plans. <em> INTERNAL: Any non-user error related to a technical issue in
+the backend. Contact Cloud Channel support. </em> UNKNOWN: Any non-user error
+related to a technical issue in the backend. Contact Cloud Channel support.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_suspend">suspend</a>(string $name, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1SuspendEntitlementRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1SuspendEntitlementRequest">GoogleCloudChannelV1SuspendEntitlementRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Suspends a previously fulfilled entitlement. An entitlement suspension is a
+long-running operation. Possible error codes: <em> PERMISSION_DENIED: The
+customer doesn't belong to the reseller. </em> INVALID_ARGUMENT: Required request
+parameters are missing or invalid. <em> NOT_FOUND: Entitlement resource not
+found. </em> NOT_ACTIVE: Entitlement is not active. <em> INTERNAL: Any non-user
+error related to a technical issue in the backend. Contact Cloud Channel
+support. </em> UNKNOWN: Any non-user error related to a technical issue in the
+backend. Contact Cloud Channel support. Return value: The ID of a long-
+running operation. To get the results of the operation, call the GetOperation
+method of CloudChannelOperationsService. The Operation metadata will contain
+an instance of OperationMetadata. (entitlements.suspend)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_activate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/AccountsCustomersEntitlements.php#L70">at line 70</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>activate</strong>(string $name, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ActivateEntitlementRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ActivateEntitlementRequest">GoogleCloudChannelV1ActivateEntitlementRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Activates a previously suspended entitlement. Entitlements suspended for
+pending ToS acceptance can't be activated using this method. An entitlement
+activation is a long-running operation and it updates the state of the
+customer entitlement. Possible error codes: <em> PERMISSION_DENIED: The reseller
+account making the request is different from the reseller account in the API
+request. </em> INVALID_ARGUMENT: Required request parameters are missing or
+invalid. <em> NOT_FOUND: Entitlement resource not found. </em>
+SUSPENSION_NOT_RESELLER_INITIATED: Can only activate reseller-initiated
+suspensions and entitlements that have accepted the TOS. <em> NOT_SUSPENDED: Can
+only activate suspended entitlements not in an ACTIVE state. </em> INTERNAL: Any
+non-user error related to a technical issue in the backend. Contact Cloud
+Channel support. * UNKNOWN: Any non-user error related to a technical issue
+in the backend. Contact Cloud Channel support. Return value: The ID of a
+long-running operation. To get the results of the operation, call the
+GetOperation method of CloudChannelOperationsService. The Operation metadata
+will contain an instance of OperationMetadata. (entitlements.activate)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the entitlement to
+activate. Name uses the format:
+accounts/{account_id}/customers/{customer_id}/entitlements/{entitlement_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ActivateEntitlementRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ActivateEntitlementRequest">GoogleCloudChannelV1ActivateEntitlementRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cancel">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/AccountsCustomersEntitlements.php#L102">at line 102</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>cancel</strong>(string $name, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1CancelEntitlementRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1CancelEntitlementRequest">GoogleCloudChannelV1CancelEntitlementRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Cancels a previously fulfilled entitlement. An entitlement cancellation is a
+long-running operation. Possible error codes: <em> PERMISSION_DENIED: The
+reseller account making the request is different from the reseller account in
+the API request. </em> FAILED_PRECONDITION: There are Google Cloud projects
+linked to the Google Cloud entitlement's Cloud Billing subaccount. <em>
+INVALID_ARGUMENT: Required request parameters are missing or invalid. </em>
+NOT_FOUND: Entitlement resource not found. <em> DELETION_TYPE_NOT_ALLOWED:
+Cancel is only allowed for Google Workspace add-ons, or entitlements for
+Google Cloud's development platform. </em> INTERNAL: Any non-user error related
+to a technical issue in the backend. Contact Cloud Channel support. *
+UNKNOWN: Any non-user error related to a technical issue in the backend.</p></p>                <p><p>Contact Cloud Channel support. Return value: The ID of a long-running
+operation. To get the results of the operation, call the GetOperation method
+of CloudChannelOperationsService. The response will contain
+google.protobuf.Empty on success. The Operation metadata will contain an
+instance of OperationMetadata. (entitlements.cancel)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the entitlement to cancel.
+Name uses the format:
+accounts/{account_id}/customers/{customer_id}/entitlements/{entitlement_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1CancelEntitlementRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1CancelEntitlementRequest">GoogleCloudChannelV1CancelEntitlementRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_changeOffer">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/AccountsCustomersEntitlements.php#L130">at line 130</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>changeOffer</strong>(string $name, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ChangeOfferRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ChangeOfferRequest">GoogleCloudChannelV1ChangeOfferRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the Offer for an existing customer entitlement. An entitlement update
+is a long-running operation and it updates the entitlement as a result of
+fulfillment. Possible error codes: <em> PERMISSION_DENIED: The customer doesn't
+belong to the reseller. </em> INVALID_ARGUMENT: Required request parameters are
+missing or invalid. <em> NOT_FOUND: Offer or Entitlement resource not found. </em>
+INTERNAL: Any non-user error related to a technical issue in the backend.</p></p>                <p><p>Contact Cloud Channel support. * UNKNOWN: Any non-user error related to a
+technical issue in the backend. Contact Cloud Channel support. Return value:
+The ID of a long-running operation. To get the results of the operation, call
+the GetOperation method of CloudChannelOperationsService. The Operation
+metadata will contain an instance of OperationMetadata.
+(entitlements.changeOffer)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the entitlement to update.
+Name uses the format:
+accounts/{account_id}/customers/{customer_id}/entitlements/{entitlement_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ChangeOfferRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ChangeOfferRequest">GoogleCloudChannelV1ChangeOfferRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_changeParameters">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/AccountsCustomersEntitlements.php#L159">at line 159</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>changeParameters</strong>(string $name, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ChangeParametersRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ChangeParametersRequest">GoogleCloudChannelV1ChangeParametersRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Change parameters of the entitlement. An entitlement update is a long-running
+operation and it updates the entitlement as a result of fulfillment. Possible
+error codes: <em> PERMISSION_DENIED: The customer doesn't belong to the
+reseller. </em> INVALID_ARGUMENT: Required request parameters are missing or
+invalid. For example, the number of seats being changed is greater than the
+allowed number of max seats, or decreasing seats for a commitment based plan.</p></p>                <p><ul>
+<li>NOT_FOUND: Entitlement resource not found. <em> INTERNAL: Any non-user error
+related to a technical issue in the backend. Contact Cloud Channel support. </em>
+UNKNOWN: Any non-user error related to a technical issue in the backend.
+Contact Cloud Channel support. Return value: The ID of a long-running
+operation. To get the results of the operation, call the GetOperation method
+of CloudChannelOperationsService. The Operation metadata will contain an
+instance of OperationMetadata. (entitlements.changeParameters)</li>
+</ul></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the entitlement to update. Name
+uses the format:
+accounts/{account_id}/customers/{customer_id}/entitlements/{entitlement_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ChangeParametersRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ChangeParametersRequest">GoogleCloudChannelV1ChangeParametersRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_changeRenewalSettings">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/AccountsCustomersEntitlements.php#L189">at line 189</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>changeRenewalSettings</strong>(string $name, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ChangeRenewalSettingsRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ChangeRenewalSettingsRequest">GoogleCloudChannelV1ChangeRenewalSettingsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the renewal settings for an existing customer entitlement. An
+entitlement update is a long-running operation and it updates the entitlement
+as a result of fulfillment. Possible error codes: <em> PERMISSION_DENIED: The
+customer doesn't belong to the reseller. </em> INVALID_ARGUMENT: Required request
+parameters are missing or invalid. <em> NOT_FOUND: Entitlement resource not
+found. </em> NOT_COMMITMENT_PLAN: Renewal Settings are only applicable for a
+commitment plan. Can't enable or disable renewals for non-commitment plans. *
+INTERNAL: Any non-user error related to a technical issue in the backend.</p></p>                <p><p>Contact Cloud Channel support. * UNKNOWN: Any non-user error related to a
+technical issue in the backend. Contact Cloud Channel support. Return value:
+The ID of a long-running operation. To get the results of the operation, call
+the GetOperation method of CloudChannelOperationsService. The Operation
+metadata will contain an instance of OperationMetadata.
+(entitlements.changeRenewalSettings)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the entitlement to update. Name
+uses the format:
+accounts/{account_id}/customers/{customer_id}/entitlements/{entitlement_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ChangeRenewalSettingsRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ChangeRenewalSettingsRequest">GoogleCloudChannelV1ChangeRenewalSettingsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/AccountsCustomersEntitlements.php#L228">at line 228</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1CreateEntitlementRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1CreateEntitlementRequest">GoogleCloudChannelV1CreateEntitlementRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates an entitlement for a customer. Possible error codes: <em>
+PERMISSION_DENIED: </em> The customer doesn't belong to the reseller. <em> The
+reseller is not authorized to transact on this Product. See
+<a href="https://support.google.com/channelservices/answer/9759265">https://support.google.com/channelservices/answer/9759265</a> </em> INVALID_ARGUMENT:</p>
+<ul>
+<li>Required request parameters are missing or invalid. <em> There is already a
+customer entitlement for a SKU from the same product family. </em> INVALID_VALUE:
+Make sure the OfferId is valid. If it is, contact Google Channel support for
+further troubleshooting. <em> NOT_FOUND: The customer or offer resource was not
+found. </em> ALREADY_EXISTS: <em> The SKU was already purchased for the customer. </em>
+The customer's primary email already exists. Retry after changing the
+customer's primary contact email. * CONDITION_NOT_MET or FAILED_PRECONDITION:</li>
+<li>The domain required for purchasing a SKU has not been verified. <em> A pre-
+requisite SKU required to purchase an Add-On SKU is missing. For example,
+Google Workspace Business Starter is required to purchase Vault or Drive. </em>
+(Developer accounts only) Reseller and resold domain must meet the following
+naming requirements: <em> Domain names must start with goog-test. </em> Domain names
+must include the reseller domain. <em> INTERNAL: Any non-user error related to a
+technical issue in the backend. Contact Cloud Channel support. </em> UNKNOWN: Any
+non-user error related to a technical issue in the backend. Contact Cloud
+Channel support. Return value: The ID of a long-running operation. To get the
+results of the operation, call the GetOperation method of
+CloudChannelOperationsService. The Operation metadata will contain an
+instance of OperationMetadata. (entitlements.create)</li>
+</ul></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the reseller's customer
+account in which to create the entitlement. Parent uses the format:
+accounts/{account_id}/customers/{customer_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1CreateEntitlementRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1CreateEntitlementRequest">GoogleCloudChannelV1CreateEntitlementRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/AccountsCustomersEntitlements.php#L248">at line 248</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Entitlement.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Entitlement">GoogleCloudChannelV1Entitlement</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the requested Entitlement resource. Possible error codes: <em>
+PERMISSION_DENIED: The customer doesn't belong to the reseller. </em>
+INVALID_ARGUMENT: Required request parameters are missing or invalid. *
+NOT_FOUND: The customer entitlement was not found. Return value: The
+requested Entitlement resource. (entitlements.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the entitlement to
+retrieve. Name uses the format:
+accounts/{account_id}/customers/{customer_id}/entitlements/{entitlement_id}</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Entitlement.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Entitlement">GoogleCloudChannelV1Entitlement</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listAccountsCustomersEntitlements">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/AccountsCustomersEntitlements.php#L275">at line 275</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListEntitlementsResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListEntitlementsResponse">GoogleCloudChannelV1ListEntitlementsResponse</abbr></a>
+    <strong>listAccountsCustomersEntitlements</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists Entitlements belonging to a customer. Possible error codes: <em>
+PERMISSION_DENIED: The customer doesn't belong to the reseller. </em>
+INVALID_ARGUMENT: Required request parameters are missing or invalid. Return
+value: A list of the customer's Entitlements.</p></p>                <p>(entitlements.listAccountsCustomersEntitlements)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the reseller's customer
+account to list entitlements for. Parent uses the format:
+accounts/{account_id}/customers/{customer_id}</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListEntitlementsResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListEntitlementsResponse">GoogleCloudChannelV1ListEntitlementsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listEntitlementChanges">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/AccountsCustomersEntitlements.php#L312">at line 312</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListEntitlementChangesResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListEntitlementChangesResponse">GoogleCloudChannelV1ListEntitlementChangesResponse</abbr></a>
+    <strong>listEntitlementChanges</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>List entitlement history. Possible error codes: <em> PERMISSION_DENIED: The
+reseller account making the request and the provided reseller account are
+different. </em> INVALID_ARGUMENT: Missing or invalid required fields in the
+request. <em> NOT_FOUND: The parent resource doesn't exist. Usually the result
+of an invalid name parameter. </em> INTERNAL: Any non-user error related to a
+technical issue in the backend. In this case, contact CloudChannel support. *
+UNKNOWN: Any non-user error related to a technical issue in the backend. In
+this case, contact Cloud Channel support. Return value: List of
+EntitlementChanges. (entitlements.listEntitlementChanges)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the entitlement for
+which to list entitlement changes. The <code>-</code> wildcard may be used to match
+entitlements across a customer. Formats: <em>
+accounts/{account_id}/customers/{customer_id}/entitlements/{entitlement_id} </em>
+accounts/{account_id}/customers/{customer_id}/entitlements/-</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListEntitlementChangesResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListEntitlementChangesResponse">GoogleCloudChannelV1ListEntitlementChangesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lookupOffer">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/AccountsCustomersEntitlements.php#L332">at line 332</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Offer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Offer">GoogleCloudChannelV1Offer</abbr></a>
+    <strong>lookupOffer</strong>(string $entitlement, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the requested Offer resource. Possible error codes: <em>
+PERMISSION_DENIED: The entitlement doesn't belong to the reseller. </em>
+INVALID_ARGUMENT: Required request parameters are missing or invalid. *
+NOT_FOUND: Entitlement or offer was not found. Return value: The Offer
+resource. (entitlements.lookupOffer)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$entitlement</td>
+                <td><p>Required. The resource name of the entitlement to
+retrieve the Offer. Entitlement uses the format:
+accounts/{account_id}/customers/{customer_id}/entitlements/{entitlement_id}</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Offer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Offer">GoogleCloudChannelV1Offer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startPaidService">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/AccountsCustomersEntitlements.php#L362">at line 362</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>startPaidService</strong>(string $name, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1StartPaidServiceRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1StartPaidServiceRequest">GoogleCloudChannelV1StartPaidServiceRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Starts paid service for a trial entitlement. Starts paid service for a trial
+entitlement immediately. This method is only applicable if a plan is set up
+for a trial entitlement but has some trial days remaining. Possible error
+codes: <em> PERMISSION_DENIED: The customer doesn't belong to the reseller. </em>
+INVALID_ARGUMENT: Required request parameters are missing or invalid. <em>
+NOT_FOUND: Entitlement resource not found. </em>
+FAILED_PRECONDITION/NOT_IN_TRIAL: This method only works for entitlement on
+trial plans. <em> INTERNAL: Any non-user error related to a technical issue in
+the backend. Contact Cloud Channel support. </em> UNKNOWN: Any non-user error
+related to a technical issue in the backend. Contact Cloud Channel support.</p></p>                <p><p>Return value: The ID of a long-running operation. To get the results of the
+operation, call the GetOperation method of CloudChannelOperationsService. The
+Operation metadata will contain an instance of OperationMetadata.
+(entitlements.startPaidService)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the entitlement to start a paid
+service for. Name uses the format:
+accounts/{account_id}/customers/{customer_id}/entitlements/{entitlement_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1StartPaidServiceRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1StartPaidServiceRequest">GoogleCloudChannelV1StartPaidServiceRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_suspend">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/AccountsCustomersEntitlements.php#L389">at line 389</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>suspend</strong>(string $name, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1SuspendEntitlementRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1SuspendEntitlementRequest">GoogleCloudChannelV1SuspendEntitlementRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Suspends a previously fulfilled entitlement. An entitlement suspension is a
+long-running operation. Possible error codes: <em> PERMISSION_DENIED: The
+customer doesn't belong to the reseller. </em> INVALID_ARGUMENT: Required request
+parameters are missing or invalid. <em> NOT_FOUND: Entitlement resource not
+found. </em> NOT_ACTIVE: Entitlement is not active. <em> INTERNAL: Any non-user
+error related to a technical issue in the backend. Contact Cloud Channel
+support. </em> UNKNOWN: Any non-user error related to a technical issue in the
+backend. Contact Cloud Channel support. Return value: The ID of a long-
+running operation. To get the results of the operation, call the GetOperation
+method of CloudChannelOperationsService. The Operation metadata will contain
+an instance of OperationMetadata. (entitlements.suspend)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the entitlement to
+suspend. Name uses the format:
+accounts/{account_id}/customers/{customer_id}/entitlements/{entitlement_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1SuspendEntitlementRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1SuspendEntitlementRequest">GoogleCloudChannelV1SuspendEntitlementRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

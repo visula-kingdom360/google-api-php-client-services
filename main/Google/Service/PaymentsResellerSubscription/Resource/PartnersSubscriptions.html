@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\PaymentsResellerSubscription\Resource\PartnersSubscriptions | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_PaymentsResellerSubscription_Resource_PartnersSubscriptions" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/PaymentsResellerSubscription.html">PaymentsResellerSubscription</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/PaymentsResellerSubscription/Resource.html">Resource</a></li><li class="backslash">\</li><li>PartnersSubscriptions</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>PartnersSubscriptions    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>PartnersSubscriptions</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PaymentsResellerSubscription/Resource/PartnersSubscriptions.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;subscriptions&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $paymentsresellersubscriptionService = new Google\Service\PaymentsResellerSubscription(...);
+ $subscriptions = $paymentsresellersubscriptionService-&gt;partners_subscriptions;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionResponse.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionResponse">GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_cancel">cancel</a>(string $name, <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionRequest.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionRequest">GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Used by partners to cancel a subscription service either immediately or by
+the end of the current billing cycle for their customers. It should be called
+directly by the partner using service accounts. (subscriptions.cancel)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1Subscription.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Subscription">GoogleCloudPaymentsResellerSubscriptionV1Subscription</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1Subscription.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Subscription">GoogleCloudPaymentsResellerSubscriptionV1Subscription</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Used by partners to create a subscription for their customers. The created
+subscription is associated with the end user inferred from the end user
+credentials. This API must be authorized by the end user using OAuth.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionResponse.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionResponse">GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_entitle">entitle</a>(string $name, <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequest.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequest">GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Used by partners to entitle a previously provisioned subscription to the
+current end user. The end user identity is inferred from the authorized
+credential of the request. This API must be authorized by the end user using
+OAuth. (subscriptions.entitle)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionResponse.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionResponse">GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_extend">extend</a>(string $name, <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionRequest.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionRequest">GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>[Opt-in only] Most partners should be on auto-extend by default. Used by
+partners to extend a subscription service for their customers on an ongoing
+basis for the subscription to remain active and renewable. It should be
+called directly by the partner using service accounts. (subscriptions.extend)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1Subscription.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Subscription">GoogleCloudPaymentsResellerSubscriptionV1Subscription</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Used by partners to get a subscription by id. It should be called directly by
+the partner using service accounts. (subscriptions.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1Subscription.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Subscription">GoogleCloudPaymentsResellerSubscriptionV1Subscription</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_provision">provision</a>(string $parent, <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1Subscription.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Subscription">GoogleCloudPaymentsResellerSubscriptionV1Subscription</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Used by partners to provision a subscription for their customers. This
+creates a subscription without associating it with the end user account.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1UndoCancelSubscriptionResponse.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1UndoCancelSubscriptionResponse">GoogleCloudPaymentsResellerSubscriptionV1UndoCancelSubscriptionResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_undoCancel">undoCancel</a>(string $name, <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1UndoCancelSubscriptionRequest.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1UndoCancelSubscriptionRequest">GoogleCloudPaymentsResellerSubscriptionV1UndoCancelSubscriptionRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Revokes the pending cancellation of a subscription, which is currently in
+<code>STATE_CANCEL_AT_END_OF_CYCLE</code> state. If the subscription is already
+cancelled, the request will fail. - <strong>This API doesn't apply to YouTube
+subscriptions.</strong> It should be called directly by the partner using service
+accounts. (subscriptions.undoCancel)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_cancel">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PaymentsResellerSubscription/Resource/PartnersSubscriptions.php#L53">at line 53</a></div>
+        <code>                    <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionResponse.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionResponse">GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionResponse</abbr></a>
+    <strong>cancel</strong>(string $name, <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionRequest.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionRequest">GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Used by partners to cancel a subscription service either immediately or by
+the end of the current billing cycle for their customers. It should be called
+directly by the partner using service accounts. (subscriptions.cancel)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the subscription resource to be
+cancelled. It will have the format of
+&quot;partners/{partner_id}/subscriptions/{subscription_id}&quot;</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionRequest.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionRequest">GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionResponse.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionResponse">GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PaymentsResellerSubscription/Resource/PartnersSubscriptions.php#L78">at line 78</a></div>
+        <code>                    <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1Subscription.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Subscription">GoogleCloudPaymentsResellerSubscriptionV1Subscription</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1Subscription.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Subscription">GoogleCloudPaymentsResellerSubscriptionV1Subscription</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Used by partners to create a subscription for their customers. The created
+subscription is associated with the end user inferred from the end user
+credentials. This API must be authorized by the end user using OAuth.</p></p>                <p>(subscriptions.create)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The parent resource name, which is the
+identifier of the partner. It will have the format of
+&quot;partners/{partner_id}&quot;.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1Subscription.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Subscription">GoogleCloudPaymentsResellerSubscriptionV1Subscription</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1Subscription.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Subscription">GoogleCloudPaymentsResellerSubscriptionV1Subscription</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_entitle">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PaymentsResellerSubscription/Resource/PartnersSubscriptions.php#L98">at line 98</a></div>
+        <code>                    <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionResponse.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionResponse">GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionResponse</abbr></a>
+    <strong>entitle</strong>(string $name, <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequest.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequest">GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Used by partners to entitle a previously provisioned subscription to the
+current end user. The end user identity is inferred from the authorized
+credential of the request. This API must be authorized by the end user using
+OAuth. (subscriptions.entitle)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the subscription resource that is
+entitled to the current end user. It will have the format of
+&quot;partners/{partner_id}/subscriptions/{subscription_id}&quot;</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequest.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequest">GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionResponse.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionResponse">GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extend">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PaymentsResellerSubscription/Resource/PartnersSubscriptions.php#L118">at line 118</a></div>
+        <code>                    <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionResponse.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionResponse">GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionResponse</abbr></a>
+    <strong>extend</strong>(string $name, <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionRequest.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionRequest">GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>[Opt-in only] Most partners should be on auto-extend by default. Used by
+partners to extend a subscription service for their customers on an ongoing
+basis for the subscription to remain active and renewable. It should be
+called directly by the partner using service accounts. (subscriptions.extend)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the subscription resource to be
+extended. It will have the format of
+&quot;partners/{partner_id}/subscriptions/{subscription_id}&quot;.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionRequest.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionRequest">GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionResponse.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionResponse">GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PaymentsResellerSubscription/Resource/PartnersSubscriptions.php#L135">at line 135</a></div>
+        <code>                    <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1Subscription.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Subscription">GoogleCloudPaymentsResellerSubscriptionV1Subscription</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Used by partners to get a subscription by id. It should be called directly by
+the partner using service accounts. (subscriptions.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the subscription resource to
+retrieve. It will have the format of
+&quot;partners/{partner_id}/subscriptions/{subscription_id}&quot;</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1Subscription.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Subscription">GoogleCloudPaymentsResellerSubscriptionV1Subscription</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_provision">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PaymentsResellerSubscription/Resource/PartnersSubscriptions.php#L161">at line 161</a></div>
+        <code>                    <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1Subscription.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Subscription">GoogleCloudPaymentsResellerSubscriptionV1Subscription</abbr></a>
+    <strong>provision</strong>(string $parent, <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1Subscription.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Subscription">GoogleCloudPaymentsResellerSubscriptionV1Subscription</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Used by partners to provision a subscription for their customers. This
+creates a subscription without associating it with the end user account.</p></p>                <p><p>EntitleSubscription must be called separately using OAuth in order for the
+end user account to be associated with the subscription. It should be called
+directly by the partner using service accounts. (subscriptions.provision)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The parent resource name, which is the
+identifier of the partner. It will have the format of
+&quot;partners/{partner_id}&quot;.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1Subscription.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Subscription">GoogleCloudPaymentsResellerSubscriptionV1Subscription</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1Subscription.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Subscription">GoogleCloudPaymentsResellerSubscriptionV1Subscription</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_undoCancel">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/PaymentsResellerSubscription/Resource/PartnersSubscriptions.php#L182">at line 182</a></div>
+        <code>                    <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1UndoCancelSubscriptionResponse.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1UndoCancelSubscriptionResponse">GoogleCloudPaymentsResellerSubscriptionV1UndoCancelSubscriptionResponse</abbr></a>
+    <strong>undoCancel</strong>(string $name, <a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1UndoCancelSubscriptionRequest.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1UndoCancelSubscriptionRequest">GoogleCloudPaymentsResellerSubscriptionV1UndoCancelSubscriptionRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Revokes the pending cancellation of a subscription, which is currently in
+<code>STATE_CANCEL_AT_END_OF_CYCLE</code> state. If the subscription is already
+cancelled, the request will fail. - <strong>This API doesn't apply to YouTube
+subscriptions.</strong> It should be called directly by the partner using service
+accounts. (subscriptions.undoCancel)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the subscription resource whose
+pending cancellation needs to be undone. It will have the format of
+&quot;partners/{partner_id}/subscriptions/{subscription_id}&quot;</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1UndoCancelSubscriptionRequest.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1UndoCancelSubscriptionRequest">GoogleCloudPaymentsResellerSubscriptionV1UndoCancelSubscriptionRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/PaymentsResellerSubscription/GoogleCloudPaymentsResellerSubscriptionV1UndoCancelSubscriptionResponse.html"><abbr title="Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1UndoCancelSubscriptionResponse">GoogleCloudPaymentsResellerSubscriptionV1UndoCancelSubscriptionResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

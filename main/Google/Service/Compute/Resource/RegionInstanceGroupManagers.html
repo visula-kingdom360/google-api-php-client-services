@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Compute\Resource\RegionInstanceGroupManagers | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Compute_Resource_RegionInstanceGroupManagers" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Compute.html">Compute</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Compute/Resource.html">Resource</a></li><li class="backslash">\</li><li>RegionInstanceGroupManagers</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>RegionInstanceGroupManagers    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>RegionInstanceGroupManagers</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;regionInstanceGroupManagers&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $computeService = new Google\Service\Compute(...);
+ $regionInstanceGroupManagers = $computeService-&gt;regionInstanceGroupManagers;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_abandonInstances">abandonInstances</a>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersAbandonInstancesRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersAbandonInstancesRequest">RegionInstanceGroupManagersAbandonInstancesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Flags the specified instances to be immediately removed from the managed
+instance group. Abandoning an instance does not delete the instance, but it
+does remove the instance from any target pools that are applied by the
+managed instance group. This method reduces the targetSize of the managed
+instance group by the number of instances that you abandon. This operation is
+marked as DONE when the action is scheduled even if the instances have not
+yet been removed from the group. You must separately verify the status of the
+abandoning action with the listmanagedinstances method. If the group is part
+of a backend service that has enabled connection draining, it can take up to
+60 seconds after the connection draining duration has elapsed before the VM
+instance is removed or deleted. You can specify a maximum of 1000 instances
+with this method per request. (regionInstanceGroupManagers.abandonInstances)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_applyUpdatesToInstances">applyUpdatesToInstances</a>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersApplyUpdatesRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersApplyUpdatesRequest">RegionInstanceGroupManagersApplyUpdatesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Apply updates to selected instances the managed instance group.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createInstances">createInstances</a>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersCreateInstancesRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersCreateInstancesRequest">RegionInstanceGroupManagersCreateInstancesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates instances with per-instance configurations in this regional managed
+instance group. Instances are created using the current instance template.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $project, string $region, string $instanceGroupManager, array $optParams = [])
+        
+                                            <p><p>Deletes the specified managed instance group and all of the instances in that
+group. (regionInstanceGroupManagers.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_deleteInstances">deleteInstances</a>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersDeleteInstancesRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersDeleteInstancesRequest">RegionInstanceGroupManagersDeleteInstancesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Flags the specified instances in the managed instance group to be immediately
+deleted. The instances are also removed from any target pools of which they
+were a member. This method reduces the targetSize of the managed instance
+group by the number of instances that you delete. The deleteInstances
+operation is marked DONE if the deleteInstances request is successful. The
+underlying actions take additional time. You must separately verify the
+status of the deleting action with the listmanagedinstances method. If the
+group is part of a backend service that has enabled connection draining, it
+can take up to 60 seconds after the connection draining duration has elapsed
+before the VM instance is removed or deleted. You can specify a maximum of
+1000 instances with this method per request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_deletePerInstanceConfigs">deletePerInstanceConfigs</a>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagerDeleteInstanceConfigReq.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagerDeleteInstanceConfigReq">RegionInstanceGroupManagerDeleteInstanceConfigReq</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Deletes selected per-instance configurations for the managed instance group.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/InstanceGroupManager.html"><abbr title="Google\Service\Compute\InstanceGroupManager">InstanceGroupManager</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $project, string $region, string $instanceGroupManager, array $optParams = [])
+        
+                                            <p><p>Returns all of the details about the specified managed instance group.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_insert">insert</a>(string $project, string $region, <a href="../../../../Google/Service/Compute/InstanceGroupManager.html"><abbr title="Google\Service\Compute\InstanceGroupManager">InstanceGroupManager</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a managed instance group using the information that you specify in
+the request. After the group is created, instances in the group are created
+using the specified instance template. This operation is marked as DONE when
+the group is created even if the instances in the group have not yet been
+created. You must separately verify the status of the individual instances
+with the listmanagedinstances method. A regional managed instance group can
+contain up to 2000 instances. (regionInstanceGroupManagers.insert)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagerList.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagerList">RegionInstanceGroupManagerList</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listRegionInstanceGroupManagers">listRegionInstanceGroupManagers</a>(string $project, string $region, array $optParams = [])
+        
+                                            <p><p>Retrieves the list of managed instance groups that are contained within the
+specified region.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersListErrorsResponse.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersListErrorsResponse">RegionInstanceGroupManagersListErrorsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listErrors">listErrors</a>(string $project, string $region, string $instanceGroupManager, array $optParams = [])
+        
+                                            <p><p>Lists all errors thrown by actions on instances for a given regional managed
+instance group. The filter and orderBy query parameters are not supported.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersListInstancesResponse.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersListInstancesResponse">RegionInstanceGroupManagersListInstancesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listManagedInstances">listManagedInstances</a>(string $project, string $region, string $instanceGroupManager, array $optParams = [])
+        
+                                            <p><p>Lists the instances in the managed instance group and instances that are
+scheduled to be created. The list includes any current actions that the group
+has scheduled for its instances. The orderBy query parameter is not
+supported. The <code>pageToken</code> query parameter is supported only if the group's
+<code>listManagedInstancesResults</code> field is set to <code>PAGINATED</code>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersListInstanceConfigsResp.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersListInstanceConfigsResp">RegionInstanceGroupManagersListInstanceConfigsResp</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listPerInstanceConfigs">listPerInstanceConfigs</a>(string $project, string $region, string $instanceGroupManager, array $optParams = [])
+        
+                                            <p><p>Lists all of the per-instance configurations defined for the managed instance
+group. The orderBy query parameter is not supported.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/InstanceGroupManager.html"><abbr title="Google\Service\Compute\InstanceGroupManager">InstanceGroupManager</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a managed instance group using the information that you specify in
+the request. This operation is marked as DONE when the group is patched even
+if the instances in the group are still in the process of being patched. You
+must separately verify the status of the individual instances with the
+listmanagedinstances method. This method supports PATCH semantics and uses
+the JSON merge patch format and processing rules. If you update your group to
+specify a new template or instance configuration, it's possible that your
+intended specification for each VM in the group is different from the current
+state of that VM. To learn how to apply an updated configuration to the VMs
+in a MIG, see Updating instances in a MIG.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patchPerInstanceConfigs">patchPerInstanceConfigs</a>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagerPatchInstanceConfigReq.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagerPatchInstanceConfigReq">RegionInstanceGroupManagerPatchInstanceConfigReq</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Inserts or patches per-instance configurations for the managed instance
+group. perInstanceConfig.name serves as a key used to distinguish whether to
+perform insert or patch.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_recreateInstances">recreateInstances</a>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersRecreateRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersRecreateRequest">RegionInstanceGroupManagersRecreateRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Flags the specified VM instances in the managed instance group to be
+immediately recreated. Each instance is recreated using the group's current
+configuration. This operation is marked as DONE when the flag is set even if
+the instances have not yet been recreated. You must separately verify the
+status of each instance by checking its currentAction field; for more
+information, see Checking the status of managed instances. If the group is
+part of a backend service that has enabled connection draining, it can take
+up to 60 seconds after the connection draining duration has elapsed before
+the VM instance is removed or deleted. You can specify a maximum of 1000
+instances with this method per request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_resize">resize</a>(string $project, string $region, string $instanceGroupManager, int $size, array $optParams = [])
+        
+                                            <p><p>Changes the intended size of the managed instance group. If you increase the
+size, the group creates new instances using the current instance template. If
+you decrease the size, the group deletes one or more instances. The resize
+operation is marked DONE if the resize request is successful. The underlying
+actions take additional time. You must separately verify the status of the
+creating or deleting actions with the listmanagedinstances method. If the
+group is part of a backend service that has enabled connection draining, it
+can take up to 60 seconds after the connection draining duration has elapsed
+before the VM instance is removed or deleted.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setInstanceTemplate">setInstanceTemplate</a>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersSetTemplateRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersSetTemplateRequest">RegionInstanceGroupManagersSetTemplateRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the instance template to use when creating new instances or recreating
+instances in this group. Existing instances are not affected.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setTargetPools">setTargetPools</a>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersSetTargetPoolsRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersSetTargetPoolsRequest">RegionInstanceGroupManagersSetTargetPoolsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Modifies the target pools to which all new instances in this group are
+assigned. Existing instances in the group are not affected.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updatePerInstanceConfigs">updatePerInstanceConfigs</a>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagerUpdateInstanceConfigReq.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagerUpdateInstanceConfigReq">RegionInstanceGroupManagerUpdateInstanceConfigReq</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Inserts or updates per-instance configurations for the managed instance
+group. perInstanceConfig.name serves as a key used to distinguish whether to
+perform insert or patch.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_abandonInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php#L80">at line 80</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>abandonInstances</strong>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersAbandonInstancesRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersAbandonInstancesRequest">RegionInstanceGroupManagersAbandonInstancesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Flags the specified instances to be immediately removed from the managed
+instance group. Abandoning an instance does not delete the instance, but it
+does remove the instance from any target pools that are applied by the
+managed instance group. This method reduces the targetSize of the managed
+instance group by the number of instances that you abandon. This operation is
+marked as DONE when the action is scheduled even if the instances have not
+yet been removed from the group. You must separately verify the status of the
+abandoning action with the listmanagedinstances method. If the group is part
+of a backend service that has enabled connection draining, it can take up to
+60 seconds after the connection draining duration has elapsed before the VM
+instance is removed or deleted. You can specify a maximum of 1000 instances
+with this method per request. (regionInstanceGroupManagers.abandonInstances)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instanceGroupManager</td>
+                <td><p>Name of the managed instance group.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersAbandonInstancesRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersAbandonInstancesRequest">RegionInstanceGroupManagersAbandonInstancesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_applyUpdatesToInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php#L100">at line 100</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>applyUpdatesToInstances</strong>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersApplyUpdatesRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersApplyUpdatesRequest">RegionInstanceGroupManagersApplyUpdatesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Apply updates to selected instances the managed instance group.</p></p>                <p>(regionInstanceGroupManagers.applyUpdatesToInstances)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region scoping this request, should conform
+to RFC1035.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instanceGroupManager</td>
+                <td><p>The name of the managed instance group,
+should conform to RFC1035.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersApplyUpdatesRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersApplyUpdatesRequest">RegionInstanceGroupManagersApplyUpdatesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php#L134">at line 134</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>createInstances</strong>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersCreateInstancesRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersCreateInstancesRequest">RegionInstanceGroupManagersCreateInstancesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates instances with per-instance configurations in this regional managed
+instance group. Instances are created using the current instance template.</p></p>                <p><p>The create instances operation is marked DONE if the createInstances request
+is successful. The underlying actions take additional time. You must
+separately verify the status of the creating or actions with the
+listmanagedinstances method. (regionInstanceGroupManagers.createInstances)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>The name of the region where the managed instance group
+is located. It should conform to RFC1035.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instanceGroupManager</td>
+                <td><p>The name of the managed instance group.
+It should conform to RFC1035.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersCreateInstancesRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersCreateInstancesRequest">RegionInstanceGroupManagersCreateInstancesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php#L163">at line 163</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>delete</strong>(string $project, string $region, string $instanceGroupManager, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes the specified managed instance group and all of the instances in that
+group. (regionInstanceGroupManagers.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instanceGroupManager</td>
+                <td><p>Name of the managed instance group to
+delete.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php#L202">at line 202</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>deleteInstances</strong>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersDeleteInstancesRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersDeleteInstancesRequest">RegionInstanceGroupManagersDeleteInstancesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Flags the specified instances in the managed instance group to be immediately
+deleted. The instances are also removed from any target pools of which they
+were a member. This method reduces the targetSize of the managed instance
+group by the number of instances that you delete. The deleteInstances
+operation is marked DONE if the deleteInstances request is successful. The
+underlying actions take additional time. You must separately verify the
+status of the deleting action with the listmanagedinstances method. If the
+group is part of a backend service that has enabled connection draining, it
+can take up to 60 seconds after the connection draining duration has elapsed
+before the VM instance is removed or deleted. You can specify a maximum of
+1000 instances with this method per request.</p></p>                <p>(regionInstanceGroupManagers.deleteInstances)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instanceGroupManager</td>
+                <td><p>Name of the managed instance group.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersDeleteInstancesRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersDeleteInstancesRequest">RegionInstanceGroupManagersDeleteInstancesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deletePerInstanceConfigs">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php#L222">at line 222</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>deletePerInstanceConfigs</strong>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagerDeleteInstanceConfigReq.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagerDeleteInstanceConfigReq">RegionInstanceGroupManagerDeleteInstanceConfigReq</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes selected per-instance configurations for the managed instance group.</p></p>                <p>(regionInstanceGroupManagers.deletePerInstanceConfigs)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region scoping this request, should conform
+to RFC1035.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instanceGroupManager</td>
+                <td><p>The name of the managed instance group.
+It should conform to RFC1035.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/RegionInstanceGroupManagerDeleteInstanceConfigReq.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagerDeleteInstanceConfigReq">RegionInstanceGroupManagerDeleteInstanceConfigReq</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php#L240">at line 240</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/InstanceGroupManager.html"><abbr title="Google\Service\Compute\InstanceGroupManager">InstanceGroupManager</abbr></a>
+    <strong>get</strong>(string $project, string $region, string $instanceGroupManager, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns all of the details about the specified managed instance group.</p></p>                <p>(regionInstanceGroupManagers.get)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instanceGroupManager</td>
+                <td><p>Name of the managed instance group to
+return.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/InstanceGroupManager.html"><abbr title="Google\Service\Compute\InstanceGroupManager">InstanceGroupManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php#L273">at line 273</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>insert</strong>(string $project, string $region, <a href="../../../../Google/Service/Compute/InstanceGroupManager.html"><abbr title="Google\Service\Compute\InstanceGroupManager">InstanceGroupManager</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a managed instance group using the information that you specify in
+the request. After the group is created, instances in the group are created
+using the specified instance template. This operation is marked as DONE when
+the group is created even if the instances in the group have not yet been
+created. You must separately verify the status of the individual instances
+with the listmanagedinstances method. A regional managed instance group can
+contain up to 2000 instances. (regionInstanceGroupManagers.insert)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/InstanceGroupManager.html"><abbr title="Google\Service\Compute\InstanceGroupManager">InstanceGroupManager</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listRegionInstanceGroupManagers">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php#L344">at line 344</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagerList.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagerList">RegionInstanceGroupManagerList</abbr></a>
+    <strong>listRegionInstanceGroupManagers</strong>(string $project, string $region, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves the list of managed instance groups that are contained within the
+specified region.</p></p>                <p>(regionInstanceGroupManagers.listRegionInstanceGroupManagers)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/RegionInstanceGroupManagerList.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagerList">RegionInstanceGroupManagerList</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listErrors">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php#L420">at line 420</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersListErrorsResponse.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersListErrorsResponse">RegionInstanceGroupManagersListErrorsResponse</abbr></a>
+    <strong>listErrors</strong>(string $project, string $region, string $instanceGroupManager, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all errors thrown by actions on instances for a given regional managed
+instance group. The filter and orderBy query parameters are not supported.</p></p>                <p>(regionInstanceGroupManagers.listErrors)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region scoping this request. This should
+conform to RFC1035.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instanceGroupManager</td>
+                <td><p>The name of the managed instance group.
+It must be a string that meets the requirements in RFC1035, or an unsigned
+long integer: must match regexp pattern:
+(?:<a href="?:[-a-z0-9]{0,61}[a-z0-9]">a-z</a>?)|1-9{0,19}.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersListErrorsResponse.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersListErrorsResponse">RegionInstanceGroupManagersListErrorsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listManagedInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php#L495">at line 495</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersListInstancesResponse.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersListInstancesResponse">RegionInstanceGroupManagersListInstancesResponse</abbr></a>
+    <strong>listManagedInstances</strong>(string $project, string $region, string $instanceGroupManager, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists the instances in the managed instance group and instances that are
+scheduled to be created. The list includes any current actions that the group
+has scheduled for its instances. The orderBy query parameter is not
+supported. The <code>pageToken</code> query parameter is supported only if the group's
+<code>listManagedInstancesResults</code> field is set to <code>PAGINATED</code>.</p></p>                <p>(regionInstanceGroupManagers.listManagedInstances)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instanceGroupManager</td>
+                <td><p>The name of the managed instance group.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersListInstancesResponse.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersListInstancesResponse">RegionInstanceGroupManagersListInstancesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listPerInstanceConfigs">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php#L569">at line 569</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersListInstanceConfigsResp.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersListInstanceConfigsResp">RegionInstanceGroupManagersListInstanceConfigsResp</abbr></a>
+    <strong>listPerInstanceConfigs</strong>(string $project, string $region, string $instanceGroupManager, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all of the per-instance configurations defined for the managed instance
+group. The orderBy query parameter is not supported.</p></p>                <p>(regionInstanceGroupManagers.listPerInstanceConfigs)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region scoping this request, should conform
+to RFC1035.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instanceGroupManager</td>
+                <td><p>The name of the managed instance group.
+It should conform to RFC1035.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersListInstanceConfigsResp.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersListInstanceConfigsResp">RegionInstanceGroupManagersListInstanceConfigsResp</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php#L607">at line 607</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>patch</strong>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/InstanceGroupManager.html"><abbr title="Google\Service\Compute\InstanceGroupManager">InstanceGroupManager</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a managed instance group using the information that you specify in
+the request. This operation is marked as DONE when the group is patched even
+if the instances in the group are still in the process of being patched. You
+must separately verify the status of the individual instances with the
+listmanagedinstances method. This method supports PATCH semantics and uses
+the JSON merge patch format and processing rules. If you update your group to
+specify a new template or instance configuration, it's possible that your
+intended specification for each VM in the group is different from the current
+state of that VM. To learn how to apply an updated configuration to the VMs
+in a MIG, see Updating instances in a MIG.</p></p>                <p>(regionInstanceGroupManagers.patch)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instanceGroupManager</td>
+                <td><p>The name of the instance group manager.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/InstanceGroupManager.html"><abbr title="Google\Service\Compute\InstanceGroupManager">InstanceGroupManager</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patchPerInstanceConfigs">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php#L640">at line 640</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>patchPerInstanceConfigs</strong>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagerPatchInstanceConfigReq.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagerPatchInstanceConfigReq">RegionInstanceGroupManagerPatchInstanceConfigReq</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Inserts or patches per-instance configurations for the managed instance
+group. perInstanceConfig.name serves as a key used to distinguish whether to
+perform insert or patch.</p></p>                <p>(regionInstanceGroupManagers.patchPerInstanceConfigs)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region scoping this request, should conform
+to RFC1035.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instanceGroupManager</td>
+                <td><p>The name of the managed instance group.
+It should conform to RFC1035.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/RegionInstanceGroupManagerPatchInstanceConfigReq.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagerPatchInstanceConfigReq">RegionInstanceGroupManagerPatchInstanceConfigReq</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_recreateInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php#L678">at line 678</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>recreateInstances</strong>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersRecreateRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersRecreateRequest">RegionInstanceGroupManagersRecreateRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Flags the specified VM instances in the managed instance group to be
+immediately recreated. Each instance is recreated using the group's current
+configuration. This operation is marked as DONE when the flag is set even if
+the instances have not yet been recreated. You must separately verify the
+status of each instance by checking its currentAction field; for more
+information, see Checking the status of managed instances. If the group is
+part of a backend service that has enabled connection draining, it can take
+up to 60 seconds after the connection draining duration has elapsed before
+the VM instance is removed or deleted. You can specify a maximum of 1000
+instances with this method per request.</p></p>                <p>(regionInstanceGroupManagers.recreateInstances)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instanceGroupManager</td>
+                <td><p>Name of the managed instance group.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersRecreateRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersRecreateRequest">RegionInstanceGroupManagersRecreateRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resize">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php#L716">at line 716</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>resize</strong>(string $project, string $region, string $instanceGroupManager, int $size, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Changes the intended size of the managed instance group. If you increase the
+size, the group creates new instances using the current instance template. If
+you decrease the size, the group deletes one or more instances. The resize
+operation is marked DONE if the resize request is successful. The underlying
+actions take additional time. You must separately verify the status of the
+creating or deleting actions with the listmanagedinstances method. If the
+group is part of a backend service that has enabled connection draining, it
+can take up to 60 seconds after the connection draining duration has elapsed
+before the VM instance is removed or deleted.</p></p>                <p>(regionInstanceGroupManagers.resize)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instanceGroupManager</td>
+                <td><p>Name of the managed instance group.</p></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$size</td>
+                <td><p>Number of instances that should exist in this instance group
+manager.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setInstanceTemplate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php#L746">at line 746</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>setInstanceTemplate</strong>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersSetTemplateRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersSetTemplateRequest">RegionInstanceGroupManagersSetTemplateRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the instance template to use when creating new instances or recreating
+instances in this group. Existing instances are not affected.</p></p>                <p>(regionInstanceGroupManagers.setInstanceTemplate)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instanceGroupManager</td>
+                <td><p>The name of the managed instance group.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersSetTemplateRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersSetTemplateRequest">RegionInstanceGroupManagersSetTemplateRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTargetPools">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php#L776">at line 776</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>setTargetPools</strong>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersSetTargetPoolsRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersSetTargetPoolsRequest">RegionInstanceGroupManagersSetTargetPoolsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Modifies the target pools to which all new instances in this group are
+assigned. Existing instances in the group are not affected.</p></p>                <p>(regionInstanceGroupManagers.setTargetPools)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instanceGroupManager</td>
+                <td><p>Name of the managed instance group.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/RegionInstanceGroupManagersSetTargetPoolsRequest.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagersSetTargetPoolsRequest">RegionInstanceGroupManagersSetTargetPoolsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updatePerInstanceConfigs">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/Resource/RegionInstanceGroupManagers.php#L809">at line 809</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>updatePerInstanceConfigs</strong>(string $project, string $region, string $instanceGroupManager, <a href="../../../../Google/Service/Compute/RegionInstanceGroupManagerUpdateInstanceConfigReq.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagerUpdateInstanceConfigReq">RegionInstanceGroupManagerUpdateInstanceConfigReq</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Inserts or updates per-instance configurations for the managed instance
+group. perInstanceConfig.name serves as a key used to distinguish whether to
+perform insert or patch.</p></p>                <p>(regionInstanceGroupManagers.updatePerInstanceConfigs)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region scoping this request, should conform
+to RFC1035.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instanceGroupManager</td>
+                <td><p>The name of the managed instance group.
+It should conform to RFC1035.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/RegionInstanceGroupManagerUpdateInstanceConfigReq.html"><abbr title="Google\Service\Compute\RegionInstanceGroupManagerUpdateInstanceConfigReq">RegionInstanceGroupManagerUpdateInstanceConfigReq</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

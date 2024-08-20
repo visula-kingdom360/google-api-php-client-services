@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\AndroidProvisioningPartner\Resource\CustomersDevices | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_AndroidProvisioningPartner_Resource_CustomersDevices" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/AndroidProvisioningPartner.html">AndroidProvisioningPartner</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/AndroidProvisioningPartner/Resource.html">Resource</a></li><li class="backslash">\</li><li>CustomersDevices</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>CustomersDevices    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>CustomersDevices</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AndroidProvisioningPartner/Resource/CustomersDevices.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;devices&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $androiddeviceprovisioningService = new Google\Service\AndroidProvisioningPartner(...);
+ $devices = $androiddeviceprovisioningService-&gt;customers_devices;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidProvisioningPartner/AndroiddeviceprovisioningEmpty.html"><abbr title="Google\Service\AndroidProvisioningPartner\AndroiddeviceprovisioningEmpty">AndroiddeviceprovisioningEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_applyConfiguration">applyConfiguration</a>(string $parent, <a href="../../../../Google/Service/AndroidProvisioningPartner/CustomerApplyConfigurationRequest.html"><abbr title="Google\Service\AndroidProvisioningPartner\CustomerApplyConfigurationRequest">CustomerApplyConfigurationRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Applies a Configuration to the device to register the device for zero-touch
+enrollment. After applying a configuration to a device, the device
+automatically provisions itself on first boot, or next factory reset.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidProvisioningPartner/Device.html"><abbr title="Google\Service\AndroidProvisioningPartner\Device">Device</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets the details of a device. (devices.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidProvisioningPartner/CustomerListDevicesResponse.html"><abbr title="Google\Service\AndroidProvisioningPartner\CustomerListDevicesResponse">CustomerListDevicesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listCustomersDevices">listCustomersDevices</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists a customer's devices. (devices.listCustomersDevices)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidProvisioningPartner/AndroiddeviceprovisioningEmpty.html"><abbr title="Google\Service\AndroidProvisioningPartner\AndroiddeviceprovisioningEmpty">AndroiddeviceprovisioningEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_removeConfiguration">removeConfiguration</a>(string $parent, <a href="../../../../Google/Service/AndroidProvisioningPartner/CustomerRemoveConfigurationRequest.html"><abbr title="Google\Service\AndroidProvisioningPartner\CustomerRemoveConfigurationRequest">CustomerRemoveConfigurationRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Removes a configuration from device. (devices.removeConfiguration)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidProvisioningPartner/AndroiddeviceprovisioningEmpty.html"><abbr title="Google\Service\AndroidProvisioningPartner\AndroiddeviceprovisioningEmpty">AndroiddeviceprovisioningEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_unclaim">unclaim</a>(string $parent, <a href="../../../../Google/Service/AndroidProvisioningPartner/CustomerUnclaimDeviceRequest.html"><abbr title="Google\Service\AndroidProvisioningPartner\CustomerUnclaimDeviceRequest">CustomerUnclaimDeviceRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Unclaims a device from a customer and removes it from zero-touch enrollment.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_applyConfiguration">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AndroidProvisioningPartner/Resource/CustomersDevices.php#L50">at line 50</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidProvisioningPartner/AndroiddeviceprovisioningEmpty.html"><abbr title="Google\Service\AndroidProvisioningPartner\AndroiddeviceprovisioningEmpty">AndroiddeviceprovisioningEmpty</abbr></a>
+    <strong>applyConfiguration</strong>(string $parent, <a href="../../../../Google/Service/AndroidProvisioningPartner/CustomerApplyConfigurationRequest.html"><abbr title="Google\Service\AndroidProvisioningPartner\CustomerApplyConfigurationRequest">CustomerApplyConfigurationRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Applies a Configuration to the device to register the device for zero-touch
+enrollment. After applying a configuration to a device, the device
+automatically provisions itself on first boot, or next factory reset.</p></p>                <p>(devices.applyConfiguration)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The customer managing the device. An API
+resource name in the format <code>customers/[CUSTOMER_ID]</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AndroidProvisioningPartner/CustomerApplyConfigurationRequest.html"><abbr title="Google\Service\AndroidProvisioningPartner\CustomerApplyConfigurationRequest">CustomerApplyConfigurationRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidProvisioningPartner/AndroiddeviceprovisioningEmpty.html"><abbr title="Google\Service\AndroidProvisioningPartner\AndroiddeviceprovisioningEmpty">AndroiddeviceprovisioningEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AndroidProvisioningPartner/Resource/CustomersDevices.php#L65">at line 65</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidProvisioningPartner/Device.html"><abbr title="Google\Service\AndroidProvisioningPartner\Device">Device</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the details of a device. (devices.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The device to get. An API resource name in the
+format <code>customers/[CUSTOMER_ID]/devices/[DEVICE_ID]</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidProvisioningPartner/Device.html"><abbr title="Google\Service\AndroidProvisioningPartner\Device">Device</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listCustomersDevices">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AndroidProvisioningPartner/Resource/CustomersDevices.php#L84">at line 84</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidProvisioningPartner/CustomerListDevicesResponse.html"><abbr title="Google\Service\AndroidProvisioningPartner\CustomerListDevicesResponse">CustomerListDevicesResponse</abbr></a>
+    <strong>listCustomersDevices</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists a customer's devices. (devices.listCustomersDevices)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The customer managing the devices. An API
+resource name in the format <code>customers/[CUSTOMER_ID]</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidProvisioningPartner/CustomerListDevicesResponse.html"><abbr title="Google\Service\AndroidProvisioningPartner\CustomerListDevicesResponse">CustomerListDevicesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeConfiguration">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AndroidProvisioningPartner/Resource/CustomersDevices.php#L100">at line 100</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidProvisioningPartner/AndroiddeviceprovisioningEmpty.html"><abbr title="Google\Service\AndroidProvisioningPartner\AndroiddeviceprovisioningEmpty">AndroiddeviceprovisioningEmpty</abbr></a>
+    <strong>removeConfiguration</strong>(string $parent, <a href="../../../../Google/Service/AndroidProvisioningPartner/CustomerRemoveConfigurationRequest.html"><abbr title="Google\Service\AndroidProvisioningPartner\CustomerRemoveConfigurationRequest">CustomerRemoveConfigurationRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Removes a configuration from device. (devices.removeConfiguration)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The customer managing the device in the
+format <code>customers/[CUSTOMER_ID]</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AndroidProvisioningPartner/CustomerRemoveConfigurationRequest.html"><abbr title="Google\Service\AndroidProvisioningPartner\CustomerRemoveConfigurationRequest">CustomerRemoveConfigurationRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidProvisioningPartner/AndroiddeviceprovisioningEmpty.html"><abbr title="Google\Service\AndroidProvisioningPartner\AndroiddeviceprovisioningEmpty">AndroiddeviceprovisioningEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unclaim">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/AndroidProvisioningPartner/Resource/CustomersDevices.php#L118">at line 118</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidProvisioningPartner/AndroiddeviceprovisioningEmpty.html"><abbr title="Google\Service\AndroidProvisioningPartner\AndroiddeviceprovisioningEmpty">AndroiddeviceprovisioningEmpty</abbr></a>
+    <strong>unclaim</strong>(string $parent, <a href="../../../../Google/Service/AndroidProvisioningPartner/CustomerUnclaimDeviceRequest.html"><abbr title="Google\Service\AndroidProvisioningPartner\CustomerUnclaimDeviceRequest">CustomerUnclaimDeviceRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Unclaims a device from a customer and removes it from zero-touch enrollment.</p></p>                <p><p>After removing a device, a customer must contact their reseller to register
+the device into zero-touch enrollment again. (devices.unclaim)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The customer managing the device. An API
+resource name in the format <code>customers/[CUSTOMER_ID]</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AndroidProvisioningPartner/CustomerUnclaimDeviceRequest.html"><abbr title="Google\Service\AndroidProvisioningPartner\CustomerUnclaimDeviceRequest">CustomerUnclaimDeviceRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidProvisioningPartner/AndroiddeviceprovisioningEmpty.html"><abbr title="Google\Service\AndroidProvisioningPartner\AndroiddeviceprovisioningEmpty">AndroiddeviceprovisioningEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

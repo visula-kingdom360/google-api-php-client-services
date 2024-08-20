@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\HangoutsChat\Resource\SpacesMessages | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_HangoutsChat_Resource_SpacesMessages" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/HangoutsChat.html">HangoutsChat</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/HangoutsChat/Resource.html">Resource</a></li><li class="backslash">\</li><li>SpacesMessages</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>SpacesMessages    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>SpacesMessages</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/HangoutsChat/Resource/SpacesMessages.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;messages&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $chatService = new Google\Service\HangoutsChat(...);
+ $messages = $chatService-&gt;spaces_messages;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a message in a Google Chat space. The maximum message size, including
+text and cards, is 32,000 bytes. For an example, see <a href="https://developers.google.com/workspace/chat/create-messages">Send a
+message</a>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/HangoutsChat/ChatEmpty.html"><abbr title="Google\Service\HangoutsChat\ChatEmpty">ChatEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes a message. For an example, see <a href="https://developers.google.com/workspace/chat/delete-messages">Delete a
+message</a>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Returns details about a message. For an example, see <a href="https://developers.google.com/workspace/chat/get-messages">Get details about a
+message</a>. Requires
+<a href="https://developers.google.com/workspace/chat/authenticate-
+authorize">authentication</a>. Supports <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-app">app
+authentication</a> and <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>. Note: Might return a message from a blocked member or
+space. (messages.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/HangoutsChat/ListMessagesResponse.html"><abbr title="Google\Service\HangoutsChat\ListMessagesResponse">ListMessagesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listSpacesMessages">listSpacesMessages</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists messages in a space that the caller is a member of, including messages
+from blocked members and spaces. For an example, see <a href="/chat/api/guides/v1/messages/list">List
+messages</a>. Requires <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>. (messages.listSpacesMessages)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a message. There's a difference between the <code>patch</code> and <code>update</code>
+methods. The <code>patch</code> method uses a <code>patch</code> request while the <code>update</code> method
+uses a <code>put</code> request. We recommend using the <code>patch</code> method. For an example,
+see <a href="https://developers.google.com/workspace/chat/update-
+messages">Update a message</a>. Requires
+<a href="https://developers.google.com/workspace/chat/authenticate-
+authorize">authentication</a>. Supports <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-app">app
+authentication</a> and <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>. When using app authentication, requests can only update
+messages created by the calling Chat app. (messages.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $name, <a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a message. There's a difference between the <code>patch</code> and <code>update</code>
+methods. The <code>patch</code> method uses a <code>patch</code> request while the <code>update</code> method
+uses a <code>put</code> request. We recommend using the <code>patch</code> method. For an example,
+see <a href="https://developers.google.com/workspace/chat/update-
+messages">Update a message</a>. Requires
+<a href="https://developers.google.com/workspace/chat/authenticate-
+authorize">authentication</a>. Supports <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-app">app
+authentication</a> and <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>. When using app authentication, requests can only update
+messages created by the calling Chat app. (messages.update)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/HangoutsChat/Resource/SpacesMessages.php#L74">at line 74</a></div>
+        <code>                    <a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a message in a Google Chat space. The maximum message size, including
+text and cards, is 32,000 bytes. For an example, see <a href="https://developers.google.com/workspace/chat/create-messages">Send a
+message</a>.</p></p>                <p><p>Calling this method requires
+<a href="https://developers.google.com/workspace/chat/authenticate-
+authorize">authentication</a> and supports the following authentication types: - For text
+messages, user authentication or app authentication are supported. - For card
+messages, only app authentication is supported. (Only Chat apps can create
+card messages.) (messages.create)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the space in which to
+create a message. Format: <code>spaces/{space}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/HangoutsChat/Resource/SpacesMessages.php#L110">at line 110</a></div>
+        <code>                    <a href="../../../../Google/Service/HangoutsChat/ChatEmpty.html"><abbr title="Google\Service\HangoutsChat\ChatEmpty">ChatEmpty</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a message. For an example, see <a href="https://developers.google.com/workspace/chat/delete-messages">Delete a
+message</a>.</p></p>                <p><p>Requires
+<a href="https://developers.google.com/workspace/chat/authenticate-
+authorize">authentication</a>. Supports <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-app">app
+authentication</a> and <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>. When using app authentication, requests can only delete
+messages created by the calling Chat app. (messages.delete)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Resource name of the message. Format:
+<code>spaces/{space}/messages/{message}</code> If you've set a custom ID for your
+message, you can use the value from the <code>clientAssignedMessageId</code> field for
+<code>{message}</code>. For details, see [Name a message]
+(<a href="https://developers.google.com/workspace/chat/create">https://developers.google.com/workspace/chat/create</a>-
+messages#name_a_created_message).</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/HangoutsChat/ChatEmpty.html"><abbr title="Google\Service\HangoutsChat\ChatEmpty">ChatEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/HangoutsChat/Resource/SpacesMessages.php#L137">at line 137</a></div>
+        <code>                    <a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns details about a message. For an example, see <a href="https://developers.google.com/workspace/chat/get-messages">Get details about a
+message</a>. Requires
+<a href="https://developers.google.com/workspace/chat/authenticate-
+authorize">authentication</a>. Supports <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-app">app
+authentication</a> and <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>. Note: Might return a message from a blocked member or
+space. (messages.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Resource name of the message. Format:
+<code>spaces/{space}/messages/{message}</code> If you've set a custom ID for your
+message, you can use the value from the <code>clientAssignedMessageId</code> field for
+<code>{message}</code>. For details, see [Name a message]
+(<a href="https://developers.google.com/workspace/chat/create">https://developers.google.com/workspace/chat/create</a>-
+messages#name_a_created_message).</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listSpacesMessages">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/HangoutsChat/Resource/SpacesMessages.php#L194">at line 194</a></div>
+        <code>                    <a href="../../../../Google/Service/HangoutsChat/ListMessagesResponse.html"><abbr title="Google\Service\HangoutsChat\ListMessagesResponse">ListMessagesResponse</abbr></a>
+    <strong>listSpacesMessages</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists messages in a space that the caller is a member of, including messages
+from blocked members and spaces. For an example, see <a href="/chat/api/guides/v1/messages/list">List
+messages</a>. Requires <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>. (messages.listSpacesMessages)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the space to list
+messages from. Format: <code>spaces/{space}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/HangoutsChat/ListMessagesResponse.html"><abbr title="Google\Service\HangoutsChat\ListMessagesResponse">ListMessagesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/HangoutsChat/Resource/SpacesMessages.php#L242">at line 242</a></div>
+        <code>                    <a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a message. There's a difference between the <code>patch</code> and <code>update</code>
+methods. The <code>patch</code> method uses a <code>patch</code> request while the <code>update</code> method
+uses a <code>put</code> request. We recommend using the <code>patch</code> method. For an example,
+see <a href="https://developers.google.com/workspace/chat/update-
+messages">Update a message</a>. Requires
+<a href="https://developers.google.com/workspace/chat/authenticate-
+authorize">authentication</a>. Supports <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-app">app
+authentication</a> and <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>. When using app authentication, requests can only update
+messages created by the calling Chat app. (messages.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Resource name of the message. Format:
+<code>spaces/{space}/messages/{message}</code> Where <code>{space}</code> is the ID of the space
+where the message is posted and <code>{message}</code> is a system-assigned ID for the
+message. For example, <code>spaces/AAAAAAAAAAA/messages/BBBBBBBBBBB.BBBBBBBBBBB</code>.
+If you set a custom ID when you create a message, you can use this ID to
+specify the message in a request by replacing <code>{message}</code> with the value from
+the <code>clientAssignedMessageId</code> field. For example,
+<code>spaces/AAAAAAAAAAA/messages/client-custom-name</code>. For details, see <a href="https://developers.google.com/workspace/chat/create-
+messages#name_a_created_message">Name a
+message</a>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/HangoutsChat/Resource/SpacesMessages.php#L290">at line 290</a></div>
+        <code>                    <a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a>
+    <strong>update</strong>(string $name, <a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a message. There's a difference between the <code>patch</code> and <code>update</code>
+methods. The <code>patch</code> method uses a <code>patch</code> request while the <code>update</code> method
+uses a <code>put</code> request. We recommend using the <code>patch</code> method. For an example,
+see <a href="https://developers.google.com/workspace/chat/update-
+messages">Update a message</a>. Requires
+<a href="https://developers.google.com/workspace/chat/authenticate-
+authorize">authentication</a>. Supports <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-app">app
+authentication</a> and <a href="https://developers.google.com/workspace/chat/authenticate-
+authorize-chat-user">user
+authentication</a>. When using app authentication, requests can only update
+messages created by the calling Chat app. (messages.update)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Resource name of the message. Format:
+<code>spaces/{space}/messages/{message}</code> Where <code>{space}</code> is the ID of the space
+where the message is posted and <code>{message}</code> is a system-assigned ID for the
+message. For example, <code>spaces/AAAAAAAAAAA/messages/BBBBBBBBBBB.BBBBBBBBBBB</code>.
+If you set a custom ID when you create a message, you can use this ID to
+specify the message in a request by replacing <code>{message}</code> with the value from
+the <code>clientAssignedMessageId</code> field. For example,
+<code>spaces/AAAAAAAAAAA/messages/client-custom-name</code>. For details, see <a href="https://developers.google.com/workspace/chat/create-
+messages#name_a_created_message">Name a
+message</a>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/HangoutsChat/Message.html"><abbr title="Google\Service\HangoutsChat\Message">Message</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

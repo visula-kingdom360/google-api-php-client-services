@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Storage\Resource\Objects | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Storage_Resource_Objects" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Storage.html">Storage</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Storage/Resource.html">Resource</a></li><li class="backslash">\</li><li>Objects</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Objects    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Objects</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Storage/Resource/Objects.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;objects&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $storageService = new Google\Service\Storage(...);
+ $objects = $storageService-&gt;objects;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Storage/GoogleLongrunningOperation.html"><abbr title="Google\Service\Storage\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_bulkRestore">bulkRestore</a>(string $bucket, <a href="../../../../Google/Service/Storage/BulkRestoreObjectsRequest.html"><abbr title="Google\Service\Storage\BulkRestoreObjectsRequest">BulkRestoreObjectsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Initiates a long-running bulk restore operation on the specified bucket.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_compose">compose</a>(string $destinationBucket, string $destinationObject, <a href="../../../../Google/Service/Storage/ComposeRequest.html"><abbr title="Google\Service\Storage\ComposeRequest">ComposeRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Concatenates a list of existing objects into a new object in the same bucket.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_copy">copy</a>(string $sourceBucket, string $sourceObject, string $destinationBucket, string $destinationObject, <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Copies a source object to a destination object. Optionally overrides
+metadata. (objects.copy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $bucket, string $object, array $optParams = [])
+        
+                                            <p><p>Deletes an object and its metadata. Deletions are permanent if versioning is
+not enabled for the bucket, or if the generation parameter is used.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $bucket, string $object, array $optParams = [])
+        
+                                            <p><p>Retrieves an object or its metadata. (objects.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Storage/Policy.html"><abbr title="Google\Service\Storage\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIamPolicy">getIamPolicy</a>(string $bucket, string $object, array $optParams = [])
+        
+                                            <p><p>Returns an IAM policy for the specified object. (objects.getIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_insert">insert</a>(string $bucket, <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Stores a new object and metadata. (objects.insert)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Storage/Objects.html"><abbr title="Google\Service\Storage\Objects">Objects</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listObjects">listObjects</a>(string $bucket, array $optParams = [])
+        
+                                            <p><p>Retrieves a list of objects matching the criteria. (objects.listObjects)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $bucket, string $object, <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Patches an object's metadata. (objects.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_restore">restore</a>(string $bucket, string $object, string $generation, array $optParams = [])
+        
+                                            <p><p>Restores a soft-deleted object. (objects.restore)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Storage/RewriteResponse.html"><abbr title="Google\Service\Storage\RewriteResponse">RewriteResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_rewrite">rewrite</a>(string $sourceBucket, string $sourceObject, string $destinationBucket, string $destinationObject, <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Rewrites a source object to a destination object. Optionally overrides
+metadata. (objects.rewrite)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Storage/Policy.html"><abbr title="Google\Service\Storage\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setIamPolicy">setIamPolicy</a>(string $bucket, string $object, <a href="../../../../Google/Service/Storage/Policy.html"><abbr title="Google\Service\Storage\Policy">Policy</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates an IAM policy for the specified object. (objects.setIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Storage/TestIamPermissionsResponse.html"><abbr title="Google\Service\Storage\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testIamPermissions">testIamPermissions</a>(string $bucket, string $object, string|array $permissions, array $optParams = [])
+        
+                                            <p><p>Tests a set of permissions on the given object to see which, if any, are held
+by the caller. (objects.testIamPermissions)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $bucket, string $object, <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates an object's metadata. (objects.update)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Storage/Channel.html"><abbr title="Google\Service\Storage\Channel">Channel</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_watchAll">watchAll</a>(string $bucket, <a href="../../../../Google/Service/Storage/Channel.html"><abbr title="Google\Service\Storage\Channel">Channel</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Watch for changes on all objects in a bucket. (objects.watchAll)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_bulkRestore">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Storage/Resource/Objects.php#L50">at line 50</a></div>
+        <code>                    <a href="../../../../Google/Service/Storage/GoogleLongrunningOperation.html"><abbr title="Google\Service\Storage\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>bulkRestore</strong>(string $bucket, <a href="../../../../Google/Service/Storage/BulkRestoreObjectsRequest.html"><abbr title="Google\Service\Storage\BulkRestoreObjectsRequest">BulkRestoreObjectsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Initiates a long-running bulk restore operation on the specified bucket.</p></p>                <p>(objects.bulkRestore)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$bucket</td>
+                <td><p>Name of the bucket in which the object resides.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Storage/BulkRestoreObjectsRequest.html"><abbr title="Google\Service\Storage\BulkRestoreObjectsRequest">BulkRestoreObjectsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Storage/GoogleLongrunningOperation.html"><abbr title="Google\Service\Storage\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compose">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Storage/Resource/Objects.php#L84">at line 84</a></div>
+        <code>                    <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a>
+    <strong>compose</strong>(string $destinationBucket, string $destinationObject, <a href="../../../../Google/Service/Storage/ComposeRequest.html"><abbr title="Google\Service\Storage\ComposeRequest">ComposeRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Concatenates a list of existing objects into a new object in the same bucket.</p></p>                <p>(objects.compose)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$destinationBucket</td>
+                <td><p>Name of the bucket containing the source
+objects. The destination object is stored in this bucket.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$destinationObject</td>
+                <td><p>Name of the new object. For information
+about how to URL encode object names to be path safe, see <a href="https://cloud.google.com/storage/docs/request-endpoints#encoding">Encoding URI Path
+Parts</a>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Storage/ComposeRequest.html"><abbr title="Google\Service\Storage\ComposeRequest">ComposeRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_copy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Storage/Resource/Objects.php#L151">at line 151</a></div>
+        <code>                    <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a>
+    <strong>copy</strong>(string $sourceBucket, string $sourceObject, string $destinationBucket, string $destinationObject, <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Copies a source object to a destination object. Optionally overrides
+metadata. (objects.copy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sourceBucket</td>
+                <td><p>Name of the bucket in which to find the source
+object.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sourceObject</td>
+                <td><p>Name of the source object. For information about
+how to URL encode object names to be path safe, see <a href="https://cloud.google.com/storage/docs/request-endpoints#encoding">Encoding URI Path
+Parts</a>.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$destinationBucket</td>
+                <td><p>Name of the bucket in which to store the new
+object. Overrides the provided object metadata's bucket value, if any.For
+information about how to URL encode object names to be path safe, see
+<a href="https://cloud.google.com/storage/docs/request-
+endpoints#encoding">Encoding URI Path Parts</a>.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$destinationObject</td>
+                <td><p>Name of the new object. Required when the
+object metadata is not otherwise provided. Overrides the object metadata's
+name value, if any.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Storage/Resource/Objects.php#L185">at line 185</a></div>
+        <code>                    
+    <strong>delete</strong>(string $bucket, string $object, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes an object and its metadata. Deletions are permanent if versioning is
+not enabled for the bucket, or if the generation parameter is used.</p></p>                <p>(objects.delete)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$bucket</td>
+                <td><p>Name of the bucket in which the object resides.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$object</td>
+                <td><p>Name of the object. For information about how to URL
+encode object names to be path safe, see <a href="https://cloud.google.com/storage/docs/request-endpoints#encoding">Encoding URI Path
+Parts</a>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Storage/Resource/Objects.php#L222">at line 222</a></div>
+        <code>                    <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a>
+    <strong>get</strong>(string $bucket, string $object, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves an object or its metadata. (objects.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$bucket</td>
+                <td><p>Name of the bucket in which the object resides.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$object</td>
+                <td><p>Name of the object. For information about how to URL
+encode object names to be path safe, see <a href="https://cloud.google.com/storage/docs/request-endpoints#encoding">Encoding URI Path
+Parts</a>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Storage/Resource/Objects.php#L244">at line 244</a></div>
+        <code>                    <a href="../../../../Google/Service/Storage/Policy.html"><abbr title="Google\Service\Storage\Policy">Policy</abbr></a>
+    <strong>getIamPolicy</strong>(string $bucket, string $object, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns an IAM policy for the specified object. (objects.getIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$bucket</td>
+                <td><p>Name of the bucket in which the object resides.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$object</td>
+                <td><p>Name of the object. For information about how to URL
+encode object names to be path safe, see <a href="https://cloud.google.com/storage/docs/request-endpoints#encoding">Encoding URI Path
+Parts</a>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Storage/Policy.html"><abbr title="Google\Service\Storage\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Storage/Resource/Objects.php#L293">at line 293</a></div>
+        <code>                    <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a>
+    <strong>insert</strong>(string $bucket, <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Stores a new object and metadata. (objects.insert)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$bucket</td>
+                <td><p>Name of the bucket in which to store the new object.
+Overrides the provided object metadata's bucket value, if any.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listObjects">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Storage/Resource/Objects.php#L346">at line 346</a></div>
+        <code>                    <a href="../../../../Google/Service/Storage/Objects.html"><abbr title="Google\Service\Storage\Objects">Objects</abbr></a>
+    <strong>listObjects</strong>(string $bucket, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves a list of objects matching the criteria. (objects.listObjects)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$bucket</td>
+                <td><p>Name of the bucket in which to look for objects.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Storage/Objects.html"><abbr title="Google\Service\Storage\Objects">Objects</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Storage/Resource/Objects.php#L386">at line 386</a></div>
+        <code>                    <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a>
+    <strong>patch</strong>(string $bucket, string $object, <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Patches an object's metadata. (objects.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$bucket</td>
+                <td><p>Name of the bucket in which the object resides.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$object</td>
+                <td><p>Name of the object. For information about how to URL
+encode object names to be path safe, see <a href="https://cloud.google.com/storage/docs/request-endpoints#encoding">Encoding URI Path
+Parts</a>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_restore">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Storage/Resource/Objects.php#L422">at line 422</a></div>
+        <code>                    <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a>
+    <strong>restore</strong>(string $bucket, string $object, string $generation, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Restores a soft-deleted object. (objects.restore)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$bucket</td>
+                <td><p>Name of the bucket in which the object resides.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$object</td>
+                <td><p>Name of the object. For information about how to URL
+encode object names to be path safe, see <a href="https://cloud.google.com/storage/docs/request-endpoints#encoding">Encoding URI Path
+Parts</a>.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$generation</td>
+                <td><p>Selects a specific revision of this object.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rewrite">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Storage/Resource/Objects.php#L499">at line 499</a></div>
+        <code>                    <a href="../../../../Google/Service/Storage/RewriteResponse.html"><abbr title="Google\Service\Storage\RewriteResponse">RewriteResponse</abbr></a>
+    <strong>rewrite</strong>(string $sourceBucket, string $sourceObject, string $destinationBucket, string $destinationObject, <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Rewrites a source object to a destination object. Optionally overrides
+metadata. (objects.rewrite)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sourceBucket</td>
+                <td><p>Name of the bucket in which to find the source
+object.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sourceObject</td>
+                <td><p>Name of the source object. For information about
+how to URL encode object names to be path safe, see <a href="https://cloud.google.com/storage/docs/request-endpoints#encoding">Encoding URI Path
+Parts</a>.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$destinationBucket</td>
+                <td><p>Name of the bucket in which to store the new
+object. Overrides the provided object metadata's bucket value, if any.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$destinationObject</td>
+                <td><p>Name of the new object. Required when the
+object metadata is not otherwise provided. Overrides the object metadata's
+name value, if any. For information about how to URL encode object names to
+be path safe, see <a href="https://cloud.google.com/storage/docs/request-endpoints#encoding">Encoding URI Path
+Parts</a>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Storage/RewriteResponse.html"><abbr title="Google\Service\Storage\RewriteResponse">RewriteResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Storage/Resource/Objects.php#L522">at line 522</a></div>
+        <code>                    <a href="../../../../Google/Service/Storage/Policy.html"><abbr title="Google\Service\Storage\Policy">Policy</abbr></a>
+    <strong>setIamPolicy</strong>(string $bucket, string $object, <a href="../../../../Google/Service/Storage/Policy.html"><abbr title="Google\Service\Storage\Policy">Policy</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates an IAM policy for the specified object. (objects.setIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$bucket</td>
+                <td><p>Name of the bucket in which the object resides.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$object</td>
+                <td><p>Name of the object. For information about how to URL
+encode object names to be path safe, see <a href="https://cloud.google.com/storage/docs/request-endpoints#encoding">Encoding URI Path
+Parts</a>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Storage/Policy.html"><abbr title="Google\Service\Storage\Policy">Policy</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Storage/Policy.html"><abbr title="Google\Service\Storage\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testIamPermissions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Storage/Resource/Objects.php#L546">at line 546</a></div>
+        <code>                    <a href="../../../../Google/Service/Storage/TestIamPermissionsResponse.html"><abbr title="Google\Service\Storage\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+    <strong>testIamPermissions</strong>(string $bucket, string $object, string|array $permissions, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Tests a set of permissions on the given object to see which, if any, are held
+by the caller. (objects.testIamPermissions)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$bucket</td>
+                <td><p>Name of the bucket in which the object resides.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$object</td>
+                <td><p>Name of the object. For information about how to URL
+encode object names to be path safe, see <a href="https://cloud.google.com/storage/docs/request-endpoints#encoding">Encoding URI Path
+Parts</a>.</p></td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$permissions</td>
+                <td><p>Permissions to test.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Storage/TestIamPermissionsResponse.html"><abbr title="Google\Service\Storage\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Storage/Resource/Objects.php#L586">at line 586</a></div>
+        <code>                    <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a>
+    <strong>update</strong>(string $bucket, string $object, <a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates an object's metadata. (objects.update)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$bucket</td>
+                <td><p>Name of the bucket in which the object resides.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$object</td>
+                <td><p>Name of the object. For information about how to URL
+encode object names to be path safe, see <a href="https://cloud.google.com/storage/docs/request-endpoints#encoding">Encoding URI Path
+Parts</a>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Storage/StorageObject.html"><abbr title="Google\Service\Storage\StorageObject">StorageObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_watchAll">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Storage/Resource/Objects.php#L632">at line 632</a></div>
+        <code>                    <a href="../../../../Google/Service/Storage/Channel.html"><abbr title="Google\Service\Storage\Channel">Channel</abbr></a>
+    <strong>watchAll</strong>(string $bucket, <a href="../../../../Google/Service/Storage/Channel.html"><abbr title="Google\Service\Storage\Channel">Channel</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Watch for changes on all objects in a bucket. (objects.watchAll)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$bucket</td>
+                <td><p>Name of the bucket in which to look for objects.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Storage/Channel.html"><abbr title="Google\Service\Storage\Channel">Channel</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Storage/Channel.html"><abbr title="Google\Service\Storage\Channel">Channel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

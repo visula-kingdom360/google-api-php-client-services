@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Apigee\Resource\OrganizationsApiproducts | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Apigee_Resource_OrganizationsApiproducts" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Apigee.html">Apigee</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Apigee/Resource.html">Resource</a></li><li class="backslash">\</li><li>OrganizationsApiproducts</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>OrganizationsApiproducts    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>OrganizationsApiproducts</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/OrganizationsApiproducts.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;apiproducts&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $apigeeService = new Google\Service\Apigee(...);
+ $apiproducts = $apigeeService-&gt;organizations_apiproducts;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1Attributes.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1Attributes">GoogleCloudApigeeV1Attributes</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_attributes">attributes</a>(string $name, <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1Attributes.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1Attributes">GoogleCloudApigeeV1Attributes</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates or creates API product attributes. This API <strong>replaces</strong> the current
+list of attributes with the attributes specified in the request body. In this
+way, you can update existing attributes, add new attributes, or delete
+existing attributes by omitting them from the request body. <strong>Note</strong>: OAuth
+access tokens and Key Management Service (KMS) entities (apps, developers,
+and API products) are cached for 180 seconds (current default). Any custom
+attributes associated with entities also get cached for at least 180 seconds
+after entity is accessed during runtime. In this case, the <code>ExpiresIn</code>
+element on the OAuthV2 policy won't be able to expire an access token in less
+than 180 seconds. (apiproducts.attributes)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ApiProduct.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ApiProduct">GoogleCloudApigeeV1ApiProduct</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ApiProduct.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ApiProduct">GoogleCloudApigeeV1ApiProduct</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates an API product in an organization. You create API products after you
+have proxied backend services using API proxies. An API product is a
+collection of API resources combined with quota settings and metadata that
+you can use to deliver customized and productized API bundles to your
+developer community. This metadata can include: - Scope - Environments - API
+proxies - Extensible profile API products enable you repackage APIs on the
+fly, without having to do any additional coding or configuration. Apigee
+recommends that you start with a simple API product including only required
+elements. You then provision credentials to apps to enable them to start
+testing your APIs. After you have authentication and authorization working
+against a simple API product, you can iterate to create finer-grained API
+products, defining different sets of API resources for each API product.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ApiProduct.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ApiProduct">GoogleCloudApigeeV1ApiProduct</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes an API product from an organization. Deleting an API product causes
+app requests to the resource URIs defined in the API product to fail. Ensure
+that you create a new API product to serve existing apps, unless your
+intention is to disable access to the resources defined in the API product.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ApiProduct.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ApiProduct">GoogleCloudApigeeV1ApiProduct</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets configuration details for an API product. The API product name required
+in the request URL is the internal name of the product, not the display name.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ListApiProductsResponse.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ListApiProductsResponse">GoogleCloudApigeeV1ListApiProductsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listOrganizationsApiproducts">listOrganizationsApiproducts</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists all API product names for an organization. Filter the list by passing
+an <code>attributename</code> and <code>attibutevalue</code>. The maximum number of API products
+returned is 1000. You can paginate the list of API products returned using
+the <code>startKey</code> and <code>count</code> query parameters.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ApiProduct.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ApiProduct">GoogleCloudApigeeV1ApiProduct</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $name, <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ApiProduct.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ApiProduct">GoogleCloudApigeeV1ApiProduct</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates an existing API product. You must include all required values,
+whether or not you are updating them, as well as any optional values that you
+are updating. The API product name required in the request URL is the
+internal name of the product, not the display name. While they may be the
+same, it depends on whether the API product was created via UI or API. View
+the list of API products to identify their internal names.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_attributes">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/OrganizationsApiproducts.php#L53">at line 53</a></div>
+        <code>                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1Attributes.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1Attributes">GoogleCloudApigeeV1Attributes</abbr></a>
+    <strong>attributes</strong>(string $name, <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1Attributes.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1Attributes">GoogleCloudApigeeV1Attributes</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates or creates API product attributes. This API <strong>replaces</strong> the current
+list of attributes with the attributes specified in the request body. In this
+way, you can update existing attributes, add new attributes, or delete
+existing attributes by omitting them from the request body. <strong>Note</strong>: OAuth
+access tokens and Key Management Service (KMS) entities (apps, developers,
+and API products) are cached for 180 seconds (current default). Any custom
+attributes associated with entities also get cached for at least 180 seconds
+after entity is accessed during runtime. In this case, the <code>ExpiresIn</code>
+element on the OAuthV2 policy won't be able to expire an access token in less
+than 180 seconds. (apiproducts.attributes)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Name of the API product. Use the following
+structure in your request: <code>organizations/{org}/apiproducts/{apiproduct}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1Attributes.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1Attributes">GoogleCloudApigeeV1Attributes</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1Attributes.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1Attributes">GoogleCloudApigeeV1Attributes</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/OrganizationsApiproducts.php#L86">at line 86</a></div>
+        <code>                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ApiProduct.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ApiProduct">GoogleCloudApigeeV1ApiProduct</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ApiProduct.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ApiProduct">GoogleCloudApigeeV1ApiProduct</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates an API product in an organization. You create API products after you
+have proxied backend services using API proxies. An API product is a
+collection of API resources combined with quota settings and metadata that
+you can use to deliver customized and productized API bundles to your
+developer community. This metadata can include: - Scope - Environments - API
+proxies - Extensible profile API products enable you repackage APIs on the
+fly, without having to do any additional coding or configuration. Apigee
+recommends that you start with a simple API product including only required
+elements. You then provision credentials to apps to enable them to start
+testing your APIs. After you have authentication and authorization working
+against a simple API product, you can iterate to create finer-grained API
+products, defining different sets of API resources for each API product.</p></p>                <p><p><strong>WARNING:</strong> - If you don't specify an API proxy in the request body, <em>any</em>
+app associated with the product can make calls to <em>any</em> API in your entire
+organization. - If you don't specify an environment in the request body, the
+product allows access to all environments. For more information, see What is
+an API product? (apiproducts.create)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. Name of the organization in which the API
+product will be created. Use the following structure in your request:
+<code>organizations/{org}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ApiProduct.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ApiProduct">GoogleCloudApigeeV1ApiProduct</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ApiProduct.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ApiProduct">GoogleCloudApigeeV1ApiProduct</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/OrganizationsApiproducts.php#L108">at line 108</a></div>
+        <code>                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ApiProduct.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ApiProduct">GoogleCloudApigeeV1ApiProduct</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes an API product from an organization. Deleting an API product causes
+app requests to the resource URIs defined in the API product to fail. Ensure
+that you create a new API product to serve existing apps, unless your
+intention is to disable access to the resources defined in the API product.</p></p>                <p><p>The API product name required in the request URL is the internal name of the
+product, not the display name. While they may be the same, it depends on
+whether the API product was created via the UI or the API. View the list of
+API products to verify the internal name. (apiproducts.delete)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Name of the API product. Use the following
+structure in your request: <code>organizations/{org}/apiproducts/{apiproduct}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ApiProduct.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ApiProduct">GoogleCloudApigeeV1ApiProduct</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/OrganizationsApiproducts.php#L127">at line 127</a></div>
+        <code>                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ApiProduct.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ApiProduct">GoogleCloudApigeeV1ApiProduct</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets configuration details for an API product. The API product name required
+in the request URL is the internal name of the product, not the display name.</p></p>                <p><p>While they may be the same, it depends on whether the API product was created
+via the UI or the API. View the list of API products to verify the internal
+name. (apiproducts.get)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Name of the API product. Use the following
+structure in your request: <code>organizations/{org}/apiproducts/{apiproduct}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ApiProduct.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ApiProduct">GoogleCloudApigeeV1ApiProduct</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listOrganizationsApiproducts">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/OrganizationsApiproducts.php#L160">at line 160</a></div>
+        <code>                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ListApiProductsResponse.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ListApiProductsResponse">GoogleCloudApigeeV1ListApiProductsResponse</abbr></a>
+    <strong>listOrganizationsApiproducts</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all API product names for an organization. Filter the list by passing
+an <code>attributename</code> and <code>attibutevalue</code>. The maximum number of API products
+returned is 1000. You can paginate the list of API products returned using
+the <code>startKey</code> and <code>count</code> query parameters.</p></p>                <p>(apiproducts.listOrganizationsApiproducts)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. Name of the organization. Use the following
+structure in your request: <code>organizations/{org}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ListApiProductsResponse.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ListApiProductsResponse">GoogleCloudApigeeV1ListApiProductsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Apigee/Resource/OrganizationsApiproducts.php#L182">at line 182</a></div>
+        <code>                    <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ApiProduct.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ApiProduct">GoogleCloudApigeeV1ApiProduct</abbr></a>
+    <strong>update</strong>(string $name, <a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ApiProduct.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ApiProduct">GoogleCloudApigeeV1ApiProduct</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates an existing API product. You must include all required values,
+whether or not you are updating them, as well as any optional values that you
+are updating. The API product name required in the request URL is the
+internal name of the product, not the display name. While they may be the
+same, it depends on whether the API product was created via UI or API. View
+the list of API products to identify their internal names.</p></p>                <p>(apiproducts.update)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Name of the API product. Use the following
+structure in your request: <code>organizations/{org}/apiproducts/{apiproduct}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ApiProduct.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ApiProduct">GoogleCloudApigeeV1ApiProduct</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Apigee/GoogleCloudApigeeV1ApiProduct.html"><abbr title="Google\Service\Apigee\GoogleCloudApigeeV1ApiProduct">GoogleCloudApigeeV1ApiProduct</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Cloudchannel\Resource\Integrators | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Cloudchannel_Resource_Integrators" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Cloudchannel.html">Cloudchannel</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Cloudchannel/Resource.html">Resource</a></li><li class="backslash">\</li><li>Integrators</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Integrators    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Integrators</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/Integrators.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;integrators&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $cloudchannelService = new Google\Service\Cloudchannel(...);
+ $integrators = $cloudchannelService-&gt;integrators;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListSubscribersResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListSubscribersResponse">GoogleCloudChannelV1ListSubscribersResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listSubscribers">listSubscribers</a>(string $integrator, array $optParams = [])
+        
+                                            <p><p>Lists service accounts with subscriber privileges on the Cloud Pub/Sub topic
+created for this Channel Services account. Possible error codes: <em>
+PERMISSION_DENIED: The reseller account making the request and the provided
+reseller account are different, or the impersonated user is not a super
+admin. </em> INVALID_ARGUMENT: Required request parameters are missing or
+invalid. <em> NOT_FOUND: The topic resource doesn't exist. </em> INTERNAL: Any non-
+user error related to a technical issue in the backend. Contact Cloud Channel
+support. * UNKNOWN: Any non-user error related to a technical issue in the
+backend. Contact Cloud Channel support. Return value: A list of service email
+addresses. (integrators.listSubscribers)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1RegisterSubscriberResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1RegisterSubscriberResponse">GoogleCloudChannelV1RegisterSubscriberResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_register">register</a>(string $integrator, array $optParams = [])
+        
+                                            <p><p>Registers a service account with subscriber privileges on the Cloud Pub/Sub
+topic for this Channel Services account. After you create a subscriber, you
+get the events through SubscriberEvent Possible error codes: <em>
+PERMISSION_DENIED: The reseller account making the request and the provided
+reseller account are different, or the impersonated user is not a super
+admin. </em> INVALID_ARGUMENT: Required request parameters are missing or
+invalid. <em> INTERNAL: Any non-user error related to a technical issue in the
+backend. Contact Cloud Channel support. </em> UNKNOWN: Any non-user error related
+to a technical issue in the backend. Contact Cloud Channel support. Return
+value: The topic name with the registered service email address.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1UnregisterSubscriberResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1UnregisterSubscriberResponse">GoogleCloudChannelV1UnregisterSubscriberResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_unregister">unregister</a>(string $integrator, array $optParams = [])
+        
+                                            <p><p>Unregisters a service account with subscriber privileges on the Cloud Pub/Sub
+topic created for this Channel Services account. If there are no service
+accounts left with subscriber privileges, this deletes the topic. You can
+call ListSubscribers to check for these accounts. Possible error codes: <em>
+PERMISSION_DENIED: The reseller account making the request and the provided
+reseller account are different, or the impersonated user is not a super
+admin. </em> INVALID_ARGUMENT: Required request parameters are missing or
+invalid. <em> NOT_FOUND: The topic resource doesn't exist. </em> INTERNAL: Any non-
+user error related to a technical issue in the backend. Contact Cloud Channel
+support. * UNKNOWN: Any non-user error related to a technical issue in the
+backend. Contact Cloud Channel support. Return value: The topic name that
+unregistered the service email address. Returns a success response if the
+service email address wasn't registered with the topic.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_listSubscribers">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/Integrators.php#L61">at line 61</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListSubscribersResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListSubscribersResponse">GoogleCloudChannelV1ListSubscribersResponse</abbr></a>
+    <strong>listSubscribers</strong>(string $integrator, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists service accounts with subscriber privileges on the Cloud Pub/Sub topic
+created for this Channel Services account. Possible error codes: <em>
+PERMISSION_DENIED: The reseller account making the request and the provided
+reseller account are different, or the impersonated user is not a super
+admin. </em> INVALID_ARGUMENT: Required request parameters are missing or
+invalid. <em> NOT_FOUND: The topic resource doesn't exist. </em> INTERNAL: Any non-
+user error related to a technical issue in the backend. Contact Cloud Channel
+support. * UNKNOWN: Any non-user error related to a technical issue in the
+backend. Contact Cloud Channel support. Return value: A list of service email
+addresses. (integrators.listSubscribers)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$integrator</td>
+                <td><p>Optional. Resource name of the integrator.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListSubscribersResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListSubscribersResponse">GoogleCloudChannelV1ListSubscribersResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_register">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/Integrators.php#L89">at line 89</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1RegisterSubscriberResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1RegisterSubscriberResponse">GoogleCloudChannelV1RegisterSubscriberResponse</abbr></a>
+    <strong>register</strong>(string $integrator, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Registers a service account with subscriber privileges on the Cloud Pub/Sub
+topic for this Channel Services account. After you create a subscriber, you
+get the events through SubscriberEvent Possible error codes: <em>
+PERMISSION_DENIED: The reseller account making the request and the provided
+reseller account are different, or the impersonated user is not a super
+admin. </em> INVALID_ARGUMENT: Required request parameters are missing or
+invalid. <em> INTERNAL: Any non-user error related to a technical issue in the
+backend. Contact Cloud Channel support. </em> UNKNOWN: Any non-user error related
+to a technical issue in the backend. Contact Cloud Channel support. Return
+value: The topic name with the registered service email address.</p></p>                <p>(integrators.register)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$integrator</td>
+                <td><p>Optional. Resource name of the integrator.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1RegisterSubscriberResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1RegisterSubscriberResponse">GoogleCloudChannelV1RegisterSubscriberResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unregister">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/Integrators.php#L120">at line 120</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1UnregisterSubscriberResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1UnregisterSubscriberResponse">GoogleCloudChannelV1UnregisterSubscriberResponse</abbr></a>
+    <strong>unregister</strong>(string $integrator, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Unregisters a service account with subscriber privileges on the Cloud Pub/Sub
+topic created for this Channel Services account. If there are no service
+accounts left with subscriber privileges, this deletes the topic. You can
+call ListSubscribers to check for these accounts. Possible error codes: <em>
+PERMISSION_DENIED: The reseller account making the request and the provided
+reseller account are different, or the impersonated user is not a super
+admin. </em> INVALID_ARGUMENT: Required request parameters are missing or
+invalid. <em> NOT_FOUND: The topic resource doesn't exist. </em> INTERNAL: Any non-
+user error related to a technical issue in the backend. Contact Cloud Channel
+support. * UNKNOWN: Any non-user error related to a technical issue in the
+backend. Contact Cloud Channel support. Return value: The topic name that
+unregistered the service email address. Returns a success response if the
+service email address wasn't registered with the topic.</p></p>                <p>(integrators.unregister)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$integrator</td>
+                <td><p>Optional. Resource name of the integrator.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1UnregisterSubscriberResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1UnregisterSubscriberResponse">GoogleCloudChannelV1UnregisterSubscriberResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

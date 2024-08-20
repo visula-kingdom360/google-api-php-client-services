@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Classroom\Resource\CoursesCourseWork | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Classroom_Resource_CoursesCourseWork" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Classroom.html">Classroom</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Classroom/Resource.html">Resource</a></li><li class="backslash">\</li><li>CoursesCourseWork</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>CoursesCourseWork    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>CoursesCourseWork</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Classroom/Resource/CoursesCourseWork.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;courseWork&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $classroomService = new Google\Service\Classroom(...);
+ $courseWork = $classroomService-&gt;courses_courseWork;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Classroom/CourseWork.html"><abbr title="Google\Service\Classroom\CourseWork">CourseWork</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $courseId, <a href="../../../../Google/Service/Classroom/CourseWork.html"><abbr title="Google\Service\Classroom\CourseWork">CourseWork</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates course work. The resulting course work (and corresponding student
+submissions) are associated with the Developer Console project of the <a href="https://support.google.com/cloud/answer/6158849">OAuth
+client ID</a> used to make the
+request. Classroom API requests to modify course work and student submissions
+must be made with an OAuth client ID from the associated Developer Console
+project. This method returns the following error codes: <em> <code>PERMISSION_DENIED</code>
+if the requesting user is not permitted to access the requested course,
+create course work in the requested course, share a Drive attachment, or for
+access errors. </em> <code>INVALID_ARGUMENT</code> if the request is malformed. <em>
+<code>NOT_FOUND</code> if the requested course does not exist. </em> <code>FAILED_PRECONDITION</code>
+for the following request error: * AttachmentNotVisible (courseWork.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Classroom/ClassroomEmpty.html"><abbr title="Google\Service\Classroom\ClassroomEmpty">ClassroomEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $courseId, string $id, array $optParams = [])
+        
+                                            <p><p>Deletes a course work. This request must be made by the Developer Console
+project of the <a href="https://support.google.com/cloud/answer/6158849">OAuth client
+ID</a> used to create the
+corresponding course work item. This method returns the following error
+codes: <em> <code>PERMISSION_DENIED</code> if the requesting developer project did not
+create the corresponding course work, if the requesting user is not permitted
+to delete the requested course or for access errors. </em> <code>FAILED_PRECONDITION</code>
+if the requested course work has already been deleted. * <code>NOT_FOUND</code> if no
+course exists with the requested ID. (courseWork.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Classroom/CourseWork.html"><abbr title="Google\Service\Classroom\CourseWork">CourseWork</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $courseId, string $id, array $optParams = [])
+        
+                                            <p><p>Returns course work. This method returns the following error codes: <em>
+<code>PERMISSION_DENIED</code> if the requesting user is not permitted to access the
+requested course or course work, or for access errors. </em> <code>INVALID_ARGUMENT</code>
+if the request is malformed. * <code>NOT_FOUND</code> if the requested course or course
+work does not exist. (courseWork.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Classroom/AddOnContext.html"><abbr title="Google\Service\Classroom\AddOnContext">AddOnContext</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAddOnContext">getAddOnContext</a>(string $courseId, string $itemId, array $optParams = [])
+        
+                                            <p><p>Gets metadata for Classroom add-ons in the context of a specific post. To
+maintain the integrity of its own data and permissions model, an add-on
+should call this to validate query parameters and the requesting user's role
+whenever the add-on is opened in an
+<a href="https://developers.google.com/classroom/add-ons/get-
+started/iframes/iframes-overview">iframe</a>. This method returns the following error
+codes: <em> <code>PERMISSION_DENIED</code> for access errors. </em> <code>INVALID_ARGUMENT</code> if the
+request is malformed. * <code>NOT_FOUND</code> if one of the identified resources does
+not exist. (courseWork.getAddOnContext)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Classroom/ListCourseWorkResponse.html"><abbr title="Google\Service\Classroom\ListCourseWorkResponse">ListCourseWorkResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listCoursesCourseWork">listCoursesCourseWork</a>(string $courseId, array $optParams = [])
+        
+                                            <p><p>Returns a list of course work that the requester is permitted to view. Course
+students may only view <code>PUBLISHED</code> course work. Course teachers and domain
+administrators may view all course work. This method returns the following
+error codes: <em> <code>PERMISSION_DENIED</code> if the requesting user is not permitted to
+access the requested course or for access errors. </em> <code>INVALID_ARGUMENT</code> if the
+request is malformed. * <code>NOT_FOUND</code> if the requested course does not exist.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Classroom/CourseWork.html"><abbr title="Google\Service\Classroom\CourseWork">CourseWork</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_modifyAssignees">modifyAssignees</a>(string $courseId, string $id, <a href="../../../../Google/Service/Classroom/ModifyCourseWorkAssigneesRequest.html"><abbr title="Google\Service\Classroom\ModifyCourseWorkAssigneesRequest">ModifyCourseWorkAssigneesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Modifies assignee mode and options of a coursework. Only a teacher of the
+course that contains the coursework may call this method. This method returns
+the following error codes: <em> <code>PERMISSION_DENIED</code> if the requesting user is
+not permitted to access the requested course or course work or for access
+errors. </em> <code>INVALID_ARGUMENT</code> if the request is malformed. * <code>NOT_FOUND</code> if
+the requested course or course work does not exist.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Classroom/CourseWork.html"><abbr title="Google\Service\Classroom\CourseWork">CourseWork</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $courseId, string $id, <a href="../../../../Google/Service/Classroom/CourseWork.html"><abbr title="Google\Service\Classroom\CourseWork">CourseWork</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates one or more fields of a course work. See
+google.classroom.v1.CourseWork for details of which fields may be updated and
+who may change them. This request must be made by the Developer Console
+project of the <a href="https://support.google.com/cloud/answer/6158849">OAuth client
+ID</a> used to create the
+corresponding course work item. This method returns the following error
+codes: <em> <code>PERMISSION_DENIED</code> if the requesting developer project did not
+create the corresponding course work, if the user is not permitted to make
+the requested modification to the student submission, or for access errors. </em>
+<code>INVALID_ARGUMENT</code> if the request is malformed. <em> <code>FAILED_PRECONDITION</code> if
+the requested course work has already been deleted. </em> <code>NOT_FOUND</code> if the
+requested course or course work does not exist. (courseWork.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Classroom/Resource/CoursesCourseWork.php#L56">at line 56</a></div>
+        <code>                    <a href="../../../../Google/Service/Classroom/CourseWork.html"><abbr title="Google\Service\Classroom\CourseWork">CourseWork</abbr></a>
+    <strong>create</strong>(string $courseId, <a href="../../../../Google/Service/Classroom/CourseWork.html"><abbr title="Google\Service\Classroom\CourseWork">CourseWork</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates course work. The resulting course work (and corresponding student
+submissions) are associated with the Developer Console project of the <a href="https://support.google.com/cloud/answer/6158849">OAuth
+client ID</a> used to make the
+request. Classroom API requests to modify course work and student submissions
+must be made with an OAuth client ID from the associated Developer Console
+project. This method returns the following error codes: <em> <code>PERMISSION_DENIED</code>
+if the requesting user is not permitted to access the requested course,
+create course work in the requested course, share a Drive attachment, or for
+access errors. </em> <code>INVALID_ARGUMENT</code> if the request is malformed. <em>
+<code>NOT_FOUND</code> if the requested course does not exist. </em> <code>FAILED_PRECONDITION</code>
+for the following request error: * AttachmentNotVisible (courseWork.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$courseId</td>
+                <td><p>Identifier of the course. This identifier can be
+either the Classroom-assigned identifier or an alias.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Classroom/CourseWork.html"><abbr title="Google\Service\Classroom\CourseWork">CourseWork</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Classroom/CourseWork.html"><abbr title="Google\Service\Classroom\CourseWork">CourseWork</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Classroom/Resource/CoursesCourseWork.php#L81">at line 81</a></div>
+        <code>                    <a href="../../../../Google/Service/Classroom/ClassroomEmpty.html"><abbr title="Google\Service\Classroom\ClassroomEmpty">ClassroomEmpty</abbr></a>
+    <strong>delete</strong>(string $courseId, string $id, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a course work. This request must be made by the Developer Console
+project of the <a href="https://support.google.com/cloud/answer/6158849">OAuth client
+ID</a> used to create the
+corresponding course work item. This method returns the following error
+codes: <em> <code>PERMISSION_DENIED</code> if the requesting developer project did not
+create the corresponding course work, if the requesting user is not permitted
+to delete the requested course or for access errors. </em> <code>FAILED_PRECONDITION</code>
+if the requested course work has already been deleted. * <code>NOT_FOUND</code> if no
+course exists with the requested ID. (courseWork.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$courseId</td>
+                <td><p>Identifier of the course. This identifier can be
+either the Classroom-assigned identifier or an alias.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td><p>Identifier of the course work to delete. This identifier is
+a Classroom-assigned identifier.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Classroom/ClassroomEmpty.html"><abbr title="Google\Service\Classroom\ClassroomEmpty">ClassroomEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Classroom/Resource/CoursesCourseWork.php#L101">at line 101</a></div>
+        <code>                    <a href="../../../../Google/Service/Classroom/CourseWork.html"><abbr title="Google\Service\Classroom\CourseWork">CourseWork</abbr></a>
+    <strong>get</strong>(string $courseId, string $id, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns course work. This method returns the following error codes: <em>
+<code>PERMISSION_DENIED</code> if the requesting user is not permitted to access the
+requested course or course work, or for access errors. </em> <code>INVALID_ARGUMENT</code>
+if the request is malformed. * <code>NOT_FOUND</code> if the requested course or course
+work does not exist. (courseWork.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$courseId</td>
+                <td><p>Identifier of the course. This identifier can be
+either the Classroom-assigned identifier or an alias.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td><p>Identifier of the course work.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Classroom/CourseWork.html"><abbr title="Google\Service\Classroom\CourseWork">CourseWork</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAddOnContext">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Classroom/Resource/CoursesCourseWork.php#L138">at line 138</a></div>
+        <code>                    <a href="../../../../Google/Service/Classroom/AddOnContext.html"><abbr title="Google\Service\Classroom\AddOnContext">AddOnContext</abbr></a>
+    <strong>getAddOnContext</strong>(string $courseId, string $itemId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets metadata for Classroom add-ons in the context of a specific post. To
+maintain the integrity of its own data and permissions model, an add-on
+should call this to validate query parameters and the requesting user's role
+whenever the add-on is opened in an
+<a href="https://developers.google.com/classroom/add-ons/get-
+started/iframes/iframes-overview">iframe</a>. This method returns the following error
+codes: <em> <code>PERMISSION_DENIED</code> for access errors. </em> <code>INVALID_ARGUMENT</code> if the
+request is malformed. * <code>NOT_FOUND</code> if one of the identified resources does
+not exist. (courseWork.getAddOnContext)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$courseId</td>
+                <td><p>Required. Identifier of the course.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$itemId</td>
+                <td><p>Identifier of the announcement, courseWork, or
+courseWorkMaterial under which the attachment is attached. This field is
+required, but is not marked as such while we are migrating from post_id.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Classroom/AddOnContext.html"><abbr title="Google\Service\Classroom\AddOnContext">AddOnContext</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listCoursesCourseWork">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Classroom/Resource/CoursesCourseWork.php#L175">at line 175</a></div>
+        <code>                    <a href="../../../../Google/Service/Classroom/ListCourseWorkResponse.html"><abbr title="Google\Service\Classroom\ListCourseWorkResponse">ListCourseWorkResponse</abbr></a>
+    <strong>listCoursesCourseWork</strong>(string $courseId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns a list of course work that the requester is permitted to view. Course
+students may only view <code>PUBLISHED</code> course work. Course teachers and domain
+administrators may view all course work. This method returns the following
+error codes: <em> <code>PERMISSION_DENIED</code> if the requesting user is not permitted to
+access the requested course or for access errors. </em> <code>INVALID_ARGUMENT</code> if the
+request is malformed. * <code>NOT_FOUND</code> if the requested course does not exist.</p></p>                <p>(courseWork.listCoursesCourseWork)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$courseId</td>
+                <td><p>Identifier of the course. This identifier can be
+either the Classroom-assigned identifier or an alias.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Classroom/ListCourseWorkResponse.html"><abbr title="Google\Service\Classroom\ListCourseWorkResponse">ListCourseWorkResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modifyAssignees">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Classroom/Resource/CoursesCourseWork.php#L198">at line 198</a></div>
+        <code>                    <a href="../../../../Google/Service/Classroom/CourseWork.html"><abbr title="Google\Service\Classroom\CourseWork">CourseWork</abbr></a>
+    <strong>modifyAssignees</strong>(string $courseId, string $id, <a href="../../../../Google/Service/Classroom/ModifyCourseWorkAssigneesRequest.html"><abbr title="Google\Service\Classroom\ModifyCourseWorkAssigneesRequest">ModifyCourseWorkAssigneesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Modifies assignee mode and options of a coursework. Only a teacher of the
+course that contains the coursework may call this method. This method returns
+the following error codes: <em> <code>PERMISSION_DENIED</code> if the requesting user is
+not permitted to access the requested course or course work or for access
+errors. </em> <code>INVALID_ARGUMENT</code> if the request is malformed. * <code>NOT_FOUND</code> if
+the requested course or course work does not exist.</p></p>                <p>(courseWork.modifyAssignees)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$courseId</td>
+                <td><p>Identifier of the course. This identifier can be
+either the Classroom-assigned identifier or an alias.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td><p>Identifier of the coursework.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Classroom/ModifyCourseWorkAssigneesRequest.html"><abbr title="Google\Service\Classroom\ModifyCourseWorkAssigneesRequest">ModifyCourseWorkAssigneesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Classroom/CourseWork.html"><abbr title="Google\Service\Classroom\CourseWork">CourseWork</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Classroom/Resource/CoursesCourseWork.php#L238">at line 238</a></div>
+        <code>                    <a href="../../../../Google/Service/Classroom/CourseWork.html"><abbr title="Google\Service\Classroom\CourseWork">CourseWork</abbr></a>
+    <strong>patch</strong>(string $courseId, string $id, <a href="../../../../Google/Service/Classroom/CourseWork.html"><abbr title="Google\Service\Classroom\CourseWork">CourseWork</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates one or more fields of a course work. See
+google.classroom.v1.CourseWork for details of which fields may be updated and
+who may change them. This request must be made by the Developer Console
+project of the <a href="https://support.google.com/cloud/answer/6158849">OAuth client
+ID</a> used to create the
+corresponding course work item. This method returns the following error
+codes: <em> <code>PERMISSION_DENIED</code> if the requesting developer project did not
+create the corresponding course work, if the user is not permitted to make
+the requested modification to the student submission, or for access errors. </em>
+<code>INVALID_ARGUMENT</code> if the request is malformed. <em> <code>FAILED_PRECONDITION</code> if
+the requested course work has already been deleted. </em> <code>NOT_FOUND</code> if the
+requested course or course work does not exist. (courseWork.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$courseId</td>
+                <td><p>Identifier of the course. This identifier can be
+either the Classroom-assigned identifier or an alias.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td><p>Identifier of the course work.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Classroom/CourseWork.html"><abbr title="Google\Service\Classroom\CourseWork">CourseWork</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Classroom/CourseWork.html"><abbr title="Google\Service\Classroom\CourseWork">CourseWork</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\CloudMachineLearningEngine\Resource\ProjectsModelsVersions | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_CloudMachineLearningEngine_Resource_ProjectsModelsVersions" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CloudMachineLearningEngine.html">CloudMachineLearningEngine</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CloudMachineLearningEngine/Resource.html">Resource</a></li><li class="backslash">\</li><li>ProjectsModelsVersions</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsModelsVersions    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsModelsVersions</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudMachineLearningEngine/Resource/ProjectsModelsVersions.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;versions&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $mlService = new Google\Service\CloudMachineLearningEngine(...);
+ $versions = $mlService-&gt;projects_models_versions;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleLongrunningOperation.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleCloudMlV1Version.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Version">GoogleCloudMlV1Version</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a new version of a model from a trained TensorFlow model. If the
+version created in the cloud by this call is the first deployed version of
+the specified model, it will be made the default version of the model. When
+you add a version to a model that already has one or more versions, the
+default version does not automatically change. If you want a new version to
+be the default, you must call projects.models.versions.setDefault.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleLongrunningOperation.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes a model version. Each model can have multiple versions deployed and
+in use at any given time. Use this method to remove a single version. Note:
+You cannot delete the version that is set as the default version of the model
+unless it is the only remaining version. (versions.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleCloudMlV1Version.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Version">GoogleCloudMlV1Version</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets information about a model version. Models can have multiple versions.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleCloudMlV1ListVersionsResponse.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListVersionsResponse">GoogleCloudMlV1ListVersionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsModelsVersions">listProjectsModelsVersions</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Gets basic information about all the versions of a model. If you expect that
+a model has many versions, or if you need to handle only a limited number of
+results at a time, you can request that the list be retrieved in batches
+(called pages). If there are no versions that match the request parameters,
+the list request returns an empty response body: {}.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleLongrunningOperation.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleCloudMlV1Version.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Version">GoogleCloudMlV1Version</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the specified Version resource. Currently the only update-able fields
+are <code>description</code>, <code>requestLoggingConfig</code>, <code>autoScaling.minNodes</code>, and
+<code>manualScaling.nodes</code>. (versions.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleCloudMlV1Version.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Version">GoogleCloudMlV1Version</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDefault">setDefault</a>(string $name, <a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleCloudMlV1SetDefaultVersionRequest.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1SetDefaultVersionRequest">GoogleCloudMlV1SetDefaultVersionRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Designates a version to be the default for the model. The default version is
+used for prediction requests made against the model that don't specify a
+version. The first version to be created for a model is automatically set as
+the default. You must make any subsequent changes to the default version
+setting manually using this method. (versions.setDefault)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudMachineLearningEngine/Resource/ProjectsModelsVersions.php#L50">at line 50</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleLongrunningOperation.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleCloudMlV1Version.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Version">GoogleCloudMlV1Version</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a new version of a model from a trained TensorFlow model. If the
+version created in the cloud by this call is the first deployed version of
+the specified model, it will be made the default version of the model. When
+you add a version to a model that already has one or more versions, the
+default version does not automatically change. If you want a new version to
+be the default, you must call projects.models.versions.setDefault.</p></p>                <p>(versions.create)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The name of the model.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleCloudMlV1Version.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Version">GoogleCloudMlV1Version</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleLongrunningOperation.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudMachineLearningEngine/Resource/ProjectsModelsVersions.php#L68">at line 68</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleLongrunningOperation.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a model version. Each model can have multiple versions deployed and
+in use at any given time. Use this method to remove a single version. Note:
+You cannot delete the version that is set as the default version of the model
+unless it is the only remaining version. (versions.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the version. You can get the names
+of all the versions of a model by calling projects.models.versions.list.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleLongrunningOperation.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudMachineLearningEngine/Resource/ProjectsModelsVersions.php#L84">at line 84</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleCloudMlV1Version.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Version">GoogleCloudMlV1Version</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets information about a model version. Models can have multiple versions.</p></p>                <p><p>You can call projects.models.versions.list to get the same information that
+this method returns for all of the versions of a model. (versions.get)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the version.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleCloudMlV1Version.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Version">GoogleCloudMlV1Version</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsModelsVersions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudMachineLearningEngine/Resource/ProjectsModelsVersions.php#L114">at line 114</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleCloudMlV1ListVersionsResponse.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListVersionsResponse">GoogleCloudMlV1ListVersionsResponse</abbr></a>
+    <strong>listProjectsModelsVersions</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets basic information about all the versions of a model. If you expect that
+a model has many versions, or if you need to handle only a limited number of
+results at a time, you can request that the list be retrieved in batches
+(called pages). If there are no versions that match the request parameters,
+the list request returns an empty response body: {}.</p></p>                <p>(versions.listProjectsModelsVersions)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The name of the model for which to list the
+version.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleCloudMlV1ListVersionsResponse.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListVersionsResponse">GoogleCloudMlV1ListVersionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudMachineLearningEngine/Resource/ProjectsModelsVersions.php#L142">at line 142</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleLongrunningOperation.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleCloudMlV1Version.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Version">GoogleCloudMlV1Version</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the specified Version resource. Currently the only update-able fields
+are <code>description</code>, <code>requestLoggingConfig</code>, <code>autoScaling.minNodes</code>, and
+<code>manualScaling.nodes</code>. (versions.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the model.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleCloudMlV1Version.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Version">GoogleCloudMlV1Version</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleLongrunningOperation.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefault">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudMachineLearningEngine/Resource/ProjectsModelsVersions.php#L163">at line 163</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleCloudMlV1Version.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Version">GoogleCloudMlV1Version</abbr></a>
+    <strong>setDefault</strong>(string $name, <a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleCloudMlV1SetDefaultVersionRequest.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1SetDefaultVersionRequest">GoogleCloudMlV1SetDefaultVersionRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Designates a version to be the default for the model. The default version is
+used for prediction requests made against the model that don't specify a
+version. The first version to be created for a model is automatically set as
+the default. You must make any subsequent changes to the default version
+setting manually using this method. (versions.setDefault)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the version to make the default for
+the model. You can get the names of all the versions of a model by calling
+projects.models.versions.list.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleCloudMlV1SetDefaultVersionRequest.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1SetDefaultVersionRequest">GoogleCloudMlV1SetDefaultVersionRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudMachineLearningEngine/GoogleCloudMlV1Version.html"><abbr title="Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Version">GoogleCloudMlV1Version</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

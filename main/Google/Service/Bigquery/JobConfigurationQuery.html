@@ -1,0 +1,2885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Bigquery\JobConfigurationQuery | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../doctum.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Bigquery_JobConfigurationQuery" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../Google/Service/Bigquery.html">Bigquery</a></li><li class="backslash">\</li><li>JobConfigurationQuery</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>JobConfigurationQuery    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>JobConfigurationQuery</strong>        extends <abbr title="Google\Collection">Collection</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_collection_key">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$collection_key</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_allowLargeResults">
+                                                                                bool
+                                                                                
+                                    </td>
+                <td>$allowLargeResults</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_clusteringType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$clusteringType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_clusteringDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$clusteringDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_connectionPropertiesType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$connectionPropertiesType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_connectionPropertiesDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$connectionPropertiesDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_continuous">
+                                                                                bool
+                                                                                
+                                    </td>
+                <td>$continuous</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_createDisposition">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$createDisposition</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_createSession">
+                                                                                bool
+                                                                                
+                                    </td>
+                <td>$createSession</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_defaultDatasetType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$defaultDatasetType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_defaultDatasetDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$defaultDatasetDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_destinationEncryptionConfigurationType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$destinationEncryptionConfigurationType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_destinationEncryptionConfigurationDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$destinationEncryptionConfigurationDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_destinationTableType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$destinationTableType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_destinationTableDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$destinationTableDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_flattenResults">
+                                                                                bool
+                                                                                
+                                    </td>
+                <td>$flattenResults</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_maximumBillingTier">
+                                                                                int
+                                                                                
+                                    </td>
+                <td>$maximumBillingTier</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_maximumBytesBilled">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$maximumBytesBilled</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parameterMode">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$parameterMode</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_preserveNulls">
+                                                                                bool
+                                                                                
+                                    </td>
+                <td>$preserveNulls</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_priority">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$priority</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_query">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$query</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_queryParametersType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$queryParametersType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_queryParametersDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$queryParametersDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_rangePartitioningType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$rangePartitioningType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_rangePartitioningDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$rangePartitioningDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_schemaUpdateOptions">
+                                                                                string[]
+                                                                                
+                                    </td>
+                <td>$schemaUpdateOptions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_scriptOptionsType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$scriptOptionsType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_scriptOptionsDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$scriptOptionsDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_systemVariablesType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$systemVariablesType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_systemVariablesDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$systemVariablesDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tableDefinitionsType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$tableDefinitionsType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tableDefinitionsDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$tableDefinitionsDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_timePartitioningType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$timePartitioningType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_timePartitioningDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$timePartitioningDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_useLegacySql">
+                                                                                bool
+                                                                                
+                                    </td>
+                <td>$useLegacySql</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_useQueryCache">
+                                                                                bool
+                                                                                
+                                    </td>
+                <td>$useQueryCache</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_userDefinedFunctionResourcesType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$userDefinedFunctionResourcesType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_userDefinedFunctionResourcesDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$userDefinedFunctionResourcesDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_writeDisposition">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$writeDisposition</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setAllowLargeResults">setAllowLargeResults</a>($allowLargeResults)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAllowLargeResults">getAllowLargeResults</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setClustering">setClustering</a>(<a href="../../../Google/Service/Bigquery/Clustering.html"><abbr title="Google\Service\Bigquery\Clustering">Clustering</abbr></a> $clustering)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Bigquery/Clustering.html"><abbr title="Google\Service\Bigquery\Clustering">Clustering</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getClustering">getClustering</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setConnectionProperties">setConnectionProperties</a>($connectionProperties)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Bigquery/ConnectionProperty.html"><abbr title="Google\Service\Bigquery\ConnectionProperty">ConnectionProperty</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getConnectionProperties">getConnectionProperties</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setContinuous">setContinuous</a>($continuous)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getContinuous">getContinuous</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setCreateDisposition">setCreateDisposition</a>($createDisposition)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCreateDisposition">getCreateDisposition</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setCreateSession">setCreateSession</a>($createSession)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCreateSession">getCreateSession</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDefaultDataset">setDefaultDataset</a>(<a href="../../../Google/Service/Bigquery/DatasetReference.html"><abbr title="Google\Service\Bigquery\DatasetReference">DatasetReference</abbr></a> $defaultDataset)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Bigquery/DatasetReference.html"><abbr title="Google\Service\Bigquery\DatasetReference">DatasetReference</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDefaultDataset">getDefaultDataset</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDestinationEncryptionConfiguration">setDestinationEncryptionConfiguration</a>(<a href="../../../Google/Service/Bigquery/EncryptionConfiguration.html"><abbr title="Google\Service\Bigquery\EncryptionConfiguration">EncryptionConfiguration</abbr></a> $destinationEncryptionConfiguration)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Bigquery/EncryptionConfiguration.html"><abbr title="Google\Service\Bigquery\EncryptionConfiguration">EncryptionConfiguration</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDestinationEncryptionConfiguration">getDestinationEncryptionConfiguration</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDestinationTable">setDestinationTable</a>(<a href="../../../Google/Service/Bigquery/TableReference.html"><abbr title="Google\Service\Bigquery\TableReference">TableReference</abbr></a> $destinationTable)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Bigquery/TableReference.html"><abbr title="Google\Service\Bigquery\TableReference">TableReference</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDestinationTable">getDestinationTable</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setFlattenResults">setFlattenResults</a>($flattenResults)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFlattenResults">getFlattenResults</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMaximumBillingTier">setMaximumBillingTier</a>($maximumBillingTier)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMaximumBillingTier">getMaximumBillingTier</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMaximumBytesBilled">setMaximumBytesBilled</a>($maximumBytesBilled)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMaximumBytesBilled">getMaximumBytesBilled</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setParameterMode">setParameterMode</a>($parameterMode)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getParameterMode">getParameterMode</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setPreserveNulls">setPreserveNulls</a>($preserveNulls)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPreserveNulls">getPreserveNulls</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setPriority">setPriority</a>($priority)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPriority">getPriority</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setQuery">setQuery</a>($query)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getQuery">getQuery</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setQueryParameters">setQueryParameters</a>($queryParameters)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Bigquery/QueryParameter.html"><abbr title="Google\Service\Bigquery\QueryParameter">QueryParameter</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getQueryParameters">getQueryParameters</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setRangePartitioning">setRangePartitioning</a>(<a href="../../../Google/Service/Bigquery/RangePartitioning.html"><abbr title="Google\Service\Bigquery\RangePartitioning">RangePartitioning</abbr></a> $rangePartitioning)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Bigquery/RangePartitioning.html"><abbr title="Google\Service\Bigquery\RangePartitioning">RangePartitioning</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRangePartitioning">getRangePartitioning</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setSchemaUpdateOptions">setSchemaUpdateOptions</a>($schemaUpdateOptions)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSchemaUpdateOptions">getSchemaUpdateOptions</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setScriptOptions">setScriptOptions</a>(<a href="../../../Google/Service/Bigquery/ScriptOptions.html"><abbr title="Google\Service\Bigquery\ScriptOptions">ScriptOptions</abbr></a> $scriptOptions)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Bigquery/ScriptOptions.html"><abbr title="Google\Service\Bigquery\ScriptOptions">ScriptOptions</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getScriptOptions">getScriptOptions</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setSystemVariables">setSystemVariables</a>(<a href="../../../Google/Service/Bigquery/SystemVariables.html"><abbr title="Google\Service\Bigquery\SystemVariables">SystemVariables</abbr></a> $systemVariables)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Bigquery/SystemVariables.html"><abbr title="Google\Service\Bigquery\SystemVariables">SystemVariables</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSystemVariables">getSystemVariables</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setTableDefinitions">setTableDefinitions</a>($tableDefinitions)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Bigquery/ExternalDataConfiguration.html"><abbr title="Google\Service\Bigquery\ExternalDataConfiguration">ExternalDataConfiguration</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getTableDefinitions">getTableDefinitions</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setTimePartitioning">setTimePartitioning</a>(<a href="../../../Google/Service/Bigquery/TimePartitioning.html"><abbr title="Google\Service\Bigquery\TimePartitioning">TimePartitioning</abbr></a> $timePartitioning)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Bigquery/TimePartitioning.html"><abbr title="Google\Service\Bigquery\TimePartitioning">TimePartitioning</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getTimePartitioning">getTimePartitioning</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setUseLegacySql">setUseLegacySql</a>($useLegacySql)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getUseLegacySql">getUseLegacySql</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setUseQueryCache">setUseQueryCache</a>($useQueryCache)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getUseQueryCache">getUseQueryCache</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setUserDefinedFunctionResources">setUserDefinedFunctionResources</a>($userDefinedFunctionResources)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Bigquery/UserDefinedFunctionResource.html"><abbr title="Google\Service\Bigquery\UserDefinedFunctionResource">UserDefinedFunctionResource</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getUserDefinedFunctionResources">getUserDefinedFunctionResources</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setWriteDisposition">setWriteDisposition</a>($writeDisposition)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getWriteDisposition">getWriteDisposition</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setAllowLargeResults">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L111">at line 111</a></div>
+        <code>                    
+    <strong>setAllowLargeResults</strong>($allowLargeResults)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$allowLargeResults</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAllowLargeResults">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L118">at line 118</a></div>
+        <code>                    bool
+    <strong>getAllowLargeResults</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setClustering">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L125">at line 125</a></div>
+        <code>                    
+    <strong>setClustering</strong>(<a href="../../../Google/Service/Bigquery/Clustering.html"><abbr title="Google\Service\Bigquery\Clustering">Clustering</abbr></a> $clustering)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Bigquery/Clustering.html"><abbr title="Google\Service\Bigquery\Clustering">Clustering</abbr></a></td>
+                <td>$clustering</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getClustering">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L132">at line 132</a></div>
+        <code>                    <a href="../../../Google/Service/Bigquery/Clustering.html"><abbr title="Google\Service\Bigquery\Clustering">Clustering</abbr></a>
+    <strong>getClustering</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Bigquery/Clustering.html"><abbr title="Google\Service\Bigquery\Clustering">Clustering</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setConnectionProperties">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L139">at line 139</a></div>
+        <code>                    
+    <strong>setConnectionProperties</strong>($connectionProperties)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$connectionProperties</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConnectionProperties">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L146">at line 146</a></div>
+        <code>                    <a href="../../../Google/Service/Bigquery/ConnectionProperty.html"><abbr title="Google\Service\Bigquery\ConnectionProperty">ConnectionProperty</abbr></a>[]
+    <strong>getConnectionProperties</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Bigquery/ConnectionProperty.html"><abbr title="Google\Service\Bigquery\ConnectionProperty">ConnectionProperty</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContinuous">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L153">at line 153</a></div>
+        <code>                    
+    <strong>setContinuous</strong>($continuous)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$continuous</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContinuous">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L160">at line 160</a></div>
+        <code>                    bool
+    <strong>getContinuous</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCreateDisposition">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L167">at line 167</a></div>
+        <code>                    
+    <strong>setCreateDisposition</strong>($createDisposition)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$createDisposition</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCreateDisposition">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L174">at line 174</a></div>
+        <code>                    string
+    <strong>getCreateDisposition</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCreateSession">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L181">at line 181</a></div>
+        <code>                    
+    <strong>setCreateSession</strong>($createSession)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$createSession</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCreateSession">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L188">at line 188</a></div>
+        <code>                    bool
+    <strong>getCreateSession</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaultDataset">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L195">at line 195</a></div>
+        <code>                    
+    <strong>setDefaultDataset</strong>(<a href="../../../Google/Service/Bigquery/DatasetReference.html"><abbr title="Google\Service\Bigquery\DatasetReference">DatasetReference</abbr></a> $defaultDataset)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Bigquery/DatasetReference.html"><abbr title="Google\Service\Bigquery\DatasetReference">DatasetReference</abbr></a></td>
+                <td>$defaultDataset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaultDataset">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L202">at line 202</a></div>
+        <code>                    <a href="../../../Google/Service/Bigquery/DatasetReference.html"><abbr title="Google\Service\Bigquery\DatasetReference">DatasetReference</abbr></a>
+    <strong>getDefaultDataset</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Bigquery/DatasetReference.html"><abbr title="Google\Service\Bigquery\DatasetReference">DatasetReference</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDestinationEncryptionConfiguration">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L209">at line 209</a></div>
+        <code>                    
+    <strong>setDestinationEncryptionConfiguration</strong>(<a href="../../../Google/Service/Bigquery/EncryptionConfiguration.html"><abbr title="Google\Service\Bigquery\EncryptionConfiguration">EncryptionConfiguration</abbr></a> $destinationEncryptionConfiguration)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Bigquery/EncryptionConfiguration.html"><abbr title="Google\Service\Bigquery\EncryptionConfiguration">EncryptionConfiguration</abbr></a></td>
+                <td>$destinationEncryptionConfiguration</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDestinationEncryptionConfiguration">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L216">at line 216</a></div>
+        <code>                    <a href="../../../Google/Service/Bigquery/EncryptionConfiguration.html"><abbr title="Google\Service\Bigquery\EncryptionConfiguration">EncryptionConfiguration</abbr></a>
+    <strong>getDestinationEncryptionConfiguration</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Bigquery/EncryptionConfiguration.html"><abbr title="Google\Service\Bigquery\EncryptionConfiguration">EncryptionConfiguration</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDestinationTable">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L223">at line 223</a></div>
+        <code>                    
+    <strong>setDestinationTable</strong>(<a href="../../../Google/Service/Bigquery/TableReference.html"><abbr title="Google\Service\Bigquery\TableReference">TableReference</abbr></a> $destinationTable)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Bigquery/TableReference.html"><abbr title="Google\Service\Bigquery\TableReference">TableReference</abbr></a></td>
+                <td>$destinationTable</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDestinationTable">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L230">at line 230</a></div>
+        <code>                    <a href="../../../Google/Service/Bigquery/TableReference.html"><abbr title="Google\Service\Bigquery\TableReference">TableReference</abbr></a>
+    <strong>getDestinationTable</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Bigquery/TableReference.html"><abbr title="Google\Service\Bigquery\TableReference">TableReference</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFlattenResults">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L237">at line 237</a></div>
+        <code>                    
+    <strong>setFlattenResults</strong>($flattenResults)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$flattenResults</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFlattenResults">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L244">at line 244</a></div>
+        <code>                    bool
+    <strong>getFlattenResults</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMaximumBillingTier">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L251">at line 251</a></div>
+        <code>                    
+    <strong>setMaximumBillingTier</strong>($maximumBillingTier)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$maximumBillingTier</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMaximumBillingTier">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L258">at line 258</a></div>
+        <code>                    int
+    <strong>getMaximumBillingTier</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMaximumBytesBilled">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L265">at line 265</a></div>
+        <code>                    
+    <strong>setMaximumBytesBilled</strong>($maximumBytesBilled)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$maximumBytesBilled</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMaximumBytesBilled">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L272">at line 272</a></div>
+        <code>                    string
+    <strong>getMaximumBytesBilled</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setParameterMode">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L279">at line 279</a></div>
+        <code>                    
+    <strong>setParameterMode</strong>($parameterMode)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$parameterMode</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParameterMode">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L286">at line 286</a></div>
+        <code>                    string
+    <strong>getParameterMode</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPreserveNulls">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L293">at line 293</a></div>
+        <code>                    
+    <strong>setPreserveNulls</strong>($preserveNulls)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$preserveNulls</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPreserveNulls">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L300">at line 300</a></div>
+        <code>                    bool
+    <strong>getPreserveNulls</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPriority">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L307">at line 307</a></div>
+        <code>                    
+    <strong>setPriority</strong>($priority)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$priority</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPriority">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L314">at line 314</a></div>
+        <code>                    string
+    <strong>getPriority</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setQuery">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L321">at line 321</a></div>
+        <code>                    
+    <strong>setQuery</strong>($query)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getQuery">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L328">at line 328</a></div>
+        <code>                    string
+    <strong>getQuery</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setQueryParameters">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L335">at line 335</a></div>
+        <code>                    
+    <strong>setQueryParameters</strong>($queryParameters)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$queryParameters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getQueryParameters">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L342">at line 342</a></div>
+        <code>                    <a href="../../../Google/Service/Bigquery/QueryParameter.html"><abbr title="Google\Service\Bigquery\QueryParameter">QueryParameter</abbr></a>[]
+    <strong>getQueryParameters</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Bigquery/QueryParameter.html"><abbr title="Google\Service\Bigquery\QueryParameter">QueryParameter</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRangePartitioning">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L349">at line 349</a></div>
+        <code>                    
+    <strong>setRangePartitioning</strong>(<a href="../../../Google/Service/Bigquery/RangePartitioning.html"><abbr title="Google\Service\Bigquery\RangePartitioning">RangePartitioning</abbr></a> $rangePartitioning)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Bigquery/RangePartitioning.html"><abbr title="Google\Service\Bigquery\RangePartitioning">RangePartitioning</abbr></a></td>
+                <td>$rangePartitioning</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRangePartitioning">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L356">at line 356</a></div>
+        <code>                    <a href="../../../Google/Service/Bigquery/RangePartitioning.html"><abbr title="Google\Service\Bigquery\RangePartitioning">RangePartitioning</abbr></a>
+    <strong>getRangePartitioning</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Bigquery/RangePartitioning.html"><abbr title="Google\Service\Bigquery\RangePartitioning">RangePartitioning</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSchemaUpdateOptions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L363">at line 363</a></div>
+        <code>                    
+    <strong>setSchemaUpdateOptions</strong>($schemaUpdateOptions)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$schemaUpdateOptions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSchemaUpdateOptions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L370">at line 370</a></div>
+        <code>                    string[]
+    <strong>getSchemaUpdateOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setScriptOptions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L377">at line 377</a></div>
+        <code>                    
+    <strong>setScriptOptions</strong>(<a href="../../../Google/Service/Bigquery/ScriptOptions.html"><abbr title="Google\Service\Bigquery\ScriptOptions">ScriptOptions</abbr></a> $scriptOptions)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Bigquery/ScriptOptions.html"><abbr title="Google\Service\Bigquery\ScriptOptions">ScriptOptions</abbr></a></td>
+                <td>$scriptOptions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getScriptOptions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L384">at line 384</a></div>
+        <code>                    <a href="../../../Google/Service/Bigquery/ScriptOptions.html"><abbr title="Google\Service\Bigquery\ScriptOptions">ScriptOptions</abbr></a>
+    <strong>getScriptOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Bigquery/ScriptOptions.html"><abbr title="Google\Service\Bigquery\ScriptOptions">ScriptOptions</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSystemVariables">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L391">at line 391</a></div>
+        <code>                    
+    <strong>setSystemVariables</strong>(<a href="../../../Google/Service/Bigquery/SystemVariables.html"><abbr title="Google\Service\Bigquery\SystemVariables">SystemVariables</abbr></a> $systemVariables)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Bigquery/SystemVariables.html"><abbr title="Google\Service\Bigquery\SystemVariables">SystemVariables</abbr></a></td>
+                <td>$systemVariables</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSystemVariables">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L398">at line 398</a></div>
+        <code>                    <a href="../../../Google/Service/Bigquery/SystemVariables.html"><abbr title="Google\Service\Bigquery\SystemVariables">SystemVariables</abbr></a>
+    <strong>getSystemVariables</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Bigquery/SystemVariables.html"><abbr title="Google\Service\Bigquery\SystemVariables">SystemVariables</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTableDefinitions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L405">at line 405</a></div>
+        <code>                    
+    <strong>setTableDefinitions</strong>($tableDefinitions)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$tableDefinitions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTableDefinitions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L412">at line 412</a></div>
+        <code>                    <a href="../../../Google/Service/Bigquery/ExternalDataConfiguration.html"><abbr title="Google\Service\Bigquery\ExternalDataConfiguration">ExternalDataConfiguration</abbr></a>[]
+    <strong>getTableDefinitions</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Bigquery/ExternalDataConfiguration.html"><abbr title="Google\Service\Bigquery\ExternalDataConfiguration">ExternalDataConfiguration</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTimePartitioning">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L419">at line 419</a></div>
+        <code>                    
+    <strong>setTimePartitioning</strong>(<a href="../../../Google/Service/Bigquery/TimePartitioning.html"><abbr title="Google\Service\Bigquery\TimePartitioning">TimePartitioning</abbr></a> $timePartitioning)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Bigquery/TimePartitioning.html"><abbr title="Google\Service\Bigquery\TimePartitioning">TimePartitioning</abbr></a></td>
+                <td>$timePartitioning</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTimePartitioning">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L426">at line 426</a></div>
+        <code>                    <a href="../../../Google/Service/Bigquery/TimePartitioning.html"><abbr title="Google\Service\Bigquery\TimePartitioning">TimePartitioning</abbr></a>
+    <strong>getTimePartitioning</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Bigquery/TimePartitioning.html"><abbr title="Google\Service\Bigquery\TimePartitioning">TimePartitioning</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUseLegacySql">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L433">at line 433</a></div>
+        <code>                    
+    <strong>setUseLegacySql</strong>($useLegacySql)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$useLegacySql</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUseLegacySql">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L440">at line 440</a></div>
+        <code>                    bool
+    <strong>getUseLegacySql</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUseQueryCache">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L447">at line 447</a></div>
+        <code>                    
+    <strong>setUseQueryCache</strong>($useQueryCache)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$useQueryCache</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUseQueryCache">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L454">at line 454</a></div>
+        <code>                    bool
+    <strong>getUseQueryCache</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUserDefinedFunctionResources">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L461">at line 461</a></div>
+        <code>                    
+    <strong>setUserDefinedFunctionResources</strong>($userDefinedFunctionResources)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$userDefinedFunctionResources</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUserDefinedFunctionResources">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L468">at line 468</a></div>
+        <code>                    <a href="../../../Google/Service/Bigquery/UserDefinedFunctionResource.html"><abbr title="Google\Service\Bigquery\UserDefinedFunctionResource">UserDefinedFunctionResource</abbr></a>[]
+    <strong>getUserDefinedFunctionResources</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Bigquery/UserDefinedFunctionResource.html"><abbr title="Google\Service\Bigquery\UserDefinedFunctionResource">UserDefinedFunctionResource</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setWriteDisposition">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L475">at line 475</a></div>
+        <code>                    
+    <strong>setWriteDisposition</strong>($writeDisposition)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$writeDisposition</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getWriteDisposition">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Bigquery/JobConfigurationQuery.php#L482">at line 482</a></div>
+        <code>                    string
+    <strong>getWriteDisposition</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

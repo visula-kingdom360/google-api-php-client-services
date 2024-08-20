@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Vault\Resource\MattersHolds | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Vault_Resource_MattersHolds" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Vault.html">Vault</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Vault/Resource.html">Resource</a></li><li class="backslash">\</li><li>MattersHolds</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>MattersHolds    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>MattersHolds</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Vault/Resource/MattersHolds.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;holds&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $vaultService = new Google\Service\Vault(...);
+ $holds = $vaultService-&gt;matters_holds;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Vault/AddHeldAccountsResponse.html"><abbr title="Google\Service\Vault\AddHeldAccountsResponse">AddHeldAccountsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addHeldAccounts">addHeldAccounts</a>(string $matterId, string $holdId, <a href="../../../../Google/Service/Vault/AddHeldAccountsRequest.html"><abbr title="Google\Service\Vault\AddHeldAccountsRequest">AddHeldAccountsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Adds accounts to a hold. Returns a list of accounts that have been
+successfully added. Accounts can be added only to an existing account-based
+hold. (holds.addHeldAccounts)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Vault/Hold.html"><abbr title="Google\Service\Vault\Hold">Hold</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $matterId, <a href="../../../../Google/Service/Vault/Hold.html"><abbr title="Google\Service\Vault\Hold">Hold</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a hold in the specified matter. (holds.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Vault/VaultEmpty.html"><abbr title="Google\Service\Vault\VaultEmpty">VaultEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $matterId, string $holdId, array $optParams = [])
+        
+                                            <p><p>Removes the specified hold and releases the accounts or organizational unit
+covered by the hold. If the data is not preserved by another hold or
+retention rule, it might be purged. (holds.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Vault/Hold.html"><abbr title="Google\Service\Vault\Hold">Hold</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $matterId, string $holdId, array $optParams = [])
+        
+                                            <p><p>Gets the specified hold. (holds.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Vault/ListHoldsResponse.html"><abbr title="Google\Service\Vault\ListHoldsResponse">ListHoldsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listMattersHolds">listMattersHolds</a>(string $matterId, array $optParams = [])
+        
+                                            <p><p>Lists the holds in a matter. (holds.listMattersHolds)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Vault/RemoveHeldAccountsResponse.html"><abbr title="Google\Service\Vault\RemoveHeldAccountsResponse">RemoveHeldAccountsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_removeHeldAccounts">removeHeldAccounts</a>(string $matterId, string $holdId, <a href="../../../../Google/Service/Vault/RemoveHeldAccountsRequest.html"><abbr title="Google\Service\Vault\RemoveHeldAccountsRequest">RemoveHeldAccountsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Removes the specified accounts from a hold. Returns a list of statuses in the
+same order as the request. (holds.removeHeldAccounts)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Vault/Hold.html"><abbr title="Google\Service\Vault\Hold">Hold</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $matterId, string $holdId, <a href="../../../../Google/Service/Vault/Hold.html"><abbr title="Google\Service\Vault\Hold">Hold</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the scope (organizational unit or accounts) and query parameters of a
+hold. You cannot add accounts to a hold that covers an organizational unit,
+nor can you add organizational units to a hold that covers individual
+accounts. If you try, the unsupported values are ignored. (holds.update)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_addHeldAccounts">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Vault/Resource/MattersHolds.php#L50">at line 50</a></div>
+        <code>                    <a href="../../../../Google/Service/Vault/AddHeldAccountsResponse.html"><abbr title="Google\Service\Vault\AddHeldAccountsResponse">AddHeldAccountsResponse</abbr></a>
+    <strong>addHeldAccounts</strong>(string $matterId, string $holdId, <a href="../../../../Google/Service/Vault/AddHeldAccountsRequest.html"><abbr title="Google\Service\Vault\AddHeldAccountsRequest">AddHeldAccountsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Adds accounts to a hold. Returns a list of accounts that have been
+successfully added. Accounts can be added only to an existing account-based
+hold. (holds.addHeldAccounts)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$matterId</td>
+                <td><p>The matter ID.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$holdId</td>
+                <td><p>The hold ID.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Vault/AddHeldAccountsRequest.html"><abbr title="Google\Service\Vault\AddHeldAccountsRequest">AddHeldAccountsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Vault/AddHeldAccountsResponse.html"><abbr title="Google\Service\Vault\AddHeldAccountsResponse">AddHeldAccountsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Vault/Resource/MattersHolds.php#L65">at line 65</a></div>
+        <code>                    <a href="../../../../Google/Service/Vault/Hold.html"><abbr title="Google\Service\Vault\Hold">Hold</abbr></a>
+    <strong>create</strong>(string $matterId, <a href="../../../../Google/Service/Vault/Hold.html"><abbr title="Google\Service\Vault\Hold">Hold</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a hold in the specified matter. (holds.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$matterId</td>
+                <td><p>The matter ID.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Vault/Hold.html"><abbr title="Google\Service\Vault\Hold">Hold</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Vault/Hold.html"><abbr title="Google\Service\Vault\Hold">Hold</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Vault/Resource/MattersHolds.php#L82">at line 82</a></div>
+        <code>                    <a href="../../../../Google/Service/Vault/VaultEmpty.html"><abbr title="Google\Service\Vault\VaultEmpty">VaultEmpty</abbr></a>
+    <strong>delete</strong>(string $matterId, string $holdId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Removes the specified hold and releases the accounts or organizational unit
+covered by the hold. If the data is not preserved by another hold or
+retention rule, it might be purged. (holds.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$matterId</td>
+                <td><p>The matter ID.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$holdId</td>
+                <td><p>The hold ID.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Vault/VaultEmpty.html"><abbr title="Google\Service\Vault\VaultEmpty">VaultEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Vault/Resource/MattersHolds.php#L99">at line 99</a></div>
+        <code>                    <a href="../../../../Google/Service/Vault/Hold.html"><abbr title="Google\Service\Vault\Hold">Hold</abbr></a>
+    <strong>get</strong>(string $matterId, string $holdId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the specified hold. (holds.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$matterId</td>
+                <td><p>The matter ID.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$holdId</td>
+                <td><p>The hold ID.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Vault/Hold.html"><abbr title="Google\Service\Vault\Hold">Hold</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listMattersHolds">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Vault/Resource/MattersHolds.php#L120">at line 120</a></div>
+        <code>                    <a href="../../../../Google/Service/Vault/ListHoldsResponse.html"><abbr title="Google\Service\Vault\ListHoldsResponse">ListHoldsResponse</abbr></a>
+    <strong>listMattersHolds</strong>(string $matterId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists the holds in a matter. (holds.listMattersHolds)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$matterId</td>
+                <td><p>The matter ID.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Vault/ListHoldsResponse.html"><abbr title="Google\Service\Vault\ListHoldsResponse">ListHoldsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeHeldAccounts">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Vault/Resource/MattersHolds.php#L137">at line 137</a></div>
+        <code>                    <a href="../../../../Google/Service/Vault/RemoveHeldAccountsResponse.html"><abbr title="Google\Service\Vault\RemoveHeldAccountsResponse">RemoveHeldAccountsResponse</abbr></a>
+    <strong>removeHeldAccounts</strong>(string $matterId, string $holdId, <a href="../../../../Google/Service/Vault/RemoveHeldAccountsRequest.html"><abbr title="Google\Service\Vault\RemoveHeldAccountsRequest">RemoveHeldAccountsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Removes the specified accounts from a hold. Returns a list of statuses in the
+same order as the request. (holds.removeHeldAccounts)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$matterId</td>
+                <td><p>The matter ID.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$holdId</td>
+                <td><p>The hold ID.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Vault/RemoveHeldAccountsRequest.html"><abbr title="Google\Service\Vault\RemoveHeldAccountsRequest">RemoveHeldAccountsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Vault/RemoveHeldAccountsResponse.html"><abbr title="Google\Service\Vault\RemoveHeldAccountsResponse">RemoveHeldAccountsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Vault/Resource/MattersHolds.php#L156">at line 156</a></div>
+        <code>                    <a href="../../../../Google/Service/Vault/Hold.html"><abbr title="Google\Service\Vault\Hold">Hold</abbr></a>
+    <strong>update</strong>(string $matterId, string $holdId, <a href="../../../../Google/Service/Vault/Hold.html"><abbr title="Google\Service\Vault\Hold">Hold</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the scope (organizational unit or accounts) and query parameters of a
+hold. You cannot add accounts to a hold that covers an organizational unit,
+nor can you add organizational units to a hold that covers individual
+accounts. If you try, the unsupported values are ignored. (holds.update)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$matterId</td>
+                <td><p>The matter ID.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$holdId</td>
+                <td><p>The ID of the hold.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Vault/Hold.html"><abbr title="Google\Service\Vault\Hold">Hold</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Vault/Hold.html"><abbr title="Google\Service\Vault\Hold">Hold</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\CloudBuild\Resource\ProjectsLocationsBuilds | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_CloudBuild_Resource_ProjectsLocationsBuilds" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CloudBuild.html">CloudBuild</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CloudBuild/Resource.html">Resource</a></li><li class="backslash">\</li><li>ProjectsLocationsBuilds</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsLocationsBuilds    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsLocationsBuilds</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudBuild/Resource/ProjectsLocationsBuilds.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;builds&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $cloudbuildService = new Google\Service\CloudBuild(...);
+ $builds = $cloudbuildService-&gt;projects_locations_builds;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudBuild/Operation.html"><abbr title="Google\Service\CloudBuild\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_approve">approve</a>(string $name, <a href="../../../../Google/Service/CloudBuild/ApproveBuildRequest.html"><abbr title="Google\Service\CloudBuild\ApproveBuildRequest">ApproveBuildRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Approves or rejects a pending build. If approved, the returned LRO will be
+analogous to the LRO returned from a CreateBuild call. If rejected, the
+returned LRO will be immediately done. (builds.approve)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudBuild/Build.html"><abbr title="Google\Service\CloudBuild\Build">Build</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_cancel">cancel</a>(string $name, <a href="../../../../Google/Service/CloudBuild/CancelBuildRequest.html"><abbr title="Google\Service\CloudBuild\CancelBuildRequest">CancelBuildRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Cancels a build in progress. (builds.cancel)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudBuild/Operation.html"><abbr title="Google\Service\CloudBuild\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/CloudBuild/Build.html"><abbr title="Google\Service\CloudBuild\Build">Build</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Starts a build with the specified configuration. This method returns a long-
+running <code>Operation</code>, which includes the build ID. Pass the build ID to
+<code>GetBuild</code> to determine the build status (such as <code>SUCCESS</code> or <code>FAILURE</code>).</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudBuild/Build.html"><abbr title="Google\Service\CloudBuild\Build">Build</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Returns information about a previously requested build. The <code>Build</code> that is
+returned includes its status (such as <code>SUCCESS</code>, <code>FAILURE</code>, or <code>WORKING</code>),
+and timing information. (builds.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudBuild/ListBuildsResponse.html"><abbr title="Google\Service\CloudBuild\ListBuildsResponse">ListBuildsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsLocationsBuilds">listProjectsLocationsBuilds</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists previously requested builds. Previously requested builds may still be
+in-progress, or may have finished successfully or unsuccessfully.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudBuild/Operation.html"><abbr title="Google\Service\CloudBuild\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_retry">retry</a>(string $name, <a href="../../../../Google/Service/CloudBuild/RetryBuildRequest.html"><abbr title="Google\Service\CloudBuild\RetryBuildRequest">RetryBuildRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a new build based on the specified build. This method creates a new
+build using the original build request, which may or may not result in an
+identical build. For triggered builds: <em> Triggered builds resolve to a
+precise revision; therefore a retry of a triggered build will result in a
+build that uses the same revision. For non-triggered builds that specify
+<code>RepoSource</code>: </em> If the original build built from the tip of a branch, the
+retried build will build from the tip of that branch, which may not be the
+same revision as the original build. * If the original build specified a
+commit sha or revision ID, the retried build will use the identical source.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_approve">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudBuild/Resource/ProjectsLocationsBuilds.php#L48">at line 48</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudBuild/Operation.html"><abbr title="Google\Service\CloudBuild\Operation">Operation</abbr></a>
+    <strong>approve</strong>(string $name, <a href="../../../../Google/Service/CloudBuild/ApproveBuildRequest.html"><abbr title="Google\Service\CloudBuild\ApproveBuildRequest">ApproveBuildRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Approves or rejects a pending build. If approved, the returned LRO will be
+analogous to the LRO returned from a CreateBuild call. If rejected, the
+returned LRO will be immediately done. (builds.approve)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Name of the target build. For example:
+&quot;projects/{$project_id}/builds/{$build_id}&quot;</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudBuild/ApproveBuildRequest.html"><abbr title="Google\Service\CloudBuild\ApproveBuildRequest">ApproveBuildRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudBuild/Operation.html"><abbr title="Google\Service\CloudBuild\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cancel">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudBuild/Resource/ProjectsLocationsBuilds.php#L63">at line 63</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudBuild/Build.html"><abbr title="Google\Service\CloudBuild\Build">Build</abbr></a>
+    <strong>cancel</strong>(string $name, <a href="../../../../Google/Service/CloudBuild/CancelBuildRequest.html"><abbr title="Google\Service\CloudBuild\CancelBuildRequest">CancelBuildRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Cancels a build in progress. (builds.cancel)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>The name of the <code>Build</code> to cancel. Format:
+<code>projects/{project}/locations/{location}/builds/{build}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudBuild/CancelBuildRequest.html"><abbr title="Google\Service\CloudBuild\CancelBuildRequest">CancelBuildRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudBuild/Build.html"><abbr title="Google\Service\CloudBuild\Build">Build</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudBuild/Resource/ProjectsLocationsBuilds.php#L83">at line 83</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudBuild/Operation.html"><abbr title="Google\Service\CloudBuild\Operation">Operation</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/CloudBuild/Build.html"><abbr title="Google\Service\CloudBuild\Build">Build</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Starts a build with the specified configuration. This method returns a long-
+running <code>Operation</code>, which includes the build ID. Pass the build ID to
+<code>GetBuild</code> to determine the build status (such as <code>SUCCESS</code> or <code>FAILURE</code>).</p></p>                <p>(builds.create)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>The parent resource where this build will be created.
+Format: <code>projects/{project}/locations/{location}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudBuild/Build.html"><abbr title="Google\Service\CloudBuild\Build">Build</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudBuild/Operation.html"><abbr title="Google\Service\CloudBuild\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudBuild/Resource/ProjectsLocationsBuilds.php#L102">at line 102</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudBuild/Build.html"><abbr title="Google\Service\CloudBuild\Build">Build</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns information about a previously requested build. The <code>Build</code> that is
+returned includes its status (such as <code>SUCCESS</code>, <code>FAILURE</code>, or <code>WORKING</code>),
+and timing information. (builds.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>The name of the <code>Build</code> to retrieve. Format:
+<code>projects/{project}/locations/{location}/builds/{build}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudBuild/Build.html"><abbr title="Google\Service\CloudBuild\Build">Build</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsLocationsBuilds">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudBuild/Resource/ProjectsLocationsBuilds.php#L127">at line 127</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudBuild/ListBuildsResponse.html"><abbr title="Google\Service\CloudBuild\ListBuildsResponse">ListBuildsResponse</abbr></a>
+    <strong>listProjectsLocationsBuilds</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists previously requested builds. Previously requested builds may still be
+in-progress, or may have finished successfully or unsuccessfully.</p></p>                <p>(builds.listProjectsLocationsBuilds)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>The parent of the collection of <code>Builds</code>. Format:
+<code>projects/{project}/locations/{location}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudBuild/ListBuildsResponse.html"><abbr title="Google\Service\CloudBuild\ListBuildsResponse">ListBuildsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_retry">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudBuild/Resource/ProjectsLocationsBuilds.php#L157">at line 157</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudBuild/Operation.html"><abbr title="Google\Service\CloudBuild\Operation">Operation</abbr></a>
+    <strong>retry</strong>(string $name, <a href="../../../../Google/Service/CloudBuild/RetryBuildRequest.html"><abbr title="Google\Service\CloudBuild\RetryBuildRequest">RetryBuildRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a new build based on the specified build. This method creates a new
+build using the original build request, which may or may not result in an
+identical build. For triggered builds: <em> Triggered builds resolve to a
+precise revision; therefore a retry of a triggered build will result in a
+build that uses the same revision. For non-triggered builds that specify
+<code>RepoSource</code>: </em> If the original build built from the tip of a branch, the
+retried build will build from the tip of that branch, which may not be the
+same revision as the original build. * If the original build specified a
+commit sha or revision ID, the retried build will use the identical source.</p></p>                <p><p>For builds that specify <code>StorageSource</code>: <em> If the original build pulled
+source from Cloud Storage without specifying the generation of the object,
+the new build will use the current object, which may be different from the
+original build source. </em> If the original build pulled source from Cloud
+Storage and specified the generation of the object, the new build will
+attempt to use the same object, which may or may not be available depending
+on the bucket's lifecycle management settings. (builds.retry)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>The name of the <code>Build</code> to retry. Format:
+<code>projects/{project}/locations/{location}/builds/{build}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudBuild/RetryBuildRequest.html"><abbr title="Google\Service\CloudBuild\RetryBuildRequest">RetryBuildRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudBuild/Operation.html"><abbr title="Google\Service\CloudBuild\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

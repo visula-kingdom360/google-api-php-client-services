@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Datastore\Mutation | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../doctum.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Datastore_Mutation" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../Google/Service/Datastore.html">Datastore</a></li><li class="backslash">\</li><li>Mutation</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Mutation    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Mutation</strong>        extends <abbr title="Google\Model">Model</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Mutation.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_baseVersion">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$baseVersion</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_deleteType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$deleteType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_deleteDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$deleteDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_insertType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$insertType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_insertDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$insertDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_propertyMaskType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$propertyMaskType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_propertyMaskDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$propertyMaskDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_updateType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$updateType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_updateDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$updateDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_updateTime">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$updateTime</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_upsertType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$upsertType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_upsertDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$upsertDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setBaseVersion">setBaseVersion</a>($baseVersion)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getBaseVersion">getBaseVersion</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDelete">setDelete</a>(<a href="../../../Google/Service/Datastore/Key.html"><abbr title="Google\Service\Datastore\Key">Key</abbr></a> $delete)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Datastore/Key.html"><abbr title="Google\Service\Datastore\Key">Key</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDelete">getDelete</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setInsert">setInsert</a>(<a href="../../../Google/Service/Datastore/Entity.html"><abbr title="Google\Service\Datastore\Entity">Entity</abbr></a> $insert)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Datastore/Entity.html"><abbr title="Google\Service\Datastore\Entity">Entity</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getInsert">getInsert</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setPropertyMask">setPropertyMask</a>(<a href="../../../Google/Service/Datastore/PropertyMask.html"><abbr title="Google\Service\Datastore\PropertyMask">PropertyMask</abbr></a> $propertyMask)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Datastore/PropertyMask.html"><abbr title="Google\Service\Datastore\PropertyMask">PropertyMask</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPropertyMask">getPropertyMask</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setUpdate">setUpdate</a>(<a href="../../../Google/Service/Datastore/Entity.html"><abbr title="Google\Service\Datastore\Entity">Entity</abbr></a> $update)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Datastore/Entity.html"><abbr title="Google\Service\Datastore\Entity">Entity</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getUpdate">getUpdate</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setUpdateTime">setUpdateTime</a>($updateTime)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getUpdateTime">getUpdateTime</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setUpsert">setUpsert</a>(<a href="../../../Google/Service/Datastore/Entity.html"><abbr title="Google\Service\Datastore\Entity">Entity</abbr></a> $upsert)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Datastore/Entity.html"><abbr title="Google\Service\Datastore\Entity">Entity</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getUpsert">getUpsert</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setBaseVersion">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Mutation.php#L44">at line 44</a></div>
+        <code>                    
+    <strong>setBaseVersion</strong>($baseVersion)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$baseVersion</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBaseVersion">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Mutation.php#L51">at line 51</a></div>
+        <code>                    string
+    <strong>getBaseVersion</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDelete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Mutation.php#L58">at line 58</a></div>
+        <code>                    
+    <strong>setDelete</strong>(<a href="../../../Google/Service/Datastore/Key.html"><abbr title="Google\Service\Datastore\Key">Key</abbr></a> $delete)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Datastore/Key.html"><abbr title="Google\Service\Datastore\Key">Key</abbr></a></td>
+                <td>$delete</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDelete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Mutation.php#L65">at line 65</a></div>
+        <code>                    <a href="../../../Google/Service/Datastore/Key.html"><abbr title="Google\Service\Datastore\Key">Key</abbr></a>
+    <strong>getDelete</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Datastore/Key.html"><abbr title="Google\Service\Datastore\Key">Key</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setInsert">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Mutation.php#L72">at line 72</a></div>
+        <code>                    
+    <strong>setInsert</strong>(<a href="../../../Google/Service/Datastore/Entity.html"><abbr title="Google\Service\Datastore\Entity">Entity</abbr></a> $insert)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Datastore/Entity.html"><abbr title="Google\Service\Datastore\Entity">Entity</abbr></a></td>
+                <td>$insert</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInsert">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Mutation.php#L79">at line 79</a></div>
+        <code>                    <a href="../../../Google/Service/Datastore/Entity.html"><abbr title="Google\Service\Datastore\Entity">Entity</abbr></a>
+    <strong>getInsert</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Datastore/Entity.html"><abbr title="Google\Service\Datastore\Entity">Entity</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPropertyMask">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Mutation.php#L86">at line 86</a></div>
+        <code>                    
+    <strong>setPropertyMask</strong>(<a href="../../../Google/Service/Datastore/PropertyMask.html"><abbr title="Google\Service\Datastore\PropertyMask">PropertyMask</abbr></a> $propertyMask)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Datastore/PropertyMask.html"><abbr title="Google\Service\Datastore\PropertyMask">PropertyMask</abbr></a></td>
+                <td>$propertyMask</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPropertyMask">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Mutation.php#L93">at line 93</a></div>
+        <code>                    <a href="../../../Google/Service/Datastore/PropertyMask.html"><abbr title="Google\Service\Datastore\PropertyMask">PropertyMask</abbr></a>
+    <strong>getPropertyMask</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Datastore/PropertyMask.html"><abbr title="Google\Service\Datastore\PropertyMask">PropertyMask</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUpdate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Mutation.php#L100">at line 100</a></div>
+        <code>                    
+    <strong>setUpdate</strong>(<a href="../../../Google/Service/Datastore/Entity.html"><abbr title="Google\Service\Datastore\Entity">Entity</abbr></a> $update)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Datastore/Entity.html"><abbr title="Google\Service\Datastore\Entity">Entity</abbr></a></td>
+                <td>$update</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUpdate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Mutation.php#L107">at line 107</a></div>
+        <code>                    <a href="../../../Google/Service/Datastore/Entity.html"><abbr title="Google\Service\Datastore\Entity">Entity</abbr></a>
+    <strong>getUpdate</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Datastore/Entity.html"><abbr title="Google\Service\Datastore\Entity">Entity</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUpdateTime">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Mutation.php#L114">at line 114</a></div>
+        <code>                    
+    <strong>setUpdateTime</strong>($updateTime)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$updateTime</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUpdateTime">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Mutation.php#L121">at line 121</a></div>
+        <code>                    string
+    <strong>getUpdateTime</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUpsert">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Mutation.php#L128">at line 128</a></div>
+        <code>                    
+    <strong>setUpsert</strong>(<a href="../../../Google/Service/Datastore/Entity.html"><abbr title="Google\Service\Datastore\Entity">Entity</abbr></a> $upsert)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Datastore/Entity.html"><abbr title="Google\Service\Datastore\Entity">Entity</abbr></a></td>
+                <td>$upsert</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUpsert">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Datastore/Mutation.php#L135">at line 135</a></div>
+        <code>                    <a href="../../../Google/Service/Datastore/Entity.html"><abbr title="Google\Service\Datastore\Entity">Entity</abbr></a>
+    <strong>getUpsert</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Datastore/Entity.html"><abbr title="Google\Service\Datastore\Entity">Entity</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

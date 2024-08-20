@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Compute\OutlierDetection | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../doctum.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Compute_OutlierDetection" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../Google/Service/Compute.html">Compute</a></li><li class="backslash">\</li><li>OutlierDetection</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>OutlierDetection    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>OutlierDetection</strong>        extends <abbr title="Google\Model">Model</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_baseEjectionTimeType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$baseEjectionTimeType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_baseEjectionTimeDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$baseEjectionTimeDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_consecutiveErrors">
+                                                                                int
+                                                                                
+                                    </td>
+                <td>$consecutiveErrors</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_consecutiveGatewayFailure">
+                                                                                int
+                                                                                
+                                    </td>
+                <td>$consecutiveGatewayFailure</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_enforcingConsecutiveErrors">
+                                                                                int
+                                                                                
+                                    </td>
+                <td>$enforcingConsecutiveErrors</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_enforcingConsecutiveGatewayFailure">
+                                                                                int
+                                                                                
+                                    </td>
+                <td>$enforcingConsecutiveGatewayFailure</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_enforcingSuccessRate">
+                                                                                int
+                                                                                
+                                    </td>
+                <td>$enforcingSuccessRate</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_intervalType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$intervalType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_intervalDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$intervalDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_maxEjectionPercent">
+                                                                                int
+                                                                                
+                                    </td>
+                <td>$maxEjectionPercent</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_successRateMinimumHosts">
+                                                                                int
+                                                                                
+                                    </td>
+                <td>$successRateMinimumHosts</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_successRateRequestVolume">
+                                                                                int
+                                                                                
+                                    </td>
+                <td>$successRateRequestVolume</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_successRateStdevFactor">
+                                                                                int
+                                                                                
+                                    </td>
+                <td>$successRateStdevFactor</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setBaseEjectionTime">setBaseEjectionTime</a>(<a href="../../../Google/Service/Compute/Duration.html"><abbr title="Google\Service\Compute\Duration">Duration</abbr></a> $baseEjectionTime)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Compute/Duration.html"><abbr title="Google\Service\Compute\Duration">Duration</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getBaseEjectionTime">getBaseEjectionTime</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setConsecutiveErrors">setConsecutiveErrors</a>($consecutiveErrors)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getConsecutiveErrors">getConsecutiveErrors</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setConsecutiveGatewayFailure">setConsecutiveGatewayFailure</a>($consecutiveGatewayFailure)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getConsecutiveGatewayFailure">getConsecutiveGatewayFailure</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setEnforcingConsecutiveErrors">setEnforcingConsecutiveErrors</a>($enforcingConsecutiveErrors)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getEnforcingConsecutiveErrors">getEnforcingConsecutiveErrors</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setEnforcingConsecutiveGatewayFailure">setEnforcingConsecutiveGatewayFailure</a>($enforcingConsecutiveGatewayFailure)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getEnforcingConsecutiveGatewayFailure">getEnforcingConsecutiveGatewayFailure</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setEnforcingSuccessRate">setEnforcingSuccessRate</a>($enforcingSuccessRate)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getEnforcingSuccessRate">getEnforcingSuccessRate</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setInterval">setInterval</a>(<a href="../../../Google/Service/Compute/Duration.html"><abbr title="Google\Service\Compute\Duration">Duration</abbr></a> $interval)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Compute/Duration.html"><abbr title="Google\Service\Compute\Duration">Duration</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getInterval">getInterval</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMaxEjectionPercent">setMaxEjectionPercent</a>($maxEjectionPercent)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMaxEjectionPercent">getMaxEjectionPercent</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setSuccessRateMinimumHosts">setSuccessRateMinimumHosts</a>($successRateMinimumHosts)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSuccessRateMinimumHosts">getSuccessRateMinimumHosts</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setSuccessRateRequestVolume">setSuccessRateRequestVolume</a>($successRateRequestVolume)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSuccessRateRequestVolume">getSuccessRateRequestVolume</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setSuccessRateStdevFactor">setSuccessRateStdevFactor</a>($successRateStdevFactor)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSuccessRateStdevFactor">getSuccessRateStdevFactor</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setBaseEjectionTime">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L66">at line 66</a></div>
+        <code>                    
+    <strong>setBaseEjectionTime</strong>(<a href="../../../Google/Service/Compute/Duration.html"><abbr title="Google\Service\Compute\Duration">Duration</abbr></a> $baseEjectionTime)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Compute/Duration.html"><abbr title="Google\Service\Compute\Duration">Duration</abbr></a></td>
+                <td>$baseEjectionTime</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBaseEjectionTime">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L73">at line 73</a></div>
+        <code>                    <a href="../../../Google/Service/Compute/Duration.html"><abbr title="Google\Service\Compute\Duration">Duration</abbr></a>
+    <strong>getBaseEjectionTime</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Compute/Duration.html"><abbr title="Google\Service\Compute\Duration">Duration</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setConsecutiveErrors">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L80">at line 80</a></div>
+        <code>                    
+    <strong>setConsecutiveErrors</strong>($consecutiveErrors)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$consecutiveErrors</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConsecutiveErrors">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L87">at line 87</a></div>
+        <code>                    int
+    <strong>getConsecutiveErrors</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setConsecutiveGatewayFailure">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L94">at line 94</a></div>
+        <code>                    
+    <strong>setConsecutiveGatewayFailure</strong>($consecutiveGatewayFailure)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$consecutiveGatewayFailure</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConsecutiveGatewayFailure">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L101">at line 101</a></div>
+        <code>                    int
+    <strong>getConsecutiveGatewayFailure</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEnforcingConsecutiveErrors">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L108">at line 108</a></div>
+        <code>                    
+    <strong>setEnforcingConsecutiveErrors</strong>($enforcingConsecutiveErrors)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$enforcingConsecutiveErrors</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEnforcingConsecutiveErrors">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L115">at line 115</a></div>
+        <code>                    int
+    <strong>getEnforcingConsecutiveErrors</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEnforcingConsecutiveGatewayFailure">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L122">at line 122</a></div>
+        <code>                    
+    <strong>setEnforcingConsecutiveGatewayFailure</strong>($enforcingConsecutiveGatewayFailure)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$enforcingConsecutiveGatewayFailure</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEnforcingConsecutiveGatewayFailure">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L129">at line 129</a></div>
+        <code>                    int
+    <strong>getEnforcingConsecutiveGatewayFailure</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEnforcingSuccessRate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L136">at line 136</a></div>
+        <code>                    
+    <strong>setEnforcingSuccessRate</strong>($enforcingSuccessRate)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$enforcingSuccessRate</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEnforcingSuccessRate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L143">at line 143</a></div>
+        <code>                    int
+    <strong>getEnforcingSuccessRate</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setInterval">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L150">at line 150</a></div>
+        <code>                    
+    <strong>setInterval</strong>(<a href="../../../Google/Service/Compute/Duration.html"><abbr title="Google\Service\Compute\Duration">Duration</abbr></a> $interval)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Compute/Duration.html"><abbr title="Google\Service\Compute\Duration">Duration</abbr></a></td>
+                <td>$interval</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInterval">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L157">at line 157</a></div>
+        <code>                    <a href="../../../Google/Service/Compute/Duration.html"><abbr title="Google\Service\Compute\Duration">Duration</abbr></a>
+    <strong>getInterval</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Compute/Duration.html"><abbr title="Google\Service\Compute\Duration">Duration</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMaxEjectionPercent">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L164">at line 164</a></div>
+        <code>                    
+    <strong>setMaxEjectionPercent</strong>($maxEjectionPercent)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$maxEjectionPercent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMaxEjectionPercent">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L171">at line 171</a></div>
+        <code>                    int
+    <strong>getMaxEjectionPercent</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSuccessRateMinimumHosts">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L178">at line 178</a></div>
+        <code>                    
+    <strong>setSuccessRateMinimumHosts</strong>($successRateMinimumHosts)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$successRateMinimumHosts</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSuccessRateMinimumHosts">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L185">at line 185</a></div>
+        <code>                    int
+    <strong>getSuccessRateMinimumHosts</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSuccessRateRequestVolume">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L192">at line 192</a></div>
+        <code>                    
+    <strong>setSuccessRateRequestVolume</strong>($successRateRequestVolume)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$successRateRequestVolume</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSuccessRateRequestVolume">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L199">at line 199</a></div>
+        <code>                    int
+    <strong>getSuccessRateRequestVolume</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSuccessRateStdevFactor">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L206">at line 206</a></div>
+        <code>                    
+    <strong>setSuccessRateStdevFactor</strong>($successRateStdevFactor)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$successRateStdevFactor</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSuccessRateStdevFactor">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Compute/OutlierDetection.php#L213">at line 213</a></div>
+        <code>                    int
+    <strong>getSuccessRateStdevFactor</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

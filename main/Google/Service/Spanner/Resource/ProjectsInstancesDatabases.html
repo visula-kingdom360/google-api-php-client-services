@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Spanner\Resource\ProjectsInstancesDatabases | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Spanner_Resource_ProjectsInstancesDatabases" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Spanner.html">Spanner</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Spanner/Resource.html">Resource</a></li><li class="backslash">\</li><li>ProjectsInstancesDatabases</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsInstancesDatabases    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsInstancesDatabases</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Spanner/Resource/ProjectsInstancesDatabases.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;databases&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $spannerService = new Google\Service\Spanner(...);
+ $databases = $spannerService-&gt;projects_instances_databases;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_changequorum">changequorum</a>(string $name, <a href="../../../../Google/Service/Spanner/ChangeQuorumRequest.html"><abbr title="Google\Service\Spanner\ChangeQuorumRequest">ChangeQuorumRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p><code>ChangeQuorum</code> is strictly restricted to databases that use dual-region
+instance configurations. Initiates a background operation to change the
+quorum of a database from dual-region mode to single-region mode or vice
+versa. The returned long-running operation has a name of the format
+<code>projects//instances//databases//operations/</code> and can be used to track
+execution of the <code>ChangeQuorum</code>. The metadata field type is
+ChangeQuorumMetadata. Authorization requires <code>spanner.databases.changequorum</code>
+permission on the resource database. (databases.changequorum)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/Spanner/CreateDatabaseRequest.html"><abbr title="Google\Service\Spanner\CreateDatabaseRequest">CreateDatabaseRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a new Spanner database and starts to prepare it for serving. The
+returned long-running operation will have a name of the format <code>/operations/</code>
+and can be used to track preparation of the database. The metadata field type
+is CreateDatabaseMetadata. The response field type is Database, if
+successful. (databases.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/SpannerEmpty.html"><abbr title="Google\Service\Spanner\SpannerEmpty">SpannerEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_dropDatabase">dropDatabase</a>(string $database, array $optParams = [])
+        
+                                            <p><p>Drops (aka deletes) a Cloud Spanner database. Completed backups for the
+database will be retained according to their <code>expire_time</code>. Note: Cloud
+Spanner might continue to accept requests for a few seconds after the
+database has been deleted. (databases.dropDatabase)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/Database.html"><abbr title="Google\Service\Spanner\Database">Database</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets the state of a Cloud Spanner database. (databases.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/GetDatabaseDdlResponse.html"><abbr title="Google\Service\Spanner\GetDatabaseDdlResponse">GetDatabaseDdlResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDdl">getDdl</a>(string $database, array $optParams = [])
+        
+                                            <p><p>Returns the schema of a Cloud Spanner database as a list of formatted DDL
+statements. This method does not show pending schema updates, those may be
+queried using the Operations API. (databases.getDdl)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/Policy.html"><abbr title="Google\Service\Spanner\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIamPolicy">getIamPolicy</a>(string $resource, <a href="../../../../Google/Service/Spanner/GetIamPolicyRequest.html"><abbr title="Google\Service\Spanner\GetIamPolicyRequest">GetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Gets the access control policy for a database or backup resource. Returns an
+empty policy if a database or backup exists but does not have a policy set.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/Scan.html"><abbr title="Google\Service\Spanner\Scan">Scan</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getScans">getScans</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Request a specific scan with Database-specific data for Cloud Key Visualizer.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/ListDatabasesResponse.html"><abbr title="Google\Service\Spanner\ListDatabasesResponse">ListDatabasesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsInstancesDatabases">listProjectsInstancesDatabases</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists Cloud Spanner databases. (databases.listProjectsInstancesDatabases)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/Spanner/Database.html"><abbr title="Google\Service\Spanner\Database">Database</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a Cloud Spanner database. The returned long-running operation can be
+used to track the progress of updating the database. If the named database
+does not exist, returns <code>NOT_FOUND</code>. While the operation is pending: <em> The
+database's reconciling field is set to true. </em> Cancelling the operation is
+best-effort. If the cancellation succeeds, the operation metadata's
+cancel_time is set, the updates are reverted, and the operation terminates
+with a <code>CANCELLED</code> status. <em> New UpdateDatabase requests will return a
+<code>FAILED_PRECONDITION</code> error until the pending operation is done (returns
+successfully or with error). </em> Reading the database via the API continues to
+give the pre-request values. Upon completion of the returned operation: <em> The
+new values are in effect and readable via the API. </em> The database's
+reconciling field becomes false. The returned long-running operation will
+have a name of the format <code>projects//instances//databases//operations/</code> and
+can be used to track the database modification. The metadata field type is
+UpdateDatabaseMetadata. The response field type is Database, if successful.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_restore">restore</a>(string $parent, <a href="../../../../Google/Service/Spanner/RestoreDatabaseRequest.html"><abbr title="Google\Service\Spanner\RestoreDatabaseRequest">RestoreDatabaseRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Create a new database by restoring from a completed backup. The new database
+must be in the same project and in an instance with the same instance
+configuration as the instance containing the backup. The returned database
+long-running operation has a name of the format
+<code>projects//instances//databases//operations/</code>, and can be used to track the
+progress of the operation, and to cancel it. The metadata field type is
+RestoreDatabaseMetadata. The response type is Database, if successful.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/Policy.html"><abbr title="Google\Service\Spanner\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setIamPolicy">setIamPolicy</a>(string $resource, <a href="../../../../Google/Service/Spanner/SetIamPolicyRequest.html"><abbr title="Google\Service\Spanner\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the access control policy on a database or backup resource. Replaces any
+existing policy. Authorization requires <code>spanner.databases.setIamPolicy</code>
+permission on resource. For backups, authorization requires
+<code>spanner.backups.setIamPolicy</code> permission on resource.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/TestIamPermissionsResponse.html"><abbr title="Google\Service\Spanner\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testIamPermissions">testIamPermissions</a>(string $resource, <a href="../../../../Google/Service/Spanner/TestIamPermissionsRequest.html"><abbr title="Google\Service\Spanner\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Returns permissions that the caller has on the specified database or backup
+resource. Attempting this RPC on a non-existent Cloud Spanner database will
+result in a NOT_FOUND error if the user has <code>spanner.databases.list</code>
+permission on the containing Cloud Spanner instance. Otherwise returns an
+empty set of permissions. Calling this method on a backup that does not exist
+will result in a NOT_FOUND error if the user has <code>spanner.backups.list</code>
+permission on the containing instance. (databases.testIamPermissions)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateDdl">updateDdl</a>(string $database, <a href="../../../../Google/Service/Spanner/UpdateDatabaseDdlRequest.html"><abbr title="Google\Service\Spanner\UpdateDatabaseDdlRequest">UpdateDatabaseDdlRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the schema of a Cloud Spanner database by creating/altering/dropping
+tables, columns, indexes, etc. The returned long-running operation will have
+a name of the format <code>/operations/</code> and can be used to track execution of the
+schema change(s). The metadata field type is UpdateDatabaseDdlMetadata. The
+operation has no response. (databases.updateDdl)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_changequorum">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Spanner/Resource/ProjectsInstancesDatabases.php#L63">at line 63</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a>
+    <strong>changequorum</strong>(string $name, <a href="../../../../Google/Service/Spanner/ChangeQuorumRequest.html"><abbr title="Google\Service\Spanner\ChangeQuorumRequest">ChangeQuorumRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p><code>ChangeQuorum</code> is strictly restricted to databases that use dual-region
+instance configurations. Initiates a background operation to change the
+quorum of a database from dual-region mode to single-region mode or vice
+versa. The returned long-running operation has a name of the format
+<code>projects//instances//databases//operations/</code> and can be used to track
+execution of the <code>ChangeQuorum</code>. The metadata field type is
+ChangeQuorumMetadata. Authorization requires <code>spanner.databases.changequorum</code>
+permission on the resource database. (databases.changequorum)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Name of the database in which to apply
+<code>ChangeQuorum</code>. Values are of the form <code>projects//instances//databases/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/ChangeQuorumRequest.html"><abbr title="Google\Service\Spanner\ChangeQuorumRequest">ChangeQuorumRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Spanner/Resource/ProjectsInstancesDatabases.php#L83">at line 83</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/Spanner/CreateDatabaseRequest.html"><abbr title="Google\Service\Spanner\CreateDatabaseRequest">CreateDatabaseRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a new Spanner database and starts to prepare it for serving. The
+returned long-running operation will have a name of the format <code>/operations/</code>
+and can be used to track preparation of the database. The metadata field type
+is CreateDatabaseMetadata. The response field type is Database, if
+successful. (databases.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The name of the instance that will serve the
+new database. Values are of the form <code>projects//instances/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/CreateDatabaseRequest.html"><abbr title="Google\Service\Spanner\CreateDatabaseRequest">CreateDatabaseRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dropDatabase">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Spanner/Resource/ProjectsInstancesDatabases.php#L100">at line 100</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/SpannerEmpty.html"><abbr title="Google\Service\Spanner\SpannerEmpty">SpannerEmpty</abbr></a>
+    <strong>dropDatabase</strong>(string $database, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Drops (aka deletes) a Cloud Spanner database. Completed backups for the
+database will be retained according to their <code>expire_time</code>. Note: Cloud
+Spanner might continue to accept requests for a few seconds after the
+database has been deleted. (databases.dropDatabase)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$database</td>
+                <td><p>Required. The database to be dropped.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/SpannerEmpty.html"><abbr title="Google\Service\Spanner\SpannerEmpty">SpannerEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Spanner/Resource/ProjectsInstancesDatabases.php#L115">at line 115</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/Database.html"><abbr title="Google\Service\Spanner\Database">Database</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the state of a Cloud Spanner database. (databases.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the requested database. Values are
+of the form <code>projects//instances//databases/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/Database.html"><abbr title="Google\Service\Spanner\Database">Database</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDdl">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Spanner/Resource/ProjectsInstancesDatabases.php#L132">at line 132</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/GetDatabaseDdlResponse.html"><abbr title="Google\Service\Spanner\GetDatabaseDdlResponse">GetDatabaseDdlResponse</abbr></a>
+    <strong>getDdl</strong>(string $database, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the schema of a Cloud Spanner database as a list of formatted DDL
+statements. This method does not show pending schema updates, those may be
+queried using the Operations API. (databases.getDdl)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$database</td>
+                <td><p>Required. The database whose schema we wish to get.
+Values are of the form <code>projects//instances//databases/</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/GetDatabaseDdlResponse.html"><abbr title="Google\Service\Spanner\GetDatabaseDdlResponse">GetDatabaseDdlResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Spanner/Resource/ProjectsInstancesDatabases.php#L153">at line 153</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/Policy.html"><abbr title="Google\Service\Spanner\Policy">Policy</abbr></a>
+    <strong>getIamPolicy</strong>(string $resource, <a href="../../../../Google/Service/Spanner/GetIamPolicyRequest.html"><abbr title="Google\Service\Spanner\GetIamPolicyRequest">GetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the access control policy for a database or backup resource. Returns an
+empty policy if a database or backup exists but does not have a policy set.</p></p>                <p><p>Authorization requires <code>spanner.databases.getIamPolicy</code> permission on
+resource. For backups, authorization requires <code>spanner.backups.getIamPolicy</code>
+permission on resource. (databases.getIamPolicy)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The Cloud Spanner resource for which the
+policy is being retrieved. The format is <code>projects//instances/</code> for instance
+resources and <code>projects//instances//databases/</code> for database resources.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/GetIamPolicyRequest.html"><abbr title="Google\Service\Spanner\GetIamPolicyRequest">GetIamPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/Policy.html"><abbr title="Google\Service\Spanner\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getScans">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Spanner/Resource/ProjectsInstancesDatabases.php#L180">at line 180</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/Scan.html"><abbr title="Google\Service\Spanner\Scan">Scan</abbr></a>
+    <strong>getScans</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Request a specific scan with Database-specific data for Cloud Key Visualizer.</p></p>                <p>(databases.getScans)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The unique name of the scan containing the
+requested information, specific to the Database service implementing this
+interface.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/Scan.html"><abbr title="Google\Service\Spanner\Scan">Scan</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsInstancesDatabases">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Spanner/Resource/ProjectsInstancesDatabases.php#L200">at line 200</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/ListDatabasesResponse.html"><abbr title="Google\Service\Spanner\ListDatabasesResponse">ListDatabasesResponse</abbr></a>
+    <strong>listProjectsInstancesDatabases</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists Cloud Spanner databases. (databases.listProjectsInstancesDatabases)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The instance whose databases should be
+listed. Values are of the form <code>projects//instances/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/ListDatabasesResponse.html"><abbr title="Google\Service\Spanner\ListDatabasesResponse">ListDatabasesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Spanner/Resource/ProjectsInstancesDatabases.php#L236">at line 236</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/Spanner/Database.html"><abbr title="Google\Service\Spanner\Database">Database</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a Cloud Spanner database. The returned long-running operation can be
+used to track the progress of updating the database. If the named database
+does not exist, returns <code>NOT_FOUND</code>. While the operation is pending: <em> The
+database's reconciling field is set to true. </em> Cancelling the operation is
+best-effort. If the cancellation succeeds, the operation metadata's
+cancel_time is set, the updates are reverted, and the operation terminates
+with a <code>CANCELLED</code> status. <em> New UpdateDatabase requests will return a
+<code>FAILED_PRECONDITION</code> error until the pending operation is done (returns
+successfully or with error). </em> Reading the database via the API continues to
+give the pre-request values. Upon completion of the returned operation: <em> The
+new values are in effect and readable via the API. </em> The database's
+reconciling field becomes false. The returned long-running operation will
+have a name of the format <code>projects//instances//databases//operations/</code> and
+can be used to track the database modification. The metadata field type is
+UpdateDatabaseMetadata. The response field type is Database, if successful.</p></p>                <p>(databases.patch)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the database. Values are of the
+form <code>projects//instances//databases/</code>, where <code>` is as specified in the </code>CREATE DATABASE` statement. This name can be passed to other API methods to
+identify the database.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/Database.html"><abbr title="Google\Service\Spanner\Database">Database</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_restore">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Spanner/Resource/ProjectsInstancesDatabases.php#L265">at line 265</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a>
+    <strong>restore</strong>(string $parent, <a href="../../../../Google/Service/Spanner/RestoreDatabaseRequest.html"><abbr title="Google\Service\Spanner\RestoreDatabaseRequest">RestoreDatabaseRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create a new database by restoring from a completed backup. The new database
+must be in the same project and in an instance with the same instance
+configuration as the instance containing the backup. The returned database
+long-running operation has a name of the format
+<code>projects//instances//databases//operations/</code>, and can be used to track the
+progress of the operation, and to cancel it. The metadata field type is
+RestoreDatabaseMetadata. The response type is Database, if successful.</p></p>                <p><p>Cancelling the returned operation will stop the restore and delete the
+database. There can be only one database being restored into an instance at a
+time. Once the restore operation completes, a new restore operation can be
+initiated, without waiting for the optimize operation associated with the
+first restore to complete. (databases.restore)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The name of the instance in which to create
+the restored database. This instance must be in the same project and have the
+same instance configuration as the instance containing the source backup.
+Values are of the form <code>projects//instances/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/RestoreDatabaseRequest.html"><abbr title="Google\Service\Spanner\RestoreDatabaseRequest">RestoreDatabaseRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Spanner/Resource/ProjectsInstancesDatabases.php#L286">at line 286</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/Policy.html"><abbr title="Google\Service\Spanner\Policy">Policy</abbr></a>
+    <strong>setIamPolicy</strong>(string $resource, <a href="../../../../Google/Service/Spanner/SetIamPolicyRequest.html"><abbr title="Google\Service\Spanner\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the access control policy on a database or backup resource. Replaces any
+existing policy. Authorization requires <code>spanner.databases.setIamPolicy</code>
+permission on resource. For backups, authorization requires
+<code>spanner.backups.setIamPolicy</code> permission on resource.</p></p>                <p>(databases.setIamPolicy)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The Cloud Spanner resource for which the
+policy is being set. The format is <code>projects//instances/</code> for instance
+resources and <code>projects//instances//databases/</code> for databases resources.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/SetIamPolicyRequest.html"><abbr title="Google\Service\Spanner\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/Policy.html"><abbr title="Google\Service\Spanner\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testIamPermissions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Spanner/Resource/ProjectsInstancesDatabases.php#L310">at line 310</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/TestIamPermissionsResponse.html"><abbr title="Google\Service\Spanner\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+    <strong>testIamPermissions</strong>(string $resource, <a href="../../../../Google/Service/Spanner/TestIamPermissionsRequest.html"><abbr title="Google\Service\Spanner\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns permissions that the caller has on the specified database or backup
+resource. Attempting this RPC on a non-existent Cloud Spanner database will
+result in a NOT_FOUND error if the user has <code>spanner.databases.list</code>
+permission on the containing Cloud Spanner instance. Otherwise returns an
+empty set of permissions. Calling this method on a backup that does not exist
+will result in a NOT_FOUND error if the user has <code>spanner.backups.list</code>
+permission on the containing instance. (databases.testIamPermissions)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The Cloud Spanner resource for which
+permissions are being tested. The format is <code>projects//instances/</code> for
+instance resources and <code>projects//instances//databases/</code> for database
+resources.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/TestIamPermissionsRequest.html"><abbr title="Google\Service\Spanner\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/TestIamPermissionsResponse.html"><abbr title="Google\Service\Spanner\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateDdl">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Spanner/Resource/ProjectsInstancesDatabases.php#L329">at line 329</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a>
+    <strong>updateDdl</strong>(string $database, <a href="../../../../Google/Service/Spanner/UpdateDatabaseDdlRequest.html"><abbr title="Google\Service\Spanner\UpdateDatabaseDdlRequest">UpdateDatabaseDdlRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the schema of a Cloud Spanner database by creating/altering/dropping
+tables, columns, indexes, etc. The returned long-running operation will have
+a name of the format <code>/operations/</code> and can be used to track execution of the
+schema change(s). The metadata field type is UpdateDatabaseDdlMetadata. The
+operation has no response. (databases.updateDdl)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$database</td>
+                <td><p>Required. The database to update.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/UpdateDatabaseDdlRequest.html"><abbr title="Google\Service\Spanner\UpdateDatabaseDdlRequest">UpdateDatabaseDdlRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

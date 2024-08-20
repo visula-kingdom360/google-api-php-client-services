@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Dataproc\Resource\ProjectsLocationsWorkflowTemplates | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Dataproc_Resource_ProjectsLocationsWorkflowTemplates" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Dataproc.html">Dataproc</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Dataproc/Resource.html">Resource</a></li><li class="backslash">\</li><li>ProjectsLocationsWorkflowTemplates</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsLocationsWorkflowTemplates    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsLocationsWorkflowTemplates</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Dataproc/Resource/ProjectsLocationsWorkflowTemplates.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;workflowTemplates&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $dataprocService = new Google\Service\Dataproc(...);
+ $workflowTemplates = $dataprocService-&gt;projects_locations_workflowTemplates;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataproc/WorkflowTemplate.html"><abbr title="Google\Service\Dataproc\WorkflowTemplate">WorkflowTemplate</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/Dataproc/WorkflowTemplate.html"><abbr title="Google\Service\Dataproc\WorkflowTemplate">WorkflowTemplate</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates new workflow template. (workflowTemplates.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataproc/DataprocEmpty.html"><abbr title="Google\Service\Dataproc\DataprocEmpty">DataprocEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes a workflow template. It does not cancel in-progress workflows.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataproc/WorkflowTemplate.html"><abbr title="Google\Service\Dataproc\WorkflowTemplate">WorkflowTemplate</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Retrieves the latest workflow template.Can retrieve previously instantiated
+template by specifying optional version parameter. (workflowTemplates.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataproc/Policy.html"><abbr title="Google\Service\Dataproc\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIamPolicy">getIamPolicy</a>(string $resource, <a href="../../../../Google/Service/Dataproc/GetIamPolicyRequest.html"><abbr title="Google\Service\Dataproc\GetIamPolicyRequest">GetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Gets the access control policy for a resource. Returns an empty policy if the
+resource exists and does not have a policy set.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataproc/Operation.html"><abbr title="Google\Service\Dataproc\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_instantiate">instantiate</a>(string $name, <a href="../../../../Google/Service/Dataproc/InstantiateWorkflowTemplateRequest.html"><abbr title="Google\Service\Dataproc\InstantiateWorkflowTemplateRequest">InstantiateWorkflowTemplateRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Instantiates a template and begins execution.The returned Operation can be
+used to track execution of workflow by polling operations.get. The Operation
+will complete when entire workflow is finished.The running workflow can be
+aborted via operations.cancel. This will cause any inflight jobs to be
+cancelled and workflow-owned clusters to be deleted.The Operation.metadata
+will be WorkflowMetadata (<a href="https://cloud.google.com/dataproc/docs/reference/rp">https://cloud.google.com/dataproc/docs/reference/rp</a>
+c/google.cloud.dataproc.v1#workflowmetadata). Also see Using WorkflowMetadata
+(<a href="https://cloud.google.com/dataproc/docs/concepts/workflows/debugging#using_wo">https://cloud.google.com/dataproc/docs/concepts/workflows/debugging#using_wo</a>
+rkflowmetadata).On successful completion, Operation.response will be Empty.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataproc/Operation.html"><abbr title="Google\Service\Dataproc\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_instantiateInline">instantiateInline</a>(string $parent, <a href="../../../../Google/Service/Dataproc/WorkflowTemplate.html"><abbr title="Google\Service\Dataproc\WorkflowTemplate">WorkflowTemplate</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Instantiates a template and begins execution.This method is equivalent to
+executing the sequence CreateWorkflowTemplate, InstantiateWorkflowTemplate,
+DeleteWorkflowTemplate.The returned Operation can be used to track execution
+of workflow by polling operations.get. The Operation will complete when
+entire workflow is finished.The running workflow can be aborted via
+operations.cancel. This will cause any inflight jobs to be cancelled and
+workflow-owned clusters to be deleted.The Operation.metadata will be
+WorkflowMetadata (<a href="https://cloud.google.com/dataproc/docs/reference/rpc/google">https://cloud.google.com/dataproc/docs/reference/rpc/google</a>
+.cloud.dataproc.v1#workflowmetadata). Also see Using WorkflowMetadata (https:
+//cloud.google.com/dataproc/docs/concepts/workflows/debugging#using_workflowm
+etadata).On successful completion, Operation.response will be Empty.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataproc/ListWorkflowTemplatesResponse.html"><abbr title="Google\Service\Dataproc\ListWorkflowTemplatesResponse">ListWorkflowTemplatesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsLocationsWorkflowTemplates">listProjectsLocationsWorkflowTemplates</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists workflows that match the specified filter in the request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataproc/Policy.html"><abbr title="Google\Service\Dataproc\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setIamPolicy">setIamPolicy</a>(string $resource, <a href="../../../../Google/Service/Dataproc/SetIamPolicyRequest.html"><abbr title="Google\Service\Dataproc\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the access control policy on the specified resource. Replaces any
+existing policy.Can return NOT_FOUND, INVALID_ARGUMENT, and PERMISSION_DENIED
+errors. (workflowTemplates.setIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataproc/TestIamPermissionsResponse.html"><abbr title="Google\Service\Dataproc\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testIamPermissions">testIamPermissions</a>(string $resource, <a href="../../../../Google/Service/Dataproc/TestIamPermissionsRequest.html"><abbr title="Google\Service\Dataproc\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Returns permissions that a caller has on the specified resource. If the
+resource does not exist, this will return an empty set of permissions, not a
+NOT_FOUND error.Note: This operation is designed to be used for building
+permission-aware UIs and command-line tools, not for authorization checking.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataproc/WorkflowTemplate.html"><abbr title="Google\Service\Dataproc\WorkflowTemplate">WorkflowTemplate</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $name, <a href="../../../../Google/Service/Dataproc/WorkflowTemplate.html"><abbr title="Google\Service\Dataproc\WorkflowTemplate">WorkflowTemplate</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates (replaces) workflow template. The updated template must contain
+version that matches the current server version. (workflowTemplates.update)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Dataproc/Resource/ProjectsLocationsWorkflowTemplates.php#L55">at line 55</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataproc/WorkflowTemplate.html"><abbr title="Google\Service\Dataproc\WorkflowTemplate">WorkflowTemplate</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/Dataproc/WorkflowTemplate.html"><abbr title="Google\Service\Dataproc\WorkflowTemplate">WorkflowTemplate</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates new workflow template. (workflowTemplates.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the region or location,
+as described in <a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>. For
+projects.regions.workflowTemplates.create, the resource name of the region
+has the following format: projects/{project_id}/regions/{region} For
+projects.locations.workflowTemplates.create, the resource name of the
+location has the following format: projects/{project_id}/locations/{location}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dataproc/WorkflowTemplate.html"><abbr title="Google\Service\Dataproc\WorkflowTemplate">WorkflowTemplate</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataproc/WorkflowTemplate.html"><abbr title="Google\Service\Dataproc\WorkflowTemplate">WorkflowTemplate</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Dataproc/Resource/ProjectsLocationsWorkflowTemplates.php#L81">at line 81</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataproc/DataprocEmpty.html"><abbr title="Google\Service\Dataproc\DataprocEmpty">DataprocEmpty</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a workflow template. It does not cancel in-progress workflows.</p></p>                <p>(workflowTemplates.delete)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the workflow template, as
+described in <a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>. For
+projects.regions.workflowTemplates.delete, the resource name of the template
+has the following format:
+projects/{project_id}/regions/{region}/workflowTemplates/{template_id} For
+projects.locations.workflowTemplates.instantiate, the resource name of the
+template has the following format:
+projects/{project_id}/locations/{location}/workflowTemplates/{template_id}</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataproc/DataprocEmpty.html"><abbr title="Google\Service\Dataproc\DataprocEmpty">DataprocEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Dataproc/Resource/ProjectsLocationsWorkflowTemplates.php#L107">at line 107</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataproc/WorkflowTemplate.html"><abbr title="Google\Service\Dataproc\WorkflowTemplate">WorkflowTemplate</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves the latest workflow template.Can retrieve previously instantiated
+template by specifying optional version parameter. (workflowTemplates.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the workflow template, as
+described in <a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>. For
+projects.regions.workflowTemplates.get, the resource name of the template has
+the following format:
+projects/{project_id}/regions/{region}/workflowTemplates/{template_id} For
+projects.locations.workflowTemplates.get, the resource name of the template
+has the following format:
+projects/{project_id}/locations/{location}/workflowTemplates/{template_id}</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataproc/WorkflowTemplate.html"><abbr title="Google\Service\Dataproc\WorkflowTemplate">WorkflowTemplate</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Dataproc/Resource/ProjectsLocationsWorkflowTemplates.php#L127">at line 127</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataproc/Policy.html"><abbr title="Google\Service\Dataproc\Policy">Policy</abbr></a>
+    <strong>getIamPolicy</strong>(string $resource, <a href="../../../../Google/Service/Dataproc/GetIamPolicyRequest.html"><abbr title="Google\Service\Dataproc\GetIamPolicyRequest">GetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the access control policy for a resource. Returns an empty policy if the
+resource exists and does not have a policy set.</p></p>                <p>(workflowTemplates.getIamPolicy)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy is being
+requested. See Resource names
+(<a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>) for the appropriate
+value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dataproc/GetIamPolicyRequest.html"><abbr title="Google\Service\Dataproc\GetIamPolicyRequest">GetIamPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataproc/Policy.html"><abbr title="Google\Service\Dataproc\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_instantiate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Dataproc/Resource/ProjectsLocationsWorkflowTemplates.php#L158">at line 158</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataproc/Operation.html"><abbr title="Google\Service\Dataproc\Operation">Operation</abbr></a>
+    <strong>instantiate</strong>(string $name, <a href="../../../../Google/Service/Dataproc/InstantiateWorkflowTemplateRequest.html"><abbr title="Google\Service\Dataproc\InstantiateWorkflowTemplateRequest">InstantiateWorkflowTemplateRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Instantiates a template and begins execution.The returned Operation can be
+used to track execution of workflow by polling operations.get. The Operation
+will complete when entire workflow is finished.The running workflow can be
+aborted via operations.cancel. This will cause any inflight jobs to be
+cancelled and workflow-owned clusters to be deleted.The Operation.metadata
+will be WorkflowMetadata (<a href="https://cloud.google.com/dataproc/docs/reference/rp">https://cloud.google.com/dataproc/docs/reference/rp</a>
+c/google.cloud.dataproc.v1#workflowmetadata). Also see Using WorkflowMetadata
+(<a href="https://cloud.google.com/dataproc/docs/concepts/workflows/debugging#using_wo">https://cloud.google.com/dataproc/docs/concepts/workflows/debugging#using_wo</a>
+rkflowmetadata).On successful completion, Operation.response will be Empty.</p></p>                <p>(workflowTemplates.instantiate)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the workflow template, as
+described in <a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>. For
+projects.regions.workflowTemplates.instantiate, the resource name of the
+template has the following format:
+projects/{project_id}/regions/{region}/workflowTemplates/{template_id} For
+projects.locations.workflowTemplates.instantiate, the resource name of the
+template has the following format:
+projects/{project_id}/locations/{location}/workflowTemplates/{template_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dataproc/InstantiateWorkflowTemplateRequest.html"><abbr title="Google\Service\Dataproc\InstantiateWorkflowTemplateRequest">InstantiateWorkflowTemplateRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataproc/Operation.html"><abbr title="Google\Service\Dataproc\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_instantiateInline">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Dataproc/Resource/ProjectsLocationsWorkflowTemplates.php#L198">at line 198</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataproc/Operation.html"><abbr title="Google\Service\Dataproc\Operation">Operation</abbr></a>
+    <strong>instantiateInline</strong>(string $parent, <a href="../../../../Google/Service/Dataproc/WorkflowTemplate.html"><abbr title="Google\Service\Dataproc\WorkflowTemplate">WorkflowTemplate</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Instantiates a template and begins execution.This method is equivalent to
+executing the sequence CreateWorkflowTemplate, InstantiateWorkflowTemplate,
+DeleteWorkflowTemplate.The returned Operation can be used to track execution
+of workflow by polling operations.get. The Operation will complete when
+entire workflow is finished.The running workflow can be aborted via
+operations.cancel. This will cause any inflight jobs to be cancelled and
+workflow-owned clusters to be deleted.The Operation.metadata will be
+WorkflowMetadata (<a href="https://cloud.google.com/dataproc/docs/reference/rpc/google">https://cloud.google.com/dataproc/docs/reference/rpc/google</a>
+.cloud.dataproc.v1#workflowmetadata). Also see Using WorkflowMetadata (https:
+//cloud.google.com/dataproc/docs/concepts/workflows/debugging#using_workflowm
+etadata).On successful completion, Operation.response will be Empty.</p></p>                <p>(workflowTemplates.instantiateInline)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the region or location,
+as described in <a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>. For
+projects.regions.workflowTemplates,instantiateinline, the resource name of
+the region has the following format: projects/{project_id}/regions/{region}
+For projects.locations.workflowTemplates.instantiateinline, the resource name
+of the location has the following format:
+projects/{project_id}/locations/{location}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dataproc/WorkflowTemplate.html"><abbr title="Google\Service\Dataproc\WorkflowTemplate">WorkflowTemplate</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataproc/Operation.html"><abbr title="Google\Service\Dataproc\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsLocationsWorkflowTemplates">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Dataproc/Resource/ProjectsLocationsWorkflowTemplates.php#L223">at line 223</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataproc/ListWorkflowTemplatesResponse.html"><abbr title="Google\Service\Dataproc\ListWorkflowTemplatesResponse">ListWorkflowTemplatesResponse</abbr></a>
+    <strong>listProjectsLocationsWorkflowTemplates</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists workflows that match the specified filter in the request.</p></p>                <p>(workflowTemplates.listProjectsLocationsWorkflowTemplates)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the region or location,
+as described in <a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>. For
+projects.regions.workflowTemplates,list, the resource name of the region has
+the following format: projects/{project_id}/regions/{region} For
+projects.locations.workflowTemplates.list, the resource name of the location
+has the following format: projects/{project_id}/locations/{location}</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataproc/ListWorkflowTemplatesResponse.html"><abbr title="Google\Service\Dataproc\ListWorkflowTemplatesResponse">ListWorkflowTemplatesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Dataproc/Resource/ProjectsLocationsWorkflowTemplates.php#L243">at line 243</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataproc/Policy.html"><abbr title="Google\Service\Dataproc\Policy">Policy</abbr></a>
+    <strong>setIamPolicy</strong>(string $resource, <a href="../../../../Google/Service/Dataproc/SetIamPolicyRequest.html"><abbr title="Google\Service\Dataproc\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the access control policy on the specified resource. Replaces any
+existing policy.Can return NOT_FOUND, INVALID_ARGUMENT, and PERMISSION_DENIED
+errors. (workflowTemplates.setIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy is being
+specified. See Resource names
+(<a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>) for the appropriate
+value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dataproc/SetIamPolicyRequest.html"><abbr title="Google\Service\Dataproc\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataproc/Policy.html"><abbr title="Google\Service\Dataproc\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testIamPermissions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Dataproc/Resource/ProjectsLocationsWorkflowTemplates.php#L266">at line 266</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataproc/TestIamPermissionsResponse.html"><abbr title="Google\Service\Dataproc\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+    <strong>testIamPermissions</strong>(string $resource, <a href="../../../../Google/Service/Dataproc/TestIamPermissionsRequest.html"><abbr title="Google\Service\Dataproc\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns permissions that a caller has on the specified resource. If the
+resource does not exist, this will return an empty set of permissions, not a
+NOT_FOUND error.Note: This operation is designed to be used for building
+permission-aware UIs and command-line tools, not for authorization checking.</p></p>                <p><p>This operation may &quot;fail open&quot; without warning.
+(workflowTemplates.testIamPermissions)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy detail is
+being requested. See Resource names
+(<a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>) for the appropriate
+value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dataproc/TestIamPermissionsRequest.html"><abbr title="Google\Service\Dataproc\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataproc/TestIamPermissionsResponse.html"><abbr title="Google\Service\Dataproc\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Dataproc/Resource/ProjectsLocationsWorkflowTemplates.php#L289">at line 289</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataproc/WorkflowTemplate.html"><abbr title="Google\Service\Dataproc\WorkflowTemplate">WorkflowTemplate</abbr></a>
+    <strong>update</strong>(string $name, <a href="../../../../Google/Service/Dataproc/WorkflowTemplate.html"><abbr title="Google\Service\Dataproc\WorkflowTemplate">WorkflowTemplate</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates (replaces) workflow template. The updated template must contain
+version that matches the current server version. (workflowTemplates.update)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Output only. The resource name of the workflow template,
+as described in <a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>. For
+projects.regions.workflowTemplates, the resource name of the template has the
+following format:
+projects/{project_id}/regions/{region}/workflowTemplates/{template_id} For
+projects.locations.workflowTemplates, the resource name of the template has
+the following format:
+projects/{project_id}/locations/{location}/workflowTemplates/{template_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dataproc/WorkflowTemplate.html"><abbr title="Google\Service\Dataproc\WorkflowTemplate">WorkflowTemplate</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataproc/WorkflowTemplate.html"><abbr title="Google\Service\Dataproc\WorkflowTemplate">WorkflowTemplate</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

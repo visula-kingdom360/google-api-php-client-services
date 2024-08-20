@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Cloudchannel\Resource\Accounts | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Cloudchannel_Resource_Accounts" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Cloudchannel.html">Cloudchannel</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Cloudchannel/Resource.html">Resource</a></li><li class="backslash">\</li><li>Accounts</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Accounts    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Accounts</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/Accounts.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;accounts&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $cloudchannelService = new Google\Service\Cloudchannel(...);
+ $accounts = $cloudchannelService-&gt;accounts;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1CheckCloudIdentityAccountsExistResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1CheckCloudIdentityAccountsExistResponse">GoogleCloudChannelV1CheckCloudIdentityAccountsExistResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_checkCloudIdentityAccountsExist">checkCloudIdentityAccountsExist</a>(string $parent, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1CheckCloudIdentityAccountsExistRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1CheckCloudIdentityAccountsExistRequest">GoogleCloudChannelV1CheckCloudIdentityAccountsExistRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Confirms the existence of Cloud Identity accounts based on the domain and if
+the Cloud Identity accounts are owned by the reseller. Possible error codes:</p>
+<ul>
+<li>PERMISSION_DENIED: The reseller account making the request is different
+from the reseller account in the API request. <em> INVALID_ARGUMENT: Required
+request parameters are missing or invalid. </em> INVALID_VALUE: Invalid domain
+value in the request. Return value: A list of CloudIdentityCustomerAccount
+resources for the domain (may be empty) Note: in the v1alpha1 version of the
+API, a NOT_FOUND error returns if no CloudIdentityCustomerAccount resources
+match the domain. (accounts.checkCloudIdentityAccountsExist)</li>
+</ul></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListSubscribersResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListSubscribersResponse">GoogleCloudChannelV1ListSubscribersResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listSubscribers">listSubscribers</a>(string $account, array $optParams = [])
+        
+                                            <p><p>Lists service accounts with subscriber privileges on the Cloud Pub/Sub topic
+created for this Channel Services account. Possible error codes: <em>
+PERMISSION_DENIED: The reseller account making the request and the provided
+reseller account are different, or the impersonated user is not a super
+admin. </em> INVALID_ARGUMENT: Required request parameters are missing or
+invalid. <em> NOT_FOUND: The topic resource doesn't exist. </em> INTERNAL: Any non-
+user error related to a technical issue in the backend. Contact Cloud Channel
+support. * UNKNOWN: Any non-user error related to a technical issue in the
+backend. Contact Cloud Channel support. Return value: A list of service email
+addresses. (accounts.listSubscribers)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListTransferableOffersResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableOffersResponse">GoogleCloudChannelV1ListTransferableOffersResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listTransferableOffers">listTransferableOffers</a>(string $parent, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListTransferableOffersRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableOffersRequest">GoogleCloudChannelV1ListTransferableOffersRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>List TransferableOffers of a customer based on Cloud Identity ID or Customer
+Name in the request. Use this method when a reseller gets the entitlement
+information of an unowned customer. The reseller should provide the
+customer's Cloud Identity ID or Customer Name. Possible error codes: <em>
+PERMISSION_DENIED: </em> The customer doesn't belong to the reseller and has no
+auth token. <em> The customer provided incorrect reseller information when
+generating auth token. </em> The reseller account making the request is different
+from the reseller account in the query. <em> The reseller is not authorized to
+transact on this Product. See
+<a href="https://support.google.com/channelservices/answer/9759265">https://support.google.com/channelservices/answer/9759265</a> </em> INVALID_ARGUMENT:
+Required request parameters are missing or invalid. Return value: List of
+TransferableOffer for the given customer and SKU.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListTransferableSkusResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableSkusResponse">GoogleCloudChannelV1ListTransferableSkusResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listTransferableSkus">listTransferableSkus</a>(string $parent, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListTransferableSkusRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableSkusRequest">GoogleCloudChannelV1ListTransferableSkusRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>List TransferableSkus of a customer based on the Cloud Identity ID or
+Customer Name in the request. Use this method to list the entitlements
+information of an unowned customer. You should provide the customer's Cloud
+Identity ID or Customer Name. Possible error codes: <em> PERMISSION_DENIED: </em>
+The customer doesn't belong to the reseller and has no auth token. <em> The
+supplied auth token is invalid. </em> The reseller account making the request is
+different from the reseller account in the query. * INVALID_ARGUMENT:
+Required request parameters are missing or invalid. Return value: A list of
+the customer's TransferableSku. (accounts.listTransferableSkus)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1RegisterSubscriberResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1RegisterSubscriberResponse">GoogleCloudChannelV1RegisterSubscriberResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_register">register</a>(string $account, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1RegisterSubscriberRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1RegisterSubscriberRequest">GoogleCloudChannelV1RegisterSubscriberRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Registers a service account with subscriber privileges on the Cloud Pub/Sub
+topic for this Channel Services account. After you create a subscriber, you
+get the events through SubscriberEvent Possible error codes: <em>
+PERMISSION_DENIED: The reseller account making the request and the provided
+reseller account are different, or the impersonated user is not a super
+admin. </em> INVALID_ARGUMENT: Required request parameters are missing or
+invalid. <em> INTERNAL: Any non-user error related to a technical issue in the
+backend. Contact Cloud Channel support. </em> UNKNOWN: Any non-user error related
+to a technical issue in the backend. Contact Cloud Channel support. Return
+value: The topic name with the registered service email address.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1UnregisterSubscriberResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1UnregisterSubscriberResponse">GoogleCloudChannelV1UnregisterSubscriberResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_unregister">unregister</a>(string $account, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1UnregisterSubscriberRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1UnregisterSubscriberRequest">GoogleCloudChannelV1UnregisterSubscriberRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Unregisters a service account with subscriber privileges on the Cloud Pub/Sub
+topic created for this Channel Services account. If there are no service
+accounts left with subscriber privileges, this deletes the topic. You can
+call ListSubscribers to check for these accounts. Possible error codes: <em>
+PERMISSION_DENIED: The reseller account making the request and the provided
+reseller account are different, or the impersonated user is not a super
+admin. </em> INVALID_ARGUMENT: Required request parameters are missing or
+invalid. <em> NOT_FOUND: The topic resource doesn't exist. </em> INTERNAL: Any non-
+user error related to a technical issue in the backend. Contact Cloud Channel
+support. * UNKNOWN: Any non-user error related to a technical issue in the
+backend. Contact Cloud Channel support. Return value: The topic name that
+unregistered the service email address. Returns a success response if the
+service email address wasn't registered with the topic. (accounts.unregister)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_checkCloudIdentityAccountsExist">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/Accounts.php#L60">at line 60</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1CheckCloudIdentityAccountsExistResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1CheckCloudIdentityAccountsExistResponse">GoogleCloudChannelV1CheckCloudIdentityAccountsExistResponse</abbr></a>
+    <strong>checkCloudIdentityAccountsExist</strong>(string $parent, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1CheckCloudIdentityAccountsExistRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1CheckCloudIdentityAccountsExistRequest">GoogleCloudChannelV1CheckCloudIdentityAccountsExistRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Confirms the existence of Cloud Identity accounts based on the domain and if
+the Cloud Identity accounts are owned by the reseller. Possible error codes:</p>
+<ul>
+<li>PERMISSION_DENIED: The reseller account making the request is different
+from the reseller account in the API request. <em> INVALID_ARGUMENT: Required
+request parameters are missing or invalid. </em> INVALID_VALUE: Invalid domain
+value in the request. Return value: A list of CloudIdentityCustomerAccount
+resources for the domain (may be empty) Note: in the v1alpha1 version of the
+API, a NOT_FOUND error returns if no CloudIdentityCustomerAccount resources
+match the domain. (accounts.checkCloudIdentityAccountsExist)</li>
+</ul></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The reseller account's resource name. Parent
+uses the format: accounts/{account_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1CheckCloudIdentityAccountsExistRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1CheckCloudIdentityAccountsExistRequest">GoogleCloudChannelV1CheckCloudIdentityAccountsExistRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1CheckCloudIdentityAccountsExistResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1CheckCloudIdentityAccountsExistResponse">GoogleCloudChannelV1CheckCloudIdentityAccountsExistResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listSubscribers">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/Accounts.php#L93">at line 93</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListSubscribersResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListSubscribersResponse">GoogleCloudChannelV1ListSubscribersResponse</abbr></a>
+    <strong>listSubscribers</strong>(string $account, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists service accounts with subscriber privileges on the Cloud Pub/Sub topic
+created for this Channel Services account. Possible error codes: <em>
+PERMISSION_DENIED: The reseller account making the request and the provided
+reseller account are different, or the impersonated user is not a super
+admin. </em> INVALID_ARGUMENT: Required request parameters are missing or
+invalid. <em> NOT_FOUND: The topic resource doesn't exist. </em> INTERNAL: Any non-
+user error related to a technical issue in the backend. Contact Cloud Channel
+support. * UNKNOWN: Any non-user error related to a technical issue in the
+backend. Contact Cloud Channel support. Return value: A list of service email
+addresses. (accounts.listSubscribers)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$account</td>
+                <td><p>Optional. Resource name of the account.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListSubscribersResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListSubscribersResponse">GoogleCloudChannelV1ListSubscribersResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listTransferableOffers">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/Accounts.php#L120">at line 120</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListTransferableOffersResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableOffersResponse">GoogleCloudChannelV1ListTransferableOffersResponse</abbr></a>
+    <strong>listTransferableOffers</strong>(string $parent, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListTransferableOffersRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableOffersRequest">GoogleCloudChannelV1ListTransferableOffersRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>List TransferableOffers of a customer based on Cloud Identity ID or Customer
+Name in the request. Use this method when a reseller gets the entitlement
+information of an unowned customer. The reseller should provide the
+customer's Cloud Identity ID or Customer Name. Possible error codes: <em>
+PERMISSION_DENIED: </em> The customer doesn't belong to the reseller and has no
+auth token. <em> The customer provided incorrect reseller information when
+generating auth token. </em> The reseller account making the request is different
+from the reseller account in the query. <em> The reseller is not authorized to
+transact on this Product. See
+<a href="https://support.google.com/channelservices/answer/9759265">https://support.google.com/channelservices/answer/9759265</a> </em> INVALID_ARGUMENT:
+Required request parameters are missing or invalid. Return value: List of
+TransferableOffer for the given customer and SKU.</p></p>                <p>(accounts.listTransferableOffers)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the reseller's account.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListTransferableOffersRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableOffersRequest">GoogleCloudChannelV1ListTransferableOffersRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListTransferableOffersResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableOffersResponse">GoogleCloudChannelV1ListTransferableOffersResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listTransferableSkus">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/Accounts.php#L144">at line 144</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListTransferableSkusResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableSkusResponse">GoogleCloudChannelV1ListTransferableSkusResponse</abbr></a>
+    <strong>listTransferableSkus</strong>(string $parent, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListTransferableSkusRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableSkusRequest">GoogleCloudChannelV1ListTransferableSkusRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>List TransferableSkus of a customer based on the Cloud Identity ID or
+Customer Name in the request. Use this method to list the entitlements
+information of an unowned customer. You should provide the customer's Cloud
+Identity ID or Customer Name. Possible error codes: <em> PERMISSION_DENIED: </em>
+The customer doesn't belong to the reseller and has no auth token. <em> The
+supplied auth token is invalid. </em> The reseller account making the request is
+different from the reseller account in the query. * INVALID_ARGUMENT:
+Required request parameters are missing or invalid. Return value: A list of
+the customer's TransferableSku. (accounts.listTransferableSkus)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The reseller account's resource name. Parent
+uses the format: accounts/{account_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListTransferableSkusRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableSkusRequest">GoogleCloudChannelV1ListTransferableSkusRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListTransferableSkusResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableSkusResponse">GoogleCloudChannelV1ListTransferableSkusResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_register">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/Accounts.php#L169">at line 169</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1RegisterSubscriberResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1RegisterSubscriberResponse">GoogleCloudChannelV1RegisterSubscriberResponse</abbr></a>
+    <strong>register</strong>(string $account, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1RegisterSubscriberRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1RegisterSubscriberRequest">GoogleCloudChannelV1RegisterSubscriberRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Registers a service account with subscriber privileges on the Cloud Pub/Sub
+topic for this Channel Services account. After you create a subscriber, you
+get the events through SubscriberEvent Possible error codes: <em>
+PERMISSION_DENIED: The reseller account making the request and the provided
+reseller account are different, or the impersonated user is not a super
+admin. </em> INVALID_ARGUMENT: Required request parameters are missing or
+invalid. <em> INTERNAL: Any non-user error related to a technical issue in the
+backend. Contact Cloud Channel support. </em> UNKNOWN: Any non-user error related
+to a technical issue in the backend. Contact Cloud Channel support. Return
+value: The topic name with the registered service email address.</p></p>                <p>(accounts.register)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$account</td>
+                <td><p>Optional. Resource name of the account.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1RegisterSubscriberRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1RegisterSubscriberRequest">GoogleCloudChannelV1RegisterSubscriberRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1RegisterSubscriberResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1RegisterSubscriberResponse">GoogleCloudChannelV1RegisterSubscriberResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unregister">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Cloudchannel/Resource/Accounts.php#L196">at line 196</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1UnregisterSubscriberResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1UnregisterSubscriberResponse">GoogleCloudChannelV1UnregisterSubscriberResponse</abbr></a>
+    <strong>unregister</strong>(string $account, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1UnregisterSubscriberRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1UnregisterSubscriberRequest">GoogleCloudChannelV1UnregisterSubscriberRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Unregisters a service account with subscriber privileges on the Cloud Pub/Sub
+topic created for this Channel Services account. If there are no service
+accounts left with subscriber privileges, this deletes the topic. You can
+call ListSubscribers to check for these accounts. Possible error codes: <em>
+PERMISSION_DENIED: The reseller account making the request and the provided
+reseller account are different, or the impersonated user is not a super
+admin. </em> INVALID_ARGUMENT: Required request parameters are missing or
+invalid. <em> NOT_FOUND: The topic resource doesn't exist. </em> INTERNAL: Any non-
+user error related to a technical issue in the backend. Contact Cloud Channel
+support. * UNKNOWN: Any non-user error related to a technical issue in the
+backend. Contact Cloud Channel support. Return value: The topic name that
+unregistered the service email address. Returns a success response if the
+service email address wasn't registered with the topic. (accounts.unregister)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$account</td>
+                <td><p>Optional. Resource name of the account.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1UnregisterSubscriberRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1UnregisterSubscriberRequest">GoogleCloudChannelV1UnregisterSubscriberRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1UnregisterSubscriberResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1UnregisterSubscriberResponse">GoogleCloudChannelV1UnregisterSubscriberResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

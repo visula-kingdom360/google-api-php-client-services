@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\CloudRedis\Resource\ProjectsLocationsInstances | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_CloudRedis_Resource_ProjectsLocationsInstances" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CloudRedis.html">CloudRedis</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CloudRedis/Resource.html">Resource</a></li><li class="backslash">\</li><li>ProjectsLocationsInstances</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsLocationsInstances    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsLocationsInstances</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudRedis/Resource/ProjectsLocationsInstances.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;instances&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $redisService = new Google\Service\CloudRedis(...);
+ $instances = $redisService-&gt;projects_locations_instances;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/CloudRedis/Instance.html"><abbr title="Google\Service\CloudRedis\Instance">Instance</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a Redis instance based on the specified tier and memory size. By
+default, the instance is accessible from the project's <a href="https://cloud.google.com/vpc/docs/vpc">default
+network</a>. The creation is executed
+asynchronously and callers may check the returned operation to track its
+progress. Once the operation is completed the Redis instance will be fully
+functional. Completed longrunning.Operation will contain the new instance
+object in the response field. The returned operation is automatically deleted
+after a few hours, so there is no need to call DeleteOperation.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes a specific Redis instance. Instance stops serving and data is
+deleted. (instances.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_export">export</a>(string $name, <a href="../../../../Google/Service/CloudRedis/ExportInstanceRequest.html"><abbr title="Google\Service\CloudRedis\ExportInstanceRequest">ExportInstanceRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Export Redis instance data into a Redis RDB format file in Cloud Storage.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_failover">failover</a>(string $name, <a href="../../../../Google/Service/CloudRedis/FailoverInstanceRequest.html"><abbr title="Google\Service\CloudRedis\FailoverInstanceRequest">FailoverInstanceRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Initiates a failover of the primary node to current replica node for a
+specific STANDARD tier Cloud Memorystore for Redis instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRedis/Instance.html"><abbr title="Google\Service\CloudRedis\Instance">Instance</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets the details of a specific Redis instance. (instances.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRedis/InstanceAuthString.html"><abbr title="Google\Service\CloudRedis\InstanceAuthString">InstanceAuthString</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAuthString">getAuthString</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets the AUTH string for a Redis instance. If AUTH is not enabled for the
+instance the response will be empty. This information is not included in the
+details returned to GetInstance. (instances.getAuthString)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_import">import</a>(string $name, <a href="../../../../Google/Service/CloudRedis/ImportInstanceRequest.html"><abbr title="Google\Service\CloudRedis\ImportInstanceRequest">ImportInstanceRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Import a Redis RDB snapshot file from Cloud Storage into a Redis instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRedis/ListInstancesResponse.html"><abbr title="Google\Service\CloudRedis\ListInstancesResponse">ListInstancesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsLocationsInstances">listProjectsLocationsInstances</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists all Redis instances owned by a project in either the specified location
+(region) or all locations. The location should have the following format: *
+<code>projects/{project_id}/locations/{location_id}</code> If <code>location_id</code> is specified
+as <code>-</code> (wildcard), then all regions available to the project are queried, and
+the results are aggregated. (instances.listProjectsLocationsInstances)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/CloudRedis/Instance.html"><abbr title="Google\Service\CloudRedis\Instance">Instance</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the metadata and configuration of a specific Redis instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_rescheduleMaintenance">rescheduleMaintenance</a>(string $name, <a href="../../../../Google/Service/CloudRedis/RescheduleMaintenanceRequest.html"><abbr title="Google\Service\CloudRedis\RescheduleMaintenanceRequest">RescheduleMaintenanceRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Reschedule maintenance for a given instance in a given project and location.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_upgrade">upgrade</a>(string $name, <a href="../../../../Google/Service/CloudRedis/UpgradeInstanceRequest.html"><abbr title="Google\Service\CloudRedis\UpgradeInstanceRequest">UpgradeInstanceRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Upgrades Redis instance to the newer Redis version specified in the request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudRedis/Resource/ProjectsLocationsInstances.php#L65">at line 65</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/CloudRedis/Instance.html"><abbr title="Google\Service\CloudRedis\Instance">Instance</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a Redis instance based on the specified tier and memory size. By
+default, the instance is accessible from the project's <a href="https://cloud.google.com/vpc/docs/vpc">default
+network</a>. The creation is executed
+asynchronously and callers may check the returned operation to track its
+progress. Once the operation is completed the Redis instance will be fully
+functional. Completed longrunning.Operation will contain the new instance
+object in the response field. The returned operation is automatically deleted
+after a few hours, so there is no need to call DeleteOperation.</p></p>                <p>(instances.create)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the instance location
+using the form: <code>projects/{project_id}/locations/{location_id}</code> where
+<code>location_id</code> refers to a GCP region.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudRedis/Instance.html"><abbr title="Google\Service\CloudRedis\Instance">Instance</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudRedis/Resource/ProjectsLocationsInstances.php#L82">at line 82</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a specific Redis instance. Instance stops serving and data is
+deleted. (instances.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Redis instance resource name using the form:
+<code>projects/{project_id}/locations/{location_id}/instances/{instance_id}</code> where
+<code>location_id</code> refers to a GCP region.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_export">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudRedis/Resource/ProjectsLocationsInstances.php#L102">at line 102</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a>
+    <strong>export</strong>(string $name, <a href="../../../../Google/Service/CloudRedis/ExportInstanceRequest.html"><abbr title="Google\Service\CloudRedis\ExportInstanceRequest">ExportInstanceRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Export Redis instance data into a Redis RDB format file in Cloud Storage.</p></p>                <p><p>Redis will continue serving during this operation. The returned operation is
+automatically deleted after a few hours, so there is no need to call
+DeleteOperation. (instances.export)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Redis instance resource name using the form:
+<code>projects/{project_id}/locations/{location_id}/instances/{instance_id}</code> where
+<code>location_id</code> refers to a GCP region.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudRedis/ExportInstanceRequest.html"><abbr title="Google\Service\CloudRedis\ExportInstanceRequest">ExportInstanceRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_failover">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudRedis/Resource/ProjectsLocationsInstances.php#L121">at line 121</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a>
+    <strong>failover</strong>(string $name, <a href="../../../../Google/Service/CloudRedis/FailoverInstanceRequest.html"><abbr title="Google\Service\CloudRedis\FailoverInstanceRequest">FailoverInstanceRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Initiates a failover of the primary node to current replica node for a
+specific STANDARD tier Cloud Memorystore for Redis instance.</p></p>                <p>(instances.failover)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Redis instance resource name using the form:
+<code>projects/{project_id}/locations/{location_id}/instances/{instance_id}</code> where
+<code>location_id</code> refers to a GCP region.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudRedis/FailoverInstanceRequest.html"><abbr title="Google\Service\CloudRedis\FailoverInstanceRequest">FailoverInstanceRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudRedis/Resource/ProjectsLocationsInstances.php#L137">at line 137</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRedis/Instance.html"><abbr title="Google\Service\CloudRedis\Instance">Instance</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the details of a specific Redis instance. (instances.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Redis instance resource name using the form:
+<code>projects/{project_id}/locations/{location_id}/instances/{instance_id}</code> where
+<code>location_id</code> refers to a GCP region.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRedis/Instance.html"><abbr title="Google\Service\CloudRedis\Instance">Instance</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthString">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudRedis/Resource/ProjectsLocationsInstances.php#L155">at line 155</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRedis/InstanceAuthString.html"><abbr title="Google\Service\CloudRedis\InstanceAuthString">InstanceAuthString</abbr></a>
+    <strong>getAuthString</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the AUTH string for a Redis instance. If AUTH is not enabled for the
+instance the response will be empty. This information is not included in the
+details returned to GetInstance. (instances.getAuthString)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Redis instance resource name using the form:
+<code>projects/{project_id}/locations/{location_id}/instances/{instance_id}</code> where
+<code>location_id</code> refers to a GCP region.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRedis/InstanceAuthString.html"><abbr title="Google\Service\CloudRedis\InstanceAuthString">InstanceAuthString</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_import">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudRedis/Resource/ProjectsLocationsInstances.php#L177">at line 177</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a>
+    <strong>import</strong>(string $name, <a href="../../../../Google/Service/CloudRedis/ImportInstanceRequest.html"><abbr title="Google\Service\CloudRedis\ImportInstanceRequest">ImportInstanceRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Import a Redis RDB snapshot file from Cloud Storage into a Redis instance.</p></p>                <p><p>Redis may stop serving during this operation. Instance state will be
+IMPORTING for entire operation. When complete, the instance will contain only
+data from the imported file. The returned operation is automatically deleted
+after a few hours, so there is no need to call DeleteOperation.
+(instances.import)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Redis instance resource name using the form:
+<code>projects/{project_id}/locations/{location_id}/instances/{instance_id}</code> where
+<code>location_id</code> refers to a GCP region.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudRedis/ImportInstanceRequest.html"><abbr title="Google\Service\CloudRedis\ImportInstanceRequest">ImportInstanceRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsLocationsInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudRedis/Resource/ProjectsLocationsInstances.php#L205">at line 205</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRedis/ListInstancesResponse.html"><abbr title="Google\Service\CloudRedis\ListInstancesResponse">ListInstancesResponse</abbr></a>
+    <strong>listProjectsLocationsInstances</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all Redis instances owned by a project in either the specified location
+(region) or all locations. The location should have the following format: *
+<code>projects/{project_id}/locations/{location_id}</code> If <code>location_id</code> is specified
+as <code>-</code> (wildcard), then all regions available to the project are queried, and
+the results are aggregated. (instances.listProjectsLocationsInstances)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the instance location
+using the form: <code>projects/{project_id}/locations/{location_id}</code> where
+<code>location_id</code> refers to a GCP region.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRedis/ListInstancesResponse.html"><abbr title="Google\Service\CloudRedis\ListInstancesResponse">ListInstancesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudRedis/Resource/ProjectsLocationsInstances.php#L235">at line 235</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/CloudRedis/Instance.html"><abbr title="Google\Service\CloudRedis\Instance">Instance</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the metadata and configuration of a specific Redis instance.</p></p>                <p><p>Completed longrunning.Operation will contain the new instance object in the
+response field. The returned operation is automatically deleted after a few
+hours, so there is no need to call DeleteOperation. (instances.patch)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Unique name of the resource in this scope
+including project and location using the form:
+<code>projects/{project_id}/locations/{location_id}/instances/{instance_id}</code> Note:
+Redis instances are managed and addressed at regional level so location_id
+here refers to a GCP region; however, users may choose which specific zone
+(or collection of zones for cross-zone instances) an instance should be
+provisioned in. Refer to location_id and alternative_location_id fields for
+more details.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudRedis/Instance.html"><abbr title="Google\Service\CloudRedis\Instance">Instance</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rescheduleMaintenance">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudRedis/Resource/ProjectsLocationsInstances.php#L253">at line 253</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a>
+    <strong>rescheduleMaintenance</strong>(string $name, <a href="../../../../Google/Service/CloudRedis/RescheduleMaintenanceRequest.html"><abbr title="Google\Service\CloudRedis\RescheduleMaintenanceRequest">RescheduleMaintenanceRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Reschedule maintenance for a given instance in a given project and location.</p></p>                <p>(instances.rescheduleMaintenance)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Redis instance resource name using the form:
+<code>projects/{project_id}/locations/{location_id}/instances/{instance_id}</code> where
+<code>location_id</code> refers to a GCP region.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudRedis/RescheduleMaintenanceRequest.html"><abbr title="Google\Service\CloudRedis\RescheduleMaintenanceRequest">RescheduleMaintenanceRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_upgrade">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/CloudRedis/Resource/ProjectsLocationsInstances.php#L271">at line 271</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a>
+    <strong>upgrade</strong>(string $name, <a href="../../../../Google/Service/CloudRedis/UpgradeInstanceRequest.html"><abbr title="Google\Service\CloudRedis\UpgradeInstanceRequest">UpgradeInstanceRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Upgrades Redis instance to the newer Redis version specified in the request.</p></p>                <p>(instances.upgrade)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Redis instance resource name using the form:
+<code>projects/{project_id}/locations/{location_id}/instances/{instance_id}</code> where
+<code>location_id</code> refers to a GCP region.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudRedis/UpgradeInstanceRequest.html"><abbr title="Google\Service\CloudRedis\UpgradeInstanceRequest">UpgradeInstanceRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRedis/Operation.html"><abbr title="Google\Service\CloudRedis\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

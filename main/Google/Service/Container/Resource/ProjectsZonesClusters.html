@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Container\Resource\ProjectsZonesClusters | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Container_Resource_ProjectsZonesClusters" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Container.html">Container</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Container/Resource.html">Resource</a></li><li class="backslash">\</li><li>ProjectsZonesClusters</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsZonesClusters    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsZonesClusters</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Container/Resource/ProjectsZonesClusters.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;clusters&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $containerService = new Google\Service\Container(...);
+ $clusters = $containerService-&gt;projects_zones_clusters;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addons">addons</a>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/SetAddonsConfigRequest.html"><abbr title="Google\Service\Container\SetAddonsConfigRequest">SetAddonsConfigRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the addons for a specific cluster. (clusters.addons)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_completeIpRotation">completeIpRotation</a>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/CompleteIPRotationRequest.html"><abbr title="Google\Service\Container\CompleteIPRotationRequest">CompleteIPRotationRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Completes master IP rotation. (clusters.completeIpRotation)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $projectId, string $zone, <a href="../../../../Google/Service/Container/CreateClusterRequest.html"><abbr title="Google\Service\Container\CreateClusterRequest">CreateClusterRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a cluster, consisting of the specified number and type of Google
+Compute Engine instances. By default, the cluster is created in the project's
+<a href="https://cloud.google.com/compute/docs/networks-and-
+firewalls#networks">default network</a>. One firewall is added for the cluster. After cluster
+creation, the Kubelet creates routes for each node to allow the containers on
+that node to communicate with all other instances in the cluster. Finally, an
+entry is added to the project's global metadata indicating which CIDR range
+the cluster is using. (clusters.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $projectId, string $zone, string $clusterId, array $optParams = [])
+        
+                                            <p><p>Deletes the cluster, including the Kubernetes endpoint and all worker nodes.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Container/Cluster.html"><abbr title="Google\Service\Container\Cluster">Cluster</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $projectId, string $zone, string $clusterId, array $optParams = [])
+        
+                                            <p><p>Gets the details of a specific cluster. (clusters.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_legacyAbac">legacyAbac</a>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/SetLegacyAbacRequest.html"><abbr title="Google\Service\Container\SetLegacyAbacRequest">SetLegacyAbacRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Enables or disables the ABAC authorization mechanism on a cluster.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Container/ListClustersResponse.html"><abbr title="Google\Service\Container\ListClustersResponse">ListClustersResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsZonesClusters">listProjectsZonesClusters</a>(string $projectId, string $zone, array $optParams = [])
+        
+                                            <p><p>Lists all clusters owned by a project in either the specified zone or all
+zones. (clusters.listProjectsZonesClusters)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_locations">locations</a>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/SetLocationsRequest.html"><abbr title="Google\Service\Container\SetLocationsRequest">SetLocationsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the locations for a specific cluster. Deprecated. Use
+<a href="https://cloud.google.com/kubernetes-
+engine/docs/reference/rest/v1/projects.locations.clusters/update">projects.locations.clusters.update</a> instead.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_logging">logging</a>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/SetLoggingServiceRequest.html"><abbr title="Google\Service\Container\SetLoggingServiceRequest">SetLoggingServiceRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the logging service for a specific cluster. (clusters.logging)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_master">master</a>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/UpdateMasterRequest.html"><abbr title="Google\Service\Container\UpdateMasterRequest">UpdateMasterRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the master for a specific cluster. (clusters.master)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_monitoring">monitoring</a>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/SetMonitoringServiceRequest.html"><abbr title="Google\Service\Container\SetMonitoringServiceRequest">SetMonitoringServiceRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the monitoring service for a specific cluster. (clusters.monitoring)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_resourceLabels">resourceLabels</a>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/SetLabelsRequest.html"><abbr title="Google\Service\Container\SetLabelsRequest">SetLabelsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets labels on a cluster. (clusters.resourceLabels)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMaintenancePolicy">setMaintenancePolicy</a>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/SetMaintenancePolicyRequest.html"><abbr title="Google\Service\Container\SetMaintenancePolicyRequest">SetMaintenancePolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the maintenance policy for a cluster. (clusters.setMaintenancePolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMasterAuth">setMasterAuth</a>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/SetMasterAuthRequest.html"><abbr title="Google\Service\Container\SetMasterAuthRequest">SetMasterAuthRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets master auth materials. Currently supports changing the admin password or
+a specific cluster, either via password generation or explicitly setting the
+password. (clusters.setMasterAuth)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setNetworkPolicy">setNetworkPolicy</a>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/SetNetworkPolicyRequest.html"><abbr title="Google\Service\Container\SetNetworkPolicyRequest">SetNetworkPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Enables or disables Network Policy for a cluster. (clusters.setNetworkPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_startIpRotation">startIpRotation</a>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/StartIPRotationRequest.html"><abbr title="Google\Service\Container\StartIPRotationRequest">StartIPRotationRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Starts master IP rotation. (clusters.startIpRotation)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/UpdateClusterRequest.html"><abbr title="Google\Service\Container\UpdateClusterRequest">UpdateClusterRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the settings of a specific cluster. (clusters.update)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_addons">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Container/Resource/ProjectsZonesClusters.php#L66">at line 66</a></div>
+        <code>                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+    <strong>addons</strong>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/SetAddonsConfigRequest.html"><abbr title="Google\Service\Container\SetAddonsConfigRequest">SetAddonsConfigRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the addons for a specific cluster. (clusters.addons)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>Deprecated. The Google Developers Console <a href="https://cloud.google.com/resource-
+manager/docs/creating-managing-projects">project
+ID or project number</a>. This field has been deprecated and
+replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>Deprecated. The name of the Google Compute Engine
+<a href="https://cloud.google.com/compute/docs/zones#available">zone</a> in which the
+cluster resides. This field has been deprecated and replaced by the name
+field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$clusterId</td>
+                <td><p>Deprecated. The name of the cluster to upgrade. This
+field has been deprecated and replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Container/SetAddonsConfigRequest.html"><abbr title="Google\Service\Container\SetAddonsConfigRequest">SetAddonsConfigRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_completeIpRotation">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Container/Resource/ProjectsZonesClusters.php#L90">at line 90</a></div>
+        <code>                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+    <strong>completeIpRotation</strong>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/CompleteIPRotationRequest.html"><abbr title="Google\Service\Container\CompleteIPRotationRequest">CompleteIPRotationRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Completes master IP rotation. (clusters.completeIpRotation)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>Deprecated. The Google Developers Console <a href="https://cloud.google.com/resource-
+manager/docs/creating-managing-projects">project
+ID or project number</a>. This field has been deprecated and
+replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>Deprecated. The name of the Google Compute Engine
+<a href="https://cloud.google.com/compute/docs/zones#available">zone</a> in which the
+cluster resides. This field has been deprecated and replaced by the name
+field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$clusterId</td>
+                <td><p>Deprecated. The name of the cluster. This field has
+been deprecated and replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Container/CompleteIPRotationRequest.html"><abbr title="Google\Service\Container\CompleteIPRotationRequest">CompleteIPRotationRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Container/Resource/ProjectsZonesClusters.php#L119">at line 119</a></div>
+        <code>                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+    <strong>create</strong>(string $projectId, string $zone, <a href="../../../../Google/Service/Container/CreateClusterRequest.html"><abbr title="Google\Service\Container\CreateClusterRequest">CreateClusterRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a cluster, consisting of the specified number and type of Google
+Compute Engine instances. By default, the cluster is created in the project's
+<a href="https://cloud.google.com/compute/docs/networks-and-
+firewalls#networks">default network</a>. One firewall is added for the cluster. After cluster
+creation, the Kubelet creates routes for each node to allow the containers on
+that node to communicate with all other instances in the cluster. Finally, an
+entry is added to the project's global metadata indicating which CIDR range
+the cluster is using. (clusters.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>Deprecated. The Google Developers Console <a href="https://cloud.google.com/resource-
+manager/docs/creating-managing-projects">project
+ID or project number</a>. This field has been deprecated and
+replaced by the parent field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>Deprecated. The name of the Google Compute Engine
+<a href="https://cloud.google.com/compute/docs/zones#available">zone</a> in which the
+cluster resides. This field has been deprecated and replaced by the parent
+field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Container/CreateClusterRequest.html"><abbr title="Google\Service\Container\CreateClusterRequest">CreateClusterRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Container/Resource/ProjectsZonesClusters.php#L149">at line 149</a></div>
+        <code>                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+    <strong>delete</strong>(string $projectId, string $zone, string $clusterId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes the cluster, including the Kubernetes endpoint and all worker nodes.</p></p>                <p><p>Firewalls and routes that were configured during cluster creation are also
+deleted. Other Google Compute Engine resources that might be in use by the
+cluster, such as load balancer resources, are not deleted if they weren't
+present when the cluster was initially created. (clusters.delete)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>Deprecated. The Google Developers Console <a href="https://cloud.google.com/resource-
+manager/docs/creating-managing-projects">project
+ID or project number</a>. This field has been deprecated and
+replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>Deprecated. The name of the Google Compute Engine
+<a href="https://cloud.google.com/compute/docs/zones#available">zone</a> in which the
+cluster resides. This field has been deprecated and replaced by the name
+field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$clusterId</td>
+                <td><p>Deprecated. The name of the cluster to delete. This
+field has been deprecated and replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Container/Resource/ProjectsZonesClusters.php#L175">at line 175</a></div>
+        <code>                    <a href="../../../../Google/Service/Container/Cluster.html"><abbr title="Google\Service\Container\Cluster">Cluster</abbr></a>
+    <strong>get</strong>(string $projectId, string $zone, string $clusterId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the details of a specific cluster. (clusters.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>Deprecated. The Google Developers Console <a href="https://cloud.google.com/resource-
+manager/docs/creating-managing-projects">project
+ID or project number</a>. This field has been deprecated and
+replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>Deprecated. The name of the Google Compute Engine
+<a href="https://cloud.google.com/compute/docs/zones#available">zone</a> in which the
+cluster resides. This field has been deprecated and replaced by the name
+field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$clusterId</td>
+                <td><p>Deprecated. The name of the cluster to retrieve.
+This field has been deprecated and replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Container/Cluster.html"><abbr title="Google\Service\Container\Cluster">Cluster</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_legacyAbac">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Container/Resource/ProjectsZonesClusters.php#L200">at line 200</a></div>
+        <code>                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+    <strong>legacyAbac</strong>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/SetLegacyAbacRequest.html"><abbr title="Google\Service\Container\SetLegacyAbacRequest">SetLegacyAbacRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Enables or disables the ABAC authorization mechanism on a cluster.</p></p>                <p>(clusters.legacyAbac)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>Deprecated. The Google Developers Console <a href="https://cloud.google.com/resource-
+manager/docs/creating-managing-projects">project
+ID or project number</a>. This field has been deprecated and
+replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>Deprecated. The name of the Google Compute Engine
+<a href="https://cloud.google.com/compute/docs/zones#available">zone</a> in which the
+cluster resides. This field has been deprecated and replaced by the name
+field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$clusterId</td>
+                <td><p>Deprecated. The name of the cluster to update. This
+field has been deprecated and replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Container/SetLegacyAbacRequest.html"><abbr title="Google\Service\Container\SetLegacyAbacRequest">SetLegacyAbacRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsZonesClusters">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Container/Resource/ProjectsZonesClusters.php#L226">at line 226</a></div>
+        <code>                    <a href="../../../../Google/Service/Container/ListClustersResponse.html"><abbr title="Google\Service\Container\ListClustersResponse">ListClustersResponse</abbr></a>
+    <strong>listProjectsZonesClusters</strong>(string $projectId, string $zone, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all clusters owned by a project in either the specified zone or all
+zones. (clusters.listProjectsZonesClusters)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>Deprecated. The Google Developers Console <a href="https://cloud.google.com/resource-
+manager/docs/creating-managing-projects">project
+ID or project number</a>. This field has been deprecated and
+replaced by the parent field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>Deprecated. The name of the Google Compute Engine
+<a href="https://cloud.google.com/compute/docs/zones#available">zone</a> in which the
+cluster resides, or &quot;-&quot; for all zones. This field has been deprecated and
+replaced by the parent field.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Container/ListClustersResponse.html"><abbr title="Google\Service\Container\ListClustersResponse">ListClustersResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_locations">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Container/Resource/ProjectsZonesClusters.php#L253">at line 253</a></div>
+        <code>                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+    <strong>locations</strong>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/SetLocationsRequest.html"><abbr title="Google\Service\Container\SetLocationsRequest">SetLocationsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the locations for a specific cluster. Deprecated. Use
+<a href="https://cloud.google.com/kubernetes-
+engine/docs/reference/rest/v1/projects.locations.clusters/update">projects.locations.clusters.update</a> instead.</p></p>                <p>(clusters.locations)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>Deprecated. The Google Developers Console <a href="https://cloud.google.com/resource-
+manager/docs/creating-managing-projects">project
+ID or project number</a>. This field has been deprecated and
+replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>Deprecated. The name of the Google Compute Engine
+<a href="https://cloud.google.com/compute/docs/zones#available">zone</a> in which the
+cluster resides. This field has been deprecated and replaced by the name
+field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$clusterId</td>
+                <td><p>Deprecated. The name of the cluster to upgrade. This
+field has been deprecated and replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Container/SetLocationsRequest.html"><abbr title="Google\Service\Container\SetLocationsRequest">SetLocationsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_logging">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Container/Resource/ProjectsZonesClusters.php#L277">at line 277</a></div>
+        <code>                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+    <strong>logging</strong>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/SetLoggingServiceRequest.html"><abbr title="Google\Service\Container\SetLoggingServiceRequest">SetLoggingServiceRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the logging service for a specific cluster. (clusters.logging)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>Deprecated. The Google Developers Console <a href="https://cloud.google.com/resource-
+manager/docs/creating-managing-projects">project
+ID or project number</a>. This field has been deprecated and
+replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>Deprecated. The name of the Google Compute Engine
+<a href="https://cloud.google.com/compute/docs/zones#available">zone</a> in which the
+cluster resides. This field has been deprecated and replaced by the name
+field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$clusterId</td>
+                <td><p>Deprecated. The name of the cluster to upgrade. This
+field has been deprecated and replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Container/SetLoggingServiceRequest.html"><abbr title="Google\Service\Container\SetLoggingServiceRequest">SetLoggingServiceRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_master">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Container/Resource/ProjectsZonesClusters.php#L301">at line 301</a></div>
+        <code>                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+    <strong>master</strong>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/UpdateMasterRequest.html"><abbr title="Google\Service\Container\UpdateMasterRequest">UpdateMasterRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the master for a specific cluster. (clusters.master)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>Deprecated. The Google Developers Console <a href="https://cloud.google.com/resource-
+manager/docs/creating-managing-projects">project
+ID or project number</a>. This field has been deprecated and
+replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>Deprecated. The name of the Google Compute Engine
+<a href="https://cloud.google.com/compute/docs/zones#available">zone</a> in which the
+cluster resides. This field has been deprecated and replaced by the name
+field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$clusterId</td>
+                <td><p>Deprecated. The name of the cluster to upgrade. This
+field has been deprecated and replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Container/UpdateMasterRequest.html"><abbr title="Google\Service\Container\UpdateMasterRequest">UpdateMasterRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_monitoring">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Container/Resource/ProjectsZonesClusters.php#L325">at line 325</a></div>
+        <code>                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+    <strong>monitoring</strong>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/SetMonitoringServiceRequest.html"><abbr title="Google\Service\Container\SetMonitoringServiceRequest">SetMonitoringServiceRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the monitoring service for a specific cluster. (clusters.monitoring)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>Deprecated. The Google Developers Console <a href="https://cloud.google.com/resource-
+manager/docs/creating-managing-projects">project
+ID or project number</a>. This field has been deprecated and
+replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>Deprecated. The name of the Google Compute Engine
+<a href="https://cloud.google.com/compute/docs/zones#available">zone</a> in which the
+cluster resides. This field has been deprecated and replaced by the name
+field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$clusterId</td>
+                <td><p>Deprecated. The name of the cluster to upgrade. This
+field has been deprecated and replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Container/SetMonitoringServiceRequest.html"><abbr title="Google\Service\Container\SetMonitoringServiceRequest">SetMonitoringServiceRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resourceLabels">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Container/Resource/ProjectsZonesClusters.php#L349">at line 349</a></div>
+        <code>                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+    <strong>resourceLabels</strong>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/SetLabelsRequest.html"><abbr title="Google\Service\Container\SetLabelsRequest">SetLabelsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets labels on a cluster. (clusters.resourceLabels)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>Deprecated. The Google Developers Console <a href="https://cloud.google.com/resource-
+manager/docs/creating-managing-projects">project
+ID or project number</a>. This field has been deprecated and
+replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>Deprecated. The name of the Google Compute Engine
+<a href="https://cloud.google.com/compute/docs/zones#available">zone</a> in which the
+cluster resides. This field has been deprecated and replaced by the name
+field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$clusterId</td>
+                <td><p>Deprecated. The name of the cluster. This field has
+been deprecated and replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Container/SetLabelsRequest.html"><abbr title="Google\Service\Container\SetLabelsRequest">SetLabelsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMaintenancePolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Container/Resource/ProjectsZonesClusters.php#L370">at line 370</a></div>
+        <code>                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+    <strong>setMaintenancePolicy</strong>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/SetMaintenancePolicyRequest.html"><abbr title="Google\Service\Container\SetMaintenancePolicyRequest">SetMaintenancePolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the maintenance policy for a cluster. (clusters.setMaintenancePolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>Required. The Google Developers Console <a href="https://cloud.google.com/resource-manager/docs/creating-
+managing-projects">project ID
+or project number</a>.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>Required. The name of the Google Compute Engine
+<a href="https://cloud.google.com/compute/docs/zones#available">zone</a> in which the
+cluster resides.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$clusterId</td>
+                <td><p>Required. The name of the cluster to update.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Container/SetMaintenancePolicyRequest.html"><abbr title="Google\Service\Container\SetMaintenancePolicyRequest">SetMaintenancePolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMasterAuth">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Container/Resource/ProjectsZonesClusters.php#L396">at line 396</a></div>
+        <code>                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+    <strong>setMasterAuth</strong>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/SetMasterAuthRequest.html"><abbr title="Google\Service\Container\SetMasterAuthRequest">SetMasterAuthRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets master auth materials. Currently supports changing the admin password or
+a specific cluster, either via password generation or explicitly setting the
+password. (clusters.setMasterAuth)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>Deprecated. The Google Developers Console <a href="https://cloud.google.com/resource-
+manager/docs/creating-managing-projects">project
+ID or project number</a>. This field has been deprecated and
+replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>Deprecated. The name of the Google Compute Engine
+<a href="https://cloud.google.com/compute/docs/zones#available">zone</a> in which the
+cluster resides. This field has been deprecated and replaced by the name
+field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$clusterId</td>
+                <td><p>Deprecated. The name of the cluster to upgrade. This
+field has been deprecated and replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Container/SetMasterAuthRequest.html"><abbr title="Google\Service\Container\SetMasterAuthRequest">SetMasterAuthRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNetworkPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Container/Resource/ProjectsZonesClusters.php#L420">at line 420</a></div>
+        <code>                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+    <strong>setNetworkPolicy</strong>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/SetNetworkPolicyRequest.html"><abbr title="Google\Service\Container\SetNetworkPolicyRequest">SetNetworkPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Enables or disables Network Policy for a cluster. (clusters.setNetworkPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>Deprecated. The Google Developers Console <a href="https://cloud.google.com/resource-
+manager/docs/creating-managing-projects">project
+ID or project number</a>. This field has been deprecated and
+replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>Deprecated. The name of the Google Compute Engine
+<a href="https://cloud.google.com/compute/docs/zones#available">zone</a> in which the
+cluster resides. This field has been deprecated and replaced by the name
+field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$clusterId</td>
+                <td><p>Deprecated. The name of the cluster. This field has
+been deprecated and replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Container/SetNetworkPolicyRequest.html"><abbr title="Google\Service\Container\SetNetworkPolicyRequest">SetNetworkPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startIpRotation">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Container/Resource/ProjectsZonesClusters.php#L444">at line 444</a></div>
+        <code>                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+    <strong>startIpRotation</strong>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/StartIPRotationRequest.html"><abbr title="Google\Service\Container\StartIPRotationRequest">StartIPRotationRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Starts master IP rotation. (clusters.startIpRotation)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>Deprecated. The Google Developers Console <a href="https://cloud.google.com/resource-
+manager/docs/creating-managing-projects">project
+ID or project number</a>. This field has been deprecated and
+replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>Deprecated. The name of the Google Compute Engine
+<a href="https://cloud.google.com/compute/docs/zones#available">zone</a> in which the
+cluster resides. This field has been deprecated and replaced by the name
+field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$clusterId</td>
+                <td><p>Deprecated. The name of the cluster. This field has
+been deprecated and replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Container/StartIPRotationRequest.html"><abbr title="Google\Service\Container\StartIPRotationRequest">StartIPRotationRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Container/Resource/ProjectsZonesClusters.php#L468">at line 468</a></div>
+        <code>                    <a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a>
+    <strong>update</strong>(string $projectId, string $zone, string $clusterId, <a href="../../../../Google/Service/Container/UpdateClusterRequest.html"><abbr title="Google\Service\Container\UpdateClusterRequest">UpdateClusterRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the settings of a specific cluster. (clusters.update)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectId</td>
+                <td><p>Deprecated. The Google Developers Console <a href="https://cloud.google.com/resource-
+manager/docs/creating-managing-projects">project
+ID or project number</a>. This field has been deprecated and
+replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>Deprecated. The name of the Google Compute Engine
+<a href="https://cloud.google.com/compute/docs/zones#available">zone</a> in which the
+cluster resides. This field has been deprecated and replaced by the name
+field.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$clusterId</td>
+                <td><p>Deprecated. The name of the cluster to upgrade. This
+field has been deprecated and replaced by the name field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Container/UpdateClusterRequest.html"><abbr title="Google\Service\Container\UpdateClusterRequest">UpdateClusterRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Container/Operation.html"><abbr title="Google\Service\Container\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

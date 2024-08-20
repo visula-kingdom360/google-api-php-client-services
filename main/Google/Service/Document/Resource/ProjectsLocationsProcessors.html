@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Document\Resource\ProjectsLocationsProcessors | Google Cloud PHP Client</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Document_Resource_ProjectsLocationsProcessors" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Document.html">Document</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Document/Resource.html">Resource</a></li><li class="backslash">\</li><li>ProjectsLocationsProcessors</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsLocationsProcessors    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsLocationsProcessors</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Document/Resource/ProjectsLocationsProcessors.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;processors&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $documentaiService = new Google\Service\Document(...);
+ $processors = $documentaiService-&gt;projects_locations_processors;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Document/GoogleLongrunningOperation.html"><abbr title="Google\Service\Document\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchProcess">batchProcess</a>(string $name, <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1BatchProcessRequest.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1BatchProcessRequest">GoogleCloudDocumentaiV1BatchProcessRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>LRO endpoint to batch process many documents. The output is written to Cloud
+Storage as JSON in the [Document] format. (processors.batchProcess)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1Processor.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1Processor">GoogleCloudDocumentaiV1Processor</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1Processor.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1Processor">GoogleCloudDocumentaiV1Processor</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a processor from the ProcessorType provided. The processor will be at
+<code>ENABLED</code> state by default after its creation. Note that this method requires
+the <code>documentai.processors.create</code> permission on the project, which is highly
+privileged. A user or service account with this permission can create new
+processors that can interact with any gcs bucket in your project.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Document/GoogleLongrunningOperation.html"><abbr title="Google\Service\Document\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes the processor, unloads all deployed model artifacts if it was enabled
+and then deletes all artifacts associated with this processor.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Document/GoogleLongrunningOperation.html"><abbr title="Google\Service\Document\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_disable">disable</a>(string $name, <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1DisableProcessorRequest.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1DisableProcessorRequest">GoogleCloudDocumentaiV1DisableProcessorRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Disables a processor (processors.disable)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Document/GoogleLongrunningOperation.html"><abbr title="Google\Service\Document\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_enable">enable</a>(string $name, <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1EnableProcessorRequest.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1EnableProcessorRequest">GoogleCloudDocumentaiV1EnableProcessorRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Enables a processor (processors.enable)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1Processor.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1Processor">GoogleCloudDocumentaiV1Processor</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets a processor detail. (processors.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1ListProcessorsResponse.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1ListProcessorsResponse">GoogleCloudDocumentaiV1ListProcessorsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsLocationsProcessors">listProjectsLocationsProcessors</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists all processors which belong to this project.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1ProcessResponse.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1ProcessResponse">GoogleCloudDocumentaiV1ProcessResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_process">process</a>(string $name, <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1ProcessRequest.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1ProcessRequest">GoogleCloudDocumentaiV1ProcessRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Processes a single document. (processors.process)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Document/GoogleLongrunningOperation.html"><abbr title="Google\Service\Document\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDefaultProcessorVersion">setDefaultProcessorVersion</a>(string $processor, <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1SetDefaultProcessorVersionRequest.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1SetDefaultProcessorVersionRequest">GoogleCloudDocumentaiV1SetDefaultProcessorVersionRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Set the default (active) version of a Processor that will be used in
+ProcessDocument and BatchProcessDocuments.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_batchProcess">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Document/Resource/ProjectsLocationsProcessors.php#L54">at line 54</a></div>
+        <code>                    <a href="../../../../Google/Service/Document/GoogleLongrunningOperation.html"><abbr title="Google\Service\Document\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>batchProcess</strong>(string $name, <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1BatchProcessRequest.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1BatchProcessRequest">GoogleCloudDocumentaiV1BatchProcessRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>LRO endpoint to batch process many documents. The output is written to Cloud
+Storage as JSON in the [Document] format. (processors.batchProcess)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of Processor or
+ProcessorVersion. Format:
+<code>projects/{project}/locations/{location}/processors/{processor}</code>, or <code>project s/{project}/locations/{location}/processors/{processor}/processorVersions/{pr ocessorVersion}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1BatchProcessRequest.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1BatchProcessRequest">GoogleCloudDocumentaiV1BatchProcessRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Document/GoogleLongrunningOperation.html"><abbr title="Google\Service\Document\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Document/Resource/ProjectsLocationsProcessors.php#L75">at line 75</a></div>
+        <code>                    <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1Processor.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1Processor">GoogleCloudDocumentaiV1Processor</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1Processor.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1Processor">GoogleCloudDocumentaiV1Processor</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a processor from the ProcessorType provided. The processor will be at
+<code>ENABLED</code> state by default after its creation. Note that this method requires
+the <code>documentai.processors.create</code> permission on the project, which is highly
+privileged. A user or service account with this permission can create new
+processors that can interact with any gcs bucket in your project.</p></p>                <p>(processors.create)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The parent (project and location) under which
+to create the processor. Format: <code>projects/{project}/locations/{location}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1Processor.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1Processor">GoogleCloudDocumentaiV1Processor</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1Processor.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1Processor">GoogleCloudDocumentaiV1Processor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Document/Resource/ProjectsLocationsProcessors.php#L91">at line 91</a></div>
+        <code>                    <a href="../../../../Google/Service/Document/GoogleLongrunningOperation.html"><abbr title="Google\Service\Document\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes the processor, unloads all deployed model artifacts if it was enabled
+and then deletes all artifacts associated with this processor.</p></p>                <p>(processors.delete)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The processor resource name to be deleted.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Document/GoogleLongrunningOperation.html"><abbr title="Google\Service\Document\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disable">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Document/Resource/ProjectsLocationsProcessors.php#L106">at line 106</a></div>
+        <code>                    <a href="../../../../Google/Service/Document/GoogleLongrunningOperation.html"><abbr title="Google\Service\Document\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>disable</strong>(string $name, <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1DisableProcessorRequest.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1DisableProcessorRequest">GoogleCloudDocumentaiV1DisableProcessorRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Disables a processor (processors.disable)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The processor resource name to be disabled.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1DisableProcessorRequest.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1DisableProcessorRequest">GoogleCloudDocumentaiV1DisableProcessorRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Document/GoogleLongrunningOperation.html"><abbr title="Google\Service\Document\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enable">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Document/Resource/ProjectsLocationsProcessors.php#L121">at line 121</a></div>
+        <code>                    <a href="../../../../Google/Service/Document/GoogleLongrunningOperation.html"><abbr title="Google\Service\Document\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>enable</strong>(string $name, <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1EnableProcessorRequest.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1EnableProcessorRequest">GoogleCloudDocumentaiV1EnableProcessorRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Enables a processor (processors.enable)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The processor resource name to be enabled.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1EnableProcessorRequest.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1EnableProcessorRequest">GoogleCloudDocumentaiV1EnableProcessorRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Document/GoogleLongrunningOperation.html"><abbr title="Google\Service\Document\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Document/Resource/ProjectsLocationsProcessors.php#L135">at line 135</a></div>
+        <code>                    <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1Processor.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1Processor">GoogleCloudDocumentaiV1Processor</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets a processor detail. (processors.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The processor resource name.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1Processor.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1Processor">GoogleCloudDocumentaiV1Processor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsLocationsProcessors">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Document/Resource/ProjectsLocationsProcessors.php#L158">at line 158</a></div>
+        <code>                    <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1ListProcessorsResponse.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1ListProcessorsResponse">GoogleCloudDocumentaiV1ListProcessorsResponse</abbr></a>
+    <strong>listProjectsLocationsProcessors</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all processors which belong to this project.</p></p>                <p>(processors.listProjectsLocationsProcessors)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The parent (project and location) which owns
+this collection of Processors. Format:
+<code>projects/{project}/locations/{location}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1ListProcessorsResponse.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1ListProcessorsResponse">GoogleCloudDocumentaiV1ListProcessorsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_process">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Document/Resource/ProjectsLocationsProcessors.php#L178">at line 178</a></div>
+        <code>                    <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1ProcessResponse.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1ProcessResponse">GoogleCloudDocumentaiV1ProcessResponse</abbr></a>
+    <strong>process</strong>(string $name, <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1ProcessRequest.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1ProcessRequest">GoogleCloudDocumentaiV1ProcessRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Processes a single document. (processors.process)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the Processor or
+ProcessorVersion to use for processing. If a Processor is specified, the
+server will use its default version. Format:
+<code>projects/{project}/locations/{location}/processors/{processor}</code>, or <code>project s/{project}/locations/{location}/processors/{processor}/processorVersions/{pr ocessorVersion}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1ProcessRequest.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1ProcessRequest">GoogleCloudDocumentaiV1ProcessRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1ProcessResponse.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1ProcessResponse">GoogleCloudDocumentaiV1ProcessResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaultProcessorVersion">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/main/src/Document/Resource/ProjectsLocationsProcessors.php#L196">at line 196</a></div>
+        <code>                    <a href="../../../../Google/Service/Document/GoogleLongrunningOperation.html"><abbr title="Google\Service\Document\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>setDefaultProcessorVersion</strong>(string $processor, <a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1SetDefaultProcessorVersionRequest.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1SetDefaultProcessorVersionRequest">GoogleCloudDocumentaiV1SetDefaultProcessorVersionRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set the default (active) version of a Processor that will be used in
+ProcessDocument and BatchProcessDocuments.</p></p>                <p>(processors.setDefaultProcessorVersion)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$processor</td>
+                <td><p>Required. The resource name of the Processor to
+change default version.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Document/GoogleCloudDocumentaiV1SetDefaultProcessorVersionRequest.html"><abbr title="Google\Service\Document\GoogleCloudDocumentaiV1SetDefaultProcessorVersionRequest">GoogleCloudDocumentaiV1SetDefaultProcessorVersionRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Document/GoogleLongrunningOperation.html"><abbr title="Google\Service\Document\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>
