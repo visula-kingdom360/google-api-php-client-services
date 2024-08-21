@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\CloudTasks\Resource\ProjectsLocationsQueuesTasks | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CloudTasks.ns.html">CloudTasks</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CloudTasks/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ProjectsLocationsQueuesTasks</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsLocationsQueuesTasks    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsLocationsQueuesTasks</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudTasks/Resource/ProjectsLocationsQueuesTasks.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;tasks&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $cloudtasksService = new Google\Service\CloudTasks(...);
+ $tasks = $cloudtasksService-&gt;projects_locations_queues_tasks;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudTasks/BufferTaskResponse.html"><abbr title="Google\Service\CloudTasks\BufferTaskResponse">BufferTaskResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_buffer">buffer</a>(string $queue, string $taskId, <a href="../../../../Google/Service/CloudTasks/BufferTaskRequest.html"><abbr title="Google\Service\CloudTasks\BufferTaskRequest">BufferTaskRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates and buffers a new task without the need to explicitly define a Task
+message. The queue must have HTTP target. To create the task with a custom
+ID, use the following format and set TASK_ID to your desired ID: projects/PRO
+JECT_ID/locations/LOCATION_ID/queues/QUEUE_ID/tasks/TASK_ID:buffer To create
+the task with an automatically generated ID, use the following format:
+projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID/tasks:buffer.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudTasks/Task.html"><abbr title="Google\Service\CloudTasks\Task">Task</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/CloudTasks/CreateTaskRequest.html"><abbr title="Google\Service\CloudTasks\CreateTaskRequest">CreateTaskRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a task and adds it to a queue. Tasks cannot be updated after
+creation; there is no UpdateTask command. * The maximum task size is 100KB.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudTasks/CloudtasksEmpty.html"><abbr title="Google\Service\CloudTasks\CloudtasksEmpty">CloudtasksEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes a task. A task can be deleted if it is scheduled or dispatched. A
+task cannot be deleted if it has executed successfully or permanently failed.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudTasks/Task.html"><abbr title="Google\Service\CloudTasks\Task">Task</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets a task. (tasks.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudTasks/ListTasksResponse.html"><abbr title="Google\Service\CloudTasks\ListTasksResponse">ListTasksResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsLocationsQueuesTasks">listProjectsLocationsQueuesTasks</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists the tasks in a queue. By default, only the BASIC view is retrieved due
+to performance considerations; response_view controls the subset of
+information which is returned. The tasks may be returned in any order. The
+ordering may change at any time. (tasks.listProjectsLocationsQueuesTasks)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudTasks/Task.html"><abbr title="Google\Service\CloudTasks\Task">Task</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_run">run</a>(string $name, <a href="../../../../Google/Service/CloudTasks/RunTaskRequest.html"><abbr title="Google\Service\CloudTasks\RunTaskRequest">RunTaskRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Forces a task to run now. When this method is called, Cloud Tasks will
+dispatch the task, even if the task is already running, the queue has reached
+its RateLimits or is PAUSED. This command is meant to be used for manual
+debugging. For example, RunTask can be used to retry a failed task after a
+fix has been made or to manually force a task to be dispatched now. The
+dispatched task is returned. That is, the task that is returned contains the
+status after the task is dispatched but before the task is received by its
+target. If Cloud Tasks receives a successful response from the task's target,
+then the task will be deleted; otherwise the task's schedule_time will be
+reset to the time that RunTask was called plus the retry delay specified in
+the queue's RetryConfig. RunTask returns NOT_FOUND when it is called on a
+task that has already succeeded or permanently failed. (tasks.run)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_buffer">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudTasks/Resource/ProjectsLocationsQueuesTasks.php#L57">at line 57</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudTasks/BufferTaskResponse.html"><abbr title="Google\Service\CloudTasks\BufferTaskResponse">BufferTaskResponse</abbr></a>
+    <strong>buffer</strong>(string $queue, string $taskId, <a href="../../../../Google/Service/CloudTasks/BufferTaskRequest.html"><abbr title="Google\Service\CloudTasks\BufferTaskRequest">BufferTaskRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates and buffers a new task without the need to explicitly define a Task
+message. The queue must have HTTP target. To create the task with a custom
+ID, use the following format and set TASK_ID to your desired ID: projects/PRO
+JECT_ID/locations/LOCATION_ID/queues/QUEUE_ID/tasks/TASK_ID:buffer To create
+the task with an automatically generated ID, use the following format:
+projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID/tasks:buffer.</p></p>                <p>(tasks.buffer)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$queue</td>
+                <td><p>Required. The parent queue name. For example:
+projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID` The queue must
+already exist.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$taskId</td>
+                <td><p>Optional. Task ID for the task being created. If not
+provided, Cloud Tasks generates an ID for the task.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudTasks/BufferTaskRequest.html"><abbr title="Google\Service\CloudTasks\BufferTaskRequest">BufferTaskRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudTasks/BufferTaskResponse.html"><abbr title="Google\Service\CloudTasks\BufferTaskResponse">BufferTaskResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudTasks/Resource/ProjectsLocationsQueuesTasks.php#L76">at line 76</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudTasks/Task.html"><abbr title="Google\Service\CloudTasks\Task">Task</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/CloudTasks/CreateTaskRequest.html"><abbr title="Google\Service\CloudTasks\CreateTaskRequest">CreateTaskRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a task and adds it to a queue. Tasks cannot be updated after
+creation; there is no UpdateTask command. * The maximum task size is 100KB.</p></p>                <p>(tasks.create)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The queue name. For example:
+<code>projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID</code> The queue must
+already exist.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudTasks/CreateTaskRequest.html"><abbr title="Google\Service\CloudTasks\CreateTaskRequest">CreateTaskRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudTasks/Task.html"><abbr title="Google\Service\CloudTasks\Task">Task</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudTasks/Resource/ProjectsLocationsQueuesTasks.php#L93">at line 93</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudTasks/CloudtasksEmpty.html"><abbr title="Google\Service\CloudTasks\CloudtasksEmpty">CloudtasksEmpty</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a task. A task can be deleted if it is scheduled or dispatched. A
+task cannot be deleted if it has executed successfully or permanently failed.</p></p>                <p>(tasks.delete)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The task name. For example:
+<code>projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID/tasks/TASK_ID</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudTasks/CloudtasksEmpty.html"><abbr title="Google\Service\CloudTasks\CloudtasksEmpty">CloudtasksEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudTasks/Resource/ProjectsLocationsQueuesTasks.php#L116">at line 116</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudTasks/Task.html"><abbr title="Google\Service\CloudTasks\Task">Task</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets a task. (tasks.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The task name. For example:
+<code>projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID/tasks/TASK_ID</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudTasks/Task.html"><abbr title="Google\Service\CloudTasks\Task">Task</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsLocationsQueuesTasks">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudTasks/Resource/ProjectsLocationsQueuesTasks.php#L151">at line 151</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudTasks/ListTasksResponse.html"><abbr title="Google\Service\CloudTasks\ListTasksResponse">ListTasksResponse</abbr></a>
+    <strong>listProjectsLocationsQueuesTasks</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists the tasks in a queue. By default, only the BASIC view is retrieved due
+to performance considerations; response_view controls the subset of
+information which is returned. The tasks may be returned in any order. The
+ordering may change at any time. (tasks.listProjectsLocationsQueuesTasks)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The queue name. For example:
+<code>projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudTasks/ListTasksResponse.html"><abbr title="Google\Service\CloudTasks\ListTasksResponse">ListTasksResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_run">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudTasks/Resource/ProjectsLocationsQueuesTasks.php#L178">at line 178</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudTasks/Task.html"><abbr title="Google\Service\CloudTasks\Task">Task</abbr></a>
+    <strong>run</strong>(string $name, <a href="../../../../Google/Service/CloudTasks/RunTaskRequest.html"><abbr title="Google\Service\CloudTasks\RunTaskRequest">RunTaskRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Forces a task to run now. When this method is called, Cloud Tasks will
+dispatch the task, even if the task is already running, the queue has reached
+its RateLimits or is PAUSED. This command is meant to be used for manual
+debugging. For example, RunTask can be used to retry a failed task after a
+fix has been made or to manually force a task to be dispatched now. The
+dispatched task is returned. That is, the task that is returned contains the
+status after the task is dispatched but before the task is received by its
+target. If Cloud Tasks receives a successful response from the task's target,
+then the task will be deleted; otherwise the task's schedule_time will be
+reset to the time that RunTask was called plus the retry delay specified in
+the queue's RetryConfig. RunTask returns NOT_FOUND when it is called on a
+task that has already succeeded or permanently failed. (tasks.run)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The task name. For example:
+<code>projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID/tasks/TASK_ID</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudTasks/RunTaskRequest.html"><abbr title="Google\Service\CloudTasks\RunTaskRequest">RunTaskRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudTasks/Task.html"><abbr title="Google\Service\CloudTasks\Task">Task</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

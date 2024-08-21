@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\HomeGraphService\Resource\Devices | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_HomeGraphService_Resource_Devices" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/HomeGraphService.ns.html">HomeGraphService</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/HomeGraphService/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>Devices</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Devices    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Devices</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/HomeGraphService/Resource/Devices.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;devices&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $homegraphService = new Google\Service\HomeGraphService(...);
+ $devices = $homegraphService-&gt;devices;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/HomeGraphService/QueryResponse.html"><abbr title="Google\Service\HomeGraphService\QueryResponse">QueryResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_query">query</a>(<a href="../../../../Google/Service/HomeGraphService/QueryRequest.html"><abbr title="Google\Service\HomeGraphService\QueryRequest">QueryRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Gets the current states in Home Graph for the given set of the third-party
+user's devices. The third-party user's identity is passed in via the
+<code>agent_user_id</code> (see QueryRequest). This request must be authorized using
+service account credentials from your Actions console project.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/HomeGraphService/ReportStateAndNotificationResponse.html"><abbr title="Google\Service\HomeGraphService\ReportStateAndNotificationResponse">ReportStateAndNotificationResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_reportStateAndNotification">reportStateAndNotification</a>(<a href="../../../../Google/Service/HomeGraphService/ReportStateAndNotificationRequest.html"><abbr title="Google\Service\HomeGraphService\ReportStateAndNotificationRequest">ReportStateAndNotificationRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Reports device state and optionally sends device notifications. Called by
+your smart home Action when the state of a third-party device changes or you
+need to send a notification about the device. See <a href="https://developers.home.google.com/cloud-to-cloud/integration/report-
+state">Implement Report
+State</a> for more information. This method updates the device state according
+to its declared <a href="https://developers.home.google.com/cloud-to-
+cloud/primer/device-types-and-traits">traits</a>. Publishing a new state value outside
+of these traits will result in an <code>INVALID_ARGUMENT</code> error response. The
+third-party user's identity is passed in via the <code>agent_user_id</code> (see
+ReportStateAndNotificationRequest). This request must be authorized using
+service account credentials from your Actions console project.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/HomeGraphService/RequestSyncDevicesResponse.html"><abbr title="Google\Service\HomeGraphService\RequestSyncDevicesResponse">RequestSyncDevicesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_requestSync">requestSync</a>(<a href="../../../../Google/Service/HomeGraphService/RequestSyncDevicesRequest.html"><abbr title="Google\Service\HomeGraphService\RequestSyncDevicesRequest">RequestSyncDevicesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Requests Google to send an <code>action.devices.SYNC</code>
+<a href="https://developers.home.google.com/cloud-to-cloud/intents/sync">intent</a> to
+your smart home Action to update device metadata for the given user. The
+third-party user's identity is passed via the <code>agent_user_id</code> (see
+RequestSyncDevicesRequest). This request must be authorized using service
+account credentials from your Actions console project. (devices.requestSync)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/HomeGraphService/SyncResponse.html"><abbr title="Google\Service\HomeGraphService\SyncResponse">SyncResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_sync">sync</a>(<a href="../../../../Google/Service/HomeGraphService/SyncRequest.html"><abbr title="Google\Service\HomeGraphService\SyncRequest">SyncRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Gets all the devices associated with the given third-party user. The third-
+party user's identity is passed in via the <code>agent_user_id</code> (see SyncRequest).</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_query">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/HomeGraphService/Resource/Devices.php#L51">at line 51</a></div>
+        <code>                    <a href="../../../../Google/Service/HomeGraphService/QueryResponse.html"><abbr title="Google\Service\HomeGraphService\QueryResponse">QueryResponse</abbr></a>
+    <strong>query</strong>(<a href="../../../../Google/Service/HomeGraphService/QueryRequest.html"><abbr title="Google\Service\HomeGraphService\QueryRequest">QueryRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the current states in Home Graph for the given set of the third-party
+user's devices. The third-party user's identity is passed in via the
+<code>agent_user_id</code> (see QueryRequest). This request must be authorized using
+service account credentials from your Actions console project.</p></p>                <p>(devices.query)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/HomeGraphService/QueryRequest.html"><abbr title="Google\Service\HomeGraphService\QueryRequest">QueryRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/HomeGraphService/QueryResponse.html"><abbr title="Google\Service\HomeGraphService\QueryResponse">QueryResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reportStateAndNotification">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/HomeGraphService/Resource/Devices.php#L76">at line 76</a></div>
+        <code>                    <a href="../../../../Google/Service/HomeGraphService/ReportStateAndNotificationResponse.html"><abbr title="Google\Service\HomeGraphService\ReportStateAndNotificationResponse">ReportStateAndNotificationResponse</abbr></a>
+    <strong>reportStateAndNotification</strong>(<a href="../../../../Google/Service/HomeGraphService/ReportStateAndNotificationRequest.html"><abbr title="Google\Service\HomeGraphService\ReportStateAndNotificationRequest">ReportStateAndNotificationRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Reports device state and optionally sends device notifications. Called by
+your smart home Action when the state of a third-party device changes or you
+need to send a notification about the device. See <a href="https://developers.home.google.com/cloud-to-cloud/integration/report-
+state">Implement Report
+State</a> for more information. This method updates the device state according
+to its declared <a href="https://developers.home.google.com/cloud-to-
+cloud/primer/device-types-and-traits">traits</a>. Publishing a new state value outside
+of these traits will result in an <code>INVALID_ARGUMENT</code> error response. The
+third-party user's identity is passed in via the <code>agent_user_id</code> (see
+ReportStateAndNotificationRequest). This request must be authorized using
+service account credentials from your Actions console project.</p></p>                <p>(devices.reportStateAndNotification)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/HomeGraphService/ReportStateAndNotificationRequest.html"><abbr title="Google\Service\HomeGraphService\ReportStateAndNotificationRequest">ReportStateAndNotificationRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/HomeGraphService/ReportStateAndNotificationResponse.html"><abbr title="Google\Service\HomeGraphService\ReportStateAndNotificationResponse">ReportStateAndNotificationResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_requestSync">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/HomeGraphService/Resource/Devices.php#L95">at line 95</a></div>
+        <code>                    <a href="../../../../Google/Service/HomeGraphService/RequestSyncDevicesResponse.html"><abbr title="Google\Service\HomeGraphService\RequestSyncDevicesResponse">RequestSyncDevicesResponse</abbr></a>
+    <strong>requestSync</strong>(<a href="../../../../Google/Service/HomeGraphService/RequestSyncDevicesRequest.html"><abbr title="Google\Service\HomeGraphService\RequestSyncDevicesRequest">RequestSyncDevicesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Requests Google to send an <code>action.devices.SYNC</code>
+<a href="https://developers.home.google.com/cloud-to-cloud/intents/sync">intent</a> to
+your smart home Action to update device metadata for the given user. The
+third-party user's identity is passed via the <code>agent_user_id</code> (see
+RequestSyncDevicesRequest). This request must be authorized using service
+account credentials from your Actions console project. (devices.requestSync)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/HomeGraphService/RequestSyncDevicesRequest.html"><abbr title="Google\Service\HomeGraphService\RequestSyncDevicesRequest">RequestSyncDevicesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/HomeGraphService/RequestSyncDevicesResponse.html"><abbr title="Google\Service\HomeGraphService\RequestSyncDevicesResponse">RequestSyncDevicesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sync">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/HomeGraphService/Resource/Devices.php#L112">at line 112</a></div>
+        <code>                    <a href="../../../../Google/Service/HomeGraphService/SyncResponse.html"><abbr title="Google\Service\HomeGraphService\SyncResponse">SyncResponse</abbr></a>
+    <strong>sync</strong>(<a href="../../../../Google/Service/HomeGraphService/SyncRequest.html"><abbr title="Google\Service\HomeGraphService\SyncRequest">SyncRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets all the devices associated with the given third-party user. The third-
+party user's identity is passed in via the <code>agent_user_id</code> (see SyncRequest).</p></p>                <p><p>This request must be authorized using service account credentials from your
+Actions console project. (devices.sync)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/HomeGraphService/SyncRequest.html"><abbr title="Google\Service\HomeGraphService\SyncRequest">SyncRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/HomeGraphService/SyncResponse.html"><abbr title="Google\Service\HomeGraphService\SyncResponse">SyncResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

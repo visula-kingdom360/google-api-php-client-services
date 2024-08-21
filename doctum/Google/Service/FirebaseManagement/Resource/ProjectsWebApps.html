@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\FirebaseManagement\Resource\ProjectsWebApps | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_FirebaseManagement_Resource_ProjectsWebApps" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/FirebaseManagement.ns.html">FirebaseManagement</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/FirebaseManagement/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ProjectsWebApps</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsWebApps    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsWebApps</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/FirebaseManagement/Resource/ProjectsWebApps.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;webApps&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $firebaseService = new Google\Service\FirebaseManagement(...);
+ $webApps = $firebaseService-&gt;projects_webApps;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/FirebaseManagement/Operation.html"><abbr title="Google\Service\FirebaseManagement\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/FirebaseManagement/WebApp.html"><abbr title="Google\Service\FirebaseManagement\WebApp">WebApp</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Requests the creation of a new WebApp in the specified FirebaseProject. The
+result of this call is an <code>Operation</code> which can be used to track the
+provisioning process. The <code>Operation</code> is automatically deleted after
+completion, so there is no need to call <code>DeleteOperation</code>. (webApps.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/FirebaseManagement/WebApp.html"><abbr title="Google\Service\FirebaseManagement\WebApp">WebApp</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets the specified WebApp. (webApps.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/FirebaseManagement/WebAppConfig.html"><abbr title="Google\Service\FirebaseManagement\WebAppConfig">WebAppConfig</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getConfig">getConfig</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets the configuration artifact associated with the specified WebApp.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/FirebaseManagement/ListWebAppsResponse.html"><abbr title="Google\Service\FirebaseManagement\ListWebAppsResponse">ListWebAppsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsWebApps">listProjectsWebApps</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists each WebApp associated with the specified FirebaseProject. The elements
+are returned in no particular order, but will be a consistent view of the
+Apps when additional requests are made with a <code>pageToken</code>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/FirebaseManagement/WebApp.html"><abbr title="Google\Service\FirebaseManagement\WebApp">WebApp</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/FirebaseManagement/WebApp.html"><abbr title="Google\Service\FirebaseManagement\WebApp">WebApp</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the attributes of the specified WebApp. (webApps.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/FirebaseManagement/Operation.html"><abbr title="Google\Service\FirebaseManagement\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_remove">remove</a>(string $name, <a href="../../../../Google/Service/FirebaseManagement/RemoveWebAppRequest.html"><abbr title="Google\Service\FirebaseManagement\RemoveWebAppRequest">RemoveWebAppRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Removes the specified WebApp from the FirebaseProject. (webApps.remove)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/FirebaseManagement/Operation.html"><abbr title="Google\Service\FirebaseManagement\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_undelete">undelete</a>(string $name, <a href="../../../../Google/Service/FirebaseManagement/UndeleteWebAppRequest.html"><abbr title="Google\Service\FirebaseManagement\UndeleteWebAppRequest">UndeleteWebAppRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Restores the specified WebApp to the FirebaseProject. (webApps.undelete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/FirebaseManagement/Resource/ProjectsWebApps.php#L53">at line 53</a></div>
+        <code>                    <a href="../../../../Google/Service/FirebaseManagement/Operation.html"><abbr title="Google\Service\FirebaseManagement\Operation">Operation</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/FirebaseManagement/WebApp.html"><abbr title="Google\Service\FirebaseManagement\WebApp">WebApp</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Requests the creation of a new WebApp in the specified FirebaseProject. The
+result of this call is an <code>Operation</code> which can be used to track the
+provisioning process. The <code>Operation</code> is automatically deleted after
+completion, so there is no need to call <code>DeleteOperation</code>. (webApps.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>The resource name of the parent FirebaseProject in
+which to create a WebApp, in the format: projects/PROJECT_IDENTIFIER/webApps
+Refer to the <code>FirebaseProject</code>
+<a href="../projects#FirebaseProject.FIELDS.name"><code>name</code></a> field for details about
+PROJECT_IDENTIFIER values.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/FirebaseManagement/WebApp.html"><abbr title="Google\Service\FirebaseManagement\WebApp">WebApp</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/FirebaseManagement/Operation.html"><abbr title="Google\Service\FirebaseManagement\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/FirebaseManagement/Resource/ProjectsWebApps.php#L72">at line 72</a></div>
+        <code>                    <a href="../../../../Google/Service/FirebaseManagement/WebApp.html"><abbr title="Google\Service\FirebaseManagement\WebApp">WebApp</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the specified WebApp. (webApps.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>The resource name of the WebApp, in the format:
+projects/PROJECT_IDENTIFIER /webApps/APP_ID Since an APP_ID is a unique
+identifier, the Unique Resource from Sub-Collection access pattern may be
+used here, in the format: projects/-/webApps/APP_ID Refer to the <code>WebApp</code>
+<a href="../projects.webApps#WebApp.FIELDS.name"><code>name</code></a> field for details about
+PROJECT_IDENTIFIER and APP_ID values.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/FirebaseManagement/WebApp.html"><abbr title="Google\Service\FirebaseManagement\WebApp">WebApp</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/FirebaseManagement/Resource/ProjectsWebApps.php#L93">at line 93</a></div>
+        <code>                    <a href="../../../../Google/Service/FirebaseManagement/WebAppConfig.html"><abbr title="Google\Service\FirebaseManagement\WebAppConfig">WebAppConfig</abbr></a>
+    <strong>getConfig</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the configuration artifact associated with the specified WebApp.</p></p>                <p>(webApps.getConfig)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>The resource name of the WebApp configuration to
+download, in the format: projects/PROJECT_IDENTIFIER/webApps/APP_ID/config
+Since an APP_ID is a unique identifier, the Unique Resource from Sub-
+Collection access pattern may be used here, in the format:
+projects/-/webApps/APP_ID Refer to the <code>WebApp</code>
+<a href="../projects.webApps#WebApp.FIELDS.name"><code>name</code></a> field for details about
+PROJECT_IDENTIFIER and APP_ID values.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/FirebaseManagement/WebAppConfig.html"><abbr title="Google\Service\FirebaseManagement\WebAppConfig">WebAppConfig</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsWebApps">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/FirebaseManagement/Resource/ProjectsWebApps.php#L124">at line 124</a></div>
+        <code>                    <a href="../../../../Google/Service/FirebaseManagement/ListWebAppsResponse.html"><abbr title="Google\Service\FirebaseManagement\ListWebAppsResponse">ListWebAppsResponse</abbr></a>
+    <strong>listProjectsWebApps</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists each WebApp associated with the specified FirebaseProject. The elements
+are returned in no particular order, but will be a consistent view of the
+Apps when additional requests are made with a <code>pageToken</code>.</p></p>                <p>(webApps.listProjectsWebApps)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>The resource name of the parent FirebaseProject for
+which to list each associated WebApp, in the format:
+projects/PROJECT_IDENTIFIER/webApps Refer to the <code>FirebaseProject</code>
+<a href="../projects#FirebaseProject.FIELDS.name"><code>name</code></a> field for details about
+PROJECT_IDENTIFIER values.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/FirebaseManagement/ListWebAppsResponse.html"><abbr title="Google\Service\FirebaseManagement\ListWebAppsResponse">ListWebAppsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/FirebaseManagement/Resource/ProjectsWebApps.php#L154">at line 154</a></div>
+        <code>                    <a href="../../../../Google/Service/FirebaseManagement/WebApp.html"><abbr title="Google\Service\FirebaseManagement\WebApp">WebApp</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/FirebaseManagement/WebApp.html"><abbr title="Google\Service\FirebaseManagement\WebApp">WebApp</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the attributes of the specified WebApp. (webApps.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>The resource name of the WebApp, in the format:
+projects/PROJECT_IDENTIFIER /webApps/APP_ID * PROJECT_IDENTIFIER: the parent
+Project's
+<a href="../projects#FirebaseProject.FIELDS.project_number"><code>ProjectNumber</code></a>
+<strong><em>(recommended)</em></strong> or its
+<a href="../projects#FirebaseProject.FIELDS.project_id"><code>ProjectId</code></a>. Learn more
+about using project identifiers in Google's <a href="https://google.aip.dev/cloud/2510">AIP 2510
+standard</a>. Note that the value for
+PROJECT_IDENTIFIER in any response body will be the <code>ProjectId</code>. * APP_ID:
+the globally unique, Firebase-assigned identifier for the App (see
+<a href="../projects.webApps#WebApp.FIELDS.app_id"><code>appId</code></a>).</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/FirebaseManagement/WebApp.html"><abbr title="Google\Service\FirebaseManagement\WebApp">WebApp</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/FirebaseManagement/WebApp.html"><abbr title="Google\Service\FirebaseManagement\WebApp">WebApp</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_remove">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/FirebaseManagement/Resource/ProjectsWebApps.php#L174">at line 174</a></div>
+        <code>                    <a href="../../../../Google/Service/FirebaseManagement/Operation.html"><abbr title="Google\Service\FirebaseManagement\Operation">Operation</abbr></a>
+    <strong>remove</strong>(string $name, <a href="../../../../Google/Service/FirebaseManagement/RemoveWebAppRequest.html"><abbr title="Google\Service\FirebaseManagement\RemoveWebAppRequest">RemoveWebAppRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Removes the specified WebApp from the FirebaseProject. (webApps.remove)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the WebApp, in the format:
+projects/ PROJECT_IDENTIFIER/webApps/APP_ID Since an APP_ID is a unique
+identifier, the Unique Resource from Sub-Collection access pattern may be
+used here, in the format: projects/-/webApps/APP_ID Refer to the WebApp
+<a href="../projects.webApps#WebApp.FIELDS.name">name</a> field for details about
+PROJECT_IDENTIFIER and APP_ID values.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/FirebaseManagement/RemoveWebAppRequest.html"><abbr title="Google\Service\FirebaseManagement\RemoveWebAppRequest">RemoveWebAppRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/FirebaseManagement/Operation.html"><abbr title="Google\Service\FirebaseManagement\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_undelete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/FirebaseManagement/Resource/ProjectsWebApps.php#L194">at line 194</a></div>
+        <code>                    <a href="../../../../Google/Service/FirebaseManagement/Operation.html"><abbr title="Google\Service\FirebaseManagement\Operation">Operation</abbr></a>
+    <strong>undelete</strong>(string $name, <a href="../../../../Google/Service/FirebaseManagement/UndeleteWebAppRequest.html"><abbr title="Google\Service\FirebaseManagement\UndeleteWebAppRequest">UndeleteWebAppRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Restores the specified WebApp to the FirebaseProject. (webApps.undelete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the WebApp, in the format:
+projects/ PROJECT_IDENTIFIER/webApps/APP_ID Since an APP_ID is a unique
+identifier, the Unique Resource from Sub-Collection access pattern may be
+used here, in the format: projects/-/webApps/APP_ID Refer to the WebApp
+<a href="../projects.webApps#WebApp.FIELDS.name">name</a> field for details about
+PROJECT_IDENTIFIER and APP_ID values.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/FirebaseManagement/UndeleteWebAppRequest.html"><abbr title="Google\Service\FirebaseManagement\UndeleteWebAppRequest">UndeleteWebAppRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/FirebaseManagement/Operation.html"><abbr title="Google\Service\FirebaseManagement\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\StreetViewPublish\Resource\Photo | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_StreetViewPublish_Resource_Photo" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/StreetViewPublish.ns.html">StreetViewPublish</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/StreetViewPublish/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>Photo</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Photo    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Photo</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/StreetViewPublish/Resource/Photo.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;photo&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $streetviewpublishService = new Google\Service\StreetViewPublish(...);
+ $photo = $streetviewpublishService-&gt;photo;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/StreetViewPublish/Photo.html"><abbr title="Google\Service\StreetViewPublish\Photo">Photo</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(<a href="../../../../Google/Service/StreetViewPublish/Photo.html"><abbr title="Google\Service\StreetViewPublish\Photo">Photo</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>After the client finishes uploading the photo with the returned UploadRef,
+CreatePhoto publishes the uploaded Photo to Street View on Google Maps.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/StreetViewPublish/StreetviewpublishEmpty.html"><abbr title="Google\Service\StreetViewPublish\StreetviewpublishEmpty">StreetviewpublishEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $photoId, array $optParams = [])
+        
+                                            <p><p>Deletes a Photo and its metadata. This method returns the following error
+codes: <em> google.rpc.Code.PERMISSION_DENIED if the requesting user did not
+create the requested photo. </em> google.rpc.Code.NOT_FOUND if the photo ID does
+not exist. (photo.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/StreetViewPublish/Photo.html"><abbr title="Google\Service\StreetViewPublish\Photo">Photo</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $photoId, array $optParams = [])
+        
+                                            <p><p>Gets the metadata of the specified Photo. This method returns the following
+error codes: <em> google.rpc.Code.PERMISSION_DENIED if the requesting user did
+not create the requested Photo. </em> google.rpc.Code.NOT_FOUND if the requested
+Photo does not exist. * google.rpc.Code.UNAVAILABLE if the requested Photo is
+still being indexed. (photo.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/StreetViewPublish/UploadRef.html"><abbr title="Google\Service\StreetViewPublish\UploadRef">UploadRef</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_startUpload">startUpload</a>(<a href="../../../../Google/Service/StreetViewPublish/StreetviewpublishEmpty.html"><abbr title="Google\Service\StreetViewPublish\StreetviewpublishEmpty">StreetviewpublishEmpty</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates an upload session to start uploading photo bytes. The method uses the
+upload URL of the returned UploadRef to upload the bytes for the Photo. In
+addition to the photo requirements shown in
+<a href="https://support.google.com/maps/answer/7012050?ref_topic=6275604">https://support.google.com/maps/answer/7012050?ref_topic=6275604</a>, the photo
+must meet the following requirements: <em> Photo Sphere XMP metadata must be
+included in the photo metadata. See
+<a href="https://developers.google.com/streetview/spherical-metadata">https://developers.google.com/streetview/spherical-metadata</a> for the required
+fields. </em> The pixel size of the photo must meet the size requirements listed
+in <a href="https://support.google.com/maps/answer/7012050?ref_topic=6275604">https://support.google.com/maps/answer/7012050?ref_topic=6275604</a>, and the
+photo must be a full 360 horizontally. After the upload completes, the method
+uses UploadRef with CreatePhoto to create the Photo object entry.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/StreetViewPublish/Photo.html"><abbr title="Google\Service\StreetViewPublish\Photo">Photo</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $id, <a href="../../../../Google/Service/StreetViewPublish/Photo.html"><abbr title="Google\Service\StreetViewPublish\Photo">Photo</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the metadata of a Photo, such as pose, place association,
+connections, etc. Changing the pixels of a photo is not supported. Only the
+fields specified in the updateMask field are used. If <code>updateMask</code> is not
+present, the update applies to all fields. This method returns the following
+error codes: <em> google.rpc.Code.PERMISSION_DENIED if the requesting user did
+not create the requested photo. </em> google.rpc.Code.INVALID_ARGUMENT if the
+request is malformed. <em> google.rpc.Code.NOT_FOUND if the requested photo does
+not exist. </em> google.rpc.Code.UNAVAILABLE if the requested Photo is still
+being indexed. (photo.update)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/StreetViewPublish/Resource/Photo.php#L53">at line 53</a></div>
+        <code>                    <a href="../../../../Google/Service/StreetViewPublish/Photo.html"><abbr title="Google\Service\StreetViewPublish\Photo">Photo</abbr></a>
+    <strong>create</strong>(<a href="../../../../Google/Service/StreetViewPublish/Photo.html"><abbr title="Google\Service\StreetViewPublish\Photo">Photo</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>After the client finishes uploading the photo with the returned UploadRef,
+CreatePhoto publishes the uploaded Photo to Street View on Google Maps.</p></p>                <p><p>Currently, the only way to set heading, pitch, and roll in CreatePhoto is
+through the <a href="https://developers.google.com/streetview/spherical-metadata">Photo Sphere XMP
+metadata</a> in the
+photo bytes. CreatePhoto ignores the <code>pose.heading</code>, <code>pose.pitch</code>,
+<code>pose.roll</code>, <code>pose.altitude</code>, and <code>pose.level</code> fields in Pose. This method
+returns the following error codes: <em> google.rpc.Code.INVALID_ARGUMENT if the
+request is malformed or if the uploaded photo is not a 360 photo. </em>
+google.rpc.Code.NOT_FOUND if the upload reference does not exist. *
+google.rpc.Code.RESOURCE_EXHAUSTED if the account has reached the storage
+limit. (photo.create)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/StreetViewPublish/Photo.html"><abbr title="Google\Service\StreetViewPublish\Photo">Photo</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/StreetViewPublish/Photo.html"><abbr title="Google\Service\StreetViewPublish\Photo">Photo</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/StreetViewPublish/Resource/Photo.php#L70">at line 70</a></div>
+        <code>                    <a href="../../../../Google/Service/StreetViewPublish/StreetviewpublishEmpty.html"><abbr title="Google\Service\StreetViewPublish\StreetviewpublishEmpty">StreetviewpublishEmpty</abbr></a>
+    <strong>delete</strong>(string $photoId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a Photo and its metadata. This method returns the following error
+codes: <em> google.rpc.Code.PERMISSION_DENIED if the requesting user did not
+create the requested photo. </em> google.rpc.Code.NOT_FOUND if the photo ID does
+not exist. (photo.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$photoId</td>
+                <td><p>Required. ID of the Photo.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/StreetViewPublish/StreetviewpublishEmpty.html"><abbr title="Google\Service\StreetViewPublish\StreetviewpublishEmpty">StreetviewpublishEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/StreetViewPublish/Resource/Photo.php#L96">at line 96</a></div>
+        <code>                    <a href="../../../../Google/Service/StreetViewPublish/Photo.html"><abbr title="Google\Service\StreetViewPublish\Photo">Photo</abbr></a>
+    <strong>get</strong>(string $photoId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the metadata of the specified Photo. This method returns the following
+error codes: <em> google.rpc.Code.PERMISSION_DENIED if the requesting user did
+not create the requested Photo. </em> google.rpc.Code.NOT_FOUND if the requested
+Photo does not exist. * google.rpc.Code.UNAVAILABLE if the requested Photo is
+still being indexed. (photo.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$photoId</td>
+                <td><p>Required. ID of the Photo.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/StreetViewPublish/Photo.html"><abbr title="Google\Service\StreetViewPublish\Photo">Photo</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startUpload">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/StreetViewPublish/Resource/Photo.php#L121">at line 121</a></div>
+        <code>                    <a href="../../../../Google/Service/StreetViewPublish/UploadRef.html"><abbr title="Google\Service\StreetViewPublish\UploadRef">UploadRef</abbr></a>
+    <strong>startUpload</strong>(<a href="../../../../Google/Service/StreetViewPublish/StreetviewpublishEmpty.html"><abbr title="Google\Service\StreetViewPublish\StreetviewpublishEmpty">StreetviewpublishEmpty</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates an upload session to start uploading photo bytes. The method uses the
+upload URL of the returned UploadRef to upload the bytes for the Photo. In
+addition to the photo requirements shown in
+<a href="https://support.google.com/maps/answer/7012050?ref_topic=6275604">https://support.google.com/maps/answer/7012050?ref_topic=6275604</a>, the photo
+must meet the following requirements: <em> Photo Sphere XMP metadata must be
+included in the photo metadata. See
+<a href="https://developers.google.com/streetview/spherical-metadata">https://developers.google.com/streetview/spherical-metadata</a> for the required
+fields. </em> The pixel size of the photo must meet the size requirements listed
+in <a href="https://support.google.com/maps/answer/7012050?ref_topic=6275604">https://support.google.com/maps/answer/7012050?ref_topic=6275604</a>, and the
+photo must be a full 360 horizontally. After the upload completes, the method
+uses UploadRef with CreatePhoto to create the Photo object entry.</p></p>                <p>(photo.startUpload)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/StreetViewPublish/StreetviewpublishEmpty.html"><abbr title="Google\Service\StreetViewPublish\StreetviewpublishEmpty">StreetviewpublishEmpty</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/StreetViewPublish/UploadRef.html"><abbr title="Google\Service\StreetViewPublish\UploadRef">UploadRef</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/StreetViewPublish/Resource/Photo.php#L155">at line 155</a></div>
+        <code>                    <a href="../../../../Google/Service/StreetViewPublish/Photo.html"><abbr title="Google\Service\StreetViewPublish\Photo">Photo</abbr></a>
+    <strong>update</strong>(string $id, <a href="../../../../Google/Service/StreetViewPublish/Photo.html"><abbr title="Google\Service\StreetViewPublish\Photo">Photo</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the metadata of a Photo, such as pose, place association,
+connections, etc. Changing the pixels of a photo is not supported. Only the
+fields specified in the updateMask field are used. If <code>updateMask</code> is not
+present, the update applies to all fields. This method returns the following
+error codes: <em> google.rpc.Code.PERMISSION_DENIED if the requesting user did
+not create the requested photo. </em> google.rpc.Code.INVALID_ARGUMENT if the
+request is malformed. <em> google.rpc.Code.NOT_FOUND if the requested photo does
+not exist. </em> google.rpc.Code.UNAVAILABLE if the requested Photo is still
+being indexed. (photo.update)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td><p>A unique identifier for a photo.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/StreetViewPublish/Photo.html"><abbr title="Google\Service\StreetViewPublish\Photo">Photo</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/StreetViewPublish/Photo.html"><abbr title="Google\Service\StreetViewPublish\Photo">Photo</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

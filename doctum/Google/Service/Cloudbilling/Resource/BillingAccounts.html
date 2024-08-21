@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Cloudbilling\Resource\BillingAccounts | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Cloudbilling_Resource_BillingAccounts" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Cloudbilling.ns.html">Cloudbilling</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Cloudbilling/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>BillingAccounts</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>BillingAccounts    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>BillingAccounts</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudbilling/Resource/BillingAccounts.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;billingAccounts&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $cloudbillingService = new Google\Service\Cloudbilling(...);
+ $billingAccounts = $cloudbillingService-&gt;billingAccounts;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudbilling/BillingAccount.html"><abbr title="Google\Service\Cloudbilling\BillingAccount">BillingAccount</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(<a href="../../../../Google/Service/Cloudbilling/BillingAccount.html"><abbr title="Google\Service\Cloudbilling\BillingAccount">BillingAccount</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>This method creates <a href="https://cloud.google.com/billing/docs/concepts#subaccounts">billing
+subaccounts</a>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudbilling/BillingAccount.html"><abbr title="Google\Service\Cloudbilling\BillingAccount">BillingAccount</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets information about a billing account. The current authenticated user must
+be a <a href="https://cloud.google.com/billing/docs/how-to/billing-access">viewer of the billing
+account</a>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudbilling/Policy.html"><abbr title="Google\Service\Cloudbilling\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIamPolicy">getIamPolicy</a>(string $resource, array $optParams = [])
+        
+                                            <p><p>Gets the access control policy for a billing account. The caller must have
+the <code>billing.accounts.getIamPolicy</code> permission on the account, which is often
+given to billing account <a href="https://cloud.google.com/billing/docs/how-
+to/billing-access">viewers</a>. (billingAccounts.getIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudbilling/ListBillingAccountsResponse.html"><abbr title="Google\Service\Cloudbilling\ListBillingAccountsResponse">ListBillingAccountsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listBillingAccounts">listBillingAccounts</a>(array $optParams = [])
+        
+                                            <p><p>Lists the billing accounts that the current authenticated user has permission
+to <a href="https://cloud.google.com/billing/docs/how-to/billing-access">view</a>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudbilling/BillingAccount.html"><abbr title="Google\Service\Cloudbilling\BillingAccount">BillingAccount</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_move">move</a>(string $name, <a href="../../../../Google/Service/Cloudbilling/MoveBillingAccountRequest.html"><abbr title="Google\Service\Cloudbilling\MoveBillingAccountRequest">MoveBillingAccountRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Changes which parent organization a billing account belongs to.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudbilling/BillingAccount.html"><abbr title="Google\Service\Cloudbilling\BillingAccount">BillingAccount</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/Cloudbilling/BillingAccount.html"><abbr title="Google\Service\Cloudbilling\BillingAccount">BillingAccount</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a billing account's fields. Currently the only field that can be
+edited is <code>display_name</code>. The current authenticated user must have the
+<code>billing.accounts.update</code> IAM permission, which is typically given to the
+<a href="https://cloud.google.com/billing/docs/how-to/billing-access">administrator</a>
+of the billing account. (billingAccounts.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudbilling/Policy.html"><abbr title="Google\Service\Cloudbilling\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setIamPolicy">setIamPolicy</a>(string $resource, <a href="../../../../Google/Service/Cloudbilling/SetIamPolicyRequest.html"><abbr title="Google\Service\Cloudbilling\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the access control policy for a billing account. Replaces any existing
+policy. The caller must have the <code>billing.accounts.setIamPolicy</code> permission
+on the account, which is often given to billing account
+<a href="https://cloud.google.com/billing/docs/how-to/billing-
+access">administrators</a>. (billingAccounts.setIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudbilling/TestIamPermissionsResponse.html"><abbr title="Google\Service\Cloudbilling\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testIamPermissions">testIamPermissions</a>(string $resource, <a href="../../../../Google/Service/Cloudbilling/TestIamPermissionsRequest.html"><abbr title="Google\Service\Cloudbilling\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Tests the access control policy for a billing account. This method takes the
+resource and a set of permissions as input and returns the subset of the
+input permissions that the caller is allowed for that resource.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudbilling/Resource/BillingAccounts.php#L61">at line 61</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudbilling/BillingAccount.html"><abbr title="Google\Service\Cloudbilling\BillingAccount">BillingAccount</abbr></a>
+    <strong>create</strong>(<a href="../../../../Google/Service/Cloudbilling/BillingAccount.html"><abbr title="Google\Service\Cloudbilling\BillingAccount">BillingAccount</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>This method creates <a href="https://cloud.google.com/billing/docs/concepts#subaccounts">billing
+subaccounts</a>.</p></p>                <p><p>Google Cloud resellers should use the Channel Services APIs, <a href="https://cloud.google.com/channel/docs/reference/rest/v1/accounts.
+customers/create">accounts.custom
+ers.create</a> and <a href="https://cloud.
+google.com/channel/docs/reference/rest/v1/accounts.customers.entitlements/cre
+ate">accounts.customers.entitlements.create</a>. When creating a subaccount, the current authenticated user must have
+the <code>billing.accounts.update</code> IAM permission on the parent account, which is
+typically given to billing account
+<a href="https://cloud.google.com/billing/docs/how-to/billing-
+access">administrators</a>. This method will return an error if the parent account has not been
+provisioned for subaccounts. (billingAccounts.create)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudbilling/BillingAccount.html"><abbr title="Google\Service\Cloudbilling\BillingAccount">BillingAccount</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudbilling/BillingAccount.html"><abbr title="Google\Service\Cloudbilling\BillingAccount">BillingAccount</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudbilling/Resource/BillingAccounts.php#L79">at line 79</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudbilling/BillingAccount.html"><abbr title="Google\Service\Cloudbilling\BillingAccount">BillingAccount</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets information about a billing account. The current authenticated user must
+be a <a href="https://cloud.google.com/billing/docs/how-to/billing-access">viewer of the billing
+account</a>.</p></p>                <p>(billingAccounts.get)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the billing account to
+retrieve. For example, <code>billingAccounts/012345-567890-ABCDEF</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudbilling/BillingAccount.html"><abbr title="Google\Service\Cloudbilling\BillingAccount">BillingAccount</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudbilling/Resource/BillingAccounts.php#L112">at line 112</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudbilling/Policy.html"><abbr title="Google\Service\Cloudbilling\Policy">Policy</abbr></a>
+    <strong>getIamPolicy</strong>(string $resource, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the access control policy for a billing account. The caller must have
+the <code>billing.accounts.getIamPolicy</code> permission on the account, which is often
+given to billing account <a href="https://cloud.google.com/billing/docs/how-
+to/billing-access">viewers</a>. (billingAccounts.getIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy is being
+requested. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudbilling/Policy.html"><abbr title="Google\Service\Cloudbilling\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listBillingAccounts">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudbilling/Resource/BillingAccounts.php#L144">at line 144</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudbilling/ListBillingAccountsResponse.html"><abbr title="Google\Service\Cloudbilling\ListBillingAccountsResponse">ListBillingAccountsResponse</abbr></a>
+    <strong>listBillingAccounts</strong>(array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists the billing accounts that the current authenticated user has permission
+to <a href="https://cloud.google.com/billing/docs/how-to/billing-access">view</a>.</p></p>                <p>(billingAccounts.listBillingAccounts)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudbilling/ListBillingAccountsResponse.html"><abbr title="Google\Service\Cloudbilling\ListBillingAccountsResponse">ListBillingAccountsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_move">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudbilling/Resource/BillingAccounts.php#L163">at line 163</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudbilling/BillingAccount.html"><abbr title="Google\Service\Cloudbilling\BillingAccount">BillingAccount</abbr></a>
+    <strong>move</strong>(string $name, <a href="../../../../Google/Service/Cloudbilling/MoveBillingAccountRequest.html"><abbr title="Google\Service\Cloudbilling\MoveBillingAccountRequest">MoveBillingAccountRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Changes which parent organization a billing account belongs to.</p></p>                <p>(billingAccounts.move)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the billing account to
+move. Must be of the form <code>billingAccounts/{billing_account_id}</code>. The
+specified billing account cannot be a subaccount, since a subaccount always
+belongs to the same organization as its parent account.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudbilling/MoveBillingAccountRequest.html"><abbr title="Google\Service\Cloudbilling\MoveBillingAccountRequest">MoveBillingAccountRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudbilling/BillingAccount.html"><abbr title="Google\Service\Cloudbilling\BillingAccount">BillingAccount</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudbilling/Resource/BillingAccounts.php#L186">at line 186</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudbilling/BillingAccount.html"><abbr title="Google\Service\Cloudbilling\BillingAccount">BillingAccount</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/Cloudbilling/BillingAccount.html"><abbr title="Google\Service\Cloudbilling\BillingAccount">BillingAccount</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a billing account's fields. Currently the only field that can be
+edited is <code>display_name</code>. The current authenticated user must have the
+<code>billing.accounts.update</code> IAM permission, which is typically given to the
+<a href="https://cloud.google.com/billing/docs/how-to/billing-access">administrator</a>
+of the billing account. (billingAccounts.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the billing account resource to be
+updated.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudbilling/BillingAccount.html"><abbr title="Google\Service\Cloudbilling\BillingAccount">BillingAccount</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudbilling/BillingAccount.html"><abbr title="Google\Service\Cloudbilling\BillingAccount">BillingAccount</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudbilling/Resource/BillingAccounts.php#L208">at line 208</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudbilling/Policy.html"><abbr title="Google\Service\Cloudbilling\Policy">Policy</abbr></a>
+    <strong>setIamPolicy</strong>(string $resource, <a href="../../../../Google/Service/Cloudbilling/SetIamPolicyRequest.html"><abbr title="Google\Service\Cloudbilling\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the access control policy for a billing account. Replaces any existing
+policy. The caller must have the <code>billing.accounts.setIamPolicy</code> permission
+on the account, which is often given to billing account
+<a href="https://cloud.google.com/billing/docs/how-to/billing-
+access">administrators</a>. (billingAccounts.setIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy is being
+specified. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudbilling/SetIamPolicyRequest.html"><abbr title="Google\Service\Cloudbilling\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudbilling/Policy.html"><abbr title="Google\Service\Cloudbilling\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testIamPermissions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudbilling/Resource/BillingAccounts.php#L229">at line 229</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudbilling/TestIamPermissionsResponse.html"><abbr title="Google\Service\Cloudbilling\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+    <strong>testIamPermissions</strong>(string $resource, <a href="../../../../Google/Service/Cloudbilling/TestIamPermissionsRequest.html"><abbr title="Google\Service\Cloudbilling\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Tests the access control policy for a billing account. This method takes the
+resource and a set of permissions as input and returns the subset of the
+input permissions that the caller is allowed for that resource.</p></p>                <p>(billingAccounts.testIamPermissions)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy detail is
+being requested. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudbilling/TestIamPermissionsRequest.html"><abbr title="Google\Service\Cloudbilling\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudbilling/TestIamPermissionsResponse.html"><abbr title="Google\Service\Cloudbilling\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

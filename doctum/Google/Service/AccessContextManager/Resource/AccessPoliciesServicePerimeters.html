@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\AccessContextManager\Resource\AccessPoliciesServicePerimeters | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_AccessContextManager_Resource_AccessPoliciesServicePerimeters" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/AccessContextManager.ns.html">AccessContextManager</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/AccessContextManager/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>AccessPoliciesServicePerimeters</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>AccessPoliciesServicePerimeters    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>AccessPoliciesServicePerimeters</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AccessContextManager/Resource/AccessPoliciesServicePerimeters.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;servicePerimeters&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $accesscontextmanagerService = new Google\Service\AccessContextManager(...);
+ $servicePerimeters = $accesscontextmanagerService-&gt;accessPolicies_servicePerimeters;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AccessContextManager/Operation.html"><abbr title="Google\Service\AccessContextManager\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_commit">commit</a>(string $parent, <a href="../../../../Google/Service/AccessContextManager/CommitServicePerimetersRequest.html"><abbr title="Google\Service\AccessContextManager\CommitServicePerimetersRequest">CommitServicePerimetersRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Commits the dry-run specification for all the service perimeters in an access
+policy. A commit operation on a service perimeter involves copying its <code>spec</code>
+field to the <code>status</code> field of the service perimeter. Only service perimeters
+with <code>use_explicit_dry_run_spec</code> field set to true are affected by a commit
+operation. The long-running operation from this RPC has a successful status
+after the dry-run specifications for all the service perimeters have been
+committed. If a commit fails, it causes the long-running operation to return
+an error response and the entire commit operation is cancelled. When
+successful, the Operation.response field contains
+CommitServicePerimetersResponse. The <code>dry_run</code> and the <code>spec</code> fields are
+cleared after a successful commit operation. (servicePerimeters.commit)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AccessContextManager/Operation.html"><abbr title="Google\Service\AccessContextManager\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/AccessContextManager/ServicePerimeter.html"><abbr title="Google\Service\AccessContextManager\ServicePerimeter">ServicePerimeter</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a service perimeter. The long-running operation from this RPC has a
+successful status after the service perimeter propagates to long-lasting
+storage. If a service perimeter contains errors, an error response is
+returned for the first error encountered. (servicePerimeters.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AccessContextManager/Operation.html"><abbr title="Google\Service\AccessContextManager\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes a service perimeter based on the resource name. The long-running
+operation from this RPC has a successful status after the service perimeter
+is removed from long-lasting storage. (servicePerimeters.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AccessContextManager/ServicePerimeter.html"><abbr title="Google\Service\AccessContextManager\ServicePerimeter">ServicePerimeter</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets a service perimeter based on the resource name. (servicePerimeters.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AccessContextManager/ListServicePerimetersResponse.html"><abbr title="Google\Service\AccessContextManager\ListServicePerimetersResponse">ListServicePerimetersResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listAccessPoliciesServicePerimeters">listAccessPoliciesServicePerimeters</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists all service perimeters for an access policy.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AccessContextManager/Operation.html"><abbr title="Google\Service\AccessContextManager\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/AccessContextManager/ServicePerimeter.html"><abbr title="Google\Service\AccessContextManager\ServicePerimeter">ServicePerimeter</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a service perimeter. The long-running operation from this RPC has a
+successful status after the service perimeter propagates to long-lasting
+storage. If a service perimeter contains errors, an error response is
+returned for the first error encountered. (servicePerimeters.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AccessContextManager/Operation.html"><abbr title="Google\Service\AccessContextManager\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_replaceAll">replaceAll</a>(string $parent, <a href="../../../../Google/Service/AccessContextManager/ReplaceServicePerimetersRequest.html"><abbr title="Google\Service\AccessContextManager\ReplaceServicePerimetersRequest">ReplaceServicePerimetersRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Replace all existing service perimeters in an access policy with the service
+perimeters provided. This is done atomically. The long-running operation from
+this RPC has a successful status after all replacements propagate to long-
+lasting storage. Replacements containing errors result in an error response
+for the first error encountered. Upon an error, replacement are cancelled and
+existing service perimeters are not affected. The Operation.response field
+contains ReplaceServicePerimetersResponse. (servicePerimeters.replaceAll)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AccessContextManager/TestIamPermissionsResponse.html"><abbr title="Google\Service\AccessContextManager\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testIamPermissions">testIamPermissions</a>(string $resource, <a href="../../../../Google/Service/AccessContextManager/TestIamPermissionsRequest.html"><abbr title="Google\Service\AccessContextManager\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Returns the IAM permissions that the caller has on the specified Access
+Context Manager resource. The resource can be an AccessPolicy, AccessLevel,
+or ServicePerimeter. This method does not support other resources.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_commit">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AccessContextManager/Resource/AccessPoliciesServicePerimeters.php#L59">at line 59</a></div>
+        <code>                    <a href="../../../../Google/Service/AccessContextManager/Operation.html"><abbr title="Google\Service\AccessContextManager\Operation">Operation</abbr></a>
+    <strong>commit</strong>(string $parent, <a href="../../../../Google/Service/AccessContextManager/CommitServicePerimetersRequest.html"><abbr title="Google\Service\AccessContextManager\CommitServicePerimetersRequest">CommitServicePerimetersRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Commits the dry-run specification for all the service perimeters in an access
+policy. A commit operation on a service perimeter involves copying its <code>spec</code>
+field to the <code>status</code> field of the service perimeter. Only service perimeters
+with <code>use_explicit_dry_run_spec</code> field set to true are affected by a commit
+operation. The long-running operation from this RPC has a successful status
+after the dry-run specifications for all the service perimeters have been
+committed. If a commit fails, it causes the long-running operation to return
+an error response and the entire commit operation is cancelled. When
+successful, the Operation.response field contains
+CommitServicePerimetersResponse. The <code>dry_run</code> and the <code>spec</code> fields are
+cleared after a successful commit operation. (servicePerimeters.commit)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. Resource name for the parent Access Policy
+which owns all Service Perimeters in scope for the commit operation. Format:
+<code>accessPolicies/{policy_id}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AccessContextManager/CommitServicePerimetersRequest.html"><abbr title="Google\Service\AccessContextManager\CommitServicePerimetersRequest">CommitServicePerimetersRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AccessContextManager/Operation.html"><abbr title="Google\Service\AccessContextManager\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AccessContextManager/Resource/AccessPoliciesServicePerimeters.php#L78">at line 78</a></div>
+        <code>                    <a href="../../../../Google/Service/AccessContextManager/Operation.html"><abbr title="Google\Service\AccessContextManager\Operation">Operation</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/AccessContextManager/ServicePerimeter.html"><abbr title="Google\Service\AccessContextManager\ServicePerimeter">ServicePerimeter</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a service perimeter. The long-running operation from this RPC has a
+successful status after the service perimeter propagates to long-lasting
+storage. If a service perimeter contains errors, an error response is
+returned for the first error encountered. (servicePerimeters.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. Resource name for the access policy which
+owns this Service Perimeter. Format: <code>accessPolicies/{policy_id}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AccessContextManager/ServicePerimeter.html"><abbr title="Google\Service\AccessContextManager\ServicePerimeter">ServicePerimeter</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AccessContextManager/Operation.html"><abbr title="Google\Service\AccessContextManager\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AccessContextManager/Resource/AccessPoliciesServicePerimeters.php#L95">at line 95</a></div>
+        <code>                    <a href="../../../../Google/Service/AccessContextManager/Operation.html"><abbr title="Google\Service\AccessContextManager\Operation">Operation</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a service perimeter based on the resource name. The long-running
+operation from this RPC has a successful status after the service perimeter
+is removed from long-lasting storage. (servicePerimeters.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Resource name for the Service Perimeter.
+Format: <code>accessPolicies/{policy_id}/servicePerimeters/{service_perimeter_id}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AccessContextManager/Operation.html"><abbr title="Google\Service\AccessContextManager\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AccessContextManager/Resource/AccessPoliciesServicePerimeters.php#L111">at line 111</a></div>
+        <code>                    <a href="../../../../Google/Service/AccessContextManager/ServicePerimeter.html"><abbr title="Google\Service\AccessContextManager\ServicePerimeter">ServicePerimeter</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets a service perimeter based on the resource name. (servicePerimeters.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Resource name for the Service Perimeter.
+Format:
+<code>accessPolicies/{policy_id}/servicePerimeters/{service_perimeters_id}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AccessContextManager/ServicePerimeter.html"><abbr title="Google\Service\AccessContextManager\ServicePerimeter">ServicePerimeter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listAccessPoliciesServicePerimeters">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AccessContextManager/Resource/AccessPoliciesServicePerimeters.php#L132">at line 132</a></div>
+        <code>                    <a href="../../../../Google/Service/AccessContextManager/ListServicePerimetersResponse.html"><abbr title="Google\Service\AccessContextManager\ListServicePerimetersResponse">ListServicePerimetersResponse</abbr></a>
+    <strong>listAccessPoliciesServicePerimeters</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all service perimeters for an access policy.</p></p>                <p>(servicePerimeters.listAccessPoliciesServicePerimeters)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. Resource name for the access policy to list
+Service Perimeters from. Format: <code>accessPolicies/{policy_id}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AccessContextManager/ListServicePerimetersResponse.html"><abbr title="Google\Service\AccessContextManager\ListServicePerimetersResponse">ListServicePerimetersResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AccessContextManager/Resource/AccessPoliciesServicePerimeters.php#L158">at line 158</a></div>
+        <code>                    <a href="../../../../Google/Service/AccessContextManager/Operation.html"><abbr title="Google\Service\AccessContextManager\Operation">Operation</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/AccessContextManager/ServicePerimeter.html"><abbr title="Google\Service\AccessContextManager\ServicePerimeter">ServicePerimeter</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a service perimeter. The long-running operation from this RPC has a
+successful status after the service perimeter propagates to long-lasting
+storage. If a service perimeter contains errors, an error response is
+returned for the first error encountered. (servicePerimeters.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Identifier. Resource name for the <code>ServicePerimeter</code>.
+Format:
+<code>accessPolicies/{access_policy}/servicePerimeters/{service_perimeter}</code>. The
+<code>service_perimeter</code> component must begin with a letter, followed by
+alphanumeric characters or <code>_</code>. After you create a <code>ServicePerimeter</code>, you
+cannot change its <code>name</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AccessContextManager/ServicePerimeter.html"><abbr title="Google\Service\AccessContextManager\ServicePerimeter">ServicePerimeter</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AccessContextManager/Operation.html"><abbr title="Google\Service\AccessContextManager\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceAll">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AccessContextManager/Resource/AccessPoliciesServicePerimeters.php#L180">at line 180</a></div>
+        <code>                    <a href="../../../../Google/Service/AccessContextManager/Operation.html"><abbr title="Google\Service\AccessContextManager\Operation">Operation</abbr></a>
+    <strong>replaceAll</strong>(string $parent, <a href="../../../../Google/Service/AccessContextManager/ReplaceServicePerimetersRequest.html"><abbr title="Google\Service\AccessContextManager\ReplaceServicePerimetersRequest">ReplaceServicePerimetersRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Replace all existing service perimeters in an access policy with the service
+perimeters provided. This is done atomically. The long-running operation from
+this RPC has a successful status after all replacements propagate to long-
+lasting storage. Replacements containing errors result in an error response
+for the first error encountered. Upon an error, replacement are cancelled and
+existing service perimeters are not affected. The Operation.response field
+contains ReplaceServicePerimetersResponse. (servicePerimeters.replaceAll)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. Resource name for the access policy which
+owns these Service Perimeters. Format: <code>accessPolicies/{policy_id}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AccessContextManager/ReplaceServicePerimetersRequest.html"><abbr title="Google\Service\AccessContextManager\ReplaceServicePerimetersRequest">ReplaceServicePerimetersRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AccessContextManager/Operation.html"><abbr title="Google\Service\AccessContextManager\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testIamPermissions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AccessContextManager/Resource/AccessPoliciesServicePerimeters.php#L201">at line 201</a></div>
+        <code>                    <a href="../../../../Google/Service/AccessContextManager/TestIamPermissionsResponse.html"><abbr title="Google\Service\AccessContextManager\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+    <strong>testIamPermissions</strong>(string $resource, <a href="../../../../Google/Service/AccessContextManager/TestIamPermissionsRequest.html"><abbr title="Google\Service\AccessContextManager\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the IAM permissions that the caller has on the specified Access
+Context Manager resource. The resource can be an AccessPolicy, AccessLevel,
+or ServicePerimeter. This method does not support other resources.</p></p>                <p>(servicePerimeters.testIamPermissions)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy detail is
+being requested. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AccessContextManager/TestIamPermissionsRequest.html"><abbr title="Google\Service\AccessContextManager\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AccessContextManager/TestIamPermissionsResponse.html"><abbr title="Google\Service\AccessContextManager\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

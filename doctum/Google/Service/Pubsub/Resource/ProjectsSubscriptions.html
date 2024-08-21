@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Pubsub\Resource\ProjectsSubscriptions | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Pubsub_Resource_ProjectsSubscriptions" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Pubsub.ns.html">Pubsub</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Pubsub/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ProjectsSubscriptions</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsSubscriptions    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsSubscriptions</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Pubsub/Resource/ProjectsSubscriptions.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;subscriptions&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $pubsubService = new Google\Service\Pubsub(...);
+ $subscriptions = $pubsubService-&gt;projects_subscriptions;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Pubsub/PubsubEmpty.html"><abbr title="Google\Service\Pubsub\PubsubEmpty">PubsubEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_acknowledge">acknowledge</a>(string $subscription, <a href="../../../../Google/Service/Pubsub/AcknowledgeRequest.html"><abbr title="Google\Service\Pubsub\AcknowledgeRequest">AcknowledgeRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Acknowledges the messages associated with the <code>ack_ids</code> in the
+<code>AcknowledgeRequest</code>. The Pub/Sub system can remove the relevant messages
+from the subscription. Acknowledging a message whose ack deadline has expired
+may succeed, but such a message may be redelivered later. Acknowledging a
+message more than once will not result in an error.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Pubsub/Subscription.html"><abbr title="Google\Service\Pubsub\Subscription">Subscription</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $name, <a href="../../../../Google/Service/Pubsub/Subscription.html"><abbr title="Google\Service\Pubsub\Subscription">Subscription</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a subscription to a given topic. See the [resource name rules]
+(<a href="https://cloud.google.com/pubsub/docs/pubsub-basics#resource_names">https://cloud.google.com/pubsub/docs/pubsub-basics#resource_names</a>). If the
+subscription already exists, returns <code>ALREADY_EXISTS</code>. If the corresponding
+topic doesn't exist, returns <code>NOT_FOUND</code>. If the name is not provided in the
+request, the server will assign a random name for this subscription on the
+same project as the topic, conforming to the [resource name format]
+(<a href="https://cloud.google.com/pubsub/docs/pubsub-basics#resource_names">https://cloud.google.com/pubsub/docs/pubsub-basics#resource_names</a>). The
+generated name is populated in the returned Subscription object. Note that
+for REST API requests, you must specify a name in the request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Pubsub/PubsubEmpty.html"><abbr title="Google\Service\Pubsub\PubsubEmpty">PubsubEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $subscription, array $optParams = [])
+        
+                                            <p><p>Deletes an existing subscription. All messages retained in the subscription
+are immediately dropped. Calls to <code>Pull</code> after deletion will return
+<code>NOT_FOUND</code>. After a subscription is deleted, a new one may be created with
+the same name, but the new one has no association with the old subscription
+or its topic unless the same topic is specified. (subscriptions.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Pubsub/DetachSubscriptionResponse.html"><abbr title="Google\Service\Pubsub\DetachSubscriptionResponse">DetachSubscriptionResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_detach">detach</a>(string $subscription, array $optParams = [])
+        
+                                            <p><p>Detaches a subscription from this topic. All messages retained in the
+subscription are dropped. Subsequent <code>Pull</code> and <code>StreamingPull</code> requests will
+return FAILED_PRECONDITION. If the subscription is a push subscription,
+pushes to the endpoint will stop. (subscriptions.detach)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Pubsub/Subscription.html"><abbr title="Google\Service\Pubsub\Subscription">Subscription</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $subscription, array $optParams = [])
+        
+                                            <p><p>Gets the configuration details of a subscription. (subscriptions.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Pubsub/Policy.html"><abbr title="Google\Service\Pubsub\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIamPolicy">getIamPolicy</a>(string $resource, array $optParams = [])
+        
+                                            <p><p>Gets the access control policy for a resource. Returns an empty policy if the
+resource exists and does not have a policy set. (subscriptions.getIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Pubsub/ListSubscriptionsResponse.html"><abbr title="Google\Service\Pubsub\ListSubscriptionsResponse">ListSubscriptionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsSubscriptions">listProjectsSubscriptions</a>(string $project, array $optParams = [])
+        
+                                            <p><p>Lists matching subscriptions. (subscriptions.listProjectsSubscriptions)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Pubsub/PubsubEmpty.html"><abbr title="Google\Service\Pubsub\PubsubEmpty">PubsubEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_modifyAckDeadline">modifyAckDeadline</a>(string $subscription, <a href="../../../../Google/Service/Pubsub/ModifyAckDeadlineRequest.html"><abbr title="Google\Service\Pubsub\ModifyAckDeadlineRequest">ModifyAckDeadlineRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Modifies the ack deadline for a specific message. This method is useful to
+indicate that more time is needed to process a message by the subscriber, or
+to make the message available for redelivery if the processing was
+interrupted. Note that this does not modify the subscription-level
+<code>ackDeadlineSeconds</code> used for subsequent messages.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Pubsub/PubsubEmpty.html"><abbr title="Google\Service\Pubsub\PubsubEmpty">PubsubEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_modifyPushConfig">modifyPushConfig</a>(string $subscription, <a href="../../../../Google/Service/Pubsub/ModifyPushConfigRequest.html"><abbr title="Google\Service\Pubsub\ModifyPushConfigRequest">ModifyPushConfigRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Modifies the <code>PushConfig</code> for a specified subscription. This may be used to
+change a push subscription to a pull one (signified by an empty <code>PushConfig</code>)
+or vice versa, or change the endpoint URL and other attributes of a push
+subscription. Messages will accumulate for delivery continuously through the
+call regardless of changes to the <code>PushConfig</code>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Pubsub/Subscription.html"><abbr title="Google\Service\Pubsub\Subscription">Subscription</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/Pubsub/UpdateSubscriptionRequest.html"><abbr title="Google\Service\Pubsub\UpdateSubscriptionRequest">UpdateSubscriptionRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates an existing subscription by updating the fields specified in the
+update mask. Note that certain properties of a subscription, such as its
+topic, are not modifiable. (subscriptions.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Pubsub/PullResponse.html"><abbr title="Google\Service\Pubsub\PullResponse">PullResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_pull">pull</a>(string $subscription, <a href="../../../../Google/Service/Pubsub/PullRequest.html"><abbr title="Google\Service\Pubsub\PullRequest">PullRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Pulls messages from the server. (subscriptions.pull)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Pubsub/SeekResponse.html"><abbr title="Google\Service\Pubsub\SeekResponse">SeekResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_seek">seek</a>(string $subscription, <a href="../../../../Google/Service/Pubsub/SeekRequest.html"><abbr title="Google\Service\Pubsub\SeekRequest">SeekRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Seeks an existing subscription to a point in time or to a given snapshot,
+whichever is provided in the request. Snapshots are used in [Seek]
+(<a href="https://cloud.google.com/pubsub/docs/replay-overview">https://cloud.google.com/pubsub/docs/replay-overview</a>) operations, which
+allow you to manage message acknowledgments in bulk. That is, you can set the
+acknowledgment state of messages in an existing subscription to the state
+captured by a snapshot. Note that both the subscription and the snapshot must
+be on the same topic. (subscriptions.seek)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Pubsub/Policy.html"><abbr title="Google\Service\Pubsub\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setIamPolicy">setIamPolicy</a>(string $resource, <a href="../../../../Google/Service/Pubsub/SetIamPolicyRequest.html"><abbr title="Google\Service\Pubsub\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the access control policy on the specified resource. Replaces any
+existing policy. Can return <code>NOT_FOUND</code>, <code>INVALID_ARGUMENT</code>, and
+<code>PERMISSION_DENIED</code> errors. (subscriptions.setIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Pubsub/TestIamPermissionsResponse.html"><abbr title="Google\Service\Pubsub\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testIamPermissions">testIamPermissions</a>(string $resource, <a href="../../../../Google/Service/Pubsub/TestIamPermissionsRequest.html"><abbr title="Google\Service\Pubsub\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Returns permissions that a caller has on the specified resource. If the
+resource does not exist, this will return an empty set of permissions, not a
+<code>NOT_FOUND</code> error. Note: This operation is designed to be used for building
+permission-aware UIs and command-line tools, not for authorization checking.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_acknowledge">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Pubsub/Resource/ProjectsSubscriptions.php#L62">at line 62</a></div>
+        <code>                    <a href="../../../../Google/Service/Pubsub/PubsubEmpty.html"><abbr title="Google\Service\Pubsub\PubsubEmpty">PubsubEmpty</abbr></a>
+    <strong>acknowledge</strong>(string $subscription, <a href="../../../../Google/Service/Pubsub/AcknowledgeRequest.html"><abbr title="Google\Service\Pubsub\AcknowledgeRequest">AcknowledgeRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Acknowledges the messages associated with the <code>ack_ids</code> in the
+<code>AcknowledgeRequest</code>. The Pub/Sub system can remove the relevant messages
+from the subscription. Acknowledging a message whose ack deadline has expired
+may succeed, but such a message may be redelivered later. Acknowledging a
+message more than once will not result in an error.</p></p>                <p>(subscriptions.acknowledge)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$subscription</td>
+                <td><p>Required. The subscription whose message is being
+acknowledged. Format is <code>projects/{project}/subscriptions/{sub}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Pubsub/AcknowledgeRequest.html"><abbr title="Google\Service\Pubsub\AcknowledgeRequest">AcknowledgeRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Pubsub/PubsubEmpty.html"><abbr title="Google\Service\Pubsub\PubsubEmpty">PubsubEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Pubsub/Resource/ProjectsSubscriptions.php#L91">at line 91</a></div>
+        <code>                    <a href="../../../../Google/Service/Pubsub/Subscription.html"><abbr title="Google\Service\Pubsub\Subscription">Subscription</abbr></a>
+    <strong>create</strong>(string $name, <a href="../../../../Google/Service/Pubsub/Subscription.html"><abbr title="Google\Service\Pubsub\Subscription">Subscription</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a subscription to a given topic. See the [resource name rules]
+(<a href="https://cloud.google.com/pubsub/docs/pubsub-basics#resource_names">https://cloud.google.com/pubsub/docs/pubsub-basics#resource_names</a>). If the
+subscription already exists, returns <code>ALREADY_EXISTS</code>. If the corresponding
+topic doesn't exist, returns <code>NOT_FOUND</code>. If the name is not provided in the
+request, the server will assign a random name for this subscription on the
+same project as the topic, conforming to the [resource name format]
+(<a href="https://cloud.google.com/pubsub/docs/pubsub-basics#resource_names">https://cloud.google.com/pubsub/docs/pubsub-basics#resource_names</a>). The
+generated name is populated in the returned Subscription object. Note that
+for REST API requests, you must specify a name in the request.</p></p>                <p>(subscriptions.create)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the subscription. It must have the
+format <code>"projects/{project}/subscriptions/{subscription}"</code>. <code>{subscription}</code>
+must start with a letter, and contain only letters (<code>[A-Za-z]</code>), numbers
+(<code>[0-9]</code>), dashes (<code>-</code>), underscores (<code>_</code>), periods (<code>.</code>), tildes (<code>~</code>), plus
+(<code>+</code>) or percent signs (<code>%</code>). It must be between 3 and 255 characters in
+length, and it must not start with <code>"goog"</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Pubsub/Subscription.html"><abbr title="Google\Service\Pubsub\Subscription">Subscription</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Pubsub/Subscription.html"><abbr title="Google\Service\Pubsub\Subscription">Subscription</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Pubsub/Resource/ProjectsSubscriptions.php#L110">at line 110</a></div>
+        <code>                    <a href="../../../../Google/Service/Pubsub/PubsubEmpty.html"><abbr title="Google\Service\Pubsub\PubsubEmpty">PubsubEmpty</abbr></a>
+    <strong>delete</strong>(string $subscription, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes an existing subscription. All messages retained in the subscription
+are immediately dropped. Calls to <code>Pull</code> after deletion will return
+<code>NOT_FOUND</code>. After a subscription is deleted, a new one may be created with
+the same name, but the new one has no association with the old subscription
+or its topic unless the same topic is specified. (subscriptions.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$subscription</td>
+                <td><p>Required. The subscription to delete. Format is
+<code>projects/{project}/subscriptions/{sub}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Pubsub/PubsubEmpty.html"><abbr title="Google\Service\Pubsub\PubsubEmpty">PubsubEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_detach">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Pubsub/Resource/ProjectsSubscriptions.php#L128">at line 128</a></div>
+        <code>                    <a href="../../../../Google/Service/Pubsub/DetachSubscriptionResponse.html"><abbr title="Google\Service\Pubsub\DetachSubscriptionResponse">DetachSubscriptionResponse</abbr></a>
+    <strong>detach</strong>(string $subscription, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Detaches a subscription from this topic. All messages retained in the
+subscription are dropped. Subsequent <code>Pull</code> and <code>StreamingPull</code> requests will
+return FAILED_PRECONDITION. If the subscription is a push subscription,
+pushes to the endpoint will stop. (subscriptions.detach)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$subscription</td>
+                <td><p>Required. The subscription to detach. Format is
+<code>projects/{project}/subscriptions/{subscription}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Pubsub/DetachSubscriptionResponse.html"><abbr title="Google\Service\Pubsub\DetachSubscriptionResponse">DetachSubscriptionResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Pubsub/Resource/ProjectsSubscriptions.php#L143">at line 143</a></div>
+        <code>                    <a href="../../../../Google/Service/Pubsub/Subscription.html"><abbr title="Google\Service\Pubsub\Subscription">Subscription</abbr></a>
+    <strong>get</strong>(string $subscription, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the configuration details of a subscription. (subscriptions.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$subscription</td>
+                <td><p>Required. The name of the subscription to get.
+Format is <code>projects/{project}/subscriptions/{sub}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Pubsub/Subscription.html"><abbr title="Google\Service\Pubsub\Subscription">Subscription</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Pubsub/Resource/ProjectsSubscriptions.php#L174">at line 174</a></div>
+        <code>                    <a href="../../../../Google/Service/Pubsub/Policy.html"><abbr title="Google\Service\Pubsub\Policy">Policy</abbr></a>
+    <strong>getIamPolicy</strong>(string $resource, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the access control policy for a resource. Returns an empty policy if the
+resource exists and does not have a policy set. (subscriptions.getIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy is being
+requested. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Pubsub/Policy.html"><abbr title="Google\Service\Pubsub\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsSubscriptions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Pubsub/Resource/ProjectsSubscriptions.php#L195">at line 195</a></div>
+        <code>                    <a href="../../../../Google/Service/Pubsub/ListSubscriptionsResponse.html"><abbr title="Google\Service\Pubsub\ListSubscriptionsResponse">ListSubscriptionsResponse</abbr></a>
+    <strong>listProjectsSubscriptions</strong>(string $project, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists matching subscriptions. (subscriptions.listProjectsSubscriptions)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Required. The name of the project in which to list
+subscriptions. Format is <code>projects/{project-id}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Pubsub/ListSubscriptionsResponse.html"><abbr title="Google\Service\Pubsub\ListSubscriptionsResponse">ListSubscriptionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modifyAckDeadline">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Pubsub/Resource/ProjectsSubscriptions.php#L216">at line 216</a></div>
+        <code>                    <a href="../../../../Google/Service/Pubsub/PubsubEmpty.html"><abbr title="Google\Service\Pubsub\PubsubEmpty">PubsubEmpty</abbr></a>
+    <strong>modifyAckDeadline</strong>(string $subscription, <a href="../../../../Google/Service/Pubsub/ModifyAckDeadlineRequest.html"><abbr title="Google\Service\Pubsub\ModifyAckDeadlineRequest">ModifyAckDeadlineRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Modifies the ack deadline for a specific message. This method is useful to
+indicate that more time is needed to process a message by the subscriber, or
+to make the message available for redelivery if the processing was
+interrupted. Note that this does not modify the subscription-level
+<code>ackDeadlineSeconds</code> used for subsequent messages.</p></p>                <p>(subscriptions.modifyAckDeadline)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$subscription</td>
+                <td><p>Required. The name of the subscription. Format is
+<code>projects/{project}/subscriptions/{sub}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Pubsub/ModifyAckDeadlineRequest.html"><abbr title="Google\Service\Pubsub\ModifyAckDeadlineRequest">ModifyAckDeadlineRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Pubsub/PubsubEmpty.html"><abbr title="Google\Service\Pubsub\PubsubEmpty">PubsubEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modifyPushConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Pubsub/Resource/ProjectsSubscriptions.php#L237">at line 237</a></div>
+        <code>                    <a href="../../../../Google/Service/Pubsub/PubsubEmpty.html"><abbr title="Google\Service\Pubsub\PubsubEmpty">PubsubEmpty</abbr></a>
+    <strong>modifyPushConfig</strong>(string $subscription, <a href="../../../../Google/Service/Pubsub/ModifyPushConfigRequest.html"><abbr title="Google\Service\Pubsub\ModifyPushConfigRequest">ModifyPushConfigRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Modifies the <code>PushConfig</code> for a specified subscription. This may be used to
+change a push subscription to a pull one (signified by an empty <code>PushConfig</code>)
+or vice versa, or change the endpoint URL and other attributes of a push
+subscription. Messages will accumulate for delivery continuously through the
+call regardless of changes to the <code>PushConfig</code>.</p></p>                <p>(subscriptions.modifyPushConfig)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$subscription</td>
+                <td><p>Required. The name of the subscription. Format is
+<code>projects/{project}/subscriptions/{sub}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Pubsub/ModifyPushConfigRequest.html"><abbr title="Google\Service\Pubsub\ModifyPushConfigRequest">ModifyPushConfigRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Pubsub/PubsubEmpty.html"><abbr title="Google\Service\Pubsub\PubsubEmpty">PubsubEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Pubsub/Resource/ProjectsSubscriptions.php#L259">at line 259</a></div>
+        <code>                    <a href="../../../../Google/Service/Pubsub/Subscription.html"><abbr title="Google\Service\Pubsub\Subscription">Subscription</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/Pubsub/UpdateSubscriptionRequest.html"><abbr title="Google\Service\Pubsub\UpdateSubscriptionRequest">UpdateSubscriptionRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates an existing subscription by updating the fields specified in the
+update mask. Note that certain properties of a subscription, such as its
+topic, are not modifiable. (subscriptions.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the subscription. It must have the
+format <code>"projects/{project}/subscriptions/{subscription}"</code>. <code>{subscription}</code>
+must start with a letter, and contain only letters (<code>[A-Za-z]</code>), numbers
+(<code>[0-9]</code>), dashes (<code>-</code>), underscores (<code>_</code>), periods (<code>.</code>), tildes (<code>~</code>), plus
+(<code>+</code>) or percent signs (<code>%</code>). It must be between 3 and 255 characters in
+length, and it must not start with <code>"goog"</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Pubsub/UpdateSubscriptionRequest.html"><abbr title="Google\Service\Pubsub\UpdateSubscriptionRequest">UpdateSubscriptionRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Pubsub/Subscription.html"><abbr title="Google\Service\Pubsub\Subscription">Subscription</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pull">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Pubsub/Resource/ProjectsSubscriptions.php#L275">at line 275</a></div>
+        <code>                    <a href="../../../../Google/Service/Pubsub/PullResponse.html"><abbr title="Google\Service\Pubsub\PullResponse">PullResponse</abbr></a>
+    <strong>pull</strong>(string $subscription, <a href="../../../../Google/Service/Pubsub/PullRequest.html"><abbr title="Google\Service\Pubsub\PullRequest">PullRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Pulls messages from the server. (subscriptions.pull)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$subscription</td>
+                <td><p>Required. The subscription from which messages
+should be pulled. Format is <code>projects/{project}/subscriptions/{sub}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Pubsub/PullRequest.html"><abbr title="Google\Service\Pubsub\PullRequest">PullRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Pubsub/PullResponse.html"><abbr title="Google\Service\Pubsub\PullResponse">PullResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_seek">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Pubsub/Resource/ProjectsSubscriptions.php#L296">at line 296</a></div>
+        <code>                    <a href="../../../../Google/Service/Pubsub/SeekResponse.html"><abbr title="Google\Service\Pubsub\SeekResponse">SeekResponse</abbr></a>
+    <strong>seek</strong>(string $subscription, <a href="../../../../Google/Service/Pubsub/SeekRequest.html"><abbr title="Google\Service\Pubsub\SeekRequest">SeekRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Seeks an existing subscription to a point in time or to a given snapshot,
+whichever is provided in the request. Snapshots are used in [Seek]
+(<a href="https://cloud.google.com/pubsub/docs/replay-overview">https://cloud.google.com/pubsub/docs/replay-overview</a>) operations, which
+allow you to manage message acknowledgments in bulk. That is, you can set the
+acknowledgment state of messages in an existing subscription to the state
+captured by a snapshot. Note that both the subscription and the snapshot must
+be on the same topic. (subscriptions.seek)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$subscription</td>
+                <td><p>Required. The subscription to affect.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Pubsub/SeekRequest.html"><abbr title="Google\Service\Pubsub\SeekRequest">SeekRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Pubsub/SeekResponse.html"><abbr title="Google\Service\Pubsub\SeekResponse">SeekResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Pubsub/Resource/ProjectsSubscriptions.php#L316">at line 316</a></div>
+        <code>                    <a href="../../../../Google/Service/Pubsub/Policy.html"><abbr title="Google\Service\Pubsub\Policy">Policy</abbr></a>
+    <strong>setIamPolicy</strong>(string $resource, <a href="../../../../Google/Service/Pubsub/SetIamPolicyRequest.html"><abbr title="Google\Service\Pubsub\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the access control policy on the specified resource. Replaces any
+existing policy. Can return <code>NOT_FOUND</code>, <code>INVALID_ARGUMENT</code>, and
+<code>PERMISSION_DENIED</code> errors. (subscriptions.setIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy is being
+specified. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Pubsub/SetIamPolicyRequest.html"><abbr title="Google\Service\Pubsub\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Pubsub/Policy.html"><abbr title="Google\Service\Pubsub\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testIamPermissions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Pubsub/Resource/ProjectsSubscriptions.php#L339">at line 339</a></div>
+        <code>                    <a href="../../../../Google/Service/Pubsub/TestIamPermissionsResponse.html"><abbr title="Google\Service\Pubsub\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+    <strong>testIamPermissions</strong>(string $resource, <a href="../../../../Google/Service/Pubsub/TestIamPermissionsRequest.html"><abbr title="Google\Service\Pubsub\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns permissions that a caller has on the specified resource. If the
+resource does not exist, this will return an empty set of permissions, not a
+<code>NOT_FOUND</code> error. Note: This operation is designed to be used for building
+permission-aware UIs and command-line tools, not for authorization checking.</p></p>                <p><p>This operation may &quot;fail open&quot; without warning.
+(subscriptions.testIamPermissions)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy detail is
+being requested. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Pubsub/TestIamPermissionsRequest.html"><abbr title="Google\Service\Pubsub\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Pubsub/TestIamPermissionsResponse.html"><abbr title="Google\Service\Pubsub\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

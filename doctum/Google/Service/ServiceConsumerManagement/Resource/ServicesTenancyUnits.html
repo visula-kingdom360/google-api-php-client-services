@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\ServiceConsumerManagement\Resource\ServicesTenancyUnits | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_ServiceConsumerManagement_Resource_ServicesTenancyUnits" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/ServiceConsumerManagement.ns.html">ServiceConsumerManagement</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/ServiceConsumerManagement/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ServicesTenancyUnits</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ServicesTenancyUnits    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ServicesTenancyUnits</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ServiceConsumerManagement/Resource/ServicesTenancyUnits.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;tenancyUnits&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $serviceconsumermanagementService = new Google\Service\ServiceConsumerManagement(...);
+ $tenancyUnits = $serviceconsumermanagementService-&gt;services_tenancyUnits;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addProject">addProject</a>(string $parent, <a href="../../../../Google/Service/ServiceConsumerManagement/AddTenantProjectRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\AddTenantProjectRequest">AddTenantProjectRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Add a new tenant project to the tenancy unit. There can be a maximum of 1024
+tenant projects in a tenancy unit. If there are previously failed
+<code>AddTenantProject</code> calls, you might need to call <code>RemoveTenantProject</code> first
+to resolve them before you can make another call to <code>AddTenantProject</code> with
+the same tag. Operation. (tenancyUnits.addProject)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_applyProjectConfig">applyProjectConfig</a>(string $name, <a href="../../../../Google/Service/ServiceConsumerManagement/ApplyTenantProjectConfigRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\ApplyTenantProjectConfigRequest">ApplyTenantProjectConfigRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Apply a configuration to an existing tenant project. This project must exist
+in an active state and have the original owner account. The caller must have
+permission to add a project to the given tenancy unit. The configuration is
+applied, but any existing settings on the project aren't modified. Specified
+policy bindings are applied. Existing bindings aren't modified. Specified
+services are activated. No service is deactivated. If specified, new billing
+configuration is applied. Omit a billing configuration to keep the existing
+one. A service account in the project is created if previously non existed.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_attachProject">attachProject</a>(string $name, <a href="../../../../Google/Service/ServiceConsumerManagement/AttachTenantProjectRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\AttachTenantProjectRequest">AttachTenantProjectRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Attach an existing project to the tenancy unit as a new tenant resource. The
+project could either be the tenant project reserved by calling
+<code>AddTenantProject</code> under a tenancy unit of a service producer's project of a
+managed service, or from a separate project. The caller is checked against a
+set of permissions as if calling <code>AddTenantProject</code> on the same service
+consumer. To trigger the attachment, the targeted tenant project must be in a
+folder. Make sure the ServiceConsumerManagement service account is the owner
+of that project. These two requirements are already met if the project is
+reserved by calling <code>AddTenantProject</code>. Operation.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ServiceConsumerManagement/TenancyUnit.html"><abbr title="Google\Service\ServiceConsumerManagement\TenancyUnit">TenancyUnit</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/ServiceConsumerManagement/CreateTenancyUnitRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\CreateTenancyUnitRequest">CreateTenancyUnitRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a tenancy unit with no tenant resources. If tenancy unit already
+exists, it will be returned, however, in this case, returned TenancyUnit does
+not have tenant_resources field set and ListTenancyUnits has to be used to
+get a complete TenancyUnit with all fields populated. (tenancyUnits.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Delete a tenancy unit. Before you delete the tenancy unit, there should be no
+tenant resources in it that aren't in a DELETED state. Operation.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_deleteProject">deleteProject</a>(string $name, <a href="../../../../Google/Service/ServiceConsumerManagement/DeleteTenantProjectRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\DeleteTenantProjectRequest">DeleteTenantProjectRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Deletes the specified project resource identified by a tenant resource tag.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ServiceConsumerManagement/ListTenancyUnitsResponse.html"><abbr title="Google\Service\ServiceConsumerManagement\ListTenancyUnitsResponse">ListTenancyUnitsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listServicesTenancyUnits">listServicesTenancyUnits</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Find the tenancy unit for a managed service and service consumer. This method
+shouldn't be used in a service producer's runtime path, for example to find
+the tenant project number when creating VMs. Service producers must persist
+the tenant project's information after the project is created.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_removeProject">removeProject</a>(string $name, <a href="../../../../Google/Service/ServiceConsumerManagement/RemoveTenantProjectRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\RemoveTenantProjectRequest">RemoveTenantProjectRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Removes the specified project resource identified by a tenant resource tag.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_undeleteProject">undeleteProject</a>(string $name, <a href="../../../../Google/Service/ServiceConsumerManagement/UndeleteTenantProjectRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\UndeleteTenantProjectRequest">UndeleteTenantProjectRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Attempts to undelete a previously deleted tenant project. The project must be
+in a DELETED state. There are no guarantees that an undeleted project will be
+in a fully restored and functional state. Call the <code>ApplyTenantProjectConfig</code>
+method to update its configuration and then validate all managed service
+resources. Operation. (tenancyUnits.undeleteProject)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_addProject">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ServiceConsumerManagement/Resource/ServicesTenancyUnits.php#L55">at line 55</a></div>
+        <code>                    <a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a>
+    <strong>addProject</strong>(string $parent, <a href="../../../../Google/Service/ServiceConsumerManagement/AddTenantProjectRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\AddTenantProjectRequest">AddTenantProjectRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a new tenant project to the tenancy unit. There can be a maximum of 1024
+tenant projects in a tenancy unit. If there are previously failed
+<code>AddTenantProject</code> calls, you might need to call <code>RemoveTenantProject</code> first
+to resolve them before you can make another call to <code>AddTenantProject</code> with
+the same tag. Operation. (tenancyUnits.addProject)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. Name of the tenancy unit. Such as
+'services/service.googleapis.com/projects/12345/tenancyUnits/abcd'.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/ServiceConsumerManagement/AddTenantProjectRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\AddTenantProjectRequest">AddTenantProjectRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_applyProjectConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ServiceConsumerManagement/Resource/ServicesTenancyUnits.php#L84">at line 84</a></div>
+        <code>                    <a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a>
+    <strong>applyProjectConfig</strong>(string $name, <a href="../../../../Google/Service/ServiceConsumerManagement/ApplyTenantProjectConfigRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\ApplyTenantProjectConfigRequest">ApplyTenantProjectConfigRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Apply a configuration to an existing tenant project. This project must exist
+in an active state and have the original owner account. The caller must have
+permission to add a project to the given tenancy unit. The configuration is
+applied, but any existing settings on the project aren't modified. Specified
+policy bindings are applied. Existing bindings aren't modified. Specified
+services are activated. No service is deactivated. If specified, new billing
+configuration is applied. Omit a billing configuration to keep the existing
+one. A service account in the project is created if previously non existed.</p></p>                <p><p>Specified labels will be appended to tenant project, note that the value of
+existing label key will be updated if the same label key is requested. The
+specified folder is ignored, as moving a tenant project to a different folder
+isn't supported. The operation fails if any of the steps fail, but no
+rollback of already applied configuration changes is attempted. Operation.
+(tenancyUnits.applyProjectConfig)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Name of the tenancy unit. Such as
+'services/service.googleapis.com/projects/12345/tenancyUnits/abcd'.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/ServiceConsumerManagement/ApplyTenantProjectConfigRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\ApplyTenantProjectConfigRequest">ApplyTenantProjectConfigRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_attachProject">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ServiceConsumerManagement/Resource/ServicesTenancyUnits.php#L110">at line 110</a></div>
+        <code>                    <a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a>
+    <strong>attachProject</strong>(string $name, <a href="../../../../Google/Service/ServiceConsumerManagement/AttachTenantProjectRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\AttachTenantProjectRequest">AttachTenantProjectRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Attach an existing project to the tenancy unit as a new tenant resource. The
+project could either be the tenant project reserved by calling
+<code>AddTenantProject</code> under a tenancy unit of a service producer's project of a
+managed service, or from a separate project. The caller is checked against a
+set of permissions as if calling <code>AddTenantProject</code> on the same service
+consumer. To trigger the attachment, the targeted tenant project must be in a
+folder. Make sure the ServiceConsumerManagement service account is the owner
+of that project. These two requirements are already met if the project is
+reserved by calling <code>AddTenantProject</code>. Operation.</p></p>                <p>(tenancyUnits.attachProject)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Name of the tenancy unit that the project will
+be attached to. Such as
+'services/service.googleapis.com/projects/12345/tenancyUnits/abcd'.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/ServiceConsumerManagement/AttachTenantProjectRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\AttachTenantProjectRequest">AttachTenantProjectRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ServiceConsumerManagement/Resource/ServicesTenancyUnits.php#L133">at line 133</a></div>
+        <code>                    <a href="../../../../Google/Service/ServiceConsumerManagement/TenancyUnit.html"><abbr title="Google\Service\ServiceConsumerManagement\TenancyUnit">TenancyUnit</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/ServiceConsumerManagement/CreateTenancyUnitRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\CreateTenancyUnitRequest">CreateTenancyUnitRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a tenancy unit with no tenant resources. If tenancy unit already
+exists, it will be returned, however, in this case, returned TenancyUnit does
+not have tenant_resources field set and ListTenancyUnits has to be used to
+get a complete TenancyUnit with all fields populated. (tenancyUnits.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. services/{service}/{collection id}/{resource
+id} {collection id} is the cloud resource collection type representing the
+service consumer, for example 'projects', or 'organizations'. {resource id}
+is the consumer numeric id, such as project number: '123456'. {service} the
+name of a managed service, such as 'service.googleapis.com'. Enables service
+binding using the new tenancy unit.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/ServiceConsumerManagement/CreateTenancyUnitRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\CreateTenancyUnitRequest">CreateTenancyUnitRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ServiceConsumerManagement/TenancyUnit.html"><abbr title="Google\Service\ServiceConsumerManagement\TenancyUnit">TenancyUnit</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ServiceConsumerManagement/Resource/ServicesTenancyUnits.php#L149">at line 149</a></div>
+        <code>                    <a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Delete a tenancy unit. Before you delete the tenancy unit, there should be no
+tenant resources in it that aren't in a DELETED state. Operation.</p></p>                <p>(tenancyUnits.delete)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Name of the tenancy unit to be deleted.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteProject">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ServiceConsumerManagement/Resource/ServicesTenancyUnits.php#L172">at line 172</a></div>
+        <code>                    <a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a>
+    <strong>deleteProject</strong>(string $name, <a href="../../../../Google/Service/ServiceConsumerManagement/DeleteTenantProjectRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\DeleteTenantProjectRequest">DeleteTenantProjectRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes the specified project resource identified by a tenant resource tag.</p></p>                <p><p>The mothod removes a project lien with a 'TenantManager' origin if that was
+added. It will then attempt to delete the project. If that operation fails,
+this method also fails. After the project has been deleted, the tenant
+resource state is set to DELETED. To permanently remove resource metadata,
+call the <code>RemoveTenantProject</code> method. New resources with the same tag can't
+be added if there are existing resources in a DELETED state. Operation.
+(tenancyUnits.deleteProject)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Name of the tenancy unit. Such as
+'services/service.googleapis.com/projects/12345/tenancyUnits/abcd'.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/ServiceConsumerManagement/DeleteTenantProjectRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\DeleteTenantProjectRequest">DeleteTenantProjectRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listServicesTenancyUnits">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ServiceConsumerManagement/Resource/ServicesTenancyUnits.php#L203">at line 203</a></div>
+        <code>                    <a href="../../../../Google/Service/ServiceConsumerManagement/ListTenancyUnitsResponse.html"><abbr title="Google\Service\ServiceConsumerManagement\ListTenancyUnitsResponse">ListTenancyUnitsResponse</abbr></a>
+    <strong>listServicesTenancyUnits</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Find the tenancy unit for a managed service and service consumer. This method
+shouldn't be used in a service producer's runtime path, for example to find
+the tenant project number when creating VMs. Service producers must persist
+the tenant project's information after the project is created.</p></p>                <p>(tenancyUnits.listServicesTenancyUnits)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. Managed service and service consumer.
+Required. services/{service}/{collection id}/{resource id} {collection id} is
+the cloud resource collection type representing the service consumer, for
+example 'projects', or 'organizations'. {resource id} is the consumer numeric
+id, such as project number: '123456'. {service} the name of a service, such
+as 'service.googleapis.com'.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ServiceConsumerManagement/ListTenancyUnitsResponse.html"><abbr title="Google\Service\ServiceConsumerManagement\ListTenancyUnitsResponse">ListTenancyUnitsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeProject">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ServiceConsumerManagement/Resource/ServicesTenancyUnits.php#L225">at line 225</a></div>
+        <code>                    <a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a>
+    <strong>removeProject</strong>(string $name, <a href="../../../../Google/Service/ServiceConsumerManagement/RemoveTenantProjectRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\RemoveTenantProjectRequest">RemoveTenantProjectRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Removes the specified project resource identified by a tenant resource tag.</p></p>                <p><p>The method removes the project lien with 'TenantManager' origin if that was
+added. It then attempts to delete the project. If that operation fails, this
+method also fails. Calls to remove already removed or non-existent tenant
+project succeed. After the project has been deleted, or if was already in a
+DELETED state, resource metadata is permanently removed from the tenancy
+unit. Operation. (tenancyUnits.removeProject)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Name of the tenancy unit. Such as
+'services/service.googleapis.com/projects/12345/tenancyUnits/abcd'.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/ServiceConsumerManagement/RemoveTenantProjectRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\RemoveTenantProjectRequest">RemoveTenantProjectRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_undeleteProject">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ServiceConsumerManagement/Resource/ServicesTenancyUnits.php#L245">at line 245</a></div>
+        <code>                    <a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a>
+    <strong>undeleteProject</strong>(string $name, <a href="../../../../Google/Service/ServiceConsumerManagement/UndeleteTenantProjectRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\UndeleteTenantProjectRequest">UndeleteTenantProjectRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Attempts to undelete a previously deleted tenant project. The project must be
+in a DELETED state. There are no guarantees that an undeleted project will be
+in a fully restored and functional state. Call the <code>ApplyTenantProjectConfig</code>
+method to update its configuration and then validate all managed service
+resources. Operation. (tenancyUnits.undeleteProject)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Name of the tenancy unit. Such as
+'services/service.googleapis.com/projects/12345/tenancyUnits/abcd'.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/ServiceConsumerManagement/UndeleteTenantProjectRequest.html"><abbr title="Google\Service\ServiceConsumerManagement\UndeleteTenantProjectRequest">UndeleteTenantProjectRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ServiceConsumerManagement/Operation.html"><abbr title="Google\Service\ServiceConsumerManagement\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Dfareporting | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../doctum.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script async defer src="../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Dfareporting" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li>Dfareporting</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Dfareporting    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Dfareporting</strong>        extends <abbr title="Google\Service">Service</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dfareporting.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>Service definition for Dfareporting (v4).</p></p>            <p><p>
+Build applications to efficiently manage large or complex trafficking,
+reporting, and attribution workflows for Campaign Manager 360.</p>
+<p>
+For more information about this service, see the API
+<a href="https://developers.google.com/doubleclick-advertisers/" target="_blank">Documentation</a>
+</p></p>        </div>
+            
+        
+            <h2>Constants</h2>    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                                                                                                        DDMCONVERSIONS
+                                    </td>
+                <td class="last">
+                    <p><em><p>Manage DoubleClick Digital Marketing conversions.</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        DFAREPORTING
+                                    </td>
+                <td class="last">
+                    <p><em><p>View and manage DoubleClick for Advertisers reports.</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        DFATRAFFICKING
+                                    </td>
+                <td class="last">
+                    <p><em><p>View and manage your DoubleClick Campaign Manager's (DCM) display ad campaigns.</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_accountActiveAdSummaries">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$accountActiveAdSummaries</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_accountPermissionGroups">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$accountPermissionGroups</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_accountPermissions">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$accountPermissions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_accountUserProfiles">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$accountUserProfiles</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_accounts">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$accounts</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_ads">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$ads</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_advertiserGroups">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$advertiserGroups</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_advertiserInvoices">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$advertiserInvoices</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_advertiserLandingPages">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$advertiserLandingPages</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_advertisers">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$advertisers</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_billingAssignments">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$billingAssignments</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_billingProfiles">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$billingProfiles</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_billingRates">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$billingRates</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_browsers">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$browsers</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_campaignCreativeAssociations">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$campaignCreativeAssociations</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_campaigns">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$campaigns</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_changeLogs">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$changeLogs</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cities">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$cities</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_connectionTypes">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$connectionTypes</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_contentCategories">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$contentCategories</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_conversions">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$conversions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_countries">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$countries</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_creativeAssets">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$creativeAssets</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_creativeFieldValues">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$creativeFieldValues</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_creativeFields">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$creativeFields</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_creativeGroups">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$creativeGroups</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_creatives">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$creatives</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dimensionValues">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$dimensionValues</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_directorySites">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$directorySites</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dynamicTargetingKeys">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$dynamicTargetingKeys</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_eventTags">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$eventTags</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_files">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$files</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_floodlightActivities">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$floodlightActivities</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_floodlightActivityGroups">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$floodlightActivityGroups</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_floodlightConfigurations">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$floodlightConfigurations</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_inventoryItems">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$inventoryItems</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_languages">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$languages</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_metros">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$metros</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mobileApps">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$mobileApps</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mobileCarriers">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$mobileCarriers</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_operatingSystemVersions">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$operatingSystemVersions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_operatingSystems">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$operatingSystems</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_orders">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$orders</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_placementGroups">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$placementGroups</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_placementStrategies">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$placementStrategies</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_placements">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$placements</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_platformTypes">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$platformTypes</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_postalCodes">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$postalCodes</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_projects">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$projects</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_regions">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$regions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_remarketingListShares">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$remarketingListShares</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_remarketingLists">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$remarketingLists</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_reports">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$reports</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_reports_compatibleFields">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$reports_compatibleFields</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_reports_files">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$reports_files</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sites">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$sites</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sizes">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$sizes</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_subaccounts">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$subaccounts</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_targetableRemarketingLists">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$targetableRemarketingLists</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_targetingTemplates">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$targetingTemplates</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_userProfiles">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$userProfiles</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_userRolePermissionGroups">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$userRolePermissionGroups</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_userRolePermissions">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$userRolePermissions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_userRoles">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$userRoles</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_videoFormats">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$videoFormats</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_rootUrlTemplate">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$rootUrlTemplate</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(<abbr title="Google\Client">Client</abbr>|array $clientOrConfig = [], string $rootUrl = null)
+        
+                                            <p><p>Constructs the internal representation of the Dfareporting service.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dfareporting.php#L122">at line 122</a></div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Google\Client">Client</abbr>|array $clientOrConfig = [], string $rootUrl = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Constructs the internal representation of the Dfareporting service.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Client">Client</abbr>|array</td>
+                <td>$clientOrConfig</td>
+                <td><p>The client used to deliver requests, or a
+config array to pass to a new Client instance.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$rootUrl</td>
+                <td><p>The root URL used for requests to the service.</p></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

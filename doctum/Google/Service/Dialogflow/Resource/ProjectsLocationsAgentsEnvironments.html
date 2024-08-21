@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Dialogflow\Resource\ProjectsLocationsAgentsEnvironments | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Dialogflow_Resource_ProjectsLocationsAgentsEnvironments" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Dialogflow.ns.html">Dialogflow</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Dialogflow/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ProjectsLocationsAgentsEnvironments</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsLocationsAgentsEnvironments    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsLocationsAgentsEnvironments</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgentsEnvironments.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;environments&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $dialogflowService = new Google\Service\Dialogflow(...);
+ $environments = $dialogflowService-&gt;projects_locations_agents_environments;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dialogflow/GoogleLongrunningOperation.html"><abbr title="Google\Service\Dialogflow\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Environment.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Environment">GoogleCloudDialogflowCxV3Environment</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates an Environment in the specified Agent. This method is a <a href="https://cloud.google.com/dialogflow/cx/docs/how/long-running-
+operation">long-running
+operation</a>. The returned <code>Operation</code> type has the following method-specific
+fields: - <code>metadata</code>: An empty <a href="https://developers.google.com/protocol-
+buffers/docs/reference/google.protobuf#struct">Struct
+message</a> - <code>response</code>: Environment
+(environments.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dialogflow/GoogleProtobufEmpty.html"><abbr title="Google\Service\Dialogflow\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes the specified Environment. (environments.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dialogflow/GoogleLongrunningOperation.html"><abbr title="Google\Service\Dialogflow\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_deployFlow">deployFlow</a>(string $environment, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3DeployFlowRequest.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DeployFlowRequest">GoogleCloudDialogflowCxV3DeployFlowRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Deploys a flow to the specified Environment. This method is a <a href="https://cloud.google.com/dialogflow/cx/docs/how/long-running-
+operation">long-running
+operation</a>. The returned <code>Operation</code> type has the following method-specific
+fields: - <code>metadata</code>: DeployFlowMetadata - <code>response</code>: DeployFlowResponse
+(environments.deployFlow)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Environment.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Environment">GoogleCloudDialogflowCxV3Environment</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Retrieves the specified Environment. (environments.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3ListEnvironmentsResponse.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListEnvironmentsResponse">GoogleCloudDialogflowCxV3ListEnvironmentsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsLocationsAgentsEnvironments">listProjectsLocationsAgentsEnvironments</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Returns the list of all environments in the specified Agent.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3LookupEnvironmentHistoryResponse.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3LookupEnvironmentHistoryResponse">GoogleCloudDialogflowCxV3LookupEnvironmentHistoryResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_lookupEnvironmentHistory">lookupEnvironmentHistory</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Looks up the history of the specified Environment.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dialogflow/GoogleLongrunningOperation.html"><abbr title="Google\Service\Dialogflow\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Environment.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Environment">GoogleCloudDialogflowCxV3Environment</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the specified Environment. This method is a <a href="https://cloud.google.com/dialogflow/cx/docs/how/long-running-
+operation">long-running
+operation</a>. The returned <code>Operation</code> type has the following method-specific
+fields: - <code>metadata</code>: An empty <a href="https://developers.google.com/protocol-
+buffers/docs/reference/google.protobuf#struct">Struct
+message</a> - <code>response</code>: Environment
+(environments.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dialogflow/GoogleLongrunningOperation.html"><abbr title="Google\Service\Dialogflow\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_runContinuousTest">runContinuousTest</a>(string $environment, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3RunContinuousTestRequest.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RunContinuousTestRequest">GoogleCloudDialogflowCxV3RunContinuousTestRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Kicks off a continuous test under the specified Environment. This method is a
+<a href="https://cloud.google.com/dialogflow/cx/docs/how/long-running-
+operation">long-running
+operation</a>. The returned <code>Operation</code> type has the following method-specific
+fields: - <code>metadata</code>: RunContinuousTestMetadata - <code>response</code>:
+RunContinuousTestResponse (environments.runContinuousTest)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgentsEnvironments.php#L54">at line 54</a></div>
+        <code>                    <a href="../../../../Google/Service/Dialogflow/GoogleLongrunningOperation.html"><abbr title="Google\Service\Dialogflow\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Environment.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Environment">GoogleCloudDialogflowCxV3Environment</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates an Environment in the specified Agent. This method is a <a href="https://cloud.google.com/dialogflow/cx/docs/how/long-running-
+operation">long-running
+operation</a>. The returned <code>Operation</code> type has the following method-specific
+fields: - <code>metadata</code>: An empty <a href="https://developers.google.com/protocol-
+buffers/docs/reference/google.protobuf#struct">Struct
+message</a> - <code>response</code>: Environment
+(environments.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The Agent to create an Environment for.
+Format: <code>projects//locations//agents/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Environment.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Environment">GoogleCloudDialogflowCxV3Environment</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dialogflow/GoogleLongrunningOperation.html"><abbr title="Google\Service\Dialogflow\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgentsEnvironments.php#L69">at line 69</a></div>
+        <code>                    <a href="../../../../Google/Service/Dialogflow/GoogleProtobufEmpty.html"><abbr title="Google\Service\Dialogflow\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes the specified Environment. (environments.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the Environment to delete. Format:
+<code>projects//locations//agents//environments/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dialogflow/GoogleProtobufEmpty.html"><abbr title="Google\Service\Dialogflow\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deployFlow">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgentsEnvironments.php#L89">at line 89</a></div>
+        <code>                    <a href="../../../../Google/Service/Dialogflow/GoogleLongrunningOperation.html"><abbr title="Google\Service\Dialogflow\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>deployFlow</strong>(string $environment, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3DeployFlowRequest.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DeployFlowRequest">GoogleCloudDialogflowCxV3DeployFlowRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deploys a flow to the specified Environment. This method is a <a href="https://cloud.google.com/dialogflow/cx/docs/how/long-running-
+operation">long-running
+operation</a>. The returned <code>Operation</code> type has the following method-specific
+fields: - <code>metadata</code>: DeployFlowMetadata - <code>response</code>: DeployFlowResponse
+(environments.deployFlow)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$environment</td>
+                <td><p>Required. The environment to deploy the flow to.
+Format: <code>projects//locations//agents//environments/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3DeployFlowRequest.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DeployFlowRequest">GoogleCloudDialogflowCxV3DeployFlowRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dialogflow/GoogleLongrunningOperation.html"><abbr title="Google\Service\Dialogflow\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgentsEnvironments.php#L104">at line 104</a></div>
+        <code>                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Environment.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Environment">GoogleCloudDialogflowCxV3Environment</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves the specified Environment. (environments.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the Environment. Format:
+<code>projects//locations//agents//environments/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Environment.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Environment">GoogleCloudDialogflowCxV3Environment</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsLocationsAgentsEnvironments">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgentsEnvironments.php#L125">at line 125</a></div>
+        <code>                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3ListEnvironmentsResponse.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListEnvironmentsResponse">GoogleCloudDialogflowCxV3ListEnvironmentsResponse</abbr></a>
+    <strong>listProjectsLocationsAgentsEnvironments</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the list of all environments in the specified Agent.</p></p>                <p>(environments.listProjectsLocationsAgentsEnvironments)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The Agent to list all environments for.
+Format: <code>projects//locations//agents/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3ListEnvironmentsResponse.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListEnvironmentsResponse">GoogleCloudDialogflowCxV3ListEnvironmentsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lookupEnvironmentHistory">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgentsEnvironments.php#L146">at line 146</a></div>
+        <code>                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3LookupEnvironmentHistoryResponse.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3LookupEnvironmentHistoryResponse">GoogleCloudDialogflowCxV3LookupEnvironmentHistoryResponse</abbr></a>
+    <strong>lookupEnvironmentHistory</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Looks up the history of the specified Environment.</p></p>                <p>(environments.lookupEnvironmentHistory)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Resource name of the environment to look up the
+history for. Format: <code>projects//locations//agents//environments/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3LookupEnvironmentHistoryResponse.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3LookupEnvironmentHistoryResponse">GoogleCloudDialogflowCxV3LookupEnvironmentHistoryResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgentsEnvironments.php#L171">at line 171</a></div>
+        <code>                    <a href="../../../../Google/Service/Dialogflow/GoogleLongrunningOperation.html"><abbr title="Google\Service\Dialogflow\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Environment.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Environment">GoogleCloudDialogflowCxV3Environment</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the specified Environment. This method is a <a href="https://cloud.google.com/dialogflow/cx/docs/how/long-running-
+operation">long-running
+operation</a>. The returned <code>Operation</code> type has the following method-specific
+fields: - <code>metadata</code>: An empty <a href="https://developers.google.com/protocol-
+buffers/docs/reference/google.protobuf#struct">Struct
+message</a> - <code>response</code>: Environment
+(environments.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>The name of the environment. Format:
+<code>projects//locations//agents//environments/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Environment.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Environment">GoogleCloudDialogflowCxV3Environment</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dialogflow/GoogleLongrunningOperation.html"><abbr title="Google\Service\Dialogflow\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runContinuousTest">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgentsEnvironments.php#L192">at line 192</a></div>
+        <code>                    <a href="../../../../Google/Service/Dialogflow/GoogleLongrunningOperation.html"><abbr title="Google\Service\Dialogflow\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>runContinuousTest</strong>(string $environment, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3RunContinuousTestRequest.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RunContinuousTestRequest">GoogleCloudDialogflowCxV3RunContinuousTestRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Kicks off a continuous test under the specified Environment. This method is a
+<a href="https://cloud.google.com/dialogflow/cx/docs/how/long-running-
+operation">long-running
+operation</a>. The returned <code>Operation</code> type has the following method-specific
+fields: - <code>metadata</code>: RunContinuousTestMetadata - <code>response</code>:
+RunContinuousTestResponse (environments.runContinuousTest)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$environment</td>
+                <td><p>Required. Format:
+<code>projects//locations//agents//environments/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3RunContinuousTestRequest.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RunContinuousTestRequest">GoogleCloudDialogflowCxV3RunContinuousTestRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dialogflow/GoogleLongrunningOperation.html"><abbr title="Google\Service\Dialogflow\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\DataprocMetastore\Resource\ProjectsLocationsServices | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_DataprocMetastore_Resource_ProjectsLocationsServices" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/DataprocMetastore.ns.html">DataprocMetastore</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/DataprocMetastore/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ProjectsLocationsServices</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsLocationsServices    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsLocationsServices</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DataprocMetastore/Resource/ProjectsLocationsServices.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;services&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $metastoreService = new Google\Service\DataprocMetastore(...);
+ $services = $metastoreService-&gt;projects_locations_services;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_alterLocation">alterLocation</a>(string $service, <a href="../../../../Google/Service/DataprocMetastore/AlterMetadataResourceLocationRequest.html"><abbr title="Google\Service\DataprocMetastore\AlterMetadataResourceLocationRequest">AlterMetadataResourceLocationRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Alter metadata resource location. The metadata resource can be a database,
+table, or partition. This functionality only updates the parent directory for
+the respective metadata resource and does not transfer any existing data to
+the new location. (services.alterLocation)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_alterTableProperties">alterTableProperties</a>(string $service, <a href="../../../../Google/Service/DataprocMetastore/AlterTablePropertiesRequest.html"><abbr title="Google\Service\DataprocMetastore\AlterTablePropertiesRequest">AlterTablePropertiesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Alter metadata table properties. (services.alterTableProperties)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_cancelMigration">cancelMigration</a>(string $service, <a href="../../../../Google/Service/DataprocMetastore/CancelMigrationRequest.html"><abbr title="Google\Service\DataprocMetastore\CancelMigrationRequest">CancelMigrationRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Cancels the ongoing Managed Migration process. (services.cancelMigration)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_completeMigration">completeMigration</a>(string $service, <a href="../../../../Google/Service/DataprocMetastore/CompleteMigrationRequest.html"><abbr title="Google\Service\DataprocMetastore\CompleteMigrationRequest">CompleteMigrationRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Completes the managed migration process. The Dataproc Metastore service will
+switch to using its own backend database after successful migration.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/DataprocMetastore/Service.html"><abbr title="Google\Service\DataprocMetastore\Service">Service</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a metastore service in a project and location. (services.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes a single service. (services.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_exportMetadata">exportMetadata</a>(string $service, <a href="../../../../Google/Service/DataprocMetastore/ExportMetadataRequest.html"><abbr title="Google\Service\DataprocMetastore\ExportMetadataRequest">ExportMetadataRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Exports metadata from a service. (services.exportMetadata)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataprocMetastore/Service.html"><abbr title="Google\Service\DataprocMetastore\Service">Service</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets the details of a single service. (services.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataprocMetastore/Policy.html"><abbr title="Google\Service\DataprocMetastore\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIamPolicy">getIamPolicy</a>(string $resource, array $optParams = [])
+        
+                                            <p><p>Gets the access control policy for a resource. Returns an empty policy if the
+resource exists and does not have a policy set. (services.getIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataprocMetastore/ListServicesResponse.html"><abbr title="Google\Service\DataprocMetastore\ListServicesResponse">ListServicesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsLocationsServices">listProjectsLocationsServices</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists services in a project and location.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_moveTableToDatabase">moveTableToDatabase</a>(string $service, <a href="../../../../Google/Service/DataprocMetastore/MoveTableToDatabaseRequest.html"><abbr title="Google\Service\DataprocMetastore\MoveTableToDatabaseRequest">MoveTableToDatabaseRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Move a table to another database. (services.moveTableToDatabase)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/DataprocMetastore/Service.html"><abbr title="Google\Service\DataprocMetastore\Service">Service</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the parameters of a single service. (services.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_queryMetadata">queryMetadata</a>(string $service, <a href="../../../../Google/Service/DataprocMetastore/QueryMetadataRequest.html"><abbr title="Google\Service\DataprocMetastore\QueryMetadataRequest">QueryMetadataRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Query Dataproc Metastore metadata. (services.queryMetadata)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_restore">restore</a>(string $service, <a href="../../../../Google/Service/DataprocMetastore/RestoreServiceRequest.html"><abbr title="Google\Service\DataprocMetastore\RestoreServiceRequest">RestoreServiceRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Restores a service from a backup. (services.restore)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataprocMetastore/Policy.html"><abbr title="Google\Service\DataprocMetastore\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setIamPolicy">setIamPolicy</a>(string $resource, <a href="../../../../Google/Service/DataprocMetastore/SetIamPolicyRequest.html"><abbr title="Google\Service\DataprocMetastore\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the access control policy on the specified resource. Replaces any
+existing policy.Can return NOT_FOUND, INVALID_ARGUMENT, and PERMISSION_DENIED
+errors. (services.setIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_startMigration">startMigration</a>(string $service, <a href="../../../../Google/Service/DataprocMetastore/StartMigrationRequest.html"><abbr title="Google\Service\DataprocMetastore\StartMigrationRequest">StartMigrationRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Starts the Managed Migration process. (services.startMigration)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DataprocMetastore/TestIamPermissionsResponse.html"><abbr title="Google\Service\DataprocMetastore\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testIamPermissions">testIamPermissions</a>(string $resource, <a href="../../../../Google/Service/DataprocMetastore/TestIamPermissionsRequest.html"><abbr title="Google\Service\DataprocMetastore\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Returns permissions that a caller has on the specified resource. If the
+resource does not exist, this will return an empty set of permissions, not a
+NOT_FOUND error.Note: This operation is designed to be used for building
+permission-aware UIs and command-line tools, not for authorization checking.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_alterLocation">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DataprocMetastore/Resource/ProjectsLocationsServices.php#L61">at line 61</a></div>
+        <code>                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+    <strong>alterLocation</strong>(string $service, <a href="../../../../Google/Service/DataprocMetastore/AlterMetadataResourceLocationRequest.html"><abbr title="Google\Service\DataprocMetastore\AlterMetadataResourceLocationRequest">AlterMetadataResourceLocationRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Alter metadata resource location. The metadata resource can be a database,
+table, or partition. This functionality only updates the parent directory for
+the respective metadata resource and does not transfer any existing data to
+the new location. (services.alterLocation)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$service</td>
+                <td><p>Required. The relative resource name of the metastore
+service to mutate metadata, in the following
+format:projects/{project_id}/locations/{location_id}/services/{service_id}.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataprocMetastore/AlterMetadataResourceLocationRequest.html"><abbr title="Google\Service\DataprocMetastore\AlterMetadataResourceLocationRequest">AlterMetadataResourceLocationRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_alterTableProperties">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DataprocMetastore/Resource/ProjectsLocationsServices.php#L79">at line 79</a></div>
+        <code>                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+    <strong>alterTableProperties</strong>(string $service, <a href="../../../../Google/Service/DataprocMetastore/AlterTablePropertiesRequest.html"><abbr title="Google\Service\DataprocMetastore\AlterTablePropertiesRequest">AlterTablePropertiesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Alter metadata table properties. (services.alterTableProperties)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$service</td>
+                <td><p>Required. The relative resource name of the Dataproc
+Metastore service that's being used to mutate metadata table properties, in
+the following
+format:projects/{project_id}/locations/{location_id}/services/{service_id}.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataprocMetastore/AlterTablePropertiesRequest.html"><abbr title="Google\Service\DataprocMetastore\AlterTablePropertiesRequest">AlterTablePropertiesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cancelMigration">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DataprocMetastore/Resource/ProjectsLocationsServices.php#L96">at line 96</a></div>
+        <code>                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+    <strong>cancelMigration</strong>(string $service, <a href="../../../../Google/Service/DataprocMetastore/CancelMigrationRequest.html"><abbr title="Google\Service\DataprocMetastore\CancelMigrationRequest">CancelMigrationRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Cancels the ongoing Managed Migration process. (services.cancelMigration)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$service</td>
+                <td><p>Required. The relative resource name of the metastore
+service to cancel the ongoing migration to, in the following
+format:projects/{project_id}/locations/{location_id}/services/{service_id}.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataprocMetastore/CancelMigrationRequest.html"><abbr title="Google\Service\DataprocMetastore\CancelMigrationRequest">CancelMigrationRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_completeMigration">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DataprocMetastore/Resource/ProjectsLocationsServices.php#L115">at line 115</a></div>
+        <code>                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+    <strong>completeMigration</strong>(string $service, <a href="../../../../Google/Service/DataprocMetastore/CompleteMigrationRequest.html"><abbr title="Google\Service\DataprocMetastore\CompleteMigrationRequest">CompleteMigrationRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Completes the managed migration process. The Dataproc Metastore service will
+switch to using its own backend database after successful migration.</p></p>                <p>(services.completeMigration)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$service</td>
+                <td><p>Required. The relative resource name of the metastore
+service to complete the migration to, in the following
+format:projects/{project_id}/locations/{location_id}/services/{service_id}.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataprocMetastore/CompleteMigrationRequest.html"><abbr title="Google\Service\DataprocMetastore\CompleteMigrationRequest">CompleteMigrationRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DataprocMetastore/Resource/ProjectsLocationsServices.php#L147">at line 147</a></div>
+        <code>                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/DataprocMetastore/Service.html"><abbr title="Google\Service\DataprocMetastore\Service">Service</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a metastore service in a project and location. (services.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The relative resource name of the location in
+which to create a metastore service, in the following
+form:projects/{project_number}/locations/{location_id}.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataprocMetastore/Service.html"><abbr title="Google\Service\DataprocMetastore\Service">Service</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DataprocMetastore/Resource/ProjectsLocationsServices.php#L173">at line 173</a></div>
+        <code>                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a single service. (services.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The relative resource name of the metastore
+service to delete, in the following
+form:projects/{project_number}/locations/{location_id}/services/{service_id}.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exportMetadata">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DataprocMetastore/Resource/ProjectsLocationsServices.php#L190">at line 190</a></div>
+        <code>                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+    <strong>exportMetadata</strong>(string $service, <a href="../../../../Google/Service/DataprocMetastore/ExportMetadataRequest.html"><abbr title="Google\Service\DataprocMetastore\ExportMetadataRequest">ExportMetadataRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Exports metadata from a service. (services.exportMetadata)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$service</td>
+                <td><p>Required. The relative resource name of the metastore
+service to run export, in the following
+form:projects/{project_id}/locations/{location_id}/services/{service_id}.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataprocMetastore/ExportMetadataRequest.html"><abbr title="Google\Service\DataprocMetastore\ExportMetadataRequest">ExportMetadataRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DataprocMetastore/Resource/ProjectsLocationsServices.php#L206">at line 206</a></div>
+        <code>                    <a href="../../../../Google/Service/DataprocMetastore/Service.html"><abbr title="Google\Service\DataprocMetastore\Service">Service</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the details of a single service. (services.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The relative resource name of the metastore
+service to retrieve, in the following
+form:projects/{project_number}/locations/{location_id}/services/{service_id}.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataprocMetastore/Service.html"><abbr title="Google\Service\DataprocMetastore\Service">Service</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DataprocMetastore/Resource/ProjectsLocationsServices.php#L236">at line 236</a></div>
+        <code>                    <a href="../../../../Google/Service/DataprocMetastore/Policy.html"><abbr title="Google\Service\DataprocMetastore\Policy">Policy</abbr></a>
+    <strong>getIamPolicy</strong>(string $resource, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the access control policy for a resource. Returns an empty policy if the
+resource exists and does not have a policy set. (services.getIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy is being
+requested. See Resource names
+(<a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>) for the appropriate
+value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataprocMetastore/Policy.html"><abbr title="Google\Service\DataprocMetastore\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsLocationsServices">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DataprocMetastore/Resource/ProjectsLocationsServices.php#L268">at line 268</a></div>
+        <code>                    <a href="../../../../Google/Service/DataprocMetastore/ListServicesResponse.html"><abbr title="Google\Service\DataprocMetastore\ListServicesResponse">ListServicesResponse</abbr></a>
+    <strong>listProjectsLocationsServices</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists services in a project and location.</p></p>                <p>(services.listProjectsLocationsServices)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The relative resource name of the location of
+metastore services to list, in the following
+form:projects/{project_number}/locations/{location_id}.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataprocMetastore/ListServicesResponse.html"><abbr title="Google\Service\DataprocMetastore\ListServicesResponse">ListServicesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_moveTableToDatabase">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DataprocMetastore/Resource/ProjectsLocationsServices.php#L285">at line 285</a></div>
+        <code>                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+    <strong>moveTableToDatabase</strong>(string $service, <a href="../../../../Google/Service/DataprocMetastore/MoveTableToDatabaseRequest.html"><abbr title="Google\Service\DataprocMetastore\MoveTableToDatabaseRequest">MoveTableToDatabaseRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Move a table to another database. (services.moveTableToDatabase)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$service</td>
+                <td><p>Required. The relative resource name of the metastore
+service to mutate metadata, in the following
+format:projects/{project_id}/locations/{location_id}/services/{service_id}.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataprocMetastore/MoveTableToDatabaseRequest.html"><abbr title="Google\Service\DataprocMetastore\MoveTableToDatabaseRequest">MoveTableToDatabaseRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DataprocMetastore/Resource/ProjectsLocationsServices.php#L316">at line 316</a></div>
+        <code>                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/DataprocMetastore/Service.html"><abbr title="Google\Service\DataprocMetastore\Service">Service</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the parameters of a single service. (services.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Immutable. The relative resource name of the metastore
+service, in the following format:projects/{project_number}/locations/{locatio
+n_id}/services/{service_id}.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataprocMetastore/Service.html"><abbr title="Google\Service\DataprocMetastore\Service">Service</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_queryMetadata">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DataprocMetastore/Resource/ProjectsLocationsServices.php#L333">at line 333</a></div>
+        <code>                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+    <strong>queryMetadata</strong>(string $service, <a href="../../../../Google/Service/DataprocMetastore/QueryMetadataRequest.html"><abbr title="Google\Service\DataprocMetastore\QueryMetadataRequest">QueryMetadataRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Query Dataproc Metastore metadata. (services.queryMetadata)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$service</td>
+                <td><p>Required. The relative resource name of the metastore
+service to query metadata, in the following
+format:projects/{project_id}/locations/{location_id}/services/{service_id}.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataprocMetastore/QueryMetadataRequest.html"><abbr title="Google\Service\DataprocMetastore\QueryMetadataRequest">QueryMetadataRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_restore">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DataprocMetastore/Resource/ProjectsLocationsServices.php#L350">at line 350</a></div>
+        <code>                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+    <strong>restore</strong>(string $service, <a href="../../../../Google/Service/DataprocMetastore/RestoreServiceRequest.html"><abbr title="Google\Service\DataprocMetastore\RestoreServiceRequest">RestoreServiceRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Restores a service from a backup. (services.restore)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$service</td>
+                <td><p>Required. The relative resource name of the metastore
+service to run restore, in the following
+form:projects/{project_id}/locations/{location_id}/services/{service_id}.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataprocMetastore/RestoreServiceRequest.html"><abbr title="Google\Service\DataprocMetastore\RestoreServiceRequest">RestoreServiceRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DataprocMetastore/Resource/ProjectsLocationsServices.php#L370">at line 370</a></div>
+        <code>                    <a href="../../../../Google/Service/DataprocMetastore/Policy.html"><abbr title="Google\Service\DataprocMetastore\Policy">Policy</abbr></a>
+    <strong>setIamPolicy</strong>(string $resource, <a href="../../../../Google/Service/DataprocMetastore/SetIamPolicyRequest.html"><abbr title="Google\Service\DataprocMetastore\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the access control policy on the specified resource. Replaces any
+existing policy.Can return NOT_FOUND, INVALID_ARGUMENT, and PERMISSION_DENIED
+errors. (services.setIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy is being
+specified. See Resource names
+(<a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>) for the appropriate
+value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataprocMetastore/SetIamPolicyRequest.html"><abbr title="Google\Service\DataprocMetastore\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataprocMetastore/Policy.html"><abbr title="Google\Service\DataprocMetastore\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startMigration">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DataprocMetastore/Resource/ProjectsLocationsServices.php#L387">at line 387</a></div>
+        <code>                    <a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a>
+    <strong>startMigration</strong>(string $service, <a href="../../../../Google/Service/DataprocMetastore/StartMigrationRequest.html"><abbr title="Google\Service\DataprocMetastore\StartMigrationRequest">StartMigrationRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Starts the Managed Migration process. (services.startMigration)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$service</td>
+                <td><p>Required. The relative resource name of the metastore
+service to start migrating to, in the following
+format:projects/{project_id}/locations/{location_id}/services/{service_id}.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataprocMetastore/StartMigrationRequest.html"><abbr title="Google\Service\DataprocMetastore\StartMigrationRequest">StartMigrationRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataprocMetastore/Operation.html"><abbr title="Google\Service\DataprocMetastore\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testIamPermissions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DataprocMetastore/Resource/ProjectsLocationsServices.php#L409">at line 409</a></div>
+        <code>                    <a href="../../../../Google/Service/DataprocMetastore/TestIamPermissionsResponse.html"><abbr title="Google\Service\DataprocMetastore\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+    <strong>testIamPermissions</strong>(string $resource, <a href="../../../../Google/Service/DataprocMetastore/TestIamPermissionsRequest.html"><abbr title="Google\Service\DataprocMetastore\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns permissions that a caller has on the specified resource. If the
+resource does not exist, this will return an empty set of permissions, not a
+NOT_FOUND error.Note: This operation is designed to be used for building
+permission-aware UIs and command-line tools, not for authorization checking.</p></p>                <p><p>This operation may &quot;fail open&quot; without warning. (services.testIamPermissions)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy detail is
+being requested. See Resource names
+(<a href="https://cloud.google.com/apis/design/resource_names">https://cloud.google.com/apis/design/resource_names</a>) for the appropriate
+value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DataprocMetastore/TestIamPermissionsRequest.html"><abbr title="Google\Service\DataprocMetastore\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DataprocMetastore/TestIamPermissionsResponse.html"><abbr title="Google\Service\DataprocMetastore\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

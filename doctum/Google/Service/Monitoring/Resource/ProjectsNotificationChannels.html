@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Monitoring\Resource\ProjectsNotificationChannels | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Monitoring_Resource_ProjectsNotificationChannels" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Monitoring.ns.html">Monitoring</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Monitoring/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ProjectsNotificationChannels</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsNotificationChannels    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsNotificationChannels</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Monitoring/Resource/ProjectsNotificationChannels.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;notificationChannels&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $monitoringService = new Google\Service\Monitoring(...);
+ $notificationChannels = $monitoringService-&gt;projects_notificationChannels;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Monitoring/NotificationChannel.html"><abbr title="Google\Service\Monitoring\NotificationChannel">NotificationChannel</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $name, <a href="../../../../Google/Service/Monitoring/NotificationChannel.html"><abbr title="Google\Service\Monitoring\NotificationChannel">NotificationChannel</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a new notification channel, representing a single notification
+endpoint such as an email address, SMS number, or PagerDuty service.Design
+your application to single-thread API calls that modify the state of
+notification channels in a single project. This includes calls to
+CreateNotificationChannel, DeleteNotificationChannel and
+UpdateNotificationChannel. (notificationChannels.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Monitoring/MonitoringEmpty.html"><abbr title="Google\Service\Monitoring\MonitoringEmpty">MonitoringEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes a notification channel.Design your application to single-thread API
+calls that modify the state of notification channels in a single project.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Monitoring/NotificationChannel.html"><abbr title="Google\Service\Monitoring\NotificationChannel">NotificationChannel</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets a single notification channel. The channel includes the relevant
+configuration details with which the channel was created. However, the
+response may truncate or omit passwords, API keys, or other private key
+matter and thus the response may not be 100% identical to the information
+that was supplied in the call to the create method.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Monitoring/GetNotificationChannelVerificationCodeResponse.html"><abbr title="Google\Service\Monitoring\GetNotificationChannelVerificationCodeResponse">GetNotificationChannelVerificationCodeResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getVerificationCode">getVerificationCode</a>(string $name, <a href="../../../../Google/Service/Monitoring/GetNotificationChannelVerificationCodeRequest.html"><abbr title="Google\Service\Monitoring\GetNotificationChannelVerificationCodeRequest">GetNotificationChannelVerificationCodeRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Requests a verification code for an already verified channel that can then be
+used in a call to VerifyNotificationChannel() on a different channel with an
+equivalent identity in the same or in a different project. This makes it
+possible to copy a channel between projects without requiring manual
+reverification of the channel. If the channel is not in the verified state,
+this method will fail (in other words, this may only be used if the
+SendNotificationChannelVerificationCode and VerifyNotificationChannel paths
+have already been used to put the given channel into the verified
+state).There is no guarantee that the verification codes returned by this
+method will be of a similar structure or form as the ones that are delivered
+to the channel via SendNotificationChannelVerificationCode; while
+VerifyNotificationChannel() will recognize both the codes delivered via
+SendNotificationChannelVerificationCode() and returned from
+GetNotificationChannelVerificationCode(), it is typically the case that the
+verification codes delivered via SendNotificationChannelVerificationCode()
+will be shorter and also have a shorter expiration (e.g. codes such as
+&quot;G-123456&quot;) whereas GetVerificationCode() will typically return a much
+longer, websafe base 64 encoded string that has a longer expiration time.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Monitoring/ListNotificationChannelsResponse.html"><abbr title="Google\Service\Monitoring\ListNotificationChannelsResponse">ListNotificationChannelsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsNotificationChannels">listProjectsNotificationChannels</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Lists the notification channels that have been created for the project. To
+list the types of notification channels that are supported, use the
+ListNotificationChannelDescriptors method.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Monitoring/NotificationChannel.html"><abbr title="Google\Service\Monitoring\NotificationChannel">NotificationChannel</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/Monitoring/NotificationChannel.html"><abbr title="Google\Service\Monitoring\NotificationChannel">NotificationChannel</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a notification channel. Fields not specified in the field mask remain
+unchanged.Design your application to single-thread API calls that modify the
+state of notification channels in a single project. This includes calls to
+CreateNotificationChannel, DeleteNotificationChannel and
+UpdateNotificationChannel. (notificationChannels.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Monitoring/MonitoringEmpty.html"><abbr title="Google\Service\Monitoring\MonitoringEmpty">MonitoringEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_sendVerificationCode">sendVerificationCode</a>(string $name, <a href="../../../../Google/Service/Monitoring/SendNotificationChannelVerificationCodeRequest.html"><abbr title="Google\Service\Monitoring\SendNotificationChannelVerificationCodeRequest">SendNotificationChannelVerificationCodeRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Causes a verification code to be delivered to the channel. The code can then
+be supplied in VerifyNotificationChannel to verify the channel.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Monitoring/NotificationChannel.html"><abbr title="Google\Service\Monitoring\NotificationChannel">NotificationChannel</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_verify">verify</a>(string $name, <a href="../../../../Google/Service/Monitoring/VerifyNotificationChannelRequest.html"><abbr title="Google\Service\Monitoring\VerifyNotificationChannelRequest">VerifyNotificationChannelRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Verifies a NotificationChannel by proving receipt of the code delivered to
+the channel as a result of calling SendNotificationChannelVerificationCode.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Monitoring/Resource/ProjectsNotificationChannels.php#L58">at line 58</a></div>
+        <code>                    <a href="../../../../Google/Service/Monitoring/NotificationChannel.html"><abbr title="Google\Service\Monitoring\NotificationChannel">NotificationChannel</abbr></a>
+    <strong>create</strong>(string $name, <a href="../../../../Google/Service/Monitoring/NotificationChannel.html"><abbr title="Google\Service\Monitoring\NotificationChannel">NotificationChannel</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a new notification channel, representing a single notification
+endpoint such as an email address, SMS number, or PagerDuty service.Design
+your application to single-thread API calls that modify the state of
+notification channels in a single project. This includes calls to
+CreateNotificationChannel, DeleteNotificationChannel and
+UpdateNotificationChannel. (notificationChannels.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The project
+(<a href="https://cloud.google.com/monitoring/api/v3#project_name">https://cloud.google.com/monitoring/api/v3#project_name</a>) on which to execute
+the request. The format is: projects/[PROJECT_ID_OR_NUMBER] This names the
+container into which the channel will be written, this does not name the
+newly created channel. The resulting channel's name will have a normalized
+version of this field as a prefix, but will add
+/notificationChannels/[CHANNEL_ID] to identify the channel.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Monitoring/NotificationChannel.html"><abbr title="Google\Service\Monitoring\NotificationChannel">NotificationChannel</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Monitoring/NotificationChannel.html"><abbr title="Google\Service\Monitoring\NotificationChannel">NotificationChannel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Monitoring/Resource/ProjectsNotificationChannels.php#L82">at line 82</a></div>
+        <code>                    <a href="../../../../Google/Service/Monitoring/MonitoringEmpty.html"><abbr title="Google\Service\Monitoring\MonitoringEmpty">MonitoringEmpty</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a notification channel.Design your application to single-thread API
+calls that modify the state of notification channels in a single project.</p></p>                <p><p>This includes calls to CreateNotificationChannel, DeleteNotificationChannel
+and UpdateNotificationChannel. (notificationChannels.delete)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The channel for which to execute the request.
+The format is:
+projects/[PROJECT_ID_OR_NUMBER]/notificationChannels/[CHANNEL_ID]</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Monitoring/MonitoringEmpty.html"><abbr title="Google\Service\Monitoring\MonitoringEmpty">MonitoringEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Monitoring/Resource/ProjectsNotificationChannels.php#L103">at line 103</a></div>
+        <code>                    <a href="../../../../Google/Service/Monitoring/NotificationChannel.html"><abbr title="Google\Service\Monitoring\NotificationChannel">NotificationChannel</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets a single notification channel. The channel includes the relevant
+configuration details with which the channel was created. However, the
+response may truncate or omit passwords, API keys, or other private key
+matter and thus the response may not be 100% identical to the information
+that was supplied in the call to the create method.</p></p>                <p>(notificationChannels.get)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The channel for which to execute the request.
+The format is:
+projects/[PROJECT_ID_OR_NUMBER]/notificationChannels/[CHANNEL_ID]</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Monitoring/NotificationChannel.html"><abbr title="Google\Service\Monitoring\NotificationChannel">NotificationChannel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getVerificationCode">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Monitoring/Resource/ProjectsNotificationChannels.php#L139">at line 139</a></div>
+        <code>                    <a href="../../../../Google/Service/Monitoring/GetNotificationChannelVerificationCodeResponse.html"><abbr title="Google\Service\Monitoring\GetNotificationChannelVerificationCodeResponse">GetNotificationChannelVerificationCodeResponse</abbr></a>
+    <strong>getVerificationCode</strong>(string $name, <a href="../../../../Google/Service/Monitoring/GetNotificationChannelVerificationCodeRequest.html"><abbr title="Google\Service\Monitoring\GetNotificationChannelVerificationCodeRequest">GetNotificationChannelVerificationCodeRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Requests a verification code for an already verified channel that can then be
+used in a call to VerifyNotificationChannel() on a different channel with an
+equivalent identity in the same or in a different project. This makes it
+possible to copy a channel between projects without requiring manual
+reverification of the channel. If the channel is not in the verified state,
+this method will fail (in other words, this may only be used if the
+SendNotificationChannelVerificationCode and VerifyNotificationChannel paths
+have already been used to put the given channel into the verified
+state).There is no guarantee that the verification codes returned by this
+method will be of a similar structure or form as the ones that are delivered
+to the channel via SendNotificationChannelVerificationCode; while
+VerifyNotificationChannel() will recognize both the codes delivered via
+SendNotificationChannelVerificationCode() and returned from
+GetNotificationChannelVerificationCode(), it is typically the case that the
+verification codes delivered via SendNotificationChannelVerificationCode()
+will be shorter and also have a shorter expiration (e.g. codes such as
+&quot;G-123456&quot;) whereas GetVerificationCode() will typically return a much
+longer, websafe base 64 encoded string that has a longer expiration time.</p></p>                <p>(notificationChannels.getVerificationCode)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The notification channel for which a
+verification code is to be generated and retrieved. This must name a channel
+that is already verified; if the specified channel is not verified, the
+request will fail.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Monitoring/GetNotificationChannelVerificationCodeRequest.html"><abbr title="Google\Service\Monitoring\GetNotificationChannelVerificationCodeRequest">GetNotificationChannelVerificationCodeRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Monitoring/GetNotificationChannelVerificationCodeResponse.html"><abbr title="Google\Service\Monitoring\GetNotificationChannelVerificationCodeResponse">GetNotificationChannelVerificationCodeResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsNotificationChannels">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Monitoring/Resource/ProjectsNotificationChannels.php#L177">at line 177</a></div>
+        <code>                    <a href="../../../../Google/Service/Monitoring/ListNotificationChannelsResponse.html"><abbr title="Google\Service\Monitoring\ListNotificationChannelsResponse">ListNotificationChannelsResponse</abbr></a>
+    <strong>listProjectsNotificationChannels</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists the notification channels that have been created for the project. To
+list the types of notification channels that are supported, use the
+ListNotificationChannelDescriptors method.</p></p>                <p>(notificationChannels.listProjectsNotificationChannels)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The project
+(<a href="https://cloud.google.com/monitoring/api/v3#project_name">https://cloud.google.com/monitoring/api/v3#project_name</a>) on which to execute
+the request. The format is: projects/[PROJECT_ID_OR_NUMBER] This names the
+container in which to look for the notification channels; it does not name a
+specific channel. To query a specific channel by REST resource name, use the
+GetNotificationChannel operation.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Monitoring/ListNotificationChannelsResponse.html"><abbr title="Google\Service\Monitoring\ListNotificationChannelsResponse">ListNotificationChannelsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Monitoring/Resource/ProjectsNotificationChannels.php#L201">at line 201</a></div>
+        <code>                    <a href="../../../../Google/Service/Monitoring/NotificationChannel.html"><abbr title="Google\Service\Monitoring\NotificationChannel">NotificationChannel</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/Monitoring/NotificationChannel.html"><abbr title="Google\Service\Monitoring\NotificationChannel">NotificationChannel</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a notification channel. Fields not specified in the field mask remain
+unchanged.Design your application to single-thread API calls that modify the
+state of notification channels in a single project. This includes calls to
+CreateNotificationChannel, DeleteNotificationChannel and
+UpdateNotificationChannel. (notificationChannels.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Identifier. The full REST resource name for this channel.
+The format is:
+projects/[PROJECT_ID_OR_NUMBER]/notificationChannels/[CHANNEL_ID] The
+[CHANNEL_ID] is automatically assigned by the server on creation.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Monitoring/NotificationChannel.html"><abbr title="Google\Service\Monitoring\NotificationChannel">NotificationChannel</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Monitoring/NotificationChannel.html"><abbr title="Google\Service\Monitoring\NotificationChannel">NotificationChannel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendVerificationCode">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Monitoring/Resource/ProjectsNotificationChannels.php#L219">at line 219</a></div>
+        <code>                    <a href="../../../../Google/Service/Monitoring/MonitoringEmpty.html"><abbr title="Google\Service\Monitoring\MonitoringEmpty">MonitoringEmpty</abbr></a>
+    <strong>sendVerificationCode</strong>(string $name, <a href="../../../../Google/Service/Monitoring/SendNotificationChannelVerificationCodeRequest.html"><abbr title="Google\Service\Monitoring\SendNotificationChannelVerificationCodeRequest">SendNotificationChannelVerificationCodeRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Causes a verification code to be delivered to the channel. The code can then
+be supplied in VerifyNotificationChannel to verify the channel.</p></p>                <p>(notificationChannels.sendVerificationCode)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The notification channel to which to send a
+verification code.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Monitoring/SendNotificationChannelVerificationCodeRequest.html"><abbr title="Google\Service\Monitoring\SendNotificationChannelVerificationCodeRequest">SendNotificationChannelVerificationCodeRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Monitoring/MonitoringEmpty.html"><abbr title="Google\Service\Monitoring\MonitoringEmpty">MonitoringEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_verify">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Monitoring/Resource/ProjectsNotificationChannels.php#L236">at line 236</a></div>
+        <code>                    <a href="../../../../Google/Service/Monitoring/NotificationChannel.html"><abbr title="Google\Service\Monitoring\NotificationChannel">NotificationChannel</abbr></a>
+    <strong>verify</strong>(string $name, <a href="../../../../Google/Service/Monitoring/VerifyNotificationChannelRequest.html"><abbr title="Google\Service\Monitoring\VerifyNotificationChannelRequest">VerifyNotificationChannelRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Verifies a NotificationChannel by proving receipt of the code delivered to
+the channel as a result of calling SendNotificationChannelVerificationCode.</p></p>                <p>(notificationChannels.verify)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The notification channel to verify.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Monitoring/VerifyNotificationChannelRequest.html"><abbr title="Google\Service\Monitoring\VerifyNotificationChannelRequest">VerifyNotificationChannelRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Monitoring/NotificationChannel.html"><abbr title="Google\Service\Monitoring\NotificationChannel">NotificationChannel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

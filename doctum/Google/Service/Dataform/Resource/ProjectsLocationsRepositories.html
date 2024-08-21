@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Dataform\Resource\ProjectsLocationsRepositories | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Dataform_Resource_ProjectsLocationsRepositories" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Dataform.ns.html">Dataform</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Dataform/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ProjectsLocationsRepositories</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsLocationsRepositories    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsLocationsRepositories</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dataform/Resource/ProjectsLocationsRepositories.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;repositories&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $dataformService = new Google\Service\Dataform(...);
+ $repositories = $dataformService-&gt;projects_locations_repositories;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataform/CommitRepositoryChangesResponse.html"><abbr title="Google\Service\Dataform\CommitRepositoryChangesResponse">CommitRepositoryChangesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_commit">commit</a>(string $name, <a href="../../../../Google/Service/Dataform/CommitRepositoryChangesRequest.html"><abbr title="Google\Service\Dataform\CommitRepositoryChangesRequest">CommitRepositoryChangesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Applies a Git commit to a Repository. The Repository must not have a value
+for <code>git_remote_settings.url</code>. (repositories.commit)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataform/ComputeRepositoryAccessTokenStatusResponse.html"><abbr title="Google\Service\Dataform\ComputeRepositoryAccessTokenStatusResponse">ComputeRepositoryAccessTokenStatusResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_computeAccessTokenStatus">computeAccessTokenStatus</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Computes a Repository's Git access token status.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataform/Repository.html"><abbr title="Google\Service\Dataform\Repository">Repository</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/Dataform/Repository.html"><abbr title="Google\Service\Dataform\Repository">Repository</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a new Repository in a given project and location.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataform/DataformEmpty.html"><abbr title="Google\Service\Dataform\DataformEmpty">DataformEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes a single Repository. (repositories.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataform/FetchRepositoryHistoryResponse.html"><abbr title="Google\Service\Dataform\FetchRepositoryHistoryResponse">FetchRepositoryHistoryResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_fetchHistory">fetchHistory</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Fetches a Repository's history of commits. The Repository must not have a
+value for <code>git_remote_settings.url</code>. (repositories.fetchHistory)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataform/FetchRemoteBranchesResponse.html"><abbr title="Google\Service\Dataform\FetchRemoteBranchesResponse">FetchRemoteBranchesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_fetchRemoteBranches">fetchRemoteBranches</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Fetches a Repository's remote branches. (repositories.fetchRemoteBranches)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataform/Repository.html"><abbr title="Google\Service\Dataform\Repository">Repository</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Fetches a single Repository. (repositories.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataform/Policy.html"><abbr title="Google\Service\Dataform\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIamPolicy">getIamPolicy</a>(string $resource, array $optParams = [])
+        
+                                            <p><p>Gets the access control policy for a resource. Returns an empty policy if the
+resource exists and does not have a policy set. (repositories.getIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataform/ListRepositoriesResponse.html"><abbr title="Google\Service\Dataform\ListRepositoriesResponse">ListRepositoriesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsLocationsRepositories">listProjectsLocationsRepositories</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists Repositories in a given project and location.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataform/Repository.html"><abbr title="Google\Service\Dataform\Repository">Repository</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/Dataform/Repository.html"><abbr title="Google\Service\Dataform\Repository">Repository</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a single Repository. (repositories.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataform/QueryRepositoryDirectoryContentsResponse.html"><abbr title="Google\Service\Dataform\QueryRepositoryDirectoryContentsResponse">QueryRepositoryDirectoryContentsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_queryDirectoryContents">queryDirectoryContents</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Returns the contents of a given Repository directory. The Repository must not
+have a value for <code>git_remote_settings.url</code>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataform/ReadRepositoryFileResponse.html"><abbr title="Google\Service\Dataform\ReadRepositoryFileResponse">ReadRepositoryFileResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_readFile">readFile</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Returns the contents of a file (inside a Repository). The Repository must not
+have a value for <code>git_remote_settings.url</code>. (repositories.readFile)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataform/Policy.html"><abbr title="Google\Service\Dataform\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setIamPolicy">setIamPolicy</a>(string $resource, <a href="../../../../Google/Service/Dataform/SetIamPolicyRequest.html"><abbr title="Google\Service\Dataform\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the access control policy on the specified resource. Replaces any
+existing policy. Can return <code>NOT_FOUND</code>, <code>INVALID_ARGUMENT</code>, and
+<code>PERMISSION_DENIED</code> errors. (repositories.setIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dataform/TestIamPermissionsResponse.html"><abbr title="Google\Service\Dataform\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testIamPermissions">testIamPermissions</a>(string $resource, <a href="../../../../Google/Service/Dataform/TestIamPermissionsRequest.html"><abbr title="Google\Service\Dataform\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Returns permissions that a caller has on the specified resource. If the
+resource does not exist, this will return an empty set of permissions, not a
+<code>NOT_FOUND</code> error. Note: This operation is designed to be used for building
+permission-aware UIs and command-line tools, not for authorization checking.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_commit">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dataform/Resource/ProjectsLocationsRepositories.php#L55">at line 55</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataform/CommitRepositoryChangesResponse.html"><abbr title="Google\Service\Dataform\CommitRepositoryChangesResponse">CommitRepositoryChangesResponse</abbr></a>
+    <strong>commit</strong>(string $name, <a href="../../../../Google/Service/Dataform/CommitRepositoryChangesRequest.html"><abbr title="Google\Service\Dataform\CommitRepositoryChangesRequest">CommitRepositoryChangesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Applies a Git commit to a Repository. The Repository must not have a value
+for <code>git_remote_settings.url</code>. (repositories.commit)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The repository's name.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dataform/CommitRepositoryChangesRequest.html"><abbr title="Google\Service\Dataform\CommitRepositoryChangesRequest">CommitRepositoryChangesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataform/CommitRepositoryChangesResponse.html"><abbr title="Google\Service\Dataform\CommitRepositoryChangesResponse">CommitRepositoryChangesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_computeAccessTokenStatus">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dataform/Resource/ProjectsLocationsRepositories.php#L70">at line 70</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataform/ComputeRepositoryAccessTokenStatusResponse.html"><abbr title="Google\Service\Dataform\ComputeRepositoryAccessTokenStatusResponse">ComputeRepositoryAccessTokenStatusResponse</abbr></a>
+    <strong>computeAccessTokenStatus</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Computes a Repository's Git access token status.</p></p>                <p>(repositories.computeAccessTokenStatus)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The repository's name.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataform/ComputeRepositoryAccessTokenStatusResponse.html"><abbr title="Google\Service\Dataform\ComputeRepositoryAccessTokenStatusResponse">ComputeRepositoryAccessTokenStatusResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dataform/Resource/ProjectsLocationsRepositories.php#L90">at line 90</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataform/Repository.html"><abbr title="Google\Service\Dataform\Repository">Repository</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/Dataform/Repository.html"><abbr title="Google\Service\Dataform\Repository">Repository</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a new Repository in a given project and location.</p></p>                <p>(repositories.create)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The location in which to create the
+repository. Must be in the format <code>projects/locations</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dataform/Repository.html"><abbr title="Google\Service\Dataform\Repository">Repository</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataform/Repository.html"><abbr title="Google\Service\Dataform\Repository">Repository</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dataform/Resource/ProjectsLocationsRepositories.php#L108">at line 108</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataform/DataformEmpty.html"><abbr title="Google\Service\Dataform\DataformEmpty">DataformEmpty</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a single Repository. (repositories.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The repository's name.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataform/DataformEmpty.html"><abbr title="Google\Service\Dataform\DataformEmpty">DataformEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetchHistory">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dataform/Resource/ProjectsLocationsRepositories.php#L131">at line 131</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataform/FetchRepositoryHistoryResponse.html"><abbr title="Google\Service\Dataform\FetchRepositoryHistoryResponse">FetchRepositoryHistoryResponse</abbr></a>
+    <strong>fetchHistory</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Fetches a Repository's history of commits. The Repository must not have a
+value for <code>git_remote_settings.url</code>. (repositories.fetchHistory)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The repository's name.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataform/FetchRepositoryHistoryResponse.html"><abbr title="Google\Service\Dataform\FetchRepositoryHistoryResponse">FetchRepositoryHistoryResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetchRemoteBranches">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dataform/Resource/ProjectsLocationsRepositories.php#L145">at line 145</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataform/FetchRemoteBranchesResponse.html"><abbr title="Google\Service\Dataform\FetchRemoteBranchesResponse">FetchRemoteBranchesResponse</abbr></a>
+    <strong>fetchRemoteBranches</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Fetches a Repository's remote branches. (repositories.fetchRemoteBranches)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The repository's name.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataform/FetchRemoteBranchesResponse.html"><abbr title="Google\Service\Dataform\FetchRemoteBranchesResponse">FetchRemoteBranchesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dataform/Resource/ProjectsLocationsRepositories.php#L159">at line 159</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataform/Repository.html"><abbr title="Google\Service\Dataform\Repository">Repository</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Fetches a single Repository. (repositories.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The repository's name.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataform/Repository.html"><abbr title="Google\Service\Dataform\Repository">Repository</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dataform/Resource/ProjectsLocationsRepositories.php#L190">at line 190</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataform/Policy.html"><abbr title="Google\Service\Dataform\Policy">Policy</abbr></a>
+    <strong>getIamPolicy</strong>(string $resource, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the access control policy for a resource. Returns an empty policy if the
+resource exists and does not have a policy set. (repositories.getIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy is being
+requested. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataform/Policy.html"><abbr title="Google\Service\Dataform\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsLocationsRepositories">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dataform/Resource/ProjectsLocationsRepositories.php#L218">at line 218</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataform/ListRepositoriesResponse.html"><abbr title="Google\Service\Dataform\ListRepositoriesResponse">ListRepositoriesResponse</abbr></a>
+    <strong>listProjectsLocationsRepositories</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists Repositories in a given project and location.</p></p>                <p>(repositories.listProjectsLocationsRepositories)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The location in which to list repositories.
+Must be in the format <code>projects/locations</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataform/ListRepositoriesResponse.html"><abbr title="Google\Service\Dataform\ListRepositoriesResponse">ListRepositoriesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dataform/Resource/ProjectsLocationsRepositories.php#L236">at line 236</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataform/Repository.html"><abbr title="Google\Service\Dataform\Repository">Repository</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/Dataform/Repository.html"><abbr title="Google\Service\Dataform\Repository">Repository</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a single Repository. (repositories.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Identifier. The repository's name.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dataform/Repository.html"><abbr title="Google\Service\Dataform\Repository">Repository</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataform/Repository.html"><abbr title="Google\Service\Dataform\Repository">Repository</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_queryDirectoryContents">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dataform/Resource/ProjectsLocationsRepositories.php#L265">at line 265</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataform/QueryRepositoryDirectoryContentsResponse.html"><abbr title="Google\Service\Dataform\QueryRepositoryDirectoryContentsResponse">QueryRepositoryDirectoryContentsResponse</abbr></a>
+    <strong>queryDirectoryContents</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the contents of a given Repository directory. The Repository must not
+have a value for <code>git_remote_settings.url</code>.</p></p>                <p>(repositories.queryDirectoryContents)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The repository's name.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataform/QueryRepositoryDirectoryContentsResponse.html"><abbr title="Google\Service\Dataform\QueryRepositoryDirectoryContentsResponse">QueryRepositoryDirectoryContentsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_readFile">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dataform/Resource/ProjectsLocationsRepositories.php#L285">at line 285</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataform/ReadRepositoryFileResponse.html"><abbr title="Google\Service\Dataform\ReadRepositoryFileResponse">ReadRepositoryFileResponse</abbr></a>
+    <strong>readFile</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the contents of a file (inside a Repository). The Repository must not
+have a value for <code>git_remote_settings.url</code>. (repositories.readFile)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The repository's name.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataform/ReadRepositoryFileResponse.html"><abbr title="Google\Service\Dataform\ReadRepositoryFileResponse">ReadRepositoryFileResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dataform/Resource/ProjectsLocationsRepositories.php#L305">at line 305</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataform/Policy.html"><abbr title="Google\Service\Dataform\Policy">Policy</abbr></a>
+    <strong>setIamPolicy</strong>(string $resource, <a href="../../../../Google/Service/Dataform/SetIamPolicyRequest.html"><abbr title="Google\Service\Dataform\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the access control policy on the specified resource. Replaces any
+existing policy. Can return <code>NOT_FOUND</code>, <code>INVALID_ARGUMENT</code>, and
+<code>PERMISSION_DENIED</code> errors. (repositories.setIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy is being
+specified. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dataform/SetIamPolicyRequest.html"><abbr title="Google\Service\Dataform\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataform/Policy.html"><abbr title="Google\Service\Dataform\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testIamPermissions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dataform/Resource/ProjectsLocationsRepositories.php#L328">at line 328</a></div>
+        <code>                    <a href="../../../../Google/Service/Dataform/TestIamPermissionsResponse.html"><abbr title="Google\Service\Dataform\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+    <strong>testIamPermissions</strong>(string $resource, <a href="../../../../Google/Service/Dataform/TestIamPermissionsRequest.html"><abbr title="Google\Service\Dataform\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns permissions that a caller has on the specified resource. If the
+resource does not exist, this will return an empty set of permissions, not a
+<code>NOT_FOUND</code> error. Note: This operation is designed to be used for building
+permission-aware UIs and command-line tools, not for authorization checking.</p></p>                <p><p>This operation may &quot;fail open&quot; without warning.
+(repositories.testIamPermissions)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy detail is
+being requested. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dataform/TestIamPermissionsRequest.html"><abbr title="Google\Service\Dataform\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dataform/TestIamPermissionsResponse.html"><abbr title="Google\Service\Dataform\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

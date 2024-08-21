@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\CloudHealthcare\Resource\ProjectsLocationsDatasetsDicomStores | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_CloudHealthcare_Resource_ProjectsLocationsDatasetsDicomStores" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CloudHealthcare.ns.html">CloudHealthcare</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CloudHealthcare/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ProjectsLocationsDatasetsDicomStores</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsLocationsDatasetsDicomStores    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsLocationsDatasetsDicomStores</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsDicomStores.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;dicomStores&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $healthcareService = new Google\Service\CloudHealthcare(...);
+ $dicomStores = $healthcareService-&gt;projects_locations_datasets_dicomStores;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/DicomStore.html"><abbr title="Google\Service\CloudHealthcare\DicomStore">DicomStore</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/CloudHealthcare/DicomStore.html"><abbr title="Google\Service\CloudHealthcare\DicomStore">DicomStore</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a new DICOM store within the parent dataset. (dicomStores.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/Operation.html"><abbr title="Google\Service\CloudHealthcare\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_deidentify">deidentify</a>(string $sourceStore, <a href="../../../../Google/Service/CloudHealthcare/DeidentifyDicomStoreRequest.html"><abbr title="Google\Service\CloudHealthcare\DeidentifyDicomStoreRequest">DeidentifyDicomStoreRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>De-identifies data from the source store and writes it to the destination
+store. The metadata field type is OperationMetadata. If the request is
+successful, the response field type is DeidentifyDicomStoreSummary. If errors
+occur, error is set. The LRO result may still be successful if de-
+identification fails for some DICOM instances. The output DICOM store will
+not contain these failed resources. Failed resource totals are tracked in
+Operation.metadata. Error details are also logged to Cloud Logging (see
+<a href="https://cloud.google.com/healthcare/docs/how-tos/logging">Viewing error logs in Cloud
+Logging</a>).</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HealthcareEmpty.html"><abbr title="Google\Service\CloudHealthcare\HealthcareEmpty">HealthcareEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes the specified DICOM store and removes all images that are contained
+within it. (dicomStores.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/Operation.html"><abbr title="Google\Service\CloudHealthcare\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_export">export</a>(string $name, <a href="../../../../Google/Service/CloudHealthcare/ExportDicomDataRequest.html"><abbr title="Google\Service\CloudHealthcare\ExportDicomDataRequest">ExportDicomDataRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Exports data to the specified destination by copying it from the DICOM store.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/DicomStore.html"><abbr title="Google\Service\CloudHealthcare\DicomStore">DicomStore</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets the specified DICOM store. (dicomStores.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/DicomStoreMetrics.html"><abbr title="Google\Service\CloudHealthcare\DicomStoreMetrics">DicomStoreMetrics</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDICOMStoreMetrics">getDICOMStoreMetrics</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets metrics associated with the DICOM store.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/Policy.html"><abbr title="Google\Service\CloudHealthcare\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIamPolicy">getIamPolicy</a>(string $resource, array $optParams = [])
+        
+                                            <p><p>Gets the access control policy for a resource. Returns an empty policy if the
+resource exists and does not have a policy set. (dicomStores.getIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/Operation.html"><abbr title="Google\Service\CloudHealthcare\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_import">import</a>(string $name, <a href="../../../../Google/Service/CloudHealthcare/ImportDicomDataRequest.html"><abbr title="Google\Service\CloudHealthcare\ImportDicomDataRequest">ImportDicomDataRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Imports data into the DICOM store by copying it from the specified source.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/ListDicomStoresResponse.html"><abbr title="Google\Service\CloudHealthcare\ListDicomStoresResponse">ListDicomStoresResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsLocationsDatasetsDicomStores">listProjectsLocationsDatasetsDicomStores</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists the DICOM stores in the given dataset.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/DicomStore.html"><abbr title="Google\Service\CloudHealthcare\DicomStore">DicomStore</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/CloudHealthcare/DicomStore.html"><abbr title="Google\Service\CloudHealthcare\DicomStore">DicomStore</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the specified DICOM store. (dicomStores.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_searchForInstances">searchForInstances</a>(string $parent, string $dicomWebPath, array $optParams = [])
+        
+                                            <p><p>SearchForInstances returns a list of matching instances. See [Search
+Transaction] (<a href="http://dicom.nema.org/medical/dicom/current/output/html/part18">http://dicom.nema.org/medical/dicom/current/output/html/part18</a>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_searchForSeries">searchForSeries</a>(string $parent, string $dicomWebPath, array $optParams = [])
+        
+                                            <p><p>SearchForSeries returns a list of matching series. See [Search Transaction] (
+<a href="http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6">http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6</a>
+). For details on the implementation of SearchForSeries, see <a href="https://cloud.google.com/healthcare/docs/dicom#search_transaction">Search transact
+ion</a> in
+the Cloud Healthcare API conformance statement. For samples that show how to
+call SearchForSeries, see <a href="https://cloud.google.com/healthcare/docs/how-tos/dicomweb#search-
+dicom">Search for DICOM
+data</a>. (dicomStores.searchForSeries)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_searchForStudies">searchForStudies</a>(string $parent, string $dicomWebPath, array $optParams = [])
+        
+                                            <p><p>SearchForStudies returns a list of matching studies. See [Search Transaction]
+(<a href="http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10">http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10</a>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/Policy.html"><abbr title="Google\Service\CloudHealthcare\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setIamPolicy">setIamPolicy</a>(string $resource, <a href="../../../../Google/Service/CloudHealthcare/SetIamPolicyRequest.html"><abbr title="Google\Service\CloudHealthcare\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the access control policy on the specified resource. Replaces any
+existing policy. Can return <code>NOT_FOUND</code>, <code>INVALID_ARGUMENT</code>, and
+<code>PERMISSION_DENIED</code> errors. (dicomStores.setIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_storeInstances">storeInstances</a>(string $parent, string $dicomWebPath, <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>StoreInstances stores DICOM instances associated with study instance unique
+identifiers (SUID). See [Store Transaction] (<a href="http://dicom.nema.org/medical/di">http://dicom.nema.org/medical/di</a>
+com/current/output/html/part18.html#sect_10.5). For details on the
+implementation of StoreInstances, see <a href="https://cloud.googl
+e.com/healthcare/docs/dicom#store_transaction">Store transaction</a> in the Cloud Healthcare API
+conformance statement. For samples that show how to call StoreInstances, see
+<a href="https://cloud.google.com/healthcare/docs/how-
+tos/dicomweb#store-dicom">Store DICOM data</a>. (dicomStores.storeInstances)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/TestIamPermissionsResponse.html"><abbr title="Google\Service\CloudHealthcare\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testIamPermissions">testIamPermissions</a>(string $resource, <a href="../../../../Google/Service/CloudHealthcare/TestIamPermissionsRequest.html"><abbr title="Google\Service\CloudHealthcare\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Returns permissions that a caller has on the specified resource. If the
+resource does not exist, this will return an empty set of permissions, not a
+<code>NOT_FOUND</code> error. Note: This operation is designed to be used for building
+permission-aware UIs and command-line tools, not for authorization checking.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsDicomStores.php#L57">at line 57</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/DicomStore.html"><abbr title="Google\Service\CloudHealthcare\DicomStore">DicomStore</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/CloudHealthcare/DicomStore.html"><abbr title="Google\Service\CloudHealthcare\DicomStore">DicomStore</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a new DICOM store within the parent dataset. (dicomStores.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The name of the dataset this DICOM store
+belongs to.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudHealthcare/DicomStore.html"><abbr title="Google\Service\CloudHealthcare\DicomStore">DicomStore</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/DicomStore.html"><abbr title="Google\Service\CloudHealthcare\DicomStore">DicomStore</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deidentify">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsDicomStores.php#L83">at line 83</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/Operation.html"><abbr title="Google\Service\CloudHealthcare\Operation">Operation</abbr></a>
+    <strong>deidentify</strong>(string $sourceStore, <a href="../../../../Google/Service/CloudHealthcare/DeidentifyDicomStoreRequest.html"><abbr title="Google\Service\CloudHealthcare\DeidentifyDicomStoreRequest">DeidentifyDicomStoreRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>De-identifies data from the source store and writes it to the destination
+store. The metadata field type is OperationMetadata. If the request is
+successful, the response field type is DeidentifyDicomStoreSummary. If errors
+occur, error is set. The LRO result may still be successful if de-
+identification fails for some DICOM instances. The output DICOM store will
+not contain these failed resources. Failed resource totals are tracked in
+Operation.metadata. Error details are also logged to Cloud Logging (see
+<a href="https://cloud.google.com/healthcare/docs/how-tos/logging">Viewing error logs in Cloud
+Logging</a>).</p></p>                <p>(dicomStores.deidentify)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sourceStore</td>
+                <td><p>Required. Source DICOM store resource name. For
+example, <code>projects/{project_id}/locations/{location_id}/datasets/{dataset_id} /dicomStores/{dicom_store_id}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudHealthcare/DeidentifyDicomStoreRequest.html"><abbr title="Google\Service\CloudHealthcare\DeidentifyDicomStoreRequest">DeidentifyDicomStoreRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/Operation.html"><abbr title="Google\Service\CloudHealthcare\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsDicomStores.php#L98">at line 98</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HealthcareEmpty.html"><abbr title="Google\Service\CloudHealthcare\HealthcareEmpty">HealthcareEmpty</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes the specified DICOM store and removes all images that are contained
+within it. (dicomStores.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the DICOM store to delete.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HealthcareEmpty.html"><abbr title="Google\Service\CloudHealthcare\HealthcareEmpty">HealthcareEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_export">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsDicomStores.php#L119">at line 119</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/Operation.html"><abbr title="Google\Service\CloudHealthcare\Operation">Operation</abbr></a>
+    <strong>export</strong>(string $name, <a href="../../../../Google/Service/CloudHealthcare/ExportDicomDataRequest.html"><abbr title="Google\Service\CloudHealthcare\ExportDicomDataRequest">ExportDicomDataRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Exports data to the specified destination by copying it from the DICOM store.</p></p>                <p><p>Errors are also logged to Cloud Logging. For more information, see <a href="https://cloud.google.com/healthcare/docs/how-
+tos/logging">Viewing
+error logs in Cloud Logging</a>. The metadata field type is OperationMetadata.
+(dicomStores.export)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The DICOM store resource name from which to
+export the data. For example, <code>projects/{project_id}/locations/{location_id}/ datasets/{dataset_id}/dicomStores/{dicom_store_id}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudHealthcare/ExportDicomDataRequest.html"><abbr title="Google\Service\CloudHealthcare\ExportDicomDataRequest">ExportDicomDataRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/Operation.html"><abbr title="Google\Service\CloudHealthcare\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsDicomStores.php#L133">at line 133</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/DicomStore.html"><abbr title="Google\Service\CloudHealthcare\DicomStore">DicomStore</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the specified DICOM store. (dicomStores.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the DICOM store to get.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/DicomStore.html"><abbr title="Google\Service\CloudHealthcare\DicomStore">DicomStore</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDICOMStoreMetrics">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsDicomStores.php#L149">at line 149</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/DicomStoreMetrics.html"><abbr title="Google\Service\CloudHealthcare\DicomStoreMetrics">DicomStoreMetrics</abbr></a>
+    <strong>getDICOMStoreMetrics</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets metrics associated with the DICOM store.</p></p>                <p>(dicomStores.getDICOMStoreMetrics)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the DICOM store to get
+metrics for.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/DicomStoreMetrics.html"><abbr title="Google\Service\CloudHealthcare\DicomStoreMetrics">DicomStoreMetrics</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsDicomStores.php#L180">at line 180</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/Policy.html"><abbr title="Google\Service\CloudHealthcare\Policy">Policy</abbr></a>
+    <strong>getIamPolicy</strong>(string $resource, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the access control policy for a resource. Returns an empty policy if the
+resource exists and does not have a policy set. (dicomStores.getIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy is being
+requested. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/Policy.html"><abbr title="Google\Service\CloudHealthcare\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_import">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsDicomStores.php#L201">at line 201</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/Operation.html"><abbr title="Google\Service\CloudHealthcare\Operation">Operation</abbr></a>
+    <strong>import</strong>(string $name, <a href="../../../../Google/Service/CloudHealthcare/ImportDicomDataRequest.html"><abbr title="Google\Service\CloudHealthcare\ImportDicomDataRequest">ImportDicomDataRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Imports data into the DICOM store by copying it from the specified source.</p></p>                <p><p>Errors are logged to Cloud Logging. For more information, see <a href="https://cloud.google.com/healthcare/docs/how-
+tos/logging">Viewing error
+logs in Cloud Logging</a>. The metadata field type is OperationMetadata.
+(dicomStores.import)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the DICOM store resource into which
+the data is imported. For example, <code>projects/{project_id}/locations/{location _id}/datasets/{dataset_id}/dicomStores/{dicom_store_id}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudHealthcare/ImportDicomDataRequest.html"><abbr title="Google\Service\CloudHealthcare\ImportDicomDataRequest">ImportDicomDataRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/Operation.html"><abbr title="Google\Service\CloudHealthcare\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsLocationsDatasetsDicomStores">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsDicomStores.php#L244">at line 244</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/ListDicomStoresResponse.html"><abbr title="Google\Service\CloudHealthcare\ListDicomStoresResponse">ListDicomStoresResponse</abbr></a>
+    <strong>listProjectsLocationsDatasetsDicomStores</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists the DICOM stores in the given dataset.</p></p>                <p>(dicomStores.listProjectsLocationsDatasetsDicomStores)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. Name of the dataset.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/ListDicomStoresResponse.html"><abbr title="Google\Service\CloudHealthcare\ListDicomStoresResponse">ListDicomStoresResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsDicomStores.php#L266">at line 266</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/DicomStore.html"><abbr title="Google\Service\CloudHealthcare\DicomStore">DicomStore</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/CloudHealthcare/DicomStore.html"><abbr title="Google\Service\CloudHealthcare\DicomStore">DicomStore</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the specified DICOM store. (dicomStores.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Identifier. Resource name of the DICOM store, of the form
+<code>projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/dicomSto res/{dicom_store_id}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudHealthcare/DicomStore.html"><abbr title="Google\Service\CloudHealthcare\DicomStore">DicomStore</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/DicomStore.html"><abbr title="Google\Service\CloudHealthcare\DicomStore">DicomStore</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_searchForInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsDicomStores.php#L292">at line 292</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+    <strong>searchForInstances</strong>(string $parent, string $dicomWebPath, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>SearchForInstances returns a list of matching instances. See [Search
+Transaction] (<a href="http://dicom.nema.org/medical/dicom/current/output/html/part18">http://dicom.nema.org/medical/dicom/current/output/html/part18</a>.</p></p>                <p><p>html#sect_10.6). For details on the implementation of SearchForInstances, see
+<a href="https://cloud.google.com/healthcare/docs/dicom#search_tr
+ansaction">Search transaction</a> in the Cloud Healthcare API conformance statement. For samples
+that show how to call SearchForInstances, see <a href="https://cloud.google.com/healthcare/docs/how-tos/dicomweb#search-
+dicom">Search for DICOM
+data</a>. (dicomStores.searchForInstances)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The name of the DICOM store that is being
+accessed. For example, <code>projects/{project_id}/locations/{location_id}/dataset s/{dataset_id}/dicomStores/{dicom_store_id}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dicomWebPath</td>
+                <td><p>Required. The path of the
+SearchForInstancesRequest DICOMweb request. For example, <code>instances</code>,
+<code>series/{series_uid}/instances</code>, or <code>studies/{study_uid}/instances</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_searchForSeries">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsDicomStores.php#L317">at line 317</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+    <strong>searchForSeries</strong>(string $parent, string $dicomWebPath, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>SearchForSeries returns a list of matching series. See [Search Transaction] (
+<a href="http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6">http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6</a>
+). For details on the implementation of SearchForSeries, see <a href="https://cloud.google.com/healthcare/docs/dicom#search_transaction">Search transact
+ion</a> in
+the Cloud Healthcare API conformance statement. For samples that show how to
+call SearchForSeries, see <a href="https://cloud.google.com/healthcare/docs/how-tos/dicomweb#search-
+dicom">Search for DICOM
+data</a>. (dicomStores.searchForSeries)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The name of the DICOM store that is being
+accessed. For example, <code>projects/{project_id}/locations/{location_id}/dataset s/{dataset_id}/dicomStores/{dicom_store_id}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dicomWebPath</td>
+                <td><p>Required. The path of the SearchForSeries
+DICOMweb request. For example, <code>series</code> or <code>studies/{study_uid}/series</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_searchForStudies">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsDicomStores.php#L342">at line 342</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+    <strong>searchForStudies</strong>(string $parent, string $dicomWebPath, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>SearchForStudies returns a list of matching studies. See [Search Transaction]
+(<a href="http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10">http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10</a>.</p></p>                <p><p>6). For details on the implementation of SearchForStudies, see <a href="https://cloud.google.com/healthcare/docs/dicom#search_transaction">Search transa
+ction</a> in
+the Cloud Healthcare API conformance statement. For samples that show how to
+call SearchForStudies, see <a href="https://cloud.google.com/healthcare/docs/how-tos/dicomweb#search-
+dicom">Search for DICOM
+data</a>. (dicomStores.searchForStudies)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The name of the DICOM store that is being
+accessed. For example, <code>projects/{project_id}/locations/{location_id}/dataset s/{dataset_id}/dicomStores/{dicom_store_id}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dicomWebPath</td>
+                <td><p>Required. The path of the SearchForStudies
+DICOMweb request. For example, <code>studies</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsDicomStores.php#L362">at line 362</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/Policy.html"><abbr title="Google\Service\CloudHealthcare\Policy">Policy</abbr></a>
+    <strong>setIamPolicy</strong>(string $resource, <a href="../../../../Google/Service/CloudHealthcare/SetIamPolicyRequest.html"><abbr title="Google\Service\CloudHealthcare\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the access control policy on the specified resource. Replaces any
+existing policy. Can return <code>NOT_FOUND</code>, <code>INVALID_ARGUMENT</code>, and
+<code>PERMISSION_DENIED</code> errors. (dicomStores.setIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy is being
+specified. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudHealthcare/SetIamPolicyRequest.html"><abbr title="Google\Service\CloudHealthcare\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/Policy.html"><abbr title="Google\Service\CloudHealthcare\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_storeInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsDicomStores.php#L389">at line 389</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+    <strong>storeInstances</strong>(string $parent, string $dicomWebPath, <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>StoreInstances stores DICOM instances associated with study instance unique
+identifiers (SUID). See [Store Transaction] (<a href="http://dicom.nema.org/medical/di">http://dicom.nema.org/medical/di</a>
+com/current/output/html/part18.html#sect_10.5). For details on the
+implementation of StoreInstances, see <a href="https://cloud.googl
+e.com/healthcare/docs/dicom#store_transaction">Store transaction</a> in the Cloud Healthcare API
+conformance statement. For samples that show how to call StoreInstances, see
+<a href="https://cloud.google.com/healthcare/docs/how-
+tos/dicomweb#store-dicom">Store DICOM data</a>. (dicomStores.storeInstances)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The name of the DICOM store that is being
+accessed. For example, <code>projects/{project_id}/locations/{location_id}/dataset s/{dataset_id}/dicomStores/{dicom_store_id}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dicomWebPath</td>
+                <td><p>Required. The path of the StoreInstances DICOMweb
+request. For example, <code>studies/[{study_uid}]</code>. Note that the <code>study_uid</code> is
+optional.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testIamPermissions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsDicomStores.php#L412">at line 412</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/TestIamPermissionsResponse.html"><abbr title="Google\Service\CloudHealthcare\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+    <strong>testIamPermissions</strong>(string $resource, <a href="../../../../Google/Service/CloudHealthcare/TestIamPermissionsRequest.html"><abbr title="Google\Service\CloudHealthcare\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns permissions that a caller has on the specified resource. If the
+resource does not exist, this will return an empty set of permissions, not a
+<code>NOT_FOUND</code> error. Note: This operation is designed to be used for building
+permission-aware UIs and command-line tools, not for authorization checking.</p></p>                <p><p>This operation may &quot;fail open&quot; without warning.
+(dicomStores.testIamPermissions)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy detail is
+being requested. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudHealthcare/TestIamPermissionsRequest.html"><abbr title="Google\Service\CloudHealthcare\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/TestIamPermissionsResponse.html"><abbr title="Google\Service\CloudHealthcare\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

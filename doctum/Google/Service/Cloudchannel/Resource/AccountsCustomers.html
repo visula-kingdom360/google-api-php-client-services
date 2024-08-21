@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Cloudchannel\Resource\AccountsCustomers | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Cloudchannel_Resource_AccountsCustomers" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Cloudchannel.ns.html">Cloudchannel</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Cloudchannel/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>AccountsCustomers</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>AccountsCustomers    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>AccountsCustomers</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudchannel/Resource/AccountsCustomers.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;customers&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $cloudchannelService = new Google\Service\Cloudchannel(...);
+ $customers = $cloudchannelService-&gt;accounts_customers;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Customer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Customer">GoogleCloudChannelV1Customer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Customer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Customer">GoogleCloudChannelV1Customer</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a new Customer resource under the reseller or distributor account.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleProtobufEmpty.html"><abbr title="Google\Service\Cloudchannel\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes the given Customer permanently. Possible error codes: *
+PERMISSION_DENIED: The account making the request does not own this customer.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Customer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Customer">GoogleCloudChannelV1Customer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Returns the requested Customer resource. Possible error codes: <em>
+PERMISSION_DENIED: The reseller account making the request is different from
+the reseller account in the API request. </em> INVALID_ARGUMENT: Required request
+parameters are missing or invalid. * NOT_FOUND: The customer resource doesn't
+exist. Usually the result of an invalid name parameter. Return value: The
+Customer resource. (customers.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Customer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Customer">GoogleCloudChannelV1Customer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_import">import</a>(string $parent, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ImportCustomerRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ImportCustomerRequest">GoogleCloudChannelV1ImportCustomerRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Imports a Customer from the Cloud Identity associated with the provided Cloud
+Identity ID or domain before a TransferEntitlements call. If a linked
+Customer already exists and overwrite_if_exists is true, it will update that
+Customer's data. Possible error codes: <em> PERMISSION_DENIED: </em> The reseller
+account making the request is different from the reseller account in the API
+request. <em> You are not authorized to import the customer. See
+<a href="https://support.google.com/channelservices/answer/9759265">https://support.google.com/channelservices/answer/9759265</a> </em> NOT_FOUND: Cloud
+Identity doesn't exist or was deleted. <em> INVALID_ARGUMENT: Required
+parameters are missing, or the auth_token is expired or invalid. </em>
+ALREADY_EXISTS: A customer already exists and has conflicting critical
+fields. Requires an overwrite. Return value: The Customer. (customers.import)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListCustomersResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListCustomersResponse">GoogleCloudChannelV1ListCustomersResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listAccountsCustomers">listAccountsCustomers</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>List Customers. Possible error codes: <em> PERMISSION_DENIED: The reseller
+account making the request is different from the reseller account in the API
+request. </em> INVALID_ARGUMENT: Required request parameters are missing or
+invalid. Return value: List of Customers, or an empty list if there are no
+customers. (customers.listAccountsCustomers)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListPurchasableOffersResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListPurchasableOffersResponse">GoogleCloudChannelV1ListPurchasableOffersResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listPurchasableOffers">listPurchasableOffers</a>(string $customer, array $optParams = [])
+        
+                                            <p><p>Lists the following: <em> Offers that you can purchase for a customer. </em> Offers
+that you can change for an entitlement. Possible error codes: <em>
+PERMISSION_DENIED: </em> The customer doesn't belong to the reseller <em> The
+reseller is not authorized to transact on this Product. See
+<a href="https://support.google.com/channelservices/answer/9759265">https://support.google.com/channelservices/answer/9759265</a> </em> INVALID_ARGUMENT:
+Required request parameters are missing or invalid.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListPurchasableSkusResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListPurchasableSkusResponse">GoogleCloudChannelV1ListPurchasableSkusResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listPurchasableSkus">listPurchasableSkus</a>(string $customer, array $optParams = [])
+        
+                                            <p><p>Lists the following: <em> SKUs that you can purchase for a customer </em> SKUs that
+you can upgrade or downgrade for an entitlement. Possible error codes: <em>
+PERMISSION_DENIED: The customer doesn't belong to the reseller. </em>
+INVALID_ARGUMENT: Required request parameters are missing or invalid.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Customer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Customer">GoogleCloudChannelV1Customer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Customer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Customer">GoogleCloudChannelV1Customer</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates an existing Customer resource for the reseller or distributor.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_provisionCloudIdentity">provisionCloudIdentity</a>(string $customer, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ProvisionCloudIdentityRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ProvisionCloudIdentityRequest">GoogleCloudChannelV1ProvisionCloudIdentityRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a Cloud Identity for the given customer using the customer's
+information, or the information provided here. Possible error codes: <em>
+PERMISSION_DENIED: </em> The customer doesn't belong to the reseller. <em> You are
+not authorized to provision cloud identity id. See
+<a href="https://support.google.com/channelservices/answer/9759265">https://support.google.com/channelservices/answer/9759265</a> </em> INVALID_ARGUMENT:
+Required request parameters are missing or invalid. <em> NOT_FOUND: The customer
+was not found. </em> ALREADY_EXISTS: The customer's primary email already exists.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1QueryEligibleBillingAccountsResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1QueryEligibleBillingAccountsResponse">GoogleCloudChannelV1QueryEligibleBillingAccountsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_queryEligibleBillingAccounts">queryEligibleBillingAccounts</a>(string $customer, array $optParams = [])
+        
+                                            <p><p>Lists the billing accounts that are eligible to purchase particular SKUs for
+a given customer. Possible error codes: <em> PERMISSION_DENIED: The customer
+doesn't belong to the reseller. </em> INVALID_ARGUMENT: Required request
+parameters are missing or invalid. Return value: Based on the provided list
+of SKUs, returns a list of SKU groups that must be purchased using the same
+billing account and the billing accounts eligible to purchase each SKU group.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_transferEntitlements">transferEntitlements</a>(string $parent, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1TransferEntitlementsRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1TransferEntitlementsRequest">GoogleCloudChannelV1TransferEntitlementsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Transfers customer entitlements to new reseller. Possible error codes: <em>
+PERMISSION_DENIED: </em> The customer doesn't belong to the reseller. <em> The
+reseller is not authorized to transact on this Product. See
+<a href="https://support.google.com/channelservices/answer/9759265">https://support.google.com/channelservices/answer/9759265</a> </em> INVALID_ARGUMENT:
+Required request parameters are missing or invalid. <em> NOT_FOUND: The customer
+or offer resource was not found. </em> ALREADY_EXISTS: The SKU was already
+transferred for the customer. <em> CONDITION_NOT_MET or FAILED_PRECONDITION: </em>
+The SKU requires domain verification to transfer, but the domain is not
+verified. <em> An Add-On SKU (example, Vault or Drive) is missing the pre-
+requisite SKU (example, G Suite Basic). </em> (Developer accounts only) Reseller
+and resold domain must meet the following naming requirements: <em> Domain names
+must start with goog-test. </em> Domain names must include the reseller domain. <em>
+Specify all transferring entitlements. </em> INTERNAL: Any non-user error related
+to a technical issue in the backend. Contact Cloud Channel support. *
+UNKNOWN: Any non-user error related to a technical issue in the backend.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_transferEntitlementsToGoogle">transferEntitlementsToGoogle</a>(string $parent, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1TransferEntitlementsToGoogleRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1TransferEntitlementsToGoogleRequest">GoogleCloudChannelV1TransferEntitlementsToGoogleRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Transfers customer entitlements from their current reseller to Google.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudchannel/Resource/AccountsCustomers.php#L59">at line 59</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Customer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Customer">GoogleCloudChannelV1Customer</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Customer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Customer">GoogleCloudChannelV1Customer</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a new Customer resource under the reseller or distributor account.</p></p>                <p><p>Possible error codes: <em> PERMISSION_DENIED: </em> The reseller account making the
+request is different from the reseller account in the API request. <em> You are
+not authorized to create a customer. See
+<a href="https://support.google.com/channelservices/answer/9759265">https://support.google.com/channelservices/answer/9759265</a> </em> INVALID_ARGUMENT:</p>
+<ul>
+<li>Required request parameters are missing or invalid. * Domain field value
+doesn't match the primary email domain. Return value: The newly created
+Customer resource. (customers.create)</li>
+</ul></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of reseller account in
+which to create the customer. Parent uses the format: accounts/{account_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Customer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Customer">GoogleCloudChannelV1Customer</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Customer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Customer">GoogleCloudChannelV1Customer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudchannel/Resource/AccountsCustomers.php#L77">at line 77</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleProtobufEmpty.html"><abbr title="Google\Service\Cloudchannel\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes the given Customer permanently. Possible error codes: *
+PERMISSION_DENIED: The account making the request does not own this customer.</p></p>                <p><ul>
+<li>INVALID_ARGUMENT: Required request parameters are missing or invalid. <em>
+FAILED_PRECONDITION: The customer has existing entitlements. </em> NOT_FOUND: No
+Customer resource found for the name in the request. (customers.delete)</li>
+</ul></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the customer to delete.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleProtobufEmpty.html"><abbr title="Google\Service\Cloudchannel\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudchannel/Resource/AccountsCustomers.php#L97">at line 97</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Customer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Customer">GoogleCloudChannelV1Customer</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the requested Customer resource. Possible error codes: <em>
+PERMISSION_DENIED: The reseller account making the request is different from
+the reseller account in the API request. </em> INVALID_ARGUMENT: Required request
+parameters are missing or invalid. * NOT_FOUND: The customer resource doesn't
+exist. Usually the result of an invalid name parameter. Return value: The
+Customer resource. (customers.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the customer to retrieve.
+Name uses the format: accounts/{account_id}/customers/{customer_id}</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Customer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Customer">GoogleCloudChannelV1Customer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_import">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudchannel/Resource/AccountsCustomers.php#L124">at line 124</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Customer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Customer">GoogleCloudChannelV1Customer</abbr></a>
+    <strong>import</strong>(string $parent, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ImportCustomerRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ImportCustomerRequest">GoogleCloudChannelV1ImportCustomerRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Imports a Customer from the Cloud Identity associated with the provided Cloud
+Identity ID or domain before a TransferEntitlements call. If a linked
+Customer already exists and overwrite_if_exists is true, it will update that
+Customer's data. Possible error codes: <em> PERMISSION_DENIED: </em> The reseller
+account making the request is different from the reseller account in the API
+request. <em> You are not authorized to import the customer. See
+<a href="https://support.google.com/channelservices/answer/9759265">https://support.google.com/channelservices/answer/9759265</a> </em> NOT_FOUND: Cloud
+Identity doesn't exist or was deleted. <em> INVALID_ARGUMENT: Required
+parameters are missing, or the auth_token is expired or invalid. </em>
+ALREADY_EXISTS: A customer already exists and has conflicting critical
+fields. Requires an overwrite. Return value: The Customer. (customers.import)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the reseller's account.
+Parent takes the format: accounts/{account_id} or
+accounts/{account_id}/channelPartnerLinks/{channel_partner_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ImportCustomerRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ImportCustomerRequest">GoogleCloudChannelV1ImportCustomerRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Customer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Customer">GoogleCloudChannelV1Customer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listAccountsCustomers">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudchannel/Resource/AccountsCustomers.php#L155">at line 155</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListCustomersResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListCustomersResponse">GoogleCloudChannelV1ListCustomersResponse</abbr></a>
+    <strong>listAccountsCustomers</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>List Customers. Possible error codes: <em> PERMISSION_DENIED: The reseller
+account making the request is different from the reseller account in the API
+request. </em> INVALID_ARGUMENT: Required request parameters are missing or
+invalid. Return value: List of Customers, or an empty list if there are no
+customers. (customers.listAccountsCustomers)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the reseller account to
+list customers from. Parent uses the format: accounts/{account_id}.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListCustomersResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListCustomersResponse">GoogleCloudChannelV1ListCustomersResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listPurchasableOffers">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudchannel/Resource/AccountsCustomers.php#L202">at line 202</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListPurchasableOffersResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListPurchasableOffersResponse">GoogleCloudChannelV1ListPurchasableOffersResponse</abbr></a>
+    <strong>listPurchasableOffers</strong>(string $customer, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists the following: <em> Offers that you can purchase for a customer. </em> Offers
+that you can change for an entitlement. Possible error codes: <em>
+PERMISSION_DENIED: </em> The customer doesn't belong to the reseller <em> The
+reseller is not authorized to transact on this Product. See
+<a href="https://support.google.com/channelservices/answer/9759265">https://support.google.com/channelservices/answer/9759265</a> </em> INVALID_ARGUMENT:
+Required request parameters are missing or invalid.</p></p>                <p>(customers.listPurchasableOffers)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$customer</td>
+                <td><p>Required. The resource name of the customer to list
+Offers for. Format: accounts/{account_id}/customers/{customer_id}.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListPurchasableOffersResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListPurchasableOffersResponse">GoogleCloudChannelV1ListPurchasableOffersResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listPurchasableSkus">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudchannel/Resource/AccountsCustomers.php#L238">at line 238</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListPurchasableSkusResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListPurchasableSkusResponse">GoogleCloudChannelV1ListPurchasableSkusResponse</abbr></a>
+    <strong>listPurchasableSkus</strong>(string $customer, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists the following: <em> SKUs that you can purchase for a customer </em> SKUs that
+you can upgrade or downgrade for an entitlement. Possible error codes: <em>
+PERMISSION_DENIED: The customer doesn't belong to the reseller. </em>
+INVALID_ARGUMENT: Required request parameters are missing or invalid.</p></p>                <p>(customers.listPurchasableSkus)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$customer</td>
+                <td><p>Required. The resource name of the customer to list
+SKUs for. Format: accounts/{account_id}/customers/{customer_id}.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ListPurchasableSkusResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ListPurchasableSkusResponse">GoogleCloudChannelV1ListPurchasableSkusResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudchannel/Resource/AccountsCustomers.php#L262">at line 262</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Customer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Customer">GoogleCloudChannelV1Customer</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Customer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Customer">GoogleCloudChannelV1Customer</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates an existing Customer resource for the reseller or distributor.</p></p>                <p><p>Possible error codes: <em> PERMISSION_DENIED: The reseller account making the
+request is different from the reseller account in the API request. </em>
+INVALID_ARGUMENT: Required request parameters are missing or invalid. *
+NOT_FOUND: No Customer resource found for the name in the request. Return
+value: The updated Customer resource. (customers.patch)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Output only. Resource name of the customer. Format:
+accounts/{account_id}/customers/{customer_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Customer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Customer">GoogleCloudChannelV1Customer</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1Customer.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1Customer">GoogleCloudChannelV1Customer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_provisionCloudIdentity">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudchannel/Resource/AccountsCustomers.php#L291">at line 291</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>provisionCloudIdentity</strong>(string $customer, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ProvisionCloudIdentityRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ProvisionCloudIdentityRequest">GoogleCloudChannelV1ProvisionCloudIdentityRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a Cloud Identity for the given customer using the customer's
+information, or the information provided here. Possible error codes: <em>
+PERMISSION_DENIED: </em> The customer doesn't belong to the reseller. <em> You are
+not authorized to provision cloud identity id. See
+<a href="https://support.google.com/channelservices/answer/9759265">https://support.google.com/channelservices/answer/9759265</a> </em> INVALID_ARGUMENT:
+Required request parameters are missing or invalid. <em> NOT_FOUND: The customer
+was not found. </em> ALREADY_EXISTS: The customer's primary email already exists.</p></p>                <p><p>Retry after changing the customer's primary contact email. <em> INTERNAL: Any
+non-user error related to a technical issue in the backend. Contact Cloud
+Channel support. </em> UNKNOWN: Any non-user error related to a technical issue
+in the backend. Contact Cloud Channel support. Return value: The ID of a
+long-running operation. To get the results of the operation, call the
+GetOperation method of CloudChannelOperationsService. The Operation metadata
+contains an instance of OperationMetadata. (customers.provisionCloudIdentity)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$customer</td>
+                <td><p>Required. Resource name of the customer. Format:
+accounts/{account_id}/customers/{customer_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1ProvisionCloudIdentityRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1ProvisionCloudIdentityRequest">GoogleCloudChannelV1ProvisionCloudIdentityRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_queryEligibleBillingAccounts">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudchannel/Resource/AccountsCustomers.php#L317">at line 317</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1QueryEligibleBillingAccountsResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1QueryEligibleBillingAccountsResponse">GoogleCloudChannelV1QueryEligibleBillingAccountsResponse</abbr></a>
+    <strong>queryEligibleBillingAccounts</strong>(string $customer, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists the billing accounts that are eligible to purchase particular SKUs for
+a given customer. Possible error codes: <em> PERMISSION_DENIED: The customer
+doesn't belong to the reseller. </em> INVALID_ARGUMENT: Required request
+parameters are missing or invalid. Return value: Based on the provided list
+of SKUs, returns a list of SKU groups that must be purchased using the same
+billing account and the billing accounts eligible to purchase each SKU group.</p></p>                <p>(customers.queryEligibleBillingAccounts)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$customer</td>
+                <td><p>Required. The resource name of the customer to list
+eligible billing accounts for. Format:
+accounts/{account_id}/customers/{customer_id}.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1QueryEligibleBillingAccountsResponse.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1QueryEligibleBillingAccountsResponse">GoogleCloudChannelV1QueryEligibleBillingAccountsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_transferEntitlements">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudchannel/Resource/AccountsCustomers.php#L352">at line 352</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>transferEntitlements</strong>(string $parent, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1TransferEntitlementsRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1TransferEntitlementsRequest">GoogleCloudChannelV1TransferEntitlementsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Transfers customer entitlements to new reseller. Possible error codes: <em>
+PERMISSION_DENIED: </em> The customer doesn't belong to the reseller. <em> The
+reseller is not authorized to transact on this Product. See
+<a href="https://support.google.com/channelservices/answer/9759265">https://support.google.com/channelservices/answer/9759265</a> </em> INVALID_ARGUMENT:
+Required request parameters are missing or invalid. <em> NOT_FOUND: The customer
+or offer resource was not found. </em> ALREADY_EXISTS: The SKU was already
+transferred for the customer. <em> CONDITION_NOT_MET or FAILED_PRECONDITION: </em>
+The SKU requires domain verification to transfer, but the domain is not
+verified. <em> An Add-On SKU (example, Vault or Drive) is missing the pre-
+requisite SKU (example, G Suite Basic). </em> (Developer accounts only) Reseller
+and resold domain must meet the following naming requirements: <em> Domain names
+must start with goog-test. </em> Domain names must include the reseller domain. <em>
+Specify all transferring entitlements. </em> INTERNAL: Any non-user error related
+to a technical issue in the backend. Contact Cloud Channel support. *
+UNKNOWN: Any non-user error related to a technical issue in the backend.</p></p>                <p><p>Contact Cloud Channel support. Return value: The ID of a long-running
+operation. To get the results of the operation, call the GetOperation method
+of CloudChannelOperationsService. The Operation metadata will contain an
+instance of OperationMetadata. (customers.transferEntitlements)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the reseller's customer
+account that will receive transferred entitlements. Parent uses the format:
+accounts/{account_id}/customers/{customer_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1TransferEntitlementsRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1TransferEntitlementsRequest">GoogleCloudChannelV1TransferEntitlementsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_transferEntitlementsToGoogle">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Cloudchannel/Resource/AccountsCustomers.php#L386">at line 386</a></div>
+        <code>                    <a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>transferEntitlementsToGoogle</strong>(string $parent, <a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1TransferEntitlementsToGoogleRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1TransferEntitlementsToGoogleRequest">GoogleCloudChannelV1TransferEntitlementsToGoogleRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Transfers customer entitlements from their current reseller to Google.</p></p>                <p><p>Possible error codes: <em> PERMISSION_DENIED: The customer doesn't belong to the
+reseller. </em> INVALID_ARGUMENT: Required request parameters are missing or
+invalid. <em> NOT_FOUND: The customer or offer resource was not found. </em>
+ALREADY_EXISTS: The SKU was already transferred for the customer. <em>
+CONDITION_NOT_MET or FAILED_PRECONDITION: </em> The SKU requires domain
+verification to transfer, but the domain is not verified. <em> An Add-On SKU
+(example, Vault or Drive) is missing the pre-requisite SKU (example, G Suite
+Basic). </em> (Developer accounts only) Reseller and resold domain must meet the
+following naming requirements: <em> Domain names must start with goog-test. </em>
+Domain names must include the reseller domain. <em> INTERNAL: Any non-user error
+related to a technical issue in the backend. Contact Cloud Channel support. </em>
+UNKNOWN: Any non-user error related to a technical issue in the backend.
+Contact Cloud Channel support. Return value: The ID of a long-running
+operation. To get the results of the operation, call the GetOperation method
+of CloudChannelOperationsService. The response will contain
+google.protobuf.Empty on success. The Operation metadata will contain an
+instance of OperationMetadata. (customers.transferEntitlementsToGoogle)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the reseller's customer
+account where the entitlements transfer from. Parent uses the format:
+accounts/{account_id}/customers/{customer_id}</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Cloudchannel/GoogleCloudChannelV1TransferEntitlementsToGoogleRequest.html"><abbr title="Google\Service\Cloudchannel\GoogleCloudChannelV1TransferEntitlementsToGoogleRequest">GoogleCloudChannelV1TransferEntitlementsToGoogleRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Cloudchannel/GoogleLongrunningOperation.html"><abbr title="Google\Service\Cloudchannel\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

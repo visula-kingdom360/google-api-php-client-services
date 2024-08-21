@@ -1,0 +1,4029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Compute\Resource\Instances | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Compute_Resource_Instances" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Compute.ns.html">Compute</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Compute/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>Instances</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Instances    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Instances</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;instances&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $computeService = new Google\Service\Compute(...);
+ $instances = $computeService-&gt;instances;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addAccessConfig">addAccessConfig</a>(string $project, string $zone, string $instance, string $networkInterface, <a href="../../../../Google/Service/Compute/AccessConfig.html"><abbr title="Google\Service\Compute\AccessConfig">AccessConfig</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Adds an access config to an instance's network interface.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addResourcePolicies">addResourcePolicies</a>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesAddResourcePoliciesRequest.html"><abbr title="Google\Service\Compute\InstancesAddResourcePoliciesRequest">InstancesAddResourcePoliciesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Adds existing resource policies to an instance. You can only add one policy
+right now which will be applied to this instance for scheduling live
+migrations. (instances.addResourcePolicies)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/InstanceAggregatedList.html"><abbr title="Google\Service\Compute\InstanceAggregatedList">InstanceAggregatedList</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_aggregatedList">aggregatedList</a>(string $project, array $optParams = [])
+        
+                                            <p><p>Retrieves an aggregated list of all of the instances in your project across
+all regions and zones. The performance of this method degrades when a filter
+is specified on a project that has a very large number of instances. To
+prevent failure, Google recommends that you set the <code>returnPartialSuccess</code>
+parameter to <code>true</code>. (instances.aggregatedList)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_attachDisk">attachDisk</a>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/AttachedDisk.html"><abbr title="Google\Service\Compute\AttachedDisk">AttachedDisk</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Attaches an existing Disk resource to an instance. You must first create the
+disk before you can attach it. It is not possible to create and attach a disk
+at the same time. For more information, read Adding a persistent disk to your
+instance. (instances.attachDisk)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_bulkInsert">bulkInsert</a>(string $project, string $zone, <a href="../../../../Google/Service/Compute/BulkInsertInstanceResource.html"><abbr title="Google\Service\Compute\BulkInsertInstanceResource">BulkInsertInstanceResource</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates multiple instances. Count specifies the number of instances to
+create. For more information, see About bulk creation of VMs.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $project, string $zone, string $instance, array $optParams = [])
+        
+                                            <p><p>Deletes the specified Instance resource. For more information, see Deleting
+an instance. (instances.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_deleteAccessConfig">deleteAccessConfig</a>(string $project, string $zone, string $instance, string $accessConfig, string $networkInterface, array $optParams = [])
+        
+                                            <p><p>Deletes an access config from an instance's network interface.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_detachDisk">detachDisk</a>(string $project, string $zone, string $instance, string $deviceName, array $optParams = [])
+        
+                                            <p><p>Detaches a disk from an instance. (instances.detachDisk)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Instance.html"><abbr title="Google\Service\Compute\Instance">Instance</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $project, string $zone, string $instance, array $optParams = [])
+        
+                                            <p><p>Returns the specified Instance resource. (instances.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/InstancesGetEffectiveFirewallsResponse.html"><abbr title="Google\Service\Compute\InstancesGetEffectiveFirewallsResponse">InstancesGetEffectiveFirewallsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getEffectiveFirewalls">getEffectiveFirewalls</a>(string $project, string $zone, string $instance, string $networkInterface, array $optParams = [])
+        
+                                            <p><p>Returns effective firewalls applied to an interface of the instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/GuestAttributes.html"><abbr title="Google\Service\Compute\GuestAttributes">GuestAttributes</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getGuestAttributes">getGuestAttributes</a>(string $project, string $zone, string $instance, array $optParams = [])
+        
+                                            <p><p>Returns the specified guest attributes entry. (instances.getGuestAttributes)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Policy.html"><abbr title="Google\Service\Compute\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIamPolicy">getIamPolicy</a>(string $project, string $zone, string $resource, array $optParams = [])
+        
+                                            <p><p>Gets the access control policy for a resource. May be empty if no such policy
+or resource exists. (instances.getIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Screenshot.html"><abbr title="Google\Service\Compute\Screenshot">Screenshot</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getScreenshot">getScreenshot</a>(string $project, string $zone, string $instance, array $optParams = [])
+        
+                                            <p><p>Returns the screenshot from the specified instance. (instances.getScreenshot)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/SerialPortOutput.html"><abbr title="Google\Service\Compute\SerialPortOutput">SerialPortOutput</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSerialPortOutput">getSerialPortOutput</a>(string $project, string $zone, string $instance, array $optParams = [])
+        
+                                            <p><p>Returns the last 1 MB of serial port output from the specified instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/ShieldedInstanceIdentity.html"><abbr title="Google\Service\Compute\ShieldedInstanceIdentity">ShieldedInstanceIdentity</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getShieldedInstanceIdentity">getShieldedInstanceIdentity</a>(string $project, string $zone, string $instance, array $optParams = [])
+        
+                                            <p><p>Returns the Shielded Instance Identity of an instance
+(instances.getShieldedInstanceIdentity)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_insert">insert</a>(string $project, string $zone, <a href="../../../../Google/Service/Compute/Instance.html"><abbr title="Google\Service\Compute\Instance">Instance</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates an instance resource in the specified project using the data included
+in the request. (instances.insert)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/InstanceList.html"><abbr title="Google\Service\Compute\InstanceList">InstanceList</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listInstances">listInstances</a>(string $project, string $zone, array $optParams = [])
+        
+                                            <p><p>Retrieves the list of instances contained within the specified zone.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/InstanceListReferrers.html"><abbr title="Google\Service\Compute\InstanceListReferrers">InstanceListReferrers</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listReferrers">listReferrers</a>(string $project, string $zone, string $instance, array $optParams = [])
+        
+                                            <p><p>Retrieves a list of resources that refer to the VM instance specified in the
+request. For example, if the VM instance is part of a managed or unmanaged
+instance group, the referrers list includes the instance group. For more
+information, read Viewing referrers to VM instances.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_performMaintenance">performMaintenance</a>(string $project, string $zone, string $instance, array $optParams = [])
+        
+                                            <p><p>Perform a manual maintenance on the instance. (instances.performMaintenance)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_removeResourcePolicies">removeResourcePolicies</a>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesRemoveResourcePoliciesRequest.html"><abbr title="Google\Service\Compute\InstancesRemoveResourcePoliciesRequest">InstancesRemoveResourcePoliciesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Removes resource policies from an instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_reset">reset</a>(string $project, string $zone, string $instance, array $optParams = [])
+        
+                                            <p><p>Performs a reset on the instance. This is a hard reset. The VM does not do a
+graceful shutdown. For more information, see Resetting an instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_resume">resume</a>(string $project, string $zone, string $instance, array $optParams = [])
+        
+                                            <p><p>Resumes an instance that was suspended using the instances().suspend method.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_sendDiagnosticInterrupt">sendDiagnosticInterrupt</a>(string $project, string $zone, string $instance, array $optParams = [])
+        
+                                            <p><p>Sends diagnostic interrupt to the instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDeletionProtection">setDeletionProtection</a>(string $project, string $zone, string $resource, array $optParams = [])
+        
+                                            <p><p>Sets deletion protection on the instance. (instances.setDeletionProtection)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDiskAutoDelete">setDiskAutoDelete</a>(string $project, string $zone, string $instance, bool $autoDelete, string $deviceName, array $optParams = [])
+        
+                                            <p><p>Sets the auto-delete flag for a disk attached to an instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Policy.html"><abbr title="Google\Service\Compute\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setIamPolicy">setIamPolicy</a>(string $project, string $zone, string $resource, <a href="../../../../Google/Service/Compute/ZoneSetPolicyRequest.html"><abbr title="Google\Service\Compute\ZoneSetPolicyRequest">ZoneSetPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the access control policy on the specified resource. Replaces any
+existing policy. (instances.setIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setLabels">setLabels</a>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesSetLabelsRequest.html"><abbr title="Google\Service\Compute\InstancesSetLabelsRequest">InstancesSetLabelsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets labels on an instance. To learn more about labels, read the Labeling
+Resources documentation. (instances.setLabels)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMachineResources">setMachineResources</a>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesSetMachineResourcesRequest.html"><abbr title="Google\Service\Compute\InstancesSetMachineResourcesRequest">InstancesSetMachineResourcesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Changes the number and/or type of accelerator for a stopped instance to the
+values specified in the request. (instances.setMachineResources)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMachineType">setMachineType</a>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesSetMachineTypeRequest.html"><abbr title="Google\Service\Compute\InstancesSetMachineTypeRequest">InstancesSetMachineTypeRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Changes the machine type for a stopped instance to the machine type specified
+in the request. (instances.setMachineType)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMetadata">setMetadata</a>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/Metadata.html"><abbr title="Google\Service\Compute\Metadata">Metadata</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets metadata for the specified instance to the data included in the request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMinCpuPlatform">setMinCpuPlatform</a>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesSetMinCpuPlatformRequest.html"><abbr title="Google\Service\Compute\InstancesSetMinCpuPlatformRequest">InstancesSetMinCpuPlatformRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Changes the minimum CPU platform that this instance should use. This method
+can only be called on a stopped instance. For more information, read
+Specifying a Minimum CPU Platform. (instances.setMinCpuPlatform)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setName">setName</a>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesSetNameRequest.html"><abbr title="Google\Service\Compute\InstancesSetNameRequest">InstancesSetNameRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets name of an instance. (instances.setName)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setScheduling">setScheduling</a>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/Scheduling.html"><abbr title="Google\Service\Compute\Scheduling">Scheduling</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets an instance's scheduling options. You can only call this method on a
+stopped instance, that is, a VM instance that is in a <code>TERMINATED</code> state. See
+Instance Life Cycle for more information on the possible instance states. For
+more information about setting scheduling options for a VM, see Set VM host
+maintenance policy. (instances.setScheduling)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setSecurityPolicy">setSecurityPolicy</a>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesSetSecurityPolicyRequest.html"><abbr title="Google\Service\Compute\InstancesSetSecurityPolicyRequest">InstancesSetSecurityPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the Google Cloud Armor security policy for the specified instance. For
+more information, see Google Cloud Armor Overview
+(instances.setSecurityPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setServiceAccount">setServiceAccount</a>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesSetServiceAccountRequest.html"><abbr title="Google\Service\Compute\InstancesSetServiceAccountRequest">InstancesSetServiceAccountRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the service account on the instance. For more information, read Changing
+the service account and access scopes for an instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setShieldedInstanceIntegrityPolicy">setShieldedInstanceIntegrityPolicy</a>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/ShieldedInstanceIntegrityPolicy.html"><abbr title="Google\Service\Compute\ShieldedInstanceIntegrityPolicy">ShieldedInstanceIntegrityPolicy</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the Shielded Instance integrity policy for an instance. You can only use
+this method on a running instance. This method supports PATCH semantics and
+uses the JSON merge patch format and processing rules.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setTags">setTags</a>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/Tags.html"><abbr title="Google\Service\Compute\Tags">Tags</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets network tags for the specified instance to the data included in the
+request. (instances.setTags)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_simulateMaintenanceEvent">simulateMaintenanceEvent</a>(string $project, string $zone, string $instance, array $optParams = [])
+        
+                                            <p><p>Simulates a host maintenance event on a VM. For more information, see
+Simulate a host maintenance event. (instances.simulateMaintenanceEvent)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_start">start</a>(string $project, string $zone, string $instance, array $optParams = [])
+        
+                                            <p><p>Starts an instance that was stopped using the instances().stop method. For
+more information, see Restart an instance. (instances.start)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_startWithEncryptionKey">startWithEncryptionKey</a>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesStartWithEncryptionKeyRequest.html"><abbr title="Google\Service\Compute\InstancesStartWithEncryptionKeyRequest">InstancesStartWithEncryptionKeyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Starts an instance that was stopped using the instances().stop method. For
+more information, see Restart an instance. (instances.startWithEncryptionKey)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_stop">stop</a>(string $project, string $zone, string $instance, array $optParams = [])
+        
+                                            <p><p>Stops a running instance, shutting it down cleanly, and allows you to restart
+the instance at a later time. Stopped instances do not incur VM usage charges
+while they are stopped. However, resources that the VM is using, such as
+persistent disks and static IP addresses, will continue to be charged until
+they are deleted. For more information, see Stopping an instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_suspend">suspend</a>(string $project, string $zone, string $instance, array $optParams = [])
+        
+                                            <p><p>This method suspends a running instance, saving its state to persistent
+storage, and allows you to resume the instance at a later time. Suspended
+instances have no compute costs (cores or RAM), and incur only storage
+charges for the saved VM memory and localSSD data. Any charged resources the
+virtual machine was using, such as persistent disks and static IP addresses,
+will continue to be charged while the instance is suspended. For more
+information, see Suspending and resuming an instance. (instances.suspend)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/TestPermissionsResponse.html"><abbr title="Google\Service\Compute\TestPermissionsResponse">TestPermissionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testIamPermissions">testIamPermissions</a>(string $project, string $zone, string $resource, <a href="../../../../Google/Service/Compute/TestPermissionsRequest.html"><abbr title="Google\Service\Compute\TestPermissionsRequest">TestPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Returns permissions that a caller has on the specified resource.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/Instance.html"><abbr title="Google\Service\Compute\Instance">Instance</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates an instance only if the necessary resources are available. This
+method can update only a specific set of instance properties. See Updating a
+running instance for a list of updatable instance properties.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateAccessConfig">updateAccessConfig</a>(string $project, string $zone, string $instance, string $networkInterface, <a href="../../../../Google/Service/Compute/AccessConfig.html"><abbr title="Google\Service\Compute\AccessConfig">AccessConfig</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the specified access config from an instance's network interface with
+the data included in the request. This method supports PATCH semantics and
+uses the JSON merge patch format and processing rules.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateDisplayDevice">updateDisplayDevice</a>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/DisplayDevice.html"><abbr title="Google\Service\Compute\DisplayDevice">DisplayDevice</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the Display config for a VM instance. You can only use this method on
+a stopped VM instance. This method supports PATCH semantics and uses the JSON
+merge patch format and processing rules. (instances.updateDisplayDevice)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateNetworkInterface">updateNetworkInterface</a>(string $project, string $zone, string $instance, string $networkInterface, <a href="../../../../Google/Service/Compute/NetworkInterface.html"><abbr title="Google\Service\Compute\NetworkInterface">NetworkInterface</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates an instance's network interface. This method can only update an
+interface's alias IP range and attached network. See Modifying alias IP
+ranges for an existing instance for instructions on changing alias IP ranges.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateShieldedInstanceConfig">updateShieldedInstanceConfig</a>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/ShieldedInstanceConfig.html"><abbr title="Google\Service\Compute\ShieldedInstanceConfig">ShieldedInstanceConfig</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the Shielded Instance config for an instance. You can only use this
+method on a stopped instance. This method supports PATCH semantics and uses
+the JSON merge patch format and processing rules.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_addAccessConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L90">at line 90</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>addAccessConfig</strong>(string $project, string $zone, string $instance, string $networkInterface, <a href="../../../../Google/Service/Compute/AccessConfig.html"><abbr title="Google\Service\Compute\AccessConfig">AccessConfig</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Adds an access config to an instance's network interface.</p></p>                <p>(instances.addAccessConfig)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>The instance name for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$networkInterface</td>
+                <td><p>The name of the network interface to add to
+this instance.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/AccessConfig.html"><abbr title="Google\Service\Compute\AccessConfig">AccessConfig</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addResourcePolicies">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L120">at line 120</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>addResourcePolicies</strong>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesAddResourcePoliciesRequest.html"><abbr title="Google\Service\Compute\InstancesAddResourcePoliciesRequest">InstancesAddResourcePoliciesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Adds existing resource policies to an instance. You can only add one policy
+right now which will be applied to this instance for scheduling live
+migrations. (instances.addResourcePolicies)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>The instance name for this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/InstancesAddResourcePoliciesRequest.html"><abbr title="Google\Service\Compute\InstancesAddResourcePoliciesRequest">InstancesAddResourcePoliciesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_aggregatedList">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L202">at line 202</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/InstanceAggregatedList.html"><abbr title="Google\Service\Compute\InstanceAggregatedList">InstanceAggregatedList</abbr></a>
+    <strong>aggregatedList</strong>(string $project, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves an aggregated list of all of the instances in your project across
+all regions and zones. The performance of this method degrades when a filter
+is specified on a project that has a very large number of instances. To
+prevent failure, Google recommends that you set the <code>returnPartialSuccess</code>
+parameter to <code>true</code>. (instances.aggregatedList)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/InstanceAggregatedList.html"><abbr title="Google\Service\Compute\InstanceAggregatedList">InstanceAggregatedList</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_attachDisk">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L236">at line 236</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>attachDisk</strong>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/AttachedDisk.html"><abbr title="Google\Service\Compute\AttachedDisk">AttachedDisk</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Attaches an existing Disk resource to an instance. You must first create the
+disk before you can attach it. It is not possible to create and attach a disk
+at the same time. For more information, read Adding a persistent disk to your
+instance. (instances.attachDisk)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>The instance name for this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/AttachedDisk.html"><abbr title="Google\Service\Compute\AttachedDisk">AttachedDisk</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bulkInsert">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L265">at line 265</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>bulkInsert</strong>(string $project, string $zone, <a href="../../../../Google/Service/Compute/BulkInsertInstanceResource.html"><abbr title="Google\Service\Compute\BulkInsertInstanceResource">BulkInsertInstanceResource</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates multiple instances. Count specifies the number of instances to
+create. For more information, see About bulk creation of VMs.</p></p>                <p>(instances.bulkInsert)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/BulkInsertInstanceResource.html"><abbr title="Google\Service\Compute\BulkInsertInstanceResource">BulkInsertInstanceResource</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L293">at line 293</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>delete</strong>(string $project, string $zone, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes the specified Instance resource. For more information, see Deleting
+an instance. (instances.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance resource to delete.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteAccessConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L323">at line 323</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>deleteAccessConfig</strong>(string $project, string $zone, string $instance, string $accessConfig, string $networkInterface, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes an access config from an instance's network interface.</p></p>                <p>(instances.deleteAccessConfig)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>The instance name for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$accessConfig</td>
+                <td><p>The name of the access config to delete.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$networkInterface</td>
+                <td><p>The name of the network interface.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_detachDisk">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L352">at line 352</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>detachDisk</strong>(string $project, string $zone, string $instance, string $deviceName, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Detaches a disk from an instance. (instances.detachDisk)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Instance name for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$deviceName</td>
+                <td><p>The device name of the disk to detach. Make a get()
+request on the instance to view currently attached disks and device names.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L368">at line 368</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Instance.html"><abbr title="Google\Service\Compute\Instance">Instance</abbr></a>
+    <strong>get</strong>(string $project, string $zone, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the specified Instance resource. (instances.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance resource to return.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Instance.html"><abbr title="Google\Service\Compute\Instance">Instance</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEffectiveFirewalls">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L387">at line 387</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/InstancesGetEffectiveFirewallsResponse.html"><abbr title="Google\Service\Compute\InstancesGetEffectiveFirewallsResponse">InstancesGetEffectiveFirewallsResponse</abbr></a>
+    <strong>getEffectiveFirewalls</strong>(string $project, string $zone, string $instance, string $networkInterface, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns effective firewalls applied to an interface of the instance.</p></p>                <p>(instances.getEffectiveFirewalls)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$networkInterface</td>
+                <td><p>The name of the network interface to get the
+effective firewalls.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/InstancesGetEffectiveFirewallsResponse.html"><abbr title="Google\Service\Compute\InstancesGetEffectiveFirewallsResponse">InstancesGetEffectiveFirewallsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGuestAttributes">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L408">at line 408</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/GuestAttributes.html"><abbr title="Google\Service\Compute\GuestAttributes">GuestAttributes</abbr></a>
+    <strong>getGuestAttributes</strong>(string $project, string $zone, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the specified guest attributes entry. (instances.getGuestAttributes)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/GuestAttributes.html"><abbr title="Google\Service\Compute\GuestAttributes">GuestAttributes</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L427">at line 427</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Policy.html"><abbr title="Google\Service\Compute\Policy">Policy</abbr></a>
+    <strong>getIamPolicy</strong>(string $project, string $zone, string $resource, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the access control policy for a resource. May be empty if no such policy
+or resource exists. (instances.getIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>Name or id of the resource for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Policy.html"><abbr title="Google\Service\Compute\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getScreenshot">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L443">at line 443</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Screenshot.html"><abbr title="Google\Service\Compute\Screenshot">Screenshot</abbr></a>
+    <strong>getScreenshot</strong>(string $project, string $zone, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the screenshot from the specified instance. (instances.getScreenshot)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Screenshot.html"><abbr title="Google\Service\Compute\Screenshot">Screenshot</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSerialPortOutput">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L474">at line 474</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/SerialPortOutput.html"><abbr title="Google\Service\Compute\SerialPortOutput">SerialPortOutput</abbr></a>
+    <strong>getSerialPortOutput</strong>(string $project, string $zone, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the last 1 MB of serial port output from the specified instance.</p></p>                <p>(instances.getSerialPortOutput)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/SerialPortOutput.html"><abbr title="Google\Service\Compute\SerialPortOutput">SerialPortOutput</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getShieldedInstanceIdentity">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L491">at line 491</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/ShieldedInstanceIdentity.html"><abbr title="Google\Service\Compute\ShieldedInstanceIdentity">ShieldedInstanceIdentity</abbr></a>
+    <strong>getShieldedInstanceIdentity</strong>(string $project, string $zone, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the Shielded Instance Identity of an instance
+(instances.getShieldedInstanceIdentity)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name or id of the instance scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/ShieldedInstanceIdentity.html"><abbr title="Google\Service\Compute\ShieldedInstanceIdentity">ShieldedInstanceIdentity</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L533">at line 533</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>insert</strong>(string $project, string $zone, <a href="../../../../Google/Service/Compute/Instance.html"><abbr title="Google\Service\Compute\Instance">Instance</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates an instance resource in the specified project using the data included
+in the request. (instances.insert)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/Instance.html"><abbr title="Google\Service\Compute\Instance">Instance</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L603">at line 603</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/InstanceList.html"><abbr title="Google\Service\Compute\InstanceList">InstanceList</abbr></a>
+    <strong>listInstances</strong>(string $project, string $zone, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves the list of instances contained within the specified zone.</p></p>                <p>(instances.listInstances)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/InstanceList.html"><abbr title="Google\Service\Compute\InstanceList">InstanceList</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listReferrers">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L678">at line 678</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/InstanceListReferrers.html"><abbr title="Google\Service\Compute\InstanceListReferrers">InstanceListReferrers</abbr></a>
+    <strong>listReferrers</strong>(string $project, string $zone, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves a list of resources that refer to the VM instance specified in the
+request. For example, if the VM instance is part of a managed or unmanaged
+instance group, the referrers list includes the instance group. For more
+information, read Viewing referrers to VM instances.</p></p>                <p>(instances.listReferrers)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the target instance scoping this request, or
+'-' if the request should span over all instances in the container.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/InstanceListReferrers.html"><abbr title="Google\Service\Compute\InstanceListReferrers">InstanceListReferrers</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_performMaintenance">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L705">at line 705</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>performMaintenance</strong>(string $project, string $zone, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Perform a manual maintenance on the instance. (instances.performMaintenance)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeResourcePolicies">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L734">at line 734</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>removeResourcePolicies</strong>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesRemoveResourcePoliciesRequest.html"><abbr title="Google\Service\Compute\InstancesRemoveResourcePoliciesRequest">InstancesRemoveResourcePoliciesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Removes resource policies from an instance.</p></p>                <p>(instances.removeResourcePolicies)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>The instance name for this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/InstancesRemoveResourcePoliciesRequest.html"><abbr title="Google\Service\Compute\InstancesRemoveResourcePoliciesRequest">InstancesRemoveResourcePoliciesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reset">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L763">at line 763</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>reset</strong>(string $project, string $zone, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Performs a reset on the instance. This is a hard reset. The VM does not do a
+graceful shutdown. For more information, see Resetting an instance.</p></p>                <p>(instances.reset)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resume">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L791">at line 791</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>resume</strong>(string $project, string $zone, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Resumes an instance that was suspended using the instances().suspend method.</p></p>                <p>(instances.resume)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance resource to resume.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendDiagnosticInterrupt">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L807">at line 807</a></div>
+        <code>                    
+    <strong>sendDiagnosticInterrupt</strong>(string $project, string $zone, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sends diagnostic interrupt to the instance.</p></p>                <p>(instances.sendDiagnosticInterrupt)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDeletionProtection">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L836">at line 836</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>setDeletionProtection</strong>(string $project, string $zone, string $resource, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets deletion protection on the instance. (instances.setDeletionProtection)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>Name or id of the resource for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDiskAutoDelete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L868">at line 868</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>setDiskAutoDelete</strong>(string $project, string $zone, string $instance, bool $autoDelete, string $deviceName, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the auto-delete flag for a disk attached to an instance.</p></p>                <p>(instances.setDiskAutoDelete)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>The instance name for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$autoDelete</td>
+                <td><p>Whether to auto-delete the disk when the instance is
+deleted.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$deviceName</td>
+                <td><p>The device name of the disk to modify. Make a get()
+request on the instance to view currently attached disks and device names.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L886">at line 886</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Policy.html"><abbr title="Google\Service\Compute\Policy">Policy</abbr></a>
+    <strong>setIamPolicy</strong>(string $project, string $zone, string $resource, <a href="../../../../Google/Service/Compute/ZoneSetPolicyRequest.html"><abbr title="Google\Service\Compute\ZoneSetPolicyRequest">ZoneSetPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the access control policy on the specified resource. Replaces any
+existing policy. (instances.setIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>Name or id of the resource for this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/ZoneSetPolicyRequest.html"><abbr title="Google\Service\Compute\ZoneSetPolicyRequest">ZoneSetPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Policy.html"><abbr title="Google\Service\Compute\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLabels">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L915">at line 915</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>setLabels</strong>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesSetLabelsRequest.html"><abbr title="Google\Service\Compute\InstancesSetLabelsRequest">InstancesSetLabelsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets labels on an instance. To learn more about labels, read the Labeling
+Resources documentation. (instances.setLabels)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/InstancesSetLabelsRequest.html"><abbr title="Google\Service\Compute\InstancesSetLabelsRequest">InstancesSetLabelsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMachineResources">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L944">at line 944</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>setMachineResources</strong>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesSetMachineResourcesRequest.html"><abbr title="Google\Service\Compute\InstancesSetMachineResourcesRequest">InstancesSetMachineResourcesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Changes the number and/or type of accelerator for a stopped instance to the
+values specified in the request. (instances.setMachineResources)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/InstancesSetMachineResourcesRequest.html"><abbr title="Google\Service\Compute\InstancesSetMachineResourcesRequest">InstancesSetMachineResourcesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMachineType">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L973">at line 973</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>setMachineType</strong>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesSetMachineTypeRequest.html"><abbr title="Google\Service\Compute\InstancesSetMachineTypeRequest">InstancesSetMachineTypeRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Changes the machine type for a stopped instance to the machine type specified
+in the request. (instances.setMachineType)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/InstancesSetMachineTypeRequest.html"><abbr title="Google\Service\Compute\InstancesSetMachineTypeRequest">InstancesSetMachineTypeRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMetadata">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L1002">at line 1002</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>setMetadata</strong>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/Metadata.html"><abbr title="Google\Service\Compute\Metadata">Metadata</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets metadata for the specified instance to the data included in the request.</p></p>                <p>(instances.setMetadata)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/Metadata.html"><abbr title="Google\Service\Compute\Metadata">Metadata</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMinCpuPlatform">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L1032">at line 1032</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>setMinCpuPlatform</strong>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesSetMinCpuPlatformRequest.html"><abbr title="Google\Service\Compute\InstancesSetMinCpuPlatformRequest">InstancesSetMinCpuPlatformRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Changes the minimum CPU platform that this instance should use. This method
+can only be called on a stopped instance. For more information, read
+Specifying a Minimum CPU Platform. (instances.setMinCpuPlatform)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/InstancesSetMinCpuPlatformRequest.html"><abbr title="Google\Service\Compute\InstancesSetMinCpuPlatformRequest">InstancesSetMinCpuPlatformRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setName">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L1060">at line 1060</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>setName</strong>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesSetNameRequest.html"><abbr title="Google\Service\Compute\InstancesSetNameRequest">InstancesSetNameRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets name of an instance. (instances.setName)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>The instance name for this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/InstancesSetNameRequest.html"><abbr title="Google\Service\Compute\InstancesSetNameRequest">InstancesSetNameRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setScheduling">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L1092">at line 1092</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>setScheduling</strong>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/Scheduling.html"><abbr title="Google\Service\Compute\Scheduling">Scheduling</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets an instance's scheduling options. You can only call this method on a
+stopped instance, that is, a VM instance that is in a <code>TERMINATED</code> state. See
+Instance Life Cycle for more information on the possible instance states. For
+more information about setting scheduling options for a VM, see Set VM host
+maintenance policy. (instances.setScheduling)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Instance name for this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/Scheduling.html"><abbr title="Google\Service\Compute\Scheduling">Scheduling</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSecurityPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L1123">at line 1123</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>setSecurityPolicy</strong>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesSetSecurityPolicyRequest.html"><abbr title="Google\Service\Compute\InstancesSetSecurityPolicyRequest">InstancesSetSecurityPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the Google Cloud Armor security policy for the specified instance. For
+more information, see Google Cloud Armor Overview
+(instances.setSecurityPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>Name of the zone scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the Instance resource to which the security
+policy should be set. The name should conform to RFC1035.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/InstancesSetSecurityPolicyRequest.html"><abbr title="Google\Service\Compute\InstancesSetSecurityPolicyRequest">InstancesSetSecurityPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setServiceAccount">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L1153">at line 1153</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>setServiceAccount</strong>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesSetServiceAccountRequest.html"><abbr title="Google\Service\Compute\InstancesSetServiceAccountRequest">InstancesSetServiceAccountRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the service account on the instance. For more information, read Changing
+the service account and access scopes for an instance.</p></p>                <p>(instances.setServiceAccount)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance resource to start.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/InstancesSetServiceAccountRequest.html"><abbr title="Google\Service\Compute\InstancesSetServiceAccountRequest">InstancesSetServiceAccountRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setShieldedInstanceIntegrityPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L1184">at line 1184</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>setShieldedInstanceIntegrityPolicy</strong>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/ShieldedInstanceIntegrityPolicy.html"><abbr title="Google\Service\Compute\ShieldedInstanceIntegrityPolicy">ShieldedInstanceIntegrityPolicy</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the Shielded Instance integrity policy for an instance. You can only use
+this method on a running instance. This method supports PATCH semantics and
+uses the JSON merge patch format and processing rules.</p></p>                <p>(instances.setShieldedInstanceIntegrityPolicy)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name or id of the instance scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/ShieldedInstanceIntegrityPolicy.html"><abbr title="Google\Service\Compute\ShieldedInstanceIntegrityPolicy">ShieldedInstanceIntegrityPolicy</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTags">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L1213">at line 1213</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>setTags</strong>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/Tags.html"><abbr title="Google\Service\Compute\Tags">Tags</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets network tags for the specified instance to the data included in the
+request. (instances.setTags)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/Tags.html"><abbr title="Google\Service\Compute\Tags">Tags</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_simulateMaintenanceEvent">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L1243">at line 1243</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>simulateMaintenanceEvent</strong>(string $project, string $zone, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Simulates a host maintenance event on a VM. For more information, see
+Simulate a host maintenance event. (instances.simulateMaintenanceEvent)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_start">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L1271">at line 1271</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>start</strong>(string $project, string $zone, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Starts an instance that was stopped using the instances().stop method. For
+more information, see Restart an instance. (instances.start)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance resource to start.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startWithEncryptionKey">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L1300">at line 1300</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>startWithEncryptionKey</strong>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/InstancesStartWithEncryptionKeyRequest.html"><abbr title="Google\Service\Compute\InstancesStartWithEncryptionKeyRequest">InstancesStartWithEncryptionKeyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Starts an instance that was stopped using the instances().stop method. For
+more information, see Restart an instance. (instances.startWithEncryptionKey)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance resource to start.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/InstancesStartWithEncryptionKeyRequest.html"><abbr title="Google\Service\Compute\InstancesStartWithEncryptionKeyRequest">InstancesStartWithEncryptionKeyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stop">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L1336">at line 1336</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>stop</strong>(string $project, string $zone, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Stops a running instance, shutting it down cleanly, and allows you to restart
+the instance at a later time. Stopped instances do not incur VM usage charges
+while they are stopped. However, resources that the VM is using, such as
+persistent disks and static IP addresses, will continue to be charged until
+they are deleted. For more information, see Stopping an instance.</p></p>                <p>(instances.stop)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance resource to stop.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_suspend">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L1373">at line 1373</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>suspend</strong>(string $project, string $zone, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>This method suspends a running instance, saving its state to persistent
+storage, and allows you to resume the instance at a later time. Suspended
+instances have no compute costs (cores or RAM), and incur only storage
+charges for the saved VM memory and localSSD data. Any charged resources the
+virtual machine was using, such as persistent disks and static IP addresses,
+will continue to be charged while the instance is suspended. For more
+information, see Suspending and resuming an instance. (instances.suspend)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance resource to suspend.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testIamPermissions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L1391">at line 1391</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/TestPermissionsResponse.html"><abbr title="Google\Service\Compute\TestPermissionsResponse">TestPermissionsResponse</abbr></a>
+    <strong>testIamPermissions</strong>(string $project, string $zone, string $resource, <a href="../../../../Google/Service/Compute/TestPermissionsRequest.html"><abbr title="Google\Service\Compute\TestPermissionsRequest">TestPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns permissions that a caller has on the specified resource.</p></p>                <p>(instances.testIamPermissions)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>Name or id of the resource for this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/TestPermissionsRequest.html"><abbr title="Google\Service\Compute\TestPermissionsRequest">TestPermissionsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/TestPermissionsResponse.html"><abbr title="Google\Service\Compute\TestPermissionsResponse">TestPermissionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L1431">at line 1431</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>update</strong>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/Instance.html"><abbr title="Google\Service\Compute\Instance">Instance</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates an instance only if the necessary resources are available. This
+method can update only a specific set of instance properties. See Updating a
+running instance for a list of updatable instance properties.</p></p>                <p>(instances.update)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance resource to update.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/Instance.html"><abbr title="Google\Service\Compute\Instance">Instance</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateAccessConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L1464">at line 1464</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>updateAccessConfig</strong>(string $project, string $zone, string $instance, string $networkInterface, <a href="../../../../Google/Service/Compute/AccessConfig.html"><abbr title="Google\Service\Compute\AccessConfig">AccessConfig</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the specified access config from an instance's network interface with
+the data included in the request. This method supports PATCH semantics and
+uses the JSON merge patch format and processing rules.</p></p>                <p>(instances.updateAccessConfig)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>The instance name for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$networkInterface</td>
+                <td><p>The name of the network interface where the
+access config is attached.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/AccessConfig.html"><abbr title="Google\Service\Compute\AccessConfig">AccessConfig</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateDisplayDevice">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L1494">at line 1494</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>updateDisplayDevice</strong>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/DisplayDevice.html"><abbr title="Google\Service\Compute\DisplayDevice">DisplayDevice</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the Display config for a VM instance. You can only use this method on
+a stopped VM instance. This method supports PATCH semantics and uses the JSON
+merge patch format and processing rules. (instances.updateDisplayDevice)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name of the instance scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/DisplayDevice.html"><abbr title="Google\Service\Compute\DisplayDevice">DisplayDevice</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateNetworkInterface">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L1528">at line 1528</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>updateNetworkInterface</strong>(string $project, string $zone, string $instance, string $networkInterface, <a href="../../../../Google/Service/Compute/NetworkInterface.html"><abbr title="Google\Service\Compute\NetworkInterface">NetworkInterface</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates an instance's network interface. This method can only update an
+interface's alias IP range and attached network. See Modifying alias IP
+ranges for an existing instance for instructions on changing alias IP ranges.</p></p>                <p><p>See Migrating a VM between networks for instructions on migrating an
+interface. This method follows PATCH semantics.
+(instances.updateNetworkInterface)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>The instance name for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$networkInterface</td>
+                <td><p>The name of the network interface to update.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/NetworkInterface.html"><abbr title="Google\Service\Compute\NetworkInterface">NetworkInterface</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateShieldedInstanceConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/Instances.php#L1559">at line 1559</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>updateShieldedInstanceConfig</strong>(string $project, string $zone, string $instance, <a href="../../../../Google/Service/Compute/ShieldedInstanceConfig.html"><abbr title="Google\Service\Compute\ShieldedInstanceConfig">ShieldedInstanceConfig</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the Shielded Instance config for an instance. You can only use this
+method on a stopped instance. This method supports PATCH semantics and uses
+the JSON merge patch format and processing rules.</p></p>                <p>(instances.updateShieldedInstanceConfig)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$zone</td>
+                <td><p>The name of the zone for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Name or id of the instance scoping this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/ShieldedInstanceConfig.html"><abbr title="Google\Service\Compute\ShieldedInstanceConfig">ShieldedInstanceConfig</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

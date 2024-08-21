@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Compute\Resource\RegionDisks | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Compute_Resource_RegionDisks" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Compute.ns.html">Compute</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Compute/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>RegionDisks</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>RegionDisks    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>RegionDisks</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/RegionDisks.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;regionDisks&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $computeService = new Google\Service\Compute(...);
+ $regionDisks = $computeService-&gt;regionDisks;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addResourcePolicies">addResourcePolicies</a>(string $project, string $region, string $disk, <a href="../../../../Google/Service/Compute/RegionDisksAddResourcePoliciesRequest.html"><abbr title="Google\Service\Compute\RegionDisksAddResourcePoliciesRequest">RegionDisksAddResourcePoliciesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Adds existing resource policies to a regional disk. You can only add one
+policy which will be applied to this disk for scheduling snapshot creation.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_bulkInsert">bulkInsert</a>(string $project, string $region, <a href="../../../../Google/Service/Compute/BulkInsertDiskResource.html"><abbr title="Google\Service\Compute\BulkInsertDiskResource">BulkInsertDiskResource</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Bulk create a set of disks. (regionDisks.bulkInsert)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createSnapshot">createSnapshot</a>(string $project, string $region, string $disk, <a href="../../../../Google/Service/Compute/Snapshot.html"><abbr title="Google\Service\Compute\Snapshot">Snapshot</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a snapshot of a specified persistent disk. For regular snapshot
+creation, consider using snapshots.insert instead, as that method supports
+more features, such as creating snapshots in a project different from the
+source disk project. (regionDisks.createSnapshot)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $project, string $region, string $disk, array $optParams = [])
+        
+                                            <p><p>Deletes the specified regional persistent disk. Deleting a regional disk
+removes all the replicas of its data permanently and is irreversible.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Disk.html"><abbr title="Google\Service\Compute\Disk">Disk</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $project, string $region, string $disk, array $optParams = [])
+        
+                                            <p><p>Returns a specified regional persistent disk. (regionDisks.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Policy.html"><abbr title="Google\Service\Compute\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIamPolicy">getIamPolicy</a>(string $project, string $region, string $resource, array $optParams = [])
+        
+                                            <p><p>Gets the access control policy for a resource. May be empty if no such policy
+or resource exists. (regionDisks.getIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_insert">insert</a>(string $project, string $region, <a href="../../../../Google/Service/Compute/Disk.html"><abbr title="Google\Service\Compute\Disk">Disk</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a persistent regional disk in the specified project using the data
+included in the request. (regionDisks.insert)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/DiskList.html"><abbr title="Google\Service\Compute\DiskList">DiskList</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listRegionDisks">listRegionDisks</a>(string $project, string $region, array $optParams = [])
+        
+                                            <p><p>Retrieves the list of persistent disks contained within the specified region.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_removeResourcePolicies">removeResourcePolicies</a>(string $project, string $region, string $disk, <a href="../../../../Google/Service/Compute/RegionDisksRemoveResourcePoliciesRequest.html"><abbr title="Google\Service\Compute\RegionDisksRemoveResourcePoliciesRequest">RegionDisksRemoveResourcePoliciesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Removes resource policies from a regional disk.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_resize">resize</a>(string $project, string $region, string $disk, <a href="../../../../Google/Service/Compute/RegionDisksResizeRequest.html"><abbr title="Google\Service\Compute\RegionDisksResizeRequest">RegionDisksResizeRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Resizes the specified regional persistent disk. (regionDisks.resize)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Policy.html"><abbr title="Google\Service\Compute\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setIamPolicy">setIamPolicy</a>(string $project, string $region, string $resource, <a href="../../../../Google/Service/Compute/RegionSetPolicyRequest.html"><abbr title="Google\Service\Compute\RegionSetPolicyRequest">RegionSetPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the access control policy on the specified resource. Replaces any
+existing policy. (regionDisks.setIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setLabels">setLabels</a>(string $project, string $region, string $resource, <a href="../../../../Google/Service/Compute/RegionSetLabelsRequest.html"><abbr title="Google\Service\Compute\RegionSetLabelsRequest">RegionSetLabelsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the labels on the target regional disk. (regionDisks.setLabels)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_startAsyncReplication">startAsyncReplication</a>(string $project, string $region, string $disk, <a href="../../../../Google/Service/Compute/RegionDisksStartAsyncReplicationRequest.html"><abbr title="Google\Service\Compute\RegionDisksStartAsyncReplicationRequest">RegionDisksStartAsyncReplicationRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Starts asynchronous replication. Must be invoked on the primary disk.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_stopAsyncReplication">stopAsyncReplication</a>(string $project, string $region, string $disk, array $optParams = [])
+        
+                                            <p><p>Stops asynchronous replication. Can be invoked either on the primary or on
+the secondary disk. (regionDisks.stopAsyncReplication)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_stopGroupAsyncReplication">stopGroupAsyncReplication</a>(string $project, string $region, <a href="../../../../Google/Service/Compute/DisksStopGroupAsyncReplicationResource.html"><abbr title="Google\Service\Compute\DisksStopGroupAsyncReplicationResource">DisksStopGroupAsyncReplicationResource</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Stops asynchronous replication for a consistency group of disks. Can be
+invoked either in the primary or secondary scope.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/TestPermissionsResponse.html"><abbr title="Google\Service\Compute\TestPermissionsResponse">TestPermissionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testIamPermissions">testIamPermissions</a>(string $project, string $region, string $resource, <a href="../../../../Google/Service/Compute/TestPermissionsRequest.html"><abbr title="Google\Service\Compute\TestPermissionsRequest">TestPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Returns permissions that a caller has on the specified resource.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $project, string $region, string $disk, <a href="../../../../Google/Service/Compute/Disk.html"><abbr title="Google\Service\Compute\Disk">Disk</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Update the specified disk with the data included in the request. Update is
+performed only on selected fields included as part of update-mask. Only the
+following fields can be modified: user_license. (regionDisks.update)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_addResourcePolicies">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/RegionDisks.php#L70">at line 70</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>addResourcePolicies</strong>(string $project, string $region, string $disk, <a href="../../../../Google/Service/Compute/RegionDisksAddResourcePoliciesRequest.html"><abbr title="Google\Service\Compute\RegionDisksAddResourcePoliciesRequest">RegionDisksAddResourcePoliciesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Adds existing resource policies to a regional disk. You can only add one
+policy which will be applied to this disk for scheduling snapshot creation.</p></p>                <p>(regionDisks.addResourcePolicies)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>The name of the region for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$disk</td>
+                <td><p>The disk name for this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/RegionDisksAddResourcePoliciesRequest.html"><abbr title="Google\Service\Compute\RegionDisksAddResourcePoliciesRequest">RegionDisksAddResourcePoliciesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bulkInsert">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/RegionDisks.php#L97">at line 97</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>bulkInsert</strong>(string $project, string $region, <a href="../../../../Google/Service/Compute/BulkInsertDiskResource.html"><abbr title="Google\Service\Compute\BulkInsertDiskResource">BulkInsertDiskResource</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Bulk create a set of disks. (regionDisks.bulkInsert)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>The name of the region for this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/BulkInsertDiskResource.html"><abbr title="Google\Service\Compute\BulkInsertDiskResource">BulkInsertDiskResource</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createSnapshot">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/RegionDisks.php#L128">at line 128</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>createSnapshot</strong>(string $project, string $region, string $disk, <a href="../../../../Google/Service/Compute/Snapshot.html"><abbr title="Google\Service\Compute\Snapshot">Snapshot</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a snapshot of a specified persistent disk. For regular snapshot
+creation, consider using snapshots.insert instead, as that method supports
+more features, such as creating snapshots in a project different from the
+source disk project. (regionDisks.createSnapshot)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$disk</td>
+                <td><p>Name of the regional persistent disk to snapshot.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/Snapshot.html"><abbr title="Google\Service\Compute\Snapshot">Snapshot</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/RegionDisks.php#L158">at line 158</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>delete</strong>(string $project, string $region, string $disk, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes the specified regional persistent disk. Deleting a regional disk
+removes all the replicas of its data permanently and is irreversible.</p></p>                <p><p>However, deleting a disk does not delete any snapshots previously made from
+the disk. You must separately delete snapshots. (regionDisks.delete)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$disk</td>
+                <td><p>Name of the regional persistent disk to delete.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/RegionDisks.php#L174">at line 174</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Disk.html"><abbr title="Google\Service\Compute\Disk">Disk</abbr></a>
+    <strong>get</strong>(string $project, string $region, string $disk, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns a specified regional persistent disk. (regionDisks.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$disk</td>
+                <td><p>Name of the regional persistent disk to return.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Disk.html"><abbr title="Google\Service\Compute\Disk">Disk</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/RegionDisks.php#L193">at line 193</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Policy.html"><abbr title="Google\Service\Compute\Policy">Policy</abbr></a>
+    <strong>getIamPolicy</strong>(string $project, string $region, string $resource, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the access control policy for a resource. May be empty if no such policy
+or resource exists. (regionDisks.getIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>The name of the region for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>Name or id of the resource for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Policy.html"><abbr title="Google\Service\Compute\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/RegionDisks.php#L223">at line 223</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>insert</strong>(string $project, string $region, <a href="../../../../Google/Service/Compute/Disk.html"><abbr title="Google\Service\Compute\Disk">Disk</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a persistent regional disk in the specified project using the data
+included in the request. (regionDisks.insert)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region for this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/Disk.html"><abbr title="Google\Service\Compute\Disk">Disk</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listRegionDisks">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/RegionDisks.php#L293">at line 293</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/DiskList.html"><abbr title="Google\Service\Compute\DiskList">DiskList</abbr></a>
+    <strong>listRegionDisks</strong>(string $project, string $region, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves the list of persistent disks contained within the specified region.</p></p>                <p>(regionDisks.listRegionDisks)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/DiskList.html"><abbr title="Google\Service\Compute\DiskList">DiskList</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeResourcePolicies">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/RegionDisks.php#L322">at line 322</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>removeResourcePolicies</strong>(string $project, string $region, string $disk, <a href="../../../../Google/Service/Compute/RegionDisksRemoveResourcePoliciesRequest.html"><abbr title="Google\Service\Compute\RegionDisksRemoveResourcePoliciesRequest">RegionDisksRemoveResourcePoliciesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Removes resource policies from a regional disk.</p></p>                <p>(regionDisks.removeResourcePolicies)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>The name of the region for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$disk</td>
+                <td><p>The disk name for this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/RegionDisksRemoveResourcePoliciesRequest.html"><abbr title="Google\Service\Compute\RegionDisksRemoveResourcePoliciesRequest">RegionDisksRemoveResourcePoliciesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resize">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/RegionDisks.php#L350">at line 350</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>resize</strong>(string $project, string $region, string $disk, <a href="../../../../Google/Service/Compute/RegionDisksResizeRequest.html"><abbr title="Google\Service\Compute\RegionDisksResizeRequest">RegionDisksResizeRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Resizes the specified regional persistent disk. (regionDisks.resize)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>The project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>Name of the region for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$disk</td>
+                <td><p>Name of the regional persistent disk.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/RegionDisksResizeRequest.html"><abbr title="Google\Service\Compute\RegionDisksResizeRequest">RegionDisksResizeRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/RegionDisks.php#L368">at line 368</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Policy.html"><abbr title="Google\Service\Compute\Policy">Policy</abbr></a>
+    <strong>setIamPolicy</strong>(string $project, string $region, string $resource, <a href="../../../../Google/Service/Compute/RegionSetPolicyRequest.html"><abbr title="Google\Service\Compute\RegionSetPolicyRequest">RegionSetPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the access control policy on the specified resource. Replaces any
+existing policy. (regionDisks.setIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>The name of the region for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>Name or id of the resource for this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/RegionSetPolicyRequest.html"><abbr title="Google\Service\Compute\RegionSetPolicyRequest">RegionSetPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Policy.html"><abbr title="Google\Service\Compute\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLabels">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/RegionDisks.php#L396">at line 396</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>setLabels</strong>(string $project, string $region, string $resource, <a href="../../../../Google/Service/Compute/RegionSetLabelsRequest.html"><abbr title="Google\Service\Compute\RegionSetLabelsRequest">RegionSetLabelsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the labels on the target regional disk. (regionDisks.setLabels)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>The region for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>Name or id of the resource for this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/RegionSetLabelsRequest.html"><abbr title="Google\Service\Compute\RegionSetLabelsRequest">RegionSetLabelsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startAsyncReplication">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/RegionDisks.php#L425">at line 425</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>startAsyncReplication</strong>(string $project, string $region, string $disk, <a href="../../../../Google/Service/Compute/RegionDisksStartAsyncReplicationRequest.html"><abbr title="Google\Service\Compute\RegionDisksStartAsyncReplicationRequest">RegionDisksStartAsyncReplicationRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Starts asynchronous replication. Must be invoked on the primary disk.</p></p>                <p>(regionDisks.startAsyncReplication)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>The name of the region for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$disk</td>
+                <td><p>The name of the persistent disk.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/RegionDisksStartAsyncReplicationRequest.html"><abbr title="Google\Service\Compute\RegionDisksStartAsyncReplicationRequest">RegionDisksStartAsyncReplicationRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stopAsyncReplication">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/RegionDisks.php#L453">at line 453</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>stopAsyncReplication</strong>(string $project, string $region, string $disk, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Stops asynchronous replication. Can be invoked either on the primary or on
+the secondary disk. (regionDisks.stopAsyncReplication)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>The name of the region for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$disk</td>
+                <td><p>The name of the persistent disk.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stopGroupAsyncReplication">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/RegionDisks.php#L483">at line 483</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>stopGroupAsyncReplication</strong>(string $project, string $region, <a href="../../../../Google/Service/Compute/DisksStopGroupAsyncReplicationResource.html"><abbr title="Google\Service\Compute\DisksStopGroupAsyncReplicationResource">DisksStopGroupAsyncReplicationResource</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Stops asynchronous replication for a consistency group of disks. Can be
+invoked either in the primary or secondary scope.</p></p>                <p>(regionDisks.stopGroupAsyncReplication)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>The name of the region for this request. This must be
+the region of the primary or secondary disks in the consistency group.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/DisksStopGroupAsyncReplicationResource.html"><abbr title="Google\Service\Compute\DisksStopGroupAsyncReplicationResource">DisksStopGroupAsyncReplicationResource</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testIamPermissions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/RegionDisks.php#L501">at line 501</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/TestPermissionsResponse.html"><abbr title="Google\Service\Compute\TestPermissionsResponse">TestPermissionsResponse</abbr></a>
+    <strong>testIamPermissions</strong>(string $project, string $region, string $resource, <a href="../../../../Google/Service/Compute/TestPermissionsRequest.html"><abbr title="Google\Service\Compute\TestPermissionsRequest">TestPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns permissions that a caller has on the specified resource.</p></p>                <p>(regionDisks.testIamPermissions)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>The name of the region for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>Name or id of the resource for this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/TestPermissionsRequest.html"><abbr title="Google\Service\Compute\TestPermissionsRequest">TestPermissionsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/TestPermissionsResponse.html"><abbr title="Google\Service\Compute\TestPermissionsResponse">TestPermissionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Compute/Resource/RegionDisks.php#L534">at line 534</a></div>
+        <code>                    <a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a>
+    <strong>update</strong>(string $project, string $region, string $disk, <a href="../../../../Google/Service/Compute/Disk.html"><abbr title="Google\Service\Compute\Disk">Disk</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Update the specified disk with the data included in the request. Update is
+performed only on selected fields included as part of update-mask. Only the
+following fields can be modified: user_license. (regionDisks.update)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$region</td>
+                <td><p>The name of the region for this request.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$disk</td>
+                <td><p>The disk name for this request.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Compute/Disk.html"><abbr title="Google\Service\Compute\Disk">Disk</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Compute/Operation.html"><abbr title="Google\Service\Compute\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Spanner\Resource\ProjectsInstancesDatabasesSessions | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Spanner_Resource_ProjectsInstancesDatabasesSessions" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Spanner.ns.html">Spanner</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Spanner/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ProjectsInstancesDatabasesSessions</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsInstancesDatabasesSessions    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsInstancesDatabasesSessions</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstancesDatabasesSessions.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;sessions&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $spannerService = new Google\Service\Spanner(...);
+ $sessions = $spannerService-&gt;projects_instances_databases_sessions;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/BatchCreateSessionsResponse.html"><abbr title="Google\Service\Spanner\BatchCreateSessionsResponse">BatchCreateSessionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchCreate">batchCreate</a>(string $database, <a href="../../../../Google/Service/Spanner/BatchCreateSessionsRequest.html"><abbr title="Google\Service\Spanner\BatchCreateSessionsRequest">BatchCreateSessionsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates multiple new sessions. This API can be used to initialize a session
+cache on the clients. See <a href="https://goo.gl/TgSFN2">https://goo.gl/TgSFN2</a> for best practices on session
+cache management. (sessions.batchCreate)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/BatchWriteResponse.html"><abbr title="Google\Service\Spanner\BatchWriteResponse">BatchWriteResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchWrite">batchWrite</a>(string $session, <a href="../../../../Google/Service/Spanner/BatchWriteRequest.html"><abbr title="Google\Service\Spanner\BatchWriteRequest">BatchWriteRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Batches the supplied mutation groups in a collection of efficient
+transactions. All mutations in a group are committed atomically. However,
+mutations across groups can be committed non-atomically in an unspecified
+order and thus, they must be independent of each other. Partial failure is
+possible, i.e., some groups may have been committed successfully, while some
+may have failed. The results of individual batches are streamed into the
+response as the batches are applied. BatchWrite requests are not replay
+protected, meaning that each mutation group may be applied more than once.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/Transaction.html"><abbr title="Google\Service\Spanner\Transaction">Transaction</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_beginTransaction">beginTransaction</a>(string $session, <a href="../../../../Google/Service/Spanner/BeginTransactionRequest.html"><abbr title="Google\Service\Spanner\BeginTransactionRequest">BeginTransactionRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Begins a new transaction. This step can often be skipped: Read, ExecuteSql
+and Commit can begin a new transaction as a side-effect.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/CommitResponse.html"><abbr title="Google\Service\Spanner\CommitResponse">CommitResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_commit">commit</a>(string $session, <a href="../../../../Google/Service/Spanner/CommitRequest.html"><abbr title="Google\Service\Spanner\CommitRequest">CommitRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Commits a transaction. The request includes the mutations to be applied to
+rows in the database. <code>Commit</code> might return an <code>ABORTED</code> error. This can
+occur at any time; commonly, the cause is conflicts with concurrent
+transactions. However, it can also happen for a variety of other reasons. If
+<code>Commit</code> returns <code>ABORTED</code>, the caller should re-attempt the transaction from
+the beginning, re-using the same session. On very rare occasions, <code>Commit</code>
+might return <code>UNKNOWN</code>. This can happen, for example, if the client job
+experiences a 1+ hour networking failure. At that point, Cloud Spanner has
+lost track of the transaction outcome and we recommend that you perform
+another read from the database to see the state of things as they are now.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/Session.html"><abbr title="Google\Service\Spanner\Session">Session</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $database, <a href="../../../../Google/Service/Spanner/CreateSessionRequest.html"><abbr title="Google\Service\Spanner\CreateSessionRequest">CreateSessionRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a new session. A session can be used to perform transactions that
+read and/or modify data in a Cloud Spanner database. Sessions are meant to be
+reused for many consecutive transactions. Sessions can only execute one
+transaction at a time. To execute multiple concurrent read-write/write-only
+transactions, create multiple sessions. Note that standalone reads and
+queries use a transaction internally, and count toward the one transaction
+limit. Active sessions use additional server resources, so it is a good idea
+to delete idle and unneeded sessions. Aside from explicit deletes, Cloud
+Spanner may delete sessions for which no operations are sent for more than an
+hour. If a session is deleted, requests to it return <code>NOT_FOUND</code>. Idle
+sessions can be kept alive by sending a trivial SQL query periodically, e.g.,
+<code>"SELECT 1"</code>. (sessions.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/SpannerEmpty.html"><abbr title="Google\Service\Spanner\SpannerEmpty">SpannerEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Ends a session, releasing server resources associated with it. This will
+asynchronously trigger cancellation of any operations that are running with
+this session. (sessions.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/ExecuteBatchDmlResponse.html"><abbr title="Google\Service\Spanner\ExecuteBatchDmlResponse">ExecuteBatchDmlResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_executeBatchDml">executeBatchDml</a>(string $session, <a href="../../../../Google/Service/Spanner/ExecuteBatchDmlRequest.html"><abbr title="Google\Service\Spanner\ExecuteBatchDmlRequest">ExecuteBatchDmlRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Executes a batch of SQL DML statements. This method allows many statements to
+be run with lower latency than submitting them sequentially with ExecuteSql.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/ResultSet.html"><abbr title="Google\Service\Spanner\ResultSet">ResultSet</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_executeSql">executeSql</a>(string $session, <a href="../../../../Google/Service/Spanner/ExecuteSqlRequest.html"><abbr title="Google\Service\Spanner\ExecuteSqlRequest">ExecuteSqlRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Executes an SQL statement, returning all results in a single reply. This
+method cannot be used to return a result set larger than 10 MiB; if the query
+yields more data than that, the query fails with a <code>FAILED_PRECONDITION</code>
+error. Operations inside read-write transactions might return <code>ABORTED</code>. If
+this occurs, the application should restart the transaction from the
+beginning. See Transaction for more details. Larger result sets can be
+fetched in streaming fashion by calling ExecuteStreamingSql instead.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/PartialResultSet.html"><abbr title="Google\Service\Spanner\PartialResultSet">PartialResultSet</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_executeStreamingSql">executeStreamingSql</a>(string $session, <a href="../../../../Google/Service/Spanner/ExecuteSqlRequest.html"><abbr title="Google\Service\Spanner\ExecuteSqlRequest">ExecuteSqlRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Like ExecuteSql, except returns the result set as a stream. Unlike
+ExecuteSql, there is no limit on the size of the returned result set.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/Session.html"><abbr title="Google\Service\Spanner\Session">Session</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets a session. Returns <code>NOT_FOUND</code> if the session does not exist. This is
+mainly useful for determining whether a session is still alive.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/ListSessionsResponse.html"><abbr title="Google\Service\Spanner\ListSessionsResponse">ListSessionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsInstancesDatabasesSessions">listProjectsInstancesDatabasesSessions</a>(string $database, array $optParams = [])
+        
+                                            <p><p>Lists all sessions in a given database.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/PartitionResponse.html"><abbr title="Google\Service\Spanner\PartitionResponse">PartitionResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_partitionQuery">partitionQuery</a>(string $session, <a href="../../../../Google/Service/Spanner/PartitionQueryRequest.html"><abbr title="Google\Service\Spanner\PartitionQueryRequest">PartitionQueryRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a set of partition tokens that can be used to execute a query
+operation in parallel. Each of the returned partition tokens can be used by
+ExecuteStreamingSql to specify a subset of the query result to read. The same
+session and read-only transaction must be used by the PartitionQueryRequest
+used to create the partition tokens and the ExecuteSqlRequests that use the
+partition tokens. Partition tokens become invalid when the session used to
+create them is deleted, is idle for too long, begins a new transaction, or
+becomes too old. When any of these happen, it is not possible to resume the
+query, and the whole operation must be restarted from the beginning.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/PartitionResponse.html"><abbr title="Google\Service\Spanner\PartitionResponse">PartitionResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_partitionRead">partitionRead</a>(string $session, <a href="../../../../Google/Service/Spanner/PartitionReadRequest.html"><abbr title="Google\Service\Spanner\PartitionReadRequest">PartitionReadRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a set of partition tokens that can be used to execute a read
+operation in parallel. Each of the returned partition tokens can be used by
+StreamingRead to specify a subset of the read result to read. The same
+session and read-only transaction must be used by the PartitionReadRequest
+used to create the partition tokens and the ReadRequests that use the
+partition tokens. There are no ordering guarantees on rows returned among the
+returned partition tokens, or even within each individual StreamingRead call
+issued with a partition_token. Partition tokens become invalid when the
+session used to create them is deleted, is idle for too long, begins a new
+transaction, or becomes too old. When any of these happen, it is not possible
+to resume the read, and the whole operation must be restarted from the
+beginning. (sessions.partitionRead)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/ResultSet.html"><abbr title="Google\Service\Spanner\ResultSet">ResultSet</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_read">read</a>(string $session, <a href="../../../../Google/Service/Spanner/ReadRequest.html"><abbr title="Google\Service\Spanner\ReadRequest">ReadRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Reads rows from the database using key lookups and scans, as a simple
+key/value style alternative to ExecuteSql. This method cannot be used to
+return a result set larger than 10 MiB; if the read matches more data than
+that, the read fails with a <code>FAILED_PRECONDITION</code> error. Reads inside read-
+write transactions might return <code>ABORTED</code>. If this occurs, the application
+should restart the transaction from the beginning. See Transaction for more
+details. Larger result sets can be yielded in streaming fashion by calling
+StreamingRead instead. (sessions.read)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/SpannerEmpty.html"><abbr title="Google\Service\Spanner\SpannerEmpty">SpannerEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_rollback">rollback</a>(string $session, <a href="../../../../Google/Service/Spanner/RollbackRequest.html"><abbr title="Google\Service\Spanner\RollbackRequest">RollbackRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Rolls back a transaction, releasing any locks it holds. It is a good idea to
+call this for any transaction that includes one or more Read or ExecuteSql
+requests and ultimately decides not to commit. <code>Rollback</code> returns <code>OK</code> if it
+successfully aborts the transaction, the transaction was already aborted, or
+the transaction is not found. <code>Rollback</code> never returns <code>ABORTED</code>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/PartialResultSet.html"><abbr title="Google\Service\Spanner\PartialResultSet">PartialResultSet</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_streamingRead">streamingRead</a>(string $session, <a href="../../../../Google/Service/Spanner/ReadRequest.html"><abbr title="Google\Service\Spanner\ReadRequest">ReadRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Like Read, except returns the result set as a stream. Unlike Read, there is
+no limit on the size of the returned result set. However, no individual row
+in the result set can exceed 100 MiB, and no column value can exceed 10 MiB.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_batchCreate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstancesDatabasesSessions.php#L65">at line 65</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/BatchCreateSessionsResponse.html"><abbr title="Google\Service\Spanner\BatchCreateSessionsResponse">BatchCreateSessionsResponse</abbr></a>
+    <strong>batchCreate</strong>(string $database, <a href="../../../../Google/Service/Spanner/BatchCreateSessionsRequest.html"><abbr title="Google\Service\Spanner\BatchCreateSessionsRequest">BatchCreateSessionsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates multiple new sessions. This API can be used to initialize a session
+cache on the clients. See <a href="https://goo.gl/TgSFN2">https://goo.gl/TgSFN2</a> for best practices on session
+cache management. (sessions.batchCreate)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$database</td>
+                <td><p>Required. The database in which the new sessions are
+created.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/BatchCreateSessionsRequest.html"><abbr title="Google\Service\Spanner\BatchCreateSessionsRequest">BatchCreateSessionsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/BatchCreateSessionsResponse.html"><abbr title="Google\Service\Spanner\BatchCreateSessionsResponse">BatchCreateSessionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchWrite">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstancesDatabasesSessions.php#L94">at line 94</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/BatchWriteResponse.html"><abbr title="Google\Service\Spanner\BatchWriteResponse">BatchWriteResponse</abbr></a>
+    <strong>batchWrite</strong>(string $session, <a href="../../../../Google/Service/Spanner/BatchWriteRequest.html"><abbr title="Google\Service\Spanner\BatchWriteRequest">BatchWriteRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Batches the supplied mutation groups in a collection of efficient
+transactions. All mutations in a group are committed atomically. However,
+mutations across groups can be committed non-atomically in an unspecified
+order and thus, they must be independent of each other. Partial failure is
+possible, i.e., some groups may have been committed successfully, while some
+may have failed. The results of individual batches are streamed into the
+response as the batches are applied. BatchWrite requests are not replay
+protected, meaning that each mutation group may be applied more than once.</p></p>                <p><p>Replays of non-idempotent mutations may have undesirable effects. For
+example, replays of an insert mutation may produce an already exists error or
+if you use generated or commit timestamp-based keys, it may result in
+additional rows being added to the mutation's table. We recommend structuring
+your mutation groups to be idempotent to avoid this issue.
+(sessions.batchWrite)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$session</td>
+                <td><p>Required. The session in which the batch request is to
+be run.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/BatchWriteRequest.html"><abbr title="Google\Service\Spanner\BatchWriteRequest">BatchWriteRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/BatchWriteResponse.html"><abbr title="Google\Service\Spanner\BatchWriteResponse">BatchWriteResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_beginTransaction">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstancesDatabasesSessions.php#L111">at line 111</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/Transaction.html"><abbr title="Google\Service\Spanner\Transaction">Transaction</abbr></a>
+    <strong>beginTransaction</strong>(string $session, <a href="../../../../Google/Service/Spanner/BeginTransactionRequest.html"><abbr title="Google\Service\Spanner\BeginTransactionRequest">BeginTransactionRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Begins a new transaction. This step can often be skipped: Read, ExecuteSql
+and Commit can begin a new transaction as a side-effect.</p></p>                <p>(sessions.beginTransaction)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$session</td>
+                <td><p>Required. The session in which the transaction runs.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/BeginTransactionRequest.html"><abbr title="Google\Service\Spanner\BeginTransactionRequest">BeginTransactionRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/Transaction.html"><abbr title="Google\Service\Spanner\Transaction">Transaction</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_commit">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstancesDatabasesSessions.php#L137">at line 137</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/CommitResponse.html"><abbr title="Google\Service\Spanner\CommitResponse">CommitResponse</abbr></a>
+    <strong>commit</strong>(string $session, <a href="../../../../Google/Service/Spanner/CommitRequest.html"><abbr title="Google\Service\Spanner\CommitRequest">CommitRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Commits a transaction. The request includes the mutations to be applied to
+rows in the database. <code>Commit</code> might return an <code>ABORTED</code> error. This can
+occur at any time; commonly, the cause is conflicts with concurrent
+transactions. However, it can also happen for a variety of other reasons. If
+<code>Commit</code> returns <code>ABORTED</code>, the caller should re-attempt the transaction from
+the beginning, re-using the same session. On very rare occasions, <code>Commit</code>
+might return <code>UNKNOWN</code>. This can happen, for example, if the client job
+experiences a 1+ hour networking failure. At that point, Cloud Spanner has
+lost track of the transaction outcome and we recommend that you perform
+another read from the database to see the state of things as they are now.</p></p>                <p>(sessions.commit)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$session</td>
+                <td><p>Required. The session in which the transaction to be
+committed is running.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/CommitRequest.html"><abbr title="Google\Service\Spanner\CommitRequest">CommitRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/CommitResponse.html"><abbr title="Google\Service\Spanner\CommitResponse">CommitResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstancesDatabasesSessions.php#L164">at line 164</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/Session.html"><abbr title="Google\Service\Spanner\Session">Session</abbr></a>
+    <strong>create</strong>(string $database, <a href="../../../../Google/Service/Spanner/CreateSessionRequest.html"><abbr title="Google\Service\Spanner\CreateSessionRequest">CreateSessionRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a new session. A session can be used to perform transactions that
+read and/or modify data in a Cloud Spanner database. Sessions are meant to be
+reused for many consecutive transactions. Sessions can only execute one
+transaction at a time. To execute multiple concurrent read-write/write-only
+transactions, create multiple sessions. Note that standalone reads and
+queries use a transaction internally, and count toward the one transaction
+limit. Active sessions use additional server resources, so it is a good idea
+to delete idle and unneeded sessions. Aside from explicit deletes, Cloud
+Spanner may delete sessions for which no operations are sent for more than an
+hour. If a session is deleted, requests to it return <code>NOT_FOUND</code>. Idle
+sessions can be kept alive by sending a trivial SQL query periodically, e.g.,
+<code>"SELECT 1"</code>. (sessions.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$database</td>
+                <td><p>Required. The database in which the new session is
+created.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/CreateSessionRequest.html"><abbr title="Google\Service\Spanner\CreateSessionRequest">CreateSessionRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/Session.html"><abbr title="Google\Service\Spanner\Session">Session</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstancesDatabasesSessions.php#L180">at line 180</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/SpannerEmpty.html"><abbr title="Google\Service\Spanner\SpannerEmpty">SpannerEmpty</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Ends a session, releasing server resources associated with it. This will
+asynchronously trigger cancellation of any operations that are running with
+this session. (sessions.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the session to delete.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/SpannerEmpty.html"><abbr title="Google\Service\Spanner\SpannerEmpty">SpannerEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeBatchDml">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstancesDatabasesSessions.php#L203">at line 203</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/ExecuteBatchDmlResponse.html"><abbr title="Google\Service\Spanner\ExecuteBatchDmlResponse">ExecuteBatchDmlResponse</abbr></a>
+    <strong>executeBatchDml</strong>(string $session, <a href="../../../../Google/Service/Spanner/ExecuteBatchDmlRequest.html"><abbr title="Google\Service\Spanner\ExecuteBatchDmlRequest">ExecuteBatchDmlRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Executes a batch of SQL DML statements. This method allows many statements to
+be run with lower latency than submitting them sequentially with ExecuteSql.</p></p>                <p><p>Statements are executed in sequential order. A request can succeed even if a
+statement fails. The ExecuteBatchDmlResponse.status field in the response
+provides information about the statement that failed. Clients must inspect
+this field to determine whether an error occurred. Execution stops after the
+first failed statement; the remaining statements are not executed.
+(sessions.executeBatchDml)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$session</td>
+                <td><p>Required. The session in which the DML statements
+should be performed.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/ExecuteBatchDmlRequest.html"><abbr title="Google\Service\Spanner\ExecuteBatchDmlRequest">ExecuteBatchDmlRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/ExecuteBatchDmlResponse.html"><abbr title="Google\Service\Spanner\ExecuteBatchDmlResponse">ExecuteBatchDmlResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeSql">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstancesDatabasesSessions.php#L226">at line 226</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/ResultSet.html"><abbr title="Google\Service\Spanner\ResultSet">ResultSet</abbr></a>
+    <strong>executeSql</strong>(string $session, <a href="../../../../Google/Service/Spanner/ExecuteSqlRequest.html"><abbr title="Google\Service\Spanner\ExecuteSqlRequest">ExecuteSqlRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Executes an SQL statement, returning all results in a single reply. This
+method cannot be used to return a result set larger than 10 MiB; if the query
+yields more data than that, the query fails with a <code>FAILED_PRECONDITION</code>
+error. Operations inside read-write transactions might return <code>ABORTED</code>. If
+this occurs, the application should restart the transaction from the
+beginning. See Transaction for more details. Larger result sets can be
+fetched in streaming fashion by calling ExecuteStreamingSql instead.</p></p>                <p>(sessions.executeSql)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$session</td>
+                <td><p>Required. The session in which the SQL query should be
+performed.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/ExecuteSqlRequest.html"><abbr title="Google\Service\Spanner\ExecuteSqlRequest">ExecuteSqlRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/ResultSet.html"><abbr title="Google\Service\Spanner\ResultSet">ResultSet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeStreamingSql">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstancesDatabasesSessions.php#L245">at line 245</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/PartialResultSet.html"><abbr title="Google\Service\Spanner\PartialResultSet">PartialResultSet</abbr></a>
+    <strong>executeStreamingSql</strong>(string $session, <a href="../../../../Google/Service/Spanner/ExecuteSqlRequest.html"><abbr title="Google\Service\Spanner\ExecuteSqlRequest">ExecuteSqlRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Like ExecuteSql, except returns the result set as a stream. Unlike
+ExecuteSql, there is no limit on the size of the returned result set.</p></p>                <p><p>However, no individual row in the result set can exceed 100 MiB, and no
+column value can exceed 10 MiB. (sessions.executeStreamingSql)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$session</td>
+                <td><p>Required. The session in which the SQL query should be
+performed.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/ExecuteSqlRequest.html"><abbr title="Google\Service\Spanner\ExecuteSqlRequest">ExecuteSqlRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/PartialResultSet.html"><abbr title="Google\Service\Spanner\PartialResultSet">PartialResultSet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstancesDatabasesSessions.php#L261">at line 261</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/Session.html"><abbr title="Google\Service\Spanner\Session">Session</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets a session. Returns <code>NOT_FOUND</code> if the session does not exist. This is
+mainly useful for determining whether a session is still alive.</p></p>                <p>(sessions.get)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the session to retrieve.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/Session.html"><abbr title="Google\Service\Spanner\Session">Session</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsInstancesDatabasesSessions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstancesDatabasesSessions.php#L287">at line 287</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/ListSessionsResponse.html"><abbr title="Google\Service\Spanner\ListSessionsResponse">ListSessionsResponse</abbr></a>
+    <strong>listProjectsInstancesDatabasesSessions</strong>(string $database, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all sessions in a given database.</p></p>                <p>(sessions.listProjectsInstancesDatabasesSessions)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$database</td>
+                <td><p>Required. The database in which to list sessions.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/ListSessionsResponse.html"><abbr title="Google\Service\Spanner\ListSessionsResponse">ListSessionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_partitionQuery">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstancesDatabasesSessions.php#L311">at line 311</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/PartitionResponse.html"><abbr title="Google\Service\Spanner\PartitionResponse">PartitionResponse</abbr></a>
+    <strong>partitionQuery</strong>(string $session, <a href="../../../../Google/Service/Spanner/PartitionQueryRequest.html"><abbr title="Google\Service\Spanner\PartitionQueryRequest">PartitionQueryRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a set of partition tokens that can be used to execute a query
+operation in parallel. Each of the returned partition tokens can be used by
+ExecuteStreamingSql to specify a subset of the query result to read. The same
+session and read-only transaction must be used by the PartitionQueryRequest
+used to create the partition tokens and the ExecuteSqlRequests that use the
+partition tokens. Partition tokens become invalid when the session used to
+create them is deleted, is idle for too long, begins a new transaction, or
+becomes too old. When any of these happen, it is not possible to resume the
+query, and the whole operation must be restarted from the beginning.</p></p>                <p>(sessions.partitionQuery)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$session</td>
+                <td><p>Required. The session used to create the partitions.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/PartitionQueryRequest.html"><abbr title="Google\Service\Spanner\PartitionQueryRequest">PartitionQueryRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/PartitionResponse.html"><abbr title="Google\Service\Spanner\PartitionResponse">PartitionResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_partitionRead">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstancesDatabasesSessions.php#L337">at line 337</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/PartitionResponse.html"><abbr title="Google\Service\Spanner\PartitionResponse">PartitionResponse</abbr></a>
+    <strong>partitionRead</strong>(string $session, <a href="../../../../Google/Service/Spanner/PartitionReadRequest.html"><abbr title="Google\Service\Spanner\PartitionReadRequest">PartitionReadRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a set of partition tokens that can be used to execute a read
+operation in parallel. Each of the returned partition tokens can be used by
+StreamingRead to specify a subset of the read result to read. The same
+session and read-only transaction must be used by the PartitionReadRequest
+used to create the partition tokens and the ReadRequests that use the
+partition tokens. There are no ordering guarantees on rows returned among the
+returned partition tokens, or even within each individual StreamingRead call
+issued with a partition_token. Partition tokens become invalid when the
+session used to create them is deleted, is idle for too long, begins a new
+transaction, or becomes too old. When any of these happen, it is not possible
+to resume the read, and the whole operation must be restarted from the
+beginning. (sessions.partitionRead)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$session</td>
+                <td><p>Required. The session used to create the partitions.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/PartitionReadRequest.html"><abbr title="Google\Service\Spanner\PartitionReadRequest">PartitionReadRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/PartitionResponse.html"><abbr title="Google\Service\Spanner\PartitionResponse">PartitionResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_read">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstancesDatabasesSessions.php#L360">at line 360</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/ResultSet.html"><abbr title="Google\Service\Spanner\ResultSet">ResultSet</abbr></a>
+    <strong>read</strong>(string $session, <a href="../../../../Google/Service/Spanner/ReadRequest.html"><abbr title="Google\Service\Spanner\ReadRequest">ReadRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Reads rows from the database using key lookups and scans, as a simple
+key/value style alternative to ExecuteSql. This method cannot be used to
+return a result set larger than 10 MiB; if the read matches more data than
+that, the read fails with a <code>FAILED_PRECONDITION</code> error. Reads inside read-
+write transactions might return <code>ABORTED</code>. If this occurs, the application
+should restart the transaction from the beginning. See Transaction for more
+details. Larger result sets can be yielded in streaming fashion by calling
+StreamingRead instead. (sessions.read)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$session</td>
+                <td><p>Required. The session in which the read should be
+performed.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/ReadRequest.html"><abbr title="Google\Service\Spanner\ReadRequest">ReadRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/ResultSet.html"><abbr title="Google\Service\Spanner\ResultSet">ResultSet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rollback">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstancesDatabasesSessions.php#L381">at line 381</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/SpannerEmpty.html"><abbr title="Google\Service\Spanner\SpannerEmpty">SpannerEmpty</abbr></a>
+    <strong>rollback</strong>(string $session, <a href="../../../../Google/Service/Spanner/RollbackRequest.html"><abbr title="Google\Service\Spanner\RollbackRequest">RollbackRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Rolls back a transaction, releasing any locks it holds. It is a good idea to
+call this for any transaction that includes one or more Read or ExecuteSql
+requests and ultimately decides not to commit. <code>Rollback</code> returns <code>OK</code> if it
+successfully aborts the transaction, the transaction was already aborted, or
+the transaction is not found. <code>Rollback</code> never returns <code>ABORTED</code>.</p></p>                <p>(sessions.rollback)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$session</td>
+                <td><p>Required. The session in which the transaction to roll
+back is running.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/RollbackRequest.html"><abbr title="Google\Service\Spanner\RollbackRequest">RollbackRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/SpannerEmpty.html"><abbr title="Google\Service\Spanner\SpannerEmpty">SpannerEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_streamingRead">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstancesDatabasesSessions.php#L400">at line 400</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/PartialResultSet.html"><abbr title="Google\Service\Spanner\PartialResultSet">PartialResultSet</abbr></a>
+    <strong>streamingRead</strong>(string $session, <a href="../../../../Google/Service/Spanner/ReadRequest.html"><abbr title="Google\Service\Spanner\ReadRequest">ReadRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Like Read, except returns the result set as a stream. Unlike Read, there is
+no limit on the size of the returned result set. However, no individual row
+in the result set can exceed 100 MiB, and no column value can exceed 10 MiB.</p></p>                <p>(sessions.streamingRead)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$session</td>
+                <td><p>Required. The session in which the read should be
+performed.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/ReadRequest.html"><abbr title="Google\Service\Spanner\ReadRequest">ReadRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/PartialResultSet.html"><abbr title="Google\Service\Spanner\PartialResultSet">PartialResultSet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

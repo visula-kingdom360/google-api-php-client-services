@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\AndroidPublisher\Resource\Inappproducts | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_AndroidPublisher_Resource_Inappproducts" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/AndroidPublisher.ns.html">AndroidPublisher</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/AndroidPublisher/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>Inappproducts</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Inappproducts    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Inappproducts</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AndroidPublisher/Resource/Inappproducts.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;inappproducts&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $androidpublisherService = new Google\Service\AndroidPublisher(...);
+ $inappproducts = $androidpublisherService-&gt;inappproducts;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchDelete">batchDelete</a>(string $packageName, <a href="../../../../Google/Service/AndroidPublisher/InappproductsBatchDeleteRequest.html"><abbr title="Google\Service\AndroidPublisher\InappproductsBatchDeleteRequest">InappproductsBatchDeleteRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Deletes in-app products (managed products or subscriptions). Set the
+latencyTolerance field on nested requests to
+PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT to achieve maximum update
+throughput. This method should not be used to delete subscriptions. See <a href="https://android-developers.googleblog.com/2023/06/changes-to-google-
+play-developer-api-june-2023.html">this
+article</a> for more information.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidPublisher/InappproductsBatchGetResponse.html"><abbr title="Google\Service\AndroidPublisher\InappproductsBatchGetResponse">InappproductsBatchGetResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchGet">batchGet</a>(string $packageName, array $optParams = [])
+        
+                                            <p><p>Reads multiple in-app products, which can be managed products or
+subscriptions. This method should not be used to retrieve subscriptions. See
+<a href="https://android-developers.googleblog.com/2023/06/changes-to-
+google-play-developer-api-june-2023.html">this article</a> for more information.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidPublisher/InappproductsBatchUpdateResponse.html"><abbr title="Google\Service\AndroidPublisher\InappproductsBatchUpdateResponse">InappproductsBatchUpdateResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchUpdate">batchUpdate</a>(string $packageName, <a href="../../../../Google/Service/AndroidPublisher/InappproductsBatchUpdateRequest.html"><abbr title="Google\Service\AndroidPublisher\InappproductsBatchUpdateRequest">InappproductsBatchUpdateRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates or inserts one or more in-app products (managed products or
+subscriptions). Set the latencyTolerance field on nested requests to
+PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT to achieve maximum update
+throughput. This method should no longer be used to update subscriptions. See
+<a href="https://android-developers.googleblog.com/2023/06/changes-to-
+google-play-developer-api-june-2023.html">this article</a> for more information.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $packageName, string $sku, array $optParams = [])
+        
+                                            <p><p>Deletes an in-app product (a managed product or a subscription). This method
+should no longer be used to delete subscriptions. See <a href="https://android-developers.googleblog.com/2023/06/changes-to-google-
+play-developer-api-june-2023.html">this
+article</a> for more information.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $packageName, string $sku, array $optParams = [])
+        
+                                            <p><p>Gets an in-app product, which can be a managed product or a subscription.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_insert">insert</a>(string $packageName, <a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates an in-app product (a managed product or a subscription). This method
+should no longer be used to create subscriptions. See <a href="https://android-developers.googleblog.com/2023/06/changes-to-google-
+play-developer-api-june-2023.html">this
+article</a> for more information.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidPublisher/InappproductsListResponse.html"><abbr title="Google\Service\AndroidPublisher\InappproductsListResponse">InappproductsListResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listInappproducts">listInappproducts</a>(string $packageName, array $optParams = [])
+        
+                                            <p><p>Lists all in-app products - both managed products and subscriptions. If an
+app has a large number of in-app products, the response may be paginated. In
+this case the response field <code>tokenPagination.nextPageToken</code> will be set and
+the caller should provide its value as a <code>token</code> request parameter to
+retrieve the next page. This method should no longer be used to retrieve
+subscriptions. See <a href="https://android-
+developers.googleblog.com/2023/06/changes-to-google-play-developer-api-
+june-2023.html">this article</a> for more information. (inappproducts.listInappproducts)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $packageName, string $sku, <a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Patches an in-app product (a managed product or a subscription). This method
+should no longer be used to update subscriptions. See <a href="https://android-developers.googleblog.com/2023/06/changes-to-google-
+play-developer-api-june-2023.html">this
+article</a> for more information.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $packageName, string $sku, <a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates an in-app product (a managed product or a subscription). This method
+should no longer be used to update subscriptions. See <a href="https://android-developers.googleblog.com/2023/06/changes-to-google-
+play-developer-api-june-2023.html">this
+article</a> for more information.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_batchDelete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AndroidPublisher/Resource/Inappproducts.php#L51">at line 51</a></div>
+        <code>                    
+    <strong>batchDelete</strong>(string $packageName, <a href="../../../../Google/Service/AndroidPublisher/InappproductsBatchDeleteRequest.html"><abbr title="Google\Service\AndroidPublisher\InappproductsBatchDeleteRequest">InappproductsBatchDeleteRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes in-app products (managed products or subscriptions). Set the
+latencyTolerance field on nested requests to
+PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT to achieve maximum update
+throughput. This method should not be used to delete subscriptions. See <a href="https://android-developers.googleblog.com/2023/06/changes-to-google-
+play-developer-api-june-2023.html">this
+article</a> for more information.</p></p>                <p>(inappproducts.batchDelete)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>Package name of the app.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AndroidPublisher/InappproductsBatchDeleteRequest.html"><abbr title="Google\Service\AndroidPublisher\InappproductsBatchDeleteRequest">InappproductsBatchDeleteRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchGet">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AndroidPublisher/Resource/Inappproducts.php#L71">at line 71</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidPublisher/InappproductsBatchGetResponse.html"><abbr title="Google\Service\AndroidPublisher\InappproductsBatchGetResponse">InappproductsBatchGetResponse</abbr></a>
+    <strong>batchGet</strong>(string $packageName, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Reads multiple in-app products, which can be managed products or
+subscriptions. This method should not be used to retrieve subscriptions. See
+<a href="https://android-developers.googleblog.com/2023/06/changes-to-
+google-play-developer-api-june-2023.html">this article</a> for more information.</p></p>                <p>(inappproducts.batchGet)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>Package name of the app.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidPublisher/InappproductsBatchGetResponse.html"><abbr title="Google\Service\AndroidPublisher\InappproductsBatchGetResponse">InappproductsBatchGetResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchUpdate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AndroidPublisher/Resource/Inappproducts.php#L92">at line 92</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidPublisher/InappproductsBatchUpdateResponse.html"><abbr title="Google\Service\AndroidPublisher\InappproductsBatchUpdateResponse">InappproductsBatchUpdateResponse</abbr></a>
+    <strong>batchUpdate</strong>(string $packageName, <a href="../../../../Google/Service/AndroidPublisher/InappproductsBatchUpdateRequest.html"><abbr title="Google\Service\AndroidPublisher\InappproductsBatchUpdateRequest">InappproductsBatchUpdateRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates or inserts one or more in-app products (managed products or
+subscriptions). Set the latencyTolerance field on nested requests to
+PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT to achieve maximum update
+throughput. This method should no longer be used to update subscriptions. See
+<a href="https://android-developers.googleblog.com/2023/06/changes-to-
+google-play-developer-api-june-2023.html">this article</a> for more information.</p></p>                <p>(inappproducts.batchUpdate)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>Package name of the app.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AndroidPublisher/InappproductsBatchUpdateRequest.html"><abbr title="Google\Service\AndroidPublisher\InappproductsBatchUpdateRequest">InappproductsBatchUpdateRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidPublisher/InappproductsBatchUpdateResponse.html"><abbr title="Google\Service\AndroidPublisher\InappproductsBatchUpdateResponse">InappproductsBatchUpdateResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AndroidPublisher/Resource/Inappproducts.php#L113">at line 113</a></div>
+        <code>                    
+    <strong>delete</strong>(string $packageName, string $sku, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes an in-app product (a managed product or a subscription). This method
+should no longer be used to delete subscriptions. See <a href="https://android-developers.googleblog.com/2023/06/changes-to-google-
+play-developer-api-june-2023.html">this
+article</a> for more information.</p></p>                <p>(inappproducts.delete)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>Package name of the app.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sku</td>
+                <td><p>Unique identifier for the in-app product.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AndroidPublisher/Resource/Inappproducts.php#L131">at line 131</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a>
+    <strong>get</strong>(string $packageName, string $sku, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets an in-app product, which can be a managed product or a subscription.</p></p>                <p><p>This method should no longer be used to retrieve subscriptions. See <a href="https://android-developers.googleblog.com/2023/06/changes-to-google-
+play-developer-api-june-2023.html">this
+article</a> for more information. (inappproducts.get)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>Package name of the app.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sku</td>
+                <td><p>Unique identifier for the in-app product.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AndroidPublisher/Resource/Inappproducts.php#L155">at line 155</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a>
+    <strong>insert</strong>(string $packageName, <a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates an in-app product (a managed product or a subscription). This method
+should no longer be used to create subscriptions. See <a href="https://android-developers.googleblog.com/2023/06/changes-to-google-
+play-developer-api-june-2023.html">this
+article</a> for more information.</p></p>                <p>(inappproducts.insert)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>Package name of the app.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listInappproducts">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AndroidPublisher/Resource/Inappproducts.php#L183">at line 183</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidPublisher/InappproductsListResponse.html"><abbr title="Google\Service\AndroidPublisher\InappproductsListResponse">InappproductsListResponse</abbr></a>
+    <strong>listInappproducts</strong>(string $packageName, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all in-app products - both managed products and subscriptions. If an
+app has a large number of in-app products, the response may be paginated. In
+this case the response field <code>tokenPagination.nextPageToken</code> will be set and
+the caller should provide its value as a <code>token</code> request parameter to
+retrieve the next page. This method should no longer be used to retrieve
+subscriptions. See <a href="https://android-
+developers.googleblog.com/2023/06/changes-to-google-play-developer-api-
+june-2023.html">this article</a> for more information. (inappproducts.listInappproducts)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>Package name of the app.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidPublisher/InappproductsListResponse.html"><abbr title="Google\Service\AndroidPublisher\InappproductsListResponse">InappproductsListResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AndroidPublisher/Resource/Inappproducts.php#L210">at line 210</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a>
+    <strong>patch</strong>(string $packageName, string $sku, <a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Patches an in-app product (a managed product or a subscription). This method
+should no longer be used to update subscriptions. See <a href="https://android-developers.googleblog.com/2023/06/changes-to-google-
+play-developer-api-june-2023.html">this
+article</a> for more information.</p></p>                <p>(inappproducts.patch)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>Package name of the app.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sku</td>
+                <td><p>Unique identifier for the in-app product.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AndroidPublisher/Resource/Inappproducts.php#L239">at line 239</a></div>
+        <code>                    <a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a>
+    <strong>update</strong>(string $packageName, string $sku, <a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates an in-app product (a managed product or a subscription). This method
+should no longer be used to update subscriptions. See <a href="https://android-developers.googleblog.com/2023/06/changes-to-google-
+play-developer-api-june-2023.html">this
+article</a> for more information.</p></p>                <p>(inappproducts.update)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>Package name of the app.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sku</td>
+                <td><p>Unique identifier for the in-app product.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AndroidPublisher/InAppProduct.html"><abbr title="Google\Service\AndroidPublisher\InAppProduct">InAppProduct</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Iam\Resource\ProjectsRoles | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Iam_Resource_ProjectsRoles" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Iam.ns.html">Iam</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Iam/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ProjectsRoles</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsRoles    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsRoles</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Iam/Resource/ProjectsRoles.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;roles&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $iamService = new Google\Service\Iam(...);
+ $roles = $iamService-&gt;projects_roles;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Iam/Role.html"><abbr title="Google\Service\Iam\Role">Role</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/Iam/CreateRoleRequest.html"><abbr title="Google\Service\Iam\CreateRoleRequest">CreateRoleRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a new custom Role. (roles.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Iam/Role.html"><abbr title="Google\Service\Iam\Role">Role</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes a custom Role. When you delete a custom role, the following changes
+occur immediately: <em> You cannot bind a principal to the custom role in an IAM
+Policy. </em> Existing bindings to the custom role are not changed, but they have
+no effect. <em> By default, the response from ListRoles does not include the
+custom role. You have 7 days to undelete the custom role. After 7 days, the
+following changes occur: </em> The custom role is permanently deleted and cannot
+be recovered. * If an IAM policy contains a binding to the custom role, the
+binding is permanently removed. (roles.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Iam/Role.html"><abbr title="Google\Service\Iam\Role">Role</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets the definition of a Role. (roles.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Iam/ListRolesResponse.html"><abbr title="Google\Service\Iam\ListRolesResponse">ListRolesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsRoles">listProjectsRoles</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists every predefined Role that IAM supports, or every custom role that is
+defined for an organization or project. (roles.listProjectsRoles)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Iam/Role.html"><abbr title="Google\Service\Iam\Role">Role</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/Iam/Role.html"><abbr title="Google\Service\Iam\Role">Role</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the definition of a custom Role. (roles.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Iam/Role.html"><abbr title="Google\Service\Iam\Role">Role</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_undelete">undelete</a>(string $name, <a href="../../../../Google/Service/Iam/UndeleteRoleRequest.html"><abbr title="Google\Service\Iam\UndeleteRoleRequest">UndeleteRoleRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Undeletes a custom Role. (roles.undelete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Iam/Resource/ProjectsRoles.php#L59">at line 59</a></div>
+        <code>                    <a href="../../../../Google/Service/Iam/Role.html"><abbr title="Google\Service\Iam\Role">Role</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/Iam/CreateRoleRequest.html"><abbr title="Google\Service\Iam\CreateRoleRequest">CreateRoleRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a new custom Role. (roles.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>The <code>parent</code> parameter's value depends on the target
+resource for the request, namely
+<a href="https://cloud.google.com/iam/reference/rest/v1/projects.roles"><code>projects</code></a>
+or <a href="https://cloud.google.com/iam/reference/rest/v1/organizat
+ions.roles"><code>organizations</code></a>. Each resource type's <code>parent</code> value format is described below: <em>
+<a href="https://cloud.google.com/iam/reference/rest/v1/pr
+ojects.roles/create"><code>projects.roles.create()</code></a>: <code>projects/{PROJECT_ID}</code>. This method creates project-
+level <a href="https://cloud.google.com/iam/docs/understanding-custom-
+roles">custom roles</a>. Example request URL:
+<code>https://iam.googleapis.com/v1/projects/{PROJECT_ID}/roles</code> </em> <a href="https://cloud.google.com/iam/reference/rest/v1/organization
+s.roles/create"><code>organizations .roles.create()</code></a>: <code>organizations/{ORGANIZATION_ID}</code>. This method creates
+organization-level <a href="https://cloud.google.com/iam/docs
+/understanding-custom-roles">custom roles</a>. Example request URL:
+<code>https://iam.googleapis.com/v1/organizations/{ORGANIZATION_ID}/roles</code> Note:
+Wildcard (*) values are invalid; you must specify a complete project ID or
+organization ID.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Iam/CreateRoleRequest.html"><abbr title="Google\Service\Iam\CreateRoleRequest">CreateRoleRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Iam/Role.html"><abbr title="Google\Service\Iam\Role">Role</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Iam/Resource/ProjectsRoles.php#L99">at line 99</a></div>
+        <code>                    <a href="../../../../Google/Service/Iam/Role.html"><abbr title="Google\Service\Iam\Role">Role</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a custom Role. When you delete a custom role, the following changes
+occur immediately: <em> You cannot bind a principal to the custom role in an IAM
+Policy. </em> Existing bindings to the custom role are not changed, but they have
+no effect. <em> By default, the response from ListRoles does not include the
+custom role. You have 7 days to undelete the custom role. After 7 days, the
+following changes occur: </em> The custom role is permanently deleted and cannot
+be recovered. * If an IAM policy contains a binding to the custom role, the
+binding is permanently removed. (roles.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>The <code>name</code> parameter's value depends on the target
+resource for the request, namely
+<a href="https://cloud.google.com/iam/reference/rest/v1/projects.roles"><code>projects</code></a>
+or <a href="https://cloud.google.com/iam/reference/rest/v1/organizat
+ions.roles"><code>organizations</code></a>. Each resource type's <code>name</code> value format is described below: * <a href="https://cloud.google.com/iam/reference/rest/v1/pro
+jects.roles/delete">
+<code>projects.roles.delete()</code></a>: <code>projects/{PROJECT_ID}/roles/{CUSTOM_ROLE_ID}</code>. This
+method deletes only <a href="https://cloud.google.com/iam/docs
+/understanding-custom-roles">custom roles</a> that have been created at the project level.
+Example request URL:
+<code>https://iam.googleapis.com/v1/projects/{PROJECT_ID}/roles/{CUSTOM_ROLE_ID}</code></p>
+<ul>
+<li><a href="https://cloud.google.com/iam/reference/res
+t/v1/organizations.roles/delete"><code>organizations.roles.delete()</code></a>:
+<code>organizations/{ORGANIZATION_ID}/roles/{CUSTOM_ROLE_ID}</code>. This method deletes
+only <a href="https://cloud.google.com/iam/docs/understanding-custom-
+roles">custom roles</a> that have been created at the organization level. Example request URL:
+<code>https://iam.googleapis.com/v1/organizations/{ORGANIZATION_ID}/roles/{CUSTOM_ ROLE_ID}</code> Note: Wildcard (*) values are invalid; you must specify a complete
+project ID or organization ID.</li>
+</ul></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Iam/Role.html"><abbr title="Google\Service\Iam\Role">Role</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Iam/Resource/ProjectsRoles.php#L135">at line 135</a></div>
+        <code>                    <a href="../../../../Google/Service/Iam/Role.html"><abbr title="Google\Service\Iam\Role">Role</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the definition of a Role. (roles.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>The <code>name</code> parameter's value depends on the target
+resource for the request, namely
+<a href="https://cloud.google.com/iam/reference/rest/v1/roles"><code>roles</code></a>,
+<a href="https://cloud.google.com/iam/reference/rest/v1/projects.roles"><code>projects</code></a>,
+or <a href="https://cloud.google.com/iam/reference/rest/v1/organizat
+ions.roles"><code>organizations</code></a>. Each resource type's <code>name</code> value format is described below: <em>
+<a href="https://cloud.google.com/iam/reference/rest/v1/roles/get"><code>roles.get()</code></a>:
+<code>roles/{ROLE_NAME}</code>. This method returns results from all <a href="https://cloud.google.com/iam/docs/understanding-
+roles#predefined_roles">predefined
+roles</a> in Cloud IAM. Example request URL:
+<code>https://iam.googleapis.com/v1/roles/{ROLE_NAME}</code> </em> <a href="https://cloud.google.com/iam/reference/rest/v1/projects.roles/get"><code>projects.roles.get()</code></a>:
+<code>projects/{PROJECT_ID}/roles/{CUSTOM_ROLE_ID}</code>. This method returns only
+<a href="https://cloud.google.com/iam/docs/understanding-custom-roles">custom roles</a>
+that have been created at the project level. Example request URL:
+<code>https://iam.googleapis.com/v1/projects/{PROJECT_ID}/roles/{CUSTOM_ROLE_ID}</code></p>
+<ul>
+<li><a href="https://cloud.google.com/iam/reference/rest/v
+1/organizations.roles/get"><code>organizations.roles.get()</code></a>:
+<code>organizations/{ORGANIZATION_ID}/roles/{CUSTOM_ROLE_ID}</code>. This method returns
+only <a href="https://cloud.google.com/iam/docs/understanding-custom-
+roles">custom roles</a> that have been created at the organization level. Example request URL:
+<code>https://iam.googleapis.com/v1/organizations/{ORGANIZATION_ID}/roles/{CUSTOM_ ROLE_ID}</code> Note: Wildcard (*) values are invalid; you must specify a complete
+project ID or organization ID.</li>
+</ul></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Iam/Role.html"><abbr title="Google\Service\Iam\Role">Role</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsRoles">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Iam/Resource/ProjectsRoles.php#L180">at line 180</a></div>
+        <code>                    <a href="../../../../Google/Service/Iam/ListRolesResponse.html"><abbr title="Google\Service\Iam\ListRolesResponse">ListRolesResponse</abbr></a>
+    <strong>listProjectsRoles</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists every predefined Role that IAM supports, or every custom role that is
+defined for an organization or project. (roles.listProjectsRoles)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>The <code>parent</code> parameter's value depends on the target
+resource for the request, namely
+<a href="https://cloud.google.com/iam/reference/rest/v1/roles"><code>roles</code></a>,
+<a href="https://cloud.google.com/iam/reference/rest/v1/projects.roles"><code>projects</code></a>,
+or <a href="https://cloud.google.com/iam/reference/rest/v1/organizat
+ions.roles"><code>organizations</code></a>. Each resource type's <code>parent</code> value format is described below: <em>
+<a href="https://cloud.google.com/iam/reference/rest/v1/roles/list"><code>roles.list()</code></a>:
+An empty string. This method doesn't require a resource; it simply returns
+all <a href="https://cloud.google.com/iam/docs/understanding-
+roles#predefined_roles">predefined roles</a> in Cloud IAM. Example request URL:
+<code>https://iam.googleapis.com/v1/roles</code> </em> <a href="https://clo
+ud.google.com/iam/reference/rest/v1/projects.roles/list"><code>projects.roles.list()</code></a>:
+<code>projects/{PROJECT_ID}</code>. This method lists all project-level <a href="https://cloud.google.com/iam/docs/understanding-custom-roles">custom
+roles</a>. Example
+request URL: <code>https://iam.googleapis.com/v1/projects/{PROJECT_ID}/roles</code> <em> <a href="https://cloud.google.com/iam/reference/rest/v1/o
+rganizations.roles/list"><code> organizations.roles.list()</code></a>: <code>organizations/{ORGANIZATION_ID}</code>. This method
+lists all organization-level <a href="https://cloud.google.com/iam/docs
+/understanding-custom-roles">custom roles</a>. Example request URL:
+<code>https://iam.googleapis.com/v1/organizations/{ORGANIZATION_ID}/roles</code> Note:
+Wildcard (</em>) values are invalid; you must specify a complete project ID or
+organization ID.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Iam/ListRolesResponse.html"><abbr title="Google\Service\Iam\ListRolesResponse">ListRolesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Iam/Resource/ProjectsRoles.php#L215">at line 215</a></div>
+        <code>                    <a href="../../../../Google/Service/Iam/Role.html"><abbr title="Google\Service\Iam\Role">Role</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/Iam/Role.html"><abbr title="Google\Service\Iam\Role">Role</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the definition of a custom Role. (roles.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>The <code>name</code> parameter's value depends on the target
+resource for the request, namely
+<a href="https://cloud.google.com/iam/reference/rest/v1/projects.roles"><code>projects</code></a>
+or <a href="https://cloud.google.com/iam/reference/rest/v1/organizat
+ions.roles"><code>organizations</code></a>. Each resource type's <code>name</code> value format is described below: * <a href="https://cloud.google.com/iam/reference/rest/v1/proj
+ects.roles/patch">
+<code>projects.roles.patch()</code></a>: <code>projects/{PROJECT_ID}/roles/{CUSTOM_ROLE_ID}</code>. This
+method updates only <a href="https://cloud.google.com/iam/docs
+/understanding-custom-roles">custom roles</a> that have been created at the project level.
+Example request URL:
+<code>https://iam.googleapis.com/v1/projects/{PROJECT_ID}/roles/{CUSTOM_ROLE_ID}</code></p>
+<ul>
+<li><a href="https://cloud.google.com/iam/reference/rest
+/v1/organizations.roles/patch"><code>organizations.roles.patch()</code></a>:
+<code>organizations/{ORGANIZATION_ID}/roles/{CUSTOM_ROLE_ID}</code>. This method updates
+only <a href="https://cloud.google.com/iam/docs/understanding-custom-
+roles">custom roles</a> that have been created at the organization level. Example request URL:
+<code>https://iam.googleapis.com/v1/organizations/{ORGANIZATION_ID}/roles/{CUSTOM_ ROLE_ID}</code> Note: Wildcard (*) values are invalid; you must specify a complete
+project ID or organization ID.</li>
+</ul></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Iam/Role.html"><abbr title="Google\Service\Iam\Role">Role</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Iam/Role.html"><abbr title="Google\Service\Iam\Role">Role</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_undelete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Iam/Resource/ProjectsRoles.php#L247">at line 247</a></div>
+        <code>                    <a href="../../../../Google/Service/Iam/Role.html"><abbr title="Google\Service\Iam\Role">Role</abbr></a>
+    <strong>undelete</strong>(string $name, <a href="../../../../Google/Service/Iam/UndeleteRoleRequest.html"><abbr title="Google\Service\Iam\UndeleteRoleRequest">UndeleteRoleRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Undeletes a custom Role. (roles.undelete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>The <code>name</code> parameter's value depends on the target
+resource for the request, namely
+<a href="https://cloud.google.com/iam/reference/rest/v1/projects.roles"><code>projects</code></a>
+or <a href="https://cloud.google.com/iam/reference/rest/v1/organizat
+ions.roles"><code>organizations</code></a>. Each resource type's <code>name</code> value format is described below: * <a href="https://cloud.google.com/iam/reference/rest/v1/p
+rojects.roles/undelete">
+<code>projects.roles.undelete()</code></a>: <code>projects/{PROJECT_ID}/roles/{CUSTOM_ROLE_ID}</code>. This
+method undeletes only <a href="https://cloud.google.com/iam/docs
+/understanding-custom-roles">custom roles</a> that have been created at the project level.
+Example request URL:
+<code>https://iam.googleapis.com/v1/projects/{PROJECT_ID}/roles/{CUSTOM_ROLE_ID}</code></p>
+<ul>
+<li><a href="https://cloud.google.com/iam/reference/r
+est/v1/organizations.roles/undelete"><code>organizations.roles.undelete()</code></a>:
+<code>organizations/{ORGANIZATION_ID}/roles/{CUSTOM_ROLE_ID}</code>. This method
+undeletes only <a href="https://cloud.google.com/iam/docs
+/understanding-custom-roles">custom roles</a> that have been created at the organization
+level. Example request URL: <code>https://iam.googleapis.com/v1/organizations/{ORG ANIZATION_ID}/roles/{CUSTOM_ROLE_ID}</code> Note: Wildcard (*) values are invalid;
+you must specify a complete project ID or organization ID.</li>
+</ul></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Iam/UndeleteRoleRequest.html"><abbr title="Google\Service\Iam\UndeleteRoleRequest">UndeleteRoleRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Iam/Role.html"><abbr title="Google\Service\Iam\Role">Role</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

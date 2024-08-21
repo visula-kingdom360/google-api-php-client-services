@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\CloudIdentity\Resource\DevicesDeviceUsers | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_CloudIdentity_Resource_DevicesDeviceUsers" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CloudIdentity.ns.html">CloudIdentity</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CloudIdentity/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>DevicesDeviceUsers</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>DevicesDeviceUsers    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>DevicesDeviceUsers</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudIdentity/Resource/DevicesDeviceUsers.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;deviceUsers&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $cloudidentityService = new Google\Service\CloudIdentity(...);
+ $deviceUsers = $cloudidentityService-&gt;devices_deviceUsers;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_approve">approve</a>(string $name, <a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest">GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Approves device to access user data. (deviceUsers.approve)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_block">block</a>(string $name, <a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest">GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Blocks device from accessing user data (deviceUsers.block)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_cancelWipe">cancelWipe</a>(string $name, <a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest">GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Cancels an unfinished user account wipe. This operation can be used to cancel
+device wipe in the gap between the wipe operation returning success and the
+device being wiped. (deviceUsers.cancelWipe)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes the specified DeviceUser. This also revokes the user's access to
+device data. (deviceUsers.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1DeviceUser.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1DeviceUser">GoogleAppsCloudidentityDevicesV1DeviceUser</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Retrieves the specified DeviceUser (deviceUsers.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse">GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listDevicesDeviceUsers">listDevicesDeviceUsers</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists/Searches DeviceUsers. (deviceUsers.listDevicesDeviceUsers)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse">GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_lookup">lookup</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Looks up resource names of the DeviceUsers associated with the caller's
+credentials, as well as the properties provided in the request. This method
+must be called with end-user credentials with the scope:
+<a href="https://www.googleapis.com/auth/cloud-identity.devices.lookup">https://www.googleapis.com/auth/cloud-identity.devices.lookup</a> If multiple
+properties are provided, only DeviceUsers having all of these properties are
+considered as matches - i.e. the query behaves like an AND. Different
+platforms require different amounts of information from the caller to ensure
+that the DeviceUser is uniquely identified. - iOS: No properties need to be
+passed, the caller's credentials are sufficient to identify the corresponding
+DeviceUser. - Android: Specifying the 'android_id' field is required. -
+Desktop: Specifying the 'raw_resource_id' field is required.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_wipe">wipe</a>(string $name, <a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1WipeDeviceUserRequest.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1WipeDeviceUserRequest">GoogleAppsCloudidentityDevicesV1WipeDeviceUserRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Wipes the user's account on a device. Other data on the device that is not
+associated with the user's work account is not affected. For example, if a
+Gmail app is installed on a device that is used for personal and work
+purposes, and the user is logged in to the Gmail app with their personal
+account as well as their work account, wiping the &quot;deviceUser&quot; by their work
+administrator will not affect their personal account within Gmail or other
+apps such as Photos. (deviceUsers.wipe)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_approve">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudIdentity/Resource/DevicesDeviceUsers.php#L52">at line 52</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a>
+    <strong>approve</strong>(string $name, <a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest">GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Approves device to access user data. (deviceUsers.approve)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. <a href="https://cloud.google.com/apis/design/resource_names">Resource
+name</a> of the Device in
+format: <code>devices/{device}/deviceUsers/{device_user}</code>, where device is the
+unique ID assigned to the Device, and device_user is the unique ID assigned
+to the User.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest">GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_block">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudIdentity/Resource/DevicesDeviceUsers.php#L71">at line 71</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a>
+    <strong>block</strong>(string $name, <a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest">GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Blocks device from accessing user data (deviceUsers.block)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. <a href="https://cloud.google.com/apis/design/resource_names">Resource
+name</a> of the Device in
+format: <code>devices/{device}/deviceUsers/{device_user}</code>, where device is the
+unique ID assigned to the Device, and device_user is the unique ID assigned
+to the User.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest">GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cancelWipe">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudIdentity/Resource/DevicesDeviceUsers.php#L92">at line 92</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a>
+    <strong>cancelWipe</strong>(string $name, <a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest">GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Cancels an unfinished user account wipe. This operation can be used to cancel
+device wipe in the gap between the wipe operation returning success and the
+device being wiped. (deviceUsers.cancelWipe)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. <a href="https://cloud.google.com/apis/design/resource_names">Resource
+name</a> of the Device in
+format: <code>devices/{device}/deviceUsers/{device_user}</code>, where device is the
+unique ID assigned to the Device, and device_user is the unique ID assigned
+to the User.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest">GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudIdentity/Resource/DevicesDeviceUsers.php#L118">at line 118</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes the specified DeviceUser. This also revokes the user's access to
+device data. (deviceUsers.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. <a href="https://cloud.google.com/apis/design/resource_names">Resource
+name</a> of the Device in
+format: <code>devices/{device}/deviceUsers/{device_user}</code>, where device is the
+unique ID assigned to the Device, and device_user is the unique ID assigned
+to the User.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudIdentity/Resource/DevicesDeviceUsers.php#L143">at line 143</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1DeviceUser.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1DeviceUser">GoogleAppsCloudidentityDevicesV1DeviceUser</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves the specified DeviceUser (deviceUsers.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. <a href="https://cloud.google.com/apis/design/resource_names">Resource
+name</a> of the Device in
+format: <code>devices/{device}/deviceUsers/{device_user}</code>, where device is the
+unique ID assigned to the Device, and device_user is the unique ID assigned
+to the User.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1DeviceUser.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1DeviceUser">GoogleAppsCloudidentityDevicesV1DeviceUser</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listDevicesDeviceUsers">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudIdentity/Resource/DevicesDeviceUsers.php#L179">at line 179</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse">GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse</abbr></a>
+    <strong>listDevicesDeviceUsers</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists/Searches DeviceUsers. (deviceUsers.listDevicesDeviceUsers)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. To list all DeviceUsers, set this to
+&quot;devices/-&quot;. To list all DeviceUsers owned by a device, set this to the
+resource name of the device. Format: devices/{device}</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse">GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lookup">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudIdentity/Resource/DevicesDeviceUsers.php#L226">at line 226</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse">GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse</abbr></a>
+    <strong>lookup</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Looks up resource names of the DeviceUsers associated with the caller's
+credentials, as well as the properties provided in the request. This method
+must be called with end-user credentials with the scope:
+<a href="https://www.googleapis.com/auth/cloud-identity.devices.lookup">https://www.googleapis.com/auth/cloud-identity.devices.lookup</a> If multiple
+properties are provided, only DeviceUsers having all of these properties are
+considered as matches - i.e. the query behaves like an AND. Different
+platforms require different amounts of information from the caller to ensure
+that the DeviceUser is uniquely identified. - iOS: No properties need to be
+passed, the caller's credentials are sufficient to identify the corresponding
+DeviceUser. - Android: Specifying the 'android_id' field is required. -
+Desktop: Specifying the 'raw_resource_id' field is required.</p></p>                <p>(deviceUsers.lookup)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Must be set to &quot;devices/-/deviceUsers&quot; to search across
+all DeviceUser belonging to the user.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse">GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_wipe">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudIdentity/Resource/DevicesDeviceUsers.php#L251">at line 251</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a>
+    <strong>wipe</strong>(string $name, <a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1WipeDeviceUserRequest.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1WipeDeviceUserRequest">GoogleAppsCloudidentityDevicesV1WipeDeviceUserRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Wipes the user's account on a device. Other data on the device that is not
+associated with the user's work account is not affected. For example, if a
+Gmail app is installed on a device that is used for personal and work
+purposes, and the user is logged in to the Gmail app with their personal
+account as well as their work account, wiping the &quot;deviceUser&quot; by their work
+administrator will not affect their personal account within Gmail or other
+apps such as Photos. (deviceUsers.wipe)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. <a href="https://cloud.google.com/apis/design/resource_names">Resource
+name</a> of the Device in
+format: <code>devices/{device}/deviceUsers/{device_user}</code>, where device is the
+unique ID assigned to the Device, and device_user is the unique ID assigned
+to the User.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudIdentity/GoogleAppsCloudidentityDevicesV1WipeDeviceUserRequest.html"><abbr title="Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1WipeDeviceUserRequest">GoogleAppsCloudidentityDevicesV1WipeDeviceUserRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudIdentity/Operation.html"><abbr title="Google\Service\CloudIdentity\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

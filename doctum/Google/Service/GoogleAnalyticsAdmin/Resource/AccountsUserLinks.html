@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\GoogleAnalyticsAdmin\Resource\AccountsUserLinks | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_GoogleAnalyticsAdmin_Resource_AccountsUserLinks" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/GoogleAnalyticsAdmin.ns.html">GoogleAnalyticsAdmin</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/GoogleAnalyticsAdmin/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>AccountsUserLinks</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>AccountsUserLinks    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>AccountsUserLinks</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/AccountsUserLinks.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;userLinks&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $analyticsadminService = new Google\Service\GoogleAnalyticsAdmin(...);
+ $userLinks = $analyticsadminService-&gt;userLinks;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaAuditUserLinksResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAuditUserLinksResponse">GoogleAnalyticsAdminV1alphaAuditUserLinksResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_audit">audit</a>(string $parent, <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaAuditUserLinksRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAuditUserLinksRequest">GoogleAnalyticsAdminV1alphaAuditUserLinksRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Lists all user links on an account or property, including implicit ones that
+come from effective permissions granted by groups or organization admin
+roles. If a returned user link does not have direct permissions, they cannot
+be removed from the account or property directly with the DeleteUserLink
+command. They have to be removed from the group/etc that gives them
+permissions, which is currently only usable/discoverable in the GA or GMP
+UIs. (userLinks.audit)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaBatchCreateUserLinksResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchCreateUserLinksResponse">GoogleAnalyticsAdminV1alphaBatchCreateUserLinksResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchCreate">batchCreate</a>(string $parent, <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest">GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates information about multiple users' links to an account or property.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleProtobufEmpty.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchDelete">batchDelete</a>(string $parent, <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest">GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Deletes information about multiple users' links to an account or property.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaBatchGetUserLinksResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchGetUserLinksResponse">GoogleAnalyticsAdminV1alphaBatchGetUserLinksResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchGet">batchGet</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Gets information about multiple users' links to an account or property.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksResponse">GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchUpdate">batchUpdate</a>(string $parent, <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksRequest">GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates information about multiple users' links to an account or property.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaUserLink.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaUserLink">GoogleAnalyticsAdminV1alphaUserLink</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaUserLink.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaUserLink">GoogleAnalyticsAdminV1alphaUserLink</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a user link on an account or property. If the user with the specified
+email already has permissions on the account or property, then the user's
+existing permissions will be unioned with the permissions specified in the
+new UserLink. (userLinks.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleProtobufEmpty.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes a user link on an account or property. (userLinks.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaUserLink.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaUserLink">GoogleAnalyticsAdminV1alphaUserLink</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets information about a user's link to an account or property.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaListUserLinksResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListUserLinksResponse">GoogleAnalyticsAdminV1alphaListUserLinksResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listAccountsUserLinks">listAccountsUserLinks</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists all user links on an account or property.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaUserLink.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaUserLink">GoogleAnalyticsAdminV1alphaUserLink</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaUserLink.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaUserLink">GoogleAnalyticsAdminV1alphaUserLink</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a user link on an account or property. (userLinks.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_audit">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/AccountsUserLinks.php#L56">at line 56</a></div>
+        <code>                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaAuditUserLinksResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAuditUserLinksResponse">GoogleAnalyticsAdminV1alphaAuditUserLinksResponse</abbr></a>
+    <strong>audit</strong>(string $parent, <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaAuditUserLinksRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAuditUserLinksRequest">GoogleAnalyticsAdminV1alphaAuditUserLinksRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all user links on an account or property, including implicit ones that
+come from effective permissions granted by groups or organization admin
+roles. If a returned user link does not have direct permissions, they cannot
+be removed from the account or property directly with the DeleteUserLink
+command. They have to be removed from the group/etc that gives them
+permissions, which is currently only usable/discoverable in the GA or GMP
+UIs. (userLinks.audit)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. Example format: accounts/1234</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaAuditUserLinksRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAuditUserLinksRequest">GoogleAnalyticsAdminV1alphaAuditUserLinksRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaAuditUserLinksResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAuditUserLinksResponse">GoogleAnalyticsAdminV1alphaAuditUserLinksResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchCreate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/AccountsUserLinks.php#L75">at line 75</a></div>
+        <code>                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaBatchCreateUserLinksResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchCreateUserLinksResponse">GoogleAnalyticsAdminV1alphaBatchCreateUserLinksResponse</abbr></a>
+    <strong>batchCreate</strong>(string $parent, <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest">GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates information about multiple users' links to an account or property.</p></p>                <p><p>This method is transactional. If any UserLink cannot be created, none of the
+UserLinks will be created. (userLinks.batchCreate)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The account or property that all user links
+in the request are for. This field is required. The parent field in the
+CreateUserLinkRequest messages must either be empty or match this field.
+Example format: accounts/1234</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest">GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaBatchCreateUserLinksResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchCreateUserLinksResponse">GoogleAnalyticsAdminV1alphaBatchCreateUserLinksResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchDelete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/AccountsUserLinks.php#L92">at line 92</a></div>
+        <code>                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleProtobufEmpty.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a>
+    <strong>batchDelete</strong>(string $parent, <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest">GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes information about multiple users' links to an account or property.</p></p>                <p>(userLinks.batchDelete)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The account or property that all user links
+in the request are for. The parent of all values for user link names to
+delete must match this field. Example format: accounts/1234</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest">GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleProtobufEmpty.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchGet">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/AccountsUserLinks.php#L112">at line 112</a></div>
+        <code>                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaBatchGetUserLinksResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchGetUserLinksResponse">GoogleAnalyticsAdminV1alphaBatchGetUserLinksResponse</abbr></a>
+    <strong>batchGet</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets information about multiple users' links to an account or property.</p></p>                <p>(userLinks.batchGet)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The account or property that all user links
+in the request are for. The parent of all provided values for the 'names'
+field must match this field. Example format: accounts/1234</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaBatchGetUserLinksResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchGetUserLinksResponse">GoogleAnalyticsAdminV1alphaBatchGetUserLinksResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchUpdate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/AccountsUserLinks.php#L130">at line 130</a></div>
+        <code>                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksResponse">GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksResponse</abbr></a>
+    <strong>batchUpdate</strong>(string $parent, <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksRequest">GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates information about multiple users' links to an account or property.</p></p>                <p>(userLinks.batchUpdate)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The account or property that all user links
+in the request are for. The parent field in the UpdateUserLinkRequest
+messages must either be empty or match this field. Example format:
+accounts/1234</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksRequest">GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksResponse">GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/AccountsUserLinks.php#L150">at line 150</a></div>
+        <code>                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaUserLink.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaUserLink">GoogleAnalyticsAdminV1alphaUserLink</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaUserLink.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaUserLink">GoogleAnalyticsAdminV1alphaUserLink</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a user link on an account or property. If the user with the specified
+email already has permissions on the account or property, then the user's
+existing permissions will be unioned with the permissions specified in the
+new UserLink. (userLinks.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. Example format: accounts/1234</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaUserLink.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaUserLink">GoogleAnalyticsAdminV1alphaUserLink</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaUserLink.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaUserLink">GoogleAnalyticsAdminV1alphaUserLink</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/AccountsUserLinks.php#L163">at line 163</a></div>
+        <code>                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleProtobufEmpty.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a user link on an account or property. (userLinks.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Example format: accounts/1234/userLinks/5678</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleProtobufEmpty.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/AccountsUserLinks.php#L177">at line 177</a></div>
+        <code>                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaUserLink.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaUserLink">GoogleAnalyticsAdminV1alphaUserLink</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets information about a user's link to an account or property.</p></p>                <p>(userLinks.get)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Example format: accounts/1234/userLinks/5678</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaUserLink.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaUserLink">GoogleAnalyticsAdminV1alphaUserLink</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listAccountsUserLinks">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/AccountsUserLinks.php#L200">at line 200</a></div>
+        <code>                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaListUserLinksResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListUserLinksResponse">GoogleAnalyticsAdminV1alphaListUserLinksResponse</abbr></a>
+    <strong>listAccountsUserLinks</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all user links on an account or property.</p></p>                <p>(userLinks.listAccountsUserLinks)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. Example format: accounts/1234</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaListUserLinksResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListUserLinksResponse">GoogleAnalyticsAdminV1alphaListUserLinksResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/AccountsUserLinks.php#L215">at line 215</a></div>
+        <code>                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaUserLink.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaUserLink">GoogleAnalyticsAdminV1alphaUserLink</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaUserLink.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaUserLink">GoogleAnalyticsAdminV1alphaUserLink</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a user link on an account or property. (userLinks.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Output only. Example format:
+properties/1234/userLinks/5678</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaUserLink.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaUserLink">GoogleAnalyticsAdminV1alphaUserLink</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1alphaUserLink.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaUserLink">GoogleAnalyticsAdminV1alphaUserLink</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

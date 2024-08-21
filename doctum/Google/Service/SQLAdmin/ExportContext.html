@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\SQLAdmin\ExportContext | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../doctum.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_SQLAdmin_ExportContext" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../Google/Service/SQLAdmin.ns.html">SQLAdmin</a></li><li class="backslash">\</li><li>ExportContext</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ExportContext    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ExportContext</strong>        extends <abbr title="Google\Collection">Collection</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/ExportContext.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_collection_key">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$collection_key</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bakExportOptionsType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$bakExportOptionsType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bakExportOptionsDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$bakExportOptionsDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_csvExportOptionsType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$csvExportOptionsType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_csvExportOptionsDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$csvExportOptionsDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_databases">
+                                                                                string[]
+                                                                                
+                                    </td>
+                <td>$databases</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fileType">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$fileType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_kind">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$kind</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_offload">
+                                                                                bool
+                                                                                
+                                    </td>
+                <td>$offload</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sqlExportOptionsType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$sqlExportOptionsType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sqlExportOptionsDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$sqlExportOptionsDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_uri">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$uri</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setBakExportOptions">setBakExportOptions</a>(<a href="../../../Google/Service/SQLAdmin/ExportContextBakExportOptions.html"><abbr title="Google\Service\SQLAdmin\ExportContextBakExportOptions">ExportContextBakExportOptions</abbr></a> $bakExportOptions)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/SQLAdmin/ExportContextBakExportOptions.html"><abbr title="Google\Service\SQLAdmin\ExportContextBakExportOptions">ExportContextBakExportOptions</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getBakExportOptions">getBakExportOptions</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setCsvExportOptions">setCsvExportOptions</a>(<a href="../../../Google/Service/SQLAdmin/ExportContextCsvExportOptions.html"><abbr title="Google\Service\SQLAdmin\ExportContextCsvExportOptions">ExportContextCsvExportOptions</abbr></a> $csvExportOptions)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/SQLAdmin/ExportContextCsvExportOptions.html"><abbr title="Google\Service\SQLAdmin\ExportContextCsvExportOptions">ExportContextCsvExportOptions</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCsvExportOptions">getCsvExportOptions</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDatabases">setDatabases</a>($databases)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDatabases">getDatabases</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setFileType">setFileType</a>($fileType)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFileType">getFileType</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setKind">setKind</a>($kind)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getKind">getKind</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setOffload">setOffload</a>($offload)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getOffload">getOffload</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setSqlExportOptions">setSqlExportOptions</a>(<a href="../../../Google/Service/SQLAdmin/ExportContextSqlExportOptions.html"><abbr title="Google\Service\SQLAdmin\ExportContextSqlExportOptions">ExportContextSqlExportOptions</abbr></a> $sqlExportOptions)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/SQLAdmin/ExportContextSqlExportOptions.html"><abbr title="Google\Service\SQLAdmin\ExportContextSqlExportOptions">ExportContextSqlExportOptions</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSqlExportOptions">getSqlExportOptions</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setUri">setUri</a>($uri)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getUri">getUri</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setBakExportOptions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/ExportContext.php#L53">at line 53</a></div>
+        <code>                    
+    <strong>setBakExportOptions</strong>(<a href="../../../Google/Service/SQLAdmin/ExportContextBakExportOptions.html"><abbr title="Google\Service\SQLAdmin\ExportContextBakExportOptions">ExportContextBakExportOptions</abbr></a> $bakExportOptions)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/SQLAdmin/ExportContextBakExportOptions.html"><abbr title="Google\Service\SQLAdmin\ExportContextBakExportOptions">ExportContextBakExportOptions</abbr></a></td>
+                <td>$bakExportOptions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBakExportOptions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/ExportContext.php#L60">at line 60</a></div>
+        <code>                    <a href="../../../Google/Service/SQLAdmin/ExportContextBakExportOptions.html"><abbr title="Google\Service\SQLAdmin\ExportContextBakExportOptions">ExportContextBakExportOptions</abbr></a>
+    <strong>getBakExportOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/SQLAdmin/ExportContextBakExportOptions.html"><abbr title="Google\Service\SQLAdmin\ExportContextBakExportOptions">ExportContextBakExportOptions</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCsvExportOptions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/ExportContext.php#L67">at line 67</a></div>
+        <code>                    
+    <strong>setCsvExportOptions</strong>(<a href="../../../Google/Service/SQLAdmin/ExportContextCsvExportOptions.html"><abbr title="Google\Service\SQLAdmin\ExportContextCsvExportOptions">ExportContextCsvExportOptions</abbr></a> $csvExportOptions)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/SQLAdmin/ExportContextCsvExportOptions.html"><abbr title="Google\Service\SQLAdmin\ExportContextCsvExportOptions">ExportContextCsvExportOptions</abbr></a></td>
+                <td>$csvExportOptions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCsvExportOptions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/ExportContext.php#L74">at line 74</a></div>
+        <code>                    <a href="../../../Google/Service/SQLAdmin/ExportContextCsvExportOptions.html"><abbr title="Google\Service\SQLAdmin\ExportContextCsvExportOptions">ExportContextCsvExportOptions</abbr></a>
+    <strong>getCsvExportOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/SQLAdmin/ExportContextCsvExportOptions.html"><abbr title="Google\Service\SQLAdmin\ExportContextCsvExportOptions">ExportContextCsvExportOptions</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDatabases">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/ExportContext.php#L81">at line 81</a></div>
+        <code>                    
+    <strong>setDatabases</strong>($databases)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$databases</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDatabases">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/ExportContext.php#L88">at line 88</a></div>
+        <code>                    string[]
+    <strong>getDatabases</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFileType">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/ExportContext.php#L95">at line 95</a></div>
+        <code>                    
+    <strong>setFileType</strong>($fileType)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$fileType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFileType">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/ExportContext.php#L102">at line 102</a></div>
+        <code>                    string
+    <strong>getFileType</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setKind">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/ExportContext.php#L109">at line 109</a></div>
+        <code>                    
+    <strong>setKind</strong>($kind)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$kind</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getKind">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/ExportContext.php#L116">at line 116</a></div>
+        <code>                    string
+    <strong>getKind</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOffload">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/ExportContext.php#L123">at line 123</a></div>
+        <code>                    
+    <strong>setOffload</strong>($offload)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$offload</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOffload">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/ExportContext.php#L130">at line 130</a></div>
+        <code>                    bool
+    <strong>getOffload</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSqlExportOptions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/ExportContext.php#L137">at line 137</a></div>
+        <code>                    
+    <strong>setSqlExportOptions</strong>(<a href="../../../Google/Service/SQLAdmin/ExportContextSqlExportOptions.html"><abbr title="Google\Service\SQLAdmin\ExportContextSqlExportOptions">ExportContextSqlExportOptions</abbr></a> $sqlExportOptions)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/SQLAdmin/ExportContextSqlExportOptions.html"><abbr title="Google\Service\SQLAdmin\ExportContextSqlExportOptions">ExportContextSqlExportOptions</abbr></a></td>
+                <td>$sqlExportOptions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSqlExportOptions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/ExportContext.php#L144">at line 144</a></div>
+        <code>                    <a href="../../../Google/Service/SQLAdmin/ExportContextSqlExportOptions.html"><abbr title="Google\Service\SQLAdmin\ExportContextSqlExportOptions">ExportContextSqlExportOptions</abbr></a>
+    <strong>getSqlExportOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/SQLAdmin/ExportContextSqlExportOptions.html"><abbr title="Google\Service\SQLAdmin\ExportContextSqlExportOptions">ExportContextSqlExportOptions</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUri">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/ExportContext.php#L151">at line 151</a></div>
+        <code>                    
+    <strong>setUri</strong>($uri)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUri">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/ExportContext.php#L158">at line 158</a></div>
+        <code>                    string
+    <strong>getUri</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

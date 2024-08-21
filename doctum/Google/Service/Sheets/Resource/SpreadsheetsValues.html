@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Sheets\Resource\SpreadsheetsValues | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Sheets_Resource_SpreadsheetsValues" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Sheets.ns.html">Sheets</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Sheets/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>SpreadsheetsValues</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>SpreadsheetsValues    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>SpreadsheetsValues</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Sheets/Resource/SpreadsheetsValues.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;values&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $sheetsService = new Google\Service\Sheets(...);
+ $values = $sheetsService-&gt;spreadsheets_values;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Sheets/AppendValuesResponse.html"><abbr title="Google\Service\Sheets\AppendValuesResponse">AppendValuesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_append">append</a>(string $spreadsheetId, string $range, <a href="../../../../Google/Service/Sheets/ValueRange.html"><abbr title="Google\Service\Sheets\ValueRange">ValueRange</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Appends values to a spreadsheet. The input range is used to search for
+existing data and find a &quot;table&quot; within that range. Values will be appended
+to the next row of the table, starting with the first column of the table.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Sheets/BatchClearValuesResponse.html"><abbr title="Google\Service\Sheets\BatchClearValuesResponse">BatchClearValuesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchClear">batchClear</a>(string $spreadsheetId, <a href="../../../../Google/Service/Sheets/BatchClearValuesRequest.html"><abbr title="Google\Service\Sheets\BatchClearValuesRequest">BatchClearValuesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Clears one or more ranges of values from a spreadsheet. The caller must
+specify the spreadsheet ID and one or more ranges. Only values are cleared --
+all other properties of the cell (such as formatting and data validation) are
+kept. (values.batchClear)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Sheets/BatchClearValuesByDataFilterResponse.html"><abbr title="Google\Service\Sheets\BatchClearValuesByDataFilterResponse">BatchClearValuesByDataFilterResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchClearByDataFilter">batchClearByDataFilter</a>(string $spreadsheetId, <a href="../../../../Google/Service/Sheets/BatchClearValuesByDataFilterRequest.html"><abbr title="Google\Service\Sheets\BatchClearValuesByDataFilterRequest">BatchClearValuesByDataFilterRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Clears one or more ranges of values from a spreadsheet. The caller must
+specify the spreadsheet ID and one or more DataFilters. Ranges matching any
+of the specified data filters will be cleared. Only values are cleared -- all
+other properties of the cell (such as formatting, data validation, etc..) are
+kept. (values.batchClearByDataFilter)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Sheets/BatchGetValuesResponse.html"><abbr title="Google\Service\Sheets\BatchGetValuesResponse">BatchGetValuesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchGet">batchGet</a>(string $spreadsheetId, array $optParams = [])
+        
+                                            <p><p>Returns one or more ranges of values from a spreadsheet. The caller must
+specify the spreadsheet ID and one or more ranges. (values.batchGet)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Sheets/BatchGetValuesByDataFilterResponse.html"><abbr title="Google\Service\Sheets\BatchGetValuesByDataFilterResponse">BatchGetValuesByDataFilterResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchGetByDataFilter">batchGetByDataFilter</a>(string $spreadsheetId, <a href="../../../../Google/Service/Sheets/BatchGetValuesByDataFilterRequest.html"><abbr title="Google\Service\Sheets\BatchGetValuesByDataFilterRequest">BatchGetValuesByDataFilterRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Returns one or more ranges of values that match the specified data filters.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Sheets/BatchUpdateValuesResponse.html"><abbr title="Google\Service\Sheets\BatchUpdateValuesResponse">BatchUpdateValuesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchUpdate">batchUpdate</a>(string $spreadsheetId, <a href="../../../../Google/Service/Sheets/BatchUpdateValuesRequest.html"><abbr title="Google\Service\Sheets\BatchUpdateValuesRequest">BatchUpdateValuesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets values in one or more ranges of a spreadsheet. The caller must specify
+the spreadsheet ID, a valueInputOption, and one or more ValueRanges.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Sheets/BatchUpdateValuesByDataFilterResponse.html"><abbr title="Google\Service\Sheets\BatchUpdateValuesByDataFilterResponse">BatchUpdateValuesByDataFilterResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_batchUpdateByDataFilter">batchUpdateByDataFilter</a>(string $spreadsheetId, <a href="../../../../Google/Service/Sheets/BatchUpdateValuesByDataFilterRequest.html"><abbr title="Google\Service\Sheets\BatchUpdateValuesByDataFilterRequest">BatchUpdateValuesByDataFilterRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets values in one or more ranges of a spreadsheet. The caller must specify
+the spreadsheet ID, a valueInputOption, and one or more
+DataFilterValueRanges. (values.batchUpdateByDataFilter)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Sheets/ClearValuesResponse.html"><abbr title="Google\Service\Sheets\ClearValuesResponse">ClearValuesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_clear">clear</a>(string $spreadsheetId, string $range, <a href="../../../../Google/Service/Sheets/ClearValuesRequest.html"><abbr title="Google\Service\Sheets\ClearValuesRequest">ClearValuesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Clears values from a spreadsheet. The caller must specify the spreadsheet ID
+and range. Only values are cleared -- all other properties of the cell (such
+as formatting, data validation, etc..) are kept. (values.clear)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Sheets/ValueRange.html"><abbr title="Google\Service\Sheets\ValueRange">ValueRange</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $spreadsheetId, string $range, array $optParams = [])
+        
+                                            <p><p>Returns a range of values from a spreadsheet. The caller must specify the
+spreadsheet ID and a range. (values.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Sheets/UpdateValuesResponse.html"><abbr title="Google\Service\Sheets\UpdateValuesResponse">UpdateValuesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $spreadsheetId, string $range, <a href="../../../../Google/Service/Sheets/ValueRange.html"><abbr title="Google\Service\Sheets\ValueRange">ValueRange</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets values in a range of a spreadsheet. The caller must specify the
+spreadsheet ID, range, and a valueInputOption. (values.update)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_append">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Sheets/Resource/SpreadsheetsValues.php#L80">at line 80</a></div>
+        <code>                    <a href="../../../../Google/Service/Sheets/AppendValuesResponse.html"><abbr title="Google\Service\Sheets\AppendValuesResponse">AppendValuesResponse</abbr></a>
+    <strong>append</strong>(string $spreadsheetId, string $range, <a href="../../../../Google/Service/Sheets/ValueRange.html"><abbr title="Google\Service\Sheets\ValueRange">ValueRange</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Appends values to a spreadsheet. The input range is used to search for
+existing data and find a &quot;table&quot; within that range. Values will be appended
+to the next row of the table, starting with the first column of the table.</p></p>                <p><p>See the <a href="/sheets/api/guides/values#appending_values">guide</a> and <a href="/sheets/api/samples/writing#append_values">sample
+code</a> for specific details of how
+tables are detected and data is appended. The caller must specify the
+spreadsheet ID, range, and a valueInputOption. The <code>valueInputOption</code> only
+controls how the input data will be added to the sheet (column-wise or row-
+wise), it does not influence what cell the data starts being written to.
+(values.append)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$spreadsheetId</td>
+                <td><p>The ID of the spreadsheet to update.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$range</td>
+                <td><p>The <a href="/sheets/api/guides/concepts#cell">A1 notation</a> of a
+range to search for a logical table of data. Values are appended after the
+last row of the table.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Sheets/ValueRange.html"><abbr title="Google\Service\Sheets\ValueRange">ValueRange</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Sheets/AppendValuesResponse.html"><abbr title="Google\Service\Sheets\AppendValuesResponse">AppendValuesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchClear">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Sheets/Resource/SpreadsheetsValues.php#L98">at line 98</a></div>
+        <code>                    <a href="../../../../Google/Service/Sheets/BatchClearValuesResponse.html"><abbr title="Google\Service\Sheets\BatchClearValuesResponse">BatchClearValuesResponse</abbr></a>
+    <strong>batchClear</strong>(string $spreadsheetId, <a href="../../../../Google/Service/Sheets/BatchClearValuesRequest.html"><abbr title="Google\Service\Sheets\BatchClearValuesRequest">BatchClearValuesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Clears one or more ranges of values from a spreadsheet. The caller must
+specify the spreadsheet ID and one or more ranges. Only values are cleared --
+all other properties of the cell (such as formatting and data validation) are
+kept. (values.batchClear)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$spreadsheetId</td>
+                <td><p>The ID of the spreadsheet to update.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Sheets/BatchClearValuesRequest.html"><abbr title="Google\Service\Sheets\BatchClearValuesRequest">BatchClearValuesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Sheets/BatchClearValuesResponse.html"><abbr title="Google\Service\Sheets\BatchClearValuesResponse">BatchClearValuesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchClearByDataFilter">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Sheets/Resource/SpreadsheetsValues.php#L117">at line 117</a></div>
+        <code>                    <a href="../../../../Google/Service/Sheets/BatchClearValuesByDataFilterResponse.html"><abbr title="Google\Service\Sheets\BatchClearValuesByDataFilterResponse">BatchClearValuesByDataFilterResponse</abbr></a>
+    <strong>batchClearByDataFilter</strong>(string $spreadsheetId, <a href="../../../../Google/Service/Sheets/BatchClearValuesByDataFilterRequest.html"><abbr title="Google\Service\Sheets\BatchClearValuesByDataFilterRequest">BatchClearValuesByDataFilterRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Clears one or more ranges of values from a spreadsheet. The caller must
+specify the spreadsheet ID and one or more DataFilters. Ranges matching any
+of the specified data filters will be cleared. Only values are cleared -- all
+other properties of the cell (such as formatting, data validation, etc..) are
+kept. (values.batchClearByDataFilter)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$spreadsheetId</td>
+                <td><p>The ID of the spreadsheet to update.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Sheets/BatchClearValuesByDataFilterRequest.html"><abbr title="Google\Service\Sheets\BatchClearValuesByDataFilterRequest">BatchClearValuesByDataFilterRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Sheets/BatchClearValuesByDataFilterResponse.html"><abbr title="Google\Service\Sheets\BatchClearValuesByDataFilterResponse">BatchClearValuesByDataFilterResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchGet">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Sheets/Resource/SpreadsheetsValues.php#L146">at line 146</a></div>
+        <code>                    <a href="../../../../Google/Service/Sheets/BatchGetValuesResponse.html"><abbr title="Google\Service\Sheets\BatchGetValuesResponse">BatchGetValuesResponse</abbr></a>
+    <strong>batchGet</strong>(string $spreadsheetId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns one or more ranges of values from a spreadsheet. The caller must
+specify the spreadsheet ID and one or more ranges. (values.batchGet)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$spreadsheetId</td>
+                <td><p>The ID of the spreadsheet to retrieve data from.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Sheets/BatchGetValuesResponse.html"><abbr title="Google\Service\Sheets\BatchGetValuesResponse">BatchGetValuesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchGetByDataFilter">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Sheets/Resource/SpreadsheetsValues.php#L164">at line 164</a></div>
+        <code>                    <a href="../../../../Google/Service/Sheets/BatchGetValuesByDataFilterResponse.html"><abbr title="Google\Service\Sheets\BatchGetValuesByDataFilterResponse">BatchGetValuesByDataFilterResponse</abbr></a>
+    <strong>batchGetByDataFilter</strong>(string $spreadsheetId, <a href="../../../../Google/Service/Sheets/BatchGetValuesByDataFilterRequest.html"><abbr title="Google\Service\Sheets\BatchGetValuesByDataFilterRequest">BatchGetValuesByDataFilterRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns one or more ranges of values that match the specified data filters.</p></p>                <p><p>The caller must specify the spreadsheet ID and one or more DataFilters.
+Ranges that match any of the data filters in the request will be returned.
+(values.batchGetByDataFilter)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$spreadsheetId</td>
+                <td><p>The ID of the spreadsheet to retrieve data from.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Sheets/BatchGetValuesByDataFilterRequest.html"><abbr title="Google\Service\Sheets\BatchGetValuesByDataFilterRequest">BatchGetValuesByDataFilterRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Sheets/BatchGetValuesByDataFilterResponse.html"><abbr title="Google\Service\Sheets\BatchGetValuesByDataFilterResponse">BatchGetValuesByDataFilterResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchUpdate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Sheets/Resource/SpreadsheetsValues.php#L181">at line 181</a></div>
+        <code>                    <a href="../../../../Google/Service/Sheets/BatchUpdateValuesResponse.html"><abbr title="Google\Service\Sheets\BatchUpdateValuesResponse">BatchUpdateValuesResponse</abbr></a>
+    <strong>batchUpdate</strong>(string $spreadsheetId, <a href="../../../../Google/Service/Sheets/BatchUpdateValuesRequest.html"><abbr title="Google\Service\Sheets\BatchUpdateValuesRequest">BatchUpdateValuesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets values in one or more ranges of a spreadsheet. The caller must specify
+the spreadsheet ID, a valueInputOption, and one or more ValueRanges.</p></p>                <p>(values.batchUpdate)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$spreadsheetId</td>
+                <td><p>The ID of the spreadsheet to update.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Sheets/BatchUpdateValuesRequest.html"><abbr title="Google\Service\Sheets\BatchUpdateValuesRequest">BatchUpdateValuesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Sheets/BatchUpdateValuesResponse.html"><abbr title="Google\Service\Sheets\BatchUpdateValuesResponse">BatchUpdateValuesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_batchUpdateByDataFilter">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Sheets/Resource/SpreadsheetsValues.php#L198">at line 198</a></div>
+        <code>                    <a href="../../../../Google/Service/Sheets/BatchUpdateValuesByDataFilterResponse.html"><abbr title="Google\Service\Sheets\BatchUpdateValuesByDataFilterResponse">BatchUpdateValuesByDataFilterResponse</abbr></a>
+    <strong>batchUpdateByDataFilter</strong>(string $spreadsheetId, <a href="../../../../Google/Service/Sheets/BatchUpdateValuesByDataFilterRequest.html"><abbr title="Google\Service\Sheets\BatchUpdateValuesByDataFilterRequest">BatchUpdateValuesByDataFilterRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets values in one or more ranges of a spreadsheet. The caller must specify
+the spreadsheet ID, a valueInputOption, and one or more
+DataFilterValueRanges. (values.batchUpdateByDataFilter)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$spreadsheetId</td>
+                <td><p>The ID of the spreadsheet to update.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Sheets/BatchUpdateValuesByDataFilterRequest.html"><abbr title="Google\Service\Sheets\BatchUpdateValuesByDataFilterRequest">BatchUpdateValuesByDataFilterRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Sheets/BatchUpdateValuesByDataFilterResponse.html"><abbr title="Google\Service\Sheets\BatchUpdateValuesByDataFilterResponse">BatchUpdateValuesByDataFilterResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clear">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Sheets/Resource/SpreadsheetsValues.php#L217">at line 217</a></div>
+        <code>                    <a href="../../../../Google/Service/Sheets/ClearValuesResponse.html"><abbr title="Google\Service\Sheets\ClearValuesResponse">ClearValuesResponse</abbr></a>
+    <strong>clear</strong>(string $spreadsheetId, string $range, <a href="../../../../Google/Service/Sheets/ClearValuesRequest.html"><abbr title="Google\Service\Sheets\ClearValuesRequest">ClearValuesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Clears values from a spreadsheet. The caller must specify the spreadsheet ID
+and range. Only values are cleared -- all other properties of the cell (such
+as formatting, data validation, etc..) are kept. (values.clear)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$spreadsheetId</td>
+                <td><p>The ID of the spreadsheet to update.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$range</td>
+                <td><p>The <a href="/sheets/api/guides/concepts#cell">A1 notation or R1C1
+notation</a> of the values to clear.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Sheets/ClearValuesRequest.html"><abbr title="Google\Service\Sheets\ClearValuesRequest">ClearValuesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Sheets/ClearValuesResponse.html"><abbr title="Google\Service\Sheets\ClearValuesResponse">ClearValuesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Sheets/Resource/SpreadsheetsValues.php#L246">at line 246</a></div>
+        <code>                    <a href="../../../../Google/Service/Sheets/ValueRange.html"><abbr title="Google\Service\Sheets\ValueRange">ValueRange</abbr></a>
+    <strong>get</strong>(string $spreadsheetId, string $range, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns a range of values from a spreadsheet. The caller must specify the
+spreadsheet ID and a range. (values.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$spreadsheetId</td>
+                <td><p>The ID of the spreadsheet to retrieve data from.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$range</td>
+                <td><p>The <a href="/sheets/api/guides/concepts#cell">A1 notation or R1C1
+notation</a> of the range to retrieve values
+from.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Sheets/ValueRange.html"><abbr title="Google\Service\Sheets\ValueRange">ValueRange</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Sheets/Resource/SpreadsheetsValues.php#L277">at line 277</a></div>
+        <code>                    <a href="../../../../Google/Service/Sheets/UpdateValuesResponse.html"><abbr title="Google\Service\Sheets\UpdateValuesResponse">UpdateValuesResponse</abbr></a>
+    <strong>update</strong>(string $spreadsheetId, string $range, <a href="../../../../Google/Service/Sheets/ValueRange.html"><abbr title="Google\Service\Sheets\ValueRange">ValueRange</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets values in a range of a spreadsheet. The caller must specify the
+spreadsheet ID, range, and a valueInputOption. (values.update)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$spreadsheetId</td>
+                <td><p>The ID of the spreadsheet to update.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$range</td>
+                <td><p>The <a href="/sheets/api/guides/concepts#cell">A1 notation</a> of
+the values to update.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Sheets/ValueRange.html"><abbr title="Google\Service\Sheets\ValueRange">ValueRange</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Sheets/UpdateValuesResponse.html"><abbr title="Google\Service\Sheets\UpdateValuesResponse">UpdateValuesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

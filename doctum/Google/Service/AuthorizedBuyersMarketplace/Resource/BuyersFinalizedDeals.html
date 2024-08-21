@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\AuthorizedBuyersMarketplace\Resource\BuyersFinalizedDeals | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_AuthorizedBuyersMarketplace_Resource_BuyersFinalizedDeals" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/AuthorizedBuyersMarketplace.ns.html">AuthorizedBuyersMarketplace</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/AuthorizedBuyersMarketplace/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>BuyersFinalizedDeals</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>BuyersFinalizedDeals    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>BuyersFinalizedDeals</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AuthorizedBuyersMarketplace/Resource/BuyersFinalizedDeals.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;finalizedDeals&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $authorizedbuyersmarketplaceService = new Google\Service\AuthorizedBuyersMarketplace(...);
+ $finalizedDeals = $authorizedbuyersmarketplaceService-&gt;buyers_finalizedDeals;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/FinalizedDeal.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\FinalizedDeal">FinalizedDeal</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addCreative">addCreative</a>(string $deal, <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/AddCreativeRequest.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\AddCreativeRequest">AddCreativeRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Add creative to be used in the bidding process for a finalized deal. For
+programmatic guaranteed deals, it's recommended that you associate at least
+one approved creative with the deal before calling SetReadyToServe, to help
+reduce the number of bid responses filtered because they don't contain
+approved creatives. Creatives successfully added to a deal can be found in
+the Realtime-bidding Creatives API creative.deal_ids. This method only
+applies to programmatic guaranteed deals. Maximum number of 1000 creatives
+can be added to a finalized deal. (finalizedDeals.addCreative)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/FinalizedDeal.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\FinalizedDeal">FinalizedDeal</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets a finalized deal given its name. (finalizedDeals.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/ListFinalizedDealsResponse.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\ListFinalizedDealsResponse">ListFinalizedDealsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listBuyersFinalizedDeals">listBuyersFinalizedDeals</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists finalized deals. Use the URL path
+&quot;/v1/buyers/{accountId}/finalizedDeals&quot; to list finalized deals for the
+current buyer and its clients. Bidders can use the URL path
+&quot;/v1/bidders/{accountId}/finalizedDeals&quot; to list finalized deals for the
+bidder, its buyers and all their clients.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/FinalizedDeal.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\FinalizedDeal">FinalizedDeal</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_pause">pause</a>(string $name, <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/PauseFinalizedDealRequest.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\PauseFinalizedDealRequest">PauseFinalizedDealRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Pauses serving of the given finalized deal. This call only pauses the serving
+status, and does not affect other fields of the finalized deal. Calling this
+method for an already paused deal has no effect. This method only applies to
+programmatic guaranteed deals and preferred deals. (finalizedDeals.pause)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/FinalizedDeal.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\FinalizedDeal">FinalizedDeal</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_resume">resume</a>(string $name, <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/ResumeFinalizedDealRequest.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\ResumeFinalizedDealRequest">ResumeFinalizedDealRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Resumes serving of the given finalized deal. Calling this method for an
+running deal has no effect. If a deal is initially paused by the seller,
+calling this method will not resume serving of the deal until the seller also
+resumes the deal. This method only applies to programmatic guaranteed deals
+and preferred deals. (finalizedDeals.resume)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/FinalizedDeal.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\FinalizedDeal">FinalizedDeal</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setReadyToServe">setReadyToServe</a>(string $deal, <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/SetReadyToServeRequest.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\SetReadyToServeRequest">SetReadyToServeRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the given finalized deal as ready to serve. By default, deals are set as
+ready to serve as soon as they're finalized. If you want to opt out of the
+default behavior, and manually indicate that deals are ready to serve, ask
+your Technical Account Manager to add you to the allowlist. If you choose to
+use this method, finalized deals belonging to the bidder and its child seats
+don't start serving until after you call <code>setReadyToServe</code>, and after the
+deals become active. For example, you can use this method to delay receiving
+bid requests until your creative is ready. This method only applies to
+programmatic guaranteed deals. (finalizedDeals.setReadyToServe)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_addCreative">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AuthorizedBuyersMarketplace/Resource/BuyersFinalizedDeals.php#L54">at line 54</a></div>
+        <code>                    <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/FinalizedDeal.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\FinalizedDeal">FinalizedDeal</abbr></a>
+    <strong>addCreative</strong>(string $deal, <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/AddCreativeRequest.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\AddCreativeRequest">AddCreativeRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add creative to be used in the bidding process for a finalized deal. For
+programmatic guaranteed deals, it's recommended that you associate at least
+one approved creative with the deal before calling SetReadyToServe, to help
+reduce the number of bid responses filtered because they don't contain
+approved creatives. Creatives successfully added to a deal can be found in
+the Realtime-bidding Creatives API creative.deal_ids. This method only
+applies to programmatic guaranteed deals. Maximum number of 1000 creatives
+can be added to a finalized deal. (finalizedDeals.addCreative)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$deal</td>
+                <td><p>Required. Name of the finalized deal in the format of:
+<code>buyers/{accountId}/finalizedDeals/{dealId}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AuthorizedBuyersMarketplace/AddCreativeRequest.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\AddCreativeRequest">AddCreativeRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AuthorizedBuyersMarketplace/FinalizedDeal.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\FinalizedDeal">FinalizedDeal</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AuthorizedBuyersMarketplace/Resource/BuyersFinalizedDeals.php#L69">at line 69</a></div>
+        <code>                    <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/FinalizedDeal.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\FinalizedDeal">FinalizedDeal</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets a finalized deal given its name. (finalizedDeals.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Format:
+<code>buyers/{accountId}/finalizedDeals/{dealId}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AuthorizedBuyersMarketplace/FinalizedDeal.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\FinalizedDeal">FinalizedDeal</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listBuyersFinalizedDeals">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AuthorizedBuyersMarketplace/Resource/BuyersFinalizedDeals.php#L112">at line 112</a></div>
+        <code>                    <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/ListFinalizedDealsResponse.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\ListFinalizedDealsResponse">ListFinalizedDealsResponse</abbr></a>
+    <strong>listBuyersFinalizedDeals</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists finalized deals. Use the URL path
+&quot;/v1/buyers/{accountId}/finalizedDeals&quot; to list finalized deals for the
+current buyer and its clients. Bidders can use the URL path
+&quot;/v1/bidders/{accountId}/finalizedDeals&quot; to list finalized deals for the
+bidder, its buyers and all their clients.</p></p>                <p>(finalizedDeals.listBuyersFinalizedDeals)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The buyer to list the finalized deals for, in
+the format: <code>buyers/{accountId}</code>. When used to list finalized deals for a
+bidder, its buyers and clients, in the format <code>bidders/{accountId}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AuthorizedBuyersMarketplace/ListFinalizedDealsResponse.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\ListFinalizedDealsResponse">ListFinalizedDealsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pause">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AuthorizedBuyersMarketplace/Resource/BuyersFinalizedDeals.php#L131">at line 131</a></div>
+        <code>                    <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/FinalizedDeal.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\FinalizedDeal">FinalizedDeal</abbr></a>
+    <strong>pause</strong>(string $name, <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/PauseFinalizedDealRequest.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\PauseFinalizedDealRequest">PauseFinalizedDealRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Pauses serving of the given finalized deal. This call only pauses the serving
+status, and does not affect other fields of the finalized deal. Calling this
+method for an already paused deal has no effect. This method only applies to
+programmatic guaranteed deals and preferred deals. (finalizedDeals.pause)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Format:
+<code>buyers/{accountId}/finalizedDeals/{dealId}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AuthorizedBuyersMarketplace/PauseFinalizedDealRequest.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\PauseFinalizedDealRequest">PauseFinalizedDealRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AuthorizedBuyersMarketplace/FinalizedDeal.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\FinalizedDeal">FinalizedDeal</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resume">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AuthorizedBuyersMarketplace/Resource/BuyersFinalizedDeals.php#L151">at line 151</a></div>
+        <code>                    <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/FinalizedDeal.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\FinalizedDeal">FinalizedDeal</abbr></a>
+    <strong>resume</strong>(string $name, <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/ResumeFinalizedDealRequest.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\ResumeFinalizedDealRequest">ResumeFinalizedDealRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Resumes serving of the given finalized deal. Calling this method for an
+running deal has no effect. If a deal is initially paused by the seller,
+calling this method will not resume serving of the deal until the seller also
+resumes the deal. This method only applies to programmatic guaranteed deals
+and preferred deals. (finalizedDeals.resume)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Format:
+<code>buyers/{accountId}/finalizedDeals/{dealId}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AuthorizedBuyersMarketplace/ResumeFinalizedDealRequest.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\ResumeFinalizedDealRequest">ResumeFinalizedDealRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AuthorizedBuyersMarketplace/FinalizedDeal.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\FinalizedDeal">FinalizedDeal</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setReadyToServe">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AuthorizedBuyersMarketplace/Resource/BuyersFinalizedDeals.php#L175">at line 175</a></div>
+        <code>                    <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/FinalizedDeal.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\FinalizedDeal">FinalizedDeal</abbr></a>
+    <strong>setReadyToServe</strong>(string $deal, <a href="../../../../Google/Service/AuthorizedBuyersMarketplace/SetReadyToServeRequest.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\SetReadyToServeRequest">SetReadyToServeRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the given finalized deal as ready to serve. By default, deals are set as
+ready to serve as soon as they're finalized. If you want to opt out of the
+default behavior, and manually indicate that deals are ready to serve, ask
+your Technical Account Manager to add you to the allowlist. If you choose to
+use this method, finalized deals belonging to the bidder and its child seats
+don't start serving until after you call <code>setReadyToServe</code>, and after the
+deals become active. For example, you can use this method to delay receiving
+bid requests until your creative is ready. This method only applies to
+programmatic guaranteed deals. (finalizedDeals.setReadyToServe)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$deal</td>
+                <td><p>Required. Format:
+<code>buyers/{accountId}/finalizedDeals/{dealId}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AuthorizedBuyersMarketplace/SetReadyToServeRequest.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\SetReadyToServeRequest">SetReadyToServeRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AuthorizedBuyersMarketplace/FinalizedDeal.html"><abbr title="Google\Service\AuthorizedBuyersMarketplace\FinalizedDeal">FinalizedDeal</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

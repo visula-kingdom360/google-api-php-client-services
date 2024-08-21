@@ -1,0 +1,2115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\SQLAdmin\Resource\Instances | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_SQLAdmin_Resource_Instances" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/SQLAdmin.ns.html">SQLAdmin</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/SQLAdmin/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>Instances</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Instances    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Instances</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;instances&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $sqladminService = new Google\Service\SQLAdmin(...);
+ $instances = $sqladminService-&gt;instances;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/SqlInstancesAcquireSsrsLeaseResponse.html"><abbr title="Google\Service\SQLAdmin\SqlInstancesAcquireSsrsLeaseResponse">SqlInstancesAcquireSsrsLeaseResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_acquireSsrsLease">acquireSsrsLease</a>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesAcquireSsrsLeaseRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesAcquireSsrsLeaseRequest">InstancesAcquireSsrsLeaseRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Acquire a lease for the setup of SQL Server Reporting Services (SSRS).</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addServerCa">addServerCa</a>(string $project, string $instance, array $optParams = [])
+        
+                                            <p><p>Adds a new trusted Certificate Authority (CA) version for the specified
+instance. Required to prepare for a certificate rotation. If a CA version was
+previously added but never used in a certificate rotation, this operation
+replaces that version. There cannot be more than one CA version waiting to be
+rotated in. For instances that have enabled Certificate Authority Service
+(CAS) based server CA, please use AddServerCertificate to add a new server
+certificate. (instances.addServerCa)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_cloneInstances">cloneInstances</a>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesCloneRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesCloneRequest">InstancesCloneRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a Cloud SQL instance as a clone of the source instance. Using this
+operation might cause your instance to restart. (instances.cloneInstances)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $project, string $instance, array $optParams = [])
+        
+                                            <p><p>Deletes a Cloud SQL instance. (instances.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_demote">demote</a>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesDemoteRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesDemoteRequest">InstancesDemoteRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Demotes an existing standalone instance to be a Cloud SQL read replica for an
+external database server. (instances.demote)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_demoteMaster">demoteMaster</a>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesDemoteMasterRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesDemoteMasterRequest">InstancesDemoteMasterRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Demotes the stand-alone instance to be a Cloud SQL read replica for an
+external database server. (instances.demoteMaster)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_export">export</a>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesExportRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesExportRequest">InstancesExportRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Exports data from a Cloud SQL instance to a Cloud Storage bucket as a SQL
+dump or CSV file. (instances.export)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_failover">failover</a>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesFailoverRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesFailoverRequest">InstancesFailoverRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Initiates a manual failover of a high availability (HA) primary instance to a
+standby instance, which becomes the primary instance. Users are then rerouted
+to the new primary. For more information, see the <a href="https://cloud.google.com/sql/docs/mysql/high-availability">Overview of high
+availability</a> page
+in the Cloud SQL documentation. If using Legacy HA (MySQL only), this causes
+the instance to failover to its failover replica instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/DatabaseInstance.html"><abbr title="Google\Service\SQLAdmin\DatabaseInstance">DatabaseInstance</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $project, string $instance, array $optParams = [])
+        
+                                            <p><p>Retrieves a resource containing information about a Cloud SQL instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_import">import</a>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesImportRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesImportRequest">InstancesImportRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Imports data into a Cloud SQL instance from a SQL dump or CSV file in Cloud
+Storage. (instances.import)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_insert">insert</a>(string $project, <a href="../../../../Google/Service/SQLAdmin/DatabaseInstance.html"><abbr title="Google\Service\SQLAdmin\DatabaseInstance">DatabaseInstance</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a new Cloud SQL instance. (instances.insert)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/InstancesListResponse.html"><abbr title="Google\Service\SQLAdmin\InstancesListResponse">InstancesListResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listInstances">listInstances</a>(string $project, array $optParams = [])
+        
+                                            <p><p>Lists instances under a given project. (instances.listInstances)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/InstancesListServerCasResponse.html"><abbr title="Google\Service\SQLAdmin\InstancesListServerCasResponse">InstancesListServerCasResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listServerCas">listServerCas</a>(string $project, string $instance, array $optParams = [])
+        
+                                            <p><p>Lists all of the trusted Certificate Authorities (CAs) for the specified
+instance. There can be up to three CAs listed: the CA that was used to sign
+the certificate that is currently in use, a CA that has been added but not
+yet used to sign a certificate, and a CA used to sign a certificate that has
+previously rotated out. (instances.listServerCas)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/DatabaseInstance.html"><abbr title="Google\Service\SQLAdmin\DatabaseInstance">DatabaseInstance</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Partially updates settings of a Cloud SQL instance by merging the request
+with the current configuration. This method supports patch semantics.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_promoteReplica">promoteReplica</a>(string $project, string $instance, array $optParams = [])
+        
+                                            <p><p>Promotes the read replica instance to be an independent Cloud SQL primary
+instance. Using this operation might cause your instance to restart.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_reencrypt">reencrypt</a>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesReencryptRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesReencryptRequest">InstancesReencryptRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Reencrypt CMEK instance with latest key version. (instances.reencrypt)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/SqlInstancesReleaseSsrsLeaseResponse.html"><abbr title="Google\Service\SQLAdmin\SqlInstancesReleaseSsrsLeaseResponse">SqlInstancesReleaseSsrsLeaseResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_releaseSsrsLease">releaseSsrsLease</a>(string $project, string $instance, array $optParams = [])
+        
+                                            <p><p>Release a lease for the setup of SQL Server Reporting Services (SSRS).</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_resetSslConfig">resetSslConfig</a>(string $project, string $instance, array $optParams = [])
+        
+                                            <p><p>Deletes all client certificates and generates a new server SSL certificate
+for the instance. (instances.resetSslConfig)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_restart">restart</a>(string $project, string $instance, array $optParams = [])
+        
+                                            <p><p>Restarts a Cloud SQL instance. (instances.restart)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_restoreBackup">restoreBackup</a>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesRestoreBackupRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesRestoreBackupRequest">InstancesRestoreBackupRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Restores a backup of a Cloud SQL instance. Using this operation might cause
+your instance to restart. (instances.restoreBackup)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_rotateServerCa">rotateServerCa</a>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesRotateServerCaRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesRotateServerCaRequest">InstancesRotateServerCaRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Rotates the server certificate to one signed by the Certificate Authority
+(CA) version previously added with the addServerCA method. For instances that
+have enabled Certificate Authority Service (CAS) based server CA, please use
+RotateServerCertificate to rotate the server certificate.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_startReplica">startReplica</a>(string $project, string $instance, array $optParams = [])
+        
+                                            <p><p>Starts the replication in the read replica instance. (instances.startReplica)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_stopReplica">stopReplica</a>(string $project, string $instance, array $optParams = [])
+        
+                                            <p><p>Stops the replication in the read replica instance. (instances.stopReplica)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_switchover">switchover</a>(string $project, string $instance, array $optParams = [])
+        
+                                            <p><p>Switches over from the primary instance to the designated DR replica
+instance. (instances.switchover)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_truncateLog">truncateLog</a>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesTruncateLogRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesTruncateLogRequest">InstancesTruncateLogRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Truncate MySQL general and slow query log tables MySQL only.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/DatabaseInstance.html"><abbr title="Google\Service\SQLAdmin\DatabaseInstance">DatabaseInstance</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates settings of a Cloud SQL instance. Using this operation might cause
+your instance to restart. (instances.update)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_acquireSsrsLease">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L63">at line 63</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/SqlInstancesAcquireSsrsLeaseResponse.html"><abbr title="Google\Service\SQLAdmin\SqlInstancesAcquireSsrsLeaseResponse">SqlInstancesAcquireSsrsLeaseResponse</abbr></a>
+    <strong>acquireSsrsLease</strong>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesAcquireSsrsLeaseRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesAcquireSsrsLeaseRequest">InstancesAcquireSsrsLeaseRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Acquire a lease for the setup of SQL Server Reporting Services (SSRS).</p></p>                <p>(instances.acquireSsrsLease)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Required. Project ID of the project that contains the
+instance (Example: project-id).</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Required. Cloud SQL instance ID. This doesn't include
+the project ID. It's composed of lowercase letters, numbers, and hyphens, and
+it must start with a letter. The total length must be 98 characters or less
+(Example: instance-id).</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/SQLAdmin/InstancesAcquireSsrsLeaseRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesAcquireSsrsLeaseRequest">InstancesAcquireSsrsLeaseRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/SqlInstancesAcquireSsrsLeaseResponse.html"><abbr title="Google\Service\SQLAdmin\SqlInstancesAcquireSsrsLeaseResponse">SqlInstancesAcquireSsrsLeaseResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addServerCa">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L85">at line 85</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>addServerCa</strong>(string $project, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Adds a new trusted Certificate Authority (CA) version for the specified
+instance. Required to prepare for a certificate rotation. If a CA version was
+previously added but never used in a certificate rotation, this operation
+replaces that version. There cannot be more than one CA version waiting to be
+rotated in. For instances that have enabled Certificate Authority Service
+(CAS) based server CA, please use AddServerCertificate to add a new server
+certificate. (instances.addServerCa)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID of the project that contains the instance.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Cloud SQL instance ID. This does not include the
+project ID.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cloneInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L104">at line 104</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>cloneInstances</strong>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesCloneRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesCloneRequest">InstancesCloneRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a Cloud SQL instance as a clone of the source instance. Using this
+operation might cause your instance to restart. (instances.cloneInstances)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID of the source as well as the clone Cloud
+SQL instance.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>The ID of the Cloud SQL instance to be cloned
+(source). This does not include the project ID.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/SQLAdmin/InstancesCloneRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesCloneRequest">InstancesCloneRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L121">at line 121</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>delete</strong>(string $project, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a Cloud SQL instance. (instances.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID of the project that contains the instance
+to be deleted.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Cloud SQL instance ID. This does not include the
+project ID.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_demote">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L139">at line 139</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>demote</strong>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesDemoteRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesDemoteRequest">InstancesDemoteRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Demotes an existing standalone instance to be a Cloud SQL read replica for an
+external database server. (instances.demote)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Required. ID of the project that contains the
+instance.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Required. Cloud SQL instance name.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/SQLAdmin/InstancesDemoteRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesDemoteRequest">InstancesDemoteRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_demoteMaster">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L156">at line 156</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>demoteMaster</strong>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesDemoteMasterRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesDemoteMasterRequest">InstancesDemoteMasterRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Demotes the stand-alone instance to be a Cloud SQL read replica for an
+external database server. (instances.demoteMaster)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>ID of the project that contains the instance.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Cloud SQL instance name.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/SQLAdmin/InstancesDemoteMasterRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesDemoteMasterRequest">InstancesDemoteMasterRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_export">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L175">at line 175</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>export</strong>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesExportRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesExportRequest">InstancesExportRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Exports data from a Cloud SQL instance to a Cloud Storage bucket as a SQL
+dump or CSV file. (instances.export)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID of the project that contains the instance
+to be exported.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Cloud SQL instance ID. This does not include the
+project ID.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/SQLAdmin/InstancesExportRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesExportRequest">InstancesExportRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_failover">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L198">at line 198</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>failover</strong>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesFailoverRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesFailoverRequest">InstancesFailoverRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Initiates a manual failover of a high availability (HA) primary instance to a
+standby instance, which becomes the primary instance. Users are then rerouted
+to the new primary. For more information, see the <a href="https://cloud.google.com/sql/docs/mysql/high-availability">Overview of high
+availability</a> page
+in the Cloud SQL documentation. If using Legacy HA (MySQL only), this causes
+the instance to failover to its failover replica instance.</p></p>                <p>(instances.failover)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>ID of the project that contains the read replica.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Cloud SQL instance ID. This does not include the
+project ID.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/SQLAdmin/InstancesFailoverRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesFailoverRequest">InstancesFailoverRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L215">at line 215</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/DatabaseInstance.html"><abbr title="Google\Service\SQLAdmin\DatabaseInstance">DatabaseInstance</abbr></a>
+    <strong>get</strong>(string $project, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves a resource containing information about a Cloud SQL instance.</p></p>                <p>(instances.get)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID of the project that contains the instance.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Database instance ID. This does not include the
+project ID.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/DatabaseInstance.html"><abbr title="Google\Service\SQLAdmin\DatabaseInstance">DatabaseInstance</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_import">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L233">at line 233</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>import</strong>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesImportRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesImportRequest">InstancesImportRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Imports data into a Cloud SQL instance from a SQL dump or CSV file in Cloud
+Storage. (instances.import)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID of the project that contains the instance.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Cloud SQL instance ID. This does not include the
+project ID.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/SQLAdmin/InstancesImportRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesImportRequest">InstancesImportRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L249">at line 249</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>insert</strong>(string $project, <a href="../../../../Google/Service/SQLAdmin/DatabaseInstance.html"><abbr title="Google\Service\SQLAdmin\DatabaseInstance">DatabaseInstance</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a new Cloud SQL instance. (instances.insert)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID of the project to which the newly created
+Cloud SQL instances should belong.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/SQLAdmin/DatabaseInstance.html"><abbr title="Google\Service\SQLAdmin\DatabaseInstance">DatabaseInstance</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L278">at line 278</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/InstancesListResponse.html"><abbr title="Google\Service\SQLAdmin\InstancesListResponse">InstancesListResponse</abbr></a>
+    <strong>listInstances</strong>(string $project, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists instances under a given project. (instances.listInstances)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID of the project for which to list Cloud SQL
+instances.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/InstancesListResponse.html"><abbr title="Google\Service\SQLAdmin\InstancesListResponse">InstancesListResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listServerCas">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L298">at line 298</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/InstancesListServerCasResponse.html"><abbr title="Google\Service\SQLAdmin\InstancesListServerCasResponse">InstancesListServerCasResponse</abbr></a>
+    <strong>listServerCas</strong>(string $project, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all of the trusted Certificate Authorities (CAs) for the specified
+instance. There can be up to three CAs listed: the CA that was used to sign
+the certificate that is currently in use, a CA that has been added but not
+yet used to sign a certificate, and a CA used to sign a certificate that has
+previously rotated out. (instances.listServerCas)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID of the project that contains the instance.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Cloud SQL instance ID. This does not include the
+project ID.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/InstancesListServerCasResponse.html"><abbr title="Google\Service\SQLAdmin\InstancesListServerCasResponse">InstancesListServerCasResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L317">at line 317</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>patch</strong>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/DatabaseInstance.html"><abbr title="Google\Service\SQLAdmin\DatabaseInstance">DatabaseInstance</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Partially updates settings of a Cloud SQL instance by merging the request
+with the current configuration. This method supports patch semantics.</p></p>                <p>(instances.patch)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID of the project that contains the instance.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Cloud SQL instance ID. This does not include the
+project ID.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/SQLAdmin/DatabaseInstance.html"><abbr title="Google\Service\SQLAdmin\DatabaseInstance">DatabaseInstance</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_promoteReplica">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L341">at line 341</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>promoteReplica</strong>(string $project, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Promotes the read replica instance to be an independent Cloud SQL primary
+instance. Using this operation might cause your instance to restart.</p></p>                <p>(instances.promoteReplica)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>ID of the project that contains the read replica.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Cloud SQL read replica instance name.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reencrypt">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L358">at line 358</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>reencrypt</strong>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesReencryptRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesReencryptRequest">InstancesReencryptRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Reencrypt CMEK instance with latest key version. (instances.reencrypt)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>ID of the project that contains the instance.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Cloud SQL instance ID. This does not include the
+project ID.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/SQLAdmin/InstancesReencryptRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesReencryptRequest">InstancesReencryptRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_releaseSsrsLease">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L377">at line 377</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/SqlInstancesReleaseSsrsLeaseResponse.html"><abbr title="Google\Service\SQLAdmin\SqlInstancesReleaseSsrsLeaseResponse">SqlInstancesReleaseSsrsLeaseResponse</abbr></a>
+    <strong>releaseSsrsLease</strong>(string $project, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Release a lease for the setup of SQL Server Reporting Services (SSRS).</p></p>                <p>(instances.releaseSsrsLease)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Required. The project ID that contains the instance.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Required. The Cloud SQL instance ID. This doesn't
+include the project ID. The instance ID contains lowercase letters, numbers,
+and hyphens, and it must start with a letter. This ID can have a maximum
+length of 98 characters.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/SqlInstancesReleaseSsrsLeaseResponse.html"><abbr title="Google\Service\SQLAdmin\SqlInstancesReleaseSsrsLeaseResponse">SqlInstancesReleaseSsrsLeaseResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resetSslConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L394">at line 394</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>resetSslConfig</strong>(string $project, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes all client certificates and generates a new server SSL certificate
+for the instance. (instances.resetSslConfig)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID of the project that contains the instance.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Cloud SQL instance ID. This does not include the
+project ID.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_restart">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L411">at line 411</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>restart</strong>(string $project, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Restarts a Cloud SQL instance. (instances.restart)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID of the project that contains the instance
+to be restarted.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Cloud SQL instance ID. This does not include the
+project ID.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_restoreBackup">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L429">at line 429</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>restoreBackup</strong>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesRestoreBackupRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesRestoreBackupRequest">InstancesRestoreBackupRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Restores a backup of a Cloud SQL instance. Using this operation might cause
+your instance to restart. (instances.restoreBackup)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID of the project that contains the instance.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Cloud SQL instance ID. This does not include the
+project ID.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/SQLAdmin/InstancesRestoreBackupRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesRestoreBackupRequest">InstancesRestoreBackupRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rotateServerCa">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L450">at line 450</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>rotateServerCa</strong>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesRotateServerCaRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesRotateServerCaRequest">InstancesRotateServerCaRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Rotates the server certificate to one signed by the Certificate Authority
+(CA) version previously added with the addServerCA method. For instances that
+have enabled Certificate Authority Service (CAS) based server CA, please use
+RotateServerCertificate to rotate the server certificate.</p></p>                <p>(instances.rotateServerCa)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID of the project that contains the instance.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Cloud SQL instance ID. This does not include the
+project ID.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/SQLAdmin/InstancesRotateServerCaRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesRotateServerCaRequest">InstancesRotateServerCaRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startReplica">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L465">at line 465</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>startReplica</strong>(string $project, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Starts the replication in the read replica instance. (instances.startReplica)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>ID of the project that contains the read replica.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Cloud SQL read replica instance name.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stopReplica">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L480">at line 480</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>stopReplica</strong>(string $project, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Stops the replication in the read replica instance. (instances.stopReplica)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>ID of the project that contains the read replica.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Cloud SQL read replica instance name.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_switchover">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L500">at line 500</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>switchover</strong>(string $project, string $instance, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Switches over from the primary instance to the designated DR replica
+instance. (instances.switchover)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>ID of the project that contains the replica.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Cloud SQL read replica instance name.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_truncateLog">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L518">at line 518</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>truncateLog</strong>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/InstancesTruncateLogRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesTruncateLogRequest">InstancesTruncateLogRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Truncate MySQL general and slow query log tables MySQL only.</p></p>                <p>(instances.truncateLog)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID of the Cloud SQL project.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Cloud SQL instance ID. This does not include the
+project ID.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/SQLAdmin/InstancesTruncateLogRequest.html"><abbr title="Google\Service\SQLAdmin\InstancesTruncateLogRequest">InstancesTruncateLogRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/SQLAdmin/Resource/Instances.php#L536">at line 536</a></div>
+        <code>                    <a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a>
+    <strong>update</strong>(string $project, string $instance, <a href="../../../../Google/Service/SQLAdmin/DatabaseInstance.html"><abbr title="Google\Service\SQLAdmin\DatabaseInstance">DatabaseInstance</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates settings of a Cloud SQL instance. Using this operation might cause
+your instance to restart. (instances.update)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td><p>Project ID of the project that contains the instance.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$instance</td>
+                <td><p>Cloud SQL instance ID. This does not include the
+project ID.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/SQLAdmin/DatabaseInstance.html"><abbr title="Google\Service\SQLAdmin\DatabaseInstance">DatabaseInstance</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/SQLAdmin/Operation.html"><abbr title="Google\Service\SQLAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

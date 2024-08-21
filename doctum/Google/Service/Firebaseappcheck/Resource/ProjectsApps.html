@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Firebaseappcheck\Resource\ProjectsApps | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Firebaseappcheck_Resource_ProjectsApps" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Firebaseappcheck.ns.html">Firebaseappcheck</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Firebaseappcheck/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ProjectsApps</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsApps    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsApps</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Firebaseappcheck/Resource/ProjectsApps.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;apps&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $firebaseappcheckService = new Google\Service\Firebaseappcheck(...);
+ $apps = $firebaseappcheckService-&gt;projects_apps;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_exchangeAppAttestAssertion">exchangeAppAttestAssertion</a>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeAppAttestAssertionRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeAppAttestAssertionRequest">GoogleFirebaseAppcheckV1ExchangeAppAttestAssertionRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Accepts an App Attest assertion and an artifact previously obtained from
+ExchangeAppAttestAttestation and verifies those with Apple. If valid, returns
+an AppCheckToken. (apps.exchangeAppAttestAssertion)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationResponse.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationResponse">GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_exchangeAppAttestAttestation">exchangeAppAttestAttestation</a>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationRequest">GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Accepts an App Attest CBOR attestation and verifies it with Apple using your
+preconfigured team and bundle IDs. If valid, returns an attestation artifact
+that can later be exchanged for an AppCheckToken using
+ExchangeAppAttestAssertion. For convenience and performance, this method's
+response object will also contain an AppCheckToken (if the verification is
+successful). (apps.exchangeAppAttestAttestation)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_exchangeCustomToken">exchangeCustomToken</a>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeCustomTokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeCustomTokenRequest">GoogleFirebaseAppcheckV1ExchangeCustomTokenRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Validates a custom token signed using your project's Admin SDK service
+account credentials. If valid, returns an AppCheckToken.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_exchangeDebugToken">exchangeDebugToken</a>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeDebugTokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeDebugTokenRequest">GoogleFirebaseAppcheckV1ExchangeDebugTokenRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Validates a debug token secret that you have previously created using
+CreateDebugToken. If valid, returns an AppCheckToken. Note that a restrictive
+quota is enforced on this method to prevent accidental exposure of the app to
+abuse. (apps.exchangeDebugToken)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_exchangeDeviceCheckToken">exchangeDeviceCheckToken</a>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeDeviceCheckTokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeDeviceCheckTokenRequest">GoogleFirebaseAppcheckV1ExchangeDeviceCheckTokenRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Accepts a <a href="https://developer.apple.com/documentation/devicech
+eck/dcdevice"><code>device_token</code></a> issued by DeviceCheck, and attempts to validate it with Apple.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_exchangePlayIntegrityToken">exchangePlayIntegrityToken</a>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangePlayIntegrityTokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangePlayIntegrityTokenRequest">GoogleFirebaseAppcheckV1ExchangePlayIntegrityTokenRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Validates an <a href="https://d
+eveloper.android.com/google/play/integrity/verdict#decrypt-verify">integrity verdict response token from Play Integrity</a>. If valid,
+returns an AppCheckToken. (apps.exchangePlayIntegrityToken)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_exchangeRecaptchaEnterpriseToken">exchangeRecaptchaEnterpriseToken</a>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeRecaptchaEnterpriseTokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeRecaptchaEnterpriseTokenRequest">GoogleFirebaseAppcheckV1ExchangeRecaptchaEnterpriseTokenRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Validates a <a href="https://cloud.google.com/recaptcha-enterprise/docs/create-
+assessment#retrieve_token">reCAPTCHA Enterprise response
+token</a>. If valid, returns an AppCheckToken.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_exchangeRecaptchaV3Token">exchangeRecaptchaV3Token</a>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeRecaptchaV3TokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeRecaptchaV3TokenRequest">GoogleFirebaseAppcheckV1ExchangeRecaptchaV3TokenRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Validates a <a href="https://developers.google.com/recaptcha/docs/v3">reCAPTCHA v3 response
+token</a>. If valid, returns an
+AppCheckToken. (apps.exchangeRecaptchaV3Token)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_exchangeSafetyNetToken">exchangeSafetyNetToken</a>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeSafetyNetTokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeSafetyNetTokenRequest">GoogleFirebaseAppcheckV1ExchangeSafetyNetTokenRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Validates a <a href="https://developer.android.com/training/safetynet/attestation#request-
+attestation-step">SafetyNet
+token</a>. If valid, returns an AppCheckToken.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1GenerateAppAttestChallengeResponse.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1GenerateAppAttestChallengeResponse">GoogleFirebaseAppcheckV1GenerateAppAttestChallengeResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_generateAppAttestChallenge">generateAppAttestChallenge</a>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1GenerateAppAttestChallengeRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1GenerateAppAttestChallengeRequest">GoogleFirebaseAppcheckV1GenerateAppAttestChallengeRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Generates a challenge that protects the integrity of an immediately following
+call to ExchangeAppAttestAttestation or ExchangeAppAttestAssertion. A
+challenge should not be reused for multiple calls.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1GeneratePlayIntegrityChallengeResponse.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1GeneratePlayIntegrityChallengeResponse">GoogleFirebaseAppcheckV1GeneratePlayIntegrityChallengeResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_generatePlayIntegrityChallenge">generatePlayIntegrityChallenge</a>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1GeneratePlayIntegrityChallengeRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1GeneratePlayIntegrityChallengeRequest">GoogleFirebaseAppcheckV1GeneratePlayIntegrityChallengeRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Generates a challenge that protects the integrity of an immediately following
+integrity verdict request to the Play Integrity API. The next call to
+ExchangePlayIntegrityToken using the resulting integrity token will verify
+the presence and validity of the challenge. A challenge should not be reused
+for multiple calls. (apps.generatePlayIntegrityChallenge)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_exchangeAppAttestAssertion">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Firebaseappcheck/Resource/ProjectsApps.php#L61">at line 61</a></div>
+        <code>                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a>
+    <strong>exchangeAppAttestAssertion</strong>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeAppAttestAssertionRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeAppAttestAssertionRequest">GoogleFirebaseAppcheckV1ExchangeAppAttestAssertionRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Accepts an App Attest assertion and an artifact previously obtained from
+ExchangeAppAttestAttestation and verifies those with Apple. If valid, returns
+an AppCheckToken. (apps.exchangeAppAttestAssertion)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$app</td>
+                <td><p>Required. The relative resource name of the iOS app, in
+the format: <code>projects/{project_number}/apps/{app_id}</code> If necessary, the
+<code>project_number</code> element can be replaced with the project ID of the Firebase
+project. Learn more about using project identifiers in Google's <a href="https://google.aip.dev/cloud/2510">AIP
+2510</a> standard.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeAppAttestAssertionRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeAppAttestAssertionRequest">GoogleFirebaseAppcheckV1ExchangeAppAttestAssertionRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exchangeAppAttestAttestation">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Firebaseappcheck/Resource/ProjectsApps.php#L85">at line 85</a></div>
+        <code>                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationResponse.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationResponse">GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationResponse</abbr></a>
+    <strong>exchangeAppAttestAttestation</strong>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationRequest">GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Accepts an App Attest CBOR attestation and verifies it with Apple using your
+preconfigured team and bundle IDs. If valid, returns an attestation artifact
+that can later be exchanged for an AppCheckToken using
+ExchangeAppAttestAssertion. For convenience and performance, this method's
+response object will also contain an AppCheckToken (if the verification is
+successful). (apps.exchangeAppAttestAttestation)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$app</td>
+                <td><p>Required. The relative resource name of the iOS app, in
+the format: <code>projects/{project_number}/apps/{app_id}</code> If necessary, the
+<code>project_number</code> element can be replaced with the project ID of the Firebase
+project. Learn more about using project identifiers in Google's <a href="https://google.aip.dev/cloud/2510">AIP
+2510</a> standard.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationRequest">GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationResponse.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationResponse">GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exchangeCustomToken">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Firebaseappcheck/Resource/ProjectsApps.php#L106">at line 106</a></div>
+        <code>                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a>
+    <strong>exchangeCustomToken</strong>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeCustomTokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeCustomTokenRequest">GoogleFirebaseAppcheckV1ExchangeCustomTokenRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Validates a custom token signed using your project's Admin SDK service
+account credentials. If valid, returns an AppCheckToken.</p></p>                <p>(apps.exchangeCustomToken)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$app</td>
+                <td><p>Required. The relative resource name of the app, in the
+format: <code>projects/{project_number}/apps/{app_id}</code> If necessary, the
+<code>project_number</code> element can be replaced with the project ID of the Firebase
+project. Learn more about using project identifiers in Google's <a href="https://google.aip.dev/cloud/2510">AIP
+2510</a> standard.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeCustomTokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeCustomTokenRequest">GoogleFirebaseAppcheckV1ExchangeCustomTokenRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exchangeDebugToken">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Firebaseappcheck/Resource/ProjectsApps.php#L128">at line 128</a></div>
+        <code>                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a>
+    <strong>exchangeDebugToken</strong>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeDebugTokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeDebugTokenRequest">GoogleFirebaseAppcheckV1ExchangeDebugTokenRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Validates a debug token secret that you have previously created using
+CreateDebugToken. If valid, returns an AppCheckToken. Note that a restrictive
+quota is enforced on this method to prevent accidental exposure of the app to
+abuse. (apps.exchangeDebugToken)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$app</td>
+                <td><p>Required. The relative resource name of the app, in the
+format: <code>projects/{project_number}/apps/{app_id}</code> If necessary, the
+<code>project_number</code> element can be replaced with the project ID of the Firebase
+project. Learn more about using project identifiers in Google's <a href="https://google.aip.dev/cloud/2510">AIP
+2510</a> standard.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeDebugTokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeDebugTokenRequest">GoogleFirebaseAppcheckV1ExchangeDebugTokenRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exchangeDeviceCheckToken">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Firebaseappcheck/Resource/ProjectsApps.php#L149">at line 149</a></div>
+        <code>                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a>
+    <strong>exchangeDeviceCheckToken</strong>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeDeviceCheckTokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeDeviceCheckTokenRequest">GoogleFirebaseAppcheckV1ExchangeDeviceCheckTokenRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Accepts a <a href="https://developer.apple.com/documentation/devicech
+eck/dcdevice"><code>device_token</code></a> issued by DeviceCheck, and attempts to validate it with Apple.</p></p>                <p><p>If valid, returns an AppCheckToken. (apps.exchangeDeviceCheckToken)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$app</td>
+                <td><p>Required. The relative resource name of the iOS app, in
+the format: <code>projects/{project_number}/apps/{app_id}</code> If necessary, the
+<code>project_number</code> element can be replaced with the project ID of the Firebase
+project. Learn more about using project identifiers in Google's <a href="https://google.aip.dev/cloud/2510">AIP
+2510</a> standard.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeDeviceCheckTokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeDeviceCheckTokenRequest">GoogleFirebaseAppcheckV1ExchangeDeviceCheckTokenRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exchangePlayIntegrityToken">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Firebaseappcheck/Resource/ProjectsApps.php#L170">at line 170</a></div>
+        <code>                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a>
+    <strong>exchangePlayIntegrityToken</strong>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangePlayIntegrityTokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangePlayIntegrityTokenRequest">GoogleFirebaseAppcheckV1ExchangePlayIntegrityTokenRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Validates an <a href="https://d
+eveloper.android.com/google/play/integrity/verdict#decrypt-verify">integrity verdict response token from Play Integrity</a>. If valid,
+returns an AppCheckToken. (apps.exchangePlayIntegrityToken)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$app</td>
+                <td><p>Required. The relative resource name of the Android app,
+in the format: <code>projects/{project_number}/apps/{app_id}</code> If necessary,
+the <code>project_number</code> element can be replaced with the project ID of the
+Firebase project. Learn more about using project identifiers in Google's <a href="https://google.aip.dev/cloud/2510">AIP
+2510</a> standard.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangePlayIntegrityTokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangePlayIntegrityTokenRequest">GoogleFirebaseAppcheckV1ExchangePlayIntegrityTokenRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exchangeRecaptchaEnterpriseToken">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Firebaseappcheck/Resource/ProjectsApps.php#L192">at line 192</a></div>
+        <code>                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a>
+    <strong>exchangeRecaptchaEnterpriseToken</strong>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeRecaptchaEnterpriseTokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeRecaptchaEnterpriseTokenRequest">GoogleFirebaseAppcheckV1ExchangeRecaptchaEnterpriseTokenRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Validates a <a href="https://cloud.google.com/recaptcha-enterprise/docs/create-
+assessment#retrieve_token">reCAPTCHA Enterprise response
+token</a>. If valid, returns an AppCheckToken.</p></p>                <p>(apps.exchangeRecaptchaEnterpriseToken)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$app</td>
+                <td><p>Required. The relative resource name of the web app, in
+the format: <code>projects/{project_number}/apps/{app_id}</code> If necessary, the
+<code>project_number</code> element can be replaced with the project ID of the Firebase
+project. Learn more about using project identifiers in Google's <a href="https://google.aip.dev/cloud/2510">AIP
+2510</a> standard.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeRecaptchaEnterpriseTokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeRecaptchaEnterpriseTokenRequest">GoogleFirebaseAppcheckV1ExchangeRecaptchaEnterpriseTokenRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exchangeRecaptchaV3Token">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Firebaseappcheck/Resource/ProjectsApps.php#L213">at line 213</a></div>
+        <code>                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a>
+    <strong>exchangeRecaptchaV3Token</strong>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeRecaptchaV3TokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeRecaptchaV3TokenRequest">GoogleFirebaseAppcheckV1ExchangeRecaptchaV3TokenRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Validates a <a href="https://developers.google.com/recaptcha/docs/v3">reCAPTCHA v3 response
+token</a>. If valid, returns an
+AppCheckToken. (apps.exchangeRecaptchaV3Token)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$app</td>
+                <td><p>Required. The relative resource name of the web app, in
+the format: <code>projects/{project_number}/apps/{app_id}</code> If necessary, the
+<code>project_number</code> element can be replaced with the project ID of the Firebase
+project. Learn more about using project identifiers in Google's <a href="https://google.aip.dev/cloud/2510">AIP
+2510</a> standard.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeRecaptchaV3TokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeRecaptchaV3TokenRequest">GoogleFirebaseAppcheckV1ExchangeRecaptchaV3TokenRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exchangeSafetyNetToken">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Firebaseappcheck/Resource/ProjectsApps.php#L235">at line 235</a></div>
+        <code>                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a>
+    <strong>exchangeSafetyNetToken</strong>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeSafetyNetTokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeSafetyNetTokenRequest">GoogleFirebaseAppcheckV1ExchangeSafetyNetTokenRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Validates a <a href="https://developer.android.com/training/safetynet/attestation#request-
+attestation-step">SafetyNet
+token</a>. If valid, returns an AppCheckToken.</p></p>                <p>(apps.exchangeSafetyNetToken)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$app</td>
+                <td><p>Required. The relative resource name of the Android app,
+in the format: <code>projects/{project_number}/apps/{app_id}</code> If necessary,
+the <code>project_number</code> element can be replaced with the project ID of the
+Firebase project. Learn more about using project identifiers in Google's <a href="https://google.aip.dev/cloud/2510">AIP
+2510</a> standard.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1ExchangeSafetyNetTokenRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeSafetyNetTokenRequest">GoogleFirebaseAppcheckV1ExchangeSafetyNetTokenRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1AppCheckToken.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken">GoogleFirebaseAppcheckV1AppCheckToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generateAppAttestChallenge">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Firebaseappcheck/Resource/ProjectsApps.php#L257">at line 257</a></div>
+        <code>                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1GenerateAppAttestChallengeResponse.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1GenerateAppAttestChallengeResponse">GoogleFirebaseAppcheckV1GenerateAppAttestChallengeResponse</abbr></a>
+    <strong>generateAppAttestChallenge</strong>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1GenerateAppAttestChallengeRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1GenerateAppAttestChallengeRequest">GoogleFirebaseAppcheckV1GenerateAppAttestChallengeRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Generates a challenge that protects the integrity of an immediately following
+call to ExchangeAppAttestAttestation or ExchangeAppAttestAssertion. A
+challenge should not be reused for multiple calls.</p></p>                <p>(apps.generateAppAttestChallenge)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$app</td>
+                <td><p>Required. The relative resource name of the iOS app, in
+the format: <code>projects/{project_number}/apps/{app_id}</code> If necessary, the
+<code>project_number</code> element can be replaced with the project ID of the Firebase
+project. Learn more about using project identifiers in Google's <a href="https://google.aip.dev/cloud/2510">AIP
+2510</a> standard.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1GenerateAppAttestChallengeRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1GenerateAppAttestChallengeRequest">GoogleFirebaseAppcheckV1GenerateAppAttestChallengeRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1GenerateAppAttestChallengeResponse.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1GenerateAppAttestChallengeResponse">GoogleFirebaseAppcheckV1GenerateAppAttestChallengeResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generatePlayIntegrityChallenge">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Firebaseappcheck/Resource/ProjectsApps.php#L280">at line 280</a></div>
+        <code>                    <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1GeneratePlayIntegrityChallengeResponse.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1GeneratePlayIntegrityChallengeResponse">GoogleFirebaseAppcheckV1GeneratePlayIntegrityChallengeResponse</abbr></a>
+    <strong>generatePlayIntegrityChallenge</strong>(string $app, <a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1GeneratePlayIntegrityChallengeRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1GeneratePlayIntegrityChallengeRequest">GoogleFirebaseAppcheckV1GeneratePlayIntegrityChallengeRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Generates a challenge that protects the integrity of an immediately following
+integrity verdict request to the Play Integrity API. The next call to
+ExchangePlayIntegrityToken using the resulting integrity token will verify
+the presence and validity of the challenge. A challenge should not be reused
+for multiple calls. (apps.generatePlayIntegrityChallenge)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$app</td>
+                <td><p>Required. The relative resource name of the app, in the
+format: <code>projects/{project_number}/apps/{app_id}</code> If necessary, the
+<code>project_number</code> element can be replaced with the project ID of the Firebase
+project. Learn more about using project identifiers in Google's <a href="https://google.aip.dev/cloud/2510">AIP
+2510</a> standard.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1GeneratePlayIntegrityChallengeRequest.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1GeneratePlayIntegrityChallengeRequest">GoogleFirebaseAppcheckV1GeneratePlayIntegrityChallengeRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Firebaseappcheck/GoogleFirebaseAppcheckV1GeneratePlayIntegrityChallengeResponse.html"><abbr title="Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1GeneratePlayIntegrityChallengeResponse">GoogleFirebaseAppcheckV1GeneratePlayIntegrityChallengeResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

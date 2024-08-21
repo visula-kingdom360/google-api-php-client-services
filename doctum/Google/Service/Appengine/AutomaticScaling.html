@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Appengine\AutomaticScaling | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../doctum.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Appengine_AutomaticScaling" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../Google/Service/Appengine.ns.html">Appengine</a></li><li class="backslash">\</li><li>AutomaticScaling</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>AutomaticScaling    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>AutomaticScaling</strong>        extends <abbr title="Google\Model">Model</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_coolDownPeriod">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$coolDownPeriod</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cpuUtilizationType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$cpuUtilizationType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cpuUtilizationDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$cpuUtilizationDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_diskUtilizationType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$diskUtilizationType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_diskUtilizationDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$diskUtilizationDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_maxConcurrentRequests">
+                                                                                int
+                                                                                
+                                    </td>
+                <td>$maxConcurrentRequests</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_maxIdleInstances">
+                                                                                int
+                                                                                
+                                    </td>
+                <td>$maxIdleInstances</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_maxPendingLatency">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$maxPendingLatency</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_maxTotalInstances">
+                                                                                int
+                                                                                
+                                    </td>
+                <td>$maxTotalInstances</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_minIdleInstances">
+                                                                                int
+                                                                                
+                                    </td>
+                <td>$minIdleInstances</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_minPendingLatency">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$minPendingLatency</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_minTotalInstances">
+                                                                                int
+                                                                                
+                                    </td>
+                <td>$minTotalInstances</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_networkUtilizationType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$networkUtilizationType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_networkUtilizationDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$networkUtilizationDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_requestUtilizationType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$requestUtilizationType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_requestUtilizationDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$requestUtilizationDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_standardSchedulerSettingsType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$standardSchedulerSettingsType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_standardSchedulerSettingsDataType">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$standardSchedulerSettingsDataType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setCoolDownPeriod">setCoolDownPeriod</a>($coolDownPeriod)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCoolDownPeriod">getCoolDownPeriod</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setCpuUtilization">setCpuUtilization</a>(<a href="../../../Google/Service/Appengine/CpuUtilization.html"><abbr title="Google\Service\Appengine\CpuUtilization">CpuUtilization</abbr></a> $cpuUtilization)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Appengine/CpuUtilization.html"><abbr title="Google\Service\Appengine\CpuUtilization">CpuUtilization</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCpuUtilization">getCpuUtilization</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDiskUtilization">setDiskUtilization</a>(<a href="../../../Google/Service/Appengine/DiskUtilization.html"><abbr title="Google\Service\Appengine\DiskUtilization">DiskUtilization</abbr></a> $diskUtilization)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Appengine/DiskUtilization.html"><abbr title="Google\Service\Appengine\DiskUtilization">DiskUtilization</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDiskUtilization">getDiskUtilization</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMaxConcurrentRequests">setMaxConcurrentRequests</a>($maxConcurrentRequests)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMaxConcurrentRequests">getMaxConcurrentRequests</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMaxIdleInstances">setMaxIdleInstances</a>($maxIdleInstances)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMaxIdleInstances">getMaxIdleInstances</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMaxPendingLatency">setMaxPendingLatency</a>($maxPendingLatency)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMaxPendingLatency">getMaxPendingLatency</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMaxTotalInstances">setMaxTotalInstances</a>($maxTotalInstances)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMaxTotalInstances">getMaxTotalInstances</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMinIdleInstances">setMinIdleInstances</a>($minIdleInstances)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMinIdleInstances">getMinIdleInstances</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMinPendingLatency">setMinPendingLatency</a>($minPendingLatency)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMinPendingLatency">getMinPendingLatency</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMinTotalInstances">setMinTotalInstances</a>($minTotalInstances)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMinTotalInstances">getMinTotalInstances</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setNetworkUtilization">setNetworkUtilization</a>(<a href="../../../Google/Service/Appengine/NetworkUtilization.html"><abbr title="Google\Service\Appengine\NetworkUtilization">NetworkUtilization</abbr></a> $networkUtilization)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Appengine/NetworkUtilization.html"><abbr title="Google\Service\Appengine\NetworkUtilization">NetworkUtilization</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getNetworkUtilization">getNetworkUtilization</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setRequestUtilization">setRequestUtilization</a>(<a href="../../../Google/Service/Appengine/RequestUtilization.html"><abbr title="Google\Service\Appengine\RequestUtilization">RequestUtilization</abbr></a> $requestUtilization)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Appengine/RequestUtilization.html"><abbr title="Google\Service\Appengine\RequestUtilization">RequestUtilization</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRequestUtilization">getRequestUtilization</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setStandardSchedulerSettings">setStandardSchedulerSettings</a>(<a href="../../../Google/Service/Appengine/StandardSchedulerSettings.html"><abbr title="Google\Service\Appengine\StandardSchedulerSettings">StandardSchedulerSettings</abbr></a> $standardSchedulerSettings)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Google/Service/Appengine/StandardSchedulerSettings.html"><abbr title="Google\Service\Appengine\StandardSchedulerSettings">StandardSchedulerSettings</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getStandardSchedulerSettings">getStandardSchedulerSettings</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setCoolDownPeriod">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L68">at line 68</a></div>
+        <code>                    
+    <strong>setCoolDownPeriod</strong>($coolDownPeriod)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$coolDownPeriod</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCoolDownPeriod">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L75">at line 75</a></div>
+        <code>                    string
+    <strong>getCoolDownPeriod</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCpuUtilization">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L82">at line 82</a></div>
+        <code>                    
+    <strong>setCpuUtilization</strong>(<a href="../../../Google/Service/Appengine/CpuUtilization.html"><abbr title="Google\Service\Appengine\CpuUtilization">CpuUtilization</abbr></a> $cpuUtilization)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Appengine/CpuUtilization.html"><abbr title="Google\Service\Appengine\CpuUtilization">CpuUtilization</abbr></a></td>
+                <td>$cpuUtilization</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCpuUtilization">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L89">at line 89</a></div>
+        <code>                    <a href="../../../Google/Service/Appengine/CpuUtilization.html"><abbr title="Google\Service\Appengine\CpuUtilization">CpuUtilization</abbr></a>
+    <strong>getCpuUtilization</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Appengine/CpuUtilization.html"><abbr title="Google\Service\Appengine\CpuUtilization">CpuUtilization</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDiskUtilization">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L96">at line 96</a></div>
+        <code>                    
+    <strong>setDiskUtilization</strong>(<a href="../../../Google/Service/Appengine/DiskUtilization.html"><abbr title="Google\Service\Appengine\DiskUtilization">DiskUtilization</abbr></a> $diskUtilization)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Appengine/DiskUtilization.html"><abbr title="Google\Service\Appengine\DiskUtilization">DiskUtilization</abbr></a></td>
+                <td>$diskUtilization</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDiskUtilization">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L103">at line 103</a></div>
+        <code>                    <a href="../../../Google/Service/Appengine/DiskUtilization.html"><abbr title="Google\Service\Appengine\DiskUtilization">DiskUtilization</abbr></a>
+    <strong>getDiskUtilization</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Appengine/DiskUtilization.html"><abbr title="Google\Service\Appengine\DiskUtilization">DiskUtilization</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMaxConcurrentRequests">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L110">at line 110</a></div>
+        <code>                    
+    <strong>setMaxConcurrentRequests</strong>($maxConcurrentRequests)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$maxConcurrentRequests</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMaxConcurrentRequests">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L117">at line 117</a></div>
+        <code>                    int
+    <strong>getMaxConcurrentRequests</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMaxIdleInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L124">at line 124</a></div>
+        <code>                    
+    <strong>setMaxIdleInstances</strong>($maxIdleInstances)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$maxIdleInstances</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMaxIdleInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L131">at line 131</a></div>
+        <code>                    int
+    <strong>getMaxIdleInstances</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMaxPendingLatency">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L138">at line 138</a></div>
+        <code>                    
+    <strong>setMaxPendingLatency</strong>($maxPendingLatency)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$maxPendingLatency</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMaxPendingLatency">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L145">at line 145</a></div>
+        <code>                    string
+    <strong>getMaxPendingLatency</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMaxTotalInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L152">at line 152</a></div>
+        <code>                    
+    <strong>setMaxTotalInstances</strong>($maxTotalInstances)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$maxTotalInstances</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMaxTotalInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L159">at line 159</a></div>
+        <code>                    int
+    <strong>getMaxTotalInstances</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMinIdleInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L166">at line 166</a></div>
+        <code>                    
+    <strong>setMinIdleInstances</strong>($minIdleInstances)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$minIdleInstances</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMinIdleInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L173">at line 173</a></div>
+        <code>                    int
+    <strong>getMinIdleInstances</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMinPendingLatency">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L180">at line 180</a></div>
+        <code>                    
+    <strong>setMinPendingLatency</strong>($minPendingLatency)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$minPendingLatency</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMinPendingLatency">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L187">at line 187</a></div>
+        <code>                    string
+    <strong>getMinPendingLatency</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMinTotalInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L194">at line 194</a></div>
+        <code>                    
+    <strong>setMinTotalInstances</strong>($minTotalInstances)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$minTotalInstances</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMinTotalInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L201">at line 201</a></div>
+        <code>                    int
+    <strong>getMinTotalInstances</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNetworkUtilization">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L208">at line 208</a></div>
+        <code>                    
+    <strong>setNetworkUtilization</strong>(<a href="../../../Google/Service/Appengine/NetworkUtilization.html"><abbr title="Google\Service\Appengine\NetworkUtilization">NetworkUtilization</abbr></a> $networkUtilization)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Appengine/NetworkUtilization.html"><abbr title="Google\Service\Appengine\NetworkUtilization">NetworkUtilization</abbr></a></td>
+                <td>$networkUtilization</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNetworkUtilization">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L215">at line 215</a></div>
+        <code>                    <a href="../../../Google/Service/Appengine/NetworkUtilization.html"><abbr title="Google\Service\Appengine\NetworkUtilization">NetworkUtilization</abbr></a>
+    <strong>getNetworkUtilization</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Appengine/NetworkUtilization.html"><abbr title="Google\Service\Appengine\NetworkUtilization">NetworkUtilization</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRequestUtilization">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L222">at line 222</a></div>
+        <code>                    
+    <strong>setRequestUtilization</strong>(<a href="../../../Google/Service/Appengine/RequestUtilization.html"><abbr title="Google\Service\Appengine\RequestUtilization">RequestUtilization</abbr></a> $requestUtilization)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Appengine/RequestUtilization.html"><abbr title="Google\Service\Appengine\RequestUtilization">RequestUtilization</abbr></a></td>
+                <td>$requestUtilization</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestUtilization">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L229">at line 229</a></div>
+        <code>                    <a href="../../../Google/Service/Appengine/RequestUtilization.html"><abbr title="Google\Service\Appengine\RequestUtilization">RequestUtilization</abbr></a>
+    <strong>getRequestUtilization</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Appengine/RequestUtilization.html"><abbr title="Google\Service\Appengine\RequestUtilization">RequestUtilization</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStandardSchedulerSettings">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L236">at line 236</a></div>
+        <code>                    
+    <strong>setStandardSchedulerSettings</strong>(<a href="../../../Google/Service/Appengine/StandardSchedulerSettings.html"><abbr title="Google\Service\Appengine\StandardSchedulerSettings">StandardSchedulerSettings</abbr></a> $standardSchedulerSettings)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Google/Service/Appengine/StandardSchedulerSettings.html"><abbr title="Google\Service\Appengine\StandardSchedulerSettings">StandardSchedulerSettings</abbr></a></td>
+                <td>$standardSchedulerSettings</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStandardSchedulerSettings">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Appengine/AutomaticScaling.php#L243">at line 243</a></div>
+        <code>                    <a href="../../../Google/Service/Appengine/StandardSchedulerSettings.html"><abbr title="Google\Service\Appengine\StandardSchedulerSettings">StandardSchedulerSettings</abbr></a>
+    <strong>getStandardSchedulerSettings</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Google/Service/Appengine/StandardSchedulerSettings.html"><abbr title="Google\Service\Appengine\StandardSchedulerSettings">StandardSchedulerSettings</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

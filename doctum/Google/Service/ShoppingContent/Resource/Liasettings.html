@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\ShoppingContent\Resource\Liasettings | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_ShoppingContent_Resource_Liasettings" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/ShoppingContent.ns.html">ShoppingContent</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/ShoppingContent/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>Liasettings</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Liasettings    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Liasettings</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ShoppingContent/Resource/Liasettings.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;liasettings&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $contentService = new Google\Service\ShoppingContent(...);
+ $liasettings = $contentService-&gt;liasettings;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ShoppingContent/LiasettingsCustomBatchResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsCustomBatchResponse">LiasettingsCustomBatchResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_custombatch">custombatch</a>(<a href="../../../../Google/Service/ShoppingContent/LiasettingsCustomBatchRequest.html"><abbr title="Google\Service\ShoppingContent\LiasettingsCustomBatchRequest">LiasettingsCustomBatchRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Retrieves and/or updates the LIA settings of multiple accounts in a single
+request. (liasettings.custombatch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ShoppingContent/LiaSettings.html"><abbr title="Google\Service\ShoppingContent\LiaSettings">LiaSettings</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $merchantId, string $accountId, array $optParams = [])
+        
+                                            <p><p>Retrieves the LIA settings of the account. (liasettings.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ShoppingContent/LiasettingsGetAccessibleGmbAccountsResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsGetAccessibleGmbAccountsResponse">LiasettingsGetAccessibleGmbAccountsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getaccessiblegmbaccounts">getaccessiblegmbaccounts</a>(string $merchantId, string $accountId, array $optParams = [])
+        
+                                            <p><p>Retrieves the list of accessible Business Profiles.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ShoppingContent/LiasettingsListResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsListResponse">LiasettingsListResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listLiasettings">listLiasettings</a>(string $merchantId, array $optParams = [])
+        
+                                            <p><p>Lists the LIA settings of the sub-accounts in your Merchant Center account.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ShoppingContent/LiasettingsListPosDataProvidersResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsListPosDataProvidersResponse">LiasettingsListPosDataProvidersResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listposdataproviders">listposdataproviders</a>(array $optParams = [])
+        
+                                            <p><p>Retrieves the list of POS data providers that have active settings for the
+all eiligible countries. (liasettings.listposdataproviders)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ShoppingContent/LiasettingsRequestGmbAccessResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsRequestGmbAccessResponse">LiasettingsRequestGmbAccessResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_requestgmbaccess">requestgmbaccess</a>(string $merchantId, string $accountId, string $gmbEmail, array $optParams = [])
+        
+                                            <p><p>Requests access to a specified Business Profile.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ShoppingContent/LiasettingsRequestInventoryVerificationResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsRequestInventoryVerificationResponse">LiasettingsRequestInventoryVerificationResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_requestinventoryverification">requestinventoryverification</a>(string $merchantId, string $accountId, string $country, array $optParams = [])
+        
+                                            <p><p>Requests inventory validation for the specified country.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ShoppingContent/LiasettingsSetInventoryVerificationContactResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsSetInventoryVerificationContactResponse">LiasettingsSetInventoryVerificationContactResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setinventoryverificationcontact">setinventoryverificationcontact</a>(string $merchantId, string $accountId, string $country, string $language, string $contactName, string $contactEmail, array $optParams = [])
+        
+                                            <p><p>Sets the inventory verification contract for the specified country.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ShoppingContent/LiaOmnichannelExperience.html"><abbr title="Google\Service\ShoppingContent\LiaOmnichannelExperience">LiaOmnichannelExperience</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setomnichannelexperience">setomnichannelexperience</a>(string $merchantId, string $accountId, array $optParams = [])
+        
+                                            <p><p>Sets the omnichannel experience for the specified country. Only supported for
+merchants whose POS data provider is trusted to enable the corresponding
+experience. For more context, see these help articles <a href="https://support.google.com/merchants/answer/7676652">about
+LFP</a> and <a href="https://support.google.com/merchants/answer/7676578">how to get
+started</a> with it.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ShoppingContent/LiasettingsSetPosDataProviderResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsSetPosDataProviderResponse">LiasettingsSetPosDataProviderResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setposdataprovider">setposdataprovider</a>(string $merchantId, string $accountId, string $country, array $optParams = [])
+        
+                                            <p><p>Sets the POS data provider for the specified country.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/ShoppingContent/LiaSettings.html"><abbr title="Google\Service\ShoppingContent\LiaSettings">LiaSettings</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $merchantId, string $accountId, <a href="../../../../Google/Service/ShoppingContent/LiaSettings.html"><abbr title="Google\Service\ShoppingContent\LiaSettings">LiaSettings</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the LIA settings of the account. Any fields that are not provided are
+deleted from the resource. (liasettings.update)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_custombatch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ShoppingContent/Resource/Liasettings.php#L51">at line 51</a></div>
+        <code>                    <a href="../../../../Google/Service/ShoppingContent/LiasettingsCustomBatchResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsCustomBatchResponse">LiasettingsCustomBatchResponse</abbr></a>
+    <strong>custombatch</strong>(<a href="../../../../Google/Service/ShoppingContent/LiasettingsCustomBatchRequest.html"><abbr title="Google\Service\ShoppingContent\LiasettingsCustomBatchRequest">LiasettingsCustomBatchRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves and/or updates the LIA settings of multiple accounts in a single
+request. (liasettings.custombatch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/ShoppingContent/LiasettingsCustomBatchRequest.html"><abbr title="Google\Service\ShoppingContent\LiasettingsCustomBatchRequest">LiasettingsCustomBatchRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ShoppingContent/LiasettingsCustomBatchResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsCustomBatchResponse">LiasettingsCustomBatchResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ShoppingContent/Resource/Liasettings.php#L69">at line 69</a></div>
+        <code>                    <a href="../../../../Google/Service/ShoppingContent/LiaSettings.html"><abbr title="Google\Service\ShoppingContent\LiaSettings">LiaSettings</abbr></a>
+    <strong>get</strong>(string $merchantId, string $accountId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves the LIA settings of the account. (liasettings.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$merchantId</td>
+                <td><p>The ID of the managing account. If this parameter
+is not the same as accountId, then this account must be a multi-client
+account and <code>accountId</code> must be the ID of a sub-account of this account.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$accountId</td>
+                <td><p>The ID of the account for which to get or update LIA
+settings.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ShoppingContent/LiaSettings.html"><abbr title="Google\Service\ShoppingContent\LiaSettings">LiaSettings</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getaccessiblegmbaccounts">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ShoppingContent/Resource/Liasettings.php#L88">at line 88</a></div>
+        <code>                    <a href="../../../../Google/Service/ShoppingContent/LiasettingsGetAccessibleGmbAccountsResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsGetAccessibleGmbAccountsResponse">LiasettingsGetAccessibleGmbAccountsResponse</abbr></a>
+    <strong>getaccessiblegmbaccounts</strong>(string $merchantId, string $accountId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves the list of accessible Business Profiles.</p></p>                <p>(liasettings.getaccessiblegmbaccounts)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$merchantId</td>
+                <td><p>The ID of the managing account. If this parameter
+is not the same as accountId, then this account must be a multi-client
+account and <code>accountId</code> must be the ID of a sub-account of this account.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$accountId</td>
+                <td><p>The ID of the account for which to retrieve
+accessible Business Profiles.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ShoppingContent/LiasettingsGetAccessibleGmbAccountsResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsGetAccessibleGmbAccountsResponse">LiasettingsGetAccessibleGmbAccountsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listLiasettings">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ShoppingContent/Resource/Liasettings.php#L108">at line 108</a></div>
+        <code>                    <a href="../../../../Google/Service/ShoppingContent/LiasettingsListResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsListResponse">LiasettingsListResponse</abbr></a>
+    <strong>listLiasettings</strong>(string $merchantId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists the LIA settings of the sub-accounts in your Merchant Center account.</p></p>                <p>(liasettings.listLiasettings)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$merchantId</td>
+                <td><p>The ID of the managing account. This must be a
+multi-client account.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ShoppingContent/LiasettingsListResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsListResponse">LiasettingsListResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listposdataproviders">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ShoppingContent/Resource/Liasettings.php#L122">at line 122</a></div>
+        <code>                    <a href="../../../../Google/Service/ShoppingContent/LiasettingsListPosDataProvidersResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsListPosDataProvidersResponse">LiasettingsListPosDataProvidersResponse</abbr></a>
+    <strong>listposdataproviders</strong>(array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves the list of POS data providers that have active settings for the
+all eiligible countries. (liasettings.listposdataproviders)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ShoppingContent/LiasettingsListPosDataProvidersResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsListPosDataProvidersResponse">LiasettingsListPosDataProvidersResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_requestgmbaccess">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ShoppingContent/Resource/Liasettings.php#L142">at line 142</a></div>
+        <code>                    <a href="../../../../Google/Service/ShoppingContent/LiasettingsRequestGmbAccessResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsRequestGmbAccessResponse">LiasettingsRequestGmbAccessResponse</abbr></a>
+    <strong>requestgmbaccess</strong>(string $merchantId, string $accountId, string $gmbEmail, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Requests access to a specified Business Profile.</p></p>                <p>(liasettings.requestgmbaccess)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$merchantId</td>
+                <td><p>The ID of the managing account. If this parameter
+is not the same as accountId, then this account must be a multi-client
+account and <code>accountId</code> must be the ID of a sub-account of this account.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$accountId</td>
+                <td><p>The ID of the account for which Business Profile
+access is requested.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$gmbEmail</td>
+                <td><p>The email of the Business Profile.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ShoppingContent/LiasettingsRequestGmbAccessResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsRequestGmbAccessResponse">LiasettingsRequestGmbAccessResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_requestinventoryverification">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ShoppingContent/Resource/Liasettings.php#L163">at line 163</a></div>
+        <code>                    <a href="../../../../Google/Service/ShoppingContent/LiasettingsRequestInventoryVerificationResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsRequestInventoryVerificationResponse">LiasettingsRequestInventoryVerificationResponse</abbr></a>
+    <strong>requestinventoryverification</strong>(string $merchantId, string $accountId, string $country, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Requests inventory validation for the specified country.</p></p>                <p>(liasettings.requestinventoryverification)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$merchantId</td>
+                <td><p>The ID of the managing account. If this parameter
+is not the same as accountId, then this account must be a multi-client
+account and <code>accountId</code> must be the ID of a sub-account of this account.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$accountId</td>
+                <td><p>The ID of the account that manages the order. This
+cannot be a multi-client account.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$country</td>
+                <td><p>The country for which inventory validation is
+requested.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ShoppingContent/LiasettingsRequestInventoryVerificationResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsRequestInventoryVerificationResponse">LiasettingsRequestInventoryVerificationResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setinventoryverificationcontact">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ShoppingContent/Resource/Liasettings.php#L188">at line 188</a></div>
+        <code>                    <a href="../../../../Google/Service/ShoppingContent/LiasettingsSetInventoryVerificationContactResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsSetInventoryVerificationContactResponse">LiasettingsSetInventoryVerificationContactResponse</abbr></a>
+    <strong>setinventoryverificationcontact</strong>(string $merchantId, string $accountId, string $country, string $language, string $contactName, string $contactEmail, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the inventory verification contract for the specified country.</p></p>                <p>(liasettings.setinventoryverificationcontact)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$merchantId</td>
+                <td><p>The ID of the managing account. If this parameter
+is not the same as accountId, then this account must be a multi-client
+account and <code>accountId</code> must be the ID of a sub-account of this account.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$accountId</td>
+                <td><p>The ID of the account that manages the order. This
+cannot be a multi-client account.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$country</td>
+                <td><p>The country for which inventory verification is
+requested.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$language</td>
+                <td><p>The language for which inventory verification is
+requested.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$contactName</td>
+                <td><p>The name of the inventory verification contact.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$contactEmail</td>
+                <td><p>The email of the inventory verification contact.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ShoppingContent/LiasettingsSetInventoryVerificationContactResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsSetInventoryVerificationContactResponse">LiasettingsSetInventoryVerificationContactResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setomnichannelexperience">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ShoppingContent/Resource/Liasettings.php#L221">at line 221</a></div>
+        <code>                    <a href="../../../../Google/Service/ShoppingContent/LiaOmnichannelExperience.html"><abbr title="Google\Service\ShoppingContent\LiaOmnichannelExperience">LiaOmnichannelExperience</abbr></a>
+    <strong>setomnichannelexperience</strong>(string $merchantId, string $accountId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the omnichannel experience for the specified country. Only supported for
+merchants whose POS data provider is trusted to enable the corresponding
+experience. For more context, see these help articles <a href="https://support.google.com/merchants/answer/7676652">about
+LFP</a> and <a href="https://support.google.com/merchants/answer/7676578">how to get
+started</a> with it.</p></p>                <p>(liasettings.setomnichannelexperience)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$merchantId</td>
+                <td><p>The ID of the managing account. If this parameter
+is not the same as accountId, then this account must be a multi-client
+account and <code>accountId</code> must be the ID of a sub-account of this account.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$accountId</td>
+                <td><p>The ID of the account for which to retrieve
+accessible Business Profiles.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ShoppingContent/LiaOmnichannelExperience.html"><abbr title="Google\Service\ShoppingContent\LiaOmnichannelExperience">LiaOmnichannelExperience</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setposdataprovider">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ShoppingContent/Resource/Liasettings.php#L246">at line 246</a></div>
+        <code>                    <a href="../../../../Google/Service/ShoppingContent/LiasettingsSetPosDataProviderResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsSetPosDataProviderResponse">LiasettingsSetPosDataProviderResponse</abbr></a>
+    <strong>setposdataprovider</strong>(string $merchantId, string $accountId, string $country, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the POS data provider for the specified country.</p></p>                <p>(liasettings.setposdataprovider)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$merchantId</td>
+                <td><p>The ID of the managing account. If this parameter
+is not the same as accountId, then this account must be a multi-client
+account and <code>accountId</code> must be the ID of a sub-account of this account.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$accountId</td>
+                <td><p>The ID of the account for which to retrieve
+accessible Business Profiles.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$country</td>
+                <td><p>The country for which the POS data provider is
+selected.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ShoppingContent/LiasettingsSetPosDataProviderResponse.html"><abbr title="Google\Service\ShoppingContent\LiasettingsSetPosDataProviderResponse">LiasettingsSetPosDataProviderResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/ShoppingContent/Resource/Liasettings.php#L266">at line 266</a></div>
+        <code>                    <a href="../../../../Google/Service/ShoppingContent/LiaSettings.html"><abbr title="Google\Service\ShoppingContent\LiaSettings">LiaSettings</abbr></a>
+    <strong>update</strong>(string $merchantId, string $accountId, <a href="../../../../Google/Service/ShoppingContent/LiaSettings.html"><abbr title="Google\Service\ShoppingContent\LiaSettings">LiaSettings</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the LIA settings of the account. Any fields that are not provided are
+deleted from the resource. (liasettings.update)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$merchantId</td>
+                <td><p>The ID of the managing account. If this parameter
+is not the same as accountId, then this account must be a multi-client
+account and <code>accountId</code> must be the ID of a sub-account of this account.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$accountId</td>
+                <td><p>The ID of the account for which to get or update LIA
+settings.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/ShoppingContent/LiaSettings.html"><abbr title="Google\Service\ShoppingContent\LiaSettings">LiaSettings</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/ShoppingContent/LiaSettings.html"><abbr title="Google\Service\ShoppingContent\LiaSettings">LiaSettings</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

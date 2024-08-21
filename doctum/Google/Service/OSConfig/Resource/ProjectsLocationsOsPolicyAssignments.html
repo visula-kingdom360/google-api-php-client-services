@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\OSConfig\Resource\ProjectsLocationsOsPolicyAssignments | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_OSConfig_Resource_ProjectsLocationsOsPolicyAssignments" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/OSConfig.ns.html">OSConfig</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/OSConfig/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ProjectsLocationsOsPolicyAssignments</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsLocationsOsPolicyAssignments    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsLocationsOsPolicyAssignments</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/OSConfig/Resource/ProjectsLocationsOsPolicyAssignments.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;osPolicyAssignments&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $osconfigService = new Google\Service\OSConfig(...);
+ $osPolicyAssignments = $osconfigService-&gt;projects_locations_osPolicyAssignments;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/OSConfig/Operation.html"><abbr title="Google\Service\OSConfig\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/OSConfig/OSPolicyAssignment.html"><abbr title="Google\Service\OSConfig\OSPolicyAssignment">OSPolicyAssignment</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Create an OS policy assignment. This method also creates the first revision
+of the OS policy assignment. This method returns a long running operation
+(LRO) that contains the rollout details. The rollout can be cancelled by
+cancelling the LRO. For more information, see <a href="https://cloud.google.com/compute/docs/osc
+onfig/rest/v1/projects.locations.osPolicyAssignments.operations/cancel">Method: projects.locations.osP
+olicyAssignments.operations.cancel</a>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/OSConfig/Operation.html"><abbr title="Google\Service\OSConfig\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Delete the OS policy assignment. This method creates a new revision of the OS
+policy assignment. This method returns a long running operation (LRO) that
+contains the rollout details. The rollout can be cancelled by cancelling the
+LRO. If the LRO completes and is not cancelled, all revisions associated with
+the OS policy assignment are deleted. For more information, see <a href="https://cloud.google.co
+m/compute/docs/osconfig/rest/v1/projects.locations.osPolicyAssignments.operat
+ions/cancel">Method: proj
+ects.locations.osPolicyAssignments.operations.cancel</a>. (osPolicyAssignments.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/OSConfig/OSPolicyAssignment.html"><abbr title="Google\Service\OSConfig\OSPolicyAssignment">OSPolicyAssignment</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Retrieve an existing OS policy assignment. This method always returns the
+latest revision. In order to retrieve a previous revision of the assignment,
+also provide the revision ID in the <code>name</code> parameter.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/OSConfig/ListOSPolicyAssignmentsResponse.html"><abbr title="Google\Service\OSConfig\ListOSPolicyAssignmentsResponse">ListOSPolicyAssignmentsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsLocationsOsPolicyAssignments">listProjectsLocationsOsPolicyAssignments</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>List the OS policy assignments under the parent resource. For each OS policy
+assignment, the latest revision is returned.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/OSConfig/ListOSPolicyAssignmentRevisionsResponse.html"><abbr title="Google\Service\OSConfig\ListOSPolicyAssignmentRevisionsResponse">ListOSPolicyAssignmentRevisionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listRevisions">listRevisions</a>(string $name, array $optParams = [])
+        
+                                            <p><p>List the OS policy assignment revisions for a given OS policy assignment.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/OSConfig/Operation.html"><abbr title="Google\Service\OSConfig\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/OSConfig/OSPolicyAssignment.html"><abbr title="Google\Service\OSConfig\OSPolicyAssignment">OSPolicyAssignment</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Update an existing OS policy assignment. This method creates a new revision
+of the OS policy assignment. This method returns a long running operation
+(LRO) that contains the rollout details. The rollout can be cancelled by
+cancelling the LRO. For more information, see <a href="https://cloud.google.com/compute/docs/osc
+onfig/rest/v1/projects.locations.osPolicyAssignments.operations/cancel">Method: projects.locations.osP
+olicyAssignments.operations.cancel</a>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/OSConfig/Resource/ProjectsLocationsOsPolicyAssignments.php#L61">at line 61</a></div>
+        <code>                    <a href="../../../../Google/Service/OSConfig/Operation.html"><abbr title="Google\Service\OSConfig\Operation">Operation</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/OSConfig/OSPolicyAssignment.html"><abbr title="Google\Service\OSConfig\OSPolicyAssignment">OSPolicyAssignment</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create an OS policy assignment. This method also creates the first revision
+of the OS policy assignment. This method returns a long running operation
+(LRO) that contains the rollout details. The rollout can be cancelled by
+cancelling the LRO. For more information, see <a href="https://cloud.google.com/compute/docs/osc
+onfig/rest/v1/projects.locations.osPolicyAssignments.operations/cancel">Method: projects.locations.osP
+olicyAssignments.operations.cancel</a>.</p></p>                <p>(osPolicyAssignments.create)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The parent resource name in the form:
+projects/{project}/locations/{location}. Note: Specify the zone of your VMs
+as the location.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/OSConfig/OSPolicyAssignment.html"><abbr title="Google\Service\OSConfig\OSPolicyAssignment">OSPolicyAssignment</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/OSConfig/Operation.html"><abbr title="Google\Service\OSConfig\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/OSConfig/Resource/ProjectsLocationsOsPolicyAssignments.php#L87">at line 87</a></div>
+        <code>                    <a href="../../../../Google/Service/OSConfig/Operation.html"><abbr title="Google\Service\OSConfig\Operation">Operation</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Delete the OS policy assignment. This method creates a new revision of the OS
+policy assignment. This method returns a long running operation (LRO) that
+contains the rollout details. The rollout can be cancelled by cancelling the
+LRO. If the LRO completes and is not cancelled, all revisions associated with
+the OS policy assignment are deleted. For more information, see <a href="https://cloud.google.co
+m/compute/docs/osconfig/rest/v1/projects.locations.osPolicyAssignments.operat
+ions/cancel">Method: proj
+ects.locations.osPolicyAssignments.operations.cancel</a>. (osPolicyAssignments.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the OS policy assignment to be
+deleted</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/OSConfig/Operation.html"><abbr title="Google\Service\OSConfig\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/OSConfig/Resource/ProjectsLocationsOsPolicyAssignments.php#L106">at line 106</a></div>
+        <code>                    <a href="../../../../Google/Service/OSConfig/OSPolicyAssignment.html"><abbr title="Google\Service\OSConfig\OSPolicyAssignment">OSPolicyAssignment</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieve an existing OS policy assignment. This method always returns the
+latest revision. In order to retrieve a previous revision of the assignment,
+also provide the revision ID in the <code>name</code> parameter.</p></p>                <p>(osPolicyAssignments.get)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of OS policy assignment.
+Format: <code>projects/{project}/locations/{location}/osPolicyAssignments/{os_poli cy_assignment}@{revisionId}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/OSConfig/OSPolicyAssignment.html"><abbr title="Google\Service\OSConfig\OSPolicyAssignment">OSPolicyAssignment</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsLocationsOsPolicyAssignments">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/OSConfig/Resource/ProjectsLocationsOsPolicyAssignments.php#L127">at line 127</a></div>
+        <code>                    <a href="../../../../Google/Service/OSConfig/ListOSPolicyAssignmentsResponse.html"><abbr title="Google\Service\OSConfig\ListOSPolicyAssignmentsResponse">ListOSPolicyAssignmentsResponse</abbr></a>
+    <strong>listProjectsLocationsOsPolicyAssignments</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>List the OS policy assignments under the parent resource. For each OS policy
+assignment, the latest revision is returned.</p></p>                <p>(osPolicyAssignments.listProjectsLocationsOsPolicyAssignments)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The parent resource name.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/OSConfig/ListOSPolicyAssignmentsResponse.html"><abbr title="Google\Service\OSConfig\ListOSPolicyAssignmentsResponse">ListOSPolicyAssignmentsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listRevisions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/OSConfig/Resource/ProjectsLocationsOsPolicyAssignments.php#L148">at line 148</a></div>
+        <code>                    <a href="../../../../Google/Service/OSConfig/ListOSPolicyAssignmentRevisionsResponse.html"><abbr title="Google\Service\OSConfig\ListOSPolicyAssignmentRevisionsResponse">ListOSPolicyAssignmentRevisionsResponse</abbr></a>
+    <strong>listRevisions</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>List the OS policy assignment revisions for a given OS policy assignment.</p></p>                <p>(osPolicyAssignments.listRevisions)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the OS policy assignment to list
+revisions for.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/OSConfig/ListOSPolicyAssignmentRevisionsResponse.html"><abbr title="Google\Service\OSConfig\ListOSPolicyAssignmentRevisionsResponse">ListOSPolicyAssignmentRevisionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/OSConfig/Resource/ProjectsLocationsOsPolicyAssignments.php#L180">at line 180</a></div>
+        <code>                    <a href="../../../../Google/Service/OSConfig/Operation.html"><abbr title="Google\Service\OSConfig\Operation">Operation</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/OSConfig/OSPolicyAssignment.html"><abbr title="Google\Service\OSConfig\OSPolicyAssignment">OSPolicyAssignment</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Update an existing OS policy assignment. This method creates a new revision
+of the OS policy assignment. This method returns a long running operation
+(LRO) that contains the rollout details. The rollout can be cancelled by
+cancelling the LRO. For more information, see <a href="https://cloud.google.com/compute/docs/osc
+onfig/rest/v1/projects.locations.osPolicyAssignments.operations/cancel">Method: projects.locations.osP
+olicyAssignments.operations.cancel</a>.</p></p>                <p>(osPolicyAssignments.patch)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Resource name. Format: <code>projects/{project_number}/locatio ns/{location}/osPolicyAssignments/{os_policy_assignment_id}</code> This field is
+ignored when you create an OS policy assignment.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/OSConfig/OSPolicyAssignment.html"><abbr title="Google\Service\OSConfig\OSPolicyAssignment">OSPolicyAssignment</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/OSConfig/Operation.html"><abbr title="Google\Service\OSConfig\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

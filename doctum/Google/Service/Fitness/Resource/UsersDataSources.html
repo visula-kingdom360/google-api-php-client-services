@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Fitness\Resource\UsersDataSources | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Fitness_Resource_UsersDataSources" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Fitness.ns.html">Fitness</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Fitness/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>UsersDataSources</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>UsersDataSources    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>UsersDataSources</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Fitness/Resource/UsersDataSources.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;dataSources&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $fitnessService = new Google\Service\Fitness(...);
+ $dataSources = $fitnessService-&gt;users_dataSources;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Fitness/DataSource.html"><abbr title="Google\Service\Fitness\DataSource">DataSource</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $userId, <a href="../../../../Google/Service/Fitness/DataSource.html"><abbr title="Google\Service\Fitness\DataSource">DataSource</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a new data source that is unique across all data sources belonging to
+this user. A data source is a unique source of sensor data. Data sources can
+expose raw data coming from hardware sensors on local or companion devices.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Fitness/DataSource.html"><abbr title="Google\Service\Fitness\DataSource">DataSource</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $userId, string $dataSourceId, array $optParams = [])
+        
+                                            <p><p>Deletes the specified data source. The request will fail if the data source
+contains any data points. (dataSources.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Fitness/DataSource.html"><abbr title="Google\Service\Fitness\DataSource">DataSource</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $userId, string $dataSourceId, array $optParams = [])
+        
+                                            <p><p>Returns the specified data source. (dataSources.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Fitness/ListDataSourcesResponse.html"><abbr title="Google\Service\Fitness\ListDataSourcesResponse">ListDataSourcesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listUsersDataSources">listUsersDataSources</a>(string $userId, array $optParams = [])
+        
+                                            <p><p>Lists all data sources that are visible to the developer, using the OAuth
+scopes provided. The list is not exhaustive; the user may have private data
+sources that are only visible to other developers, or calls using other
+scopes. (dataSources.listUsersDataSources)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Fitness/DataSource.html"><abbr title="Google\Service\Fitness\DataSource">DataSource</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $userId, string $dataSourceId, <a href="../../../../Google/Service/Fitness/DataSource.html"><abbr title="Google\Service\Fitness\DataSource">DataSource</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the specified data source. The dataStreamId, dataType, type,
+dataStreamName, and device properties with the exception of version, cannot
+be modified. Data sources are identified by their dataStreamId.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Fitness/Resource/UsersDataSources.php#L67">at line 67</a></div>
+        <code>                    <a href="../../../../Google/Service/Fitness/DataSource.html"><abbr title="Google\Service\Fitness\DataSource">DataSource</abbr></a>
+    <strong>create</strong>(string $userId, <a href="../../../../Google/Service/Fitness/DataSource.html"><abbr title="Google\Service\Fitness\DataSource">DataSource</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a new data source that is unique across all data sources belonging to
+this user. A data source is a unique source of sensor data. Data sources can
+expose raw data coming from hardware sensors on local or companion devices.</p></p>                <p><p>They can also expose derived data, created by transforming or merging other
+data sources. Multiple data sources can exist for the same data type. Every
+data point in every dataset inserted into or read from the Fitness API has an
+associated data source. Each data source produces a unique stream of dataset
+updates, with a unique data source identifier. Not all changes to data source
+affect the data stream ID, so that data collected by updated versions of the
+same application/device can still be considered to belong to the same data
+source. Data sources are identified using a string generated by the server,
+based on the contents of the source being created. The dataStreamId field
+should not be set when invoking this method. It will be automatically
+generated by the server with the correct format. If a dataStreamId is set, it
+must match the format that the server would generate. This format is a
+combination of some fields from the data source, and has a specific order. If
+it doesn't match, the request will fail with an error. Specifying a DataType
+which is not a known type (beginning with &quot;com.google.&quot;) will create a
+DataSource with a <em>custom data type</em>. Custom data types are only readable by
+the application that created them. Custom data types are <em>deprecated</em>; use
+standard data types instead. In addition to the data source fields included
+in the data source ID, the developer project number that is authenticated
+when creating the data source is included. This developer project number is
+obfuscated when read by any other developer reading public data types.
+(dataSources.create)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userId</td>
+                <td><p>Create the data source for the person identified. Use
+me to indicate the authenticated user. Only me is supported at this time.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Fitness/DataSource.html"><abbr title="Google\Service\Fitness\DataSource">DataSource</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Fitness/DataSource.html"><abbr title="Google\Service\Fitness\DataSource">DataSource</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Fitness/Resource/UsersDataSources.php#L84">at line 84</a></div>
+        <code>                    <a href="../../../../Google/Service/Fitness/DataSource.html"><abbr title="Google\Service\Fitness\DataSource">DataSource</abbr></a>
+    <strong>delete</strong>(string $userId, string $dataSourceId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes the specified data source. The request will fail if the data source
+contains any data points. (dataSources.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userId</td>
+                <td><p>Retrieve a data source for the person identified. Use
+me to indicate the authenticated user. Only me is supported at this time.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dataSourceId</td>
+                <td><p>The data stream ID of the data source to delete.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Fitness/DataSource.html"><abbr title="Google\Service\Fitness\DataSource">DataSource</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Fitness/Resource/UsersDataSources.php#L101">at line 101</a></div>
+        <code>                    <a href="../../../../Google/Service/Fitness/DataSource.html"><abbr title="Google\Service\Fitness\DataSource">DataSource</abbr></a>
+    <strong>get</strong>(string $userId, string $dataSourceId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the specified data source. (dataSources.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userId</td>
+                <td><p>Retrieve a data source for the person identified. Use
+me to indicate the authenticated user. Only me is supported at this time.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dataSourceId</td>
+                <td><p>The data stream ID of the data source to
+retrieve.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Fitness/DataSource.html"><abbr title="Google\Service\Fitness\DataSource">DataSource</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listUsersDataSources">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Fitness/Resource/UsersDataSources.php#L122">at line 122</a></div>
+        <code>                    <a href="../../../../Google/Service/Fitness/ListDataSourcesResponse.html"><abbr title="Google\Service\Fitness\ListDataSourcesResponse">ListDataSourcesResponse</abbr></a>
+    <strong>listUsersDataSources</strong>(string $userId, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all data sources that are visible to the developer, using the OAuth
+scopes provided. The list is not exhaustive; the user may have private data
+sources that are only visible to other developers, or calls using other
+scopes. (dataSources.listUsersDataSources)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userId</td>
+                <td><p>List data sources for the person identified. Use me to
+indicate the authenticated user. Only me is supported at this time.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Fitness/ListDataSourcesResponse.html"><abbr title="Google\Service\Fitness\ListDataSourcesResponse">ListDataSourcesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Fitness/Resource/UsersDataSources.php#L142">at line 142</a></div>
+        <code>                    <a href="../../../../Google/Service/Fitness/DataSource.html"><abbr title="Google\Service\Fitness\DataSource">DataSource</abbr></a>
+    <strong>update</strong>(string $userId, string $dataSourceId, <a href="../../../../Google/Service/Fitness/DataSource.html"><abbr title="Google\Service\Fitness\DataSource">DataSource</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the specified data source. The dataStreamId, dataType, type,
+dataStreamName, and device properties with the exception of version, cannot
+be modified. Data sources are identified by their dataStreamId.</p></p>                <p>(dataSources.update)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userId</td>
+                <td><p>Update the data source for the person identified. Use
+me to indicate the authenticated user. Only me is supported at this time.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dataSourceId</td>
+                <td><p>The data stream ID of the data source to update.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Fitness/DataSource.html"><abbr title="Google\Service\Fitness\DataSource">DataSource</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Fitness/DataSource.html"><abbr title="Google\Service\Fitness\DataSource">DataSource</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

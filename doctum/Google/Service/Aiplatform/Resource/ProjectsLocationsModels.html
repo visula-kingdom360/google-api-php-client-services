@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Aiplatform\Resource\ProjectsLocationsModels | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Aiplatform_Resource_ProjectsLocationsModels" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Aiplatform.ns.html">Aiplatform</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Aiplatform/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ProjectsLocationsModels</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsLocationsModels    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsLocationsModels</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Aiplatform/Resource/ProjectsLocationsModels.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;models&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $aiplatformService = new Google\Service\Aiplatform(...);
+ $models = $aiplatformService-&gt;projects_locations_models;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Aiplatform/GoogleLongrunningOperation.html"><abbr title="Google\Service\Aiplatform\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_copy">copy</a>(string $parent, <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1CopyModelRequest.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1CopyModelRequest">GoogleCloudAiplatformV1CopyModelRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Copies an already existing Vertex AI Model into the specified Location. The
+source Model must exist in the same Project. When copying custom Models, the
+users themselves are responsible for Model.metadata content to be region-
+agnostic, as well as making sure that any resources (e.g. files) it depends
+on remain accessible. (models.copy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Aiplatform/GoogleLongrunningOperation.html"><abbr title="Google\Service\Aiplatform\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes a Model. A model cannot be deleted if any Endpoint resource has a
+DeployedModel based on the model in its deployed_models field.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Aiplatform/GoogleLongrunningOperation.html"><abbr title="Google\Service\Aiplatform\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_deleteVersion">deleteVersion</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes a Model version. Model version can only be deleted if there are no
+DeployedModels created from it. Deleting the only version in the Model is not
+allowed. Use DeleteModel for deleting the Model instead.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Aiplatform/GoogleLongrunningOperation.html"><abbr title="Google\Service\Aiplatform\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_export">export</a>(string $name, <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1ExportModelRequest.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportModelRequest">GoogleCloudAiplatformV1ExportModelRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Exports a trained, exportable Model to a location specified by the user. A
+Model is considered to be exportable if it has at least one supported export
+format. (models.export)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1Model.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1Model">GoogleCloudAiplatformV1Model</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets a Model. (models.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Aiplatform/GoogleIamV1Policy.html"><abbr title="Google\Service\Aiplatform\GoogleIamV1Policy">GoogleIamV1Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIamPolicy">getIamPolicy</a>(string $resource, array $optParams = [])
+        
+                                            <p><p>Gets the access control policy for a resource. Returns an empty policy if the
+resource exists and does not have a policy set. (models.getIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1ListModelsResponse.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelsResponse">GoogleCloudAiplatformV1ListModelsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsLocationsModels">listProjectsLocationsModels</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists Models in a Location. (models.listProjectsLocationsModels)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1ListModelVersionsResponse.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelVersionsResponse">GoogleCloudAiplatformV1ListModelVersionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listVersions">listVersions</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Lists versions of the specified model. (models.listVersions)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1Model.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1Model">GoogleCloudAiplatformV1Model</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_mergeVersionAliases">mergeVersionAliases</a>(string $name, <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1MergeVersionAliasesRequest.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1MergeVersionAliasesRequest">GoogleCloudAiplatformV1MergeVersionAliasesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Merges a set of aliases for a Model version. (models.mergeVersionAliases)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1Model.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1Model">GoogleCloudAiplatformV1Model</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1Model.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1Model">GoogleCloudAiplatformV1Model</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a Model. (models.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Aiplatform/GoogleIamV1Policy.html"><abbr title="Google\Service\Aiplatform\GoogleIamV1Policy">GoogleIamV1Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setIamPolicy">setIamPolicy</a>(string $resource, <a href="../../../../Google/Service/Aiplatform/GoogleIamV1SetIamPolicyRequest.html"><abbr title="Google\Service\Aiplatform\GoogleIamV1SetIamPolicyRequest">GoogleIamV1SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the access control policy on the specified resource. Replaces any
+existing policy. Can return <code>NOT_FOUND</code>, <code>INVALID_ARGUMENT</code>, and
+<code>PERMISSION_DENIED</code> errors. (models.setIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Aiplatform/GoogleIamV1TestIamPermissionsResponse.html"><abbr title="Google\Service\Aiplatform\GoogleIamV1TestIamPermissionsResponse">GoogleIamV1TestIamPermissionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testIamPermissions">testIamPermissions</a>(string $resource, array $optParams = [])
+        
+                                            <p><p>Returns permissions that a caller has on the specified resource. If the
+resource does not exist, this will return an empty set of permissions, not a
+<code>NOT_FOUND</code> error. Note: This operation is designed to be used for building
+permission-aware UIs and command-line tools, not for authorization checking.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Aiplatform/GoogleLongrunningOperation.html"><abbr title="Google\Service\Aiplatform\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateExplanationDataset">updateExplanationDataset</a>(string $model, <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1UpdateExplanationDatasetRequest.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1UpdateExplanationDatasetRequest">GoogleCloudAiplatformV1UpdateExplanationDatasetRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Incrementally update the dataset used for an examples model.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Aiplatform/GoogleLongrunningOperation.html"><abbr title="Google\Service\Aiplatform\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_upload">upload</a>(string $parent, <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1UploadModelRequest.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1UploadModelRequest">GoogleCloudAiplatformV1UploadModelRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Uploads a Model artifact into Vertex AI. (models.upload)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_copy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Aiplatform/Resource/ProjectsLocationsModels.php#L57">at line 57</a></div>
+        <code>                    <a href="../../../../Google/Service/Aiplatform/GoogleLongrunningOperation.html"><abbr title="Google\Service\Aiplatform\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>copy</strong>(string $parent, <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1CopyModelRequest.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1CopyModelRequest">GoogleCloudAiplatformV1CopyModelRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Copies an already existing Vertex AI Model into the specified Location. The
+source Model must exist in the same Project. When copying custom Models, the
+users themselves are responsible for Model.metadata content to be region-
+agnostic, as well as making sure that any resources (e.g. files) it depends
+on remain accessible. (models.copy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the Location into which
+to copy the Model. Format: <code>projects/{project}/locations/{location}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1CopyModelRequest.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1CopyModelRequest">GoogleCloudAiplatformV1CopyModelRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Aiplatform/GoogleLongrunningOperation.html"><abbr title="Google\Service\Aiplatform\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Aiplatform/Resource/ProjectsLocationsModels.php#L74">at line 74</a></div>
+        <code>                    <a href="../../../../Google/Service/Aiplatform/GoogleLongrunningOperation.html"><abbr title="Google\Service\Aiplatform\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a Model. A model cannot be deleted if any Endpoint resource has a
+DeployedModel based on the model in its deployed_models field.</p></p>                <p>(models.delete)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the Model resource to be deleted.
+Format: <code>projects/{project}/locations/{location}/models/{model}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Aiplatform/GoogleLongrunningOperation.html"><abbr title="Google\Service\Aiplatform\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteVersion">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Aiplatform/Resource/ProjectsLocationsModels.php#L93">at line 93</a></div>
+        <code>                    <a href="../../../../Google/Service/Aiplatform/GoogleLongrunningOperation.html"><abbr title="Google\Service\Aiplatform\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>deleteVersion</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a Model version. Model version can only be deleted if there are no
+DeployedModels created from it. Deleting the only version in the Model is not
+allowed. Use DeleteModel for deleting the Model instead.</p></p>                <p>(models.deleteVersion)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the model version to be deleted,
+with a version ID explicitly included. Example:
+<code>projects/{project}/locations/{location}/models/{model}@1234</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Aiplatform/GoogleLongrunningOperation.html"><abbr title="Google\Service\Aiplatform\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_export">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Aiplatform/Resource/ProjectsLocationsModels.php#L112">at line 112</a></div>
+        <code>                    <a href="../../../../Google/Service/Aiplatform/GoogleLongrunningOperation.html"><abbr title="Google\Service\Aiplatform\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>export</strong>(string $name, <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1ExportModelRequest.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportModelRequest">GoogleCloudAiplatformV1ExportModelRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Exports a trained, exportable Model to a location specified by the user. A
+Model is considered to be exportable if it has at least one supported export
+format. (models.export)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the Model to export. The
+resource name may contain version id or version alias to specify the version,
+if no version is specified, the default version will be exported.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1ExportModelRequest.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportModelRequest">GoogleCloudAiplatformV1ExportModelRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Aiplatform/GoogleLongrunningOperation.html"><abbr title="Google\Service\Aiplatform\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Aiplatform/Resource/ProjectsLocationsModels.php#L134">at line 134</a></div>
+        <code>                    <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1Model.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1Model">GoogleCloudAiplatformV1Model</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets a Model. (models.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the Model resource. Format:
+<code>projects/{project}/locations/{location}/models/{model}</code> In order to retrieve
+a specific version of the model, also provide the version ID or version
+alias. Example: <code>projects/{project}/locations/{location}/models/{model}@2</code> or
+<code>projects/{project}/locations/{location}/models/{model}@golden</code> If no version
+ID or alias is specified, the &quot;default&quot; version will be returned. The
+&quot;default&quot; version alias is created for the first version of the model, and
+can be moved to other versions later on. There will be exactly one default
+version.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1Model.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1Model">GoogleCloudAiplatformV1Model</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Aiplatform/Resource/ProjectsLocationsModels.php#L165">at line 165</a></div>
+        <code>                    <a href="../../../../Google/Service/Aiplatform/GoogleIamV1Policy.html"><abbr title="Google\Service\Aiplatform\GoogleIamV1Policy">GoogleIamV1Policy</abbr></a>
+    <strong>getIamPolicy</strong>(string $resource, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the access control policy for a resource. Returns an empty policy if the
+resource exists and does not have a policy set. (models.getIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy is being
+requested. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Aiplatform/GoogleIamV1Policy.html"><abbr title="Google\Service\Aiplatform\GoogleIamV1Policy">GoogleIamV1Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsLocationsModels">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Aiplatform/Resource/ProjectsLocationsModels.php#L199">at line 199</a></div>
+        <code>                    <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1ListModelsResponse.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelsResponse">GoogleCloudAiplatformV1ListModelsResponse</abbr></a>
+    <strong>listProjectsLocationsModels</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists Models in a Location. (models.listProjectsLocationsModels)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the Location to list the
+Models from. Format: <code>projects/{project}/locations/{location}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1ListModelsResponse.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelsResponse">GoogleCloudAiplatformV1ListModelsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listVersions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Aiplatform/Resource/ProjectsLocationsModels.php#L228">at line 228</a></div>
+        <code>                    <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1ListModelVersionsResponse.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelVersionsResponse">GoogleCloudAiplatformV1ListModelVersionsResponse</abbr></a>
+    <strong>listVersions</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists versions of the specified model. (models.listVersions)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the model to list versions for.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1ListModelVersionsResponse.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelVersionsResponse">GoogleCloudAiplatformV1ListModelVersionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mergeVersionAliases">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Aiplatform/Resource/ProjectsLocationsModels.php#L245">at line 245</a></div>
+        <code>                    <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1Model.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1Model">GoogleCloudAiplatformV1Model</abbr></a>
+    <strong>mergeVersionAliases</strong>(string $name, <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1MergeVersionAliasesRequest.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1MergeVersionAliasesRequest">GoogleCloudAiplatformV1MergeVersionAliasesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Merges a set of aliases for a Model version. (models.mergeVersionAliases)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the model version to merge aliases,
+with a version ID explicitly included. Example:
+<code>projects/{project}/locations/{location}/models/{model}@1234</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1MergeVersionAliasesRequest.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1MergeVersionAliasesRequest">GoogleCloudAiplatformV1MergeVersionAliasesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1Model.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1Model">GoogleCloudAiplatformV1Model</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Aiplatform/Resource/ProjectsLocationsModels.php#L263">at line 263</a></div>
+        <code>                    <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1Model.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1Model">GoogleCloudAiplatformV1Model</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1Model.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1Model">GoogleCloudAiplatformV1Model</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a Model. (models.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>The resource name of the Model.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1Model.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1Model">GoogleCloudAiplatformV1Model</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1Model.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1Model">GoogleCloudAiplatformV1Model</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Aiplatform/Resource/ProjectsLocationsModels.php#L283">at line 283</a></div>
+        <code>                    <a href="../../../../Google/Service/Aiplatform/GoogleIamV1Policy.html"><abbr title="Google\Service\Aiplatform\GoogleIamV1Policy">GoogleIamV1Policy</abbr></a>
+    <strong>setIamPolicy</strong>(string $resource, <a href="../../../../Google/Service/Aiplatform/GoogleIamV1SetIamPolicyRequest.html"><abbr title="Google\Service\Aiplatform\GoogleIamV1SetIamPolicyRequest">GoogleIamV1SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the access control policy on the specified resource. Replaces any
+existing policy. Can return <code>NOT_FOUND</code>, <code>INVALID_ARGUMENT</code>, and
+<code>PERMISSION_DENIED</code> errors. (models.setIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy is being
+specified. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Aiplatform/GoogleIamV1SetIamPolicyRequest.html"><abbr title="Google\Service\Aiplatform\GoogleIamV1SetIamPolicyRequest">GoogleIamV1SetIamPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Aiplatform/GoogleIamV1Policy.html"><abbr title="Google\Service\Aiplatform\GoogleIamV1Policy">GoogleIamV1Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testIamPermissions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Aiplatform/Resource/ProjectsLocationsModels.php#L309">at line 309</a></div>
+        <code>                    <a href="../../../../Google/Service/Aiplatform/GoogleIamV1TestIamPermissionsResponse.html"><abbr title="Google\Service\Aiplatform\GoogleIamV1TestIamPermissionsResponse">GoogleIamV1TestIamPermissionsResponse</abbr></a>
+    <strong>testIamPermissions</strong>(string $resource, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns permissions that a caller has on the specified resource. If the
+resource does not exist, this will return an empty set of permissions, not a
+<code>NOT_FOUND</code> error. Note: This operation is designed to be used for building
+permission-aware UIs and command-line tools, not for authorization checking.</p></p>                <p><p>This operation may &quot;fail open&quot; without warning. (models.testIamPermissions)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy detail is
+being requested. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Aiplatform/GoogleIamV1TestIamPermissionsResponse.html"><abbr title="Google\Service\Aiplatform\GoogleIamV1TestIamPermissionsResponse">GoogleIamV1TestIamPermissionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateExplanationDataset">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Aiplatform/Resource/ProjectsLocationsModels.php#L326">at line 326</a></div>
+        <code>                    <a href="../../../../Google/Service/Aiplatform/GoogleLongrunningOperation.html"><abbr title="Google\Service\Aiplatform\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>updateExplanationDataset</strong>(string $model, <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1UpdateExplanationDatasetRequest.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1UpdateExplanationDatasetRequest">GoogleCloudAiplatformV1UpdateExplanationDatasetRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Incrementally update the dataset used for an examples model.</p></p>                <p>(models.updateExplanationDataset)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$model</td>
+                <td><p>Required. The resource name of the Model to update.
+Format: <code>projects/{project}/locations/{location}/models/{model}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1UpdateExplanationDatasetRequest.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1UpdateExplanationDatasetRequest">GoogleCloudAiplatformV1UpdateExplanationDatasetRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Aiplatform/GoogleLongrunningOperation.html"><abbr title="Google\Service\Aiplatform\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_upload">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Aiplatform/Resource/ProjectsLocationsModels.php#L342">at line 342</a></div>
+        <code>                    <a href="../../../../Google/Service/Aiplatform/GoogleLongrunningOperation.html"><abbr title="Google\Service\Aiplatform\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>upload</strong>(string $parent, <a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1UploadModelRequest.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1UploadModelRequest">GoogleCloudAiplatformV1UploadModelRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Uploads a Model artifact into Vertex AI. (models.upload)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The resource name of the Location into which
+to upload the Model. Format: <code>projects/{project}/locations/{location}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Aiplatform/GoogleCloudAiplatformV1UploadModelRequest.html"><abbr title="Google\Service\Aiplatform\GoogleCloudAiplatformV1UploadModelRequest">GoogleCloudAiplatformV1UploadModelRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Aiplatform/GoogleLongrunningOperation.html"><abbr title="Google\Service\Aiplatform\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

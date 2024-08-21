@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\CloudRetail\Resource\ProjectsLocationsCatalogs | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_CloudRetail_Resource_ProjectsLocationsCatalogs" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CloudRetail.ns.html">CloudRetail</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CloudRetail/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ProjectsLocationsCatalogs</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsLocationsCatalogs    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsLocationsCatalogs</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudRetail/Resource/ProjectsLocationsCatalogs.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;catalogs&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $retailService = new Google\Service\CloudRetail(...);
+ $catalogs = $retailService-&gt;projects_locations_catalogs;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2CompleteQueryResponse.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2CompleteQueryResponse">GoogleCloudRetailV2CompleteQueryResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_completeQuery">completeQuery</a>(string $catalog, array $optParams = [])
+        
+                                            <p><p>Completes the specified prefix with keyword suggestions. This feature is only
+available for users who have Retail Search enabled. Enable Retail Search on
+Cloud Console before using this feature. (catalogs.completeQuery)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRetail/GoogleLongrunningOperation.html"><abbr title="Google\Service\CloudRetail\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_exportAnalyticsMetrics">exportAnalyticsMetrics</a>(string $catalog, <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2ExportAnalyticsMetricsRequest.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2ExportAnalyticsMetricsRequest">GoogleCloudRetailV2ExportAnalyticsMetricsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Exports analytics metrics. <code>Operation.response</code> is of type
+<code>ExportAnalyticsMetricsResponse</code>. <code>Operation.metadata</code> is of type
+<code>ExportMetadata</code>. (catalogs.exportAnalyticsMetrics)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2AttributesConfig.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2AttributesConfig">GoogleCloudRetailV2AttributesConfig</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAttributesConfig">getAttributesConfig</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets an AttributesConfig. (catalogs.getAttributesConfig)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2CompletionConfig.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2CompletionConfig">GoogleCloudRetailV2CompletionConfig</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCompletionConfig">getCompletionConfig</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets a CompletionConfig. (catalogs.getCompletionConfig)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2GetDefaultBranchResponse.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2GetDefaultBranchResponse">GoogleCloudRetailV2GetDefaultBranchResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDefaultBranch">getDefaultBranch</a>(string $catalog, array $optParams = [])
+        
+                                            <p><p>Get which branch is currently default branch set by
+CatalogService.SetDefaultBranch method under a specified parent catalog.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2ListCatalogsResponse.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2ListCatalogsResponse">GoogleCloudRetailV2ListCatalogsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsLocationsCatalogs">listProjectsLocationsCatalogs</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists all the Catalogs associated with the project.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2Catalog.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2Catalog">GoogleCloudRetailV2Catalog</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2Catalog.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2Catalog">GoogleCloudRetailV2Catalog</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the Catalogs. (catalogs.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRetail/GoogleProtobufEmpty.html"><abbr title="Google\Service\CloudRetail\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDefaultBranch">setDefaultBranch</a>(string $catalog, <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2SetDefaultBranchRequest.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2SetDefaultBranchRequest">GoogleCloudRetailV2SetDefaultBranchRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Set a specified branch id as default branch. API methods such as
+SearchService.Search, ProductService.GetProduct, ProductService.ListProducts
+will treat requests using &quot;default_branch&quot; to the actual branch id set as
+default. For example, if <code>projects/locations/catalogs/branches/1</code> is set as
+default, setting SearchRequest.branch to
+<code>projects/locations/catalogs/branches/default_branch</code> is equivalent to
+setting SearchRequest.branch to <code>projects/locations/catalogs/branches/1</code>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2AttributesConfig.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2AttributesConfig">GoogleCloudRetailV2AttributesConfig</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateAttributesConfig">updateAttributesConfig</a>(string $name, <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2AttributesConfig.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2AttributesConfig">GoogleCloudRetailV2AttributesConfig</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the AttributesConfig. The catalog attributes in the request will be
+updated in the catalog, or inserted if they do not exist. Existing catalog
+attributes not included in the request will remain unchanged. Attributes that
+are assigned to products, but do not exist at the catalog level, are always
+included in the response. The product attribute is assigned default values
+for missing catalog attribute fields, e.g., searchable and dynamic facetable
+options. (catalogs.updateAttributesConfig)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2CompletionConfig.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2CompletionConfig">GoogleCloudRetailV2CompletionConfig</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateCompletionConfig">updateCompletionConfig</a>(string $name, <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2CompletionConfig.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2CompletionConfig">GoogleCloudRetailV2CompletionConfig</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the CompletionConfigs. (catalogs.updateCompletionConfig)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_completeQuery">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudRetail/Resource/ProjectsLocationsCatalogs.php#L95">at line 95</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2CompleteQueryResponse.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2CompleteQueryResponse">GoogleCloudRetailV2CompleteQueryResponse</abbr></a>
+    <strong>completeQuery</strong>(string $catalog, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Completes the specified prefix with keyword suggestions. This feature is only
+available for users who have Retail Search enabled. Enable Retail Search on
+Cloud Console before using this feature. (catalogs.completeQuery)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$catalog</td>
+                <td><p>Required. Catalog for which the completion is
+performed. Full resource name of catalog, such as
+<code>projects/locations/global/catalogs/default_catalog</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2CompleteQueryResponse.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2CompleteQueryResponse">GoogleCloudRetailV2CompleteQueryResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exportAnalyticsMetrics">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudRetail/Resource/ProjectsLocationsCatalogs.php#L113">at line 113</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRetail/GoogleLongrunningOperation.html"><abbr title="Google\Service\CloudRetail\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>exportAnalyticsMetrics</strong>(string $catalog, <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2ExportAnalyticsMetricsRequest.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2ExportAnalyticsMetricsRequest">GoogleCloudRetailV2ExportAnalyticsMetricsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Exports analytics metrics. <code>Operation.response</code> is of type
+<code>ExportAnalyticsMetricsResponse</code>. <code>Operation.metadata</code> is of type
+<code>ExportMetadata</code>. (catalogs.exportAnalyticsMetrics)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$catalog</td>
+                <td><p>Required. Full resource name of the parent catalog.
+Expected format: <code>projects/locations/catalogs</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2ExportAnalyticsMetricsRequest.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2ExportAnalyticsMetricsRequest">GoogleCloudRetailV2ExportAnalyticsMetricsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRetail/GoogleLongrunningOperation.html"><abbr title="Google\Service\CloudRetail\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAttributesConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudRetail/Resource/ProjectsLocationsCatalogs.php#L129">at line 129</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2AttributesConfig.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2AttributesConfig">GoogleCloudRetailV2AttributesConfig</abbr></a>
+    <strong>getAttributesConfig</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets an AttributesConfig. (catalogs.getAttributesConfig)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Full AttributesConfig resource name. Format: <code>p rojects/{project_number}/locations/{location_id}/catalogs/{catalog_id}/attrib utesConfig</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2AttributesConfig.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2AttributesConfig">GoogleCloudRetailV2AttributesConfig</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCompletionConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudRetail/Resource/ProjectsLocationsCatalogs.php#L145">at line 145</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2CompletionConfig.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2CompletionConfig">GoogleCloudRetailV2CompletionConfig</abbr></a>
+    <strong>getCompletionConfig</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets a CompletionConfig. (catalogs.getCompletionConfig)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Full CompletionConfig resource name. Format: <code>p rojects/{project_number}/locations/{location_id}/catalogs/{catalog_id}/comple tionConfig</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2CompletionConfig.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2CompletionConfig">GoogleCloudRetailV2CompletionConfig</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaultBranch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudRetail/Resource/ProjectsLocationsCatalogs.php#L162">at line 162</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2GetDefaultBranchResponse.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2GetDefaultBranchResponse">GoogleCloudRetailV2GetDefaultBranchResponse</abbr></a>
+    <strong>getDefaultBranch</strong>(string $catalog, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get which branch is currently default branch set by
+CatalogService.SetDefaultBranch method under a specified parent catalog.</p></p>                <p>(catalogs.getDefaultBranch)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$catalog</td>
+                <td><p>The parent catalog resource name, such as
+<code>projects/locations/global/catalogs/default_catalog</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2GetDefaultBranchResponse.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2GetDefaultBranchResponse">GoogleCloudRetailV2GetDefaultBranchResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsLocationsCatalogs">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudRetail/Resource/ProjectsLocationsCatalogs.php#L190">at line 190</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2ListCatalogsResponse.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2ListCatalogsResponse">GoogleCloudRetailV2ListCatalogsResponse</abbr></a>
+    <strong>listProjectsLocationsCatalogs</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all the Catalogs associated with the project.</p></p>                <p>(catalogs.listProjectsLocationsCatalogs)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The account resource name with an associated
+location. If the caller does not have permission to list Catalogs under this
+location, regardless of whether or not this location exists, a
+PERMISSION_DENIED error is returned.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2ListCatalogsResponse.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2ListCatalogsResponse">GoogleCloudRetailV2ListCatalogsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudRetail/Resource/ProjectsLocationsCatalogs.php#L210">at line 210</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2Catalog.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2Catalog">GoogleCloudRetailV2Catalog</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2Catalog.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2Catalog">GoogleCloudRetailV2Catalog</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the Catalogs. (catalogs.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Immutable. The fully qualified resource name of
+the catalog.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2Catalog.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2Catalog">GoogleCloudRetailV2Catalog</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2Catalog.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2Catalog">GoogleCloudRetailV2Catalog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaultBranch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudRetail/Resource/ProjectsLocationsCatalogs.php#L244">at line 244</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRetail/GoogleProtobufEmpty.html"><abbr title="Google\Service\CloudRetail\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a>
+    <strong>setDefaultBranch</strong>(string $catalog, <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2SetDefaultBranchRequest.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2SetDefaultBranchRequest">GoogleCloudRetailV2SetDefaultBranchRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set a specified branch id as default branch. API methods such as
+SearchService.Search, ProductService.GetProduct, ProductService.ListProducts
+will treat requests using &quot;default_branch&quot; to the actual branch id set as
+default. For example, if <code>projects/locations/catalogs/branches/1</code> is set as
+default, setting SearchRequest.branch to
+<code>projects/locations/catalogs/branches/default_branch</code> is equivalent to
+setting SearchRequest.branch to <code>projects/locations/catalogs/branches/1</code>.</p></p>                <p><p>Using multiple branches can be useful when developers would like to have a
+staging branch to test and verify for future usage. When it becomes ready,
+developers switch on the staging branch using this API while keeping using
+<code>projects/locations/catalogs/branches/default_branch</code> as SearchRequest.branch
+to route the traffic to this staging branch. CAUTION: If you have live
+predict/search traffic, switching the default branch could potentially cause
+outages if the ID space of the new branch is very different from the old one.
+More specifically: <em> PredictionService will only return product IDs from
+branch {newBranch}. </em> SearchService will only return product IDs from branch
+{newBranch} (if branch is not explicitly set). * UserEventService will only
+join events with products from branch {newBranch}.
+(catalogs.setDefaultBranch)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$catalog</td>
+                <td><p>Full resource name of the catalog, such as
+<code>projects/locations/global/catalogs/default_catalog</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2SetDefaultBranchRequest.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2SetDefaultBranchRequest">GoogleCloudRetailV2SetDefaultBranchRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRetail/GoogleProtobufEmpty.html"><abbr title="Google\Service\CloudRetail\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateAttributesConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudRetail/Resource/ProjectsLocationsCatalogs.php#L271">at line 271</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2AttributesConfig.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2AttributesConfig">GoogleCloudRetailV2AttributesConfig</abbr></a>
+    <strong>updateAttributesConfig</strong>(string $name, <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2AttributesConfig.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2AttributesConfig">GoogleCloudRetailV2AttributesConfig</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the AttributesConfig. The catalog attributes in the request will be
+updated in the catalog, or inserted if they do not exist. Existing catalog
+attributes not included in the request will remain unchanged. Attributes that
+are assigned to products, but do not exist at the catalog level, are always
+included in the response. The product attribute is assigned default values
+for missing catalog attribute fields, e.g., searchable and dynamic facetable
+options. (catalogs.updateAttributesConfig)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Immutable. The fully qualified resource name of
+the attribute config. Format: <code>projects/locations/catalogs/attributesConfig</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2AttributesConfig.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2AttributesConfig">GoogleCloudRetailV2AttributesConfig</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2AttributesConfig.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2AttributesConfig">GoogleCloudRetailV2AttributesConfig</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateCompletionConfig">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudRetail/Resource/ProjectsLocationsCatalogs.php#L293">at line 293</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2CompletionConfig.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2CompletionConfig">GoogleCloudRetailV2CompletionConfig</abbr></a>
+    <strong>updateCompletionConfig</strong>(string $name, <a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2CompletionConfig.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2CompletionConfig">GoogleCloudRetailV2CompletionConfig</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the CompletionConfigs. (catalogs.updateCompletionConfig)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Immutable. Fully qualified name
+<code>projects/locations/catalogs/completionConfig</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2CompletionConfig.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2CompletionConfig">GoogleCloudRetailV2CompletionConfig</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudRetail/GoogleCloudRetailV2CompletionConfig.html"><abbr title="Google\Service\CloudRetail\GoogleCloudRetailV2CompletionConfig">GoogleCloudRetailV2CompletionConfig</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

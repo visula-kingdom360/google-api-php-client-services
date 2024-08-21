@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\GoogleAnalyticsAdmin\Resource\Accounts | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_GoogleAnalyticsAdmin_Resource_Accounts" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/GoogleAnalyticsAdmin.ns.html">GoogleAnalyticsAdmin</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/GoogleAnalyticsAdmin/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>Accounts</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Accounts    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Accounts</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/Accounts.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;accounts&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $analyticsadminService = new Google\Service\GoogleAnalyticsAdmin(...);
+ $accounts = $analyticsadminService-&gt;accounts;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleProtobufEmpty.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Marks target Account as soft-deleted (ie: &quot;trashed&quot;) and returns it. This API
+does not have a method to restore soft-deleted accounts. However, they can be
+restored using the Trash Can UI. If the accounts are not restored before the
+expiration time, the account and all child resources (eg: Properties,
+GoogleAdsLinks, Streams, AccessBindings) will be permanently purged.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaAccount.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccount">GoogleAnalyticsAdminV1betaAccount</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Lookup for a single Account. (accounts.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaDataSharingSettings.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaDataSharingSettings">GoogleAnalyticsAdminV1betaDataSharingSettings</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDataSharingSettings">getDataSharingSettings</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Get data sharing settings on an account. Data sharing settings are
+singletons. (accounts.getDataSharingSettings)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaListAccountsResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListAccountsResponse">GoogleAnalyticsAdminV1betaListAccountsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listAccounts">listAccounts</a>(array $optParams = [])
+        
+                                            <p><p>Returns all accounts accessible by the caller. Note that these accounts might
+not currently have GA4 properties. Soft-deleted (ie: &quot;trashed&quot;) accounts are
+excluded by default. Returns an empty list if no relevant accounts are found.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaAccount.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccount">GoogleAnalyticsAdminV1betaAccount</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaAccount.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccount">GoogleAnalyticsAdminV1betaAccount</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates an account. (accounts.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaProvisionAccountTicketResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaProvisionAccountTicketResponse">GoogleAnalyticsAdminV1betaProvisionAccountTicketResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_provisionAccountTicket">provisionAccountTicket</a>(<a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaProvisionAccountTicketRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaProvisionAccountTicketRequest">GoogleAnalyticsAdminV1betaProvisionAccountTicketRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Requests a ticket for creating an account. (accounts.provisionAccountTicket)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaRunAccessReportResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaRunAccessReportResponse">GoogleAnalyticsAdminV1betaRunAccessReportResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_runAccessReport">runAccessReport</a>(string $entity, <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaRunAccessReportRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaRunAccessReportRequest">GoogleAnalyticsAdminV1betaRunAccessReportRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Returns a customized report of data access records. The report provides
+records of each time a user reads Google Analytics reporting data. Access
+records are retained for up to 2 years. Data Access Reports can be requested
+for a property. Reports may be requested for any property, but dimensions
+that aren't related to quota can only be requested on Google Analytics 360
+properties. This method is only available to Administrators. These data
+access records include GA4 UI Reporting, GA4 UI Explorations, GA4 Data API,
+and other products like Firebase &amp; Admob that can retrieve data from Google
+Analytics through a linkage. These records don't include property
+configuration changes like adding a stream or changing a property's time
+zone. For configuration change history, see <a href="https
+://developers.google.com/analytics/devguides/config/admin/v1/rest/v1alpha/acc
+ounts/searchChangeHistoryEvents">searchChangeHistoryEvents</a>. (accounts.runAccessReport)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsResponse">GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_searchChangeHistoryEvents">searchChangeHistoryEvents</a>(string $account, <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsRequest">GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Searches through all changes to an account or its children given the
+specified set of filters. (accounts.searchChangeHistoryEvents)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/Accounts.php#L56">at line 56</a></div>
+        <code>                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleProtobufEmpty.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Marks target Account as soft-deleted (ie: &quot;trashed&quot;) and returns it. This API
+does not have a method to restore soft-deleted accounts. However, they can be
+restored using the Trash Can UI. If the accounts are not restored before the
+expiration time, the account and all child resources (eg: Properties,
+GoogleAdsLinks, Streams, AccessBindings) will be permanently purged.</p></p>                <p><p><a href="https://support.google.com/analytics/answer/6154772">https://support.google.com/analytics/answer/6154772</a> Returns an error if the
+target is not found. (accounts.delete)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the Account to soft-delete. Format:
+accounts/{account} Example: &quot;accounts/100&quot;</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleProtobufEmpty.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/Accounts.php#L71">at line 71</a></div>
+        <code>                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaAccount.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccount">GoogleAnalyticsAdminV1betaAccount</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lookup for a single Account. (accounts.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the account to lookup. Format:
+accounts/{account} Example: &quot;accounts/100&quot;</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaAccount.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccount">GoogleAnalyticsAdminV1betaAccount</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDataSharingSettings">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/Accounts.php#L88">at line 88</a></div>
+        <code>                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaDataSharingSettings.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaDataSharingSettings">GoogleAnalyticsAdminV1betaDataSharingSettings</abbr></a>
+    <strong>getDataSharingSettings</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get data sharing settings on an account. Data sharing settings are
+singletons. (accounts.getDataSharingSettings)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the settings to lookup. Format:
+accounts/{account}/dataSharingSettings Example:
+<code>accounts/1000/dataSharingSettings</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaDataSharingSettings.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaDataSharingSettings">GoogleAnalyticsAdminV1betaDataSharingSettings</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listAccounts">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/Accounts.php#L116">at line 116</a></div>
+        <code>                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaListAccountsResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListAccountsResponse">GoogleAnalyticsAdminV1betaListAccountsResponse</abbr></a>
+    <strong>listAccounts</strong>(array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns all accounts accessible by the caller. Note that these accounts might
+not currently have GA4 properties. Soft-deleted (ie: &quot;trashed&quot;) accounts are
+excluded by default. Returns an empty list if no relevant accounts are found.</p></p>                <p>(accounts.listAccounts)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaListAccountsResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListAccountsResponse">GoogleAnalyticsAdminV1betaListAccountsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/Accounts.php#L137">at line 137</a></div>
+        <code>                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaAccount.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccount">GoogleAnalyticsAdminV1betaAccount</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaAccount.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccount">GoogleAnalyticsAdminV1betaAccount</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates an account. (accounts.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Output only. Resource name of this account. Format:
+accounts/{account} Example: &quot;accounts/100&quot;</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaAccount.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccount">GoogleAnalyticsAdminV1betaAccount</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaAccount.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccount">GoogleAnalyticsAdminV1betaAccount</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_provisionAccountTicket">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/Accounts.php#L151">at line 151</a></div>
+        <code>                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaProvisionAccountTicketResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaProvisionAccountTicketResponse">GoogleAnalyticsAdminV1betaProvisionAccountTicketResponse</abbr></a>
+    <strong>provisionAccountTicket</strong>(<a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaProvisionAccountTicketRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaProvisionAccountTicketRequest">GoogleAnalyticsAdminV1betaProvisionAccountTicketRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Requests a ticket for creating an account. (accounts.provisionAccountTicket)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaProvisionAccountTicketRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaProvisionAccountTicketRequest">GoogleAnalyticsAdminV1betaProvisionAccountTicketRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaProvisionAccountTicketResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaProvisionAccountTicketResponse">GoogleAnalyticsAdminV1betaProvisionAccountTicketResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runAccessReport">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/Accounts.php#L183">at line 183</a></div>
+        <code>                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaRunAccessReportResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaRunAccessReportResponse">GoogleAnalyticsAdminV1betaRunAccessReportResponse</abbr></a>
+    <strong>runAccessReport</strong>(string $entity, <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaRunAccessReportRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaRunAccessReportRequest">GoogleAnalyticsAdminV1betaRunAccessReportRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns a customized report of data access records. The report provides
+records of each time a user reads Google Analytics reporting data. Access
+records are retained for up to 2 years. Data Access Reports can be requested
+for a property. Reports may be requested for any property, but dimensions
+that aren't related to quota can only be requested on Google Analytics 360
+properties. This method is only available to Administrators. These data
+access records include GA4 UI Reporting, GA4 UI Explorations, GA4 Data API,
+and other products like Firebase &amp; Admob that can retrieve data from Google
+Analytics through a linkage. These records don't include property
+configuration changes like adding a stream or changing a property's time
+zone. For configuration change history, see <a href="https
+://developers.google.com/analytics/devguides/config/admin/v1/rest/v1alpha/acc
+ounts/searchChangeHistoryEvents">searchChangeHistoryEvents</a>. (accounts.runAccessReport)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$entity</td>
+                <td><p>The Data Access Report supports requesting at the
+property level or account level. If requested at the account level, Data
+Access Reports include all access for all properties under that account. To
+request at the property level, entity should be for example 'properties/123'
+if &quot;123&quot; is your GA4 property ID. To request at the account level, entity
+should be for example 'accounts/1234' if &quot;1234&quot; is your GA4 Account ID.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaRunAccessReportRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaRunAccessReportRequest">GoogleAnalyticsAdminV1betaRunAccessReportRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaRunAccessReportResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaRunAccessReportResponse">GoogleAnalyticsAdminV1betaRunAccessReportResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_searchChangeHistoryEvents">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/GoogleAnalyticsAdmin/Resource/Accounts.php#L200">at line 200</a></div>
+        <code>                    <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsResponse">GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsResponse</abbr></a>
+    <strong>searchChangeHistoryEvents</strong>(string $account, <a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsRequest">GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Searches through all changes to an account or its children given the
+specified set of filters. (accounts.searchChangeHistoryEvents)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$account</td>
+                <td><p>Required. The account resource for which to return
+change history resources. Format: accounts/{account} Example: <code>accounts/100</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsRequest.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsRequest">GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/GoogleAnalyticsAdmin/GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsResponse.html"><abbr title="Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsResponse">GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

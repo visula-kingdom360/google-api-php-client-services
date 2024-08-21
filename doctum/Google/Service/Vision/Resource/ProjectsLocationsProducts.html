@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Vision\Resource\ProjectsLocationsProducts | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Vision_Resource_ProjectsLocationsProducts" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Vision.ns.html">Vision</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Vision/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ProjectsLocationsProducts</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsLocationsProducts    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsLocationsProducts</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Vision/Resource/ProjectsLocationsProducts.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;products&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $visionService = new Google\Service\Vision(...);
+ $products = $visionService-&gt;projects_locations_products;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Vision/Product.html"><abbr title="Google\Service\Vision\Product">Product</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/Vision/Product.html"><abbr title="Google\Service\Vision\Product">Product</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates and returns a new product resource. Possible errors: <em> Returns
+INVALID_ARGUMENT if display_name is missing or longer than 4096 characters. </em>
+Returns INVALID_ARGUMENT if description is longer than 4096 characters. *
+Returns INVALID_ARGUMENT if product_category is missing or invalid.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Vision/VisionEmpty.html"><abbr title="Google\Service\Vision\VisionEmpty">VisionEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Permanently deletes a product and its reference images. Metadata of the
+product and all its images will be deleted right away, but search queries
+against ProductSets containing the product may still work until all related
+caches are refreshed. (products.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Vision/Product.html"><abbr title="Google\Service\Vision\Product">Product</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets information associated with a Product. Possible errors: * Returns
+NOT_FOUND if the Product does not exist. (products.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Vision/ListProductsResponse.html"><abbr title="Google\Service\Vision\ListProductsResponse">ListProductsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsLocationsProducts">listProjectsLocationsProducts</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists products in an unspecified order. Possible errors: * Returns
+INVALID_ARGUMENT if page_size is greater than 100 or less than 1.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Vision/Product.html"><abbr title="Google\Service\Vision\Product">Product</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/Vision/Product.html"><abbr title="Google\Service\Vision\Product">Product</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Makes changes to a Product resource. Only the <code>display_name</code>, <code>description</code>,
+and <code>labels</code> fields can be updated right now. If labels are updated, the
+change will not be reflected in queries until the next index time. Possible
+errors: <em> Returns NOT_FOUND if the Product does not exist. </em> Returns
+INVALID_ARGUMENT if display_name is present in update_mask but is missing
+from the request or longer than 4096 characters. * Returns INVALID_ARGUMENT
+if description is present in update_mask but is longer than 4096 characters.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Vision/Operation.html"><abbr title="Google\Service\Vision\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_purge">purge</a>(string $parent, <a href="../../../../Google/Service/Vision/PurgeProductsRequest.html"><abbr title="Google\Service\Vision\PurgeProductsRequest">PurgeProductsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Asynchronous API to delete all Products in a ProductSet or all Products that
+are in no ProductSet. If a Product is a member of the specified ProductSet in
+addition to other ProductSets, the Product will still be deleted. It is
+recommended to not delete the specified ProductSet until after this operation
+has completed. It is also recommended to not add any of the Products involved
+in the batch delete to a new ProductSet while this operation is running
+because those Products may still end up deleted. It's not possible to undo
+the PurgeProducts operation. Therefore, it is recommended to keep the csv
+files used in ImportProductSets (if that was how you originally built the
+Product Set) before starting PurgeProducts, in case you need to re-import the
+data after deletion. If the plan is to purge all of the Products from a
+ProductSet and then re-use the empty ProductSet to re-import new Products
+into the empty ProductSet, you must wait until the PurgeProducts operation
+has finished for that ProductSet. The google.longrunning.Operation API can be
+used to keep track of the progress and results of the request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Vision/Resource/ProjectsLocationsProducts.php#L55">at line 55</a></div>
+        <code>                    <a href="../../../../Google/Service/Vision/Product.html"><abbr title="Google\Service\Vision\Product">Product</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/Vision/Product.html"><abbr title="Google\Service\Vision\Product">Product</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates and returns a new product resource. Possible errors: <em> Returns
+INVALID_ARGUMENT if display_name is missing or longer than 4096 characters. </em>
+Returns INVALID_ARGUMENT if description is longer than 4096 characters. *
+Returns INVALID_ARGUMENT if product_category is missing or invalid.</p></p>                <p>(products.create)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The project in which the Product should be
+created. Format is <code>projects/PROJECT_ID/locations/LOC_ID</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Vision/Product.html"><abbr title="Google\Service\Vision\Product">Product</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Vision/Product.html"><abbr title="Google\Service\Vision\Product">Product</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Vision/Resource/ProjectsLocationsProducts.php#L73">at line 73</a></div>
+        <code>                    <a href="../../../../Google/Service/Vision/VisionEmpty.html"><abbr title="Google\Service\Vision\VisionEmpty">VisionEmpty</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Permanently deletes a product and its reference images. Metadata of the
+product and all its images will be deleted right away, but search queries
+against ProductSets containing the product may still work until all related
+caches are refreshed. (products.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Resource name of product to delete. Format is:
+<code>projects/PROJECT_ID/locations/LOC_ID/products/PRODUCT_ID</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Vision/VisionEmpty.html"><abbr title="Google\Service\Vision\VisionEmpty">VisionEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Vision/Resource/ProjectsLocationsProducts.php#L89">at line 89</a></div>
+        <code>                    <a href="../../../../Google/Service/Vision/Product.html"><abbr title="Google\Service\Vision\Product">Product</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets information associated with a Product. Possible errors: * Returns
+NOT_FOUND if the Product does not exist. (products.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Resource name of the Product to get. Format is:
+<code>projects/PROJECT_ID/locations/LOC_ID/products/PRODUCT_ID</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Vision/Product.html"><abbr title="Google\Service\Vision\Product">Product</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsLocationsProducts">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Vision/Resource/ProjectsLocationsProducts.php#L111">at line 111</a></div>
+        <code>                    <a href="../../../../Google/Service/Vision/ListProductsResponse.html"><abbr title="Google\Service\Vision\ListProductsResponse">ListProductsResponse</abbr></a>
+    <strong>listProjectsLocationsProducts</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists products in an unspecified order. Possible errors: * Returns
+INVALID_ARGUMENT if page_size is greater than 100 or less than 1.</p></p>                <p>(products.listProjectsLocationsProducts)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The project OR ProductSet from which Products
+should be listed. Format: <code>projects/PROJECT_ID/locations/LOC_ID</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Vision/ListProductsResponse.html"><abbr title="Google\Service\Vision\ListProductsResponse">ListProductsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Vision/Resource/ProjectsLocationsProducts.php#L140">at line 140</a></div>
+        <code>                    <a href="../../../../Google/Service/Vision/Product.html"><abbr title="Google\Service\Vision\Product">Product</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/Vision/Product.html"><abbr title="Google\Service\Vision\Product">Product</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Makes changes to a Product resource. Only the <code>display_name</code>, <code>description</code>,
+and <code>labels</code> fields can be updated right now. If labels are updated, the
+change will not be reflected in queries until the next index time. Possible
+errors: <em> Returns NOT_FOUND if the Product does not exist. </em> Returns
+INVALID_ARGUMENT if display_name is present in update_mask but is missing
+from the request or longer than 4096 characters. * Returns INVALID_ARGUMENT
+if description is present in update_mask but is longer than 4096 characters.</p></p>                <p><ul>
+<li>Returns INVALID_ARGUMENT if product_category is present in update_mask.
+(products.patch)</li>
+</ul></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>The resource name of the product. Format is:
+<code>projects/PROJECT_ID/locations/LOC_ID/products/PRODUCT_ID</code>. This field is
+ignored when creating a product.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Vision/Product.html"><abbr title="Google\Service\Vision\Product">Product</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Vision/Product.html"><abbr title="Google\Service\Vision\Product">Product</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_purge">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Vision/Resource/ProjectsLocationsProducts.php#L172">at line 172</a></div>
+        <code>                    <a href="../../../../Google/Service/Vision/Operation.html"><abbr title="Google\Service\Vision\Operation">Operation</abbr></a>
+    <strong>purge</strong>(string $parent, <a href="../../../../Google/Service/Vision/PurgeProductsRequest.html"><abbr title="Google\Service\Vision\PurgeProductsRequest">PurgeProductsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Asynchronous API to delete all Products in a ProductSet or all Products that
+are in no ProductSet. If a Product is a member of the specified ProductSet in
+addition to other ProductSets, the Product will still be deleted. It is
+recommended to not delete the specified ProductSet until after this operation
+has completed. It is also recommended to not add any of the Products involved
+in the batch delete to a new ProductSet while this operation is running
+because those Products may still end up deleted. It's not possible to undo
+the PurgeProducts operation. Therefore, it is recommended to keep the csv
+files used in ImportProductSets (if that was how you originally built the
+Product Set) before starting PurgeProducts, in case you need to re-import the
+data after deletion. If the plan is to purge all of the Products from a
+ProductSet and then re-use the empty ProductSet to re-import new Products
+into the empty ProductSet, you must wait until the PurgeProducts operation
+has finished for that ProductSet. The google.longrunning.Operation API can be
+used to keep track of the progress and results of the request.</p></p>                <p><p><code>Operation.metadata</code> contains <code>BatchOperationMetadata</code>. (progress)
+(products.purge)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The project and location in which the
+Products should be deleted. Format is <code>projects/PROJECT_ID/locations/LOC_ID</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Vision/PurgeProductsRequest.html"><abbr title="Google\Service\Vision\PurgeProductsRequest">PurgeProductsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Vision/Operation.html"><abbr title="Google\Service\Vision\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

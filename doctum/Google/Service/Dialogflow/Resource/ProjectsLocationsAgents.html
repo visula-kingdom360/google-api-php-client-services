@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Dialogflow\Resource\ProjectsLocationsAgents | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Dialogflow_Resource_ProjectsLocationsAgents" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Dialogflow.ns.html">Dialogflow</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Dialogflow/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ProjectsLocationsAgents</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsLocationsAgents    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsLocationsAgents</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgents.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;agents&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $dialogflowService = new Google\Service\Dialogflow(...);
+ $agents = $dialogflowService-&gt;projects_locations_agents;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Agent.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Agent">GoogleCloudDialogflowCxV3Agent</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Agent.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Agent">GoogleCloudDialogflowCxV3Agent</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates an agent in the specified location. Note: You should always train
+flows prior to sending them queries. See the <a href="https://cloud.google.com/dialogflow/cx/docs/concept/training">training
+documentation</a>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dialogflow/GoogleProtobufEmpty.html"><abbr title="Google\Service\Dialogflow\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes the specified agent. (agents.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dialogflow/GoogleLongrunningOperation.html"><abbr title="Google\Service\Dialogflow\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_export">export</a>(string $name, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3ExportAgentRequest.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExportAgentRequest">GoogleCloudDialogflowCxV3ExportAgentRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Exports the specified agent to a binary file. This method is a <a href="https://cloud.google.com/dialogflow/cx/docs/how/long-running-
+operation">long-running
+operation</a>. The returned <code>Operation</code> type has the following method-specific
+fields: - <code>metadata</code>: An empty <a href="https://developers.google.com/protocol-
+buffers/docs/reference/google.protobuf#struct">Struct
+message</a> - <code>response</code>:
+ExportAgentResponse (agents.export)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Agent.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Agent">GoogleCloudDialogflowCxV3Agent</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Retrieves the specified agent. (agents.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3GenerativeSettings.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GenerativeSettings">GoogleCloudDialogflowCxV3GenerativeSettings</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getGenerativeSettings">getGenerativeSettings</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets the generative settings for the agent. (agents.getGenerativeSettings)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3AgentValidationResult.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentValidationResult">GoogleCloudDialogflowCxV3AgentValidationResult</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getValidationResult">getValidationResult</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets the latest agent validation result. Agent validation is performed when
+ValidateAgent is called. (agents.getValidationResult)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3ListAgentsResponse.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListAgentsResponse">GoogleCloudDialogflowCxV3ListAgentsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsLocationsAgents">listProjectsLocationsAgents</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Returns the list of all agents in the specified location.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Agent.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Agent">GoogleCloudDialogflowCxV3Agent</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Agent.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Agent">GoogleCloudDialogflowCxV3Agent</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the specified agent. Note: You should always train flows prior to
+sending them queries. See the <a href="https://cloud.google.com/dialogflow/cx/docs/concept/training">training
+documentation</a>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dialogflow/GoogleLongrunningOperation.html"><abbr title="Google\Service\Dialogflow\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_restore">restore</a>(string $name, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3RestoreAgentRequest.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RestoreAgentRequest">GoogleCloudDialogflowCxV3RestoreAgentRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Restores the specified agent from a binary file. Replaces the current agent
+with a new one. Note that all existing resources in agent (e.g. intents,
+entity types, flows) will be removed. This method is a <a href="https://cloud.google.com/dialogflow/cx/docs/how/long-running-
+operation">long-running
+operation</a>. The returned <code>Operation</code> type has the following method-specific
+fields: - <code>metadata</code>: An empty <a href="https://developers.google.com/protocol-
+buffers/docs/reference/google.protobuf#struct">Struct
+message</a> - <code>response</code>: An <a href="https://developers.google.com/protocol-
+buffers/docs/reference/google.protobuf#empty">Empty
+message</a> Note: You should always train
+flows prior to sending them queries. See the <a href="https://cloud.google.com/dialogflow/cx/docs/concept/training">training
+documentation</a>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3GenerativeSettings.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GenerativeSettings">GoogleCloudDialogflowCxV3GenerativeSettings</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateGenerativeSettings">updateGenerativeSettings</a>(string $name, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3GenerativeSettings.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GenerativeSettings">GoogleCloudDialogflowCxV3GenerativeSettings</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the generative settings for the agent.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3AgentValidationResult.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentValidationResult">GoogleCloudDialogflowCxV3AgentValidationResult</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_validate">validate</a>(string $name, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3ValidateAgentRequest.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ValidateAgentRequest">GoogleCloudDialogflowCxV3ValidateAgentRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Validates the specified agent and creates or updates validation results. The
+agent in draft version is validated. Please call this API after the training
+is completed to get the complete validation results. (agents.validate)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgents.php#L53">at line 53</a></div>
+        <code>                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Agent.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Agent">GoogleCloudDialogflowCxV3Agent</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Agent.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Agent">GoogleCloudDialogflowCxV3Agent</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates an agent in the specified location. Note: You should always train
+flows prior to sending them queries. See the <a href="https://cloud.google.com/dialogflow/cx/docs/concept/training">training
+documentation</a>.</p></p>                <p>(agents.create)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The location to create a agent for. Format:
+<code>projects//locations/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Agent.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Agent">GoogleCloudDialogflowCxV3Agent</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Agent.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Agent">GoogleCloudDialogflowCxV3Agent</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgents.php#L68">at line 68</a></div>
+        <code>                    <a href="../../../../Google/Service/Dialogflow/GoogleProtobufEmpty.html"><abbr title="Google\Service\Dialogflow\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes the specified agent. (agents.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the agent to delete. Format:
+<code>projects//locations//agents/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dialogflow/GoogleProtobufEmpty.html"><abbr title="Google\Service\Dialogflow\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_export">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgents.php#L90">at line 90</a></div>
+        <code>                    <a href="../../../../Google/Service/Dialogflow/GoogleLongrunningOperation.html"><abbr title="Google\Service\Dialogflow\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>export</strong>(string $name, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3ExportAgentRequest.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExportAgentRequest">GoogleCloudDialogflowCxV3ExportAgentRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Exports the specified agent to a binary file. This method is a <a href="https://cloud.google.com/dialogflow/cx/docs/how/long-running-
+operation">long-running
+operation</a>. The returned <code>Operation</code> type has the following method-specific
+fields: - <code>metadata</code>: An empty <a href="https://developers.google.com/protocol-
+buffers/docs/reference/google.protobuf#struct">Struct
+message</a> - <code>response</code>:
+ExportAgentResponse (agents.export)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the agent to export. Format:
+<code>projects//locations//agents/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3ExportAgentRequest.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExportAgentRequest">GoogleCloudDialogflowCxV3ExportAgentRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dialogflow/GoogleLongrunningOperation.html"><abbr title="Google\Service\Dialogflow\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgents.php#L105">at line 105</a></div>
+        <code>                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Agent.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Agent">GoogleCloudDialogflowCxV3Agent</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves the specified agent. (agents.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the agent. Format:
+<code>projects//locations//agents/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Agent.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Agent">GoogleCloudDialogflowCxV3Agent</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGenerativeSettings">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgents.php#L123">at line 123</a></div>
+        <code>                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3GenerativeSettings.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GenerativeSettings">GoogleCloudDialogflowCxV3GenerativeSettings</abbr></a>
+    <strong>getGenerativeSettings</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the generative settings for the agent. (agents.getGenerativeSettings)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Format:
+<code>projects//locations//agents//generativeSettings</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3GenerativeSettings.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GenerativeSettings">GoogleCloudDialogflowCxV3GenerativeSettings</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getValidationResult">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgents.php#L142">at line 142</a></div>
+        <code>                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3AgentValidationResult.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentValidationResult">GoogleCloudDialogflowCxV3AgentValidationResult</abbr></a>
+    <strong>getValidationResult</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the latest agent validation result. Agent validation is performed when
+ValidateAgent is called. (agents.getValidationResult)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The agent name. Format:
+<code>projects//locations//agents//validationResult</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3AgentValidationResult.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentValidationResult">GoogleCloudDialogflowCxV3AgentValidationResult</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsLocationsAgents">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgents.php#L163">at line 163</a></div>
+        <code>                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3ListAgentsResponse.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListAgentsResponse">GoogleCloudDialogflowCxV3ListAgentsResponse</abbr></a>
+    <strong>listProjectsLocationsAgents</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the list of all agents in the specified location.</p></p>                <p>(agents.listProjectsLocationsAgents)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The location to list all agents for. Format:
+<code>projects//locations/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3ListAgentsResponse.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListAgentsResponse">GoogleCloudDialogflowCxV3ListAgentsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgents.php#L186">at line 186</a></div>
+        <code>                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Agent.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Agent">GoogleCloudDialogflowCxV3Agent</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Agent.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Agent">GoogleCloudDialogflowCxV3Agent</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the specified agent. Note: You should always train flows prior to
+sending them queries. See the <a href="https://cloud.google.com/dialogflow/cx/docs/concept/training">training
+documentation</a>.</p></p>                <p>(agents.patch)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>The unique identifier of the agent. Required for the
+Agents.UpdateAgent method. Agents.CreateAgent populates the name
+automatically. Format: <code>projects//locations//agents/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Agent.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Agent">GoogleCloudDialogflowCxV3Agent</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3Agent.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Agent">GoogleCloudDialogflowCxV3Agent</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_restore">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgents.php#L214">at line 214</a></div>
+        <code>                    <a href="../../../../Google/Service/Dialogflow/GoogleLongrunningOperation.html"><abbr title="Google\Service\Dialogflow\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a>
+    <strong>restore</strong>(string $name, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3RestoreAgentRequest.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RestoreAgentRequest">GoogleCloudDialogflowCxV3RestoreAgentRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Restores the specified agent from a binary file. Replaces the current agent
+with a new one. Note that all existing resources in agent (e.g. intents,
+entity types, flows) will be removed. This method is a <a href="https://cloud.google.com/dialogflow/cx/docs/how/long-running-
+operation">long-running
+operation</a>. The returned <code>Operation</code> type has the following method-specific
+fields: - <code>metadata</code>: An empty <a href="https://developers.google.com/protocol-
+buffers/docs/reference/google.protobuf#struct">Struct
+message</a> - <code>response</code>: An <a href="https://developers.google.com/protocol-
+buffers/docs/reference/google.protobuf#empty">Empty
+message</a> Note: You should always train
+flows prior to sending them queries. See the <a href="https://cloud.google.com/dialogflow/cx/docs/concept/training">training
+documentation</a>.</p></p>                <p>(agents.restore)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the agent to restore into. Format:
+<code>projects//locations//agents/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3RestoreAgentRequest.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RestoreAgentRequest">GoogleCloudDialogflowCxV3RestoreAgentRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dialogflow/GoogleLongrunningOperation.html"><abbr title="Google\Service\Dialogflow\GoogleLongrunningOperation">GoogleLongrunningOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateGenerativeSettings">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgents.php#L234">at line 234</a></div>
+        <code>                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3GenerativeSettings.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GenerativeSettings">GoogleCloudDialogflowCxV3GenerativeSettings</abbr></a>
+    <strong>updateGenerativeSettings</strong>(string $name, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3GenerativeSettings.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GenerativeSettings">GoogleCloudDialogflowCxV3GenerativeSettings</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the generative settings for the agent.</p></p>                <p>(agents.updateGenerativeSettings)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Format:
+<code>projects//locations//agents//generativeSettings</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3GenerativeSettings.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GenerativeSettings">GoogleCloudDialogflowCxV3GenerativeSettings</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3GenerativeSettings.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GenerativeSettings">GoogleCloudDialogflowCxV3GenerativeSettings</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Dialogflow/Resource/ProjectsLocationsAgents.php#L252">at line 252</a></div>
+        <code>                    <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3AgentValidationResult.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentValidationResult">GoogleCloudDialogflowCxV3AgentValidationResult</abbr></a>
+    <strong>validate</strong>(string $name, <a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3ValidateAgentRequest.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ValidateAgentRequest">GoogleCloudDialogflowCxV3ValidateAgentRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Validates the specified agent and creates or updates validation results. The
+agent in draft version is validated. Please call this API after the training
+is completed to get the complete validation results. (agents.validate)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The agent to validate. Format:
+<code>projects//locations//agents/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3ValidateAgentRequest.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ValidateAgentRequest">GoogleCloudDialogflowCxV3ValidateAgentRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Dialogflow/GoogleCloudDialogflowCxV3AgentValidationResult.html"><abbr title="Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentValidationResult">GoogleCloudDialogflowCxV3AgentValidationResult</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

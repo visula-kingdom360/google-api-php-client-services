@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\DriveLabels\Resource\Labels | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_DriveLabels_Resource_Labels" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/DriveLabels.ns.html">DriveLabels</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/DriveLabels/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>Labels</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Labels    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Labels</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DriveLabels/Resource/Labels.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;labels&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $drivelabelsService = new Google\Service\DriveLabels(...);
+ $labels = $drivelabelsService-&gt;labels;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(<a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a new Label. (labels.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DriveLabels/GoogleProtobufEmpty.html"><abbr title="Google\Service\DriveLabels\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Permanently deletes a Label and related metadata on Drive Items. Once
+deleted, the Label and related Drive item metadata will be deleted. Only
+draft Labels, and disabled Labels may be deleted. (labels.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2DeltaUpdateLabelResponse.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelResponse">GoogleAppsDriveLabelsV2DeltaUpdateLabelResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delta">delta</a>(string $name, <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2DeltaUpdateLabelRequest.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequest">GoogleAppsDriveLabelsV2DeltaUpdateLabelRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a single Label by applying a set of update requests resulting in a
+new draft revision. The batch update is all-or-nothing: If any of the update
+requests are invalid, no changes are applied. The resulting draft revision
+must be published before the changes may be used with Drive Items.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_disable">disable</a>(string $name, <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2DisableLabelRequest.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DisableLabelRequest">GoogleAppsDriveLabelsV2DisableLabelRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Disable a published Label. Disabling a Label will result in a new disabled
+published revision based on the current published revision. If there is a
+draft revision, a new disabled draft revision will be created based on the
+latest draft revision. Older draft revisions will be deleted. Once disabled,
+a label may be deleted with <code>DeleteLabel</code>. (labels.disable)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_enable">enable</a>(string $name, <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2EnableLabelRequest.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2EnableLabelRequest">GoogleAppsDriveLabelsV2EnableLabelRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Enable a disabled Label and restore it to its published state. This will
+result in a new published revision based on the current disabled published
+revision. If there is an existing disabled draft revision, a new revision
+will be created based on that draft and will be enabled. (labels.enable)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Get a label by its resource name. Resource name may be any of: <em>
+<code>labels/{id}</code> - See <code>labels/{id}@latest</code> </em> <code>labels/{id}@latest</code> - Gets the
+latest revision of the label. <em> <code>labels/{id}@published</code> - Gets the current
+published revision of the label. </em> <code>labels/{id}@{revision_id}</code> - Gets the
+label at the specified revision ID. (labels.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2ListLabelsResponse.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2ListLabelsResponse">GoogleAppsDriveLabelsV2ListLabelsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listLabels">listLabels</a>(array $optParams = [])
+        
+                                            <p><p>List labels. (labels.listLabels)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_publish">publish</a>(string $name, <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2PublishLabelRequest.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2PublishLabelRequest">GoogleAppsDriveLabelsV2PublishLabelRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Publish all draft changes to the Label. Once published, the Label may not
+return to its draft state. See <code>google.apps.drive.labels.v2.Lifecycle</code> for
+more information. Publishing a Label will result in a new published revision.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateLabelCopyMode">updateLabelCopyMode</a>(string $name, <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2UpdateLabelCopyModeRequest.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2UpdateLabelCopyModeRequest">GoogleAppsDriveLabelsV2UpdateLabelCopyModeRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a Label's <code>CopyMode</code>. Changes to this policy are not revisioned, do
+not require publishing, and take effect immediately.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2LabelPermission.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelPermission">GoogleAppsDriveLabelsV2LabelPermission</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updatePermissions">updatePermissions</a>(string $parent, <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2LabelPermission.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelPermission">GoogleAppsDriveLabelsV2LabelPermission</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a Label's permissions. If a permission for the indicated principal
+doesn't exist, a new Label Permission is created, otherwise the existing
+permission is updated. Permissions affect the Label resource as a whole, are
+not revisioned, and do not require publishing. (labels.updatePermissions)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DriveLabels/Resource/Labels.php#L56">at line 56</a></div>
+        <code>                    <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a>
+    <strong>create</strong>(<a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a new Label. (labels.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DriveLabels/Resource/Labels.php#L80">at line 80</a></div>
+        <code>                    <a href="../../../../Google/Service/DriveLabels/GoogleProtobufEmpty.html"><abbr title="Google\Service\DriveLabels\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Permanently deletes a Label and related metadata on Drive Items. Once
+deleted, the Label and related Drive item metadata will be deleted. Only
+draft Labels, and disabled Labels may be deleted. (labels.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Label resource name.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DriveLabels/GoogleProtobufEmpty.html"><abbr title="Google\Service\DriveLabels\GoogleProtobufEmpty">GoogleProtobufEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delta">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DriveLabels/Resource/Labels.php#L99">at line 99</a></div>
+        <code>                    <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2DeltaUpdateLabelResponse.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelResponse">GoogleAppsDriveLabelsV2DeltaUpdateLabelResponse</abbr></a>
+    <strong>delta</strong>(string $name, <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2DeltaUpdateLabelRequest.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequest">GoogleAppsDriveLabelsV2DeltaUpdateLabelRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a single Label by applying a set of update requests resulting in a
+new draft revision. The batch update is all-or-nothing: If any of the update
+requests are invalid, no changes are applied. The resulting draft revision
+must be published before the changes may be used with Drive Items.</p></p>                <p>(labels.delta)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the Label to update.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2DeltaUpdateLabelRequest.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequest">GoogleAppsDriveLabelsV2DeltaUpdateLabelRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2DeltaUpdateLabelResponse.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelResponse">GoogleAppsDriveLabelsV2DeltaUpdateLabelResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disable">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DriveLabels/Resource/Labels.php#L118">at line 118</a></div>
+        <code>                    <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a>
+    <strong>disable</strong>(string $name, <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2DisableLabelRequest.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DisableLabelRequest">GoogleAppsDriveLabelsV2DisableLabelRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Disable a published Label. Disabling a Label will result in a new disabled
+published revision based on the current published revision. If there is a
+draft revision, a new disabled draft revision will be created based on the
+latest draft revision. Older draft revisions will be deleted. Once disabled,
+a label may be deleted with <code>DeleteLabel</code>. (labels.disable)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Label resource name.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2DisableLabelRequest.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DisableLabelRequest">GoogleAppsDriveLabelsV2DisableLabelRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enable">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DriveLabels/Resource/Labels.php#L136">at line 136</a></div>
+        <code>                    <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a>
+    <strong>enable</strong>(string $name, <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2EnableLabelRequest.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2EnableLabelRequest">GoogleAppsDriveLabelsV2EnableLabelRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Enable a disabled Label and restore it to its published state. This will
+result in a new published revision based on the current disabled published
+revision. If there is an existing disabled draft revision, a new revision
+will be created based on that draft and will be enabled. (labels.enable)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Label resource name.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2EnableLabelRequest.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2EnableLabelRequest">GoogleAppsDriveLabelsV2EnableLabelRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DriveLabels/Resource/Labels.php#L165">at line 165</a></div>
+        <code>                    <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get a label by its resource name. Resource name may be any of: <em>
+<code>labels/{id}</code> - See <code>labels/{id}@latest</code> </em> <code>labels/{id}@latest</code> - Gets the
+latest revision of the label. <em> <code>labels/{id}@published</code> - Gets the current
+published revision of the label. </em> <code>labels/{id}@{revision_id}</code> - Gets the
+label at the specified revision ID. (labels.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Label resource name. May be any of: <em>
+<code>labels/{id}</code> (equivalent to labels/{id}@latest) </em> <code>labels/{id}@latest</code> <em>
+<code>labels/{id}@published</code> </em> <code>labels/{id}@{revision_id}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listLabels">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DriveLabels/Resource/Labels.php#L202">at line 202</a></div>
+        <code>                    <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2ListLabelsResponse.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2ListLabelsResponse">GoogleAppsDriveLabelsV2ListLabelsResponse</abbr></a>
+    <strong>listLabels</strong>(array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>List labels. (labels.listLabels)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2ListLabelsResponse.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2ListLabelsResponse">GoogleAppsDriveLabelsV2ListLabelsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_publish">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DriveLabels/Resource/Labels.php#L228">at line 228</a></div>
+        <code>                    <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a>
+    <strong>publish</strong>(string $name, <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2PublishLabelRequest.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2PublishLabelRequest">GoogleAppsDriveLabelsV2PublishLabelRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Publish all draft changes to the Label. Once published, the Label may not
+return to its draft state. See <code>google.apps.drive.labels.v2.Lifecycle</code> for
+more information. Publishing a Label will result in a new published revision.</p></p>                <p><p>All previous draft revisions will be deleted. Previous published revisions
+will be kept but are subject to automated deletion as needed. Once published,
+some changes are no longer permitted. Generally, any change that would
+invalidate or cause new restrictions on existing metadata related to the
+Label will be rejected. For example, the following changes to a Label will be
+rejected after the Label is published: <em> The label cannot be directly
+deleted. It must be disabled first, then deleted. </em> Field.FieldType cannot be
+changed. <em> Changes to Field validation options cannot reject something that
+was previously accepted. </em> Reducing the max entries. (labels.publish)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Label resource name.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2PublishLabelRequest.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2PublishLabelRequest">GoogleAppsDriveLabelsV2PublishLabelRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateLabelCopyMode">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DriveLabels/Resource/Labels.php#L245">at line 245</a></div>
+        <code>                    <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a>
+    <strong>updateLabelCopyMode</strong>(string $name, <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2UpdateLabelCopyModeRequest.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2UpdateLabelCopyModeRequest">GoogleAppsDriveLabelsV2UpdateLabelCopyModeRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a Label's <code>CopyMode</code>. Changes to this policy are not revisioned, do
+not require publishing, and take effect immediately.</p></p>                <p>(labels.updateLabelCopyMode)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The resource name of the Label to update.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2UpdateLabelCopyModeRequest.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2UpdateLabelCopyModeRequest">GoogleAppsDriveLabelsV2UpdateLabelCopyModeRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2Label.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2Label">GoogleAppsDriveLabelsV2Label</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updatePermissions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/DriveLabels/Resource/Labels.php#L267">at line 267</a></div>
+        <code>                    <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2LabelPermission.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelPermission">GoogleAppsDriveLabelsV2LabelPermission</abbr></a>
+    <strong>updatePermissions</strong>(string $parent, <a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2LabelPermission.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelPermission">GoogleAppsDriveLabelsV2LabelPermission</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a Label's permissions. If a permission for the indicated principal
+doesn't exist, a new Label Permission is created, otherwise the existing
+permission is updated. Permissions affect the Label resource as a whole, are
+not revisioned, and do not require publishing. (labels.updatePermissions)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The parent Label resource name.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2LabelPermission.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelPermission">GoogleAppsDriveLabelsV2LabelPermission</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/DriveLabels/GoogleAppsDriveLabelsV2LabelPermission.html"><abbr title="Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelPermission">GoogleAppsDriveLabelsV2LabelPermission</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

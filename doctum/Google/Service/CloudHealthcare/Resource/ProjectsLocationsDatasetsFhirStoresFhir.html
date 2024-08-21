@@ -1,0 +1,1992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\CloudHealthcare\Resource\ProjectsLocationsDatasetsFhirStoresFhir | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_CloudHealthcare_Resource_ProjectsLocationsDatasetsFhirStoresFhir" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CloudHealthcare.ns.html">CloudHealthcare</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/CloudHealthcare/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ProjectsLocationsDatasetsFhirStoresFhir</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsLocationsDatasetsFhirStoresFhir    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsLocationsDatasetsFhirStoresFhir</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsFhirStoresFhir.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;fhir&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $healthcareService = new Google\Service\CloudHealthcare(...);
+ $fhir = $healthcareService-&gt;projects_locations_datasets_fhirStores_fhir;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_PatientEverything">PatientEverything</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Retrieves a Patient resource and resources related to that patient.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HealthcareEmpty.html"><abbr title="Google\Service\CloudHealthcare\HealthcareEmpty">HealthcareEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_ResourcePurge">ResourcePurge</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes all the historical versions of a resource (excluding the current
+version) from the FHIR store. To remove all versions of a resource, first
+delete the current version and then call this method. This is not a FHIR
+standard operation. For samples that show how to call <code>Resource-purge</code>, see
+<a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-
+resources#deleting_historical_versions_of_a_fhir_resource">Deleting historical versions of a FHIR
+resource</a>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_ResourceValidate">ResourceValidate</a>(string $parent, string $type, <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Validates an input FHIR resource's conformance to its profiles and the
+profiles configured on the FHIR store. Implements the FHIR extended operation
+$validate (<a href="http://hl7.org/implement/standards/fhir/DSTU2/resource-
+operations.html#validate">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/resource-
+operations.html#validate">STU3</a>, or
+<a href="http://hl7.org/implement/standards/fhir/R4/resource-operation-
+validate.html">R4</a>). The request body must contain a JSON-encoded FHIR resource,
+and the request headers must contain <code>Content-Type: application/fhir+json</code>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_capabilities">capabilities</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets the FHIR capability statement (<a href="http://hl7.org/implement/standards
+/fhir/STU3/capabilitystatement.html">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/capabilitystatement.html">R4</a>),
+or the <a href="http://hl7.org/implement/standards/fhir/DSTU2/conformance.html">conformance
+statement</a> in
+the DSTU2 case for the store, which contains a description of functionality
+supported by the server. Implements the FHIR standard capabilities
+interaction
+(<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#capabilities">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#capabilities">R4</a>), or
+the <a href="http://hl7.org/implement/standards/fhir/DSTU2/h
+ttp.html#conformance">conformance interaction</a> in the DSTU2 case. On success, the response body
+contains a JSON-encoded representation of a <code>CapabilityStatement</code> resource.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HealthcareEmpty.html"><abbr title="Google\Service\CloudHealthcare\HealthcareEmpty">HealthcareEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_conditionalDelete">conditionalDelete</a>(string $parent, string $type, array $optParams = [])
+        
+                                            <p><p>Deletes a FHIR resource that match an identifier search query. Implements the
+FHIR standard conditional delete interaction, limited to searching by
+resource identifier. If multiple resources match, 412 Precondition Failed
+error will be returned. Search term for identifier should be in the pattern
+<code>identifier=system|value</code> or <code>identifier=value</code> - similar to the <code>search</code>
+method on resources with a specific identifier. Note: Unless resource
+versioning is disabled by setting the disable_resource_versioning flag on the
+FHIR store, the deleted resource is moved to a history repository that can
+still be retrieved through vread and related methods, unless they are removed
+by the purge method. For samples that show how to call <code>conditionalDelete</code>,
+see <a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-
+resources#conditionally_deleting_a_fhir_resource">Conditionally deleting a FHIR
+resource</a>. (fhir.conditionalDelete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_conditionalPatch">conditionalPatch</a>(string $parent, string $type, <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>If a resource is found with the identifier specified in the query parameters,
+updates part of that resource by applying the operations specified in a <a href="http://jsonpatch.com/">JSON
+Patch</a> document. Implements the FHIR standard
+conditional patch interaction, limited to searching by resource identifier.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_conditionalUpdate">conditionalUpdate</a>(string $parent, string $type, <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>If a resource is found with the identifier specified in the query parameters,
+updates the entire contents of that resource. Implements the FHIR standard
+conditional update interaction, limited to searching by resource identifier.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, string $type, <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a FHIR resource. Implements the FHIR standard create interaction
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/http.html#create">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#create">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#create">R4</a>), which
+creates a new resource with a server-assigned resource ID. Also supports the
+FHIR standard conditional create interaction
+(<a href="https://hl7.org/implement/standards/fhir/DSTU2/http.html#ccreate">DSTU2</a>,
+<a href="https://hl7.org/implement/standards/fhir/STU3/http.html#ccreate">STU3</a>,
+<a href="https://hl7.org/implement/standards/fhir/R4/http.html#ccreate">R4</a>),
+specified by supplying an <code>If-None-Exist</code> header containing a FHIR search
+query, limited to searching by resource identifier. If no resources match
+this search query, the server processes the create operation as normal. When
+using conditional create, the search term for identifier should be in the
+pattern <code>identifier=system|value</code> or <code>identifier=value</code> - similar to the
+<code>search</code> method on resources with a specific identifier. The request body
+must contain a JSON-encoded FHIR resource, and the request headers must
+contain <code>Content-Type: application/fhir+json</code>. On success, the response body
+contains a JSON-encoded representation of the resource as it was created on
+the server, including the server-assigned resource ID and version ID. Errors
+generated by the FHIR store contain a JSON-encoded <code>OperationOutcome</code>
+resource describing the reason for the error. If the request cannot be mapped
+to a valid API method on a FHIR store, a generic GCP error might be returned
+instead. For samples that show how to call <code>create</code>, see <a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-
+resources#creating_a_fhir_resource">Creating a FHIR
+resource</a>. (fhir.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes a FHIR resource. Implements the FHIR standard delete interaction
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/http.html#delete">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#delete">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#delete">R4</a>). Note:
+Unless resource versioning is disabled by setting the
+disable_resource_versioning flag on the FHIR store, the deleted resources
+will be moved to a history repository that can still be retrieved through
+vread and related methods, unless they are removed by the purge method. For
+samples that show how to call <code>delete</code>, see <a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-
+resources#deleting_a_fhir_resource">Deleting a FHIR
+resource</a>. (fhir.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_executeBundle">executeBundle</a>(string $parent, <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Executes all the requests in the given Bundle. Implements the FHIR standard
+batch/transaction interaction (<a href="https://hl7.org/implement/standards/fh
+ir/DSTU2/http.html#transaction">DSTU2</a>,
+<a href="https://hl7.org/implement/standards/fhir/STU3/http.html#transaction">STU3</a>,
+<a href="https://hl7.org/implement/standards/fhir/R4/http.html#transaction">R4</a>).</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_history">history</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Lists all the versions of a resource (including the current version and
+deleted versions) from the FHIR store. Implements the per-resource form of
+the FHIR standard history interaction
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/http.html#history">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#history">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#history">R4</a>). On
+success, the response body contains a JSON-encoded representation of a
+<code>Bundle</code> resource of type <code>history</code>, containing the version history sorted
+from most recent to oldest versions. Errors generated by the FHIR store
+contain a JSON-encoded <code>OperationOutcome</code> resource describing the reason for
+the error. If the request cannot be mapped to a valid API method on a FHIR
+store, a generic GCP error might be returned instead. For samples that show
+how to call <code>history</code>, see <a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-
+resources#listing_fhir_resource_versions">Listing FHIR resource
+versions</a>. (fhir.history)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates part of an existing resource by applying the operations specified in
+a <a href="http://jsonpatch.com/">JSON Patch</a> document. Implements the FHIR standard
+patch interaction
+(<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#patch">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#patch">R4</a>). DSTU2
+doesn't define a patch method, but the server supports it in the same way it
+supports STU3. The request body must contain a JSON Patch document, and the
+request headers must contain <code>Content-Type: application/json-patch+json</code>. On
+success, the response body contains a JSON-encoded representation of the
+updated resource, including the server-assigned version ID. Errors generated
+by the FHIR store contain a JSON-encoded <code>OperationOutcome</code> resource
+describing the reason for the error. If the request cannot be mapped to a
+valid API method on a FHIR store, a generic GCP error might be returned
+instead. For samples that show how to call <code>patch</code>, see <a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-
+resources#patching_a_fhir_resource">Patching a FHIR
+resource</a>. (fhir.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_read">read</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets the contents of a FHIR resource. Implements the FHIR standard read
+interaction
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/http.html#read">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#read">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#read">R4</a>). Also
+supports the FHIR standard conditional read interaction
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/http.html#cread">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#cread">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#cread">R4</a>) specified
+by supplying an <code>If-Modified-Since</code> header with a date/time value or an <code>If- None-Match</code> header with an ETag value. On success, the response body contains
+a JSON-encoded representation of the resource. Errors generated by the FHIR
+store contain a JSON-encoded <code>OperationOutcome</code> resource describing the
+reason for the error. If the request cannot be mapped to a valid API method
+on a FHIR store, a generic GCP error might be returned instead. For samples
+that show how to call <code>read</code>, see <a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-
+resources#getting_a_fhir_resource">Getting a FHIR
+resource</a>. (fhir.read)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_search">search</a>(string $parent, <a href="../../../../Google/Service/CloudHealthcare/SearchResourcesRequest.html"><abbr title="Google\Service\CloudHealthcare\SearchResourcesRequest">SearchResourcesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Searches for resources in the given FHIR store according to criteria
+specified as query parameters. Implements the FHIR standard search
+interaction
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/http.html#search">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#search">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#search">R4</a>) using the
+search semantics described in the FHIR Search specification
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/search.html">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/search.html">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/search.html">R4</a>). Supports four
+methods of search defined by the specification: <em> <code>GET [base]?[parameters]</code>
+to search across all resources. </em> <code>GET [base]/[type]?[parameters]</code> to search
+resources of a specified type. <em> <code>POST [base]/_search?[parameters]</code> as an
+alternate form having the same semantics as the <code>GET</code> method across all
+resources. </em> <code>POST [base]/[type]/_search?[parameters]</code> as an alternate form
+having the same semantics as the <code>GET</code> method for the specified type. The
+<code>GET</code> and <code>POST</code> methods do not support compartment searches. The <code>POST</code>
+method does not support <code>application/x-www-form-urlencoded</code> search
+parameters. On success, the response body contains a JSON-encoded
+representation of a <code>Bundle</code> resource of type <code>searchset</code>, containing the
+results of the search. Errors generated by the FHIR store contain a JSON-
+encoded <code>OperationOutcome</code> resource describing the reason for the error. If
+the request cannot be mapped to a valid API method on a FHIR store, a generic
+GCP error might be returned instead. The server's capability statement,
+retrieved through capabilities, indicates what search parameters are
+supported on each FHIR resource. A list of all search parameters defined by
+the specification can be found in the FHIR Search Parameter Registry
+(<a href="http://hl7.org/implement/standards/fhir/STU3/searchparameter-
+registry.html">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/searchparameter-
+registry.html">R4</a>). FHIR search parameters for DSTU2 can be found on each
+resource's definition page. Supported search modifiers: <code>:missing</code>, <code>:exact</code>,
+<code>:contains</code>, <code>:text</code>, <code>:in</code>, <code>:not-in</code>, <code>:above</code>, <code>:below</code>, <code>:[type]</code>,
+<code>:not</code>, and <code>recurse</code> (DSTU2 and STU3) or <code>:iterate</code> (R4). Supported search
+result parameters: <code>_sort</code>, <code>_count</code>, <code>_include</code>, <code>_revinclude</code>,
+<code>_summary=text</code>, <code>_summary=data</code>, and <code>_elements</code>. The maximum number of
+search results returned defaults to 100, which can be overridden by the
+<code>_count</code> parameter up to a maximum limit of 1000. The server might return
+fewer resources than requested to prevent excessively large responses. If
+there are additional results, the returned <code>Bundle</code> contains a link of
+<code>relation</code> &quot;next&quot;, which has a <code>_page_token</code> parameter for an opaque
+pagination token that can be used to retrieve the next page. Resources with a
+total size larger than 5MB or a field count larger than 50,000 might not be
+fully searchable as the server might trim its generated search index in those
+cases. Note: FHIR resources are indexed asynchronously, so there might be a
+slight delay between the time a resource is created or changed, and the time
+when the change reflects in search results. The only exception is resource
+identifier data, which is indexed synchronously as a special index. As a
+result, searching using resource identifier is not subject to indexing delay.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_searchType">searchType</a>(string $parent, string $resourceType, <a href="../../../../Google/Service/CloudHealthcare/SearchResourcesRequest.html"><abbr title="Google\Service\CloudHealthcare\SearchResourcesRequest">SearchResourcesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Searches for resources in the given FHIR store according to criteria
+specified as query parameters. Implements the FHIR standard search
+interaction
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/http.html#search">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#search">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#search">R4</a>) using the
+search semantics described in the FHIR Search specification
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/search.html">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/search.html">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/search.html">R4</a>). Supports four
+methods of search defined by the specification: <em> <code>GET [base]?[parameters]</code>
+to search across all resources. </em> <code>GET [base]/[type]?[parameters]</code> to search
+resources of a specified type. <em> <code>POST [base]/_search?[parameters]</code> as an
+alternate form having the same semantics as the <code>GET</code> method across all
+resources. </em> <code>POST [base]/[type]/_search?[parameters]</code> as an alternate form
+having the same semantics as the <code>GET</code> method for the specified type. The
+<code>GET</code> and <code>POST</code> methods do not support compartment searches. The <code>POST</code>
+method does not support <code>application/x-www-form-urlencoded</code> search
+parameters. On success, the response body contains a JSON-encoded
+representation of a <code>Bundle</code> resource of type <code>searchset</code>, containing the
+results of the search. Errors generated by the FHIR store contain a JSON-
+encoded <code>OperationOutcome</code> resource describing the reason for the error. If
+the request cannot be mapped to a valid API method on a FHIR store, a generic
+GCP error might be returned instead. The server's capability statement,
+retrieved through capabilities, indicates what search parameters are
+supported on each FHIR resource. A list of all search parameters defined by
+the specification can be found in the FHIR Search Parameter Registry
+(<a href="http://hl7.org/implement/standards/fhir/STU3/searchparameter-
+registry.html">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/searchparameter-
+registry.html">R4</a>). FHIR search parameters for DSTU2 can be found on each
+resource's definition page. Supported search modifiers: <code>:missing</code>, <code>:exact</code>,
+<code>:contains</code>, <code>:text</code>, <code>:in</code>, <code>:not-in</code>, <code>:above</code>, <code>:below</code>, <code>:[type]</code>,
+<code>:not</code>, and <code>recurse</code> (DSTU2 and STU3) or <code>:iterate</code> (R4). Supported search
+result parameters: <code>_sort</code>, <code>_count</code>, <code>_include</code>, <code>_revinclude</code>,
+<code>_summary=text</code>, <code>_summary=data</code>, and <code>_elements</code>. The maximum number of
+search results returned defaults to 100, which can be overridden by the
+<code>_count</code> parameter up to a maximum limit of 1000. The server might return
+fewer resources than requested to prevent excessively large responses. If
+there are additional results, the returned <code>Bundle</code> contains a link of
+<code>relation</code> &quot;next&quot;, which has a <code>_page_token</code> parameter for an opaque
+pagination token that can be used to retrieve the next page. Resources with a
+total size larger than 5MB or a field count larger than 50,000 might not be
+fully searchable as the server might trim its generated search index in those
+cases. Note: FHIR resources are indexed asynchronously, so there might be a
+slight delay between the time a resource is created or changed, and the time
+when the change reflects in search results. The only exception is resource
+identifier data, which is indexed synchronously as a special index. As a
+result, searching using resource identifier is not subject to indexing delay.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $name, <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates the entire contents of a resource. Implements the FHIR standard
+update interaction
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/http.html#update">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#update">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#update">R4</a>). If the
+specified resource does not exist and the FHIR store has enable_update_create
+set, creates the resource with the client-specified ID. It is strongly
+advised not to include or encode any sensitive data such as patient
+identifiers in client-specified resource IDs. Those IDs are part of the FHIR
+resource path recorded in Cloud Audit Logs and Pub/Sub notifications. Those
+IDs can also be contained in reference fields within other resources. The
+request body must contain a JSON-encoded FHIR resource, and the request
+headers must contain <code>Content-Type: application/fhir+json</code>. The resource must
+contain an <code>id</code> element having an identical value to the ID in the REST path
+of the request. On success, the response body contains a JSON-encoded
+representation of the updated resource, including the server-assigned version
+ID. Errors generated by the FHIR store contain a JSON-encoded
+<code>OperationOutcome</code> resource describing the reason for the error. If the
+request cannot be mapped to a valid API method on a FHIR store, a generic GCP
+error might be returned instead. For samples that show how to call <code>update</code>,
+see <a href="https://cloud.google.com/healthcare/docs/how-
+tos/fhir-resources#updating_a_fhir_resource">Updating a FHIR resource</a>. (fhir.update)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_vread">vread</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets the contents of a version (current or historical) of a FHIR resource by
+version ID. Implements the FHIR standard vread interaction
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/http.html#vread">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#vread">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#vread">R4</a>). On
+success, the response body contains a JSON-encoded representation of the
+resource. Errors generated by the FHIR store contain a JSON-encoded
+<code>OperationOutcome</code> resource describing the reason for the error. If the
+request cannot be mapped to a valid API method on a FHIR store, a generic GCP
+error might be returned instead. For samples that show how to call <code>vread</code>,
+see <a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-
+resources#retrieving_a_fhir_resource_version">Retrieving a FHIR resource
+version</a>. (fhir.vread)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_PatientEverything">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsFhirStoresFhir.php#L91">at line 91</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+    <strong>PatientEverything</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves a Patient resource and resources related to that patient.</p></p>                <p><p>Implements the FHIR extended operation Patient-everything
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/patient-
+operations.html#everything">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/patient-
+operations.html#everything">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/patient-
+operations.html#everything">R4</a>). On success, the response body contains a JSON-
+encoded representation of a <code>Bundle</code> resource of type <code>searchset</code>, containing
+the results of the operation. Errors generated by the FHIR store contain a
+JSON-encoded <code>OperationOutcome</code> resource describing the reason for the error.
+If the request cannot be mapped to a valid API method on a FHIR store, a
+generic GCP error might be returned instead. The resources in scope for the
+response are: <em> The patient resource itself. </em> All the resources directly
+referenced by the patient resource. * Resources directly referencing the
+patient resource that meet the inclusion criteria. The inclusion criteria are
+based on the membership rules in the patient compartment definition
+(<a href="http://hl7.org/fhir/DSTU2/compartment-patient.html">DSTU2</a>,
+<a href="http://www.hl7.org/fhir/stu3/compartmentdefinition-patient.html">STU3</a>,
+<a href="http://hl7.org/fhir/R4/compartmentdefinition-patient.html">R4</a>), which
+details the eligible resource types and referencing search parameters. For
+samples that show how to call <code>Patient-everything</code>, see <a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-
+resources#getting_all_patient_compartment_resources">Getting all patient
+compartment resources</a>.
+(fhir.PatientEverything)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Name of the <code>Patient</code> resource for which the
+information is required.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ResourcePurge">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsFhirStoresFhir.php#L112">at line 112</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HealthcareEmpty.html"><abbr title="Google\Service\CloudHealthcare\HealthcareEmpty">HealthcareEmpty</abbr></a>
+    <strong>ResourcePurge</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes all the historical versions of a resource (excluding the current
+version) from the FHIR store. To remove all versions of a resource, first
+delete the current version and then call this method. This is not a FHIR
+standard operation. For samples that show how to call <code>Resource-purge</code>, see
+<a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-
+resources#deleting_historical_versions_of_a_fhir_resource">Deleting historical versions of a FHIR
+resource</a>.</p></p>                <p>(fhir.ResourcePurge)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the resource to purge.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HealthcareEmpty.html"><abbr title="Google\Service\CloudHealthcare\HealthcareEmpty">HealthcareEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ResourceValidate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsFhirStoresFhir.php#L155">at line 155</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+    <strong>ResourceValidate</strong>(string $parent, string $type, <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Validates an input FHIR resource's conformance to its profiles and the
+profiles configured on the FHIR store. Implements the FHIR extended operation
+$validate (<a href="http://hl7.org/implement/standards/fhir/DSTU2/resource-
+operations.html#validate">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/resource-
+operations.html#validate">STU3</a>, or
+<a href="http://hl7.org/implement/standards/fhir/R4/resource-operation-
+validate.html">R4</a>). The request body must contain a JSON-encoded FHIR resource,
+and the request headers must contain <code>Content-Type: application/fhir+json</code>.</p></p>                <p><p>The <code>Parameters</code> input syntax is not supported. The <code>profile</code> query parameter
+can be used to request that the resource only be validated against a specific
+profile. If a profile with the given URL cannot be found in the FHIR store
+then an error is returned. Errors generated by validation contain a JSON-
+encoded <code>OperationOutcome</code> resource describing the reason for the error. If
+the request cannot be mapped to a valid API method on a FHIR store, a generic
+GCP error might be returned instead. (fhir.ResourceValidate)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The name of the FHIR store that holds the
+profiles being used for validation.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td><p>Required. The FHIR resource type of the resource being
+validated. For a complete list, see the FHIR Resource Index
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/resourcelist.html">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/resourcelist.html">STU3</a>, or
+<a href="http://hl7.org/implement/standards/fhir/R4/resourcelist.html">R4</a>). Must
+match the resource type in the provided content.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_capabilities">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsFhirStoresFhir.php#L183">at line 183</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+    <strong>capabilities</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the FHIR capability statement (<a href="http://hl7.org/implement/standards
+/fhir/STU3/capabilitystatement.html">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/capabilitystatement.html">R4</a>),
+or the <a href="http://hl7.org/implement/standards/fhir/DSTU2/conformance.html">conformance
+statement</a> in
+the DSTU2 case for the store, which contains a description of functionality
+supported by the server. Implements the FHIR standard capabilities
+interaction
+(<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#capabilities">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#capabilities">R4</a>), or
+the <a href="http://hl7.org/implement/standards/fhir/DSTU2/h
+ttp.html#conformance">conformance interaction</a> in the DSTU2 case. On success, the response body
+contains a JSON-encoded representation of a <code>CapabilityStatement</code> resource.</p></p>                <p>(fhir.capabilities)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. Name of the FHIR store to retrieve the
+capabilities for.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_conditionalDelete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsFhirStoresFhir.php#L215">at line 215</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HealthcareEmpty.html"><abbr title="Google\Service\CloudHealthcare\HealthcareEmpty">HealthcareEmpty</abbr></a>
+    <strong>conditionalDelete</strong>(string $parent, string $type, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a FHIR resource that match an identifier search query. Implements the
+FHIR standard conditional delete interaction, limited to searching by
+resource identifier. If multiple resources match, 412 Precondition Failed
+error will be returned. Search term for identifier should be in the pattern
+<code>identifier=system|value</code> or <code>identifier=value</code> - similar to the <code>search</code>
+method on resources with a specific identifier. Note: Unless resource
+versioning is disabled by setting the disable_resource_versioning flag on the
+FHIR store, the deleted resource is moved to a history repository that can
+still be retrieved through vread and related methods, unless they are removed
+by the purge method. For samples that show how to call <code>conditionalDelete</code>,
+see <a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-
+resources#conditionally_deleting_a_fhir_resource">Conditionally deleting a FHIR
+resource</a>. (fhir.conditionalDelete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The name of the FHIR store this resource
+belongs to.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td><p>Required. The FHIR resource type to delete, such as
+Patient or Observation. For a complete list, see the FHIR Resource Index
+(<a href="https://hl7.org/implement/standards/fhir/DSTU2/resourcelist.html">DSTU2</a>,
+<a href="https://hl7.org/implement/standards/fhir/STU3/resourcelist.html">STU3</a>,
+<a href="https://hl7.org/implement/standards/fhir/R4/resourcelist.html">R4</a>).</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HealthcareEmpty.html"><abbr title="Google\Service\CloudHealthcare\HealthcareEmpty">HealthcareEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_conditionalPatch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsFhirStoresFhir.php#L255">at line 255</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+    <strong>conditionalPatch</strong>(string $parent, string $type, <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>If a resource is found with the identifier specified in the query parameters,
+updates part of that resource by applying the operations specified in a <a href="http://jsonpatch.com/">JSON
+Patch</a> document. Implements the FHIR standard
+conditional patch interaction, limited to searching by resource identifier.</p></p>                <p><p>DSTU2 doesn't define a conditional patch method, but the server supports it
+in the same way it supports STU3. Search term for identifier should be in the
+pattern <code>identifier=system|value</code> or <code>identifier=value</code> - similar to the
+<code>search</code> method on resources with a specific identifier. If the search
+criteria identify more than one match, the request returns a <code>412 Precondition Failed</code> error. The request body must contain a JSON Patch
+document, and the request headers must contain <code>Content-Type: application/json-patch+json</code>. On success, the response body contains a JSON-
+encoded representation of the updated resource, including the server-assigned
+version ID. Errors generated by the FHIR store contain a JSON-encoded
+<code>OperationOutcome</code> resource describing the reason for the error. If the
+request cannot be mapped to a valid API method on a FHIR store, a generic GCP
+error might be returned instead. For samples that show how to call
+<code>conditionalPatch</code>, see <a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-
+resources#conditionally_patching_a_fhir_resource">Conditionally patching a FHIR
+resource</a>. (fhir.conditionalPatch)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The name of the FHIR store this resource
+belongs to.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td><p>Required. The FHIR resource type to update, such as
+Patient or Observation. For a complete list, see the FHIR Resource Index
+(<a href="https://hl7.org/implement/standards/fhir/DSTU2/resourcelist.html">DSTU2</a>,
+<a href="https://hl7.org/implement/standards/fhir/STU3/resourcelist.html">STU3</a>,
+<a href="https://hl7.org/implement/standards/fhir/R4/resourcelist.html">R4</a>).</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_conditionalUpdate">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsFhirStoresFhir.php#L302">at line 302</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+    <strong>conditionalUpdate</strong>(string $parent, string $type, <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>If a resource is found with the identifier specified in the query parameters,
+updates the entire contents of that resource. Implements the FHIR standard
+conditional update interaction, limited to searching by resource identifier.</p></p>                <p><p>Search term for identifier should be in the pattern <code>identifier=system|value</code>
+or <code>identifier=value</code> - similar to the <code>search</code> method on resources with a
+specific identifier. If the search criteria identify more than one match, the
+request returns a <code>412 Precondition Failed</code> error. If the search criteria
+identify zero matches, and the supplied resource body contains an <code>id</code>, and
+the FHIR store has enable_update_create set, creates the resource with the
+client-specified ID. It is strongly advised not to include or encode any
+sensitive data such as patient identifiers in client-specified resource IDs.
+Those IDs are part of the FHIR resource path recorded in Cloud Audit Logs and
+Pub/Sub notifications. Those IDs can also be contained in reference fields
+within other resources. If the search criteria identify zero matches, and the
+supplied resource body does not contain an <code>id</code>, the resource is created with
+a server-assigned ID as per the create method. The request body must contain
+a JSON-encoded FHIR resource, and the request headers must contain <code>Content- Type: application/fhir+json</code>. On success, the response body contains a JSON-
+encoded representation of the updated resource, including the server-assigned
+version ID. Errors generated by the FHIR store contain a JSON-encoded
+<code>OperationOutcome</code> resource describing the reason for the error. If the
+request cannot be mapped to a valid API method on a FHIR store, a generic GCP
+error might be returned instead. For samples that show how to call
+<code>conditionalUpdate</code>, see <a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-
+resources#conditionally_updating_a_fhir_resource">Conditionally updating a FHIR
+resource</a>. (fhir.conditionalUpdate)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The name of the FHIR store this resource
+belongs to.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td><p>Required. The FHIR resource type to update, such as
+Patient or Observation. For a complete list, see the FHIR Resource Index
+(<a href="https://hl7.org/implement/standards/fhir/DSTU2/resourcelist.html">DSTU2</a>,
+<a href="https://hl7.org/implement/standards/fhir/STU3/resourcelist.html">STU3</a>,
+<a href="https://hl7.org/implement/standards/fhir/R4/resourcelist.html">R4</a>). Must
+match the resource type in the provided content.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsFhirStoresFhir.php#L348">at line 348</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+    <strong>create</strong>(string $parent, string $type, <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a FHIR resource. Implements the FHIR standard create interaction
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/http.html#create">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#create">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#create">R4</a>), which
+creates a new resource with a server-assigned resource ID. Also supports the
+FHIR standard conditional create interaction
+(<a href="https://hl7.org/implement/standards/fhir/DSTU2/http.html#ccreate">DSTU2</a>,
+<a href="https://hl7.org/implement/standards/fhir/STU3/http.html#ccreate">STU3</a>,
+<a href="https://hl7.org/implement/standards/fhir/R4/http.html#ccreate">R4</a>),
+specified by supplying an <code>If-None-Exist</code> header containing a FHIR search
+query, limited to searching by resource identifier. If no resources match
+this search query, the server processes the create operation as normal. When
+using conditional create, the search term for identifier should be in the
+pattern <code>identifier=system|value</code> or <code>identifier=value</code> - similar to the
+<code>search</code> method on resources with a specific identifier. The request body
+must contain a JSON-encoded FHIR resource, and the request headers must
+contain <code>Content-Type: application/fhir+json</code>. On success, the response body
+contains a JSON-encoded representation of the resource as it was created on
+the server, including the server-assigned resource ID and version ID. Errors
+generated by the FHIR store contain a JSON-encoded <code>OperationOutcome</code>
+resource describing the reason for the error. If the request cannot be mapped
+to a valid API method on a FHIR store, a generic GCP error might be returned
+instead. For samples that show how to call <code>create</code>, see <a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-
+resources#creating_a_fhir_resource">Creating a FHIR
+resource</a>. (fhir.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The name of the FHIR store this resource
+belongs to.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td><p>Required. The FHIR resource type to create, such as
+Patient or Observation. For a complete list, see the FHIR Resource Index
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/resourcelist.html">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/resourcelist.html">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/resourcelist.html">R4</a>). Must
+match the resource type in the provided content.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsFhirStoresFhir.php#L372">at line 372</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes a FHIR resource. Implements the FHIR standard delete interaction
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/http.html#delete">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#delete">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#delete">R4</a>). Note:
+Unless resource versioning is disabled by setting the
+disable_resource_versioning flag on the FHIR store, the deleted resources
+will be moved to a history repository that can still be retrieved through
+vread and related methods, unless they are removed by the purge method. For
+samples that show how to call <code>delete</code>, see <a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-
+resources#deleting_a_fhir_resource">Deleting a FHIR
+resource</a>. (fhir.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the resource to delete.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeBundle">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsFhirStoresFhir.php#L423">at line 423</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+    <strong>executeBundle</strong>(string $parent, <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Executes all the requests in the given Bundle. Implements the FHIR standard
+batch/transaction interaction (<a href="https://hl7.org/implement/standards/fh
+ir/DSTU2/http.html#transaction">DSTU2</a>,
+<a href="https://hl7.org/implement/standards/fhir/STU3/http.html#transaction">STU3</a>,
+<a href="https://hl7.org/implement/standards/fhir/R4/http.html#transaction">R4</a>).</p></p>                <p><p>Supports all interactions within a bundle, except search. This method accepts
+Bundles of type <code>batch</code> and <code>transaction</code>, processing them according to the
+batch processing rules (<a href="https://hl7.org/implement/standards/fhir/DSTU
+2/http.html#2.1.0.16.1">DSTU2</a>,
+<a href="https://hl7.org/implement/standards/fhir/STU3/http.html#2.21.0.17.1">STU3</a>,
+<a href="https://hl7.org/implement/standards/fhir/R4/http.html#brules">R4</a>) and
+transaction processing rules (<a href="https://hl7.org/implement/standards/fhi
+r/DSTU2/http.html#2.1.0.16.2">DSTU2</a>,
+<a href="https://hl7.org/implement/standards/fhir/STU3/http.html#2.21.0.17.2">STU3</a>,
+<a href="https://hl7.org/implement/standards/fhir/R4/http.html#trules">R4</a>). The
+request body must contain a JSON-encoded FHIR <code>Bundle</code> resource, and the
+request headers must contain <code>Content-Type: application/fhir+json</code>. For a
+batch bundle or a successful transaction, the response body contains a JSON-
+encoded representation of a <code>Bundle</code> resource of type <code>batch-response</code> or
+<code>transaction-response</code> containing one entry for each entry in the request,
+with the outcome of processing the entry. In the case of an error for a
+transaction bundle, the response body contains a JSON-encoded
+<code>OperationOutcome</code> resource describing the reason for the error. If the
+request cannot be mapped to a valid API method on a FHIR store, a generic GCP
+error might be returned instead. This method checks permissions for each
+request in the bundle. The <code>executeBundle</code> permission is required to call
+this method, but you must also grant sufficient permissions to execute the
+individual requests in the bundle. For example, if the bundle contains a
+request to create a FHIR resource, the caller must also have been granted the
+<code>healthcare.fhirResources.create</code> permission. You can use audit logs to view
+the permissions for <code>executeBundle</code> and each request in the bundle. For more
+information, see <a href="https://cloud.google.com/healthcare-api/docs/how-tos/audit-logging">Viewing Cloud Audit
+logs</a>.
+For samples that show how to call <code>executeBundle</code>, see <a href="https://cloud.google.com/healthcare/docs/how-
+tos/fhir-bundles">Managing FHIR
+resources using FHIR bundles</a>. (fhir.executeBundle)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. Name of the FHIR store in which this bundle
+will be executed.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_history">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsFhirStoresFhir.php#L471">at line 471</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+    <strong>history</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all the versions of a resource (including the current version and
+deleted versions) from the FHIR store. Implements the per-resource form of
+the FHIR standard history interaction
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/http.html#history">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#history">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#history">R4</a>). On
+success, the response body contains a JSON-encoded representation of a
+<code>Bundle</code> resource of type <code>history</code>, containing the version history sorted
+from most recent to oldest versions. Errors generated by the FHIR store
+contain a JSON-encoded <code>OperationOutcome</code> resource describing the reason for
+the error. If the request cannot be mapped to a valid API method on a FHIR
+store, a generic GCP error might be returned instead. For samples that show
+how to call <code>history</code>, see <a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-
+resources#listing_fhir_resource_versions">Listing FHIR resource
+versions</a>. (fhir.history)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the resource to retrieve.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsFhirStoresFhir.php#L501">at line 501</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates part of an existing resource by applying the operations specified in
+a <a href="http://jsonpatch.com/">JSON Patch</a> document. Implements the FHIR standard
+patch interaction
+(<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#patch">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#patch">R4</a>). DSTU2
+doesn't define a patch method, but the server supports it in the same way it
+supports STU3. The request body must contain a JSON Patch document, and the
+request headers must contain <code>Content-Type: application/json-patch+json</code>. On
+success, the response body contains a JSON-encoded representation of the
+updated resource, including the server-assigned version ID. Errors generated
+by the FHIR store contain a JSON-encoded <code>OperationOutcome</code> resource
+describing the reason for the error. If the request cannot be mapped to a
+valid API method on a FHIR store, a generic GCP error might be returned
+instead. For samples that show how to call <code>patch</code>, see <a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-
+resources#patching_a_fhir_resource">Patching a FHIR
+resource</a>. (fhir.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the resource to update.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_read">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsFhirStoresFhir.php#L532">at line 532</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+    <strong>read</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the contents of a FHIR resource. Implements the FHIR standard read
+interaction
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/http.html#read">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#read">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#read">R4</a>). Also
+supports the FHIR standard conditional read interaction
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/http.html#cread">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#cread">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#cread">R4</a>) specified
+by supplying an <code>If-Modified-Since</code> header with a date/time value or an <code>If- None-Match</code> header with an ETag value. On success, the response body contains
+a JSON-encoded representation of the resource. Errors generated by the FHIR
+store contain a JSON-encoded <code>OperationOutcome</code> resource describing the
+reason for the error. If the request cannot be mapped to a valid API method
+on a FHIR store, a generic GCP error might be returned instead. For samples
+that show how to call <code>read</code>, see <a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-
+resources#getting_a_fhir_resource">Getting a FHIR
+resource</a>. (fhir.read)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the resource to retrieve.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_search">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsFhirStoresFhir.php#L614">at line 614</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+    <strong>search</strong>(string $parent, <a href="../../../../Google/Service/CloudHealthcare/SearchResourcesRequest.html"><abbr title="Google\Service\CloudHealthcare\SearchResourcesRequest">SearchResourcesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Searches for resources in the given FHIR store according to criteria
+specified as query parameters. Implements the FHIR standard search
+interaction
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/http.html#search">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#search">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#search">R4</a>) using the
+search semantics described in the FHIR Search specification
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/search.html">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/search.html">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/search.html">R4</a>). Supports four
+methods of search defined by the specification: <em> <code>GET [base]?[parameters]</code>
+to search across all resources. </em> <code>GET [base]/[type]?[parameters]</code> to search
+resources of a specified type. <em> <code>POST [base]/_search?[parameters]</code> as an
+alternate form having the same semantics as the <code>GET</code> method across all
+resources. </em> <code>POST [base]/[type]/_search?[parameters]</code> as an alternate form
+having the same semantics as the <code>GET</code> method for the specified type. The
+<code>GET</code> and <code>POST</code> methods do not support compartment searches. The <code>POST</code>
+method does not support <code>application/x-www-form-urlencoded</code> search
+parameters. On success, the response body contains a JSON-encoded
+representation of a <code>Bundle</code> resource of type <code>searchset</code>, containing the
+results of the search. Errors generated by the FHIR store contain a JSON-
+encoded <code>OperationOutcome</code> resource describing the reason for the error. If
+the request cannot be mapped to a valid API method on a FHIR store, a generic
+GCP error might be returned instead. The server's capability statement,
+retrieved through capabilities, indicates what search parameters are
+supported on each FHIR resource. A list of all search parameters defined by
+the specification can be found in the FHIR Search Parameter Registry
+(<a href="http://hl7.org/implement/standards/fhir/STU3/searchparameter-
+registry.html">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/searchparameter-
+registry.html">R4</a>). FHIR search parameters for DSTU2 can be found on each
+resource's definition page. Supported search modifiers: <code>:missing</code>, <code>:exact</code>,
+<code>:contains</code>, <code>:text</code>, <code>:in</code>, <code>:not-in</code>, <code>:above</code>, <code>:below</code>, <code>:[type]</code>,
+<code>:not</code>, and <code>recurse</code> (DSTU2 and STU3) or <code>:iterate</code> (R4). Supported search
+result parameters: <code>_sort</code>, <code>_count</code>, <code>_include</code>, <code>_revinclude</code>,
+<code>_summary=text</code>, <code>_summary=data</code>, and <code>_elements</code>. The maximum number of
+search results returned defaults to 100, which can be overridden by the
+<code>_count</code> parameter up to a maximum limit of 1000. The server might return
+fewer resources than requested to prevent excessively large responses. If
+there are additional results, the returned <code>Bundle</code> contains a link of
+<code>relation</code> &quot;next&quot;, which has a <code>_page_token</code> parameter for an opaque
+pagination token that can be used to retrieve the next page. Resources with a
+total size larger than 5MB or a field count larger than 50,000 might not be
+fully searchable as the server might trim its generated search index in those
+cases. Note: FHIR resources are indexed asynchronously, so there might be a
+slight delay between the time a resource is created or changed, and the time
+when the change reflects in search results. The only exception is resource
+identifier data, which is indexed synchronously as a special index. As a
+result, searching using resource identifier is not subject to indexing delay.</p></p>                <p><p>To use the special synchronous index, the search term for identifier should
+be in the pattern <code>identifier=[system]|[value]</code> or <code>identifier=[value]</code>, and
+any of the following search result parameters can be used: <em> <code>_count</code> </em>
+<code>_include</code> <em> <code>_revinclude</code> </em> <code>_summary</code> * <code>_elements</code> If your query contains
+any other search parameters, the standard asynchronous index will be used
+instead. Note that searching against the special index is optimized for
+resolving a small number of matches. The search isn't optimized if your
+identifier search criteria matches a large number (i.e. more than 2,000) of
+resources. For a search query that will match a large number of resources,
+you can avoiding using the special synchronous index by including an
+additional <code>_sort</code> parameter in your query. Use <code>_sort=-_lastUpdated</code> if you
+want to keep the default sorting order. Note: The special synchronous
+identifier index are currently disabled for DocumentReference and
+DocumentManifest searches. For samples and detailed information, see
+<a href="https://cloud.google.com/healthcare/docs/how-
+tos/fhir-search">Searching for FHIR resources</a> and <a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-advanced-
+search">Advanced FHIR search
+features</a>. (fhir.search)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. Name of the FHIR store to retrieve resources
+from.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudHealthcare/SearchResourcesRequest.html"><abbr title="Google\Service\CloudHealthcare\SearchResourcesRequest">SearchResourcesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_searchType">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsFhirStoresFhir.php#L701">at line 701</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+    <strong>searchType</strong>(string $parent, string $resourceType, <a href="../../../../Google/Service/CloudHealthcare/SearchResourcesRequest.html"><abbr title="Google\Service\CloudHealthcare\SearchResourcesRequest">SearchResourcesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Searches for resources in the given FHIR store according to criteria
+specified as query parameters. Implements the FHIR standard search
+interaction
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/http.html#search">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#search">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#search">R4</a>) using the
+search semantics described in the FHIR Search specification
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/search.html">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/search.html">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/search.html">R4</a>). Supports four
+methods of search defined by the specification: <em> <code>GET [base]?[parameters]</code>
+to search across all resources. </em> <code>GET [base]/[type]?[parameters]</code> to search
+resources of a specified type. <em> <code>POST [base]/_search?[parameters]</code> as an
+alternate form having the same semantics as the <code>GET</code> method across all
+resources. </em> <code>POST [base]/[type]/_search?[parameters]</code> as an alternate form
+having the same semantics as the <code>GET</code> method for the specified type. The
+<code>GET</code> and <code>POST</code> methods do not support compartment searches. The <code>POST</code>
+method does not support <code>application/x-www-form-urlencoded</code> search
+parameters. On success, the response body contains a JSON-encoded
+representation of a <code>Bundle</code> resource of type <code>searchset</code>, containing the
+results of the search. Errors generated by the FHIR store contain a JSON-
+encoded <code>OperationOutcome</code> resource describing the reason for the error. If
+the request cannot be mapped to a valid API method on a FHIR store, a generic
+GCP error might be returned instead. The server's capability statement,
+retrieved through capabilities, indicates what search parameters are
+supported on each FHIR resource. A list of all search parameters defined by
+the specification can be found in the FHIR Search Parameter Registry
+(<a href="http://hl7.org/implement/standards/fhir/STU3/searchparameter-
+registry.html">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/searchparameter-
+registry.html">R4</a>). FHIR search parameters for DSTU2 can be found on each
+resource's definition page. Supported search modifiers: <code>:missing</code>, <code>:exact</code>,
+<code>:contains</code>, <code>:text</code>, <code>:in</code>, <code>:not-in</code>, <code>:above</code>, <code>:below</code>, <code>:[type]</code>,
+<code>:not</code>, and <code>recurse</code> (DSTU2 and STU3) or <code>:iterate</code> (R4). Supported search
+result parameters: <code>_sort</code>, <code>_count</code>, <code>_include</code>, <code>_revinclude</code>,
+<code>_summary=text</code>, <code>_summary=data</code>, and <code>_elements</code>. The maximum number of
+search results returned defaults to 100, which can be overridden by the
+<code>_count</code> parameter up to a maximum limit of 1000. The server might return
+fewer resources than requested to prevent excessively large responses. If
+there are additional results, the returned <code>Bundle</code> contains a link of
+<code>relation</code> &quot;next&quot;, which has a <code>_page_token</code> parameter for an opaque
+pagination token that can be used to retrieve the next page. Resources with a
+total size larger than 5MB or a field count larger than 50,000 might not be
+fully searchable as the server might trim its generated search index in those
+cases. Note: FHIR resources are indexed asynchronously, so there might be a
+slight delay between the time a resource is created or changed, and the time
+when the change reflects in search results. The only exception is resource
+identifier data, which is indexed synchronously as a special index. As a
+result, searching using resource identifier is not subject to indexing delay.</p></p>                <p><p>To use the special synchronous index, the search term for identifier should
+be in the pattern <code>identifier=[system]|[value]</code> or <code>identifier=[value]</code>, and
+any of the following search result parameters can be used: <em> <code>_count</code> </em>
+<code>_include</code> <em> <code>_revinclude</code> </em> <code>_summary</code> * <code>_elements</code> If your query contains
+any other search parameters, the standard asynchronous index will be used
+instead. Note that searching against the special index is optimized for
+resolving a small number of matches. The search isn't optimized if your
+identifier search criteria matches a large number (i.e. more than 2,000) of
+resources. For a search query that will match a large number of resources,
+you can avoiding using the special synchronous index by including an
+additional <code>_sort</code> parameter in your query. Use <code>_sort=-_lastUpdated</code> if you
+want to keep the default sorting order. Note: The special synchronous
+identifier index are currently disabled for DocumentReference and
+DocumentManifest searches. For samples and detailed information, see
+<a href="https://cloud.google.com/healthcare/docs/how-
+tos/fhir-search">Searching for FHIR resources</a> and <a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-advanced-
+search">Advanced FHIR search
+features</a>. (fhir.searchType)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. Name of the FHIR store to retrieve resources
+from.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$resourceType</td>
+                <td><p>Required. The FHIR resource type to search, such
+as Patient or Observation. For a complete list, see the FHIR Resource Index
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/resourcelist.html">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/resourcelist.html">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/resourcelist.html">R4</a>).</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudHealthcare/SearchResourcesRequest.html"><abbr title="Google\Service\CloudHealthcare\SearchResourcesRequest">SearchResourcesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsFhirStoresFhir.php#L737">at line 737</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+    <strong>update</strong>(string $name, <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates the entire contents of a resource. Implements the FHIR standard
+update interaction
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/http.html#update">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#update">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#update">R4</a>). If the
+specified resource does not exist and the FHIR store has enable_update_create
+set, creates the resource with the client-specified ID. It is strongly
+advised not to include or encode any sensitive data such as patient
+identifiers in client-specified resource IDs. Those IDs are part of the FHIR
+resource path recorded in Cloud Audit Logs and Pub/Sub notifications. Those
+IDs can also be contained in reference fields within other resources. The
+request body must contain a JSON-encoded FHIR resource, and the request
+headers must contain <code>Content-Type: application/fhir+json</code>. The resource must
+contain an <code>id</code> element having an identical value to the ID in the REST path
+of the request. On success, the response body contains a JSON-encoded
+representation of the updated resource, including the server-assigned version
+ID. Errors generated by the FHIR store contain a JSON-encoded
+<code>OperationOutcome</code> resource describing the reason for the error. If the
+request cannot be mapped to a valid API method on a FHIR store, a generic GCP
+error might be returned instead. For samples that show how to call <code>update</code>,
+see <a href="https://cloud.google.com/healthcare/docs/how-
+tos/fhir-resources#updating_a_fhir_resource">Updating a FHIR resource</a>. (fhir.update)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the resource to update.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_vread">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/CloudHealthcare/Resource/ProjectsLocationsDatasetsFhirStoresFhir.php#L763">at line 763</a></div>
+        <code>                    <a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a>
+    <strong>vread</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the contents of a version (current or historical) of a FHIR resource by
+version ID. Implements the FHIR standard vread interaction
+(<a href="http://hl7.org/implement/standards/fhir/DSTU2/http.html#vread">DSTU2</a>,
+<a href="http://hl7.org/implement/standards/fhir/STU3/http.html#vread">STU3</a>,
+<a href="http://hl7.org/implement/standards/fhir/R4/http.html#vread">R4</a>). On
+success, the response body contains a JSON-encoded representation of the
+resource. Errors generated by the FHIR store contain a JSON-encoded
+<code>OperationOutcome</code> resource describing the reason for the error. If the
+request cannot be mapped to a valid API method on a FHIR store, a generic GCP
+error might be returned instead. For samples that show how to call <code>vread</code>,
+see <a href="https://cloud.google.com/healthcare/docs/how-tos/fhir-
+resources#retrieving_a_fhir_resource_version">Retrieving a FHIR resource
+version</a>. (fhir.vread)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the resource version to retrieve.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/CloudHealthcare/HttpBody.html"><abbr title="Google\Service\CloudHealthcare\HttpBody">HttpBody</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

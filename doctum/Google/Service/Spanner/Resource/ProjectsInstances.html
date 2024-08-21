@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\Spanner\Resource\ProjectsInstances | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_Spanner_Resource_ProjectsInstances" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Spanner.ns.html">Spanner</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/Spanner/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ProjectsInstances</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsInstances    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsInstances</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstances.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;instances&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $spannerService = new Google\Service\Spanner(...);
+ $instances = $spannerService-&gt;projects_instances;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/Spanner/CreateInstanceRequest.html"><abbr title="Google\Service\Spanner\CreateInstanceRequest">CreateInstanceRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates an instance and begins preparing it to begin serving. The returned
+long-running operation can be used to track the progress of preparing the new
+instance. The instance name is assigned by the caller. If the named instance
+already exists, <code>CreateInstance</code> returns <code>ALREADY_EXISTS</code>. Immediately upon
+completion of this request: * The instance is readable via the API, with all
+requested attributes but no allocated resources. Its state is <code>CREATING</code>.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/SpannerEmpty.html"><abbr title="Google\Service\Spanner\SpannerEmpty">SpannerEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Deletes an instance. Immediately upon completion of the request: <em> Billing
+ceases for all of the instance's reserved resources. Soon afterward: </em> The
+instance and <em>all of its databases</em> immediately and irrevocably disappear
+from the API. All data in the databases is permanently deleted.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/Instance.html"><abbr title="Google\Service\Spanner\Instance">Instance</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets information about a particular instance. (instances.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/Policy.html"><abbr title="Google\Service\Spanner\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIamPolicy">getIamPolicy</a>(string $resource, <a href="../../../../Google/Service/Spanner/GetIamPolicyRequest.html"><abbr title="Google\Service\Spanner\GetIamPolicyRequest">GetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Gets the access control policy for an instance resource. Returns an empty
+policy if an instance exists but does not have a policy set. Authorization
+requires <code>spanner.instances.getIamPolicy</code> on resource.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/ListInstancesResponse.html"><abbr title="Google\Service\Spanner\ListInstancesResponse">ListInstancesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsInstances">listProjectsInstances</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists all instances in the given project. (instances.listProjectsInstances)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_move">move</a>(string $name, <a href="../../../../Google/Service/Spanner/MoveInstanceRequest.html"><abbr title="Google\Service\Spanner\MoveInstanceRequest">MoveInstanceRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Moves the instance to the target instance config. The returned long-running
+operation can be used to track the progress of moving the instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/Spanner/UpdateInstanceRequest.html"><abbr title="Google\Service\Spanner\UpdateInstanceRequest">UpdateInstanceRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates an instance, and begins allocating or releasing resources as
+requested. The returned long-running operation can be used to track the
+progress of updating the instance. If the named instance does not exist,
+returns <code>NOT_FOUND</code>. Immediately upon completion of this request: <em> For
+resource types for which a decrease in the instance's allocation has been
+requested, billing is based on the newly-requested level. Until completion of
+the returned operation: </em> Cancelling the operation sets its metadata's
+cancel_time, and begins restoring resources to their pre-request values. The
+operation is guaranteed to succeed at undoing all resource changes, after
+which point it terminates with a <code>CANCELLED</code> status. <em> All other attempts to
+modify the instance are rejected. </em> Reading the instance via the API
+continues to give the pre-request resource levels. Upon completion of the
+returned operation: <em> Billing begins for all successfully-allocated resources
+(some types may have lower than the requested levels). </em> All newly-reserved
+resources are available for serving the instance's tables. * The instance's
+new resource levels are readable via the API. The returned long-running
+operation will have a name of the format <code>/operations/</code> and can be used to
+track the instance modification. The metadata field type is
+UpdateInstanceMetadata. The response field type is Instance, if successful.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/Policy.html"><abbr title="Google\Service\Spanner\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setIamPolicy">setIamPolicy</a>(string $resource, <a href="../../../../Google/Service/Spanner/SetIamPolicyRequest.html"><abbr title="Google\Service\Spanner\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the access control policy on an instance resource. Replaces any existing
+policy. Authorization requires <code>spanner.instances.setIamPolicy</code> on resource.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/Spanner/TestIamPermissionsResponse.html"><abbr title="Google\Service\Spanner\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testIamPermissions">testIamPermissions</a>(string $resource, <a href="../../../../Google/Service/Spanner/TestIamPermissionsRequest.html"><abbr title="Google\Service\Spanner\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Returns permissions that the caller has on the specified instance resource.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstances.php#L69">at line 69</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/Spanner/CreateInstanceRequest.html"><abbr title="Google\Service\Spanner\CreateInstanceRequest">CreateInstanceRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates an instance and begins preparing it to begin serving. The returned
+long-running operation can be used to track the progress of preparing the new
+instance. The instance name is assigned by the caller. If the named instance
+already exists, <code>CreateInstance</code> returns <code>ALREADY_EXISTS</code>. Immediately upon
+completion of this request: * The instance is readable via the API, with all
+requested attributes but no allocated resources. Its state is <code>CREATING</code>.</p></p>                <p><p>Until completion of the returned operation: <em> Cancelling the operation
+renders the instance immediately unreadable via the API. </em> The instance can
+be deleted. <em> All other attempts to modify the instance are rejected. Upon
+completion of the returned operation: </em> Billing for all successfully-
+allocated resources begins (some types may have lower than the requested
+levels). <em> Databases can be created in the instance. </em> The instance's
+allocated resource levels are readable via the API. * The instance's state
+becomes <code>READY</code>. The returned long-running operation will have a name of the
+format <code>/operations/</code> and can be used to track creation of the instance. The
+metadata field type is CreateInstanceMetadata. The response field type is
+Instance, if successful. (instances.create)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The name of the project in which to create
+the instance. Values are of the form <code>projects/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/CreateInstanceRequest.html"><abbr title="Google\Service\Spanner\CreateInstanceRequest">CreateInstanceRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstances.php#L88">at line 88</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/SpannerEmpty.html"><abbr title="Google\Service\Spanner\SpannerEmpty">SpannerEmpty</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Deletes an instance. Immediately upon completion of the request: <em> Billing
+ceases for all of the instance's reserved resources. Soon afterward: </em> The
+instance and <em>all of its databases</em> immediately and irrevocably disappear
+from the API. All data in the databases is permanently deleted.</p></p>                <p>(instances.delete)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the instance to be deleted. Values
+are of the form <code>projects//instances/</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/SpannerEmpty.html"><abbr title="Google\Service\Spanner\SpannerEmpty">SpannerEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstances.php#L107">at line 107</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/Instance.html"><abbr title="Google\Service\Spanner\Instance">Instance</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets information about a particular instance. (instances.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the requested instance. Values are
+of the form <code>projects//instances/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/Instance.html"><abbr title="Google\Service\Spanner\Instance">Instance</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstances.php#L127">at line 127</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/Policy.html"><abbr title="Google\Service\Spanner\Policy">Policy</abbr></a>
+    <strong>getIamPolicy</strong>(string $resource, <a href="../../../../Google/Service/Spanner/GetIamPolicyRequest.html"><abbr title="Google\Service\Spanner\GetIamPolicyRequest">GetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the access control policy for an instance resource. Returns an empty
+policy if an instance exists but does not have a policy set. Authorization
+requires <code>spanner.instances.getIamPolicy</code> on resource.</p></p>                <p>(instances.getIamPolicy)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The Cloud Spanner resource for which the
+policy is being retrieved. The format is <code>projects//instances/</code> for instance
+resources and <code>projects//instances//databases/</code> for database resources.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/GetIamPolicyRequest.html"><abbr title="Google\Service\Spanner\GetIamPolicyRequest">GetIamPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/Policy.html"><abbr title="Google\Service\Spanner\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsInstances">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstances.php#L160">at line 160</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/ListInstancesResponse.html"><abbr title="Google\Service\Spanner\ListInstancesResponse">ListInstancesResponse</abbr></a>
+    <strong>listProjectsInstances</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all instances in the given project. (instances.listProjectsInstances)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The name of the project for which a list of
+instances is requested. Values are of the form <code>projects/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/ListInstancesResponse.html"><abbr title="Google\Service\Spanner\ListInstancesResponse">ListInstancesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_move">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstances.php#L205">at line 205</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a>
+    <strong>move</strong>(string $name, <a href="../../../../Google/Service/Spanner/MoveInstanceRequest.html"><abbr title="Google\Service\Spanner\MoveInstanceRequest">MoveInstanceRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Moves the instance to the target instance config. The returned long-running
+operation can be used to track the progress of moving the instance.</p></p>                <p><p><code>MoveInstance</code> returns <code>FAILED_PRECONDITION</code> if the instance meets any of the
+following criteria: <em> Has an ongoing move to a different instance config </em>
+Has backups <em> Has an ongoing update </em> Is under free trial <em> Contains any
+CMEK-enabled databases While the operation is pending: </em> All other attempts
+to modify the instance, including changes to its compute capacity, are
+rejected. * The following database and backup admin operations are rejected:</p>
+<ul>
+<li>DatabaseAdmin.CreateDatabase, <em> DatabaseAdmin.UpdateDatabaseDdl (Disabled
+if default_leader is specified in the request.) </em>
+DatabaseAdmin.RestoreDatabase <em> DatabaseAdmin.CreateBackup </em>
+DatabaseAdmin.CopyBackup <em> Both the source and target instance configurations
+are subject to hourly compute and storage charges. </em> The instance may
+experience higher read-write latencies and a higher transaction abort rate.
+However, moving an instance does not cause any downtime. The returned long-
+running operation will have a name of the format <code>/operations/</code> and can be
+used to track the move instance operation. The metadata field type is
+MoveInstanceMetadata. The response field type is Instance, if successful.
+Cancelling the operation sets its metadata's cancel_time. Cancellation is not
+immediate since it involves moving any data previously moved to target
+instance configuration back to the original instance config. The same
+operation can be used to track the progress of the cancellation. Upon
+successful completion of the cancellation, the operation terminates with
+<code>CANCELLED</code> status. Upon completion(if not cancelled) of the returned
+operation: <em> Instance would be successfully moved to the target instance
+config. </em> You are billed for compute and storage in target instance config.
+Authorization requires <code>spanner.instances.update</code> permission on the resource
+instance. For more details, please see
+<a href="https://cloud.google.com/spanner/docs/move-instance">documentation</a>.
+(instances.move)</li>
+</ul></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The instance to move. Values are of the form
+<code>projects//instances/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/MoveInstanceRequest.html"><abbr title="Google\Service\Spanner\MoveInstanceRequest">MoveInstanceRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstances.php#L243">at line 243</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/Spanner/UpdateInstanceRequest.html"><abbr title="Google\Service\Spanner\UpdateInstanceRequest">UpdateInstanceRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates an instance, and begins allocating or releasing resources as
+requested. The returned long-running operation can be used to track the
+progress of updating the instance. If the named instance does not exist,
+returns <code>NOT_FOUND</code>. Immediately upon completion of this request: <em> For
+resource types for which a decrease in the instance's allocation has been
+requested, billing is based on the newly-requested level. Until completion of
+the returned operation: </em> Cancelling the operation sets its metadata's
+cancel_time, and begins restoring resources to their pre-request values. The
+operation is guaranteed to succeed at undoing all resource changes, after
+which point it terminates with a <code>CANCELLED</code> status. <em> All other attempts to
+modify the instance are rejected. </em> Reading the instance via the API
+continues to give the pre-request resource levels. Upon completion of the
+returned operation: <em> Billing begins for all successfully-allocated resources
+(some types may have lower than the requested levels). </em> All newly-reserved
+resources are available for serving the instance's tables. * The instance's
+new resource levels are readable via the API. The returned long-running
+operation will have a name of the format <code>/operations/</code> and can be used to
+track the instance modification. The metadata field type is
+UpdateInstanceMetadata. The response field type is Instance, if successful.</p></p>                <p><p>Authorization requires <code>spanner.instances.update</code> permission on the resource
+name. (instances.patch)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. A unique identifier for the instance, which
+cannot be changed after the instance is created. Values are of the form
+<code>projects//instances/a-z*[a-z0-9]</code>. The final segment of the name must be
+between 2 and 64 characters in length.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/UpdateInstanceRequest.html"><abbr title="Google\Service\Spanner\UpdateInstanceRequest">UpdateInstanceRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/Operation.html"><abbr title="Google\Service\Spanner\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstances.php#L262">at line 262</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/Policy.html"><abbr title="Google\Service\Spanner\Policy">Policy</abbr></a>
+    <strong>setIamPolicy</strong>(string $resource, <a href="../../../../Google/Service/Spanner/SetIamPolicyRequest.html"><abbr title="Google\Service\Spanner\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the access control policy on an instance resource. Replaces any existing
+policy. Authorization requires <code>spanner.instances.setIamPolicy</code> on resource.</p></p>                <p>(instances.setIamPolicy)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The Cloud Spanner resource for which the
+policy is being set. The format is <code>projects//instances/</code> for instance
+resources and <code>projects//instances//databases/</code> for databases resources.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/SetIamPolicyRequest.html"><abbr title="Google\Service\Spanner\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/Policy.html"><abbr title="Google\Service\Spanner\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testIamPermissions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/Spanner/Resource/ProjectsInstances.php#L284">at line 284</a></div>
+        <code>                    <a href="../../../../Google/Service/Spanner/TestIamPermissionsResponse.html"><abbr title="Google\Service\Spanner\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+    <strong>testIamPermissions</strong>(string $resource, <a href="../../../../Google/Service/Spanner/TestIamPermissionsRequest.html"><abbr title="Google\Service\Spanner\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns permissions that the caller has on the specified instance resource.</p></p>                <p><p>Attempting this RPC on a non-existent Cloud Spanner instance resource will
+result in a NOT_FOUND error if the user has <code>spanner.instances.list</code>
+permission on the containing Google Cloud Project. Otherwise returns an empty
+set of permissions. (instances.testIamPermissions)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The Cloud Spanner resource for which
+permissions are being tested. The format is <code>projects//instances/</code> for
+instance resources and <code>projects//instances//databases/</code> for database
+resources.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/Spanner/TestIamPermissionsRequest.html"><abbr title="Google\Service\Spanner\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/Spanner/TestIamPermissionsResponse.html"><abbr title="Google\Service\Spanner\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

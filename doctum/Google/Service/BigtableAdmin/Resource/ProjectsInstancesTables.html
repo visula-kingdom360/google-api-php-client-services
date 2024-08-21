@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\BigtableAdmin\Resource\ProjectsInstancesTables | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_BigtableAdmin_Resource_ProjectsInstancesTables" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/BigtableAdmin.ns.html">BigtableAdmin</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/BigtableAdmin/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>ProjectsInstancesTables</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ProjectsInstancesTables    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ProjectsInstancesTables</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/BigtableAdmin/Resource/ProjectsInstancesTables.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;tables&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $bigtableadminService = new Google\Service\BigtableAdmin(...);
+ $tables = $bigtableadminService-&gt;projects_instances_tables;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/BigtableAdmin/CheckConsistencyResponse.html"><abbr title="Google\Service\BigtableAdmin\CheckConsistencyResponse">CheckConsistencyResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_checkConsistency">checkConsistency</a>(string $name, <a href="../../../../Google/Service/BigtableAdmin/CheckConsistencyRequest.html"><abbr title="Google\Service\BigtableAdmin\CheckConsistencyRequest">CheckConsistencyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Checks replication consistency based on a consistency token, that is, if
+replication has caught up based on the conditions specified in the token and
+the check request. (tables.checkConsistency)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/BigtableAdmin/Table.html"><abbr title="Google\Service\BigtableAdmin\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/BigtableAdmin/CreateTableRequest.html"><abbr title="Google\Service\BigtableAdmin\CreateTableRequest">CreateTableRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates a new table in the specified instance. The table can be created with
+a full set of initial column families, specified in the request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/BigtableAdmin/BigtableadminEmpty.html"><abbr title="Google\Service\BigtableAdmin\BigtableadminEmpty">BigtableadminEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Permanently deletes a specified table and all of its data. (tables.delete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/BigtableAdmin/BigtableadminEmpty.html"><abbr title="Google\Service\BigtableAdmin\BigtableadminEmpty">BigtableadminEmpty</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_dropRowRange">dropRowRange</a>(string $name, <a href="../../../../Google/Service/BigtableAdmin/DropRowRangeRequest.html"><abbr title="Google\Service\BigtableAdmin\DropRowRangeRequest">DropRowRangeRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Permanently drop/delete a row range from a specified table. The request can
+specify whether to delete all rows in a table, or only those that match a
+particular prefix. Note that row key prefixes used here are treated as
+service data. For more information about how service data is handled, see the
+<a href="https://cloud.google.com/terms/cloud-privacy-
+notice">Google Cloud Privacy Notice</a>. (tables.dropRowRange)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/BigtableAdmin/GenerateConsistencyTokenResponse.html"><abbr title="Google\Service\BigtableAdmin\GenerateConsistencyTokenResponse">GenerateConsistencyTokenResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_generateConsistencyToken">generateConsistencyToken</a>(string $name, <a href="../../../../Google/Service/BigtableAdmin/GenerateConsistencyTokenRequest.html"><abbr title="Google\Service\BigtableAdmin\GenerateConsistencyTokenRequest">GenerateConsistencyTokenRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Generates a consistency token for a Table, which can be used in
+CheckConsistency to check whether mutations to the table that finished before
+this call started have been replicated. The tokens will be available for 90
+days. (tables.generateConsistencyToken)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/BigtableAdmin/Table.html"><abbr title="Google\Service\BigtableAdmin\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets metadata information about the specified table. (tables.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/BigtableAdmin/Policy.html"><abbr title="Google\Service\BigtableAdmin\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIamPolicy">getIamPolicy</a>(string $resource, <a href="../../../../Google/Service/BigtableAdmin/GetIamPolicyRequest.html"><abbr title="Google\Service\BigtableAdmin\GetIamPolicyRequest">GetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Gets the access control policy for a Bigtable resource. Returns an empty
+policy if the resource exists but does not have a policy set.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/BigtableAdmin/ListTablesResponse.html"><abbr title="Google\Service\BigtableAdmin\ListTablesResponse">ListTablesResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listProjectsInstancesTables">listProjectsInstancesTables</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists all tables served from a specified instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/BigtableAdmin/Table.html"><abbr title="Google\Service\BigtableAdmin\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_modifyColumnFamilies">modifyColumnFamilies</a>(string $name, <a href="../../../../Google/Service/BigtableAdmin/ModifyColumnFamiliesRequest.html"><abbr title="Google\Service\BigtableAdmin\ModifyColumnFamiliesRequest">ModifyColumnFamiliesRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Performs a series of column family modifications on the specified table.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/BigtableAdmin/Operation.html"><abbr title="Google\Service\BigtableAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $name, <a href="../../../../Google/Service/BigtableAdmin/Table.html"><abbr title="Google\Service\BigtableAdmin\Table">Table</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Updates a specified table. (tables.patch)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/BigtableAdmin/Operation.html"><abbr title="Google\Service\BigtableAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_restore">restore</a>(string $parent, <a href="../../../../Google/Service/BigtableAdmin/RestoreTableRequest.html"><abbr title="Google\Service\BigtableAdmin\RestoreTableRequest">RestoreTableRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Create a new table by restoring from a completed backup. The returned table
+long-running operation can be used to track the progress of the operation,
+and to cancel it. The metadata field type is RestoreTableMetadata. The
+response type is Table, if successful. (tables.restore)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/BigtableAdmin/Policy.html"><abbr title="Google\Service\BigtableAdmin\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setIamPolicy">setIamPolicy</a>(string $resource, <a href="../../../../Google/Service/BigtableAdmin/SetIamPolicyRequest.html"><abbr title="Google\Service\BigtableAdmin\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Sets the access control policy on a Bigtable resource. Replaces any existing
+policy. (tables.setIamPolicy)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/BigtableAdmin/TestIamPermissionsResponse.html"><abbr title="Google\Service\BigtableAdmin\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testIamPermissions">testIamPermissions</a>(string $resource, <a href="../../../../Google/Service/BigtableAdmin/TestIamPermissionsRequest.html"><abbr title="Google\Service\BigtableAdmin\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Returns permissions that the caller has on the specified Bigtable resource.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/BigtableAdmin/Operation.html"><abbr title="Google\Service\BigtableAdmin\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_undelete">undelete</a>(string $name, <a href="../../../../Google/Service/BigtableAdmin/UndeleteTableRequest.html"><abbr title="Google\Service\BigtableAdmin\UndeleteTableRequest">UndeleteTableRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Restores a specified table which was accidentally deleted. (tables.undelete)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_checkConsistency">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/BigtableAdmin/Resource/ProjectsInstancesTables.php#L62">at line 62</a></div>
+        <code>                    <a href="../../../../Google/Service/BigtableAdmin/CheckConsistencyResponse.html"><abbr title="Google\Service\BigtableAdmin\CheckConsistencyResponse">CheckConsistencyResponse</abbr></a>
+    <strong>checkConsistency</strong>(string $name, <a href="../../../../Google/Service/BigtableAdmin/CheckConsistencyRequest.html"><abbr title="Google\Service\BigtableAdmin\CheckConsistencyRequest">CheckConsistencyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Checks replication consistency based on a consistency token, that is, if
+replication has caught up based on the conditions specified in the token and
+the check request. (tables.checkConsistency)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The unique name of the Table for which to check
+replication consistency. Values are of the form
+<code>projects/{project}/instances/{instance}/tables/{table}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/BigtableAdmin/CheckConsistencyRequest.html"><abbr title="Google\Service\BigtableAdmin\CheckConsistencyRequest">CheckConsistencyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/BigtableAdmin/CheckConsistencyResponse.html"><abbr title="Google\Service\BigtableAdmin\CheckConsistencyResponse">CheckConsistencyResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/BigtableAdmin/Resource/ProjectsInstancesTables.php#L81">at line 81</a></div>
+        <code>                    <a href="../../../../Google/Service/BigtableAdmin/Table.html"><abbr title="Google\Service\BigtableAdmin\Table">Table</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/BigtableAdmin/CreateTableRequest.html"><abbr title="Google\Service\BigtableAdmin\CreateTableRequest">CreateTableRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a new table in the specified instance. The table can be created with
+a full set of initial column families, specified in the request.</p></p>                <p>(tables.create)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The unique name of the instance in which to
+create the table. Values are of the form
+<code>projects/{project}/instances/{instance}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/BigtableAdmin/CreateTableRequest.html"><abbr title="Google\Service\BigtableAdmin\CreateTableRequest">CreateTableRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/BigtableAdmin/Table.html"><abbr title="Google\Service\BigtableAdmin\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/BigtableAdmin/Resource/ProjectsInstancesTables.php#L97">at line 97</a></div>
+        <code>                    <a href="../../../../Google/Service/BigtableAdmin/BigtableadminEmpty.html"><abbr title="Google\Service\BigtableAdmin\BigtableadminEmpty">BigtableadminEmpty</abbr></a>
+    <strong>delete</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Permanently deletes a specified table and all of its data. (tables.delete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The unique name of the table to be deleted.
+Values are of the form
+<code>projects/{project}/instances/{instance}/tables/{table}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/BigtableAdmin/BigtableadminEmpty.html"><abbr title="Google\Service\BigtableAdmin\BigtableadminEmpty">BigtableadminEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dropRowRange">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/BigtableAdmin/Resource/ProjectsInstancesTables.php#L119">at line 119</a></div>
+        <code>                    <a href="../../../../Google/Service/BigtableAdmin/BigtableadminEmpty.html"><abbr title="Google\Service\BigtableAdmin\BigtableadminEmpty">BigtableadminEmpty</abbr></a>
+    <strong>dropRowRange</strong>(string $name, <a href="../../../../Google/Service/BigtableAdmin/DropRowRangeRequest.html"><abbr title="Google\Service\BigtableAdmin\DropRowRangeRequest">DropRowRangeRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Permanently drop/delete a row range from a specified table. The request can
+specify whether to delete all rows in a table, or only those that match a
+particular prefix. Note that row key prefixes used here are treated as
+service data. For more information about how service data is handled, see the
+<a href="https://cloud.google.com/terms/cloud-privacy-
+notice">Google Cloud Privacy Notice</a>. (tables.dropRowRange)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The unique name of the table on which to drop a
+range of rows. Values are of the form
+<code>projects/{project}/instances/{instance}/tables/{table}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/BigtableAdmin/DropRowRangeRequest.html"><abbr title="Google\Service\BigtableAdmin\DropRowRangeRequest">DropRowRangeRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/BigtableAdmin/BigtableadminEmpty.html"><abbr title="Google\Service\BigtableAdmin\BigtableadminEmpty">BigtableadminEmpty</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generateConsistencyToken">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/BigtableAdmin/Resource/ProjectsInstancesTables.php#L139">at line 139</a></div>
+        <code>                    <a href="../../../../Google/Service/BigtableAdmin/GenerateConsistencyTokenResponse.html"><abbr title="Google\Service\BigtableAdmin\GenerateConsistencyTokenResponse">GenerateConsistencyTokenResponse</abbr></a>
+    <strong>generateConsistencyToken</strong>(string $name, <a href="../../../../Google/Service/BigtableAdmin/GenerateConsistencyTokenRequest.html"><abbr title="Google\Service\BigtableAdmin\GenerateConsistencyTokenRequest">GenerateConsistencyTokenRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Generates a consistency token for a Table, which can be used in
+CheckConsistency to check whether mutations to the table that finished before
+this call started have been replicated. The tokens will be available for 90
+days. (tables.generateConsistencyToken)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The unique name of the Table for which to
+create a consistency token. Values are of the form
+<code>projects/{project}/instances/{instance}/tables/{table}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/BigtableAdmin/GenerateConsistencyTokenRequest.html"><abbr title="Google\Service\BigtableAdmin\GenerateConsistencyTokenRequest">GenerateConsistencyTokenRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/BigtableAdmin/GenerateConsistencyTokenResponse.html"><abbr title="Google\Service\BigtableAdmin\GenerateConsistencyTokenResponse">GenerateConsistencyTokenResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/BigtableAdmin/Resource/ProjectsInstancesTables.php#L157">at line 157</a></div>
+        <code>                    <a href="../../../../Google/Service/BigtableAdmin/Table.html"><abbr title="Google\Service\BigtableAdmin\Table">Table</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets metadata information about the specified table. (tables.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The unique name of the requested table. Values
+are of the form <code>projects/{project}/instances/{instance}/tables/{table}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/BigtableAdmin/Table.html"><abbr title="Google\Service\BigtableAdmin\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/BigtableAdmin/Resource/ProjectsInstancesTables.php#L177">at line 177</a></div>
+        <code>                    <a href="../../../../Google/Service/BigtableAdmin/Policy.html"><abbr title="Google\Service\BigtableAdmin\Policy">Policy</abbr></a>
+    <strong>getIamPolicy</strong>(string $resource, <a href="../../../../Google/Service/BigtableAdmin/GetIamPolicyRequest.html"><abbr title="Google\Service\BigtableAdmin\GetIamPolicyRequest">GetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the access control policy for a Bigtable resource. Returns an empty
+policy if the resource exists but does not have a policy set.</p></p>                <p>(tables.getIamPolicy)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy is being
+requested. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/BigtableAdmin/GetIamPolicyRequest.html"><abbr title="Google\Service\BigtableAdmin\GetIamPolicyRequest">GetIamPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/BigtableAdmin/Policy.html"><abbr title="Google\Service\BigtableAdmin\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listProjectsInstancesTables">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/BigtableAdmin/Resource/ProjectsInstancesTables.php#L206">at line 206</a></div>
+        <code>                    <a href="../../../../Google/Service/BigtableAdmin/ListTablesResponse.html"><abbr title="Google\Service\BigtableAdmin\ListTablesResponse">ListTablesResponse</abbr></a>
+    <strong>listProjectsInstancesTables</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all tables served from a specified instance.</p></p>                <p>(tables.listProjectsInstancesTables)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The unique name of the instance for which
+tables should be listed. Values are of the form
+<code>projects/{project}/instances/{instance}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/BigtableAdmin/ListTablesResponse.html"><abbr title="Google\Service\BigtableAdmin\ListTablesResponse">ListTablesResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modifyColumnFamilies">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/BigtableAdmin/Resource/ProjectsInstancesTables.php#L226">at line 226</a></div>
+        <code>                    <a href="../../../../Google/Service/BigtableAdmin/Table.html"><abbr title="Google\Service\BigtableAdmin\Table">Table</abbr></a>
+    <strong>modifyColumnFamilies</strong>(string $name, <a href="../../../../Google/Service/BigtableAdmin/ModifyColumnFamiliesRequest.html"><abbr title="Google\Service\BigtableAdmin\ModifyColumnFamiliesRequest">ModifyColumnFamiliesRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Performs a series of column family modifications on the specified table.</p></p>                <p><p>Either all or none of the modifications will occur before this method
+returns, but data requests received prior to that point may see a table where
+only some modifications have taken effect. (tables.modifyColumnFamilies)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The unique name of the table whose families
+should be modified. Values are of the form
+<code>projects/{project}/instances/{instance}/tables/{table}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/BigtableAdmin/ModifyColumnFamiliesRequest.html"><abbr title="Google\Service\BigtableAdmin\ModifyColumnFamiliesRequest">ModifyColumnFamiliesRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/BigtableAdmin/Table.html"><abbr title="Google\Service\BigtableAdmin\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/BigtableAdmin/Resource/ProjectsInstancesTables.php#L252">at line 252</a></div>
+        <code>                    <a href="../../../../Google/Service/BigtableAdmin/Operation.html"><abbr title="Google\Service\BigtableAdmin\Operation">Operation</abbr></a>
+    <strong>patch</strong>(string $name, <a href="../../../../Google/Service/BigtableAdmin/Table.html"><abbr title="Google\Service\BigtableAdmin\Table">Table</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Updates a specified table. (tables.patch)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>The unique name of the table. Values are of the form
+<code>projects/{project}/instances/{instance}/tables/_a-zA-Z0-9*</code>. Views:
+<code>NAME_ONLY</code>, <code>SCHEMA_VIEW</code>, <code>REPLICATION_VIEW</code>, <code>STATS_VIEW</code>, <code>FULL</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/BigtableAdmin/Table.html"><abbr title="Google\Service\BigtableAdmin\Table">Table</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/BigtableAdmin/Operation.html"><abbr title="Google\Service\BigtableAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_restore">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/BigtableAdmin/Resource/ProjectsInstancesTables.php#L271">at line 271</a></div>
+        <code>                    <a href="../../../../Google/Service/BigtableAdmin/Operation.html"><abbr title="Google\Service\BigtableAdmin\Operation">Operation</abbr></a>
+    <strong>restore</strong>(string $parent, <a href="../../../../Google/Service/BigtableAdmin/RestoreTableRequest.html"><abbr title="Google\Service\BigtableAdmin\RestoreTableRequest">RestoreTableRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create a new table by restoring from a completed backup. The returned table
+long-running operation can be used to track the progress of the operation,
+and to cancel it. The metadata field type is RestoreTableMetadata. The
+response type is Table, if successful. (tables.restore)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The name of the instance in which to create
+the restored table. Values are of the form <code>projects//instances/</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/BigtableAdmin/RestoreTableRequest.html"><abbr title="Google\Service\BigtableAdmin\RestoreTableRequest">RestoreTableRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/BigtableAdmin/Operation.html"><abbr title="Google\Service\BigtableAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIamPolicy">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/BigtableAdmin/Resource/ProjectsInstancesTables.php#L290">at line 290</a></div>
+        <code>                    <a href="../../../../Google/Service/BigtableAdmin/Policy.html"><abbr title="Google\Service\BigtableAdmin\Policy">Policy</abbr></a>
+    <strong>setIamPolicy</strong>(string $resource, <a href="../../../../Google/Service/BigtableAdmin/SetIamPolicyRequest.html"><abbr title="Google\Service\BigtableAdmin\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the access control policy on a Bigtable resource. Replaces any existing
+policy. (tables.setIamPolicy)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy is being
+specified. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/BigtableAdmin/SetIamPolicyRequest.html"><abbr title="Google\Service\BigtableAdmin\SetIamPolicyRequest">SetIamPolicyRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/BigtableAdmin/Policy.html"><abbr title="Google\Service\BigtableAdmin\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testIamPermissions">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/BigtableAdmin/Resource/ProjectsInstancesTables.php#L309">at line 309</a></div>
+        <code>                    <a href="../../../../Google/Service/BigtableAdmin/TestIamPermissionsResponse.html"><abbr title="Google\Service\BigtableAdmin\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+    <strong>testIamPermissions</strong>(string $resource, <a href="../../../../Google/Service/BigtableAdmin/TestIamPermissionsRequest.html"><abbr title="Google\Service\BigtableAdmin\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns permissions that the caller has on the specified Bigtable resource.</p></p>                <p>(tables.testIamPermissions)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td><p>REQUIRED: The resource for which the policy detail is
+being requested. See <a href="https://cloud.google.com/apis/design/resource_names">Resource
+names</a> for the
+appropriate value for this field.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/BigtableAdmin/TestIamPermissionsRequest.html"><abbr title="Google\Service\BigtableAdmin\TestIamPermissionsRequest">TestIamPermissionsRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/BigtableAdmin/TestIamPermissionsResponse.html"><abbr title="Google\Service\BigtableAdmin\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_undelete">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/BigtableAdmin/Resource/ProjectsInstancesTables.php#L326">at line 326</a></div>
+        <code>                    <a href="../../../../Google/Service/BigtableAdmin/Operation.html"><abbr title="Google\Service\BigtableAdmin\Operation">Operation</abbr></a>
+    <strong>undelete</strong>(string $name, <a href="../../../../Google/Service/BigtableAdmin/UndeleteTableRequest.html"><abbr title="Google\Service\BigtableAdmin\UndeleteTableRequest">UndeleteTableRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Restores a specified table which was accidentally deleted. (tables.undelete)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The unique name of the table to be restored.
+Values are of the form
+<code>projects/{project}/instances/{instance}/tables/{table}</code>.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/BigtableAdmin/UndeleteTableRequest.html"><abbr title="Google\Service\BigtableAdmin\UndeleteTableRequest">UndeleteTableRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/BigtableAdmin/Operation.html"><abbr title="Google\Service\BigtableAdmin\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

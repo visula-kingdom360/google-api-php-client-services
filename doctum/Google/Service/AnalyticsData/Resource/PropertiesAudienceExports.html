@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Service\AnalyticsData\Resource\PropertiesAudienceExports | Google Cloud PHP Client Services</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Google_Service_AnalyticsData_Resource_PropertiesAudienceExports" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Google Cloud PHP Client Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Google.ns.html">Google</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service.ns.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/AnalyticsData.ns.html">AnalyticsData</a></li><li class="backslash">\</li><li><a href="../../../../Google/Service/AnalyticsData/Resource.ns.html">Resource</a></li><li class="backslash">\</li><li>PropertiesAudienceExports</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>PropertiesAudienceExports    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>PropertiesAudienceExports</strong>        extends <abbr title="Google\Service\Resource">Resource</abbr>        (<a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AnalyticsData/Resource/PropertiesAudienceExports.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The &quot;audienceExports&quot; collection of methods.</p></p>            <p><p>Typical usage is:</p>
+<pre><code> $analyticsdataService = new Google\Service\AnalyticsData(...);
+ $audienceExports = $analyticsdataService-&gt;properties_audienceExports;</code></pre></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AnalyticsData/Operation.html"><abbr title="Google\Service\AnalyticsData\Operation">Operation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>(string $parent, <a href="../../../../Google/Service/AnalyticsData/AudienceExport.html"><abbr title="Google\Service\AnalyticsData\AudienceExport">AudienceExport</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Creates an audience export for later retrieval. This method quickly returns
+the audience export's resource name and initiates a long running asynchronous
+request to form an audience export. To export the users in an audience
+export, first create the audience export through this method and then send
+the audience resource name to the <code>QueryAudienceExport</code> method. See <a href="https://developers.google.com/analytics/devguides/reporti
+ng/data/v1/audience-list-basics">Creating
+an Audience Export</a> for an introduction to Audience Exports with
+examples. An audience export is a snapshot of the users currently in the
+audience at the time of audience export creation. Creating audience exports
+for one audience on different days will return different results as users
+enter and exit the audience. Audiences in Google Analytics 4 allow you to
+segment your users in the ways that are important to your business. To learn
+more, see <a href="https://support.google.com/analytics/answer/9267572">https://support.google.com/analytics/answer/9267572</a>. Audience
+exports contain the users in each audience. Audience Export APIs have some
+methods at alpha and other methods at beta stability. The intention is to
+advance methods to beta stability after some feedback and adoption. To give
+your feedback on this API, complete the <a href="https://forms.gle/EeA5u5LW6PEggtCEA">Google Analytics Audience Export API
+Feedback</a> form. (audienceExports.create)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AnalyticsData/AudienceExport.html"><abbr title="Google\Service\AnalyticsData\AudienceExport">AudienceExport</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $name, array $optParams = [])
+        
+                                            <p><p>Gets configuration metadata about a specific audience export. This method can
+be used to understand an audience export after it has been created. See
+<a href="https://developers.google.com/analytics/devguid
+es/reporting/data/v1/audience-list-basics">Creating an Audience Export</a> for an introduction to Audience
+Exports with examples. Audience Export APIs have some methods at alpha and
+other methods at beta stability. The intention is to advance methods to beta
+stability after some feedback and adoption. To give your feedback on this
+API, complete the <a href="https://forms.gle/EeA5u5LW6PEggtCEA">Google Analytics Audience Export API
+Feedback</a> form. (audienceExports.get)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AnalyticsData/ListAudienceExportsResponse.html"><abbr title="Google\Service\AnalyticsData\ListAudienceExportsResponse">ListAudienceExportsResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listPropertiesAudienceExports">listPropertiesAudienceExports</a>(string $parent, array $optParams = [])
+        
+                                            <p><p>Lists all audience exports for a property. This method can be used for you to
+find and reuse existing audience exports rather than creating unnecessary new
+audience exports. The same audience can have multiple audience exports that
+represent the export of users that were in an audience on different days. See
+<a href="https://developers.google.com/analytics/devguid
+es/reporting/data/v1/audience-list-basics">Creating an Audience Export</a> for an introduction to Audience
+Exports with examples. Audience Export APIs have some methods at alpha and
+other methods at beta stability. The intention is to advance methods to beta
+stability after some feedback and adoption. To give your feedback on this
+API, complete the <a href="https://forms.gle/EeA5u5LW6PEggtCEA">Google Analytics Audience Export API
+Feedback</a> form.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/Service/AnalyticsData/QueryAudienceExportResponse.html"><abbr title="Google\Service\AnalyticsData\QueryAudienceExportResponse">QueryAudienceExportResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_query">query</a>(string $name, <a href="../../../../Google/Service/AnalyticsData/QueryAudienceExportRequest.html"><abbr title="Google\Service\AnalyticsData\QueryAudienceExportRequest">QueryAudienceExportRequest</abbr></a> $postBody, array $optParams = [])
+        
+                                            <p><p>Retrieves an audience export of users. After creating an audience, the users
+are not immediately available for exporting. First, a request to
+<code>CreateAudienceExport</code> is necessary to create an audience export of users,
+and then second, this method is used to retrieve the users in the audience
+export. See <a href="https://developers.google.com/analy
+tics/devguides/reporting/data/v1/audience-list-basics">Creating an Audience Export</a> for an introduction to
+Audience Exports with examples. Audiences in Google Analytics 4 allow you to
+segment your users in the ways that are important to your business. To learn
+more, see <a href="https://support.google.com/analytics/answer/9267572">https://support.google.com/analytics/answer/9267572</a>. Audience
+Export APIs have some methods at alpha and other methods at beta stability.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AnalyticsData/Resource/PropertiesAudienceExports.php#L63">at line 63</a></div>
+        <code>                    <a href="../../../../Google/Service/AnalyticsData/Operation.html"><abbr title="Google\Service\AnalyticsData\Operation">Operation</abbr></a>
+    <strong>create</strong>(string $parent, <a href="../../../../Google/Service/AnalyticsData/AudienceExport.html"><abbr title="Google\Service\AnalyticsData\AudienceExport">AudienceExport</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates an audience export for later retrieval. This method quickly returns
+the audience export's resource name and initiates a long running asynchronous
+request to form an audience export. To export the users in an audience
+export, first create the audience export through this method and then send
+the audience resource name to the <code>QueryAudienceExport</code> method. See <a href="https://developers.google.com/analytics/devguides/reporti
+ng/data/v1/audience-list-basics">Creating
+an Audience Export</a> for an introduction to Audience Exports with
+examples. An audience export is a snapshot of the users currently in the
+audience at the time of audience export creation. Creating audience exports
+for one audience on different days will return different results as users
+enter and exit the audience. Audiences in Google Analytics 4 allow you to
+segment your users in the ways that are important to your business. To learn
+more, see <a href="https://support.google.com/analytics/answer/9267572">https://support.google.com/analytics/answer/9267572</a>. Audience
+exports contain the users in each audience. Audience Export APIs have some
+methods at alpha and other methods at beta stability. The intention is to
+advance methods to beta stability after some feedback and adoption. To give
+your feedback on this API, complete the <a href="https://forms.gle/EeA5u5LW6PEggtCEA">Google Analytics Audience Export API
+Feedback</a> form. (audienceExports.create)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. The parent resource where this audience
+export will be created. Format: <code>properties/{property}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AnalyticsData/AudienceExport.html"><abbr title="Google\Service\AnalyticsData\AudienceExport">AudienceExport</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AnalyticsData/Operation.html"><abbr title="Google\Service\AnalyticsData\Operation">Operation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AnalyticsData/Resource/PropertiesAudienceExports.php#L86">at line 86</a></div>
+        <code>                    <a href="../../../../Google/Service/AnalyticsData/AudienceExport.html"><abbr title="Google\Service\AnalyticsData\AudienceExport">AudienceExport</abbr></a>
+    <strong>get</strong>(string $name, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets configuration metadata about a specific audience export. This method can
+be used to understand an audience export after it has been created. See
+<a href="https://developers.google.com/analytics/devguid
+es/reporting/data/v1/audience-list-basics">Creating an Audience Export</a> for an introduction to Audience
+Exports with examples. Audience Export APIs have some methods at alpha and
+other methods at beta stability. The intention is to advance methods to beta
+stability after some feedback and adoption. To give your feedback on this
+API, complete the <a href="https://forms.gle/EeA5u5LW6PEggtCEA">Google Analytics Audience Export API
+Feedback</a> form. (audienceExports.get)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The audience export resource name. Format:
+<code>properties/{property}/audienceExports/{audience_export}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AnalyticsData/AudienceExport.html"><abbr title="Google\Service\AnalyticsData\AudienceExport">AudienceExport</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listPropertiesAudienceExports">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AnalyticsData/Resource/PropertiesAudienceExports.php#L121">at line 121</a></div>
+        <code>                    <a href="../../../../Google/Service/AnalyticsData/ListAudienceExportsResponse.html"><abbr title="Google\Service\AnalyticsData\ListAudienceExportsResponse">ListAudienceExportsResponse</abbr></a>
+    <strong>listPropertiesAudienceExports</strong>(string $parent, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lists all audience exports for a property. This method can be used for you to
+find and reuse existing audience exports rather than creating unnecessary new
+audience exports. The same audience can have multiple audience exports that
+represent the export of users that were in an audience on different days. See
+<a href="https://developers.google.com/analytics/devguid
+es/reporting/data/v1/audience-list-basics">Creating an Audience Export</a> for an introduction to Audience
+Exports with examples. Audience Export APIs have some methods at alpha and
+other methods at beta stability. The intention is to advance methods to beta
+stability after some feedback and adoption. To give your feedback on this
+API, complete the <a href="https://forms.gle/EeA5u5LW6PEggtCEA">Google Analytics Audience Export API
+Feedback</a> form.</p></p>                <p>(audienceExports.listPropertiesAudienceExports)</p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td><p>Required. All audience exports for this property will
+be listed in the response. Format: <code>properties/{property}</code></p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AnalyticsData/ListAudienceExportsResponse.html"><abbr title="Google\Service\AnalyticsData\ListAudienceExportsResponse">ListAudienceExportsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_query">
+        <div class="location"><a href="https://github.com/googleapis/google-api-php-client-services/blob/doctum/src/AnalyticsData/Resource/PropertiesAudienceExports.php#L150">at line 150</a></div>
+        <code>                    <a href="../../../../Google/Service/AnalyticsData/QueryAudienceExportResponse.html"><abbr title="Google\Service\AnalyticsData\QueryAudienceExportResponse">QueryAudienceExportResponse</abbr></a>
+    <strong>query</strong>(string $name, <a href="../../../../Google/Service/AnalyticsData/QueryAudienceExportRequest.html"><abbr title="Google\Service\AnalyticsData\QueryAudienceExportRequest">QueryAudienceExportRequest</abbr></a> $postBody, array $optParams = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves an audience export of users. After creating an audience, the users
+are not immediately available for exporting. First, a request to
+<code>CreateAudienceExport</code> is necessary to create an audience export of users,
+and then second, this method is used to retrieve the users in the audience
+export. See <a href="https://developers.google.com/analy
+tics/devguides/reporting/data/v1/audience-list-basics">Creating an Audience Export</a> for an introduction to
+Audience Exports with examples. Audiences in Google Analytics 4 allow you to
+segment your users in the ways that are important to your business. To learn
+more, see <a href="https://support.google.com/analytics/answer/9267572">https://support.google.com/analytics/answer/9267572</a>. Audience
+Export APIs have some methods at alpha and other methods at beta stability.</p></p>                <p><p>The intention is to advance methods to beta stability after some feedback and
+adoption. To give your feedback on this API, complete the <a href="https://forms.gle/EeA5u5LW6PEggtCEA">Google Analytics
+Audience Export API Feedback</a> form.
+(audienceExports.query)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>Required. The name of the audience export to retrieve
+users from. Format: <code>properties/{property}/audienceExports/{audience_export}</code></p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Google/Service/AnalyticsData/QueryAudienceExportRequest.html"><abbr title="Google\Service\AnalyticsData\QueryAudienceExportRequest">QueryAudienceExportRequest</abbr></a></td>
+                <td>$postBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optParams</td>
+                <td><p>Optional parameters.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/Service/AnalyticsData/QueryAudienceExportResponse.html"><abbr title="Google\Service\AnalyticsData\QueryAudienceExportResponse">QueryAudienceExportResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Google\Service\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>
